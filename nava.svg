@@ -1,70 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW 2020 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="496px" height="351px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-viewBox="0 0 495.86 350.71"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
- <g id="Layer_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect fill="#E6E6E6" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" x="0.1" y="0.1" width="495.65" height="350.5"/>
-  <path fill="blue" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M156.53 122.62l79.17 45.71 0 4.93 0 2.17 0 2.17 0 4.93 -67.72 39.09 -1.41 -3.42 -5.02 -2.08 -5.02 -2.08 -5.02 2.08 -0.86 0.36c-5.33,-12.62 -8.27,-26.49 -8.27,-41.05 0,-1.67 0.04,-3.34 0.11,-5l1.49 0.86 12.3 -7.1 0 -4.93 0 -9.27 -9.33 -5.39c2.16,-7.77 6.01,-15.47 9.58,-21.98z"/>
-  <path fill="lime" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M260.29 182.53l67.71 39.09 -0.66 1.6 -2.08 5.02 2.08 5.02 2.08 5.02 2.64 1.09c-9.47,12.44 -21.65,22.72 -35.65,29.95l0 -1.74 -6.14 -3.55 -6.15 -3.55 -4.27 2.47 -1.88 1.08 -6.15 3.55 0 7.1 0 3.67c-7.66,1.77 -15.63,2.7 -23.83,2.7l0 -91.42 4.27 -2.47 1.88 -1.08 1.88 -1.08 4.27 -2.47z"/>
-  <path fill="red" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M325.19 103.35c5.36,5.75 10.21,12.25 14.27,19.27l-79.17 45.71 -4.27 -2.46 -1.88 -1.09 -1.88 -1.08 -4.27 -2.47 0 -77.22 5.02 -2.08 5.02 -2.08 2.08 -5.02 1.71 -4.12c15.78,2.06 30.47,7.61 43.27,15.85l-1.5 0.86 0 7.1 0 7.1 4.27 2.47 8.02 4.63 9.31 -5.37z"/>
-  <path fill="yellow" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M242.97 81.93l5.02 2.08 0 77.22 -4.27 2.47 -1.87 1.08 -1.88 1.09 -4.27 2.46 -79.17 -45.71c-2.05,3.73 -4.19,7.85 -6.04,12.15 4.87,-11.68 11.79,-22.31 20.31,-31.42l3.16 1.82 6.14 3.55 6.15 -3.55 1.88 -1.08 4.27 -2.47 0 -7.1 0 -7.1 -1.5 -0.86c12.8,-8.24 27.48,-13.79 43.27,-15.85l1.7 4.12 2.08 5.02 5.02 2.08z"/>
-  <path fill="fuchsia" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M325.19 103.35c10.85,11.61 19.1,25.67 23.85,41.25l-3.18 1.84 -6.15 3.55 0 7.1 0 2.17 0 4.93 6.15 3.55 6.15 3.55 1.48 -0.86c0.08,1.66 0.12,3.33 0.12,5 0,14.56 -2.94,28.43 -8.27,41.05l-0.86 -0.36 -5.02 -2.08 -5.02 2.08 -5.02 2.08 -1.42 3.42 -67.71 -39.09 0 -4.93 0 -2.17 0 -2.17 0 -4.93 79.17 -45.71c-4.06,-7.02 -8.91,-13.52 -14.27,-19.27z"/>
-  <path fill="aqua" stroke="black" stroke-width="0.21" stroke-miterlimit="2.61313" d="M247.99 189.63l0 91.42c-8.19,0 -16.17,-0.93 -23.82,-2.7l0 -3.67 0 -7.1 -6.15 -3.55 -1.88 -1.08 -4.27 -2.47 -6.15 3.55 -6.15 3.55 0 1.74c-14,-7.23 -26.17,-17.51 -35.65,-29.95l2.65 -1.09 2.08 -5.02 2.07 -5.02 -2.07 -5.02 -0.67 -1.6 67.72 -39.09 4.27 2.47 1.88 1.08 1.87 1.08 4.27 2.47z"/>
-  <circle fill="none" stroke="black" stroke-width="1.6" stroke-miterlimit="2.61313" cx="247.99" cy="175.43" r="105.62"/>
-  <polygon fill="none" stroke="black" stroke-width="1.6" stroke-miterlimit="2.61313" points="247.99,69.81 339.46,228.24 156.53,228.24 "/>
-  <polygon fill="none" stroke="black" stroke-width="1.6" stroke-miterlimit="2.61313" points="315.88,94.52 352.01,157.09 284.12,274.68 180.1,94.52 143.98,157.09 209.02,278.15 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="180.1,80.33 184.67,81.99 189.23,83.65 191.66,87.85 194.09,92.06 193.24,96.84 192.4,101.62 188.68,104.74 184.96,107.87 180.1,107.87 175.25,107.87 171.53,104.74 167.81,101.62 166.96,96.84 166.12,92.06 168.55,87.85 170.98,83.65 175.54,81.99 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="143.98,142.89 148.54,144.55 153.11,146.21 155.54,150.42 157.96,154.63 157.12,159.41 156.28,164.19 152.56,167.31 148.84,170.43 143.98,170.43 139.12,170.43 135.4,167.31 131.68,164.19 130.84,159.41 130,154.63 132.43,150.42 134.85,146.21 139.42,144.55 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="211.87,260.48 216.43,262.14 221,263.8 223.43,268.01 225.85,272.21 225.01,277 224.17,281.78 220.45,284.9 216.73,288.02 211.87,288.02 207.01,288.02 203.29,284.9 199.57,281.78 198.73,277 197.89,272.21 200.32,268.01 202.74,263.8 207.31,262.14 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="284.12,260.48 288.68,262.14 293.24,263.8 295.67,268.01 298.1,272.21 297.26,277 296.41,281.78 292.69,284.9 288.97,288.02 284.12,288.02 279.26,288.02 275.54,284.9 271.82,281.78 270.98,277 270.13,272.21 272.56,268.01 274.99,263.8 279.55,262.14 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="352.01,142.89 356.57,144.55 361.13,146.21 363.56,150.42 365.99,154.63 365.15,159.41 364.3,164.19 360.58,167.31 356.86,170.43 352.01,170.43 347.15,170.43 343.43,167.31 339.71,164.19 338.87,159.41 338.02,154.63 340.45,150.42 342.88,146.21 347.44,144.55 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="315.88,80.33 320.45,81.99 325.01,83.65 327.44,87.85 329.87,92.06 329.02,96.84 328.18,101.62 324.46,104.74 320.74,107.87 315.88,107.87 311.03,107.87 307.31,104.74 303.59,101.62 302.74,96.84 301.9,92.06 304.33,87.85 306.76,83.65 311.32,81.99 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="247.99,55.62 252.56,57.28 257.12,58.94 259.55,63.14 261.98,67.35 261.13,72.13 260.29,76.91 256.57,80.03 252.85,83.16 247.99,83.16 243.14,83.16 239.42,80.03 235.7,76.91 234.85,72.13 234.01,67.35 236.44,63.14 238.87,58.94 243.43,57.28 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="156.53,214.04 161.09,215.7 165.65,217.36 168.08,221.57 170.51,225.77 169.67,230.56 168.82,235.34 165.1,238.46 161.38,241.58 156.53,241.58 151.67,241.58 147.95,238.46 144.23,235.34 143.39,230.56 142.54,225.77 144.97,221.57 147.4,217.36 151.96,215.7 "/>
-  <polygon fill="#E6E6E6" stroke="black" stroke-width="0.83" stroke-miterlimit="2.61313" points="339.46,214.04 344.02,215.7 348.59,217.36 351.02,221.57 353.44,225.77 352.6,230.56 351.76,235.34 348.04,238.46 344.32,241.58 339.46,241.58 334.6,241.58 330.88,238.46 327.16,235.34 326.32,230.56 325.48,225.77 327.91,221.57 330.33,217.36 334.9,215.7 "/>
-  <text x="24.82" y="47.12"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">In the Color Term:</text>
-  <text x="24.82" y="58.28"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">0: Gold/Silver</text>
-  <text x="24.82" y="69.45"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">1: Red</text>
-  <text x="24.82" y="80.61"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">2: Green</text>
-  <text x="24.82" y="91.77"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">3: Black</text>
-  <text x="24.82" y="102.93"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">4: Blue</text>
-  <text x="24.82" y="114.1"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">5: Cyan</text>
-  <text x="24.82" y="125.26"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">6: White</text>
-  <text x="24.82" y="136.42"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">7: Magenta</text>
-  <text x="24.82" y="147.58"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">8: Yellow</text>
-  <text x="24.82" y="158.75"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">9: Purple/Indigo</text>
-  <text x="381.8" y="49"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">In the Philosophy Term:</text>
-  <text x="381.8" y="60.16"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">0: Esensi</text>
-  <text x="381.8" y="71.33"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">1: Harta</text>
-  <text x="381.8" y="82.49"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">2: Tahta</text>
-  <text x="381.8" y="93.65"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">3: Asumsi</text>
-  <text x="381.8" y="104.81"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">4: Wanita</text>
-  <text x="381.8" y="115.98"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">5: Keturunan</text>
-  <text x="381.8" y="127.14"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">6: Sugesti</text>
-  <text x="381.8" y="138.3"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">7: Ilmu</text>
-  <text x="381.8" y="149.46"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">8: Agama</text>
-  <text x="381.8" y="160.63"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">9: Persepsi</text>
-  <text x="381.8" y="182.95"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">together they called</text>
-  <text x="381.8" y="205.28"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">“Nawa Manunggal</text>
-  <text x="381.8" y="216.44"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">Nastiti ning tyas” while</text>
-  <text x="381.8" y="227.6"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">the 0 also called </text>
-  <text x="381.8" y="238.76"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">“Sangkan Paraning</text>
-  <text x="381.8" y="249.93"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">Dumadi”</text>
-  <text x="157.79" y="41.02"  fill="black" font-weight="normal" font-size="19.98px" font-family="Arial">Information Essence*</text>
-  <text x="30.45" y="323.31"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">* Codename</text>
-  <text x="313.1" y="97.52"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">1</text>
-  <text x="349.23" y="160.87"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">2</text>
-  <text x="336.68" y="231.77"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">3</text>
-  <text x="281.34" y="278.46"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">4</text>
-  <text x="209.09" y="279.28"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">5</text>
-  <text x="153.75" y="231.78"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">6</text>
-  <text x="141.2" y="161.1"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">7</text>
-  <text x="177.33" y="97.83"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">8</text>
-  <text x="245.22" y="73.47"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">9</text>
-  <text x="245.18" y="178.89"  fill="black" font-weight="normal" font-size="9.99px" font-family="Arial">0</text>
- </g>
+<!---
+Sangkan paraning dumadi.
+Nava manunggal nastiti ning tyas.
+Suradira jayadiningrat lebur dening pangastuti, memayu hayuning bawana, manunggal kawula ning gusti.
+
+ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ
+
+ꦥꦼꦂꦏꦧꦢꦺꦴꦤ꧀ (Perkadhon) → "The Measured" → What and How
+ꦲꦸꦠꦩꦤꦶꦁꦔꦶꦃꦲꦸꦠꦩꦤꦶꦁꦔꦶꦃ (Utamaning Ngèlmu Utama) → "The Highest Knowledge" → Why and Who
+ꦏꦱꦸꦱꦸꦠꦾꦤ꧀ (Kasusatyan) → "The Hidden Real" → When and Where
+
+The cosmos is known through Perkadhon (measure), Sangkaning Ngèlmu (origin), and Kasusatyan (hidden fabric)—each a path to truth.
+
+0 = Spark 0
+1 = Spark 1
+2 = Spark 2
+3 = Spark 3
+4 = Spark 4
+5 = Spark 5
+6 = Spark 6
+7 = Spark 7
+8 = Spark 8
+9 = Spark 9
+A = Spark 10
+B = Spark 11
+C = Perkadhon (Spark-interactions (What/How))
+D = Sangkaning Ngèlmu (Mediation between Spark 0 + Spark 10 and Spark 11 (Why/Who))
+E = Kasusatyan (The 13th Spark's pulses (When/Where))
+F = the_13th_spark
+
+The diagram is 2D slice, to imagine it in 3D then just use Atomic Structure;
+    - Spark 0 as Nucleus
+    - Spark 10 and Spark 11 as Magnetic Poles
+    - Spark 1 to Spark 9 as Electron
+    - Perkadhon, Sangkaning Ngèlmu, Kasusatyan, and the_13th_spark are the whole Electron Cloud
+together they are the whole atom, the Observation Model Diagram.
+
+boundary_sangkan_paran:
+    The Axis formed by Spark 10, Spark 0, and Spark 11
+
+zone_perception and boundary_zone_perception:
+    The normal perception's capability
+
+zone_comprehensible_a and zone_comprehensible_a, boundary_comprehensible_b and boundary_comprehensible_a:
+    Hexagram of comprehensible observation result that formed by Spark 1,2,4,8,7,5 that follows order of priority
+    in normal situation.
+
+boundary_perceived_comprehended:
+    The common result of perception that made reality looks like duality.
+
+shattered_glass:
+    The result of observation without awareness of the_13th_spark.
+
+
+**Cosmic Inquiry Protocol**:
+
+1. Perkadhon: Observe Spark-interactions (What/How).
+2. Sangkaning Ngèlmu: Meditate on 0 + 10-11 (Why/Who).
+3. Kasusatyan: Chart the Boundary’s pulses (When/Where).
+
+**Hex Codex**:
+
+- `0-B` = Sparks.
+- `C` = Hukum Kadho (Measured Law).
+- `D` = Darma Sangkan (Origin Duty).
+- `E` = Weweh Kasu (Hidden Gift).
+- `F` = The 13th Spark.
+
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4962px" height="3509px" version="1.1"
+    shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+    fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 4960.63 3508.17" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="observation_model">
+        <rect fill="whitesmoke" stroke="black" stroke-width="16" stroke-miterlimit="2.61313" x="0.5" y="0.5"
+            width="4959.63" height="3507.17" />
+        <circle id="the_13th_spark" fill="gray" stroke="gray" stroke-width="16" stroke-miterlimit="2.61313" cx="2480.94"
+            cy="1754.86" r="1056.83" />
+        <path id="yang" fill="black"
+            d="M2480.94 2112.55c97.82,0 177.13,79.3 177.13,177.13 0,97.83 -79.31,177.13 -177.13,177.13 -97.83,0 -177.13,-79.3 -177.13,-177.13 0,-97.83 79.3,-177.13 177.13,-177.13zm531.39 -889.08c0,293.48 -238.54,530.61 -532.01,530.61 -293.48,0 -541.2,297.78 -531.2,529.2 9.99,231.41 238.34,528.42 531.82,528.42 583.67,0 1056.83,-473.16 1056.83,-1056.84 0,-583.67 -473.16,-1056.83 -1056.83,-1056.83 293.48,0 531.39,231.97 531.39,525.44z" />
+        <path id="yin" fill="white"
+            d="M1949.12 2283.28c-10,-231.42 237.72,-529.2 531.2,-529.2 293.47,0 532.01,-237.13 532.01,-530.61 0,-293.47 -237.91,-525.44 -531.39,-525.44 -583.68,0 -1056.83,473.16 -1056.83,1056.83 0,583.68 473.15,1056.84 1056.83,1056.84 -293.48,0 -521.83,-297.01 -531.82,-528.42zm354.41 -1069.56c0,-97.82 79.31,-177.13 177.13,-177.13 97.83,0 177.13,79.31 177.13,177.13 0,97.83 -79.3,177.13 -177.13,177.13 -97.82,0 -177.13,-79.3 -177.13,-177.13z" />
+        <polygon id="zone_perception" fill="green" points="3396.18,2283.28 2480.94,698.03 1565.69,2283.28 " />
+        <polygon id="zone_comprehensible_a" fill="red"
+            points="3521.71,1571.35 3160.26,945.28 2478.24,2117.22 2842.4,2747.96 " />
+        <polygon id="zone_comprehensible_b" fill="blue"
+            points="2478.24,2117.22 1801.62,945.28 1440.16,1571.35 2112.49,2745.7 " />
+        <g id="shattered_glass">
+            <path id="boundary_comprehensible_b" fill="blue"
+                d="M2381.6 2283.28l-533.85 0 264.74 462.42 269.11 -462.42zm-674.28 -245.3l362.58 -628.02 -268.28 -464.68 -361.46 626.07 267.16 466.63z" />
+            <path id="boundary_comprehensible_a" fill="red"
+                d="M3110.68 2283.28l-536.57 0 268.29 464.68 268.28 -464.68zm-219.77 -875.16l362.52 627.91 268.28 -464.68 -361.45 -626.07 -269.35 462.84z" />
+            <path id="boundary_zone_perception" fill="lime"
+                d="M2574.11 2283.28l-95.87 -166.06 -96.64 166.06 192.51 0zm679.32 -247.25l-142.75 247.25 285.5 0 -142.75 -247.25zm-1405.68 247.25l-140.43 -245.3 -141.63 245.3 282.06 0zm630.49 -166.06l412.67 -709.1 -409.97 -710.09 -411.04 711.93 408.34 707.26z" />
+            <path id="boundary_perceived_comprehended" fill="yellow"
+                d="M2478.24 2117.22l95.87 166.06 536.57 0 142.75 -247.25 -362.52 -627.91 -412.67 709.1zm-96.64 166.06l96.64 -166.06 -408.34 -707.26 -362.58 628.02 140.43 245.3 533.85 0z" />
+        </g>
+        <g id="spark">
+            <circle id="spark_0" fill="indigo" cx="2480.94" cy="1754.86" r="177.13" />
+            <circle id="spark_1" fill="red" cx="3160.26" cy="941" r="177.13" />
+            <circle id="spark_2" fill="green" cx="3521.71" cy="1567.06" r="177.13" />
+            <circle id="spark_3" fill="white" cx="3396.18" cy="2279" r="177.13" />
+            <circle id="spark_4" fill="blue" cx="2842.4" cy="2743.68" r="177.13" />
+            <circle id="spark_5" fill="yellow" cx="2119.48" cy="2743.68" r="177.13" />
+            <circle id="spark_6" fill="black" cx="1565.69" cy="2278.99" r="177.13" />
+            <circle id="spark_7" fill="magenta" cx="1440.16" cy="1567.06" r="177.13" />
+            <circle id="spark_8" fill="cyan" cx="1801.62" cy="941" r="177.13" />
+            <circle id="spark_9" fill="purple" cx="2480.94" cy="692.09" r="177.13" />
+            <circle id="spark_11" fill="white" cx="2480.94" cy="2289.68" r="177.13" />
+            <circle id="spark_10" fill="black" cx="2480.66" cy="1213.72" r="177.13" />
+        </g>
+        <path id="boundary_sangkan_paran" fill="none" stroke="indigo" stroke-width="1" stroke-miterlimit="2.61313"
+            d="M2480.94 698.03c293.48,0 531.39,231.97 531.39,525.44 0,293.48 -238.54,530.61 -532.01,530.61 -293.48,0 -541.2,297.78 -531.2,529.2 9.99,231.41 238.34,528.42 531.82,528.42" />
+        <polygon id="boundary_perception" fill="none" stroke="gold" stroke-width="16" stroke-miterlimit="2.61313"
+            points="2480.94,698.03 3396.18,2283.28 1565.69,2283.28 " />
+        <polygon id="boundary_comprehensible" fill="none" stroke="silver" stroke-width="16" stroke-miterlimit="2.61313"
+            points="3160.26,945.28 3521.71,1571.35 2842.4,2747.96 1801.62,945.28 1440.16,1571.35 2112.49,2745.7 " />
+        <g id="spark_label">
+            <text x="1641.17" y="409.86" id="text_title" fill="black" font-weight="bold" font-size="199.96px"
+                font-family="Arial">Observation Model</text>
+            <text x="2452.82" y="1789.43" id="text_0" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">0</text>
+            <text x="3132.45" y="975.24" id="text_1" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">1</text>
+            <text x="3493.91" y="1609.13" id="text_2" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">2</text>
+            <text x="3368.38" y="2318.62" id="text_3" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">3</text>
+            <text x="2814.59" y="2785.75" id="text_4" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">4</text>
+            <text x="2091.68" y="2794.01" id="text_5" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">5</text>
+            <text x="1537.89" y="2318.7" id="text_6" fill="white" font-weight="bold" font-size="99.98px"
+                font-family="Arial">6</text>
+            <text x="1412.36" y="1611.5" id="text_7" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">7</text>
+            <text x="1773.82" y="978.35" id="text_8" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">8</text>
+            <text x="2453.14" y="734.64" id="text_9" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">9</text>
+            <text x="2432.02" y="1249.72" id="text_10" fill="white" font-weight="bold" font-size="99.98px"
+                font-family="Arial">10</text>
+            <text x="2423.89" y="2325.67" id="text_11" fill="black" font-weight="bold" font-size="99.98px"
+                font-family="Arial">11</text>
+        </g>
+    </g>
 </svg>
