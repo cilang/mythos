@@ -1,5 +1,3 @@
-# mythos
-
-Myth Operating System
+# MythOS
 
 ![Image](nava.svg)
