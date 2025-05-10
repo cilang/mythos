@@ -1,0 +1,56 @@
+strict digraph G {
+    label = "Conceptual";
+    style = filled;
+    color = blue;
+    comment = "";
+    node [shape = polygon; sides = 8;];
+    
+    subgraph cluster_concept_asha {
+        label = "Truth";
+        style = filled;
+        color = gray80;
+        comment = "";
+        
+        truth_t [label = "Asha";];
+    }
+    subgraph cluster_concept_vidya {
+        label = "Wisdom";
+        style = filled;
+        color = gray80;
+        comment = "";
+        
+        wisdom_t [label = "Vidya";];
+    }
+    subgraph cluster_concept_convergence {
+        label = "Convergence";
+        style = filled;
+        color = gray80;
+        comment = "";
+        
+        convergence_t [label = "Kirana";];
+    }
+    subgraph cluster_concept_divergence {
+        label = "Divergence";
+        style = filled;
+        color = gray80;
+        comment = "";
+        
+        divergence_t [label = "Chandra";];
+    }
+    subgraph cluster_concept_tha {
+        label = "Fixation";
+        style = filled;
+        color = gray80;
+        comment = "";
+        
+        fixation_t [label = "Tha";];
+    }
+    subgraph cluster_concept_nda {
+        label = "Excitation";
+        style = filled;
+        color = gray80;
+        comment = "d";
+        
+        excitation_t [label = "Nda";];
+    }
+}

@@ -1,0 +1,271 @@
+strict digraph G {
+    bgcolor = gray90;
+    fontsize = "36";
+    node [shape = polygon; sides = 4; style = filled; color = whitesmoke;];
+    
+    subgraph cluster_conceptual {
+        label = "Conceptual";
+        style = filled;
+        color = blue;
+        comment = "";
+        node [shape = polygon; sides = 8;];
+        
+        subgraph cluster_concept_asha {
+            label = "Truth";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            truth_t [label = "Asha";];
+        }
+        subgraph cluster_concept_vidya {
+            label = "Wisdom";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            wisdom_t [label = "Vidya";];
+        }
+        subgraph cluster_concept_convergence {
+            label = "Convergence";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            convergence_t [label = "Kirana";];
+        }
+        subgraph cluster_concept_divergence {
+            label = "Divergence";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            divergence_t [label = "Chandra";];
+        }
+        subgraph cluster_concept_tha {
+            label = "Fixation";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            fixation_t [label = "Tha";];
+        }
+        subgraph cluster_concept_nda {
+            label = "Excitation";
+            style = filled;
+            color = gray80;
+            comment = "";
+            
+            excitation_t [label = "Nda";];
+        }
+    }
+    subgraph cluster_kernel {
+        label = "Kernel";
+        style = filled;
+        color = green;
+        comment = "";
+        node [shape = polygon; sides = 6; style = filled; color = whitesmoke;];
+        
+        reality_t [label = "Reality\nprivate: /dev/reality\npublic: /proc/reality";];
+        prime_directive_t [label = "Prime Directive\n(/dev/reality/prime-directive)";];
+        
+        subgraph cluster_information_space {
+            label = "Information Space";
+            style = filled;
+            color = grey80;
+            comment = "";
+            
+            factor_t [label = "Factor";];
+            information_factor_t [label = "Information Factor";];
+            
+            subgraph cluster_factor {
+                label = "Factor";
+                color = grey70;
+                comment = "Sangkan paraning dumadi. Nava manunggal nastiti ning tyas. Suradira jayadiningrat lebur dening pangastuti, memayu hayuning bawana, manunggal kawula ning gusti. (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)";
+                node [shape = polygon; sides = 6; style = filled; color = whitesmoke;];
+                
+                factor_t [label = "Factor";];
+                
+                spark_0_t [label = "0\n(Shunya)";shape = doublecircle;comment = "शून्य";];
+                spark_1_t [label = "1\n(Eka)";shape = tripleoctagon;color = darkred;comment = "ꦲꦺꦏ";];
+                spark_2_t [label = "2\n(Dwi)";shape = tripleoctagon;color = darkgreen;comment = "ꦢ꧀ꦮꦶ";];
+                spark_3_t [label = "3\n(Tri)";shape = circle;comment = "ꦠꦿꦶ";];
+                spark_4_t [label = "4\n(Catur)";shape = tripleoctagon;color = darkblue;comment = "ꦕꦠꦸꦂ";];
+                spark_5_t [label = "5\n(Panca)";shape = tripleoctagon;color = darkcyan;comment = "ꦥꦚ꧀ꦕ";];
+                spark_6_t [label = "6\n(Sad)";shape = circle;comment = "ꦱꦢ꧀";];
+                spark_7_t [label = "7\n(Sapta)";shape = tripleoctagon;color = darkmagenta;comment = "ꦱꦥ꧀ꦠ";];
+                spark_8_t [label = "8\n(Asta)";shape = tripleoctagon;color = yellow;comment = "ꦲꦱ꧀ꦠ";];
+                spark_9_t [label = "9\n(Nava)";shape = circle;comment = "ꦤꦮ";];
+                spark_10_t [label = "10\n(Dasa)";shape = triangle;color = black;fontcolor = white;comment = "ꦢꦱ";];
+                spark_11_t [label = "11\n(Dhesta)";shape = invtriangle;color = white;comment = "ꦝꦺꦱ꧀ꦠ";];
+                
+                subgraph cluster_factor_0 {
+                    label = "12\n(Sadha)";
+                    style = dashed;
+                    color = grey60;
+                    comment = "The observation field --- the 13th Spark Container (Wuji)";
+                    
+                    perkadhon_t [label = "Perkadhon\n(What + How)";shape = oval;color = darkgreen;style = filled;fontcolor = white;];
+                    sangkaning_ngelmu_t [label = "Sangkaning Ngelmu\n(Why + Who)";shape = oval;color = darkblue;style = filled;fontcolor = white;];
+                    kasusatyan_t [label = "Kasusatyan\n(When + Where)";shape = oval;color = darkred;style = filled;fontcolor = white;];
+                }
+            }
+            subgraph cluster_observation_model {
+                label = "Observation Model";
+                color = grey70;
+                comment = "The Sacred 3-6-9 (Boundary of Perception).\"If you knew the magnificence of 3, 6, and 9, you would have a key to the universe.\" — Tesla. The 1-2-4-8-7-5 Vortex (Boundary of Comprehension). Truth and Wisdom also give further context to \"Sangkan Paraning Dumadi\" beyond what \"Factor\" provided.";
+                node [shape = polygon; sides = 6; style = filled; color = whitesmoke;];
+                
+                observation_model_t [label = "Observation Model";];
+                observation_seed_t [label = "Observation Seed";];
+                
+                spark_0_dumadi_t [label = "Dumadi\n(Factor)";shape = doublecircle;comment = "";];
+                spark_1_harta_t [label = "Harta\n(Resources)";shape = tripleoctagon;color = darkred;comment = "";];
+                spark_2_tahta_t [label = "Tahta\n(Authority)";shape = tripleoctagon;color = darkgreen;comment = "";];
+                spark_3_asumsi_t [label = "Asumsi\n(Assumption)";shape = circle;comment = "";];
+                spark_4_wanita_t [label = "Wanita\n(Relations)";shape = tripleoctagon;color = darkblue;comment = "";];
+                spark_5_keturunan_t [label = "Keturunan\n(Lineage)";shape = tripleoctagon;color = darkcyan;comment = "";];
+                spark_6_sugesti_t [label = "Sugesti\n(Suggestion)";shape = circle;comment = "";];
+                spark_7_ilmu_t [label = "Ilmu\n(Knowledge)";shape = tripleoctagon;color = darkmagenta;comment = "";];
+                spark_8_agama_t [label = "Agama\n(Faith-System)";shape = tripleoctagon;color = yellow;comment = "";];
+                spark_9_persepsi_t [label = "Persepsi\n(Perception)";shape = circle;comment = "";];
+                spark_10_sangkan_t [label = "Sangkan\n(Truth)";shape = triangle;color = black;fontcolor = white;comment = "";];
+                spark_11_paran_t [label = "Paran\n(Wisdom)";shape = invtriangle;color = white;comment = "";];
+            }
+            subgraph cluster_alignment_model {
+                label = "Alignment Model";
+                color = grey70;
+                comment = "";
+                node [shape = polygon; sides = 6; style = filled; color = whitesmoke;];
+                
+                alignment_model_t [label = "Alignment Model";];
+                alignment_seed_t [label = "Alignment Seed";];
+                
+                spark_0_alignment_t [label = "Dumadi\n(Factor)";shape = doublecircle;comment = "Raw potential (unformatted).";];
+                spark_1_causality_t [label = "K\n(Causality)";shape = tripleoctagon;color = darkred;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
+                spark_2_topology_t [label = "Θ\n(Topology)";shape = tripleoctagon;color = darkgreen;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
+                spark_3_charge_t [label = "C\n(Charge)";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
+                spark_4_dimensionality_t [label = "D\n(Dimensionality)";shape = tripleoctagon;color = darkblue;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
+                spark_5_logic_t [label = "Λ\n(Logic)";shape = tripleoctagon;color = darkcyan;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
+                spark_6_parity_t [label = "P\n(Parity)";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
+                spark_7_phase_t [label = "Φ\n(Phase)";shape = tripleoctagon;color = darkmagenta;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
+                spark_8_void_t [label = "V\n(Void)";shape = tripleoctagon;color = yellow;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
+                spark_9_time_t [label = "T\n(Time)";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
+                spark_10_alignment_t [label = "Convergence";shape = triangle;color = black;fontcolor = white;comment = "Cosmic bus (information routing).";];
+                spark_11_alignment_t [label = "Divergence";shape = invtriangle;color = white;comment = "Cosmic bus (information routing).";];
+            }
+            subgraph cluster_spectral_model {
+                label = "Spectral Model";
+                color = grey70;
+                comment = "";
+                node [shape = polygon; sides = 6; style = filled; color = whitesmoke;];
+                
+                spectral_model_t [label = "Spectral Model";];
+                spectral_seed_t [label = "Spectral Seed";];
+                
+                spark_0_spectral_t [label = "Thanda\n(Factor)";shape = doublecircle;comment = "";];
+                spark_1_spectral_t [label = "m\n(Mass)";shape = tripleoctagon;color = darkred;comment = "";];
+                spark_2_spectral_t [label = "Q\n(Quanta)";shape = tripleoctagon;color = darkgreen;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+                spark_3_spectral_t [label = "I\n(Inertia)";shape = circle;comment = "";];
+                spark_4_spectral_t [label = "E\n(Energy)";shape = tripleoctagon;color = darkblue;comment = "";];
+                spark_5_spectral_t [label = "S\n(Entropy)";shape = tripleoctagon;color = darkcyan;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
+                spark_6_spectral_t [label = "p\n(Momentum)";shape = circle;comment = "";];
+                spark_7_spectral_t [label = "L\n(Angular Momentum)";shape = tripleoctagon;color = darkmagenta;comment = "";];
+                spark_8_spectral_t [label = "Φ\n(Flux)";shape = tripleoctagon;color = yellow;comment = "Energy flow; excitation pathway. Higher form of phase.";];
+                spark_9_spectral_t [label = "G\n(Gravity)";shape = circle;comment = "";];
+                spark_10_spectral_t [label = "Tha\n(Fixation)\nRhythm";shape = triangle;color = black;fontcolor = white;comment = "";];
+                spark_11_spectral_t [label = "Nda\n(Excitation)\nPattern";shape = invtriangle;color = white;comment = "";];
+            }
+        }
+        subgraph cluster_origin_space {
+            label = "Origin Space";
+            style = filled;
+            color = grey80;
+            comment = "";
+            
+            first_event_t [label = "First Event\n(/dev/reality/first-event)";];
+            chaotic_origin_space_t [label = "Chaotic Origin Space\n(/proc/reality/chaotic-origin-event)";];
+            information_essence_t [label = "Information Essence\n(/proc/reality/essence/information)";];
+            spiritual_essence_t [label = "Spiritual Essence\n(/proc/reality/essence/spiritual)";];
+            material_essence_t [label = "Material Essence\n(/proc/reality/essence/material)";];
+        }
+    }
+    subgraph cluster_technical {
+        label = "Technical";
+        style = filled;
+        color = red;
+        comment = "";
+        node [shape = polygon; sides = 6; style = filled; color = grey90;];
+        
+        event_t;
+        samsara_t;
+        repository_t;
+        haoma_t;
+        capability_t;
+    }
+    
+    reality_t -> prime_directive_t;
+    reality_t -> factor_t;
+    
+    factor_t -> {spark_0_t spark_1_t spark_2_t spark_3_t spark_4_t spark_5_t spark_6_t spark_7_t spark_8_t spark_9_t spark_10_t spark_11_t};
+    spark_0_t -> {spark_10_t spark_11_t} [label = "Axis Reflection"; color = yellow;];
+    spark_10_t -> spark_11_t [label = "Axis Up"; color = yellow;];
+    spark_11_t -> spark_10_t [label = "Axis Down"; color = yellow;];
+    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "Boundary Perception"; color = blue;];
+    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "Boundary Comprehensible"; color = green;];
+    spark_1_t -> spark_2_t -> spark_3_t -> spark_4_t -> spark_5_t -> spark_6_t -> spark_7_t -> spark_8_t -> spark_9_t -> spark_1_t [label = "Boundary"; color = red;];
+    
+    perkadhon_t -> {spark_1_t spark_2_t spark_3_t spark_4_t spark_5_t spark_6_t spark_7_t spark_8_t spark_9_t} [label = "Observes"; style = dotted; color = darkgreen;];
+    sangkaning_ngelmu_t -> {spark_0_t spark_10_t spark_11_t} [label = "Meditates on"; style = dotted; color = darkblue;];
+    kasusatyan_t -> {spark_3_t spark_6_t spark_9_t} [label = "Charts"; style = dotted; color = darkred;];
+    
+    {observation_model_t alignment_model_t spectral_model_t} -> information_factor_t;
+    information_factor_t -> prime_directive_t;
+    prime_directive_t -> first_event_t;
+    first_event_t -> chaotic_origin_space_t;
+    chaotic_origin_space_t -> information_essence_t;
+    information_essence_t -> spiritual_essence_t;
+    spiritual_essence_t -> material_essence_t;
+    
+    {truth_t wisdom_t} -> observation_seed_t;
+    {convergence_t divergence_t} -> alignment_seed_t;
+    {fixation_t excitation_t} -> spectral_seed_t;
+    
+    spark_0_t -> {spark_0_dumadi_t spark_0_alignment_t spark_0_spectral_t};
+    spark_1_t -> {spark_1_harta_t spark_1_causality_t spark_1_spectral_t};
+    spark_2_t -> {spark_2_tahta_t spark_2_topology_t spark_2_spectral_t};
+    spark_3_t -> {spark_3_asumsi_t spark_3_charge_t spark_3_spectral_t};
+    spark_4_t -> {spark_4_wanita_t spark_4_dimensionality_t spark_4_spectral_t};
+    spark_5_t -> {spark_5_keturunan_t spark_5_logic_t spark_5_spectral_t};
+    spark_6_t -> {spark_6_sugesti_t spark_6_parity_t spark_6_spectral_t};
+    spark_7_t -> {spark_7_ilmu_t spark_7_phase_t spark_7_spectral_t};
+    spark_8_t -> {spark_8_agama_t spark_8_void_t spark_8_spectral_t};
+    spark_9_t -> {spark_9_persepsi_t spark_9_time_t spark_9_spectral_t};
+    spark_10_t -> {spark_10_sangkan_t spark_10_alignment_t spark_10_spectral_t};
+    spark_11_t -> {spark_11_paran_t spark_11_alignment_t spark_11_spectral_t};
+    
+    spark_0_dumadi_t -> {spark_10_sangkan_t spark_11_paran_t} [color = yellow;];
+    spark_10_sangkan_t -> spark_11_paran_t [color = yellow;];
+    spark_11_paran_t -> spark_10_sangkan_t [color = yellow;];
+    spark_3_asumsi_t -> spark_6_sugesti_t -> spark_9_persepsi_t -> spark_3_asumsi_t [color = blue;];
+    spark_1_harta_t -> spark_2_tahta_t -> spark_4_wanita_t -> spark_8_agama_t -> spark_7_ilmu_t -> spark_5_keturunan_t -> spark_1_harta_t [color = green;];
+    spark_1_harta_t -> spark_2_tahta_t -> spark_3_asumsi_t -> spark_4_wanita_t -> spark_5_keturunan_t -> spark_6_sugesti_t -> spark_7_ilmu_t -> spark_8_agama_t -> spark_9_persepsi_t -> spark_1_harta_t [color = red;];
+    
+    spark_0_alignment_t -> {spark_10_alignment_t spark_11_alignment_t} [color = yellow;];
+    spark_10_alignment_t -> spark_11_alignment_t [color = yellow;];
+    spark_11_alignment_t -> spark_10_alignment_t [color = yellow;];
+    spark_3_charge_t -> spark_6_parity_t -> spark_9_time_t -> spark_3_charge_t [color = blue;];
+    spark_1_causality_t -> spark_2_topology_t -> spark_4_dimensionality_t -> spark_8_void_t -> spark_7_phase_t -> spark_5_logic_t -> spark_1_causality_t [color = green;];
+    spark_1_causality_t -> spark_2_topology_t -> spark_3_charge_t -> spark_4_dimensionality_t -> spark_5_logic_t -> spark_6_parity_t -> spark_7_phase_t -> spark_8_void_t -> spark_9_time_t -> spark_1_causality_t [color = red;];
+    
+    spark_0_spectral_t -> {spark_10_spectral_t spark_11_spectral_t} [color = yellow;];
+    spark_10_spectral_t -> spark_11_spectral_t [color = yellow;];
+    spark_11_spectral_t -> spark_10_spectral_t [color = yellow;];
+    spark_3_spectral_t -> spark_6_spectral_t -> spark_9_spectral_t -> spark_3_spectral_t [color = blue;];
+    spark_1_spectral_t -> spark_2_spectral_t -> spark_4_spectral_t -> spark_8_spectral_t -> spark_7_spectral_t -> spark_5_spectral_t -> spark_1_spectral_t [label = "Excitation Chain"; color = green;];
+    spark_1_spectral_t -> spark_2_spectral_t -> spark_3_spectral_t -> spark_4_spectral_t -> spark_5_spectral_t -> spark_6_spectral_t -> spark_7_spectral_t -> spark_8_spectral_t -> spark_9_spectral_t -> spark_1_spectral_t [label = "Spectral Transformation Cycle"; color = red;];
+    
+    observation_seed_t -> {spark_0_dumadi_t spark_1_harta_t spark_2_tahta_t spark_3_asumsi_t spark_4_wanita_t spark_5_keturunan_t spark_6_sugesti_t spark_7_ilmu_t spark_8_agama_t spark_9_persepsi_t spark_10_sangkan_t spark_11_paran_t} -> observation_model_t;
+    alignment_seed_t -> {spark_0_alignment_t spark_1_causality_t spark_2_topology_t spark_3_charge_t spark_4_dimensionality_t spark_5_logic_t spark_6_parity_t spark_7_phase_t spark_8_void_t spark_9_time_t spark_10_alignment_t spark_11_alignment_t} -> alignment_model_t;
+    spectral_seed_t -> {spark_0_spectral_t spark_1_spectral_t spark_2_spectral_t spark_3_spectral_t spark_4_spectral_t spark_5_spectral_t spark_6_spectral_t spark_7_spectral_t spark_8_spectral_t spark_9_spectral_t spark_10_spectral_t spark_11_spectral_t} -> spectral_model_t;
+}

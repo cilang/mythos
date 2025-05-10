@@ -1,0 +1,13 @@
+digraph G {
+    label = "Technical";
+    style = filled;
+    color = red;
+    comment = "";
+    node [shape = polygon; sides = 6; style = filled; color = grey90;];
+    
+    event_t;
+    samsara_t;
+    repository_t;
+    haoma_t;
+    capability_t;
+}
