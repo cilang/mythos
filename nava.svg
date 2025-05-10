@@ -117,8 +117,6 @@ shattered_glass:
         <polygon id="boundary_comprehensible" fill="none" stroke="silver" stroke-width="16" stroke-miterlimit="2.61313"
             points="3160.26,945.28 3521.71,1571.35 2842.4,2747.96 1801.62,945.28 1440.16,1571.35 2112.49,2745.7 " />
         <g id="spark_label">
-            <text x="1641.17" y="409.86" id="text_title" fill="black" font-weight="bold" font-size="199.96px"
-                font-family="Arial">Observation Model</text>
             <text x="2452.82" y="1789.43" id="text_0" fill="black" font-weight="bold" font-size="99.98px"
                 font-family="Arial">0</text>
             <text x="3132.45" y="975.24" id="text_1" fill="black" font-weight="bold" font-size="99.98px"
