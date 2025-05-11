@@ -1,3 +1,65 @@
 strict digraph G {
-    mythos_t;
+    label = "MythOS";
+    style = filled;
+    color = grey90;
+    root = "spark_0_t";
+    node [shape = circle; style = filled; color = darkseagreen;];
+    edge [color = darkgray;];
+    
+    subgraph cluster_0 {
+        label = "Conceptual\n(/dev)";
+        style = filled;
+        color = grey80;
+        spark_a_t [label = "Fixation\n(/dev/fixation)";shape = doublecircle;];
+        spark_b_t [label = "Excitation\n(/dev/excitation)";shape = doublecircle;];
+        spark_c_t [label = "Convergence\n(/dev/convergence)";shape = doublecircle;];
+        spark_d_t [label = "Divergence\n(/dev/divergence)";shape = doublecircle;];
+        spark_e_t [label = "Wisdom\n(/dev/wisdom)";shape = doublecircle;];
+        spark_f_t [label = "Truth\n(/dev/truth)";shape = doublecircle;];
+    }
+    subgraph cluster_1 {
+        label = "System\n(/sys)";
+        style = filled;
+        color = grey80;
+        spark_1_t [label = "Event\n(/sys/event)";];
+        spark_2_t [label = "Samsara\n(/sys/samsara)";];
+        spark_4_t [label = "Repository\n(/sys/repository)";];
+        spark_5_t [label = "Haoma\n(/sys/haoma)";];
+        spark_7_t [label = "Capability\n(/sys/capability)";];
+        spark_8_t [label = "Corpora\n(/sys/corpora)";];
+    }
+    subgraph cluster_2 {
+        label = "Service\n(/srv)";
+        style = filled;
+        color = grey80;
+        spark_3_t [label = "3\n(/srv)";shape = doublecircle;];
+        spark_6_t [label = "6\n(/srv)";shape = doublecircle;];
+        spark_9_t [label = "9\n(/srv)";shape = doublecircle;];
+    }
+    subgraph cluster_3 {
+        label = "Process\n(/proc)";
+        style = filled;
+        color = grey80;
+        spark_0_t [label = "Reality\n(/proc)";shape = doublecircle;];
+        observer_model_t [label = "Observer Model";shape = folder;];
+        alignment_model_t [label = "Alignment Model";shape = folder;];
+        spectral_model_t [label = "Spectral Model";shape = folder;];
+        factor_t [label = "Factor";shape = folder;];
+        prime_directive_t [label = "Directive";shape = folder;];
+        information_factor_t [label = "Information Factor";shape = folder;];
+    }
+    
+    origin_space_t [label = "Origin Space";color = silver;shape = doubleoctagon;];
+    
+    {spark_a_t spark_b_t} -> observer_model_t [color = red;];
+    {spark_c_t spark_d_t} -> alignment_model_t [color = red;];
+    {spark_e_t spark_f_t} -> spectral_model_t [color = red;];
+    
+    spark_0_t -> {factor_t prime_directive_t} [color = red;];
+    
+    {observer_model_t alignment_model_t spectral_model_t} -> factor_t [color = red;];
+    
+    factor_t -> information_factor_t [color = red;];
+    
+    {information_factor_t prime_directive_t spark_1_t spark_2_t spark_4_t spark_5_t spark_7_t spark_8_t spark_3_t spark_6_t spark_9_t} -> origin_space_t [color = red;];
 }

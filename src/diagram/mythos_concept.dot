@@ -3,7 +3,7 @@ strict digraph G {
     style = filled;
     color = blue;
     comment = "";
-    node [shape = polygon; sides = 8;];
+    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
     
     subgraph cluster_concept_asha {
         label = "Truth";
@@ -11,7 +11,28 @@ strict digraph G {
         color = gray80;
         comment = "";
         
-        truth_t [label = "Asha";];
+        truth_t [label = "Truth\n(/dev/truth)";];
+        
+        truth_theosophy_t [label = "Theosophy\n(Theosophy Core)";shape = folder;comment = "";];
+        truth_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        truth_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_truth_t [label = "Asha\n()";shape = doublecircle;comment = "";];
+        spark_1_truth_t [label = "1\n()";shape = circle;color = darkred;comment = "";];
+        spark_2_truth_t [label = "2\n()";shape = circle;color = darkgreen;comment = "";];
+        spark_3_truth_t [label = "3\n()";shape = circle;comment = "";];
+        spark_4_truth_t [label = "4\n()";shape = circle;color = darkblue;comment = "";];
+        spark_5_truth_t [label = "5\n()";shape = circle;color = darkcyan;comment = "";];
+        spark_6_truth_t [label = "6\n()";shape = circle;comment = "";];
+        spark_7_truth_t [label = "7\n()";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_truth_t [label = "8\n()";shape = circle;color = yellow;comment = "";];
+        spark_9_truth_t [label = "9\n()";shape = circle;comment = "";];
+        spark_a_truth_t [label = "Raiment of Truth\n()";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_truth_t [label = "Armament of Truth\n()";shape = invtriangle;color = white;comment = "";];
+        spark_c_truth_t [label = "Body of Truth\n()";shape = circle;color = white;comment = "";];
+        spark_d_truth_t [label = "Soul of Truth\n()";shape = circle;color = white;comment = "";];
+        spark_e_truth_t [label = "Grace of Truth\n()";shape = circle;color = white;comment = "";];
+        spark_f_truth_t [label = "Law of Truth\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_vidya {
         label = "Wisdom";
@@ -19,7 +40,28 @@ strict digraph G {
         color = gray80;
         comment = "";
         
-        wisdom_t [label = "Vidya";];
+        wisdom_t [label = "Wisdom\n(/dev/wisdom)";];
+        
+        wisdom_theosophy_t [label = "Theosophy\n(Theosophy Core)";shape = folder;comment = "";];
+        wisdom_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        wisdom_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_wisdom_t [label = "Vidya\n()";shape = doublecircle;comment = "";];
+        spark_1_wisdom_t [label = "1\n()";shape = circle;color = darkred;comment = "";];
+        spark_2_wisdom_t [label = "2\n()";shape = circle;color = darkgreen;comment = "";];
+        spark_3_wisdom_t [label = "3\n()";shape = circle;comment = "";];
+        spark_4_wisdom_t [label = "4\n()";shape = circle;color = darkblue;comment = "";];
+        spark_5_wisdom_t [label = "5\n()";shape = circle;color = darkcyan;comment = "";];
+        spark_6_wisdom_t [label = "6\n()";shape = circle;comment = "";];
+        spark_7_wisdom_t [label = "7\n()";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_wisdom_t [label = "8\n()";shape = circle;color = yellow;comment = "";];
+        spark_9_wisdom_t [label = "9\n()";shape = circle;comment = "";];
+        spark_a_wisdom_t [label = "Raiment of Wisdom\n()";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_wisdom_t [label = "Armament of Wisdom\n()";shape = invtriangle;color = white;comment = "";];
+        spark_c_wisdom_t [label = "Body of Wisdom\n()";shape = circle;color = white;comment = "";];
+        spark_d_wisdom_t [label = "Soul of Wisdom\n()";shape = circle;color = white;comment = "";];
+        spark_e_wisdom_t [label = "Grace of Wisdom\n()";shape = circle;color = white;comment = "";];
+        spark_f_wisdom_t [label = "Law of Wisdom\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_convergence {
         label = "Convergence";
@@ -27,7 +69,28 @@ strict digraph G {
         color = gray80;
         comment = "";
         
-        convergence_t [label = "Kirana";];
+        convergence_t [label = "Convergence\n(/dev/convergence)";];
+        
+        convergence_theosophy_t [label = "Theosophy\n(Theosophy Core)";shape = folder;comment = "";];
+        convergence_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        convergence_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_convergence_t [label = "Kirana\n(Larasati)";shape = doublecircle;comment = "";];
+        spark_1_convergence_t [label = "1\n()";shape = circle;color = darkred;comment = "";];
+        spark_2_convergence_t [label = "2\n()";shape = circle;color = darkgreen;comment = "";];
+        spark_3_convergence_t [label = "3\n()";shape = circle;comment = "";];
+        spark_4_convergence_t [label = "4\n()";shape = circle;color = darkblue;comment = "";];
+        spark_5_convergence_t [label = "5\n()";shape = circle;color = darkcyan;comment = "";];
+        spark_6_convergence_t [label = "6\n()";shape = circle;comment = "";];
+        spark_7_convergence_t [label = "7\n()";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_convergence_t [label = "8\n()";shape = circle;color = yellow;comment = "";];
+        spark_9_convergence_t [label = "9\n()";shape = circle;comment = "";];
+        spark_a_convergence_t [label = "Raiment of Convergence\n()";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_convergence_t [label = "Armament of Convergence\n()";shape = invtriangle;color = white;comment = "";];
+        spark_c_convergence_t [label = "Body of Convergence\n(Nine Tailed Aves of Vikara)";shape = circle;color = white;comment = "";];
+        spark_d_convergence_t [label = "Soul of Convergence\n()";shape = circle;color = white;comment = "";];
+        spark_e_convergence_t [label = "Grace of Convergence\n(Crest of Unity)";shape = circle;color = white;comment = "";];
+        spark_f_convergence_t [label = "Law of Convergence\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_divergence {
         label = "Divergence";
@@ -35,7 +98,28 @@ strict digraph G {
         color = gray80;
         comment = "";
         
-        divergence_t [label = "Chandra";];
+        divergence_t [label = "Divergence\n(/dev/divergence)";];
+        
+        divergence_theosophy_t [label = "Manas\n(Theosophy Core)";shape = folder;comment = "";];
+        divergence_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        divergence_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_divergence_t [label = "Chandra\n(Sasmita)";shape = doublecircle;comment = "";];
+        spark_1_divergence_t [label = "Manas of Eternity\n(Truth Lite)";shape = circle;color = darkred;comment = "";];
+        spark_2_divergence_t [label = "Manas of Infinity\n(Wisdom Lite)";shape = circle;color = darkgreen;comment = "";];
+        spark_3_divergence_t [label = "Manas of Nature\n(Haoma Lite)";shape = circle;comment = "";];
+        spark_4_divergence_t [label = "Manas of Causality\n(Samsara Lite)";shape = circle;color = darkblue;comment = "";];
+        spark_5_divergence_t [label = "Manas of Probability\n(Event Lite)";shape = circle;color = darkcyan;comment = "";];
+        spark_6_divergence_t [label = "Manas of Faith\n(Reality Lite)";shape = circle;comment = "";];
+        spark_7_divergence_t [label = "Manas of Space\n(Excitation Lite)";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_divergence_t [label = "Manas of Time\n(Fixation Lite)";shape = circle;color = yellow;comment = "";];
+        spark_9_divergence_t [label = "Manas of Creation\n(Convergence Lite)";shape = circle;comment = "";];
+        spark_a_divergence_t [label = "Raiment of Divergence\n(Indigo Vastra)";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_divergence_t [label = "Armament of Divergence\n(Obsidian Night)";shape = invtriangle;color = white;comment = "";];
+        spark_c_divergence_t [label = "Body of Divergence\n(Nine Headed Serpent of Vikara)";shape = circle;color = white;comment = "";];
+        spark_d_divergence_t [label = "Soul of Divergence\n()";shape = circle;color = white;comment = "";];
+        spark_e_divergence_t [label = "Grace of Divergence\n(Crest of Diversity)";shape = circle;color = white;comment = "";];
+        spark_f_divergence_t [label = "Law of Divergence\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_tha {
         label = "Fixation";
@@ -43,7 +127,28 @@ strict digraph G {
         color = gray80;
         comment = "";
         
-        fixation_t [label = "Tha";];
+        fixation_t [label = "Fixation\n(/dev/fixation)";];
+        
+        fixation_theosophy_t [label = "Theosophy\n(Theosophy Core)";shape = folder;comment = "";];
+        fixation_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        fixation_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_fixation_t [label = "Tha\n()";shape = doublecircle;comment = "";];
+        spark_1_fixation_t [label = "1\n()";shape = circle;color = darkred;comment = "";];
+        spark_2_fixation_t [label = "2\n()";shape = circle;color = darkgreen;comment = "";];
+        spark_3_fixation_t [label = "3\n()";shape = circle;comment = "";];
+        spark_4_fixation_t [label = "4\n()";shape = circle;color = darkblue;comment = "";];
+        spark_5_fixation_t [label = "5\n()";shape = circle;color = darkcyan;comment = "";];
+        spark_6_fixation_t [label = "6\n()";shape = circle;comment = "";];
+        spark_7_fixation_t [label = "7\n()";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_fixation_t [label = "8\n()";shape = circle;color = yellow;comment = "";];
+        spark_9_fixation_t [label = "9\n()";shape = circle;comment = "";];
+        spark_a_fixation_t [label = "Raiment of Fixation\n()";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_fixation_t [label = "Armament of Fixation\n()";shape = invtriangle;color = white;comment = "";];
+        spark_c_fixation_t [label = "Body of Fixation\n()";shape = circle;color = white;comment = "";];
+        spark_d_fixation_t [label = "Soul of Fixation\n()";shape = circle;color = white;comment = "";];
+        spark_e_fixation_t [label = "Grace of Fixation\n()";shape = circle;color = white;comment = "";];
+        spark_f_fixation_t [label = "Law of Fixation\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_nda {
         label = "Excitation";
@@ -51,6 +156,58 @@ strict digraph G {
         color = gray80;
         comment = "d";
         
-        excitation_t [label = "Nda";];
+        excitation_t [label = "Excitation\n(/dev/excitation)";];
+        
+        excitation_theosophy_t [label = "Theosophy\n(Theosophy Core)";shape = folder;comment = "";];
+        excitation_instrument_t [label = "Instrument\n(Capability Core)";shape = folder;comment = "";];
+        excitation_corpus_t [label = "Corpora\n(Manifestation Core)";shape = folder;comment = "";];
+        
+        spark_0_excitation_t [label = "Nda\n()";shape = doublecircle;comment = "";];
+        spark_1_excitation_t [label = "1\n()";shape = circle;color = darkred;comment = "";];
+        spark_2_excitation_t [label = "2\n()";shape = circle;color = darkgreen;comment = "";];
+        spark_3_excitation_t [label = "3\n()";shape = circle;comment = "";];
+        spark_4_excitation_t [label = "4\n()";shape = circle;color = darkblue;comment = "";];
+        spark_5_excitation_t [label = "5\n()";shape = circle;color = darkcyan;comment = "";];
+        spark_6_excitation_t [label = "6\n()";shape = circle;comment = "";];
+        spark_7_excitation_t [label = "7\n()";shape = circle;color = darkmagenta;comment = "";];
+        spark_8_excitation_t [label = "8\n()";shape = circle;color = yellow;comment = "";];
+        spark_9_excitation_t [label = "9\n()";shape = circle;comment = "";];
+        spark_a_excitation_t [label = "Raiment of Excitation\n()";shape = triangle;color = black;fontcolor = white;comment = "";];
+        spark_b_excitation_t [label = "Armament of Excitation\n()";shape = invtriangle;color = white;comment = "";];
+        spark_c_excitation_t [label = "Body of Excitation\n()";shape = circle;color = white;comment = "";];
+        spark_d_excitation_t [label = "Soul of Excitation\n()";shape = circle;color = white;comment = "";];
+        spark_e_excitation_t [label = "Grace of Excitation\n()";shape = circle;color = white;comment = "";];
+        spark_f_excitation_t [label = "Law of Excitation\n()";shape = circle;color = white;comment = "";];
     }
+    
+    // Truth
+    truth_t -> {spark_0_truth_t};
+    spark_0_truth_t -> truth_instrument_t -> {spark_a_truth_t spark_b_truth_t};
+    spark_0_truth_t -> truth_theosophy_t -> {spark_1_truth_t spark_2_truth_t spark_3_truth_t spark_4_truth_t spark_5_truth_t spark_6_truth_t spark_7_truth_t spark_8_truth_t spark_9_truth_t};
+    spark_0_truth_t -> truth_corpus_t -> {spark_c_truth_t spark_d_truth_t spark_e_truth_t spark_f_truth_t};
+    // Wisdom
+    wisdom_t -> {spark_0_wisdom_t};
+    spark_0_wisdom_t -> wisdom_instrument_t -> {spark_a_wisdom_t spark_b_wisdom_t};
+    spark_0_wisdom_t -> wisdom_theosophy_t -> {spark_1_wisdom_t spark_2_wisdom_t spark_3_wisdom_t spark_4_wisdom_t spark_5_wisdom_t spark_6_wisdom_t spark_7_wisdom_t spark_8_wisdom_t spark_9_wisdom_t};
+    spark_0_wisdom_t -> wisdom_corpus_t -> {spark_c_wisdom_t spark_d_wisdom_t spark_e_wisdom_t spark_f_wisdom_t};
+    // Convergence
+    convergence_t -> {spark_0_convergence_t};
+    spark_0_convergence_t -> convergence_instrument_t -> {spark_a_convergence_t spark_b_convergence_t};
+    spark_0_convergence_t -> convergence_theosophy_t -> {spark_1_convergence_t spark_2_convergence_t spark_3_convergence_t spark_4_convergence_t spark_5_convergence_t spark_6_convergence_t spark_7_convergence_t spark_8_convergence_t spark_9_convergence_t};
+    spark_0_convergence_t -> convergence_corpus_t -> {spark_c_convergence_t spark_d_convergence_t spark_e_convergence_t spark_f_convergence_t};
+    // Divergence
+    divergence_t -> {spark_0_divergence_t};
+    spark_0_divergence_t -> divergence_instrument_t -> {spark_a_divergence_t spark_b_divergence_t};
+    spark_0_divergence_t -> divergence_theosophy_t -> {spark_1_divergence_t spark_2_divergence_t spark_3_divergence_t spark_4_divergence_t spark_5_divergence_t spark_6_divergence_t spark_7_divergence_t spark_8_divergence_t spark_9_divergence_t};
+    spark_0_divergence_t -> divergence_corpus_t -> {spark_c_divergence_t spark_d_divergence_t spark_e_divergence_t spark_f_divergence_t};
+    // Fixation
+    fixation_t -> {spark_0_fixation_t};
+    spark_0_fixation_t -> fixation_instrument_t -> {spark_a_fixation_t spark_b_fixation_t};
+    spark_0_fixation_t -> fixation_theosophy_t -> {spark_1_fixation_t spark_2_fixation_t spark_3_fixation_t spark_4_fixation_t spark_5_fixation_t spark_6_fixation_t spark_7_fixation_t spark_8_fixation_t spark_9_fixation_t};
+    spark_0_fixation_t -> fixation_corpus_t -> {spark_c_fixation_t spark_d_fixation_t spark_e_fixation_t spark_f_divergence_t};
+    // Excitation
+    excitation_t -> {spark_0_excitation_t};
+    spark_0_excitation_t -> excitation_instrument_t -> {spark_a_excitation_t spark_b_excitation_t};
+    spark_0_excitation_t -> excitation_theosophy_t -> {spark_1_excitation_t spark_2_excitation_t spark_3_excitation_t spark_4_excitation_t spark_5_excitation_t spark_6_excitation_t spark_7_excitation_t spark_8_excitation_t spark_9_excitation_t};
+    spark_0_excitation_t -> excitation_corpus_t -> {spark_c_excitation_t spark_d_excitation_t spark_e_excitation_t spark_f_excitation_t};
 }
