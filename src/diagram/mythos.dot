@@ -61,5 +61,6 @@ strict digraph G {
     
     factor_t -> information_factor_t [color = red;];
     
-    {information_factor_t prime_directive_t spark_1_t spark_2_t spark_4_t spark_5_t spark_7_t spark_8_t spark_3_t spark_6_t spark_9_t} -> origin_space_t [color = red;];
+    {information_factor_t prime_directive_t spark_1_t spark_2_t spark_4_t spark_5_t spark_7_t spark_8_t} -> origin_space_t [color = red;];
+    origin_space_t -> {spark_3_t spark_6_t spark_9_t} [color = blue;];
 }
