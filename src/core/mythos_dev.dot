@@ -31,7 +31,7 @@ strict digraph G {
         spark_b_truth_t [label = "Armament of Truth\n()";shape = invtriangle;color = white;comment = "";];
         spark_c_truth_t [label = "Body of Truth\n()";shape = circle;color = white;comment = "";];
         spark_d_truth_t [label = "Soul of Truth\n()";shape = circle;color = white;comment = "";];
-        spark_e_truth_t [label = "Grace of Truth\n()";shape = circle;color = white;comment = "";];
+        spark_e_truth_t [label = "Grace of Truth\n(Crest of Clarity)";shape = circle;color = white;comment = "";];
         spark_f_truth_t [label = "Law of Truth\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_vidya {
@@ -60,7 +60,7 @@ strict digraph G {
         spark_b_wisdom_t [label = "Armament of Wisdom\n()";shape = invtriangle;color = white;comment = "";];
         spark_c_wisdom_t [label = "Body of Wisdom\n()";shape = circle;color = white;comment = "";];
         spark_d_wisdom_t [label = "Soul of Wisdom\n()";shape = circle;color = white;comment = "";];
-        spark_e_wisdom_t [label = "Grace of Wisdom\n()";shape = circle;color = white;comment = "";];
+        spark_e_wisdom_t [label = "Grace of Wisdom\n(Crest of Insight)";shape = circle;color = white;comment = "";];
         spark_f_wisdom_t [label = "Law of Wisdom\n()";shape = circle;color = white;comment = "";];
     }
     subgraph cluster_concept_convergence {
