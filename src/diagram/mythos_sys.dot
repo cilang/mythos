@@ -1,13 +1,14 @@
 digraph G {
-    label = "Technical";
+    label = "System";
     style = filled;
     color = red;
     comment = "";
     node [shape = polygon; sides = 6; style = filled; color = grey90;];
     
-    event_t;
-    samsara_t;
-    repository_t;
-    haoma_t;
-    capability_t;
+    spark_1_t [label = "Event\n(/sys/event)";];
+    spark_2_t [label = "Samsara\n(/sys/samsara)";];
+    spark_4_t [label = "Repository\n(/sys/repository)";];
+    spark_5_t [label = "Haoma\n(/sys/haoma)";];
+    spark_7_t [label = "Capability\n(/sys/capability)";];
+    spark_8_t [label = "Corpora\n(/sys/corpora)";];
 }

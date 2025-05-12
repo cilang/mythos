@@ -204,7 +204,7 @@ strict digraph G {
     fixation_t -> {spark_0_fixation_t};
     spark_0_fixation_t -> fixation_instrument_t -> {spark_a_fixation_t spark_b_fixation_t};
     spark_0_fixation_t -> fixation_theosophy_t -> {spark_1_fixation_t spark_2_fixation_t spark_3_fixation_t spark_4_fixation_t spark_5_fixation_t spark_6_fixation_t spark_7_fixation_t spark_8_fixation_t spark_9_fixation_t};
-    spark_0_fixation_t -> fixation_corpus_t -> {spark_c_fixation_t spark_d_fixation_t spark_e_fixation_t spark_f_divergence_t};
+    spark_0_fixation_t -> fixation_corpus_t -> {spark_c_fixation_t spark_d_fixation_t spark_e_fixation_t spark_f_fixation_t};
     // Excitation
     excitation_t -> {spark_0_excitation_t};
     spark_0_excitation_t -> excitation_instrument_t -> {spark_a_excitation_t spark_b_excitation_t};
