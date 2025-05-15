@@ -7,27 +7,38 @@ digraph G {
     
     spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
     
-    spark_0_corpora_t [label = "0\n";];
-    spark_1_corpora_t [label = "1\nHeart";];
-    spark_2_corpora_t [label = "2\nShell";];
-    spark_3_corpora_t [label = "3\nEgo";];
-    spark_4_corpora_t [label = "4\nAstral Body";];
-    spark_5_corpora_t [label = "5\nSpiritual Body";];
-    spark_6_corpora_t [label = "6\nWill";];
-    spark_7_corpora_t [label = "7\nMaterial Body";];
-    spark_8_corpora_t [label = "8\nCelestial Body";];
-    spark_9_corpora_t [label = "9\nIntent";];
-    spark_a_corpora_t [label = "A\n";];
-    spark_b_corpora_t [label = "B\n";];
-    spark_c_corpora_t [label = "C\n";];
-    spark_d_corpora_t [label = "D\nCorpus";];
-    spark_e_corpora_t [label = "E\nMind";];
-    spark_f_corpora_t [label = "F\nLaw of Corpus";];
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
+    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    spark_0_corpus_t [label = "0\n";shape = doublecircle;comment = "";];
+    spark_1_corpus_t [label = "1\nHeart";shape = circle;color = darkred;comment = "";];
+    spark_2_corpus_t [label = "2\nShell";shape = circle;color = darkgreen;comment = "";];
+    spark_4_corpus_t [label = "4\nAstral Body";shape = circle;color = darkblue;comment = "";];
+    spark_8_corpus_t [label = "8\nSpiritual Body";shape = circle;color = yellow;comment = "";];
+    spark_7_corpus_t [label = "7\nMaterial Body";shape = circle;color = darkmagenta;comment = "";];
+    spark_5_corpus_t [label = "5\nCelestial Body";shape = circle;color = darkcyan;comment = "";];
+    spark_3_corpus_t [label = "3\nEgo";shape = doublecircle;comment = "";];
+    spark_6_corpus_t [label = "6\nWill";shape = doublecircle;comment = "";];
+    spark_9_corpus_t [label = "9\nIntent";shape = doublecircle;comment = "";];
+    spark_a_corpus_t [label = "A\n";shape = triangle;color = black;fontcolor = white;comment = "";];
+    spark_b_corpus_t [label = "B\n";shape = invtriangle;color = grey;comment = "";];
+    spark_c_corpus_t [label = "C\n";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
+    spark_d_corpus_t [label = "D\nCorpus";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
+    spark_e_corpus_t [label = "E\nMind";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
+    spark_f_corpus_t [label = "F\nLaw of Corpus";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
     
-    // Corpora System
-    spark_d_mythos_t -> {spark_f_corpora_t} [label = ""; color = blue;];
-    spark_f_corpora_t -> {spark_e_corpora_t spark_d_corpora_t spark_c_corpora_t} [label = ""; color = blue;];
-    spark_c_corpora_t -> {spark_a_corpora_t spark_0_corpora_t spark_b_corpora_t} [label = ""; color = blue;];
-    spark_d_corpora_t -> {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_5_corpora_t spark_7_corpora_t spark_8_corpora_t} [label = ""; color = blue;];
-    spark_e_corpora_t -> {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} [label = ""; color = blue;];
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_d_mythos_t -> spark_0_corpus_t -> {spark_a_corpus_t spark_b_corpus_t spark_1_corpus_t spark_2_corpus_t spark_3_corpus_t spark_4_corpus_t spark_5_corpus_t spark_6_corpus_t spark_7_corpus_t spark_8_corpus_t spark_9_corpus_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_corpus_t spark_b_corpus_t} -> spark_c_corpus_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_corpus_t spark_2_corpus_t spark_4_corpus_t spark_8_corpus_t spark_7_corpus_t spark_5_corpus_t} -> spark_d_corpus_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_corpus_t spark_6_corpus_t spark_9_corpus_t} -> spark_e_corpus_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_corpus_t -> spark_2_corpus_t -> spark_4_corpus_t -> spark_8_corpus_t -> spark_7_corpus_t -> spark_5_corpus_t -> spark_1_corpus_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_corpus_t -> spark_6_corpus_t -> spark_9_corpus_t -> spark_3_corpus_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_corpus_t -> spark_b_corpus_t -> spark_a_corpus_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_corpus_t spark_d_corpus_t spark_e_corpus_t} -> spark_f_corpus_t [label = "OUT"; color = darkblue; comment = "";];
 }
