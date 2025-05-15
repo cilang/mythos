@@ -10,10 +10,10 @@ strict digraph G {
     spark_0_truth_t [label = "0x0\nAsha\n()";shape = doublecircle;comment = "";];
     spark_1_truth_t [label = "0x1\n()";shape = circle;comment = "";];
     spark_2_truth_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_truth_t [label = "0x3\n()";shape = circle;comment = "";];
+    spark_3_truth_t [label = "0x3\n(Crest of Objectivity)";shape = circle;comment = "";];
     spark_4_truth_t [label = "0x4\n()";shape = circle;comment = "";];
     spark_5_truth_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_truth_t [label = "0x6\n()";shape = circle;comment = "";];
+    spark_6_truth_t [label = "0x6\n(Crest of Boundary)";shape = circle;comment = "";];
     spark_7_truth_t [label = "0x7\n()";shape = circle;comment = "";];
     spark_8_truth_t [label = "0x8\n()";shape = circle;comment = "";];
     spark_9_truth_t [label = "0x9\n(Crest of Clarity)";shape = circle;comment = "";];

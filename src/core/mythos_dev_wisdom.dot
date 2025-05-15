@@ -10,10 +10,10 @@ strict digraph G {
     spark_0_wisdom_t [label = "0x0\nVidya\n()";shape = doublecircle;comment = "";];
     spark_1_wisdom_t [label = "0x1\n()";shape = circle;comment = "";];
     spark_2_wisdom_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_wisdom_t [label = "0x3\n()";shape = circle;comment = "";];
+    spark_3_wisdom_t [label = "0x3\n(Crest of Complexity)";shape = circle;comment = "";];
     spark_4_wisdom_t [label = "0x4\n()";shape = circle;comment = "";];
     spark_5_wisdom_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_wisdom_t [label = "0x6\n()";shape = circle;comment = "";];
+    spark_6_wisdom_t [label = "0x6\n(Crest of Reflection)";shape = circle;comment = "";];
     spark_7_wisdom_t [label = "0x7\n()";shape = circle;comment = "";];
     spark_8_wisdom_t [label = "0x8\n()";shape = circle;comment = "";];
     spark_9_wisdom_t [label = "0x9\n(Crest of Insight)";shape = circle;comment = "";];

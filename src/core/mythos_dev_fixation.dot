@@ -10,10 +10,10 @@ strict digraph G {
     spark_0_fixation_t [label = "0xA\nTha\n()";shape = doublecircle;comment = "";];
     spark_1_fixation_t [label = "0x1\n()";shape = circle;comment = "";];
     spark_2_fixation_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_fixation_t [label = "0x3\n()";shape = circle;comment = "";];
+    spark_3_fixation_t [label = "0x3\n(Crest of Desire)";shape = circle;comment = "";];
     spark_4_fixation_t [label = "0x4\n()";shape = circle;comment = "";];
     spark_5_fixation_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_fixation_t [label = "0x6\n()";shape = circle;comment = "";];
+    spark_6_fixation_t [label = "0x6\n(Crest of Transformation)";shape = circle;comment = "";];
     spark_7_fixation_t [label = "0x7\n()";shape = circle;comment = "";];
     spark_8_fixation_t [label = "0x8\n()";shape = circle;comment = "";];
     spark_9_fixation_t [label = "0x9\n(Crest of Matter)";shape = circle;comment = "";];
