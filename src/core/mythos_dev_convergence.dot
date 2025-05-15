@@ -1,0 +1,40 @@
+strict digraph G {
+    label = "Convergence";
+    style = filled;
+    color = blue;
+    comment = "";
+    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    
+    spark_2_mythos_t [label = "0x2\nConvergence\n(/dev/convergence)";];
+    
+    spark_0_convergence_t [label = "0x0\nKirana\n(Larasati)";shape = doublecircle;comment = "";];
+    spark_1_convergence_t [label = "0x1\n()";shape = circle;comment = "";];
+    spark_2_convergence_t [label = "0x2\n()";shape = circle;comment = "";];
+    spark_3_convergence_t [label = "0x3\n()";shape = circle;comment = "";];
+    spark_4_convergence_t [label = "0x4\n()";shape = circle;comment = "";];
+    spark_5_convergence_t [label = "0x5\n()";shape = circle;comment = "";];
+    spark_6_convergence_t [label = "0x6\n()";shape = circle;comment = "";];
+    spark_7_convergence_t [label = "0x7\n()";shape = circle;comment = "";];
+    spark_8_convergence_t [label = "0x8\n()";shape = circle;comment = "";];
+    spark_9_convergence_t [label = "0x9\n(Crest of Unity)";shape = circle;comment = "";];
+    spark_a_convergence_t [label = "0xA\nRaiment of Convergence\n()";shape = triangle;comment = "";];
+    spark_b_convergence_t [label = "0xB\nArmament of Convergence\n()";shape = invtriangle;comment = "";];
+    spark_c_convergence_t [label = "0xC\nBody of Convergence\n(Nine Tailed Aves of Vikara)";shape = circle;comment = "";];
+    spark_d_convergence_t [label = "0xD\nSoul of Convergence\n()";shape = circle;comment = "";];
+    spark_e_convergence_t [label = "0xE\nGrace of Convergence\n()";shape = circle;comment = "";];
+    spark_f_convergence_t [label = "0xF\nLaw of Convergence\n()";shape = circle;comment = "";];
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_2_mythos_t -> spark_0_convergence_t -> {spark_a_convergence_t spark_b_convergence_t spark_1_convergence_t spark_2_convergence_t spark_3_convergence_t spark_4_convergence_t spark_5_convergence_t spark_6_convergence_t spark_7_convergence_t spark_8_convergence_t spark_9_convergence_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_convergence_t -> spark_b_convergence_t -> spark_a_convergence_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_convergence_t spark_d_convergence_t spark_e_convergence_t} -> spark_f_convergence_t [label = "OUT"; color = darkblue; comment = "";];
+}

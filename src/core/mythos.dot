@@ -2,92 +2,38 @@ strict digraph G {
     label = "MythOS";
     style = filled;
     color = grey90;
-    root = "spark_0_t";
-    node [shape = circle; style = filled; color = darkseagreen;];
+    node [shape = circle; style = filled; color = green;];
     edge [color = darkgray;];
     
-    subgraph cluster_0 {
-        label = "Conceptual\n(/dev)";
-        style = filled;
-        color = grey80;
-        spark_a_t [label = "Fixation\n(/dev/fixation)";shape = doublecircle;];
-        spark_b_t [label = "Excitation\n(/dev/excitation)";shape = doublecircle;];
-        spark_c_t [label = "Convergence\n(/dev/convergence)";shape = doublecircle;];
-        spark_d_t [label = "Divergence\n(/dev/divergence)";shape = doublecircle;];
-        spark_e_t [label = "Wisdom\n(/dev/wisdom)";shape = doublecircle;];
-        spark_f_t [label = "Truth\n(/dev/truth)";shape = doublecircle;];
-    }
-    subgraph cluster_1 {
-        label = "Process\n(/proc)";
-        style = filled;
-        color = grey80;
-        spark_0_t [label = "Reality\n(/proc)";shape = doublecircle;];
-        observer_model_t [label = "Observer Model";shape = folder;];
-        alignment_model_t [label = "Alignment Model";shape = folder;];
-        spectral_model_t [label = "Spectral Model";shape = folder;];
-        factor_t [label = "Factor";shape = folder;];
-        prime_directive_t [label = "Prime Directive";shape = folder;];
-        information_factor_t [label = "Information Factor";shape = folder;];
-    }
-    subgraph cluster_2 {
-        label = "System\n(/sys)";
-        style = filled;
-        color = grey80;
-        spark_1_t [label = "Event\n(/sys/event)";];
-        spark_2_t [label = "Samsara\n(/sys/samsara)";];
-        spark_4_t [label = "Repository\n(/sys/repository)";];
-        spark_5_t [label = "Haoma\n(/sys/haoma)";];
-        spark_7_t [label = "Capability\n(/sys/capability)";];
-        spark_8_t [label = "Corpora\n(/sys/corpora)";];
-    }
-    subgraph cluster_3 {
-        label = "Service\n(/srv)";
-        style = filled;
-        color = grey80;
-        spark_3_t [label = "Color Codex\nChaos Codex\n(/srv/color)";shape = doublecircle;];
-        spark_9_t [label = "Brane Codex\nCelestial Codex\n(/srv/brane)";shape = doublecircle;];
-        spark_6_t [label = "Law Codex\nOrder Codex\n(/srv/law)";shape = doublecircle;];
-    }
-    subgraph cluster_4 {
-        label = "Origin Space\n(/srv/origin-space)";
-        style = filled;
-        color = grey80;
-        
-        origin_space_t [label = "Origin Space\nInformation Essence\n(/srv/origin-space)";color = silver;shape = doubleoctagon;color = darkcyan;];
-        chaotic_space_t [label = "Chaotic Space\nInformation Particle\n(/srv/origin-space/chaotic-space)";color = silver;shape = doubleoctagon;color = darkcyan;];
-        manthan_space_t [label = "Manthan Space\nInformation Waves\n(/srv/origin-space/manthan-space)";color = silver;shape = doubleoctagon;color = darkcyan;];
-    }
-    subgraph cluster_5 {
-        label = "Astacitari\nFictional Verse\n(/srv/origin-space/chaotic-space)";
-        style = filled;
-        color = grey80;
-        
-        astakona_t [label = "Astakona\nThe Land of Astakona\n(/srv/origin-space/chaotic-space/astakona)";color = silver;shape = doubleoctagon;color = darkcyan;];
-        astra_t [label = "Astra\nThe Land of Astra\n(/srv/origin-space/chaotic-space/astra)";color = silver;shape = doubleoctagon;color = darkcyan;];
-        rhea_t [label = "Rhea\nThe Land of Rhea\n(/srv/origin-space/chaotic-space/rhea)";color = silver;shape = doubleoctagon;color = darkcyan;];
-    }
-    subgraph cluster_6 {
-        label = "Ariadiana\nInspirational Verse\n(/srv/origin-space/chaotic-space/ariadiana)";
-        style = filled;
-        color = grey80;
-        
-        earth_t [label = "Earth\nIRL Earth Insert\n(/srv/origin-space/chaotic-space/ariadiana/earth)";color = silver;shape = doubleoctagon;color = darkcyan;];
-    }
+    spark_1_mythos_t [label = "0x1\nTruth\n(/dev/truth)";];
+    spark_2_mythos_t [label = "0x2\nConvergence\n(/dev/convergence)";];
+    spark_4_mythos_t [label = "0x4\nFixation\n(/dev/fixation)";];
+    spark_5_mythos_t [label = "0x5\nExcitation\n(/dev/excitation)";];
+    spark_7_mythos_t [label = "0x7\nDivergence\n(/dev/divergence)";];
+    spark_8_mythos_t [label = "0x8\nWisdom\n(/dev/wisdom)";];
+    spark_3_mythos_t [label = "0x3\nCapability\n(/sys/capability)";shape = doublecircle;];
+    spark_6_mythos_t [label = "0x6\nRepository\n(/sys/repository)";shape = doublecircle;];
+    spark_9_mythos_t [label = "0x9\nHaoma\n(/sys/haoma)";shape = doublecircle;];
+    spark_a_mythos_t [label = "0xA\nEvent\n(/proc/event)";shape = doublecircle;];
+    spark_0_mythos_t [label = "0x0\nReality\n(/proc/reality)";shape = doublecircle;];
+    spark_b_mythos_t [label = "0xB\nSamsara\n(/proc/samsara)";shape = doublecircle;];
+    spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
+    spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
+    spark_e_mythos_t [label = "0xE\nAuthority\n(/srv/authority)";shape = doublecircle;];
+    spark_f_mythos_t [label = "Origin\n(/var/origin)";shape = doublecircle;];
     
-    {spark_a_t spark_b_t} -> observer_model_t [color = red;];
-    {spark_c_t spark_d_t} -> alignment_model_t [color = red;];
-    {spark_e_t spark_f_t} -> spectral_model_t [color = red;];
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_mythos_t -> {spark_a_mythos_t spark_b_mythos_t spark_1_mythos_t spark_2_mythos_t spark_3_mythos_t spark_4_mythos_t spark_5_mythos_t spark_6_mythos_t spark_7_mythos_t spark_8_mythos_t spark_9_mythos_t} [label = "IN"; color = yellow; comment = "";];
     
-    spark_0_t -> {factor_t prime_directive_t} [color = red;];
+    {spark_a_mythos_t spark_b_mythos_t} -> spark_c_mythos_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; color = darkblue; comment = "";];
     
-    {observer_model_t alignment_model_t spectral_model_t} -> factor_t [color = red;];
+    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_mythos_t -> spark_b_mythos_t -> spark_a_mythos_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
     
-    factor_t -> information_factor_t [color = red;];
-    
-    {information_factor_t prime_directive_t spark_1_t spark_2_t spark_4_t spark_5_t spark_7_t spark_8_t} -> origin_space_t [color = green;];
-    {spark_3_t spark_6_t spark_9_t} -> origin_space_t [color = blue;];
-    origin_space_t -> {chaotic_space_t manthan_space_t} [color = darkmagenta;];
-    
-    chaotic_space_t -> {earth_t astra_t rhea_t} [color = darkmagenta;];
-    {astra_t rhea_t} -> astakona_t [label = "Mythical Dance"; color = darkmagenta;];
+    {spark_c_mythos_t spark_d_mythos_t spark_e_mythos_t} -> spark_f_mythos_t [label = "OUT"; color = darkblue; comment = "";];
 }

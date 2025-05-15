@@ -1,0 +1,39 @@
+strict digraph G {
+    label = "Alignment Model\n(/proc/reality/factor/alignment-model)";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // Alignment Model
+    spark_0_alignment_seed_t [label = "Dumadi\n(Factor)";shape = doublecircle;comment = "Raw potential (unformatted).";];
+    spark_1_alignment_seed_t [label = "K\n(Causality)";shape = circle;color = darkred;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
+    spark_2_alignment_seed_t [label = "Θ\n(Topology)";shape = circle;color = darkgreen;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
+    spark_3_alignment_seed_t [label = "C\n(Charge)";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
+    spark_4_alignment_seed_t [label = "D\n(Dimensionality)";shape = circle;color = darkblue;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
+    spark_5_alignment_seed_t [label = "Λ\n(Logic)";shape = circle;color = darkcyan;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
+    spark_6_alignment_seed_t [label = "P\n(Parity)";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
+    spark_7_alignment_seed_t [label = "Φ\n(Phase)";shape = circle;color = darkmagenta;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
+    spark_8_alignment_seed_t [label = "V\n(Void)";shape = circle;color = yellow;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
+    spark_9_alignment_seed_t [label = "T\n(Time)";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
+    spark_a_alignment_seed_t [label = "Convergence\n(Unity)";shape = triangle;color = black;fontcolor = white;comment = "Cosmic bus (information routing).";];
+    spark_b_alignment_seed_t [label = "Divergence\n(Diversity)";shape = invtriangle;color = white;comment = "Cosmic bus (information routing).";];
+    spark_c_alignment_seed_t [label = "C\n(Alignment)";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
+    spark_d_alignment_seed_t [label = "D\n(Alignment)";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
+    spark_e_alignment_seed_t [label = "E\n(Alignment)";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
+    spark_f_alignment_seed_t [label = "F\n(Alignment)";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_alignment_seed_t -> {spark_a_alignment_seed_t spark_b_alignment_seed_t spark_1_alignment_seed_t spark_2_alignment_seed_t spark_3_alignment_seed_t spark_4_alignment_seed_t spark_5_alignment_seed_t spark_6_alignment_seed_t spark_7_alignment_seed_t spark_8_alignment_seed_t spark_9_alignment_seed_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_alignment_seed_t spark_b_alignment_seed_t} -> spark_c_alignment_seed_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_alignment_seed_t spark_2_alignment_seed_t spark_4_alignment_seed_t spark_8_alignment_seed_t spark_7_alignment_seed_t spark_5_alignment_seed_t} -> spark_d_alignment_seed_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_alignment_seed_t spark_6_alignment_seed_t spark_9_alignment_seed_t} -> spark_e_alignment_seed_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_alignment_seed_t -> spark_2_alignment_seed_t -> spark_4_alignment_seed_t -> spark_8_alignment_seed_t -> spark_7_alignment_seed_t -> spark_5_alignment_seed_t -> spark_1_alignment_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_alignment_seed_t -> spark_6_alignment_seed_t -> spark_9_alignment_seed_t -> spark_3_alignment_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_alignment_seed_t -> spark_b_alignment_seed_t -> spark_a_alignment_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_alignment_seed_t spark_d_alignment_seed_t spark_e_alignment_seed_t} -> spark_f_alignment_seed_t [label = "OUT"; color = darkblue; comment = "";];
+}

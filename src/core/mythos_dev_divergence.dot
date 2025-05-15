@@ -1,0 +1,40 @@
+strict digraph G {
+    label = "Divergence";
+    style = filled;
+    color = blue;
+    comment = "";
+    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    
+    spark_7_mythos_t [label = "0x7\nDivergence\n(/dev/divergence)";];
+    
+    spark_0_divergence_t [label = "0x0\nChandra\n(Sasmita)";shape = doublecircle;comment = "";];
+    spark_1_divergence_t [label = "0x1\nManas of Eternity\n(Truth Lite)";shape = circle;comment = "";];
+    spark_2_divergence_t [label = "0x2\nManas of Infinity\n(Wisdom Lite)";shape = circle;comment = "";];
+    spark_3_divergence_t [label = "0x3\n(Crest of Chaos)";shape = circle;comment = "";];
+    spark_4_divergence_t [label = "0x4\nManas of Causality\n(Samsara Lite)";shape = circle;comment = "";];
+    spark_5_divergence_t [label = "0x5\nManas of Probability\n(Event Lite)";shape = circle;comment = "";];
+    spark_6_divergence_t [label = "0x6\n(Crest of Destruction)";shape = circle;comment = "";];
+    spark_7_divergence_t [label = "0x7\nManas of Spacetime\n(Repository Lite)";shape = circle;comment = "";];
+    spark_8_divergence_t [label = "0x8\nManas of Nature\n(Haoma Lite)";shape = circle;comment = "";];
+    spark_9_divergence_t [label = "0x9\n(Crest of Diversity)";shape = circle;comment = "";];
+    spark_a_divergence_t [label = "0xA\nRaiment of Divergence\n(Indigo Vastra)";shape = triangle;comment = "";];
+    spark_b_divergence_t [label = "0xB\nArmament of Divergence\n(Obsidian Night)";shape = invtriangle;comment = "";];
+    spark_c_divergence_t [label = "0xC\nBody of Divergence\n(Nine Headed Serpent of Vikara)";shape = circle;comment = "";];
+    spark_d_divergence_t [label = "0xD\nSoul of Divergence\n()";shape = circle;comment = "";];
+    spark_e_divergence_t [label = "0xE\nGrace of Divergence\n()";shape = circle;comment = "";];
+    spark_f_divergence_t [label = "0xF\nLaw of Divergence\n()";shape = circle;comment = "";];
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_7_mythos_t -> spark_0_divergence_t -> {spark_a_divergence_t spark_b_divergence_t spark_1_divergence_t spark_2_divergence_t spark_3_divergence_t spark_4_divergence_t spark_5_divergence_t spark_6_divergence_t spark_7_divergence_t spark_8_divergence_t spark_9_divergence_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_divergence_t spark_b_divergence_t} -> spark_c_divergence_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} -> spark_d_divergence_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} -> spark_e_divergence_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_divergence_t -> spark_2_divergence_t -> spark_4_divergence_t -> spark_8_divergence_t -> spark_7_divergence_t -> spark_5_divergence_t -> spark_1_divergence_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_divergence_t -> spark_6_divergence_t -> spark_9_divergence_t -> spark_3_divergence_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_divergence_t -> spark_b_divergence_t -> spark_a_divergence_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_divergence_t spark_d_divergence_t spark_e_divergence_t} -> spark_f_divergence_t [label = "OUT"; color = darkblue; comment = "";];
+}

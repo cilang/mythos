@@ -1,0 +1,33 @@
+digraph G {
+    label = "Corpora";
+    style = filled;
+    color = red;
+    comment = "";
+    node [shape = circle; style = filled; color = darkcyan;];
+    
+    spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
+    
+    spark_0_corpora_t [label = "0\n";];
+    spark_1_corpora_t [label = "1\nHeart";];
+    spark_2_corpora_t [label = "2\nShell";];
+    spark_3_corpora_t [label = "3\nEgo";];
+    spark_4_corpora_t [label = "4\nAstral Body";];
+    spark_5_corpora_t [label = "5\nSpiritual Body";];
+    spark_6_corpora_t [label = "6\nWill";];
+    spark_7_corpora_t [label = "7\nMaterial Body";];
+    spark_8_corpora_t [label = "8\nCelestial Body";];
+    spark_9_corpora_t [label = "9\nIntent";];
+    spark_a_corpora_t [label = "A\n";];
+    spark_b_corpora_t [label = "B\n";];
+    spark_c_corpora_t [label = "C\n";];
+    spark_d_corpora_t [label = "D\nCorpus";];
+    spark_e_corpora_t [label = "E\nMind";];
+    spark_f_corpora_t [label = "F\nLaw of Corpus";];
+    
+    // Corpora System
+    spark_d_mythos_t -> {spark_f_corpora_t} [label = ""; color = blue;];
+    spark_f_corpora_t -> {spark_e_corpora_t spark_d_corpora_t spark_c_corpora_t} [label = ""; color = blue;];
+    spark_c_corpora_t -> {spark_a_corpora_t spark_0_corpora_t spark_b_corpora_t} [label = ""; color = blue;];
+    spark_d_corpora_t -> {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_5_corpora_t spark_7_corpora_t spark_8_corpora_t} [label = ""; color = blue;];
+    spark_e_corpora_t -> {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} [label = ""; color = blue;];
+}

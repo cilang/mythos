@@ -1,0 +1,44 @@
+digraph G {
+    label = "Directive";
+    style = filled;
+    color = red;
+    comment = "";
+    node [shape = circle; style = filled; color = darkcyan;];
+    
+    spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
+    
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
+    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    spark_0_t [label = "0";shape = doublecircle;comment = "";];
+    spark_1_t [label = "1";shape = circle;color = darkred;comment = "";];
+    spark_2_t [label = "2";shape = circle;color = darkgreen;comment = "";];
+    spark_4_t [label = "4";shape = circle;color = darkblue;comment = "";];
+    spark_8_t [label = "8";shape = circle;color = yellow;comment = "";];
+    spark_7_t [label = "7";shape = circle;color = darkmagenta;comment = "";];
+    spark_5_t [label = "5";shape = circle;color = darkcyan;comment = "";];
+    spark_3_t [label = "3";shape = doublecircle;comment = "";];
+    spark_6_t [label = "6";shape = doublecircle;comment = "";];
+    spark_9_t [label = "9";shape = doublecircle;comment = "";];
+    spark_a_t [label = "A";shape = triangle;color = black;fontcolor = white;comment = "";];
+    spark_b_t [label = "B";shape = invtriangle;color = grey;comment = "";];
+    spark_c_t [label = "C";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
+    spark_d_t [label = "D";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
+    spark_e_t [label = "E";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
+    spark_f_t [label = "F";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_t -> {spark_a_t spark_b_t spark_1_t spark_2_t spark_3_t spark_4_t spark_5_t spark_6_t spark_7_t spark_8_t spark_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_t -> spark_b_t -> spark_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_t spark_d_t spark_e_t} -> spark_f_t [label = "OUT"; color = darkblue; comment = "";];
+}
