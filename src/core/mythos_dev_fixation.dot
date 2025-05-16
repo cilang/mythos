@@ -23,6 +23,7 @@ strict digraph G {
     spark_d_fixation_t [label = "0xD\nSoul of Fixation\n()";shape = circle;comment = "";];
     spark_e_fixation_t [label = "0xE\nGrace of Fixation\n()";shape = circle;comment = "";];
     spark_f_fixation_t [label = "0xF\nLaw of Fixation\n()";shape = circle;comment = "";];
+    
     // IN = Input
     // OUT = Output
     // REC = Recursion

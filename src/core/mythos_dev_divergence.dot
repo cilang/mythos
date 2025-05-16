@@ -23,6 +23,7 @@ strict digraph G {
     spark_d_divergence_t [label = "0xD\nSoul of Divergence\n()";shape = circle;comment = "";];
     spark_e_divergence_t [label = "0xE\nGrace of Divergence\n()";shape = circle;comment = "";];
     spark_f_divergence_t [label = "0xF\nLaw of Divergence\n()";shape = circle;comment = "";];
+    
     // IN = Input
     // OUT = Output
     // REC = Recursion

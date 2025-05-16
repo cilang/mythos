@@ -1,5 +1,5 @@
 digraph G {
-    label = "Repository";
+    label = "Repository Engine";
     style = filled;
     color = red;
     comment = "";
@@ -10,22 +10,22 @@ digraph G {
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-    spark_0_repository_t [label = "0";shape = doublecircle;comment = "";];
-    spark_1_repository_t [label = "1";shape = circle;color = darkred;comment = "";];
-    spark_2_repository_t [label = "2";shape = circle;color = darkgreen;comment = "";];
-    spark_4_repository_t [label = "4";shape = circle;color = darkblue;comment = "";];
-    spark_8_repository_t [label = "8";shape = circle;color = yellow;comment = "";];
-    spark_7_repository_t [label = "7";shape = circle;color = darkmagenta;comment = "";];
-    spark_5_repository_t [label = "5";shape = circle;color = darkcyan;comment = "";];
-    spark_3_repository_t [label = "3";shape = doublecircle;comment = "";];
-    spark_6_repository_t [label = "6";shape = doublecircle;comment = "";];
-    spark_9_repository_t [label = "9";shape = doublecircle;comment = "";];
-    spark_a_repository_t [label = "A";shape = triangle;color = black;fontcolor = white;comment = "";];
-    spark_b_repository_t [label = "B";shape = invtriangle;color = grey;comment = "";];
-    spark_c_repository_t [label = "C";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-    spark_d_repository_t [label = "D";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-    spark_e_repository_t [label = "E";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-    spark_f_repository_t [label = "F";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    spark_0_repository_t [label = "0\n\n()";shape = doublecircle;comment = "";];
+    spark_1_repository_t [label = "1\n\n()";shape = circle;comment = "";];
+    spark_2_repository_t [label = "2\n\n()";shape = circle;comment = "";];
+    spark_4_repository_t [label = "4\n\n()";shape = circle;comment = "";];
+    spark_8_repository_t [label = "8\n\n()";shape = circle;comment = "";];
+    spark_7_repository_t [label = "7\n\n()";shape = circle;comment = "";];
+    spark_5_repository_t [label = "5\n\n()";shape = circle;comment = "";];
+    spark_3_repository_t [label = "3\n\n()";shape = doublecircle;comment = "";];
+    spark_6_repository_t [label = "6\n\n()";shape = doublecircle;comment = "";];
+    spark_9_repository_t [label = "9\n\n()";shape = doublecircle;comment = "";];
+    spark_a_repository_t [label = "A\n\n()";shape = triangle;comment = "";];
+    spark_b_repository_t [label = "B\n\n()";shape = invtriangle;comment = "";];
+    spark_c_repository_t [label = "C\n\n()";shape = doublecircle;];
+    spark_d_repository_t [label = "D\n\n()";shape = doublecircle;];
+    spark_e_repository_t [label = "E\n\n()";shape = doublecircle;];
+    spark_f_repository_t [label = "F\nLaw of Spacetime\n()";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

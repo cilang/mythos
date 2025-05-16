@@ -23,6 +23,7 @@ strict digraph G {
     spark_d_excitation_t [label = "0xD\nSoul of Excitation\n()";shape = circle;comment = "";];
     spark_e_excitation_t [label = "0xE\nGrace of Excitation\n()";shape = circle;comment = "";];
     spark_f_excitation_t [label = "0xF\nLaw of Excitation\n()";shape = circle;comment = "";];
+    
     // IN = Input
     // OUT = Output
     // REC = Recursion

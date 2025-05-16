@@ -8,22 +8,22 @@ strict digraph G {
     
     spark_a_mythos_t [label = "0xA\nEvent\n(/proc/event)";shape = doublecircle;];
     
-    spark_0_event_t [label = "0";shape = doublecircle;comment = "";];
-    spark_1_event_t [label = "1";shape = circle;color = darkred;comment = "";];
-    spark_2_event_t [label = "2";shape = circle;color = darkgreen;comment = "";];
-    spark_3_event_t [label = "3";shape = doublecircle;comment = "";];
-    spark_4_event_t [label = "4";shape = circle;color = darkblue;comment = "";];
-    spark_5_event_t [label = "5";shape = circle;color = darkcyan;comment = "";];
-    spark_6_event_t [label = "6";shape = doublecircle;comment = "";];
-    spark_7_event_t [label = "7";shape = circle;color = darkmagenta;comment = "";];
-    spark_8_event_t [label = "8";shape = circle;color = yellow;comment = "";];
-    spark_9_event_t [label = "9";shape = doublecircle;comment = "";];
-    spark_a_event_t [label = "A";shape = triangle;color = black;fontcolor = white;comment = "";];
-    spark_b_event_t [label = "B";shape = invtriangle;color = grey;comment = "";];
-    spark_c_event_t [label = "C";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-    spark_d_event_t [label = "D";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-    spark_e_event_t [label = "E";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-    spark_f_event_t [label = "F";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    spark_0_event_t [label = "0\nEvent.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_event_t [label = "1\nEvent.trigger()";shape = circle;comment = "";];
+    spark_2_event_t [label = "2\nEvent.validate()";shape = circle;comment = "";];
+    spark_4_event_t [label = "4\nEvent.normalize()";shape = circle;comment = "";];
+    spark_8_event_t [label = "8\nEvent.reset()";shape = circle;comment = "";];
+    spark_7_event_t [label = "7\nEvent.destroy()";shape = circle;comment = "";];
+    spark_5_event_t [label = "5\nEvent.refactor()";shape = circle;comment = "";];
+    spark_3_event_t [label = "3\nEvent.Probability()";shape = doublecircle;comment = "";];
+    spark_6_event_t [label = "6\nEvent.listen()";shape = doublecircle;comment = "";];
+    spark_9_event_t [label = "9\nEvent.assertType()";shape = doublecircle;comment = "";];
+    spark_a_event_t [label = "A\nEvent.receive()";shape = triangle;comment = "";];
+    spark_b_event_t [label = "B\nEvent.send()";shape = invtriangle;comment = "";];
+    spark_c_event_t [label = "C\nEvent.response()";shape = doublecircle;comment = "";];
+    spark_d_event_t [label = "D\nEvent.ontology()";shape = doublecircle;comment = "";];
+    spark_e_event_t [label = "E\nEvent.serve()";shape = doublecircle;comment = "`/proc/event`";];
+    spark_f_event_t [label = "F\nLaw of Probability\n(law_of_probability_t)";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

@@ -5,7 +5,7 @@ strict digraph G {
     node [shape = circle; style = filled; color = lightgreen;];
     
     // Spectral Model
-    spark_0_spectral_seed_t [label = "Thanda\n(Factor)";shape = doublecircle;comment = "";];
+    spark_0_spectral_seed_t [label = "Factor\n(Thanda)";shape = doublecircle;comment = "";];
     spark_1_spectral_seed_t [label = "m\n(Mass)";shape = circle;color = darkred;comment = "";];
     spark_2_spectral_seed_t [label = "Q\n(Quanta)";shape = circle;color = darkgreen;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
     spark_3_spectral_seed_t [label = "I\n(Inertia)";shape = circle;comment = "";];

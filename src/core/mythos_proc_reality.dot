@@ -8,37 +8,77 @@ strict digraph G {
     
     spark_0_mythos_t [label = "0x0\nReality\n(/proc/reality)";shape = doublecircle;];
     
-    spark_0_reality_t [label = "0";shape = doublecircle;comment = "";];
-    spark_1_reality_t [label = "1";shape = circle;color = darkred;comment = "";];
-    spark_2_reality_t [label = "2";shape = circle;color = darkgreen;comment = "";];
-    spark_3_reality_t [label = "3";shape = doublecircle;comment = "";];
-    spark_4_reality_t [label = "4";shape = circle;color = darkblue;comment = "";];
-    spark_5_reality_t [label = "5";shape = circle;color = darkcyan;comment = "";];
-    spark_6_reality_t [label = "6";shape = doublecircle;comment = "";];
-    spark_7_reality_t [label = "7";shape = circle;color = darkmagenta;comment = "";];
-    spark_8_reality_t [label = "8";shape = circle;color = yellow;comment = "";];
-    spark_9_reality_t [label = "9";shape = doublecircle;comment = "";];
-    spark_a_reality_t [label = "A";shape = triangle;color = black;fontcolor = white;comment = "";];
-    spark_b_reality_t [label = "B";shape = invtriangle;color = grey;comment = "";];
-    spark_c_reality_t [label = "C";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-    spark_d_reality_t [label = "D";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-    spark_e_reality_t [label = "E";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-    spark_f_reality_t [label = "F";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    subgraph cluster_factor {
+        label = "Factor";
+        style = filled;
+        color = darkgray;
+        spark_0_factor_t [label = "0\nFoam\n(foam_t)";shape = doublecircle;comment = "from initFactor()";];
+        spark_1_factor_t [label = "1\nHeart Interface\n(heart_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_2_factor_t [label = "2\nShell Interface\n(shell_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_4_factor_t [label = "4\nAstral Interface\n(astral_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_8_factor_t [label = "8\nSpiritual Interface\n(spiritual_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_7_factor_t [label = "7\nMaterial Interface\n(material_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_5_factor_t [label = "5\nCelestial Interface\n(celestial_interface_t)";shape = circle;comment = "from initFactor()";];
+        spark_3_factor_t [label = "3\nAlignment Model\n(alignment_model_t)";shape = doublecircle;comment = "from Convergence Engine and Divergence Engine";];
+        spark_6_factor_t [label = "6\nSpectral Model\n(spectral_model_t)";shape = doublecircle;comment = "from Fixation Engine and Excitation Engine";];
+        spark_9_factor_t [label = "9\nObserver Model\n(observer_model_t)";shape = doublecircle;comment = "from Truth Engine and Wisdom Engine";];
+        spark_a_factor_t [label = "A\nLURD IN\n(lurd_in_t)";shape = triangle;comment = "from initFactor()";];
+        spark_b_factor_t [label = "B\nLURD OUT\n(lurd_out_t)";shape = invtriangle;comment = "from initFactor()";];
+        spark_c_factor_t [label = "C\nLURD Interface\n(lurd_interface_t)";shape = doublecircle;comment = "from initFactor()";];
+        spark_d_factor_t [label = "D\nCorpus Interface\n(corpus_interface_t)";shape = doublecircle;comment = "from initFactor()";];
+        spark_e_factor_t [label = "E\nFactor\n(factor_t)";shape = doublecircle;comment = "from initFactor()";];
+        spark_f_factor_t [label = "F\nInformation Factor\n(information_factor_t)";shape = doublecircle;comment = "from initFactor()";];
+    }
+    subgraph cluster_prime_directive {
+        label = "Prime Directive";
+        style = filled;
+        color = darkgray;
+        spark_0_prime_directive_t [label = "0\nPD.init()";shape = doublecircle;comment = "Init Prime Directive";];
+        spark_1_prime_directive_t [label = "1\nPD.wakeEngine()";shape = circle;comment = "wakeEngine() default all engines";];
+        spark_2_prime_directive_t [label = "2\nPD.initFactor()";shape = circle;comment = "initFactor() factor_t";];
+        spark_4_prime_directive_t [label = "4\nPD.feedFactor()";shape = circle;comment = "feedFactor() observer_model_t, alignment_model_t, and spectral_model_t";];
+        spark_8_prime_directive_t [label = "8\nPD.validateFactor()";shape = circle;comment = "validateFactor() factor_t integrity after injection";];
+        spark_7_prime_directive_t [label = "7\nPD.finalizeFactor()";shape = circle;comment = "finalizeFactor() factor_t into information_factor_t";];
+        spark_5_prime_directive_t [label = "5\nPD.reloadFactor()";shape = circle;comment = "reloadFactor() in the case feedFactor() failed";];
+        spark_3_prime_directive_t [label = "3\nPD.avatar()";shape = doublecircle;comment = "`/proc/avatar`";];
+        spark_6_prime_directive_t [label = "6\nPD.listen()";shape = doublecircle;comment = "Event listener";];
+        spark_9_prime_directive_t [label = "9\nPD.clock()";shape = doublecircle;comment = "Time Controller";];
+        spark_a_prime_directive_t [label = "A\nPD.receive()";shape = triangle;comment = "In gateway";];
+        spark_b_prime_directive_t [label = "B\nPD.send()";shape = invtriangle;comment = "Out gateway";];
+        spark_c_prime_directive_t [label = "C\nPD.response()";shape = doublecircle;comment = "";];
+        spark_d_prime_directive_t [label = "D\nPD.factor()";shape = doublecircle;comment = "`/proc/factor`";];
+        spark_e_prime_directive_t [label = "E\nPD.serve()";shape = doublecircle;comment = "`/proc/reality`";];
+        spark_f_prime_directive_t [label = "F\nPD.exec()";shape = doublecircle;comment = "";];
+    }
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_factor_t -> {spark_a_factor_t spark_b_factor_t spark_1_factor_t spark_2_factor_t spark_3_factor_t spark_4_factor_t spark_5_factor_t spark_6_factor_t spark_7_factor_t spark_8_factor_t spark_9_factor_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_factor_t spark_b_factor_t} -> spark_c_factor_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_factor_t spark_2_factor_t spark_4_factor_t spark_8_factor_t spark_7_factor_t spark_5_factor_t} -> spark_d_factor_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_factor_t spark_6_factor_t spark_9_factor_t} -> spark_e_factor_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_factor_t -> spark_2_factor_t -> spark_4_factor_t -> spark_8_factor_t -> spark_7_factor_t -> spark_5_factor_t -> spark_1_factor_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_factor_t -> spark_6_factor_t -> spark_9_factor_t -> spark_3_factor_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_factor_t -> spark_b_factor_t -> spark_a_factor_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_factor_t spark_d_factor_t spark_e_factor_t} -> spark_f_factor_t [label = "OUT"; color = darkblue; comment = "";];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_reality_t -> {spark_a_reality_t spark_b_reality_t spark_1_reality_t spark_2_reality_t spark_3_reality_t spark_4_reality_t spark_5_reality_t spark_6_reality_t spark_7_reality_t spark_8_reality_t spark_9_reality_t} [label = "IN"; color = yellow; comment = "";];
+    spark_0_prime_directive_t -> {spark_a_prime_directive_t spark_b_prime_directive_t spark_1_prime_directive_t spark_2_prime_directive_t spark_3_prime_directive_t spark_4_prime_directive_t spark_5_prime_directive_t spark_6_prime_directive_t spark_7_prime_directive_t spark_8_prime_directive_t spark_9_prime_directive_t} [label = "IN"; color = yellow; comment = "";];
     
-    {spark_a_reality_t spark_b_reality_t} -> spark_c_reality_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} -> spark_d_reality_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_reality_t spark_6_reality_t spark_9_reality_t} -> spark_e_reality_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_prime_directive_t spark_b_prime_directive_t} -> spark_c_prime_directive_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_prime_directive_t spark_2_prime_directive_t spark_4_prime_directive_t spark_8_prime_directive_t spark_7_prime_directive_t spark_5_prime_directive_t} -> spark_d_prime_directive_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_prime_directive_t spark_6_prime_directive_t spark_9_prime_directive_t} -> spark_e_prime_directive_t [label = "REC"; color = darkblue; comment = "";];
     
-    spark_1_reality_t -> spark_2_reality_t -> spark_4_reality_t -> spark_8_reality_t -> spark_7_reality_t -> spark_5_reality_t -> spark_1_reality_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_reality_t -> spark_6_reality_t -> spark_9_reality_t -> spark_3_reality_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_reality_t -> spark_b_reality_t -> spark_a_reality_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_prime_directive_t -> spark_2_prime_directive_t -> spark_4_prime_directive_t -> spark_8_prime_directive_t -> spark_7_prime_directive_t -> spark_5_prime_directive_t -> spark_1_prime_directive_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_prime_directive_t -> spark_6_prime_directive_t -> spark_9_prime_directive_t -> spark_3_prime_directive_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_prime_directive_t -> spark_b_prime_directive_t -> spark_a_prime_directive_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
     
-    {spark_c_reality_t spark_d_reality_t spark_e_reality_t} -> spark_f_reality_t [label = "OUT"; color = darkblue; comment = "";];
+    {spark_c_prime_directive_t spark_d_prime_directive_t spark_e_prime_directive_t} -> spark_f_prime_directive_t [label = "OUT"; color = darkblue; comment = "";];
     
-    spark_0_mythos_t -> spark_0_reality_t;
+    spark_0_mythos_t -> {spark_0_factor_t spark_0_prime_directive_t};
 }

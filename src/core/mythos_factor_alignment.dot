@@ -5,7 +5,7 @@ strict digraph G {
     node [shape = circle; style = filled; color = lightgreen;];
     
     // Alignment Model
-    spark_0_alignment_seed_t [label = "Dumadi\n(Factor)";shape = doublecircle;comment = "Raw potential (unformatted).";];
+    spark_0_alignment_seed_t [label = "Factor\n()";shape = doublecircle;comment = "Raw potential (unformatted).";];
     spark_1_alignment_seed_t [label = "K\n(Causality)";shape = circle;color = darkred;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
     spark_2_alignment_seed_t [label = "Θ\n(Topology)";shape = circle;color = darkgreen;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
     spark_3_alignment_seed_t [label = "C\n(Charge)";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];

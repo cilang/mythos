@@ -8,22 +8,22 @@ strict digraph G {
     
     spark_b_mythos_t [label = "0xB\nSamsara\n(/proc/samsara)";shape = doublecircle;];
     
-    spark_0_samsara_t [label = "0";shape = doublecircle;comment = "";];
-    spark_1_samsara_t [label = "1";shape = circle;color = darkred;comment = "";];
-    spark_2_samsara_t [label = "2";shape = circle;color = darkgreen;comment = "";];
-    spark_3_samsara_t [label = "3";shape = doublecircle;comment = "";];
-    spark_4_samsara_t [label = "4";shape = circle;color = darkblue;comment = "";];
-    spark_5_samsara_t [label = "5";shape = circle;color = darkcyan;comment = "";];
-    spark_6_samsara_t [label = "6";shape = doublecircle;comment = "";];
-    spark_7_samsara_t [label = "7";shape = circle;color = darkmagenta;comment = "";];
-    spark_8_samsara_t [label = "8";shape = circle;color = yellow;comment = "";];
-    spark_9_samsara_t [label = "9";shape = doublecircle;comment = "";];
-    spark_a_samsara_t [label = "A";shape = triangle;color = black;fontcolor = white;comment = "";];
-    spark_b_samsara_t [label = "B";shape = invtriangle;color = grey;comment = "";];
-    spark_c_samsara_t [label = "C";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-    spark_d_samsara_t [label = "D";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-    spark_e_samsara_t [label = "E";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-    spark_f_samsara_t [label = "F";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    spark_0_samsara_t [label = "0\nSamsara.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_samsara_t [label = "1\nSamsara.initSoul()";shape = circle;comment = "create new Soul";];
+    spark_2_samsara_t [label = "2\nSamsara.validateSoul()";shape = circle;comment = "validate Soul integrity";];
+    spark_4_samsara_t [label = "4\nSamsara.normalizeSoul()";shape = circle;comment = "normalize Soul";];
+    spark_8_samsara_t [label = "8\nSamsara.resetSoul()";shape = circle;comment = "reset Soul";];
+    spark_7_samsara_t [label = "7\nSamsara.reincarnateSoul()";shape = circle;comment = "reincarnate Soul";];
+    spark_5_samsara_t [label = "5\nSamsara.refactorSoul()";shape = circle;comment = "refactor Soul";];
+    spark_3_samsara_t [label = "3\nSamsara.causality()";shape = doublecircle;comment = "`/proc/causality`";];
+    spark_6_samsara_t [label = "6\nSamsara.listen()";shape = doublecircle;comment = "";];
+    spark_9_samsara_t [label = "9\nSamsara.assertChain()";shape = doublecircle;comment = "";];
+    spark_a_samsara_t [label = "A\nSamsara.receive()";shape = triangle;comment = "";];
+    spark_b_samsara_t [label = "B\nSamsara.send()";shape = invtriangle;comment = "";];
+    spark_c_samsara_t [label = "C\nSamsara.response()";shape = doublecircle;comment = "";];
+    spark_d_samsara_t [label = "D\nSamsara.cycle()";shape = doublecircle;comment = "`/proc/cycle`";];
+    spark_e_samsara_t [label = "E\nSamsara.serve()";shape = doublecircle;comment = "`/proc/samsara`";];
+    spark_f_samsara_t [label = "F\nLaw of Causality\n(law_of_causality_t)";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

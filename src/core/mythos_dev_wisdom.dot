@@ -25,11 +25,10 @@ strict digraph G {
     spark_f_wisdom_t [label = "0xF\nLaw of Wisdom\n()";shape = circle;comment = "";];
     
     // Wisdom
-    spark_8_mythos_t -> spark_0_wisdom_t;
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_wisdom_t -> {spark_a_wisdom_t spark_b_wisdom_t spark_1_wisdom_t spark_2_wisdom_t spark_3_wisdom_t spark_4_wisdom_t spark_5_wisdom_t spark_6_wisdom_t spark_7_wisdom_t spark_8_wisdom_t spark_9_wisdom_t} [label = "IN"; color = yellow; comment = "";];
+    spark_8_mythos_t -> spark_0_wisdom_t -> {spark_a_wisdom_t spark_b_wisdom_t spark_1_wisdom_t spark_2_wisdom_t spark_3_wisdom_t spark_4_wisdom_t spark_5_wisdom_t spark_6_wisdom_t spark_7_wisdom_t spark_8_wisdom_t spark_9_wisdom_t} [label = "IN"; color = yellow; comment = "";];
     
     {spark_a_wisdom_t spark_b_wisdom_t} -> spark_c_wisdom_t [label = "REC"; color = darkred; comment = "";];
     {spark_1_wisdom_t spark_2_wisdom_t spark_4_wisdom_t spark_8_wisdom_t spark_7_wisdom_t spark_5_wisdom_t} -> spark_d_wisdom_t [label = "REC"; color = darkgreen; comment = "";];

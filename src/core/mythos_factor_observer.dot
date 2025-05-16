@@ -11,7 +11,7 @@ strict digraph G {
     // manunggal kawula ning gusti.
     // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
     // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
-    spark_0_observer_seed_t [label = "Dumadi\n(Factor)";shape = doublecircle;comment = "";];
+    spark_0_observer_seed_t [label = "Factor\n(Dumadi)";shape = doublecircle;comment = "";];
     spark_1_observer_seed_t [label = "Harta\n(Resources)";shape = circle;color = darkred;comment = "";];
     spark_2_observer_seed_t [label = "Tahta\n(Authority)";shape = circle;color = darkgreen;comment = "";];
     spark_3_observer_seed_t [label = "Asumsi\n(Assumption)";shape = circle;comment = "";];
