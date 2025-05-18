@@ -17,7 +17,7 @@ strict digraph G {
     spark_5_samsara_t [label = "5\nSamsara.refactorSoul()";shape = circle;comment = "refactor Soul";];
     spark_3_samsara_t [label = "3\nSamsara.causality()";shape = doublecircle;comment = "`/proc/causality`";];
     spark_6_samsara_t [label = "6\nSamsara.listen()";shape = doublecircle;comment = "";];
-    spark_9_samsara_t [label = "9\nSamsara.assertChain()";shape = doublecircle;comment = "";];
+    spark_9_samsara_t [label = "9\nSamsara.assert()";shape = doublecircle;comment = "";];
     spark_a_samsara_t [label = "A\nSamsara.receive()";shape = triangle;comment = "";];
     spark_b_samsara_t [label = "B\nSamsara.send()";shape = invtriangle;comment = "";];
     spark_c_samsara_t [label = "C\nSamsara.response()";shape = doublecircle;comment = "";];

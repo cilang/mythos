@@ -3,29 +3,29 @@ digraph G {
     style = filled;
     color = red;
     comment = "";
-    node [shape = polygon; sides = 6; style = filled; color = grey90;];
+    node [shape = polygon; sides = 6; style = filled; color = lightgreen;];
     
     spark_3_mythos_t [label = "0x3\nCapability\n(/srv/capability)";shape = doublecircle;];
     
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-    spark_0_capability_t [label = "0\n\n()";shape = doublecircle;comment = "";];
-    spark_1_capability_t [label = "1\n\n()";shape = circle;comment = "";];
-    spark_2_capability_t [label = "2\n\n()";shape = circle;comment = "";];
-    spark_4_capability_t [label = "4\n\n()";shape = circle;comment = "";];
-    spark_8_capability_t [label = "8\n\n()";shape = circle;comment = "";];
-    spark_7_capability_t [label = "7\n\n()";shape = circle;comment = "";];
-    spark_5_capability_t [label = "5\n\n()";shape = circle;comment = "";];
-    spark_3_capability_t [label = "3\n\n()";shape = doublecircle;comment = "";];
-    spark_6_capability_t [label = "6\n\n()";shape = doublecircle;comment = "";];
-    spark_9_capability_t [label = "9\n\n()";shape = doublecircle;comment = "";];
-    spark_a_capability_t [label = "A\n\n()";shape = triangle;comment = "";];
-    spark_b_capability_t [label = "B\n\n()";shape = invtriangle;comment = "";];
-    spark_c_capability_t [label = "C\n\n()";shape = doublecircle;comment = "";];
-    spark_d_capability_t [label = "D\n\n()";shape = doublecircle;comment = "";];
-    spark_e_capability_t [label = "E\n\n()";shape = doublecircle;comment = "";];
-    spark_f_capability_t [label = "F\n\n()";shape = doublecircle;comment = "";];
+    spark_0_capability_t [label = "0\nCapability.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_capability_t [label = "1\nCapability.parse()";shape = circle;comment = "";];
+    spark_2_capability_t [label = "2\nCapability.validate()";shape = circle;comment = "";];
+    spark_4_capability_t [label = "4\nCapability.normalize()";shape = circle;comment = "";];
+    spark_8_capability_t [label = "8\nCapability.reset()";shape = circle;comment = "";];
+    spark_7_capability_t [label = "7\nCapability.evolve()";shape = circle;comment = "";];
+    spark_5_capability_t [label = "5\nCapability.refactor()";shape = circle;comment = "";];
+    spark_3_capability_t [label = "3\nCapability.codex()";shape = doublecircle;comment = "`/sys/codex`";];
+    spark_6_capability_t [label = "6\nCapability.listen()";shape = doublecircle;comment = "";];
+    spark_9_capability_t [label = "9\nCapability.assert()";shape = doublecircle;comment = "";];
+    spark_a_capability_t [label = "A\nCapability.receive()";shape = triangle;comment = "";];
+    spark_b_capability_t [label = "B\nCapability.send()";shape = invtriangle;comment = "";];
+    spark_c_capability_t [label = "C\nCapability.response()";shape = doublecircle;comment = "";];
+    spark_d_capability_t [label = "D\nCapability.compile()";shape = doublecircle;comment = "";];
+    spark_e_capability_t [label = "E\nCapability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
+    spark_f_capability_t [label = "F\nLaw of Capability\n(law_of_capability_t)";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

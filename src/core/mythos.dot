@@ -20,7 +20,7 @@ strict digraph G {
     spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
     spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
     spark_e_mythos_t [label = "0xE\nAuthority\n(/srv/authority)";shape = doublecircle;];
-    spark_f_mythos_t [label = "Origin\n(/var/origin)";shape = doublecircle;];
+    spark_f_mythos_t [label = "0xF\nOrigin\n(/var/origin)";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

@@ -25,7 +25,7 @@ digraph G {
     spark_c_repository_t [label = "C\n\n()";shape = doublecircle;];
     spark_d_repository_t [label = "D\n\n()";shape = doublecircle;];
     spark_e_repository_t [label = "E\n\n()";shape = doublecircle;];
-    spark_f_repository_t [label = "F\nLaw of Spacetime\n()";shape = doublecircle;];
+    spark_f_repository_t [label = "F\n\n()";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

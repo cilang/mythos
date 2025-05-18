@@ -1,0 +1,145 @@
+strict digraph G {
+    label = "Information Factor\n(/proc/reality/factor/information)";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
+    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    spark_0_t [label = "0\nFactor.meta()";shape = doublecircle;comment = "";];
+    spark_1_t [label = "1\nFactor.r1()";shape = circle;comment = "";];
+    spark_2_t [label = "2\nFactor.r2()";shape = circle;comment = "";];
+    spark_4_t [label = "4\nFactor.r4()";shape = circle;comment = "";];
+    spark_8_t [label = "8\nFactor.r8()";shape = circle;comment = "";];
+    spark_7_t [label = "7\nFactor.r7()";shape = circle;comment = "";];
+    spark_5_t [label = "5\nFactor.r5()";shape = circle;comment = "";];
+    spark_3_t [label = "3\nFactor.observer()";shape = doublecircle;comment = "";];
+    spark_6_t [label = "6\nFactor.alignment()";shape = doublecircle;comment = "";];
+    spark_9_t [label = "9\nFactor.spectral()";shape = doublecircle;comment = "";];
+    spark_a_t [label = "A\nFactor.receive()";shape = triangle;comment = "";];
+    spark_b_t [label = "B\nFactor.send()";shape = invtriangle;comment = "";];
+    spark_c_t [label = "C\nFactor.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_t [label = "D\nFactor.commit()";shape = doublecircle;comment = "";];
+    spark_e_t [label = "E\nFactor.serve()";shape = doublecircle;comment = "";];
+    spark_f_t [label = "F\nFactor.exec()";shape = doublecircle;comment = "";];
+    
+    // Sangkan paraning dumadi.
+    // Nava manunggal nastiti ning tyas.
+    // Suradira jayadiningrat lebur dening pangastuti.
+    // memayu hayuning bawana
+    // manunggal kawula ning gusti.
+    // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
+    // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
+    spark_0_observer_seed_t [label = "Factor.observer()\n(Dumadi)";shape = doublecircle;comment = "";];
+    spark_1_observer_seed_t [label = "Harta\n(Resources)";shape = circle;comment = "";];
+    spark_2_observer_seed_t [label = "Tahta\n(Authority)";shape = circle;comment = "";];
+    spark_4_observer_seed_t [label = "Wanita\n(Relations)";shape = circle;comment = "";];
+    spark_8_observer_seed_t [label = "Agama\n(Axiom)";shape = circle;comment = "";];
+    spark_7_observer_seed_t [label = "Ilmu\n(Knowledge)";shape = circle;comment = "";];
+    spark_5_observer_seed_t [label = "Keturunan\n(Lineage)";shape = circle;comment = "";];
+    spark_3_observer_seed_t [label = "Asumsi\n(Assumption)";shape = circle;comment = "";];
+    spark_6_observer_seed_t [label = "Sugesti\n(Suggestion)";shape = circle;comment = "";];
+    spark_9_observer_seed_t [label = "Persepsi\n(Perception)";shape = circle;comment = "";];
+    spark_a_observer_seed_t [label = "Sangkan\n(Origin)";shape = triangle;comment = "";];
+    spark_b_observer_seed_t [label = "Paran\n(Destination)";shape = invtriangle;comment = "";];
+    spark_c_observer_seed_t [label = "Truth Inquiry\n(What/How)";shape = doublecircle;comment = "";];
+    spark_d_observer_seed_t [label = "Theosophy Inquiry\n(Why/Who)";shape = doublecircle;comment = "";];
+    spark_e_observer_seed_t [label = "Wisdom Inquiry\n(When/Where)";shape = doublecircle;comment = "";];
+    spark_f_observer_seed_t [label = "Closure";shape = doublecircle;comment = "";];
+    
+    // Alignment Model
+    spark_0_alignment_seed_t [label = "Factor.alignment()\n()";shape = doublecircle;comment = "Raw potential (unformatted).";];
+    spark_1_alignment_seed_t [label = "K\n(Causality)";shape = circle;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
+    spark_2_alignment_seed_t [label = "Θ\n(Topology)";shape = circle;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
+    spark_4_alignment_seed_t [label = "D\n(Dimensionality)";shape = circle;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
+    spark_8_alignment_seed_t [label = "V\n(Void)";shape = circle;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
+    spark_7_alignment_seed_t [label = "Φ\n(Phase)";shape = circle;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
+    spark_5_alignment_seed_t [label = "Λ\n(Logic)";shape = circle;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
+    spark_3_alignment_seed_t [label = "C\n(Charge)";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
+    spark_6_alignment_seed_t [label = "P\n(Parity)";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
+    spark_9_alignment_seed_t [label = "T\n(Time)";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
+    spark_a_alignment_seed_t [label = "Convergence\n(Unity)";shape = triangle;comment = "Cosmic bus (information routing).";];
+    spark_b_alignment_seed_t [label = "Divergence\n(Diversity)";shape = invtriangle;comment = "Cosmic bus (information routing).";];
+    spark_c_alignment_seed_t [label = "C\n(Alignment)";shape = doublecircle;comment = "";];
+    spark_d_alignment_seed_t [label = "D\n(Alignment)";shape = doublecircle;comment = "";];
+    spark_e_alignment_seed_t [label = "E\n(Alignment)";shape = doublecircle;comment = "";];
+    spark_f_alignment_seed_t [label = "F\n(Alignment)";shape = doublecircle;comment = "";];
+    
+    // Spectral Model
+    spark_0_spectral_seed_t [label = "Factor.spectral()\n(Thanda)";shape = doublecircle;comment = "";];
+    spark_1_spectral_seed_t [label = "m\n(Mass)";shape = circle;comment = "";];
+    spark_2_spectral_seed_t [label = "Q\n(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+    spark_4_spectral_seed_t [label = "E\n(Energy)";shape = circle;comment = "";];
+    spark_8_spectral_seed_t [label = "Φ\n(Flux)";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
+    spark_7_spectral_seed_t [label = "L\n(Angular Momentum)";shape = circle;comment = "";];
+    spark_5_spectral_seed_t [label = "c\n(Speed of Causality)";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
+    spark_3_spectral_seed_t [label = "I\n(Inertia)";shape = circle;comment = "";];
+    spark_6_spectral_seed_t [label = "p\n(Momentum)";shape = circle;comment = "";];
+    spark_9_spectral_seed_t [label = "G\n(Gravity)";shape = circle;comment = "";];
+    spark_a_spectral_seed_t [label = "Fixation\n(Rhythm)";shape = triangle;comment = "";];
+    spark_b_spectral_seed_t [label = "Excitation\n(Pattern)";shape = invtriangle;comment = "";];
+    spark_c_spectral_seed_t [label = "C\n(Spectral)";comment = "";];
+    spark_d_spectral_seed_t [label = "D\n(Spectral)";comment = "";];
+    spark_e_spectral_seed_t [label = "E\n(Spectral)";comment = "";];
+    spark_f_spectral_seed_t [label = "F\n(Spectral)";comment = "";];
+    
+    // Factor
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_t -> {spark_a_t spark_b_t spark_1_t spark_2_t spark_3_t spark_4_t spark_5_t spark_6_t spark_7_t spark_8_t spark_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_t -> spark_b_t -> spark_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_t spark_d_t spark_e_t} -> spark_f_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Observer Model
+    spark_0_observer_seed_t -> {spark_a_observer_seed_t spark_b_observer_seed_t spark_1_observer_seed_t spark_2_observer_seed_t spark_3_observer_seed_t spark_4_observer_seed_t spark_5_observer_seed_t spark_6_observer_seed_t spark_7_observer_seed_t spark_8_observer_seed_t spark_9_observer_seed_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_observer_seed_t spark_b_observer_seed_t} -> spark_c_observer_seed_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} -> spark_d_observer_seed_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} -> spark_e_observer_seed_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_observer_seed_t -> spark_2_observer_seed_t -> spark_4_observer_seed_t -> spark_8_observer_seed_t -> spark_7_observer_seed_t -> spark_5_observer_seed_t -> spark_1_observer_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_observer_seed_t -> spark_6_observer_seed_t -> spark_9_observer_seed_t -> spark_3_observer_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_observer_seed_t -> spark_b_observer_seed_t -> spark_a_observer_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_observer_seed_t spark_d_observer_seed_t spark_e_observer_seed_t} -> spark_f_observer_seed_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Alignment Model
+    spark_0_alignment_seed_t -> {spark_a_alignment_seed_t spark_b_alignment_seed_t spark_1_alignment_seed_t spark_2_alignment_seed_t spark_3_alignment_seed_t spark_4_alignment_seed_t spark_5_alignment_seed_t spark_6_alignment_seed_t spark_7_alignment_seed_t spark_8_alignment_seed_t spark_9_alignment_seed_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_alignment_seed_t spark_b_alignment_seed_t} -> spark_c_alignment_seed_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_alignment_seed_t spark_2_alignment_seed_t spark_4_alignment_seed_t spark_8_alignment_seed_t spark_7_alignment_seed_t spark_5_alignment_seed_t} -> spark_d_alignment_seed_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_alignment_seed_t spark_6_alignment_seed_t spark_9_alignment_seed_t} -> spark_e_alignment_seed_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_alignment_seed_t -> spark_2_alignment_seed_t -> spark_4_alignment_seed_t -> spark_8_alignment_seed_t -> spark_7_alignment_seed_t -> spark_5_alignment_seed_t -> spark_1_alignment_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_alignment_seed_t -> spark_6_alignment_seed_t -> spark_9_alignment_seed_t -> spark_3_alignment_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_alignment_seed_t -> spark_b_alignment_seed_t -> spark_a_alignment_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_alignment_seed_t spark_d_alignment_seed_t spark_e_alignment_seed_t} -> spark_f_alignment_seed_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Spectral Model
+    spark_0_spectral_seed_t -> {spark_a_spectral_seed_t spark_b_spectral_seed_t spark_1_spectral_seed_t spark_2_spectral_seed_t spark_3_spectral_seed_t spark_4_spectral_seed_t spark_5_spectral_seed_t spark_6_spectral_seed_t spark_7_spectral_seed_t spark_8_spectral_seed_t spark_9_spectral_seed_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spark_a_spectral_seed_t spark_b_spectral_seed_t} -> spark_c_spectral_seed_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} -> spark_d_spectral_seed_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} -> spark_e_spectral_seed_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spark_1_spectral_seed_t -> spark_2_spectral_seed_t -> spark_4_spectral_seed_t -> spark_8_spectral_seed_t -> spark_7_spectral_seed_t -> spark_5_spectral_seed_t -> spark_1_spectral_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_spectral_seed_t -> spark_6_spectral_seed_t -> spark_9_spectral_seed_t -> spark_3_spectral_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_spectral_seed_t -> spark_b_spectral_seed_t -> spark_a_spectral_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_spectral_seed_t spark_d_spectral_seed_t spark_e_spectral_seed_t} -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    spark_3_t -> spark_f_observer_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_6_t -> spark_f_alignment_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_9_t -> spark_f_spectral_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+}

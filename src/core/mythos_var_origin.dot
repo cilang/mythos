@@ -1,60 +1,55 @@
 strict digraph G {
-    label = "Origin\n(/var/origin)";
+    label = "Origin\n(/var)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
-
-    spark_f_mythos_t [label = "Origin\n(/var/origin)";shape = doublecircle;];
-
-    subgraph cluster_brane {
-        label = "Brane\n(/var/origin/brane)";
-        style = filled;
-        color = darkgray;
-        // The Sacred 3-6-9 (Boundary of Perception).
-        // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-        // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-        spark_0_origin_t [label = "0\nRepository Interface";shape = doublecircle;comment = "";];
-        spark_1_origin_t [label = "1\nTruth Interface";shape = circle;color = darkred;comment = "";];
-        spark_2_origin_t [label = "2\nConvergence Interface";shape = circle;color = darkgreen;comment = "";];
-        spark_4_origin_t [label = "4\nFixation Interface";shape = circle;color = darkblue;comment = "";];
-        spark_8_origin_t [label = "8\nWisdom Interface";shape = circle;color = yellow;comment = "";];
-        spark_7_origin_t [label = "7\nDivergence Interface";shape = circle;color = darkmagenta;comment = "";];
-        spark_5_origin_t [label = "5\nExcitation Interface";shape = circle;color = darkcyan;comment = "";];
-        spark_3_origin_t [label = "3\nEvent Interface";shape = doublecircle;comment = "";];
-        spark_6_origin_t [label = "6\nSamsara Interface";shape = doublecircle;comment = "";];
-        spark_9_origin_t [label = "9\nReality Interface";shape = doublecircle;comment = "";];
-        spark_a_origin_t [label = "A\nDirective Interface";shape = triangle;color = black;fontcolor = white;comment = "";];
-        spark_b_origin_t [label = "B\nAuthority Interface";shape = invtriangle;color = grey;comment = "";];
-        spark_c_origin_t [label = "C\nCapability Inferface";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-        spark_d_origin_t [label = "D\nCorpora Interface";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-        spark_e_origin_t [label = "E\nHaoma Interface";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-        spark_f_origin_t [label = "F\nLURD Interface";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
-
-        // IN = Input
-        // OUT = Output
-        // REC = Recursion
-        spark_0_origin_t -> {spark_a_origin_t spark_b_origin_t spark_1_origin_t spark_2_origin_t spark_3_origin_t spark_4_origin_t spark_5_origin_t spark_6_origin_t spark_7_origin_t spark_8_origin_t spark_9_origin_t} [label = "IN"; color = yellow; comment = "";];
-
-        {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; color = darkred; comment = "";];
-        {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
-        {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; color = darkblue; comment = "";];
     
-        spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-        spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-        spark_a_origin_t -> spark_b_origin_t -> spark_a_origin_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_f_mythos_t [label = "Origin\n(/var)";shape = doublecircle;];
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
+    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    spark_0_origin_t [label = "0\nOrigin.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_origin_t [label = "1\nOrigin.create()";shape = circle;comment = "";];
+    spark_2_origin_t [label = "2\nOrigin.validate()";shape = circle;comment = "";];
+    spark_4_origin_t [label = "4\nOrigin.normalize()";shape = circle;comment = "";];
+    spark_8_origin_t [label = "8\nOrigin.reset()";shape = circle;comment = "";];
+    spark_7_origin_t [label = "7\nOrigin.destroy()";shape = circle;comment = "";];
+    spark_5_origin_t [label = "5\nOrigin.refactor()";shape = circle;comment = "";];
+    spark_3_origin_t [label = "3\nOrigin.spacetime()";shape = doublecircle;comment = "";];
+    spark_6_origin_t [label = "6\nOrigin.listen()";shape = doublecircle;comment = "";];
+    spark_9_origin_t [label = "9\nOrigin.assert()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
+    spark_a_origin_t [label = "A\nOrigin.manthan()";shape = triangle;comment = "`/var/manthan`";];
+    spark_b_origin_t [label = "B\nOrigin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
+    spark_c_origin_t [label = "C\nOrigin.response()";shape = doublecircle;comment = "";];
+    spark_d_origin_t [label = "D\nOrigin.mount()";shape = doublecircle;comment = "";];
+    spark_e_origin_t [label = "E\nOrigin.serve()";shape = doublecircle;comment = "`/var`";];
+    spark_f_origin_t [label = "F\nLaw of Spacetime";shape = doublecircle;comment = "";];
     
-        {spark_c_origin_t spark_d_origin_t spark_e_origin_t} -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
-    }
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_origin_t -> {spark_a_origin_t spark_b_origin_t spark_1_origin_t spark_2_origin_t spark_3_origin_t spark_4_origin_t spark_5_origin_t spark_6_origin_t spark_7_origin_t spark_8_origin_t spark_9_origin_t} [label = "IN"; color = yellow; comment = "";];
     
-    spark_f_mythos_t -> spark_0_origin_t [label="Brane Interface"];
+    {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; color = darkred; comment = "";];
+    {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; color = darkblue; comment = "";];
     
-    mythos_earth_t [label = "IRL Earth Insert\n(/var/origin/earth)";shape = doublecircle;];
-    mythos_astakona_t [label = "Astakona\n(/var/origin/astakona)";shape = doublecircle;];
-    mythos_astra_t [label = "Astra\n(/var/origin/astra)";shape = doublecircle;];
-    mythos_rhea_t [label = "Rhea\n(/var/origin/rhea)";shape = doublecircle;];
-
-    spark_f_mythos_t -> mythos_earth_t;
-    spark_f_mythos_t -> mythos_astakona_t;
-    spark_f_mythos_t -> mythos_astra_t;
-    spark_f_mythos_t -> mythos_rhea_t;
+    spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spark_a_origin_t -> spark_b_origin_t -> spark_a_origin_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spark_c_origin_t spark_d_origin_t spark_e_origin_t} -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    spark_f_mythos_t -> spark_0_origin_t [label = "Brane Interface";];
+    
+    mythos_earth_t [label = "IRL Earth Insert\n(/var/chaotic/earth)";shape = folder;];
+    mythos_astakona_t [label = "Astakona\n(/var/chaotic/astakona)";shape = folder;];
+    mythos_astra_t [label = "Astra\n(/var/chaotic/astra)";shape = folder;];
+    mythos_rhea_t [label = "Rhea\n(/var/chaotic/rhea)";shape = folder;];
+    
+    spark_f_origin_t -> mythos_earth_t;
+    spark_f_origin_t -> mythos_astra_t;
+    spark_f_origin_t -> mythos_rhea_t;
+    mythos_astra_t -> mythos_astakona_t [label = "Labyrinth System";];
+    mythos_rhea_t -> mythos_astakona_t [label = "Mountain Theia";];
 }

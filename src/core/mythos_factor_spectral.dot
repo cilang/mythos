@@ -5,22 +5,22 @@ strict digraph G {
     node [shape = circle; style = filled; color = lightgreen;];
     
     // Spectral Model
-    spark_0_spectral_seed_t [label = "Factor\n(Thanda)";shape = doublecircle;comment = "";];
-    spark_1_spectral_seed_t [label = "m\n(Mass)";shape = circle;color = darkred;comment = "";];
-    spark_2_spectral_seed_t [label = "Q\n(Quanta)";shape = circle;color = darkgreen;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+    spark_0_spectral_seed_t [label = "Factor.spectral()\n(Thanda)";shape = doublecircle;comment = "";];
+    spark_1_spectral_seed_t [label = "m\n(Mass)";shape = circle;comment = "";];
+    spark_2_spectral_seed_t [label = "Q\n(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+    spark_4_spectral_seed_t [label = "E\n(Energy)";shape = circle;comment = "";];
+    spark_8_spectral_seed_t [label = "Φ\n(Flux)";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
+    spark_7_spectral_seed_t [label = "L\n(Angular Momentum)";shape = circle;comment = "";];
+    spark_5_spectral_seed_t [label = "c\n(Speed of Causality)";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
     spark_3_spectral_seed_t [label = "I\n(Inertia)";shape = circle;comment = "";];
-    spark_4_spectral_seed_t [label = "E\n(Energy)";shape = circle;color = darkblue;comment = "";];
-    spark_5_spectral_seed_t [label = "c\n(Speed of Light)";shape = circle;color = darkcyan;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
     spark_6_spectral_seed_t [label = "p\n(Momentum)";shape = circle;comment = "";];
-    spark_7_spectral_seed_t [label = "L\n(Angular Momentum)";shape = circle;color = darkmagenta;comment = "";];
-    spark_8_spectral_seed_t [label = "Φ\n(Flux)";shape = circle;color = yellow;comment = "Energy flow; excitation pathway. Higher form of phase.";];
     spark_9_spectral_seed_t [label = "G\n(Gravity)";shape = circle;comment = "";];
-    spark_a_spectral_seed_t [label = "Fixation\n(Rhythm)";shape = triangle;color = black;fontcolor = white;comment = "";];
-    spark_b_spectral_seed_t [label = "Excitation\n(Pattern)";shape = invtriangle;color = white;comment = "";];
-    spark_c_spectral_seed_t [label = "C\n(Spectral)";shape = doublecircle;color = darkgreen;style = filled;fontcolor = white;];
-    spark_d_spectral_seed_t [label = "D\n(Spectral)";shape = doublecircle;color = darkblue;style = filled;fontcolor = white;];
-    spark_e_spectral_seed_t [label = "E\n(Spectral)";shape = doublecircle;color = darkred;style = filled;fontcolor = white;];
-    spark_f_spectral_seed_t [label = "F\n(Spectral)";shape = doublecircle;color = darkcyan;style = filled;fontcolor = white;];
+    spark_a_spectral_seed_t [label = "Fixation\n(Rhythm)";shape = triangle;comment = "";];
+    spark_b_spectral_seed_t [label = "Excitation\n(Pattern)";shape = invtriangle;comment = "";];
+    spark_c_spectral_seed_t [label = "C\n(Spectral)";comment = "";];
+    spark_d_spectral_seed_t [label = "D\n(Spectral)";comment = "";];
+    spark_e_spectral_seed_t [label = "E\n(Spectral)";comment = "";];
+    spark_f_spectral_seed_t [label = "F\n(Spectral)";comment = "";];
     
     // IN = Input
     // OUT = Output

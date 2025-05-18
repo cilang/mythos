@@ -15,9 +15,9 @@ strict digraph G {
     spark_8_event_t [label = "8\nEvent.reset()";shape = circle;comment = "";];
     spark_7_event_t [label = "7\nEvent.destroy()";shape = circle;comment = "";];
     spark_5_event_t [label = "5\nEvent.refactor()";shape = circle;comment = "";];
-    spark_3_event_t [label = "3\nEvent.Probability()";shape = doublecircle;comment = "";];
+    spark_3_event_t [label = "3\nEvent.probability()";shape = doublecircle;comment = "";];
     spark_6_event_t [label = "6\nEvent.listen()";shape = doublecircle;comment = "";];
-    spark_9_event_t [label = "9\nEvent.assertType()";shape = doublecircle;comment = "";];
+    spark_9_event_t [label = "9\nEvent.assert()";shape = doublecircle;comment = "";];
     spark_a_event_t [label = "A\nEvent.receive()";shape = triangle;comment = "";];
     spark_b_event_t [label = "B\nEvent.send()";shape = invtriangle;comment = "";];
     spark_c_event_t [label = "C\nEvent.response()";shape = doublecircle;comment = "";];

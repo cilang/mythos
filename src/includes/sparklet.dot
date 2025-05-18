@@ -1,5 +1,5 @@
 strict digraph G {
-    label = "Factor\n(/proc/reality/factor/sparklet)";
+    label = "Sparklet";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -7,22 +7,22 @@ strict digraph G {
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-    spark_0_t [label = "0\nFactor.meta()";shape = doublecircle;comment = "";];
-    spark_1_t [label = "1\nFactor.r1()";shape = circle;comment = "";];
-    spark_2_t [label = "2\nFactor.r2()";shape = circle;comment = "";];
-    spark_4_t [label = "4\nFactor.r4()";shape = circle;comment = "";];
-    spark_8_t [label = "8\nFactor.r8()";shape = circle;comment = "";];
-    spark_7_t [label = "7\nFactor.r7()";shape = circle;comment = "";];
-    spark_5_t [label = "5\nFactor.r5()";shape = circle;comment = "";];
-    spark_3_t [label = "3\nFactor.observer()";shape = doublecircle;comment = "";];
-    spark_6_t [label = "6\nFactor.alignment()";shape = doublecircle;comment = "";];
-    spark_9_t [label = "9\nFactor.spectral()";shape = doublecircle;comment = "";];
-    spark_a_t [label = "A\nFactor.receive()";shape = triangle;comment = "";];
-    spark_b_t [label = "B\nFactor.send()";shape = invtriangle;comment = "";];
-    spark_c_t [label = "C\nFactor.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_t [label = "D\nFactor.commit()";shape = doublecircle;comment = "";];
-    spark_e_t [label = "E\nFactor.serve()";shape = doublecircle;comment = "";];
-    spark_f_t [label = "F\nFactor.exec()";shape = doublecircle;comment = "";];
+    spark_0_t [label = "0\nmeta()";shape = doublecircle;comment = "";];
+    spark_1_t [label = "1\nra1()";shape = circle;comment = "";];
+    spark_2_t [label = "2\nra2()";shape = circle;comment = "";];
+    spark_4_t [label = "4\nra4()";shape = circle;comment = "";];
+    spark_8_t [label = "8\nra8()";shape = circle;comment = "";];
+    spark_7_t [label = "7\nra7()";shape = circle;comment = "";];
+    spark_5_t [label = "5\nra5()";shape = circle;comment = "";];
+    spark_3_t [label = "3\nobserve()";shape = doublecircle;comment = "";];
+    spark_6_t [label = "6\nlisten()";shape = doublecircle;comment = "";];
+    spark_9_t [label = "9\nvalidate()";shape = doublecircle;comment = "";];
+    spark_a_t [label = "A\nreceive()";shape = triangle;comment = "";];
+    spark_b_t [label = "B\nsend()";shape = invtriangle;comment = "";];
+    spark_c_t [label = "C\ndispatch()";shape = doublecircle;comment = "";];
+    spark_d_t [label = "D\ncommit()";shape = doublecircle;comment = "";];
+    spark_e_t [label = "E\nserve()";shape = doublecircle;comment = "";];
+    spark_f_t [label = "F\nexec()";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
