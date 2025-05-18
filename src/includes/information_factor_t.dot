@@ -139,7 +139,7 @@ strict digraph G {
     
     {spark_c_spectral_seed_t spark_d_spectral_seed_t spark_e_spectral_seed_t} -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = "";];
     
-    spark_3_t -> spark_f_observer_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
-    spark_6_t -> spark_f_alignment_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
-    spark_9_t -> spark_f_spectral_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_f_observer_seed_t -> spark_3_t [label = "REC"; color = gold; comment = "";];
+    spark_f_alignment_seed_t -> spark_6_t [label = "REC"; color = gold; comment = "";];
+    spark_f_spectral_seed_t -> spark_9_t [label = "REC"; color = gold; comment = "";];
 }
