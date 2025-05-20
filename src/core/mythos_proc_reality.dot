@@ -14,7 +14,7 @@ strict digraph G {
         color = darkgray;
         
         // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-        spark_0_factor_t [label = "0\nFactor.meta()\nfoam_t";shape = doublecircle;comment = "from initFactor()";];
+        spark_0_factor_t [label = "0\nFactor.meta()\nmeta_t";shape = doublecircle;comment = "from initFactor()";];
         spark_1_factor_t [label = "1\nFactor.heart()\nheart_interface_t";shape = circle;comment = "from initFactor()";];
         spark_2_factor_t [label = "2\nFactor.astral()\nshell_interface_t";shape = circle;comment = "from initFactor()";];
         spark_4_factor_t [label = "4\nFactor.astral()\nastral_interface_t";shape = circle;comment = "from initFactor()";];
@@ -24,8 +24,8 @@ strict digraph G {
         spark_3_factor_t [label = "3\nFactor.alignment()\nalignment_model_t";shape = doublecircle;comment = "from Convergence Engine and Divergence Engine";];
         spark_6_factor_t [label = "6\nFactor.spectral()\nspectral_model_t";shape = doublecircle;comment = "from Fixation Engine and Excitation Engine";];
         spark_9_factor_t [label = "9\nFactor.observer()\nobserver_model_t";shape = doublecircle;comment = "from Truth Engine and Wisdom Engine";];
-        spark_a_factor_t [label = "A\nFactor.lurd_in()\nlurd_in_t";shape = triangle;comment = "from initFactor()";];
-        spark_b_factor_t [label = "B\nFactor.lurd_out()\nlurd_out_t";shape = invtriangle;comment = "from initFactor()";];
+        spark_a_factor_t [label = "A\nFactor.lurd_prev()\nlurd_prev_t";shape = triangle;comment = "from initFactor()";];
+        spark_b_factor_t [label = "B\nFactor.lurd_next()\nlurd_next_t";shape = invtriangle;comment = "from initFactor()";];
         spark_c_factor_t [label = "C\nFactor.lurd()\nlurd_interface_t";shape = doublecircle;comment = "from initFactor()";];
         spark_d_factor_t [label = "D\nFactor.corpus()\ncorpus_interface_t";shape = doublecircle;comment = "from initFactor()";];
         spark_e_factor_t [label = "E\nFactor.factor()\nfactor_t";shape = doublecircle;comment = "from initFactor()";];

@@ -5,22 +5,22 @@ strict digraph G {
     node [shape = circle; style = filled; color = green;];
     edge [color = darkgray;];
     
-    spark_1_mythos_t [label = "0x1\nTruth\n(/dev/truth)";];
-    spark_2_mythos_t [label = "0x2\nConvergence\n(/dev/convergence)";];
-    spark_4_mythos_t [label = "0x4\nFixation\n(/dev/fixation)";];
-    spark_5_mythos_t [label = "0x5\nExcitation\n(/dev/excitation)";];
-    spark_7_mythos_t [label = "0x7\nDivergence\n(/dev/divergence)";];
-    spark_8_mythos_t [label = "0x8\nWisdom\n(/dev/wisdom)";];
-    spark_3_mythos_t [label = "0x3\nCapability\n(/sys/capability)";shape = doublecircle;];
-    spark_6_mythos_t [label = "0x6\nRepository\n(/sys/repository)";shape = doublecircle;];
-    spark_9_mythos_t [label = "0x9\nHaoma\n(/sys/haoma)";shape = doublecircle;];
-    spark_a_mythos_t [label = "0xA\nEvent\n(/proc/event)";shape = doublecircle;];
-    spark_0_mythos_t [label = "0x0\nReality\n(/proc/reality)";shape = doublecircle;];
-    spark_b_mythos_t [label = "0xB\nSamsara\n(/proc/samsara)";shape = doublecircle;];
-    spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
-    spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
-    spark_e_mythos_t [label = "0xE\nAuthority\n(/srv/authority)";shape = doublecircle;];
-    spark_f_mythos_t [label = "0xF\nOrigin\n(/var/origin)";shape = doublecircle;];
+    spark_0_mythos_t [label = "0x0\nReality Engine\n(/proc/reality)\nLaw of Reality";shape = doublecircle;comment = "The Kernel";];
+    spark_1_mythos_t [label = "0x1\nTruth Engine\n(/dev/truth)\nLaw of Truth";comment = "Axiomatic Verification";];
+    spark_2_mythos_t [label = "0x2\nConvergence Engine\n(/dev/convergence)\nLaw of Convergence";comment = "Unification Management";];
+    spark_4_mythos_t [label = "0x4\nFixation Engine\n(/dev/fixation)\nLaw of Fixation";comment = "Rhythm Management";];
+    spark_8_mythos_t [label = "0x8\nWisdom Engine\n(/dev/wisdom)\nLaw of Wisdom";comment = "Adaptive Verification";];
+    spark_7_mythos_t [label = "0x7\nDivergence Engine\n(/dev/divergence)\nLaw of Divergence";comment = "Diversity Management";];
+    spark_5_mythos_t [label = "0x5\nExcitation Engine\n(/dev/excitation)\nLaw of Excitation";comment = "Pattern Management";];
+    spark_3_mythos_t [label = "0x3\nCapability Engine\n(/sys/capability)\nLaw of Capability";shape = doublecircle;comment = "Capability System";];
+    spark_6_mythos_t [label = "0x6\nRepository Engine\n(/sys/repository)\nLaw of Repository";shape = doublecircle;comment = "Storage System";];
+    spark_9_mythos_t [label = "0x9\nHaoma Engine\n(/sys/haoma)\nLaw of Factor";shape = doublecircle;comment = "Entity Recursion Descriptor Engine";];
+    spark_a_mythos_t [label = "0xA\nEvent Engine\n(/proc/event)\nLaw of Probability";shape = doublecircle;comment = "Probability Field";];
+    spark_b_mythos_t [label = "0xB\nSamsara Engine\n(/proc/samsara)\nLaw of Causality";shape = doublecircle;comment = "Causality Enforcement";];
+    spark_c_mythos_t [label = "0xC\nDirective Engine\n(/srv/directive)\nLaw of Directive";shape = doublecircle;comment = "Rule Arbitration";];
+    spark_d_mythos_t [label = "0xD\nCorpora Engine\n(/srv/corpora)\nLaw of Corpus";shape = doublecircle;comment = "Entity Manifestation Engine";];
+    spark_e_mythos_t [label = "0xE\nAuthority Engine\n(/srv/authority)\nLaw of Authority";shape = doublecircle;comment = "Entity Access Control";];
+    spark_f_mythos_t [label = "0xF\nOrigin Engine\n(/var/origin)\nLaw of Spacetime";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
@@ -31,9 +31,9 @@ strict digraph G {
     {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; color = darkgreen; comment = "";];
     {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; color = darkblue; comment = "";];
     
-    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_mythos_t -> spark_b_mythos_t -> spark_a_mythos_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; color = darkcyan; comment = ""; style = dashed; constraint = false;];
+    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; color = darkmagenta; comment = ""; style = dashed; constraint = false;];
+    spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; color = gold; comment = ""; style = dashed; constraint = false; dir = both;];
     
     {spark_c_mythos_t spark_d_mythos_t spark_e_mythos_t} -> spark_f_mythos_t [label = "OUT"; color = darkblue; comment = "";];
 }

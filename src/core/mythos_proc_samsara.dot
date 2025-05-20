@@ -8,21 +8,21 @@ strict digraph G {
     
     spark_b_mythos_t [label = "0xB\nSamsara\n(/proc/samsara)";shape = doublecircle;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec() 
-    spark_0_samsara_t [label = "0\nSamsara.init()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_samsara_t [label = "1\nSamsara.initSoul()";shape = circle;comment = "create new Soul";];
-    spark_2_samsara_t [label = "2\nSamsara.validateSoul()";shape = circle;comment = "validate Soul integrity";];
-    spark_4_samsara_t [label = "4\nSamsara.normalizeSoul()";shape = circle;comment = "normalize Soul";];
-    spark_8_samsara_t [label = "8\nSamsara.resetSoul()";shape = circle;comment = "reset Soul";];
-    spark_7_samsara_t [label = "7\nSamsara.reincarnateSoul()";shape = circle;comment = "reincarnate Soul";];
-    spark_5_samsara_t [label = "5\nSamsara.refactorSoul()";shape = circle;comment = "refactor Soul";];
-    spark_3_samsara_t [label = "3\nSamsara.causality()";shape = doublecircle;comment = "";];
-    spark_6_samsara_t [label = "6\nSamsara.listen()";shape = doublecircle;comment = "";];
-    spark_9_samsara_t [label = "9\nSamsara.assert()";shape = doublecircle;comment = "";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_samsara_t [label = "0\nSamsara.meta()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_samsara_t [label = "1\nSamsara.r1()";shape = circle;comment = "initSoul() create new Soul";];
+    spark_2_samsara_t [label = "2\nSamsara.r2()";shape = circle;comment = "validateSoul() validate Soul integrity";];
+    spark_4_samsara_t [label = "4\nSamsara.r4()";shape = circle;comment = "normalizeSoul() normalize Soul";];
+    spark_8_samsara_t [label = "8\nSamsara.r8()";shape = circle;comment = "resetSoul() reset Soul";];
+    spark_7_samsara_t [label = "7\nSamsara.r7()";shape = circle;comment = "reincarnateSoul() reincarnate Soul";];
+    spark_5_samsara_t [label = "5\nSamsara.r5()";shape = circle;comment = "refactorSoul() refactor Soul";];
+    spark_3_samsara_t [label = "3\nSamsara.r3()";shape = doublecircle;comment = "causality()";];
+    spark_6_samsara_t [label = "6\nSamsara.r6()";shape = doublecircle;comment = "";];
+    spark_9_samsara_t [label = "9\nSamsara.r9()";shape = doublecircle;comment = "";];
     spark_a_samsara_t [label = "A\nSamsara.receive()";shape = triangle;comment = "";];
     spark_b_samsara_t [label = "B\nSamsara.send()";shape = invtriangle;comment = "";];
-    spark_c_samsara_t [label = "C\nSamsara.response()";shape = doublecircle;comment = "";];
-    spark_d_samsara_t [label = "D\nSamsara.cycle()";shape = doublecircle;comment = "`/proc/cycle`";];
+    spark_c_samsara_t [label = "C\nSamsara.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_samsara_t [label = "D\nSamsara.commit()";shape = doublecircle;comment = "`/proc/cycle`";];
     spark_e_samsara_t [label = "E\nSamsara.serve()";shape = doublecircle;comment = "`/proc/samsara`";];
     spark_f_samsara_t [label = "F\nLaw of Causality\n(law_of_causality_t)";shape = doublecircle;comment = "`/proc/causality`";];
     
