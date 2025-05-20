@@ -8,22 +8,24 @@ strict digraph G {
     
     spark_a_mythos_t [label = "0xA\nEvent\n(/proc/event)";shape = doublecircle;];
     
-    spark_0_event_t [label = "0\nEvent.init()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_event_t [label = "1\nEvent.trigger()";shape = circle;comment = "";];
-    spark_2_event_t [label = "2\nEvent.validate()";shape = circle;comment = "";];
-    spark_4_event_t [label = "4\nEvent.normalize()";shape = circle;comment = "";];
-    spark_8_event_t [label = "8\nEvent.reset()";shape = circle;comment = "";];
-    spark_7_event_t [label = "7\nEvent.destroy()";shape = circle;comment = "";];
-    spark_5_event_t [label = "5\nEvent.refactor()";shape = circle;comment = "";];
-    spark_3_event_t [label = "3\nEvent.probability()";shape = doublecircle;comment = "";];
-    spark_6_event_t [label = "6\nEvent.listen()";shape = doublecircle;comment = "";];
-    spark_9_event_t [label = "9\nEvent.assert()";shape = doublecircle;comment = "";];
+    
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_event_t [label = "0\nEvent.meta()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_event_t [label = "1\nEvent.r1()";shape = circle;comment = "";];
+    spark_2_event_t [label = "2\nEvent.r2()";shape = circle;comment = "";];
+    spark_4_event_t [label = "4\nEvent.r4()";shape = circle;comment = "";];
+    spark_8_event_t [label = "8\nEvent.r8()";shape = circle;comment = "";];
+    spark_7_event_t [label = "7\nEvent.r7()";shape = circle;comment = "";];
+    spark_5_event_t [label = "5\nEvent.r5()";shape = circle;comment = "";];
+    spark_3_event_t [label = "3\nEvent.r3()";shape = doublecircle;comment = "";];
+    spark_6_event_t [label = "6\nEvent.r6()";shape = doublecircle;comment = "";];
+    spark_9_event_t [label = "9\nEvent.r9()";shape = doublecircle;comment = "";];
     spark_a_event_t [label = "A\nEvent.receive()";shape = triangle;comment = "";];
     spark_b_event_t [label = "B\nEvent.send()";shape = invtriangle;comment = "";];
-    spark_c_event_t [label = "C\nEvent.response()";shape = doublecircle;comment = "";];
-    spark_d_event_t [label = "D\nEvent.ontology()";shape = doublecircle;comment = "";];
+    spark_c_event_t [label = "C\nEvent.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_event_t [label = "D\nEvent.commit()";shape = doublecircle;comment = "";];
     spark_e_event_t [label = "E\nEvent.serve()";shape = doublecircle;comment = "`/proc/event`";];
-    spark_f_event_t [label = "F\nLaw of Probability\n(law_of_probability_t)";shape = doublecircle;comment = "";];
+    spark_f_event_t [label = "F\nEvent.exec()\nLaw of Probability (law_of_probability_t)";shape = doublecircle;comment = "`/proc/probability`";];
     
     // IN = Input
     // OUT = Output

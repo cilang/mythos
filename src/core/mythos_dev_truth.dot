@@ -7,22 +7,23 @@ strict digraph G {
     
     spark_1_mythos_t [label = "0x1\nTruth\n(/dev/truth)";];
     
-    spark_0_truth_t [label = "0x0\nAsha\n()";shape = doublecircle;comment = "";];
-    spark_1_truth_t [label = "0x1\n()";shape = circle;comment = "";];
-    spark_2_truth_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_truth_t [label = "0x3\n(Crest of Objectivity)";shape = circle;comment = "";];
-    spark_4_truth_t [label = "0x4\n()";shape = circle;comment = "";];
-    spark_5_truth_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_truth_t [label = "0x6\n(Crest of Boundary)";shape = circle;comment = "";];
-    spark_7_truth_t [label = "0x7\n()";shape = circle;comment = "";];
-    spark_8_truth_t [label = "0x8\n()";shape = circle;comment = "";];
-    spark_9_truth_t [label = "0x9\n(Crest of Clarity)";shape = circle;comment = "";];
-    spark_a_truth_t [label = "0xA\nRaiment of Truth\n()";shape = triangle;comment = "";];
-    spark_b_truth_t [label = "0xB\nArmament of Truth\n()";shape = invtriangle;comment = "";];
-    spark_c_truth_t [label = "0xC\nBody of Truth\n()";shape = circle;comment = "";];
-    spark_d_truth_t [label = "0xD\nSoul of Truth\n()";shape = circle;comment = "";];
-    spark_e_truth_t [label = "0xE\nGrace of Truth\n()";shape = circle;comment = "";];
-    spark_f_truth_t [label = "0xF\nLaw of Truth\n()";shape = circle;comment = "";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_truth_t [label = "0x0\nTruth.meta()\nAsha";shape = doublecircle;comment = "";];
+    spark_1_truth_t [label = "0x1\nTruth.r1()\n";shape = circle;comment = "";];
+    spark_2_truth_t [label = "0x2\nTruth.r2()\n";shape = circle;comment = "";];
+    spark_4_truth_t [label = "0x4\nTruth.r4()\n";shape = circle;comment = "";];
+    spark_8_truth_t [label = "0x8\nTruth.r8()\n";shape = circle;comment = "";];
+    spark_7_truth_t [label = "0x7\nTruth.r7()\n";shape = circle;comment = "";];
+    spark_5_truth_t [label = "0x5\nTruth.r5()\n";shape = circle;comment = "";];
+    spark_3_truth_t [label = "0x3\nTruth.objectivity()\nCrest of Objectivity";shape = circle;comment = "";];
+    spark_6_truth_t [label = "0x6\nTruth.boundary()\nCrest of Boundary";shape = circle;comment = "";];
+    spark_9_truth_t [label = "0x9\nTruth.clarity()\nCrest of Clarity";shape = circle;comment = "";];
+    spark_a_truth_t [label = "0xA\nTruth.raiment()\nRaiment of Truth";shape = triangle;comment = "";];
+    spark_b_truth_t [label = "0xB\nTruth.armament()\nArmament of Truth";shape = invtriangle;comment = "";];
+    spark_c_truth_t [label = "0xC\nTruth.body()\nBody of Truth";shape = circle;comment = "";];
+    spark_d_truth_t [label = "0xD\nTruth.soul()\nSoul of Truth";shape = circle;comment = "";];
+    spark_e_truth_t [label = "0xE\nTruth.grace()\nGrace of Truth";shape = circle;comment = "";];
+    spark_f_truth_t [label = "0xF\nTruth.exec()\nLaw of Truth";shape = circle;comment = "";];
     
     // IN = Input
     // OUT = Output

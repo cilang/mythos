@@ -7,22 +7,23 @@ strict digraph G {
     
     spark_4_mythos_t [label = "0x4\nFixation\n(/dev/fixation)";];
     
-    spark_0_fixation_t [label = "0xA\nTha\n()";shape = doublecircle;comment = "";];
-    spark_1_fixation_t [label = "0x1\n()";shape = circle;comment = "";];
-    spark_2_fixation_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_fixation_t [label = "0x3\n(Crest of Desire)";shape = circle;comment = "";];
-    spark_4_fixation_t [label = "0x4\n()";shape = circle;comment = "";];
-    spark_5_fixation_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_fixation_t [label = "0x6\n(Crest of Transformation)";shape = circle;comment = "";];
-    spark_7_fixation_t [label = "0x7\n()";shape = circle;comment = "";];
-    spark_8_fixation_t [label = "0x8\n()";shape = circle;comment = "";];
-    spark_9_fixation_t [label = "0x9\n(Crest of Matter)";shape = circle;comment = "";];
-    spark_a_fixation_t [label = "0xA\nRaiment of Fixation\n()";shape = triangle;comment = "";];
-    spark_b_fixation_t [label = "0xB\nArmament of Fixation\n()";shape = invtriangle;comment = "";];
-    spark_c_fixation_t [label = "0xC\nBody of Fixation\n()";shape = circle;comment = "";];
-    spark_d_fixation_t [label = "0xD\nSoul of Fixation\n()";shape = circle;comment = "";];
-    spark_e_fixation_t [label = "0xE\nGrace of Fixation\n()";shape = circle;comment = "";];
-    spark_f_fixation_t [label = "0xF\nLaw of Fixation\n()";shape = circle;comment = "";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_fixation_t [label = "0xA\nFixation.meta()\nTha";shape = doublecircle;comment = "";];
+    spark_1_fixation_t [label = "0x1\nFixation.r1()\n";shape = circle;comment = "";];
+    spark_2_fixation_t [label = "0x2\nFixation.r2()\n";shape = circle;comment = "";];
+    spark_4_fixation_t [label = "0x4\nFixation.r4()\n";shape = circle;comment = "";];
+    spark_8_fixation_t [label = "0x8\nFixation.r8()\n";shape = circle;comment = "";];
+    spark_7_fixation_t [label = "0x7\nFixation.r7()\n";shape = circle;comment = "";];
+    spark_5_fixation_t [label = "0x5\nFixation.r5()\n";shape = circle;comment = "";];
+    spark_3_fixation_t [label = "0x3\nFixation.desire()\nCrest of Desire";shape = circle;comment = "";];
+    spark_6_fixation_t [label = "0x6\nFixation.transformation()\nCrest of Transformation";shape = circle;comment = "";];
+    spark_9_fixation_t [label = "0x9\nFixation.matter()\nCrest of Matter";shape = circle;comment = "";];
+    spark_a_fixation_t [label = "0xA\nFixation.raiment()\nRaiment of Fixation";shape = triangle;comment = "";];
+    spark_b_fixation_t [label = "0xB\nFixation.armament()\nArmament of Fixation";shape = invtriangle;comment = "";];
+    spark_c_fixation_t [label = "0xC\nFixation.body()\nBody of Fixation";shape = circle;comment = "";];
+    spark_d_fixation_t [label = "0xD\nFixation.soul()\nSoul of Fixation";shape = circle;comment = "";];
+    spark_e_fixation_t [label = "0xE\nFixation.grace()\nGrace of Fixation";shape = circle;comment = "";];
+    spark_f_fixation_t [label = "0xF\nFixation.exec()\nLaw of Fixation";shape = circle;comment = "";];
     
     // IN = Input
     // OUT = Output

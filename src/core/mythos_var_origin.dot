@@ -8,22 +8,23 @@ strict digraph G {
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-    spark_0_origin_t [label = "0\nOrigin.init()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_origin_t [label = "1\nOrigin.create()";shape = circle;comment = "";];
-    spark_2_origin_t [label = "2\nOrigin.validate()";shape = circle;comment = "";];
-    spark_4_origin_t [label = "4\nOrigin.normalize()";shape = circle;comment = "";];
-    spark_8_origin_t [label = "8\nOrigin.reset()";shape = circle;comment = "";];
-    spark_7_origin_t [label = "7\nOrigin.destroy()";shape = circle;comment = "";];
-    spark_5_origin_t [label = "5\nOrigin.refactor()";shape = circle;comment = "";];
-    spark_3_origin_t [label = "3\nOrigin.spacetime()";shape = doublecircle;comment = "";];
-    spark_6_origin_t [label = "6\nOrigin.listen()";shape = doublecircle;comment = "";];
-    spark_9_origin_t [label = "9\nOrigin.assert()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_origin_t [label = "0\nOrigin.meta()";shape = doublecircle;comment = "Engine Meta";];
+    spark_1_origin_t [label = "1\nOrigin.r1()";shape = circle;comment = "";];
+    spark_2_origin_t [label = "2\nOrigin.r2()";shape = circle;comment = "";];
+    spark_4_origin_t [label = "4\nOrigin.r4()";shape = circle;comment = "";];
+    spark_8_origin_t [label = "8\nOrigin.r8()";shape = circle;comment = "";];
+    spark_7_origin_t [label = "7\nOrigin.r7()";shape = circle;comment = "";];
+    spark_5_origin_t [label = "5\nOrigin.r5()";shape = circle;comment = "";];
+    spark_3_origin_t [label = "3\nOrigin.pattern()";shape = doublecircle;comment = "";];
+    spark_6_origin_t [label = "6\nOrigin.rhythm()";shape = doublecircle;comment = "";];
+    spark_9_origin_t [label = "9\nOrigin.spacetime()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
     spark_a_origin_t [label = "A\nOrigin.manthan()";shape = triangle;comment = "`/var/manthan`";];
     spark_b_origin_t [label = "B\nOrigin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
-    spark_c_origin_t [label = "C\nOrigin.response()";shape = doublecircle;comment = "";];
-    spark_d_origin_t [label = "D\nOrigin.mount()";shape = doublecircle;comment = "";];
+    spark_c_origin_t [label = "C\nOrigin.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_origin_t [label = "D\nOrigin.commit()";shape = doublecircle;comment = "";];
     spark_e_origin_t [label = "E\nOrigin.serve()";shape = doublecircle;comment = "`/var`";];
-    spark_f_origin_t [label = "F\nLaw of Spacetime";shape = doublecircle;comment = "";];
+    spark_f_origin_t [label = "F\nOrigin.exec()\nLaw of Spacetime";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

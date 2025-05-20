@@ -7,22 +7,23 @@ strict digraph G {
     
     spark_5_mythos_t [label = "0x5\nExcitation\n(/dev/excitation)";];
     
-    spark_0_excitation_t [label = "0x0\nNda\n()";shape = doublecircle;comment = "";];
-    spark_1_excitation_t [label = "0x1\n()";shape = circle;comment = "";];
-    spark_2_excitation_t [label = "0x2\n()";shape = circle;comment = "";];
-    spark_3_excitation_t [label = "0x3\n(Crest of Emotion)";shape = circle;comment = "";];
-    spark_4_excitation_t [label = "0x4\n()";shape = circle;comment = "";];
-    spark_5_excitation_t [label = "0x5\n()";shape = circle;comment = "";];
-    spark_6_excitation_t [label = "0x6\n(Crest of Memory)";shape = circle;comment = "";];
-    spark_7_excitation_t [label = "0x7\n()";shape = circle;comment = "";];
-    spark_8_excitation_t [label = "0x8\n()";shape = circle;comment = "";];
-    spark_9_excitation_t [label = "0x9\n(Crest of Energy)";shape = circle;comment = "";];
-    spark_a_excitation_t [label = "0xA\nRaiment of Excitation\n()";shape = triangle;comment = "";];
-    spark_b_excitation_t [label = "0xB\nArmament of Excitation\n()";shape = invtriangle;comment = "";];
-    spark_c_excitation_t [label = "0xC\nBody of Excitation\n()";shape = circle;comment = "";];
-    spark_d_excitation_t [label = "0xD\nSoul of Excitation\n()";shape = circle;comment = "";];
-    spark_e_excitation_t [label = "0xE\nGrace of Excitation\n()";shape = circle;comment = "";];
-    spark_f_excitation_t [label = "0xF\nLaw of Excitation\n()";shape = circle;comment = "";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_excitation_t [label = "0x0\nExcitation.meta()\nNda";shape = doublecircle;comment = "";];
+    spark_1_excitation_t [label = "0x1\nExcitation.r1()\n";shape = circle;comment = "";];
+    spark_2_excitation_t [label = "0x2\nExcitation.r2()\n";shape = circle;comment = "";];
+    spark_4_excitation_t [label = "0x4\nExcitation.r4()\n";shape = circle;comment = "";];
+    spark_8_excitation_t [label = "0x8\nExcitation.r8()\n";shape = circle;comment = "";];
+    spark_7_excitation_t [label = "0x7\nExcitation.r7()\n";shape = circle;comment = "";];
+    spark_5_excitation_t [label = "0x5\nExcitation.r5()\n";shape = circle;comment = "";];
+    spark_3_excitation_t [label = "0x3\nExcitation.emotion()\nCrest of Emotion";shape = circle;comment = "";];
+    spark_6_excitation_t [label = "0x6\nExcitation.memory()\nCrest of Memory";shape = circle;comment = "";];
+    spark_9_excitation_t [label = "0x9\nExcitation.energy()\nCrest of Energy";shape = circle;comment = "";];
+    spark_a_excitation_t [label = "0xA\nExcitation.raiment()\nRaiment of Excitation";shape = triangle;comment = "";];
+    spark_b_excitation_t [label = "0xB\nExcitation.armament()\nArmament of Excitation";shape = invtriangle;comment = "";];
+    spark_c_excitation_t [label = "0xC\nExcitation.body()\nBody of Excitation";shape = circle;comment = "";];
+    spark_d_excitation_t [label = "0xD\nExcitation.soul()\nSoul of Excitation";shape = circle;comment = "";];
+    spark_e_excitation_t [label = "0xE\nExcitation.grace()\nGrace of Excitation";shape = circle;comment = "";];
+    spark_f_excitation_t [label = "0xF\nExcitation.exec()\nLaw of Excitation";shape = circle;comment = "";];
     
     // IN = Input
     // OUT = Output

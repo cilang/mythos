@@ -7,6 +7,7 @@ strict digraph G {
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec() 
     spark_0_t [label = "0\nFactor.meta()";shape = doublecircle;comment = "";];
     spark_1_t [label = "1\nFactor.r1()";shape = circle;comment = "";];
     spark_2_t [label = "2\nFactor.r2()";shape = circle;comment = "";];
@@ -31,6 +32,7 @@ strict digraph G {
     // manunggal kawula ning gusti.
     // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
     // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec() 
     spark_0_observer_seed_t [label = "Factor.observer()\n(Dumadi)";shape = doublecircle;comment = "";];
     spark_1_observer_seed_t [label = "Harta\n(Resources)";shape = circle;comment = "";];
     spark_2_observer_seed_t [label = "Tahta\n(Authority)";shape = circle;comment = "";];
@@ -49,6 +51,7 @@ strict digraph G {
     spark_f_observer_seed_t [label = "Closure";shape = doublecircle;comment = "";];
     
     // Alignment Model
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec() 
     spark_0_alignment_seed_t [label = "Factor.alignment()\n()";shape = doublecircle;comment = "Raw potential (unformatted).";];
     spark_1_alignment_seed_t [label = "K\n(Causality)";shape = circle;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
     spark_2_alignment_seed_t [label = "Θ\n(Topology)";shape = circle;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
@@ -67,6 +70,7 @@ strict digraph G {
     spark_f_alignment_seed_t [label = "F\n(Alignment)";shape = doublecircle;comment = "";];
     
     // Spectral Model
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec() 
     spark_0_spectral_seed_t [label = "Factor.spectral()\n(Thanda)";shape = doublecircle;comment = "";];
     spark_1_spectral_seed_t [label = "m\n(Mass)";shape = circle;comment = "";];
     spark_2_spectral_seed_t [label = "Q\n(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];

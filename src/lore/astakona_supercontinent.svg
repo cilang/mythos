@@ -24,10 +24,10 @@ viewBox="0 0 1512.87 1512.87"
    <line id="se_ordinal_mountain" fill="none" stroke="yellow" stroke-miterlimit="2.61313" x1="1057.09" y1="1057.09" x2="1290.94" y2= "1290.94" />
   </g>
   <g id="quartal_buffer">
-   <polygon id="r_infinity" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,224.95 1132.26,380.62 1287.93,756.44 1132.26,1132.26 756.44,1287.93 380.62,1132.26 224.95,756.44 380.62,380.62 "/>
-   <polygon id="r_eternity" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,402.11 1006.98,505.89 1110.76,756.44 1006.98,1006.98 756.44,1110.76 505.89,1006.98 402.11,756.44 505.89,505.89 "/>
-   <polygon id="r_boundary" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,472.98 956.88,556 1039.9,756.44 956.88,956.88 756.44,1039.9 556,956.88 472.98,756.44 556,556 "/>
-   <polygon id="t_larangan" fill="none" stroke="yellow" stroke-miterlimit="2.61313" points="756.44,331.25 1057.09,455.78 1181.63,756.44 1057.09,1057.09 756.44,1181.63 455.78,1057.09 331.25,756.44 455.78,455.78 "/>
+   <polygon id="river_infinity" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,224.95 1132.26,380.62 1287.93,756.44 1132.26,1132.26 756.44,1287.93 380.62,1132.26 224.95,756.44 380.62,380.62 "/>
+   <polygon id="river_eternity" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,402.11 1006.98,505.89 1110.76,756.44 1006.98,1006.98 756.44,1110.76 505.89,1006.98 402.11,756.44 505.89,505.89 "/>
+   <polygon id="river_boundary" fill="none" stroke="blue" stroke-width="2.08" stroke-miterlimit="2.61313" points="756.44,472.98 956.88,556 1039.9,756.44 956.88,956.88 756.44,1039.9 556,956.88 472.98,756.44 556,556 "/>
+   <polygon id="tebing_larangan" fill="none" stroke="yellow" stroke-miterlimit="2.61313" points="756.44,331.25 1057.09,455.78 1181.63,756.44 1057.09,1057.09 756.44,1181.63 455.78,1057.09 331.25,756.44 455.78,455.78 "/>
   </g>
   <g id="frontline_fortress">
    <polygon id="ff_red_route" fill="none" stroke="red" stroke-miterlimit="2.61313" points="756.44,472.98 856.66,514.49 956.88,556 998.39,656.22 1039.9,756.44 998.39,856.66 956.88,956.88 856.66,998.39 756.44,1039.9 656.22,998.39 556,956.88 514.49,856.66 472.98,756.44 514.49,656.22 556,556 656.22,514.49 "/>

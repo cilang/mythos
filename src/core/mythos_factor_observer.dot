@@ -11,22 +11,23 @@ strict digraph G {
     // manunggal kawula ning gusti.
     // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
     // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
-    spark_0_observer_seed_t [label = "Factor.observer()\n(Dumadi)";shape = doublecircle;comment = "";];
-    spark_1_observer_seed_t [label = "Harta\n(Resources)";shape = circle;comment = "";];
-    spark_2_observer_seed_t [label = "Tahta\n(Authority)";shape = circle;comment = "";];
-    spark_4_observer_seed_t [label = "Wanita\n(Relations)";shape = circle;comment = "";];
-    spark_8_observer_seed_t [label = "Agama\n(Axiom)";shape = circle;comment = "";];
-    spark_7_observer_seed_t [label = "Ilmu\n(Knowledge)";shape = circle;comment = "";];
-    spark_5_observer_seed_t [label = "Keturunan\n(Lineage)";shape = circle;comment = "";];
-    spark_3_observer_seed_t [label = "Asumsi\n(Assumption)";shape = circle;comment = "";];
-    spark_6_observer_seed_t [label = "Sugesti\n(Suggestion)";shape = circle;comment = "";];
-    spark_9_observer_seed_t [label = "Persepsi\n(Perception)";shape = circle;comment = "";];
-    spark_a_observer_seed_t [label = "Sangkan\n(Origin)";shape = triangle;comment = "";];
-    spark_b_observer_seed_t [label = "Paran\n(Destination)";shape = invtriangle;comment = "";];
-    spark_c_observer_seed_t [label = "Truth Inquiry\n(What/How)";shape = doublecircle;comment = "";];
-    spark_d_observer_seed_t [label = "Theosophy Inquiry\n(Why/Who)";shape = doublecircle;comment = "";];
-    spark_e_observer_seed_t [label = "Wisdom Inquiry\n(When/Where)";shape = doublecircle;comment = "";];
-    spark_f_observer_seed_t [label = "Closure";shape = doublecircle;comment = "";];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_observer_seed_t [label = "0\nObserver.meta()\nDumadi";shape = doublecircle;comment = "";];
+    spark_1_observer_seed_t [label = "1\nObserver.harta()\nResources";shape = circle;comment = "";];
+    spark_2_observer_seed_t [label = "2\nObserver.tahta()\nAuthority";shape = circle;comment = "";];
+    spark_4_observer_seed_t [label = "4\nObserver.wanita()\nRelations";shape = circle;comment = "";];
+    spark_8_observer_seed_t [label = "8\nObserver.agama()\nAxiom";shape = circle;comment = "";];
+    spark_7_observer_seed_t [label = "7\nObserver.ilmu()\nKnowledge";shape = circle;comment = "";];
+    spark_5_observer_seed_t [label = "5\nObserver.keturunan()\nLineage";shape = circle;comment = "";];
+    spark_3_observer_seed_t [label = "3\nObserver.asumsi()\nAssumption";shape = circle;comment = "";];
+    spark_6_observer_seed_t [label = "6\nObserver.sugesti()\nSuggestion";shape = circle;comment = "";];
+    spark_9_observer_seed_t [label = "9\nObserver.persepsi()\nPerception";shape = circle;comment = "";];
+    spark_a_observer_seed_t [label = "A\nObserver.receive()";shape = triangle;comment = "Sangkan (Origin)";];
+    spark_b_observer_seed_t [label = "B\nObserver.send()";shape = invtriangle;comment = "Paran (Destination)";];
+    spark_c_observer_seed_t [label = "C\nObserver.dispatch()";shape = doublecircle;comment = "Truth Inquiry (What/How)";];
+    spark_d_observer_seed_t [label = "D\nObserver.commit()";shape = doublecircle;comment = "Theosophy Inquiry (What/How)";];
+    spark_e_observer_seed_t [label = "E\nObserver.serve()";shape = doublecircle;comment = "Wisdom Inquiry (What/How)";];
+    spark_f_observer_seed_t [label = "F\nObserver.exec()";shape = doublecircle;comment = "Closure";];
     
     // IN = Input
     // OUT = Output

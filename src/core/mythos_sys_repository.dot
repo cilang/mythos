@@ -10,22 +10,23 @@ digraph G {
     // The Sacred 3-6-9 (Boundary of Perception).
     // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
-    spark_0_repository_t [label = "0\n\n()";shape = doublecircle;comment = "";];
-    spark_1_repository_t [label = "1\n\n()";shape = circle;comment = "";];
-    spark_2_repository_t [label = "2\n\n()";shape = circle;comment = "";];
-    spark_4_repository_t [label = "4\n\n()";shape = circle;comment = "";];
-    spark_8_repository_t [label = "8\n\n()";shape = circle;comment = "";];
-    spark_7_repository_t [label = "7\n\n()";shape = circle;comment = "";];
-    spark_5_repository_t [label = "5\n\n()";shape = circle;comment = "";];
-    spark_3_repository_t [label = "3\n\n()";shape = doublecircle;comment = "";];
-    spark_6_repository_t [label = "6\n\n()";shape = doublecircle;comment = "";];
-    spark_9_repository_t [label = "9\n\n()";shape = doublecircle;comment = "";];
-    spark_a_repository_t [label = "A\n\n()";shape = triangle;comment = "";];
-    spark_b_repository_t [label = "B\n\n()";shape = invtriangle;comment = "";];
-    spark_c_repository_t [label = "C\n\n()";shape = doublecircle;];
-    spark_d_repository_t [label = "D\n\n()";shape = doublecircle;];
-    spark_e_repository_t [label = "E\n\n()";shape = doublecircle;];
-    spark_f_repository_t [label = "F\n\n()";shape = doublecircle;];
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_repository_t [label = "0\nRepository.meta()";shape = doublecircle;comment = "";];
+    spark_1_repository_t [label = "1\nRepository.r1()";shape = circle;comment = "";];
+    spark_2_repository_t [label = "2\nRepository.r2()";shape = circle;comment = "";];
+    spark_4_repository_t [label = "4\nRepository.r4()";shape = circle;comment = "";];
+    spark_8_repository_t [label = "8\nRepository.r8()";shape = circle;comment = "";];
+    spark_7_repository_t [label = "7\nRepository.r7()";shape = circle;comment = "";];
+    spark_5_repository_t [label = "5\nRepository.r5()";shape = circle;comment = "";];
+    spark_3_repository_t [label = "3\nRepository.r3()";shape = doublecircle;comment = "";];
+    spark_6_repository_t [label = "6\nRepository.r6()";shape = doublecircle;comment = "";];
+    spark_9_repository_t [label = "9\nRepository.r9()";shape = doublecircle;comment = "";];
+    spark_a_repository_t [label = "A\nRepository.receive()";shape = triangle;comment = "";];
+    spark_b_repository_t [label = "B\nRepository.send()";shape = invtriangle;comment = "";];
+    spark_c_repository_t [label = "C\nRepository.dispatch()";shape = doublecircle;];
+    spark_d_repository_t [label = "D\nRepository.commit()";shape = doublecircle;];
+    spark_e_repository_t [label = "E\nRepository.serve()";shape = doublecircle;];
+    spark_f_repository_t [label = "F\nRepository.exec()";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

@@ -12,27 +12,32 @@ strict digraph G {
         label = "Factor";
         style = filled;
         color = darkgray;
-        spark_0_factor_t [label = "0\nFoam\n(foam_t)";shape = doublecircle;comment = "from initFactor()";];
-        spark_1_factor_t [label = "1\nHeart Interface\n(heart_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_2_factor_t [label = "2\nShell Interface\n(shell_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_4_factor_t [label = "4\nAstral Interface\n(astral_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_8_factor_t [label = "8\nSpiritual Interface\n(spiritual_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_7_factor_t [label = "7\nMaterial Interface\n(material_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_5_factor_t [label = "5\nCelestial Interface\n(celestial_interface_t)";shape = circle;comment = "from initFactor()";];
-        spark_3_factor_t [label = "3\nAlignment Model\n(alignment_model_t)";shape = doublecircle;comment = "from Convergence Engine and Divergence Engine";];
-        spark_6_factor_t [label = "6\nSpectral Model\n(spectral_model_t)";shape = doublecircle;comment = "from Fixation Engine and Excitation Engine";];
-        spark_9_factor_t [label = "9\nObserver Model\n(observer_model_t)";shape = doublecircle;comment = "from Truth Engine and Wisdom Engine";];
-        spark_a_factor_t [label = "A\nLURD IN\n(lurd_in_t)";shape = triangle;comment = "from initFactor()";];
-        spark_b_factor_t [label = "B\nLURD OUT\n(lurd_out_t)";shape = invtriangle;comment = "from initFactor()";];
-        spark_c_factor_t [label = "C\nLURD Interface\n(lurd_interface_t)";shape = doublecircle;comment = "from initFactor()";];
-        spark_d_factor_t [label = "D\nCorpus Interface\n(corpus_interface_t)";shape = doublecircle;comment = "from initFactor()";];
-        spark_e_factor_t [label = "E\nFactor\n(factor_t)";shape = doublecircle;comment = "from initFactor()";];
-        spark_f_factor_t [label = "F\nInformation Factor\n(information_factor_t)";shape = doublecircle;comment = "from initFactor()";];
+        
+        // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+        spark_0_factor_t [label = "0\nFactor.meta()\nfoam_t";shape = doublecircle;comment = "from initFactor()";];
+        spark_1_factor_t [label = "1\nFactor.heart()\nheart_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_2_factor_t [label = "2\nFactor.astral()\nshell_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_4_factor_t [label = "4\nFactor.astral()\nastral_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_8_factor_t [label = "8\nFactor.spiritual()\nspiritual_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_7_factor_t [label = "7\nFactor.material()\nmaterial_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_5_factor_t [label = "5\nFactor.celestial()\ncelestial_interface_t";shape = circle;comment = "from initFactor()";];
+        spark_3_factor_t [label = "3\nFactor.alignment()\nalignment_model_t";shape = doublecircle;comment = "from Convergence Engine and Divergence Engine";];
+        spark_6_factor_t [label = "6\nFactor.spectral()\nspectral_model_t";shape = doublecircle;comment = "from Fixation Engine and Excitation Engine";];
+        spark_9_factor_t [label = "9\nFactor.observer()\nobserver_model_t";shape = doublecircle;comment = "from Truth Engine and Wisdom Engine";];
+        spark_a_factor_t [label = "A\nFactor.lurd_in()\nlurd_in_t";shape = triangle;comment = "from initFactor()";];
+        spark_b_factor_t [label = "B\nFactor.lurd_out()\nlurd_out_t";shape = invtriangle;comment = "from initFactor()";];
+        spark_c_factor_t [label = "C\nFactor.lurd()\nlurd_interface_t";shape = doublecircle;comment = "from initFactor()";];
+        spark_d_factor_t [label = "D\nFactor.corpus()\ncorpus_interface_t";shape = doublecircle;comment = "from initFactor()";];
+        spark_e_factor_t [label = "E\nFactor.factor()\nfactor_t";shape = doublecircle;comment = "from initFactor()";];
+        spark_f_factor_t [label = "F\nFactor.exec()\ninformation_factor_t";shape = doublecircle;comment = "from initFactor()";];
     }
     subgraph cluster_prime_directive {
         label = "Prime Directive";
         style = filled;
         color = darkgray;
+        
+        
+        // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
         spark_0_prime_directive_t [label = "0\nPD.init()";shape = doublecircle;comment = "Init Prime Directive";];
         spark_1_prime_directive_t [label = "1\nPD.wakeEngine()";shape = circle;comment = "wakeEngine() default all engines";];
         spark_2_prime_directive_t [label = "2\nPD.initFactor()";shape = circle;comment = "initFactor() factor_t";];
