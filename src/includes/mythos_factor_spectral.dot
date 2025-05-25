@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph SpectralModel {
     label = "Spectral Model\n(/proc/reality/factor/spectral-model)";
     style = filled;
     color = lightgray;
@@ -8,14 +8,14 @@ strict digraph G {
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_spectral_seed_t [label = "0\nSpectral.meta()";shape = doublecircle;comment = "";];
     spark_1_spectral_seed_t [label = "1\nSpectral.m()\nMass";shape = circle;comment = "";];
-    spark_2_spectral_seed_t [label = "2\nSpectral.G()\nGravity";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+    spark_2_spectral_seed_t [label = "2\nSpectral.G()\nGravity";shape = circle;comment = "";];
     spark_4_spectral_seed_t [label = "4\nSpectral.E()\nEnergy";shape = circle;comment = "";];
     spark_8_spectral_seed_t [label = "8\nSpectral.Φ()\nFlux";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
     spark_7_spectral_seed_t [label = "7\nSpectral.L()\nAngular Momentum";shape = circle;comment = "";];
     spark_5_spectral_seed_t [label = "5\nSpectral.c()\nSpeed of Causality";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
     spark_3_spectral_seed_t [label = "3\nSpectral.I()\nInertia";shape = circle;comment = "";];
     spark_6_spectral_seed_t [label = "6\nSpectral.p()\nMomentum";shape = circle;comment = "";];
-    spark_9_spectral_seed_t [label = "9\nSpectral.Q()\nQuanta";shape = circle;comment = "";];
+    spark_9_spectral_seed_t [label = "9\nSpectral.Q()\nQuanta";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
     spark_a_spectral_seed_t [label = "A\nSpectral.fixation()\nRhythm";shape = triangle;comment = "";];
     spark_b_spectral_seed_t [label = "B\nSpectral.excitation()\nPattern";shape = invtriangle;comment = "";];
     spark_c_spectral_seed_t [label = "C\nSpectral.dispatch()";comment = "";];

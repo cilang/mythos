@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph OriginEngine {
     label = "Origin\n(/var)";
     style = filled;
     color = lightgray;
@@ -29,28 +29,22 @@ strict digraph G {
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_origin_t -> {spark_a_origin_t spark_b_origin_t spark_1_origin_t spark_2_origin_t spark_3_origin_t spark_4_origin_t spark_5_origin_t spark_6_origin_t spark_7_origin_t spark_8_origin_t spark_9_origin_t} [label = "IN"; color = yellow; comment = "";];
+    spark_0_origin_t -> spark_a_origin_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_origin_t -> spark_b_origin_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; color = darkblue; comment = "";];
+    spark_0_origin_t -> {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_5_origin_t spark_7_origin_t spark_8_origin_t} [label = "IN"; color = darkgreen; comment = "";];
     
     {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
     {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
     
-    spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_origin_t -> spark_b_origin_t -> spark_a_origin_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+    spark_a_origin_t -> spark_b_origin_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkgreen; comment = ""; style = dassed; constraint = false;];
     
-    {spark_c_origin_t spark_d_origin_t spark_e_origin_t} -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_e_origin_t -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_origin_t -> spark_f_origin_t [label = "OUT"; color = darkred; comment = "";];
+    spark_d_origin_t -> spark_f_origin_t [label = "OUT"; color = darkgreen; comment = "";];
     
-    spark_f_mythos_t -> spark_0_origin_t [label = "Brane Interface";];
-    
-    mythos_earth_t [label = "IRL Earth Insert\n(/var/chaotic/earth)";shape = folder;];
-    mythos_astakona_t [label = "Astakona\n(/var/chaotic/astakona)";shape = folder;];
-    mythos_astra_t [label = "Astra\n(/var/chaotic/astra)";shape = folder;];
-    mythos_rhea_t [label = "Rhea\n(/var/chaotic/rhea)";shape = folder;];
-    
-    spark_f_origin_t -> mythos_earth_t;
-    spark_f_origin_t -> mythos_astra_t;
-    spark_f_origin_t -> mythos_rhea_t;
-    mythos_astra_t -> mythos_astakona_t [label = "Labyrinth System";];
-    mythos_rhea_t -> mythos_astakona_t [label = "Mountain Theia";];
+    spark_f_mythos_t -> spark_0_origin_t;
 }

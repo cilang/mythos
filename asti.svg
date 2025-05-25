@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1680px" height="1657px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 1679.87 1657.26"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Layer_x0020_1">
+  <g id="yin_yang">
+   <path id="old_yang" fill="black" d="M1217.88 473.47c0,208.74 -169.21,377.95 -377.94,377.95 -208.74,0 -377.95,169.21 -377.95,377.95 0,208.73 169.21,377.94 377.95,377.94 417.47,0 755.89,-338.42 755.89,-755.89 0,-417.47 -338.42,-755.89 -755.89,-755.89 208.73,0 377.94,169.21 377.94,377.94zm-377.94 661.41c52.18,0 94.48,42.3 94.48,94.49 0,52.18 -42.3,94.48 -94.48,94.48 -52.19,0 -94.49,-42.3 -94.49,-94.48 0,-52.19 42.3,-94.49 94.49,-94.49z"/>
+   <path id="old_yin" fill="white" d="M839.94 851.42c208.73,0 377.94,-169.21 377.94,-377.95 0,-208.73 -169.21,-377.94 -377.94,-377.94 -417.47,0 -755.9,338.42 -755.9,755.89 0,417.47 338.43,755.89 755.9,755.89 -208.74,0 -377.95,-169.21 -377.95,-377.94 0,-208.74 169.21,-377.95 377.95,-377.95zm-94.49 -377.95c0,-52.18 42.3,-94.48 94.49,-94.48 52.18,0 94.48,42.3 94.48,94.48 0,52.19 -42.3,94.49 -94.48,94.49 -52.19,0 -94.49,-42.3 -94.49,-94.49z"/>
+  </g>
+  <path fill="#9900CC" d="M890.5 662.45c0,-68.84 -18.4,-133.39 -50.56,-188.98 -32.16,55.6 -50.57,120.14 -50.57,188.98 0,68.49 18.22,132.73 50.08,188.13 0.16,0.28 0.33,0.56 0.49,0.84 0.03,-0.06 0.07,-0.13 0.11,-0.19 32.09,-55.55 50.45,-120.02 50.45,-188.78zm-50.45 188.78c-0.04,0.06 -0.08,0.13 -0.11,0.19 0.03,-0.06 0.07,-0.13 0.11,-0.19zm327.27 -188.78c-139.73,0 -261.74,75.82 -327.15,188.57 -0.04,0.07 -0.08,0.14 -0.12,0.21 -0.04,0.07 -0.08,0.13 -0.11,0.19 139.89,0 262.03,-76 327.38,-188.97zm0 0c-65.35,112.97 -187.49,188.97 -327.38,188.97 139.89,0 262.03,-76 327.38,-188.97zm0 377.94c-65.35,-112.96 -187.49,-188.97 -327.38,-188.97 0.16,0.28 0.32,0.56 0.48,0.84 65.47,112.51 187.35,188.14 326.9,188.13zm-326.9 -188.13c-0.16,-0.28 -0.32,-0.56 -0.48,-0.84 0.16,0.28 0.32,0.56 0.48,0.84zm50.08 188.13c0,-68.47 -18.21,-132.69 -50.05,-188.08 -0.01,-0.02 -0.02,-0.03 -0.03,-0.05 -0.16,-0.28 -0.32,-0.56 -0.48,-0.84 -0.04,0.06 -0.08,0.13 -0.11,0.19 -32.09,55.55 -50.46,120.02 -50.46,188.79 0,68.84 18.41,133.38 50.57,188.97 32.16,-55.59 50.56,-120.14 50.56,-188.98zm-50.67 -188.78c0.03,-0.06 0.07,-0.13 0.11,-0.19 -0.04,0.06 -0.08,0.13 -0.11,0.19zm-327.28 188.78c139.73,0 261.75,-75.82 327.15,-188.56 0.04,-0.08 0.09,-0.15 0.13,-0.22 0.03,-0.06 0.07,-0.13 0.11,-0.19 -139.9,0 -262.04,76.01 -327.39,188.97zm0 0c65.35,-112.96 187.49,-188.97 327.39,-188.97 -139.9,0 -262.04,76.01 -327.39,188.97zm0 -377.94c65.35,112.97 187.49,188.97 327.39,188.97 -0.16,-0.28 -0.33,-0.56 -0.49,-0.84 -65.47,-112.5 -187.35,-188.13 -326.9,-188.13z"/>
+  <g id="sparklet">
+   <circle id="spark_b" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="839.94" cy="1229.37" r="94.49"/>
+   <circle id="spark_a" fill="black" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="839.94" cy="473.47" r="94.49"/>
+   <circle id="spark_0" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="839.94" cy="851.42" r="94.49"/>
+   <circle id="spark_9" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="839.94" cy="95.53" r="94.49"/>
+   <circle id="spark_3" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1494.56" cy="1229.37" r="94.49"/>
+   <circle id="spark_6" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="185.32" cy="1229.37" r="94.49"/>
+   <circle id="spark_1" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1325.82" cy="272.37" r="94.49"/>
+   <circle id="spark_2" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1584.35" cy="720.16" r="94.49"/>
+   <circle id="spark_4" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1098.47" cy="1561.73" r="94.49"/>
+   <circle id="spark_8" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="354.06" cy="272.37" r="94.49"/>
+   <circle id="spark_7" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="95.53" cy="720.16" r="94.49"/>
+   <circle id="spark_5" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="581.41" cy="1561.73" r="94.49"/>
+   <circle id="spark_c" fill="fuchsia" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1167.32" cy="1040.4" r="94.49"/>
+   <circle id="spark_d" fill="aqua" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="512.55" cy="1040.39" r="94.49"/>
+   <circle id="spark_e" fill="aqua" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1167.32" cy="662.45" r="94.49"/>
+   <circle id="spark_f" fill="fuchsia" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="512.55" cy="662.45" r="94.49"/>
+  </g>
+ </g>
+</svg>

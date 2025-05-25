@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph SamsaraEngine {
     label = "Samsara Engine";
     style = filled;
     color = lightgrey;

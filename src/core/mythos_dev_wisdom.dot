@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph WisdomEngine {
     label = "Wisdom Engine";
     style = filled;
     color = blue;

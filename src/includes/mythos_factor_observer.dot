@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph ObserverModel {
     label = "Observer Model\n(/proc/reality/factor/observer-model)";
     style = filled;
     color = lightgray;

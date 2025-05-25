@@ -1,4 +1,4 @@
-digraph G {
+digraph HaomaEngine {
     label = "Haoma Engine";
     style = filled;
     color = red;
@@ -12,34 +12,40 @@ digraph G {
     // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_haoma_t [label = "0\nHaoma.meta()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_haoma_t [label = "1\nHaoma.bind()";shape = circle;comment = "";];
-    spark_2_haoma_t [label = "2\nHaoma.validate()";shape = circle;comment = "";];
-    spark_4_haoma_t [label = "4\nHaoma.normalize()";shape = circle;comment = "";];
-    spark_8_haoma_t [label = "8\nHaoma.reset()";shape = circle;comment = "";];
-    spark_7_haoma_t [label = "7\nHaoma.rebornBody()";shape = circle;comment = "";];
-    spark_5_haoma_t [label = "5\nHaoma.refactor()";shape = circle;comment = "";];
-    spark_3_haoma_t [label = "3\nHaoma.lurd()";shape = doublecircle;comment = "`/sys/lurd`";];
-    spark_6_haoma_t [label = "6\nHaoma.listen()";shape = doublecircle;comment = "";];
-    spark_9_haoma_t [label = "9\nHaoma.assert()";shape = doublecircle;comment = "";];
+    spark_1_haoma_t [label = "1\nHaoma.r1()";shape = circle;comment = "";];
+    spark_2_haoma_t [label = "2\nHaoma.r2()";shape = circle;comment = "";];
+    spark_4_haoma_t [label = "4\nHaoma.r4()";shape = circle;comment = "";];
+    spark_8_haoma_t [label = "8\nHaoma.r8()";shape = circle;comment = "";];
+    spark_7_haoma_t [label = "7\nHaoma.r7()";shape = circle;comment = "";];
+    spark_5_haoma_t [label = "5\nHaoma.r5()";shape = circle;comment = "";];
+    spark_3_haoma_t [label = "3\nHaoma.r3()";shape = doublecircle;comment = "`/sys/lurd`";];
+    spark_6_haoma_t [label = "6\nHaoma.r6()";shape = doublecircle;comment = "";];
+    spark_9_haoma_t [label = "9\nHaoma.r9()";shape = doublecircle;comment = "";];
     spark_a_haoma_t [label = "A\nHaoma.receive()";shape = triangle;comment = "";];
     spark_b_haoma_t [label = "B\nHaoma.send()";shape = invtriangle;comment = "";];
-    spark_c_haoma_t [label = "C\nHaoma.response()";shape = doublecircle;comment = "";];
-    spark_d_haoma_t [label = "D\nHaoma.rebirth()";shape = doublecircle;comment = "";];
+    spark_c_haoma_t [label = "C\nHaoma.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_haoma_t [label = "D\nHaoma.commit()";shape = doublecircle;comment = "";];
     spark_e_haoma_t [label = "E\nHaoma.serve()";shape = doublecircle;comment = "`/sys/haoma`";];
     spark_f_haoma_t [label = "F\nHaoma.exec()\nLaw of Factor (law_of_factor_t)";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_9_mythos_t -> spark_0_haoma_t -> {spark_a_haoma_t spark_b_haoma_t spark_1_haoma_t spark_2_haoma_t spark_3_haoma_t spark_4_haoma_t spark_5_haoma_t spark_6_haoma_t spark_7_haoma_t spark_8_haoma_t spark_9_haoma_t} [label = "IN"; color = yellow; comment = "";];
+    spark_9_mythos_t -> spark_0_haoma_t;
+    spark_0_haoma_t -> spark_a_haoma_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_haoma_t -> spark_b_haoma_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_haoma_t -> {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} [label = "IN"; color = darkblue; comment = "";];
+    spark_0_haoma_t -> {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_5_haoma_t spark_7_haoma_t spark_8_haoma_t} [label = "IN"; color = darkgreen; comment = "";];
     
     {spark_a_haoma_t spark_b_haoma_t} -> spark_c_haoma_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_8_haoma_t spark_7_haoma_t spark_5_haoma_t} -> spark_d_haoma_t [label = "REC"; color = darkgreen; comment = "";];
     {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} -> spark_e_haoma_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_8_haoma_t spark_7_haoma_t spark_5_haoma_t} -> spark_d_haoma_t [label = "REC"; color = darkgreen; comment = "";];
     
-    spark_1_haoma_t -> spark_2_haoma_t -> spark_4_haoma_t -> spark_8_haoma_t -> spark_7_haoma_t -> spark_5_haoma_t -> spark_1_haoma_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_haoma_t -> spark_6_haoma_t -> spark_9_haoma_t -> spark_3_haoma_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_haoma_t -> spark_b_haoma_t -> spark_a_haoma_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_a_haoma_t -> spark_b_haoma_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_haoma_t -> spark_6_haoma_t -> spark_9_haoma_t -> spark_3_haoma_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+    spark_1_haoma_t -> spark_2_haoma_t -> spark_4_haoma_t -> spark_8_haoma_t -> spark_7_haoma_t -> spark_5_haoma_t -> spark_1_haoma_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
     
-    {spark_c_haoma_t spark_d_haoma_t spark_e_haoma_t} -> spark_f_haoma_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkred; comment = "";];
+    spark_d_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkgreen; comment = "";];
+    spark_e_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkblue; comment = "";];
 }

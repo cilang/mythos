@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph AlignmentModel {
     label = "Alignment Model\n(/proc/reality/factor/alignment-model)";
     style = filled;
     color = lightgray;

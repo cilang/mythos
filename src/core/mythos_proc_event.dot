@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph EventEngine {
     label = "Event Engine";
     style = filled;
     color = lightgrey;

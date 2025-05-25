@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3025px" height="3026px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 3024.87 3025.96" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="observation_diagram">
+  <g id="flower_life">
+   <desc></desc>
+   <g>
+    <circle id="fol1" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1512.98" r="377.98"/>
+    <circle id="fol2" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1134.99" r="377.98"/>
+    <circle id="fol3" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="1323.99" r="377.98"/>
+    <circle id="fol4" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="1701.97" r="377.98"/>
+    <circle id="fol5" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1890.96" r="377.98"/>
+    <circle id="fol6" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="1701.97" r="377.98"/>
+    <circle id="fol7" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="1323.99" r="377.98"/>
+   </g>
+   <g>
+    <circle id="fol8" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="946" r="377.98"/>
+    <circle id="fol9" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.27" cy="1135" r="377.98"/>
+    <circle id="fol10" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.27" cy="1512.98" r="377.98"/>
+    <circle id="fol11" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.27" cy="1890.96" r="377.98"/>
+    <circle id="fol12" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="2079.96" r="377.98"/>
+    <circle id="fol13" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="2268.95" r="377.98"/>
+    <circle id="fol14" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="2079.95" r="377.98"/>
+    <circle id="fol15" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.61" cy="1890.96" r="377.98"/>
+    <circle id="fol16" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.61" cy="1512.98" r="377.98"/>
+    <circle id="fol17" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.61" cy="1134.99" r="377.98"/>
+    <circle id="fol18" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="946" r="377.98"/>
+    <circle id="fol19" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="757.01" r="377.98"/>
+   </g>
+   <g>
+    <circle id="fol20" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.27" cy="757.01" r="377.98"/>
+    <circle id="fol21" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2494.68" cy="946.01" r="377.98"/>
+    <circle id="fol22" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2494.68" cy="1323.99" r="377.98"/>
+    <circle id="fol23" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2494.68" cy="1701.97" r="377.98"/>
+    <circle id="fol24" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2494.68" cy="2079.96" r="377.98"/>
+    <circle id="fol25" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.27" cy="2268.95" r="377.98"/>
+    <circle id="fol26" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="2457.94" r="377.98"/>
+    <circle id="fol27" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="2646.93" r="377.98"/>
+    <circle id="fol28" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="2457.94" r="377.98"/>
+    <circle id="fol29" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.61" cy="2268.94" r="377.98"/>
+    <circle id="fol30" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="530.19" cy="2079.95" r="377.98"/>
+    <circle id="fol31" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="530.19" cy="1701.97" r="377.98"/>
+    <circle id="fol32" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="530.19" cy="1323.98" r="377.98"/>
+    <circle id="fol33" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="530.19" cy="946" r="377.98"/>
+    <circle id="fol34" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.61" cy="757.01" r="377.98"/>
+    <circle id="fol35" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="568.02" r="377.98"/>
+    <circle id="fol36" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="379.03" r="377.98"/>
+    <circle id="fol37" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="568.02" r="377.98"/>
+   </g>
+  </g>
+  <g id="yin_yang">
+   <path id="old_yang" fill="black" d="M1890.42 1134.99c0,208.76 -169.23,377.99 -377.98,377.99 -208.76,0 -377.99,169.23 -377.99,377.98 0,208.76 169.23,377.99 377.99,377.99 417.51,0 755.97,-338.46 755.97,-755.97 0,-417.51 -338.46,-755.97 -755.97,-755.97 208.75,0 377.98,169.23 377.98,377.98zm-377.98 661.48c52.19,0 94.49,42.3 94.49,94.49 0,52.19 -42.3,94.5 -94.49,94.5 -52.19,0 -94.5,-42.31 -94.5,-94.5 0,-52.19 42.31,-94.49 94.5,-94.49z"/>
+   <path id="old_yin" fill="white" d="M1512.44 1512.98c208.75,0 377.98,-169.23 377.98,-377.99 0,-208.75 -169.23,-377.98 -377.98,-377.98 -417.51,0 -755.97,338.46 -755.97,755.97 0,417.51 338.46,755.97 755.97,755.97 -208.76,0 -377.99,-169.23 -377.99,-377.99 0,-208.75 169.23,-377.98 377.99,-377.98zm-94.5 -377.99c0,-52.18 42.31,-94.49 94.5,-94.49 52.19,0 94.49,42.31 94.49,94.49 0,52.19 -42.3,94.5 -94.49,94.5 -52.19,0 -94.5,-42.31 -94.5,-94.5z"/>
+  </g>
+  <g id="shattered_glass">
+   <path id="batas" fill="yellow" d="M1417.94 1134.99c0,-52.18 42.31,-94.49 94.5,-94.49 52.19,0 94.49,42.31 94.49,94.49 0,52.19 -42.3,94.5 -94.49,94.5 -52.19,0 -94.5,-42.31 -94.5,-94.5zm-355.97 755.97l-102.11 -176.86 -54.85 95.01c28.24,16.34 47.24,46.88 47.24,81.85l109.72 0zm1003.04 -176.86l-102.11 176.86 109.73 0c0,-34.97 19,-65.51 47.24,-81.85l-54.86 -95.01zm-846.59 -447.83l294.02 509.25 294.02 -509.25 -246.77 -427.41c-13.9,8.04 -30.04,12.65 -47.25,12.65 -17.22,0 -33.36,-4.61 -47.26,-12.65l-246.76 427.41zm294.02 152.21c52.19,0 94.49,42.31 94.49,94.5 0,52.19 -42.3,94.49 -94.49,94.49 -52.19,0 -94.5,-42.3 -94.5,-94.49 0,-52.19 42.31,-94.5 94.5,-94.5z"/>
+   <path id="batas" fill="red" d="M1962.9 1890.96l-355.97 0c0,12.74 -2.51,24.88 -7.08,35.97l123.89 214.58c13.9,-8.05 30.04,-12.65 47.25,-12.65 17.22,0 33.36,4.6 47.26,12.65l144.65 -250.55zm-11.79 -875.24l-144.65 250.55 258.55 447.83 144.65 -250.54c-28.24,-16.34 -47.24,-46.88 -47.24,-81.85 0,-34.98 19,-65.51 47.24,-81.85l-164.04 -284.14c-13.9,8.05 -30.04,12.65 -47.26,12.65 -17.21,0 -33.35,-4.6 -47.25,-12.65z"/>
+   <path id="batas" fill="blue" d="M1417.94 1890.96l-355.97 0 144.65 250.55c13.91,-8.05 30.05,-12.65 47.26,-12.65 17.22,0 33.36,4.6 47.26,12.65l123.89 -214.58c-4.57,-11.09 -7.09,-23.23 -7.09,-35.97zm-458.08 -176.86l258.56 -447.83 -144.65 -250.55c-13.9,8.05 -30.04,12.65 -47.26,12.65 -17.21,0 -33.35,-4.6 -47.26,-12.65l-164.04 284.14c28.24,16.34 47.24,46.87 47.24,81.85 0,34.97 -19,65.51 -47.24,81.85l144.65 250.54z"/>
+   <path id="batas" fill="lime" d="M1512.44 1775.52l-294.02 -509.25 -258.56 447.83 102.11 176.86 355.97 0c0,-47.92 35.68,-87.52 81.93,-93.66l12.57 -21.78 12.57 21.78c46.24,6.14 81.92,45.74 81.92,93.66l355.97 0 102.11 -176.86 -258.55 -447.83 -294.02 509.25z"/>
+  </g>
+  <circle fill="none" stroke="black" stroke-miterlimit="2.61313" cx="1512.44" cy="1512.98" r="1511.94"/>
+  <polygon id="keterbatasan" fill="none" stroke="black" stroke-miterlimit="2.61313" points="1512.44,757.01 2167.12,1890.96 857.75,1890.96 "/>
+  <polygon id="batas" fill="none" stroke="black" stroke-miterlimit="2.61313" points="1998.36,933.87 2256.92,1381.71 1770.99,2223.36 1026.51,933.87 767.95,1381.71 1253.88,2223.36 "/>
+  <g id="sparklet">
+   <circle id="spark_b" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1890.96" r="94.5"/>
+   <circle id="spark_a" fill="black" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1134.99" r="94.5"/>
+   <circle id="spark_0" fill="none" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="1512.98" r="94.5"/>
+   <circle id="spark_9" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1512.44" cy="757.01" r="94.5"/>
+   <circle id="spark_3" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2167.12" cy="1890.96" r="94.5"/>
+   <circle id="spark_6" fill="lime" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="857.75" cy="1890.96" r="94.5"/>
+   <circle id="spark_1" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1998.36" cy="933.87" r="94.5"/>
+   <circle id="spark_2" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="2256.92" cy="1381.71" r="94.5"/>
+   <circle id="spark_4" fill="blue" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1770.99" cy="2223.36" r="94.5"/>
+   <circle id="spark_8" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1026.51" cy="933.87" r="94.5"/>
+   <circle id="spark_7" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="767.95" cy="1381.71" r="94.5"/>
+   <circle id="spark_5" fill="red" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1253.88" cy="2223.36" r="94.5"/>
+   <circle id="spark_c" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="1701.97" r="94.5"/>
+   <circle id="spark_d" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="1701.97" r="94.5"/>
+   <circle id="spark_e" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1839.85" cy="1323.99" r="94.5"/>
+   <circle id="spark_x" fill="white" stroke="black" stroke-width="2.08" stroke-miterlimit="2.61313" cx="1185.02" cy="1323.99" r="94.5"/>
+   <circle id="spark_f" fill="none" stroke="black" stroke-miterlimit="2.61313" cx="1512.44" cy="1512.98" r="755.97"/>
+  </g>
+ </g>
+</svg>

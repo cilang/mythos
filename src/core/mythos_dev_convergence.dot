@@ -1,4 +1,4 @@
-strict digraph G {
+strict digraph ConvergenceEngine {
     label = "Convergence";
     style = filled;
     color = blue;
