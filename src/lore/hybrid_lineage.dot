@@ -1,0 +1,33 @@
+digraph hybrid_lineage {
+    label = "Hybrid Bloodline";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    imperial_0_t [label = "House Pawang";comment = "";shape = doublecircle;];
+    imperial_1_t [label = "House Nawang";comment = "";shape = doublecircle;];
+    imperial_2_t [label = "House Hapsari";comment = "";shape = doublecircle;];
+    imperial_3_t [label = "House Sekar";comment = "";shape = doublecircle;];
+    imperial_4_t [label = "House Felixa";comment = "Felidae";shape = doublecircle;];
+    imperial_5_t [label = "House Avesix";comment = "Aves";shape = doublecircle;];
+    imperial_6_t [label = "House Cannixa";comment = "Canine";shape = doublecircle;];
+    imperial_7_t [label = "House R7";comment = "";shape = doublecircle;];
+    imperial_8_t [label = "House R8";comment = "";shape = doublecircle;];
+    imperial_9_t [label = "House R9";comment = "";shape = doublecircle;];
+    imperial_a_t [label = "House RA";comment = "";shape = doublecircle;];
+    imperial_b_t [label = "House RB";comment = "";shape = doublecircle;];
+    imperial_c_t [label = "House RC";comment = "";shape = doublecircle;];
+    imperial_d_t [label = "House RD";comment = "";shape = doublecircle;];
+    imperial_e_t [label = "House RE";comment = "";shape = doublecircle;];
+    imperial_f_t [label = "House RF";comment = "";shape = doublecircle;];
+    
+    ariadiana_t [label = "Ariadiana";comment = "";shape = doublecircle;];
+    
+    {imperial_2_t imperial_3_t imperial_4_t imperial_5_t} -> ariadiana_t [label = "Founder"; color = darkgreen; comment = ""; dir = both;];
+    {imperial_6_t imperial_7_t} -> org_1_t [label = "Founder"; color = darkgreen; comment = ""; dir = both;];
+    {imperial_8_t imperial_9_t} -> org_2_t [label = "Founder"; color = darkgreen; comment = ""; dir = both;];
+    {imperial_a_t imperial_b_t imperial_c_t} -> org_3_t [label = "Founder"; color = darkgreen; comment = ""; dir = both;];
+    {imperial_d_t imperial_e_t imperial_f_t} -> org_4_t [label = "Founder"; color = darkgreen; comment = ""; dir = both;];
+    imperial_0_t -> {imperial_2_t imperial_3_t imperial_4_t imperial_5_t imperial_6_t imperial_7_t imperial_8_t imperial_9_t imperial_a_t imperial_b_t imperial_c_t imperial_d_t imperial_e_t imperial_f_t} [label = "Descendant"; color = darkgreen; comment = ""; dir = both;];
+    imperial_1_t -> {imperial_2_t imperial_3_t imperial_4_t imperial_5_t imperial_6_t imperial_7_t imperial_8_t imperial_9_t imperial_a_t imperial_b_t imperial_c_t imperial_d_t imperial_e_t imperial_f_t} [label = "Descendant"; color = darkgreen; comment = ""; dir = both;];
+}
