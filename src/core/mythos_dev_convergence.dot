@@ -8,35 +8,41 @@ strict digraph ConvergenceEngine {
     spark_2_mythos_t [label = "0x2\nConvergence\n(/dev/convergence)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_convergence_t [label = "0x0\nConvergence.meta()\nKirana Larasati";shape = doublecircle;comment = "";];
-    spark_1_convergence_t [label = "0x1\nConvergence.r1()\n";shape = circle;comment = "";];
-    spark_2_convergence_t [label = "0x2\nConvergence.r2()\n";shape = circle;comment = "";];
-    spark_4_convergence_t [label = "0x4\nConvergence.r4()\n";shape = circle;comment = "";];
-    spark_8_convergence_t [label = "0x8\nConvergence.r8()\n";shape = circle;comment = "";];
-    spark_7_convergence_t [label = "0x7\nConvergence.r7()\n";shape = circle;comment = "";];
-    spark_5_convergence_t [label = "0x5\nConvergence.r5()\n";shape = circle;comment = "";];
-    spark_3_convergence_t [label = "0x3\nConvergence.order()\nCrest of Order";shape = circle;comment = "";];
-    spark_6_convergence_t [label = "0x6\nConvergence.creation()\nCrest of Creation";shape = circle;comment = "";];
-    spark_9_convergence_t [label = "0x9\nConvergence.unity()\nCrest of Unity";shape = circle;comment = "";];
-    spark_a_convergence_t [label = "0xA\nConvergence.raiment()\nRaiment of Convergence";shape = triangle;comment = "";];
-    spark_b_convergence_t [label = "0xB\nConvergence.armament()\nArmament of Convergence";shape = invtriangle;comment = "";];
-    spark_c_convergence_t [label = "0xC\nConvergence.body()\nBody of Convergence(Nine Tailed Aves of Vikara)";shape = circle;comment = "";];
-    spark_d_convergence_t [label = "0xD\nConvergence.soul()\nSoul of Convergence";shape = circle;comment = "";];
-    spark_e_convergence_t [label = "0xE\nConvergence.grace()\nGrace of Convergence";shape = circle;comment = "";];
-    spark_f_convergence_t [label = "0xF\nConvergence.exec()\nLaw of Convergence";shape = circle;comment = "";];
+    spark_0_convergence_t [label = "0x0\nConvergence.meta()\nKirana Larasati";shape = doublecircle;];
+    spark_1_convergence_t [label = "0x1\nConvergence.r1()\n";comment = "";shape = circle;];
+    spark_2_convergence_t [label = "0x2\nConvergence.r2()\n";comment = "";shape = circle;];
+    spark_4_convergence_t [label = "0x4\nConvergence.r4()\n";comment = "";shape = circle;];
+    spark_8_convergence_t [label = "0x8\nConvergence.r8()\n";comment = "";shape = circle;];
+    spark_7_convergence_t [label = "0x7\nConvergence.r7()\n";comment = "";shape = circle;];
+    spark_5_convergence_t [label = "0x5\nConvergence.r5()\n";comment = "";shape = circle;];
+    spark_3_convergence_t [label = "0x3\nConvergence.order()\nCrest of Order";comment = "";shape = circle;];
+    spark_6_convergence_t [label = "0x6\nConvergence.creation()\nCrest of Creation";comment = "";shape = circle;];
+    spark_9_convergence_t [label = "0x9\nConvergence.unity()\nCrest of Unity";comment = "";shape = circle;];
+    spark_a_convergence_t [label = "0xA\nConvergence.raiment()\nRaiment of Convergence";comment = "";shape = triangle;];
+    spark_b_convergence_t [label = "0xB\nConvergence.armament()\nArmament of Convergence";comment = "";shape = invtriangle;];
+    spark_c_convergence_t [label = "0xC\nConvergence.body()\nBody of Convergence(Nine Tailed Aves of Vikara)";comment = "";shape = circle;];
+    spark_d_convergence_t [label = "0xD\nConvergence.soul()\nSoul of Convergence";comment = "";shape = circle;];
+    spark_e_convergence_t [label = "0xE\nConvergence.grace()\nGrace of Convergence";comment = "";shape = circle;];
+    spark_f_convergence_t [label = "0xF\nConvergence.exec()\nLaw of Convergence";comment = "";shape = circle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_2_mythos_t -> spark_0_convergence_t -> {spark_a_convergence_t spark_b_convergence_t spark_1_convergence_t spark_2_convergence_t spark_3_convergence_t spark_4_convergence_t spark_5_convergence_t spark_6_convergence_t spark_7_convergence_t spark_8_convergence_t spark_9_convergence_t} [label = "IN"; color = yellow; comment = "";];
+    spark_2_mythos_t -> spark_0_convergence_t;
+    spark_0_convergence_t -> spark_a_convergence_t [label = "IN"; color = darkred;];
+    spark_0_convergence_t -> spark_b_convergence_t [label = "OUT"; color = darkred;];
+    spark_0_convergence_t -> {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_convergence_t -> {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_convergence_t -> spark_b_convergence_t -> spark_a_convergence_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_convergence_t -> spark_b_convergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    {spark_c_convergence_t spark_d_convergence_t spark_e_convergence_t} -> spark_f_convergence_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

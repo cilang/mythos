@@ -8,35 +8,41 @@ strict digraph ExcitationEngine {
     spark_5_mythos_t [label = "0x5\nExcitation\n(/dev/excitation)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_excitation_t [label = "0x0\nExcitation.meta()\nNda";shape = doublecircle;comment = "";];
-    spark_1_excitation_t [label = "0x1\nExcitation.r1()\n";shape = circle;comment = "";];
-    spark_2_excitation_t [label = "0x2\nExcitation.r2()\n";shape = circle;comment = "";];
-    spark_4_excitation_t [label = "0x4\nExcitation.r4()\n";shape = circle;comment = "";];
-    spark_8_excitation_t [label = "0x8\nExcitation.r8()\n";shape = circle;comment = "";];
-    spark_7_excitation_t [label = "0x7\nExcitation.r7()\n";shape = circle;comment = "";];
-    spark_5_excitation_t [label = "0x5\nExcitation.r5()\n";shape = circle;comment = "";];
-    spark_3_excitation_t [label = "0x3\nExcitation.emotion()\nCrest of Emotion";shape = circle;comment = "";];
-    spark_6_excitation_t [label = "0x6\nExcitation.memory()\nCrest of Memory";shape = circle;comment = "";];
-    spark_9_excitation_t [label = "0x9\nExcitation.energy()\nCrest of Energy";shape = circle;comment = "";];
-    spark_a_excitation_t [label = "0xA\nExcitation.raiment()\nRaiment of Excitation";shape = triangle;comment = "";];
-    spark_b_excitation_t [label = "0xB\nExcitation.armament()\nArmament of Excitation";shape = invtriangle;comment = "";];
-    spark_c_excitation_t [label = "0xC\nExcitation.body()\nBody of Excitation";shape = circle;comment = "";];
-    spark_d_excitation_t [label = "0xD\nExcitation.soul()\nSoul of Excitation";shape = circle;comment = "";];
-    spark_e_excitation_t [label = "0xE\nExcitation.grace()\nGrace of Excitation";shape = circle;comment = "";];
-    spark_f_excitation_t [label = "0xF\nExcitation.exec()\nLaw of Excitation";shape = circle;comment = "";];
+    spark_0_excitation_t [label = "0x0\nExcitation.meta()\nNda";comment = "";shape = doublecircle;];
+    spark_1_excitation_t [label = "0x1\nExcitation.r1()\n";comment = "";shape = circle;];
+    spark_2_excitation_t [label = "0x2\nExcitation.r2()\n";comment = "";shape = circle;];
+    spark_4_excitation_t [label = "0x4\nExcitation.r4()\n";comment = "";shape = circle;];
+    spark_8_excitation_t [label = "0x8\nExcitation.r8()\n";comment = "";shape = circle;];
+    spark_7_excitation_t [label = "0x7\nExcitation.r7()\n";comment = "";shape = circle;];
+    spark_5_excitation_t [label = "0x5\nExcitation.r5()\n";comment = "";shape = circle;];
+    spark_3_excitation_t [label = "0x3\nExcitation.emotion()\nCrest of Emotion";comment = "";shape = circle;];
+    spark_6_excitation_t [label = "0x6\nExcitation.memory()\nCrest of Memory";comment = "";shape = circle;];
+    spark_9_excitation_t [label = "0x9\nExcitation.energy()\nCrest of Energy";comment = "";shape = circle;];
+    spark_a_excitation_t [label = "0xA\nExcitation.raiment()\nRaiment of Excitation";comment = "";shape = triangle;];
+    spark_b_excitation_t [label = "0xB\nExcitation.armament()\nArmament of Excitation";comment = "";shape = invtriangle;];
+    spark_c_excitation_t [label = "0xC\nExcitation.body()\nBody of Excitation";comment = "";shape = circle;];
+    spark_d_excitation_t [label = "0xD\nExcitation.soul()\nSoul of Excitation";comment = "";shape = circle;];
+    spark_e_excitation_t [label = "0xE\nExcitation.grace()\nGrace of Excitation";comment = "";shape = circle;];
+    spark_f_excitation_t [label = "0xF\nExcitation.exec()\nLaw of Excitation";comment = "";shape = circle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_5_mythos_t -> spark_0_excitation_t -> {spark_a_excitation_t spark_b_excitation_t spark_1_excitation_t spark_2_excitation_t spark_3_excitation_t spark_4_excitation_t spark_5_excitation_t spark_6_excitation_t spark_7_excitation_t spark_8_excitation_t spark_9_excitation_t} [label = "IN"; color = yellow; comment = "";];
+    spark_5_mythos_t -> spark_0_excitation_t;
+    spark_0_excitation_t -> spark_a_excitation_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_excitation_t -> spark_b_excitation_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_excitation_t -> {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_excitation_t -> {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_excitation_t spark_b_excitation_t} -> spark_c_excitation_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} -> spark_d_excitation_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} -> spark_e_excitation_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_excitation_t spark_b_excitation_t} -> spark_c_excitation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} -> spark_d_excitation_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} -> spark_e_excitation_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_excitation_t -> spark_2_excitation_t -> spark_4_excitation_t -> spark_8_excitation_t -> spark_7_excitation_t -> spark_5_excitation_t -> spark_1_excitation_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_excitation_t -> spark_6_excitation_t -> spark_9_excitation_t -> spark_3_excitation_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_excitation_t -> spark_b_excitation_t -> spark_a_excitation_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_excitation_t -> spark_2_excitation_t -> spark_4_excitation_t -> spark_8_excitation_t -> spark_7_excitation_t -> spark_5_excitation_t -> spark_1_excitation_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_excitation_t -> spark_6_excitation_t -> spark_9_excitation_t -> spark_3_excitation_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_excitation_t -> spark_b_excitation_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    {spark_c_excitation_t spark_d_excitation_t spark_e_excitation_t} -> spark_f_excitation_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

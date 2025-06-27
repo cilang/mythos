@@ -7,9 +7,6 @@ digraph CapabilityEngine {
     
     spark_3_mythos_t [label = "0x3\nCapability\n(/srv/capability)";shape = doublecircle;];
     
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_capability_t [label = "0\nCapability.init()";shape = doublecircle;comment = "Engine Init";];
     spark_1_capability_t [label = "1\nCapability.parse()";shape = circle;comment = "";];
@@ -26,7 +23,7 @@ digraph CapabilityEngine {
     spark_c_capability_t [label = "C\nCapability.response()";shape = doublecircle;comment = "";];
     spark_d_capability_t [label = "D\nCapability.compile()";shape = doublecircle;comment = "";];
     spark_e_capability_t [label = "E\nCapability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
-    spark_f_capability_t [label = "F\nLaw of Capability\n(law_of_capability_t)";shape = doublecircle;comment = "";];
+    spark_f_capability_t [label = "F\nCapability.exec()\nLaw of Capability";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

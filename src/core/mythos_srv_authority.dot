@@ -7,9 +7,6 @@ digraph AuthorityEngine {
     
     spark_e_mythos_t [label = "0xE\nAuthority\n(/srv/authority)";shape = doublecircle;];
     
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_authority_t [label = "0\nAuthority.init()";shape = doublecircle;comment = "Engine Init";];
     spark_1_authority_t [label = "1\nAuthority.create()";shape = circle;comment = "";];
@@ -26,7 +23,7 @@ digraph AuthorityEngine {
     spark_c_authority_t [label = "C\nAuthority.response()";shape = doublecircle;comment = "";];
     spark_d_authority_t [label = "D\nAuthority.compile()";shape = doublecircle;comment = "";];
     spark_e_authority_t [label = "E\nAuthority.serve()";shape = doublecircle;comment = "`/srv/authority`";];
-    spark_f_authority_t [label = "F\nLaw of Divinity";shape = doublecircle;comment = "";];
+    spark_f_authority_t [label = "F\nAuthority.exec()\nLaw of Divinity";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

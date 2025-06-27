@@ -4,12 +4,9 @@ digraph RepositoryEngine {
     color = red;
     comment = "";
     node [shape = polygon; sides = 6; style = filled; color = grey90;];
-
+    
     spark_6_mythos_t [label = "0x6\nRepository\n(/srv/repository)";shape = doublecircle;];
-
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_repository_t [label = "0\nRepository.meta()";shape = doublecircle;comment = "";];
     spark_1_repository_t [label = "1\nRepository.r1()";shape = circle;comment = "";];
@@ -27,7 +24,7 @@ digraph RepositoryEngine {
     spark_d_repository_t [label = "D\nRepository.commit()";shape = doublecircle;];
     spark_e_repository_t [label = "E\nRepository.serve()";shape = doublecircle;];
     spark_f_repository_t [label = "F\nRepository.exec()";shape = doublecircle;];
-
+    
     // IN = Input
     // OUT = Output
     // REC = Recursion
@@ -36,15 +33,15 @@ digraph RepositoryEngine {
     spark_0_repository_t -> spark_b_repository_t [label = "OUT"; color = darkred; comment = "";];
     spark_0_repository_t -> {spark_3_repository_t spark_6_repository_t spark_9_repository_t} [label = "IN"; color = darkblue; comment = "";];
     spark_0_repository_t -> {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_5_repository_t spark_7_repository_t spark_8_repository_t} [label = "IN"; color = darkgreen; comment = "";];
-
+    
     {spark_a_repository_t spark_b_repository_t} -> spark_c_repository_t [label = "REC"; color = darkred; comment = "";];
     {spark_3_repository_t spark_6_repository_t spark_9_repository_t} -> spark_e_repository_t [label = "REC"; color = darkblue; comment = "";];
     {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_8_repository_t spark_7_repository_t spark_5_repository_t} -> spark_d_repository_t [label = "REC"; color = darkgreen; comment = "";];
-
+    
     spark_a_repository_t -> spark_b_repository_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
     spark_3_repository_t -> spark_6_repository_t -> spark_9_repository_t -> spark_3_repository_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
     spark_1_repository_t -> spark_2_repository_t -> spark_4_repository_t -> spark_8_repository_t -> spark_7_repository_t -> spark_5_repository_t -> spark_1_repository_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
-
+    
     spark_c_repository_t -> spark_f_repository_t [label = "OUT"; color = darkred; comment = "";];
     spark_e_repository_t -> spark_f_repository_t [label = "OUT"; color = darkblue; comment = "";];
     spark_d_repository_t -> spark_f_repository_t [label = "OUT"; color = darkgreen; comment = "";];

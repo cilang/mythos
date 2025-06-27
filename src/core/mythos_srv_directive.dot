@@ -7,9 +7,6 @@ digraph DirectiveEngine {
     
     spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
     
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_directive_t [label = "0\nDirective.meta()";shape = doublecircle;comment = "";];
     spark_1_directive_t [label = "1\nDirective.r1\n()";shape = circle;comment = "";];

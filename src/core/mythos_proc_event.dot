@@ -10,37 +10,41 @@ strict digraph EventEngine {
     
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_event_t [label = "0\nEvent.meta()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_event_t [label = "1\nEvent.r1()";shape = circle;comment = "";];
-    spark_2_event_t [label = "2\nEvent.r2()";shape = circle;comment = "";];
-    spark_4_event_t [label = "4\nEvent.r4()";shape = circle;comment = "";];
-    spark_8_event_t [label = "8\nEvent.r8()";shape = circle;comment = "";];
-    spark_7_event_t [label = "7\nEvent.r7()";shape = circle;comment = "";];
-    spark_5_event_t [label = "5\nEvent.r5()";shape = circle;comment = "";];
-    spark_3_event_t [label = "3\nEvent.r3()";shape = doublecircle;comment = "";];
-    spark_6_event_t [label = "6\nEvent.r6()";shape = doublecircle;comment = "";];
-    spark_9_event_t [label = "9\nEvent.r9()";shape = doublecircle;comment = "";];
-    spark_a_event_t [label = "A\nEvent.receive()";shape = triangle;comment = "";];
-    spark_b_event_t [label = "B\nEvent.send()";shape = invtriangle;comment = "";];
-    spark_c_event_t [label = "C\nEvent.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_event_t [label = "D\nEvent.commit()";shape = doublecircle;comment = "";];
-    spark_e_event_t [label = "E\nEvent.serve()";shape = doublecircle;comment = "`/proc/event`";];
-    spark_f_event_t [label = "F\nEvent.exec()\nLaw of Probability (law_of_probability_t)";shape = doublecircle;comment = "`/proc/probability`";];
+    spark_0_event_t [label = "0\nEvent.meta()";comment = "Engine Init";shape = doublecircle;];
+    spark_1_event_t [label = "1\nEvent.r1()";comment = "";color = darkgreen;shape = circle;];
+    spark_2_event_t [label = "2\nEvent.r2()";comment = "";color = darkgreen;shape = circle;];
+    spark_4_event_t [label = "4\nEvent.r4()";comment = "";color = darkgreen;shape = circle;];
+    spark_8_event_t [label = "8\nEvent.r8()";comment = "";color = darkgreen;shape = circle;];
+    spark_7_event_t [label = "7\nEvent.r7()";comment = "";color = darkgreen;shape = circle;];
+    spark_5_event_t [label = "5\nEvent.r5()";comment = "";color = darkgreen;shape = circle;];
+    spark_3_event_t [label = "3\nEvent.r3()";comment = "";color = darkblue;shape = doublecircle;];
+    spark_6_event_t [label = "6\nEvent.r6()";comment = "";color = darkblue;shape = doublecircle;];
+    spark_9_event_t [label = "9\nEvent.r9()";comment = "";color = darkblue;shape = doublecircle;];
+    spark_a_event_t [label = "A\nEvent.receive()";comment = "";color = darkred;shape = triangle;];
+    spark_b_event_t [label = "B\nEvent.send()";comment = "";color = darkred;shape = invtriangle;];
+    spark_c_event_t [label = "C\nEvent.dispatch()";comment = "";color = darkred;shape = doublecircle;];
+    spark_d_event_t [label = "D\nEvent.commit()";comment = "";color = darkgreen;shape = doublecircle;];
+    spark_e_event_t [label = "E\nEvent.serve()";comment = "`/proc/event`";color = darkblue;shape = doublecircle;];
+    spark_f_event_t [label = "F\nEvent.exec()\nLaw of Probability (law_of_probability_t)";comment = "`/proc/probability`";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_event_t -> {spark_a_event_t spark_b_event_t spark_1_event_t spark_2_event_t spark_3_event_t spark_4_event_t spark_5_event_t spark_6_event_t spark_7_event_t spark_8_event_t spark_9_event_t} [label = "IN"; color = yellow; comment = "";];
+    spark_0_event_t -> spark_a_event_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_event_t -> spark_b_event_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_event_t -> {spark_3_event_t spark_6_event_t spark_9_event_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_event_t -> {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_event_t spark_b_event_t} -> spark_c_event_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} -> spark_d_event_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_event_t spark_6_event_t spark_9_event_t} -> spark_e_event_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_event_t spark_b_event_t} -> spark_c_event_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} -> spark_d_event_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_event_t spark_6_event_t spark_9_event_t} -> spark_e_event_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_event_t -> spark_2_event_t -> spark_4_event_t -> spark_8_event_t -> spark_7_event_t -> spark_5_event_t -> spark_1_event_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_event_t -> spark_6_event_t -> spark_9_event_t -> spark_3_event_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_event_t -> spark_b_event_t -> spark_a_event_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_event_t -> spark_2_event_t -> spark_4_event_t -> spark_8_event_t -> spark_7_event_t -> spark_5_event_t -> spark_1_event_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_event_t -> spark_6_event_t -> spark_9_event_t -> spark_3_event_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_event_t -> spark_b_event_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    {spark_c_event_t spark_d_event_t spark_e_event_t} -> spark_f_event_t [label = "OUT"; color = darkblue; comment = "";];
-    
+    spark_c_event_t -> spark_f_event_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_event_t -> spark_f_event_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_event_t -> spark_f_event_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
     spark_a_mythos_t -> spark_0_event_t;
 }

@@ -1,0 +1,44 @@
+strict digraph Factor {
+    label = "Factor\n(/proc/reality/factor/sparklet)";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
+    spark_0_factor_t [label = "0\nFactor.meta()\nmeta_t";shape = doublecircle;comment = "";];
+    spark_1_factor_t [label = "1\nFactor.heart()\nheart_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_2_factor_t [label = "2\nFactor.astral()\nshell_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_4_factor_t [label = "4\nFactor.astral()\nastral_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_8_factor_t [label = "8\nFactor.spiritual()\nspiritual_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_7_factor_t [label = "7\nFactor.material()\nmaterial_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_5_factor_t [label = "5\nFactor.celestial()\ncelestial_interface_t";shape = circle;comment = "";color = darkgreen;];
+    spark_3_factor_t [label = "3\nFactor.observer()\nobserver_model_t";shape = doublecircle;comment = "";color = darkblue;];
+    spark_6_factor_t [label = "6\nFactor.spectral()\nspectral_model_t";shape = doublecircle;comment = "";color = darkblue;];
+    spark_9_factor_t [label = "9\nFactor.alignment()\nalignment_model_t";shape = doublecircle;comment = "";color = darkblue;];
+    spark_a_factor_t [label = "A\nFactor.receive()\nreceive_interface_t";shape = invtriangle;comment = "";color = darkred;];
+    spark_b_factor_t [label = "B\nFactor.send()\nsend_interface_t";shape = triangle;comment = "";color = darkred;];
+    spark_c_factor_t [label = "C\nFactor.dispatch()\ndispatch_interface_t";shape = doublecircle;comment = "";color = darkred;];
+    spark_d_factor_t [label = "D\nFactor.commit()\ncorpus_interface_t";shape = doublecircle;comment = "";color = darkgreen;];
+    spark_e_factor_t [label = "E\nFactor.serve()\nservice_interface_t";shape = doublecircle;comment = "";color = darkblue;];
+    spark_f_factor_t [label = "F\nFactor.exec()\ncmd_interface_t";shape = doublecircle;comment = "";];
+    
+    // I = Input
+    // O = Output
+    // R = Recursion
+    spark_0_factor_t -> spark_a_factor_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_factor_t -> spark_b_factor_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_factor_t -> {spark_3_factor_t spark_6_factor_t spark_9_factor_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_factor_t -> {spark_1_factor_t spark_2_factor_t spark_4_factor_t spark_8_factor_t spark_7_factor_t spark_5_factor_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    
+    {spark_a_factor_t spark_b_factor_t} -> spark_c_factor_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_factor_t spark_2_factor_t spark_4_factor_t spark_8_factor_t spark_7_factor_t spark_5_factor_t} -> spark_d_factor_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_factor_t spark_6_factor_t spark_9_factor_t} -> spark_e_factor_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    
+    spark_1_factor_t -> spark_2_factor_t -> spark_4_factor_t -> spark_8_factor_t -> spark_7_factor_t -> spark_5_factor_t -> spark_1_factor_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_factor_t -> spark_6_factor_t -> spark_9_factor_t -> spark_3_factor_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_factor_t -> spark_b_factor_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    spark_c_factor_t -> spark_f_factor_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_factor_t -> spark_f_factor_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_factor_t -> spark_f_factor_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+}

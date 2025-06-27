@@ -7,26 +7,23 @@ digraph CorporaEngine {
     
     spark_d_mythos_t [label = "0xD\nCorpora\n(/srv/corpora)";shape = doublecircle;];
     
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_corpus_t [label = "0\nmeta()";shape = doublecircle;comment = "";];
-    spark_1_corpus_t [label = "1\nHeart";shape = circle;comment = "";];
-    spark_2_corpus_t [label = "2\nShell";shape = circle;comment = "";];
-    spark_4_corpus_t [label = "4\nAstral Body";shape = circle;comment = "";];
-    spark_8_corpus_t [label = "8\nSpiritual Body";shape = circle;comment = "";];
-    spark_7_corpus_t [label = "7\nMaterial Body";shape = circle;comment = "";];
-    spark_5_corpus_t [label = "5\nCelestial Body";shape = circle;comment = "";];
-    spark_3_corpus_t [label = "3\nEgo";shape = doublecircle;comment = "";];
-    spark_6_corpus_t [label = "6\nWill";shape = doublecircle;comment = "";];
-    spark_9_corpus_t [label = "9\nIntent";shape = doublecircle;comment = "";];
-    spark_a_corpus_t [label = "A\nPrevious LURD";shape = triangle;comment = "";];
-    spark_b_corpus_t [label = "B\nNext LURD";shape = invtriangle;comment = "";];
-    spark_c_corpus_t [label = "C\nCurrent LURD";shape = doublecircle;comment = "";];
-    spark_d_corpus_t [label = "D\nCorpus";shape = doublecircle;comment = "";];
-    spark_e_corpus_t [label = "E\nMind";shape = doublecircle;comment = "";];
-    spark_f_corpus_t [label = "F\nLaw of Corpus";shape = doublecircle;comment = "";];
+    spark_0_corpus_t [label = "0\nCorpora.meta()";shape = doublecircle;comment = "";];
+    spark_1_corpus_t [label = "1\nCorpora.heart()\nHeart";shape = circle;comment = "";];
+    spark_2_corpus_t [label = "2\nCorpora.shell()\nShell";shape = circle;comment = "";];
+    spark_4_corpus_t [label = "4\nCorpora.astral()\nAstral Body";shape = circle;comment = "";];
+    spark_8_corpus_t [label = "8\nCorpora.spiritual()\nSpiritual Body";shape = circle;comment = "";];
+    spark_7_corpus_t [label = "7\nCorpora.material()\nMaterial Body";shape = circle;comment = "";];
+    spark_5_corpus_t [label = "5\nCorpora.celestial()\nCelestial Body";shape = circle;comment = "";];
+    spark_3_corpus_t [label = "3\nCorpora.ego()\nEgo";shape = doublecircle;comment = "";];
+    spark_6_corpus_t [label = "6\nCorpora.will()\nWill";shape = doublecircle;comment = "";];
+    spark_9_corpus_t [label = "9\nCorpora.intent()\nIntent";shape = doublecircle;comment = "";];
+    spark_a_corpus_t [label = "A\nCorpora.receive()\nPrevious LURD";shape = triangle;comment = "";];
+    spark_b_corpus_t [label = "B\nCorpora.send()\nNext LURD";shape = invtriangle;comment = "";];
+    spark_c_corpus_t [label = "C\nCorpora.response()\nCurrent LURD";shape = doublecircle;comment = "";];
+    spark_d_corpus_t [label = "D\nCorpora.compile()\nCorpus";shape = doublecircle;comment = "";];
+    spark_e_corpus_t [label = "E\nCorpora.serve()\nMind";shape = doublecircle;comment = "`/srv/corpora`";];
+    spark_f_corpus_t [label = "F\nCorpora.exec()\nLaw of Corpus";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

@@ -7,9 +7,6 @@ digraph HaomaEngine {
     
     spark_9_mythos_t [label = "0x9\nHaoma\n(/srv/haoma)";shape = doublecircle;];
     
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
-    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_haoma_t [label = "0\nHaoma.meta()";shape = doublecircle;comment = "Engine Init";];
     spark_1_haoma_t [label = "1\nHaoma.r1()";shape = circle;comment = "";];
@@ -26,7 +23,7 @@ digraph HaomaEngine {
     spark_c_haoma_t [label = "C\nHaoma.dispatch()";shape = doublecircle;comment = "";];
     spark_d_haoma_t [label = "D\nHaoma.commit()";shape = doublecircle;comment = "";];
     spark_e_haoma_t [label = "E\nHaoma.serve()";shape = doublecircle;comment = "`/sys/haoma`";];
-    spark_f_haoma_t [label = "F\nHaoma.exec()\nLaw of Factor (law_of_factor_t)";shape = doublecircle;comment = "";];
+    spark_f_haoma_t [label = "F\nHaoma.exec()\nLaw of Factor";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
