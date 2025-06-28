@@ -1,0 +1,131 @@
+strict digraph G {
+    label = "Sparklet";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // "If you knew the magnificence of 3, 6, and 9, you would have a key to the universe." — Tesla.
+    // The 1-2-4-8-7-5 Vortex (Boundary of Comprehension).
+    factor_0_t [label = "ɨ";shape = doublecircle;comment = "";];
+    factor_1_t [label = "a";shape = circle;comment = "";];
+    factor_2_t [label = "i";shape = circle;comment = "";];
+    factor_4_t [label = "u";shape = circle;comment = "";];
+    factor_8_t [label = "e";shape = circle;comment = "";];
+    factor_7_t [label = "o";shape = circle;comment = "";];
+    factor_5_t [label = "ə";shape = circle;comment = "";];
+    factor_3_t [label = "ɒ";shape = doublecircle;comment = "";];
+    factor_6_t [label = "ɑ";shape = doublecircle;comment = "";];
+    factor_9_t [label = "ɔ";shape = doublecircle;comment = "";];
+    factor_a_t [label = "ɐ";shape = triangle;comment = "";];
+    factor_b_t [label = "ʌ";shape = invtriangle;comment = "";];
+    factor_c_t [label = "ɤ";shape = doublecircle;comment = "";];
+    factor_d_t [label = "ɜ";shape = doublecircle;comment = "";];
+    factor_e_t [label = "ɛ";shape = doublecircle;comment = "";];
+    factor_f_t [label = "ʉ";shape = doublecircle;comment = "";];
+    
+    observer_model_0_t [label = "ɖʼ";shape = doublecircle;comment = "";];
+    observer_model_1_t [label = "ʈ";shape = circle;comment = "";];
+    observer_model_2_t [label = "ɖ";shape = circle;comment = "";];
+    observer_model_4_t [label = "ɳ";shape = circle;comment = "";];
+    observer_model_8_t [label = "ɽ";shape = circle;comment = "";];
+    observer_model_7_t [label = "ʐ";shape = circle;comment = "";];
+    observer_model_5_t [label = "ʂ";shape = circle;comment = "";];
+    observer_model_3_t [label = "ʈʰ";shape = doublecircle;comment = "";];
+    observer_model_6_t [label = "ɖʱ";shape = doublecircle;comment = "";];
+    observer_model_9_t [label = "ʈʼ";shape = doublecircle;comment = "";];
+    observer_model_a_t [label = "ɽʼ";shape = triangle;comment = "";];
+    observer_model_b_t [label = "ɭ";shape = invtriangle;comment = "";];
+    observer_model_c_t [label = "ɳʱ";shape = doublecircle;comment = "";];
+    observer_model_d_t [label = "ɭʱ";shape = doublecircle;comment = "";];
+    observer_model_e_t [label = "ɻ";shape = doublecircle;comment = "";];
+    observer_model_f_t [label = "ɻʱ";shape = doublecircle;comment = "";];
+    
+    alignment_model_0_t [label = "t̪";shape = doublecircle;comment = "";];
+    alignment_model_1_t [label = "t̪ʰ";shape = circle;comment = "";];
+    alignment_model_2_t [label = "d̪";shape = circle;comment = "";];
+    alignment_model_4_t [label = "d̪ʱ";shape = circle;comment = "";];
+    alignment_model_8_t [label = "t̪ʼ";shape = circle;comment = "";];
+    alignment_model_7_t [label = "d̪ʼ";shape = circle;comment = "";];
+    alignment_model_5_t [label = "n̪";shape = circle;comment = "";];
+    alignment_model_3_t [label = "n̪ʱ";shape = doublecircle;comment = "";];
+    alignment_model_6_t [label = "s̪";shape = doublecircle;comment = "";];
+    alignment_model_9_t [label = "z̪";shape = doublecircle;comment = "";];
+    alignment_model_a_t [label = "r";shape = triangle;comment = "";];
+    alignment_model_b_t [label = "l";shape = invtriangle;comment = "";];
+    alignment_model_c_t [label = "ɾ";shape = doublecircle;comment = "";];
+    alignment_model_d_t [label = "ɬ";shape = doublecircle;comment = "";];
+    alignment_model_e_t [label = "ɮ";shape = doublecircle;comment = "";];
+    alignment_model_f_t [label = "ɲ";shape = doublecircle;comment = "";];
+    
+    spectral_model_0_t [label = "p";shape = doublecircle;comment = "";];
+    spectral_model_1_t [label = "pʰ";shape = circle;comment = "";];
+    spectral_model_2_t [label = "b";shape = circle;comment = "";];
+    spectral_model_4_t [label = "bʱ";shape = circle;comment = "";];
+    spectral_model_8_t [label = "ʁ";shape = circle;comment = "";];
+    spectral_model_7_t [label = "m";shape = circle;comment = "";];
+    spectral_model_5_t [label = "kʰ";shape = circle;comment = "";];
+    spectral_model_3_t [label = "f";shape = doublecircle;comment = "";];
+    spectral_model_6_t [label = "v";shape = doublecircle;comment = "";];
+    spectral_model_9_t [label = "k";shape = doublecircle;comment = "";];
+    spectral_model_a_t [label = "g";shape = triangle;comment = "";];
+    spectral_model_b_t [label = "x";shape = invtriangle;comment = "";];
+    spectral_model_c_t [label = "ɣ";shape = doublecircle;comment = "";];
+    spectral_model_d_t [label = "χ";shape = doublecircle;comment = "";];
+    spectral_model_e_t [label = "ʔ";shape = doublecircle;comment = "";];
+    spectral_model_f_t [label = "h";shape = doublecircle;comment = "";];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    factor_0_t -> {factor_a_t factor_b_t factor_1_t factor_2_t factor_3_t factor_4_t factor_5_t factor_6_t factor_7_t factor_8_t factor_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {factor_a_t factor_b_t} -> factor_c_t [label = "REC"; color = darkred; comment = "";];
+    {factor_1_t factor_2_t factor_4_t factor_8_t factor_7_t factor_5_t} -> factor_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {factor_3_t factor_6_t factor_9_t} -> factor_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    factor_1_t -> factor_2_t -> factor_4_t -> factor_8_t -> factor_7_t -> factor_5_t -> factor_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    factor_3_t -> factor_6_t -> factor_9_t -> factor_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    factor_a_t -> factor_b_t -> factor_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {factor_c_t factor_d_t factor_e_t} -> factor_f_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Observer
+    observer_model_0_t -> {observer_model_a_t observer_model_b_t observer_model_1_t observer_model_2_t observer_model_3_t observer_model_4_t observer_model_5_t observer_model_6_t observer_model_7_t observer_model_8_t observer_model_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {observer_model_a_t observer_model_b_t} -> observer_model_c_t [label = "REC"; color = darkred; comment = "";];
+    {observer_model_1_t observer_model_2_t observer_model_4_t observer_model_8_t observer_model_7_t observer_model_5_t} -> observer_model_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {observer_model_3_t observer_model_6_t observer_model_9_t} -> observer_model_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    observer_model_1_t -> observer_model_2_t -> observer_model_4_t -> observer_model_8_t -> observer_model_7_t -> observer_model_5_t -> observer_model_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    observer_model_3_t -> observer_model_6_t -> observer_model_9_t -> observer_model_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    observer_model_a_t -> observer_model_b_t -> observer_model_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {observer_model_c_t observer_model_d_t observer_model_e_t} -> observer_model_f_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Alignment
+    alignment_model_0_t -> {alignment_model_a_t alignment_model_b_t alignment_model_1_t alignment_model_2_t alignment_model_3_t alignment_model_4_t alignment_model_5_t alignment_model_6_t alignment_model_7_t alignment_model_8_t alignment_model_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {alignment_model_a_t alignment_model_b_t} -> alignment_model_c_t [label = "REC"; color = darkred; comment = "";];
+    {alignment_model_1_t alignment_model_2_t alignment_model_4_t alignment_model_8_t alignment_model_7_t alignment_model_5_t} -> alignment_model_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {alignment_model_3_t alignment_model_6_t alignment_model_9_t} -> alignment_model_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    alignment_model_1_t -> alignment_model_2_t -> alignment_model_4_t -> alignment_model_8_t -> alignment_model_7_t -> alignment_model_5_t -> alignment_model_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    alignment_model_3_t -> alignment_model_6_t -> alignment_model_9_t -> alignment_model_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    alignment_model_a_t -> alignment_model_b_t -> alignment_model_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {alignment_model_c_t alignment_model_d_t alignment_model_e_t} -> alignment_model_f_t [label = "OUT"; color = darkblue; comment = "";];
+    
+    // Spectral
+    spectral_model_0_t -> {spectral_model_a_t spectral_model_b_t spectral_model_1_t spectral_model_2_t spectral_model_3_t spectral_model_4_t spectral_model_5_t spectral_model_6_t spectral_model_7_t spectral_model_8_t spectral_model_9_t} [label = "IN"; color = yellow; comment = "";];
+    
+    {spectral_model_a_t spectral_model_b_t} -> spectral_model_c_t [label = "REC"; color = darkred; comment = "";];
+    {spectral_model_1_t spectral_model_2_t spectral_model_4_t spectral_model_8_t spectral_model_7_t spectral_model_5_t} -> spectral_model_d_t [label = "REC"; color = darkgreen; comment = "";];
+    {spectral_model_3_t spectral_model_6_t spectral_model_9_t} -> spectral_model_e_t [label = "REC"; color = darkblue; comment = "";];
+    
+    spectral_model_1_t -> spectral_model_2_t -> spectral_model_4_t -> spectral_model_8_t -> spectral_model_7_t -> spectral_model_5_t -> spectral_model_1_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
+    spectral_model_3_t -> spectral_model_6_t -> spectral_model_9_t -> spectral_model_3_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
+    spectral_model_a_t -> spectral_model_b_t -> spectral_model_a_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    
+    {spectral_model_c_t spectral_model_d_t spectral_model_e_t} -> spectral_model_f_t [label = "OUT"; color = darkblue; comment = "";];
+}

@@ -1,0 +1,48 @@
+strict digraph Sparklet {
+    label = "Sparklet";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // The Axis A-0-B (In-Meta-Out).
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
+    // The Router C-D-E
+    // The Closure F
+    asha_0_t [label = "Asha";comment = "meta()";shape = doublecircle;];
+    asha_1_t [label = "R1";comment = "";shape = circle;color = darkgreen;];
+    asha_2_t [label = "R2";comment = "";shape = circle;color = darkgreen;];
+    asha_4_t [label = "R4";comment = "";shape = circle;color = darkgreen;];
+    asha_8_t [label = "R8";comment = "";shape = circle;color = darkgreen;];
+    asha_7_t [label = "R7";comment = "";shape = circle;color = darkgreen;];
+    asha_5_t [label = "R5";comment = "";shape = circle;color = darkgreen;];
+    asha_3_t [label = "R3";comment = "";shape = doublecircle;color = darkblue;];
+    asha_6_t [label = "R6";comment = "";shape = doublecircle;color = darkblue;];
+    asha_9_t [label = "R9";comment = "";shape = doublecircle;color = darkblue;];
+    asha_a_t [label = "Truth";comment = "receive()";shape = invtriangle;color = darkred;];
+    asha_b_t [label = "Wisdom";comment = "send()";shape = triangle;color = darkred;];
+    asha_c_t [label = "Sincerity";comment = "dispatch()";shape = doublecircle;color = darkred;];
+    asha_d_t [label = "Clarity";comment = "commit()";shape = doublecircle;color = darkgreen;];
+    asha_e_t [label = "Insight";comment = "serve()";shape = doublecircle;color = darkblue;];
+    asha_f_t [label = "Satya";comment = "exec()";shape = doublecircle;];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    asha_0_t -> asha_a_t [label = "IN"; color = darkred; comment = "";];
+    asha_0_t -> asha_b_t [label = "OUT"; color = darkred; comment = "";];
+    asha_0_t -> {asha_3_t asha_6_t asha_9_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    asha_0_t -> {asha_1_t asha_2_t asha_4_t asha_8_t asha_7_t asha_5_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    
+    {asha_a_t asha_b_t} -> asha_c_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {asha_1_t asha_2_t asha_4_t asha_8_t asha_7_t asha_5_t} -> asha_d_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {asha_3_t asha_6_t asha_9_t} -> asha_e_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    
+    asha_1_t -> asha_2_t -> asha_4_t -> asha_8_t -> asha_7_t -> asha_5_t -> asha_1_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    asha_3_t -> asha_6_t -> asha_9_t -> asha_3_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    asha_a_t -> asha_b_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    asha_c_t -> asha_f_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    asha_d_t -> asha_f_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    asha_e_t -> asha_f_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+}

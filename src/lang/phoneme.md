@@ -1,11 +1,12 @@
 ---
-aliases: 
-cssclasses: 
+aliases:
+cssclasses:
 tags:
 ---
 
 
 ### R0
+
 **Root Consonants – Initiators / Starters (Flow Origin)**
 
 **Function:** Entry points into semantic flow; used in prefixes and syllabic roots to denote *origin, identity, invocation*.
@@ -20,6 +21,7 @@ tags:
 ---
 
 ### RF
+
 **Root Finalizers – Terminators / Closures (Flow Stop)**
 
 **Function:** Used to mark endings, return-to-source, or define the end of a recursion cycle.
@@ -34,6 +36,7 @@ tags:
 ---
 
 ### RA
+
 **Spark A – Fixation & Convergence Gate**
 
 **Function:** Responsible for *semantic anchoring*, pattern consolidation, and inward recursion.
@@ -48,6 +51,7 @@ tags:
 ---
 
 ### RB
+
 **Spark B – Excitation & Divergence Gate**
 
 **Function:** Responsible for *initiation of narrative arcs*, unfolding potential, and recursive branching.
@@ -62,9 +66,10 @@ tags:
 ---
 
 ### R3
+
 **Spark 3 (Cognitive Loop | Intention / Evaluation)**
 
-**Function:** Handles decision-making, conditional branching, syntactic awareness.  
+**Function:** Handles decision-making, conditional branching, syntactic awareness.
 Think of this as the **brainstem** of the language model.
 
 |Phonemes|Role|Notes|
@@ -77,9 +82,10 @@ Think of this as the **brainstem** of the language model.
 ---
 
 ### R6
+
 **Spark 6 (Vital Loop | Drive / Energy Exchange)**
 
-**Function:** Manages emotional flow, energy states, inner intensity.  
+**Function:** Manages emotional flow, energy states, inner intensity.
 Often used for **verbs**, **emotional states**, or **action triggers**.
 
 |Phonemes|Role|Notes|
@@ -92,9 +98,10 @@ Often used for **verbs**, **emotional states**, or **action triggers**.
 ---
 
 ### R9
+
 **Spark 9 (Signal Loop | Resonance / Identity Mapping)**
 
-**Function:** Handles abstract qualities, illusions, awareness feedback.  
+**Function:** Handles abstract qualities, illusions, awareness feedback.
 Used to imply **state transformation**, **alignment shifts**, or **mystical attributes**.
 
 |Phonemes|Role|Notes|
@@ -107,6 +114,7 @@ Used to imply **state transformation**, **alignment shifts**, or **mystical attr
 ---
 
 ### RC
+
 **Tao Kernel: Constraint & Foundational Flow**
 
 Handles deep universal law interactions, default system rules.
@@ -123,6 +131,7 @@ Handles deep universal law interactions, default system rules.
 ---
 
 ### RD
+
 **Dao Kernel: Emergence & Recursive Law**
 
 The dynamism layer that processes change, probability, complexity.
@@ -139,6 +148,7 @@ The dynamism layer that processes change, probability, complexity.
 ---
 
 ### RE
+
 **Essence Driver: Collapse, Reset, Reflection**
 
 Handles recursive snapshots, save states, or Reality checksum ops.
@@ -153,6 +163,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R1
+
 **Heart / Authority Output Layer**
 
 |Phoneme|Concept|
@@ -165,6 +176,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R2
+
 **Emotion / Projection**
 
 |Phoneme|Concept|
@@ -177,6 +189,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R4
+
 **Logic / Intellect Projection**
 
 |Phoneme|Concept|
@@ -189,6 +202,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R5
+
 **Faith / Internal Law**
 
 |Phoneme|Concept|
@@ -201,6 +215,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R7
+
 **Memory / Inherited Trait**
 
 |Phoneme|Concept|
@@ -213,6 +228,7 @@ Handles recursive snapshots, save states, or Reality checksum ops.
 ---
 
 ### R8
+
 **Subconscious / Instinct**
 
 | Phoneme | Concept        |
