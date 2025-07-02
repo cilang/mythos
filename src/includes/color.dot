@@ -1,5 +1,5 @@
 strict digraph Color {
-    label = "Law of Color";
+    label = "Color\n(/proc/reality/concept/color)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];

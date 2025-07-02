@@ -5,7 +5,7 @@ strict digraph MythOS {
     node [shape = circle; style = filled; color = green;];
     edge [color = darkgray;];
     
-    spark_0_mythos_t [label = "0x0\nReality Engine\n(/proc/reality)\nLaw of Reality";shape = doublecircle;comment = "The Kernel";];
+    spark_0_mythos_t [label = "0x0\nReality Engine\n(/proc/reality)\nLaw of Origin";shape = doublecircle;comment = "The Kernel";];
     spark_1_mythos_t [label = "0x1\nTruth Engine\n(/dev/truth)\nLaw of Truth";comment = "Axiomatic Verification";];
     spark_2_mythos_t [label = "0x2\nConvergence Engine\n(/dev/convergence)\nLaw of Convergence";comment = "Unification Management";];
     spark_4_mythos_t [label = "0x4\nFixation Engine\n(/dev/fixation)\nLaw of Fixation";comment = "Rhythm Management";];
@@ -18,7 +18,7 @@ strict digraph MythOS {
     spark_a_mythos_t [label = "0xA\nEvent Engine\n(/proc/event)\nLaw of Probability";shape = doublecircle;comment = "Probability Field";];
     spark_b_mythos_t [label = "0xB\nSamsara Engine\n(/proc/samsara)\nLaw of Causality";shape = doublecircle;comment = "Causality Enforcement";];
     spark_c_mythos_t [label = "0xC\nAuthority Engine\n(/srv/authority)\nLaw of Authority";shape = doublecircle;comment = "Entity Access Control";];
-    spark_d_mythos_t [label = "0xD\nRasa Engine\n(/srv/rasa)\nLaw of Rasa";shape = doublecircle;comment = "";];
+    spark_d_mythos_t [label = "0xD\nRasa Engine\n(/srv/rasa)\nLaw of Rasa";shape = doublecircle;comment = "Emergent Threshold";];
     spark_e_mythos_t [label = "0xE\nCorpora Engine\n(/srv/corpora)\nLaw of Corpus";shape = doublecircle;comment = "Entity Manifestation Engine";];
     spark_f_mythos_t [label = "0xF\nOrigin Engine\n(/var/origin)\nLaw of Spacetime";shape = doublecircle;comment = "";];
     

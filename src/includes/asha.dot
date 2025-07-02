@@ -1,5 +1,5 @@
-strict digraph Sparklet {
-    label = "Sparklet";
+strict digraph Asha {
+    label = "Asha\n(/proc/reality/concept/asha)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];

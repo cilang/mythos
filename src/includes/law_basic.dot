@@ -1,5 +1,5 @@
-strict digraph Emergence {
-    label = "Emergence\n(/proc/reality/concept/emergence)";
+strict digraph BasicLaw {
+    label = "Law";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -9,22 +9,22 @@ strict digraph Emergence {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "r1()";comment = "";shape = circle;color = darkgreen;];
-    spark_2_t [label = "r2()";comment = "";shape = circle;color = darkgreen;];
-    spark_4_t [label = "r4()";comment = "";shape = circle;color = darkgreen;];
-    spark_8_t [label = "r8()";comment = "";shape = circle;color = darkgreen;];
-    spark_7_t [label = "r7()";comment = "";shape = circle;color = darkgreen;];
-    spark_5_t [label = "r5()";comment = "";shape = circle;color = darkgreen;];
-    spark_3_t [label = "r3()";comment = "Singularity and Recursion";shape = doublecircle;color = darkblue;];
-    spark_6_t [label = "r6()";comment = "Horizon and Awareness";shape = doublecircle;color = darkblue;];
-    spark_9_t [label = "r9()";comment = "Attribute and Property";shape = doublecircle;color = darkblue;];
-    spark_a_t [label = "receive()";comment = "Essence";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "send()";comment = "Presence";shape = triangle;color = darkred;];
-    spark_c_t [label = "dispatch()";comment = "";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "commit()";comment = "";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "serve()";comment = "";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "exec()";comment = "";shape = doublecircle;];
+    spark_0_t [label = "Law.meta()\nSpark Law";comment = "";shape = doublecircle;];
+    spark_1_t [label = "Law.r1()\nGold Law";comment = "";shape = circle;color = darkgreen;];
+    spark_2_t [label = "Law.r2()\nFire Law";comment = "";shape = circle;color = darkgreen;];
+    spark_4_t [label = "Law.r4()\nEarth Law";comment = "";shape = circle;color = darkgreen;];
+    spark_8_t [label = "Law.r8()\nWood Law";comment = "";shape = circle;color = darkgreen;];
+    spark_7_t [label = "Law.r7()\nWater Law";comment = "";shape = circle;color = darkgreen;];
+    spark_5_t [label = "Law.r5()\nWind Law";comment = "";shape = circle;color = darkgreen;];
+    spark_3_t [label = "Law.r3()\nLight Law";comment = "";shape = doublecircle;color = darkblue;];
+    spark_6_t [label = "Law.r6()\nDark Law";comment = "";shape = doublecircle;color = darkblue;];
+    spark_9_t [label = "Law.r9()\nThunder Law";comment = "";shape = doublecircle;color = darkblue;];
+    spark_a_t [label = "Law.receive()\nSpace Law";comment = "";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Law.send()\nTime Law";comment = "";shape = triangle;color = darkred;];
+    spark_c_t [label = "Law.dispatch()\nVoid Law";comment = "";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Law.commit()\nSpatial Law";comment = "";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Law.serve()\nTemporal Law";comment = "";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Law.exec()\nChaos Law";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
