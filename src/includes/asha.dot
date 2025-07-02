@@ -9,22 +9,22 @@ strict digraph Sparklet {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    asha_0_t [label = "Asha";comment = "meta()";shape = doublecircle;];
-    asha_1_t [label = "R1";comment = "";shape = circle;color = darkgreen;];
-    asha_2_t [label = "R2";comment = "";shape = circle;color = darkgreen;];
-    asha_4_t [label = "R4";comment = "";shape = circle;color = darkgreen;];
-    asha_8_t [label = "R8";comment = "";shape = circle;color = darkgreen;];
-    asha_7_t [label = "R7";comment = "";shape = circle;color = darkgreen;];
-    asha_5_t [label = "R5";comment = "";shape = circle;color = darkgreen;];
-    asha_3_t [label = "R3";comment = "";shape = doublecircle;color = darkblue;];
-    asha_6_t [label = "R6";comment = "";shape = doublecircle;color = darkblue;];
-    asha_9_t [label = "R9";comment = "";shape = doublecircle;color = darkblue;];
-    asha_a_t [label = "Truth";comment = "receive()";shape = invtriangle;color = darkred;];
-    asha_b_t [label = "Wisdom";comment = "send()";shape = triangle;color = darkred;];
-    asha_c_t [label = "Sincerity";comment = "dispatch()";shape = doublecircle;color = darkred;];
-    asha_d_t [label = "Clarity";comment = "commit()";shape = doublecircle;color = darkgreen;];
-    asha_e_t [label = "Insight";comment = "serve()";shape = doublecircle;color = darkblue;];
-    asha_f_t [label = "Satya";comment = "exec()";shape = doublecircle;];
+    asha_0_t [label = "Asha.meta()";comment = "";shape = doublecircle;];
+    asha_1_t [label = "Asha.r1()";comment = "";shape = circle;color = darkgreen;];
+    asha_2_t [label = "Asha.r2()";comment = "";shape = circle;color = darkgreen;];
+    asha_4_t [label = "Asha.r4()";comment = "";shape = circle;color = darkgreen;];
+    asha_8_t [label = "Asha.r8()";comment = "";shape = circle;color = darkgreen;];
+    asha_7_t [label = "Asha.r7()";comment = "";shape = circle;color = darkgreen;];
+    asha_5_t [label = "Asha.r5()";comment = "";shape = circle;color = darkgreen;];
+    asha_3_t [label = "Asha.r3()";comment = "Clarity and Insight";shape = doublecircle;color = darkblue;];
+    asha_6_t [label = "Asha.r6()";comment = "Integrity and Discernment";shape = doublecircle;color = darkblue;];
+    asha_9_t [label = "Asha.r9()";comment = "Sincerity and Comprehension";shape = doublecircle;color = darkblue;];
+    asha_a_t [label = "Asha.receive()";comment = "Truth";shape = invtriangle;color = darkred;];
+    asha_b_t [label = "Asha.send()";comment = "Wisdom";shape = triangle;color = darkred;];
+    asha_c_t [label = "Asha.dispatch()";comment = "";shape = doublecircle;color = darkred;];
+    asha_d_t [label = "Asha.commit()";comment = "";shape = doublecircle;color = darkgreen;];
+    asha_e_t [label = "Asha.serve()";comment = "";shape = doublecircle;color = darkblue;];
+    asha_f_t [label = "Asha.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

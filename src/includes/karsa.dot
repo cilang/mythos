@@ -9,22 +9,22 @@ strict digraph Sparklet {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "R0";comment = "meta()";shape = doublecircle;];
-    spark_1_t [label = "R1";comment = "";shape = circle;color = darkgreen;];
-    spark_2_t [label = "R2";comment = "";shape = circle;color = darkgreen;];
-    spark_4_t [label = "R4";comment = "";shape = circle;color = darkgreen;];
-    spark_8_t [label = "R8";comment = "";shape = circle;color = darkgreen;];
-    spark_7_t [label = "R7";comment = "";shape = circle;color = darkgreen;];
-    spark_5_t [label = "R5";comment = "";shape = circle;color = darkgreen;];
-    spark_3_t [label = "R3";comment = "";shape = doublecircle;color = darkblue;];
-    spark_6_t [label = "R6";comment = "";shape = doublecircle;color = darkblue;];
-    spark_9_t [label = "R9";comment = "";shape = doublecircle;color = darkblue;];
-    spark_a_t [label = "RA";comment = "receive()";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "RB";comment = "send()";shape = triangle;color = darkred;];
-    spark_c_t [label = "RC";comment = "dispatch()";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "RD";comment = "commit()";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "RE";comment = "serve()";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "RF";comment = "exec()";shape = doublecircle;];
+    spark_0_t [label = "Karsa.meta()";comment = "";shape = doublecircle;];
+    spark_1_t [label = "Karsa.r1()";comment = "";shape = circle;color = darkgreen;];
+    spark_2_t [label = "Karsa.r2()";comment = "";shape = circle;color = darkgreen;];
+    spark_4_t [label = "Karsa.r4()";comment = "";shape = circle;color = darkgreen;];
+    spark_8_t [label = "Karsa.r8()";comment = "";shape = circle;color = darkgreen;];
+    spark_7_t [label = "Karsa.r7()";comment = "";shape = circle;color = darkgreen;];
+    spark_5_t [label = "Karsa.r5()";comment = "";shape = circle;color = darkgreen;];
+    spark_3_t [label = "Karsa.r3()";comment = "Rhythm and Pattern";shape = doublecircle;color = darkblue;];
+    spark_6_t [label = "Karsa.r6()";comment = "Inertia and Momentum";shape = doublecircle;color = darkblue;];
+    spark_9_t [label = "Karsa.r9()";comment = "Time and Space";shape = doublecircle;color = darkblue;];
+    spark_a_t [label = "Karsa.receive()";comment = "Fixation";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Karsa.send()";comment = "Excitation";shape = triangle;color = darkred;];
+    spark_c_t [label = "Karsa.dispatch()";comment = "";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Karsa.commit()";comment = "";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Karsa.serve()";comment = "";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Karsa.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
