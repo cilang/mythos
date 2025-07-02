@@ -1,5 +1,5 @@
-strict digraph UniversalLaw {
-    label = "Universal Law";
+strict digraph Lineage {
+    label = "Lineage\n(/proc/origin/seed/lineage)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -9,22 +9,22 @@ strict digraph UniversalLaw {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "Origin";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Truth";comment = "";shape = circle;];
-    spark_2_t [label = "Convergence";comment = "";shape = circle;];
-    spark_4_t [label = "Fixation";comment = "";shape = circle;];
-    spark_8_t [label = "Wisdom";comment = "";shape = circle;];
-    spark_7_t [label = "Divergence";comment = "";shape = circle;];
-    spark_5_t [label = "Excitation";comment = "";shape = circle;];
-    spark_3_t [label = "Capability";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Repository";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Factor";comment = "";shape = doublecircle;];
-    spark_a_t [label = "Probability";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Causality";comment = "";shape = triangle;];
-    spark_c_t [label = "Authority";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Rasa";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Corpus";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Spacetime";comment = "";shape = doublecircle;];
+    spark_0_t [label = "Lineage.meta()";comment = "";shape = doublecircle;];
+    spark_1_t [label = "Lineage.r1()";comment = "";shape = circle;color = darkgreen;];
+    spark_2_t [label = "Lineage.r2()";comment = "";shape = circle;color = darkgreen;];
+    spark_4_t [label = "Lineage.r4()";comment = "";shape = circle;color = darkgreen;];
+    spark_8_t [label = "Lineage.r8()";comment = "";shape = circle;color = darkgreen;];
+    spark_7_t [label = "Lineage.r7()";comment = "";shape = circle;color = darkgreen;];
+    spark_5_t [label = "Lineage.r5()";comment = "";shape = circle;color = darkgreen;];
+    spark_3_t [label = "Lineage.r3()";comment = "";shape = doublecircle;color = darkblue;];
+    spark_6_t [label = "Lineage.r6()";comment = "";shape = doublecircle;color = darkblue;];
+    spark_9_t [label = "Lineage.r9()";comment = "";shape = doublecircle;color = darkblue;];
+    spark_a_t [label = "Lineage.receive()";comment = "";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Lineage.send()";comment = "";shape = triangle;color = darkred;];
+    spark_c_t [label = "Lineage.dispatch()";comment = "";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Lineage.commit()";comment = "";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Lineage.serve()";comment = "";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Lineage.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
