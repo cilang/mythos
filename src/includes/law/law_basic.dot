@@ -1,5 +1,5 @@
 strict digraph BasicLaw {
-    label = "Law\n(/proc/origin/seed/basic-law)";
+    label = "Law\n(/proc/origin/law/basic)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -19,8 +19,8 @@ strict digraph BasicLaw {
     spark_3_t [label = "Law.r3()\nLight Law";comment = "";shape = doublecircle;color = darkblue;];
     spark_6_t [label = "Law.r6()\nDark Law";comment = "";shape = doublecircle;color = darkblue;];
     spark_9_t [label = "Law.r9()\nThunder Law";comment = "";shape = doublecircle;color = darkblue;];
-    spark_a_t [label = "Law.receive()\nSpace Law";comment = "";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Law.send()\nTime Law";comment = "";shape = triangle;color = darkred;];
+    spark_a_t [label = "Law.receive()\nRhythm Law";comment = "";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Law.send()\nPattern Law";comment = "";shape = triangle;color = darkred;];
     spark_c_t [label = "Law.dispatch()\nVoid Law";comment = "";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Law.commit()\nSpatial Law";comment = "";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Law.serve()\nTemporal Law";comment = "";shape = doublecircle;color = darkblue;];

@@ -6,22 +6,22 @@ strict digraph AlignmentModel {
     
     // Alignment Model
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_alignment_seed_t [label = "0\nAlignment.meta()\nAlignment";shape = doublecircle;comment = "Raw potential (unformatted).";];
-    spark_1_alignment_seed_t [label = "1\nAlignment.K()\nCausality";shape = circle;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
-    spark_2_alignment_seed_t [label = "2\nAlignment.Θ()\nTopology";shape = circle;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
-    spark_4_alignment_seed_t [label = "4\nAlignment.D()\nDimensionality";shape = circle;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
-    spark_8_alignment_seed_t [label = "8\nAlignment.V()\nVoid";shape = circle;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
-    spark_7_alignment_seed_t [label = "7\nAlignment.Φ()\nPhase";shape = circle;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
-    spark_5_alignment_seed_t [label = "5\nAlignment.Λ()\nLogic";shape = circle;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
-    spark_3_alignment_seed_t [label = "3\nAlignment.C()\nCharge";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
-    spark_6_alignment_seed_t [label = "6\nAlignment.P()\nParity";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
-    spark_9_alignment_seed_t [label = "9\nAlignment.T()\nTime";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
-    spark_a_alignment_seed_t [label = "A\nAlignment.convergence()\nUnity";shape = triangle;comment = "Cosmic bus (information routing).";];
-    spark_b_alignment_seed_t [label = "B\nAlignment.divergence()\nDiversity";shape = invtriangle;comment = "Cosmic bus (information routing).";];
-    spark_c_alignment_seed_t [label = "C\nAlignment.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_alignment_seed_t [label = "D\nAlignment.commit()";shape = doublecircle;comment = "";];
-    spark_e_alignment_seed_t [label = "E\nAlignment.serve()";shape = doublecircle;comment = "";];
-    spark_f_alignment_seed_t [label = "F\nAlignment.exec()";shape = doublecircle;comment = "";];
+    spark_0_alignment_seed_t [label = "Alignment.meta()\nAlignment";shape = doublecircle;comment = "Raw potential (unformatted).";];
+    spark_1_alignment_seed_t [label = "Alignment.K()\nCausality";shape = circle;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
+    spark_2_alignment_seed_t [label = "Alignment.Θ()\nTopology";shape = circle;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
+    spark_4_alignment_seed_t [label = "Alignment.D()\nDimensionality";shape = circle;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
+    spark_8_alignment_seed_t [label = "Alignment.V()\nVoid";shape = circle;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
+    spark_7_alignment_seed_t [label = "Alignment.Φ()\nPhase";shape = circle;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
+    spark_5_alignment_seed_t [label = "Alignment.Λ()\nLogic";shape = circle;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
+    spark_3_alignment_seed_t [label = "Alignment.C()\nCharge";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
+    spark_6_alignment_seed_t [label = "Alignment.P()\nParity";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
+    spark_9_alignment_seed_t [label = "Alignment.T()\nTime";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
+    spark_a_alignment_seed_t [label = "Alignment.convergence()\nUnity";shape = triangle;comment = "Cosmic bus (information routing).";];
+    spark_b_alignment_seed_t [label = "Alignment.divergence()\nDiversity";shape = invtriangle;comment = "Cosmic bus (information routing).";];
+    spark_c_alignment_seed_t [label = "Alignment.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_alignment_seed_t [label = "Alignment.commit()";shape = doublecircle;comment = "";];
+    spark_e_alignment_seed_t [label = "Alignment.serve()";shape = doublecircle;comment = "";];
+    spark_f_alignment_seed_t [label = "Alignment.exec()";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

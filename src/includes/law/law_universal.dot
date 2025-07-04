@@ -1,5 +1,5 @@
-strict digraph Vikara {
-    label = "Vikara\n(/proc/reality/concept/vikara)";
+strict digraph UniversalLaw {
+    label = "Universal Law\n(/proc/origin/law/universal)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -9,22 +9,22 @@ strict digraph Vikara {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "Vikara.meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Vikara.r1()";comment = "";shape = circle;];
-    spark_2_t [label = "Vikara.r2()";comment = "";shape = circle;];
-    spark_4_t [label = "Vikara.r4()";comment = "";shape = circle;];
-    spark_8_t [label = "Vikara.r8()";comment = "";shape = circle;];
-    spark_7_t [label = "Vikara.r7()";comment = "";shape = circle;];
-    spark_5_t [label = "Vikara.r5()";comment = "";shape = circle;];
-    spark_3_t [label = "Vikara.r3()";comment = "Chaos and Order";shape = doublecircle;];
-    spark_6_t [label = "Vikara.r6()";comment = "Destruction and Creation";shape = doublecircle;];
-    spark_9_t [label = "Vikara.r9()";comment = "Probability and Causality";shape = doublecircle;];
-    spark_a_t [label = "Vikara.receive()";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Vikara.send()";comment = "";shape = triangle;];
-    spark_c_t [label = "Vikara.dispatch()";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Vikara.commit()";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Vikara.serve()";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Vikara.exec()";comment = "";shape = doublecircle;];
+    spark_0_t [label = "Universal.meta(Ultimate Law)";comment = "";shape = doublecircle;];
+    spark_1_t [label = "Universal.r1()\nLaw of Truth";comment = "";shape = circle;];
+    spark_2_t [label = "Universal.r2()\nLaw of Convergence";comment = "";shape = circle;];
+    spark_4_t [label = "Universal.r4()\nLaw of Fixation";comment = "";shape = circle;];
+    spark_8_t [label = "Universal.r8()\nLaw of Wisdom";comment = "";shape = circle;];
+    spark_7_t [label = "Universal.r7()\nLaw of Divergence";comment = "";shape = circle;];
+    spark_5_t [label = "Universal.r5()\nLaw of Excitation";comment = "";shape = circle;];
+    spark_3_t [label = "Universal.r3()\nLaw of Capability";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Universal.r6()\nLaw of Repository";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Universal.r9()\nLaw of Factor";comment = "";shape = doublecircle;];
+    spark_a_t [label = "Universal.receive()\nLaw of Probability";comment = "";shape = invtriangle;];
+    spark_b_t [label = "Universal.send()\nLaw of Causality";comment = "";shape = triangle;];
+    spark_c_t [label = "Universal.dispatch()\nLaw of Authority";comment = "";shape = doublecircle;];
+    spark_d_t [label = "Universal.commit()\nLaw of Rasa";comment = "";shape = doublecircle;];
+    spark_e_t [label = "Universal.serve()\nLaw of Corpus";comment = "";shape = doublecircle;];
+    spark_f_t [label = "Universal.exec()\nLaw of Spacetime";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

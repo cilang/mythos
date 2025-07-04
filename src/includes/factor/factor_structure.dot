@@ -1,26 +1,26 @@
-strict digraph Factor {
-    label = "Factor\n(/proc/reality/factor/factor)";
+strict digraph StructureModel {
+    label = "Structure Model\n(/proc/reality/factor/structure)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_factor_t [label = "0\nFactor.meta()\nmeta_t";shape = doublecircle;comment = "";];
-    spark_1_factor_t [label = "1\nFactor.heart()\nheart_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_2_factor_t [label = "2\nFactor.astral()\nshell_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_4_factor_t [label = "4\nFactor.astral()\nastral_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_8_factor_t [label = "8\nFactor.spiritual()\nspiritual_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_7_factor_t [label = "7\nFactor.material()\nmaterial_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_5_factor_t [label = "5\nFactor.celestial()\ncelestial_interface_t";shape = circle;comment = "";color = darkgreen;];
-    spark_3_factor_t [label = "3\nFactor.observer()\nobserver_model_t";shape = doublecircle;comment = "";color = darkblue;];
-    spark_6_factor_t [label = "6\nFactor.spectral()\nspectral_model_t";shape = doublecircle;comment = "";color = darkblue;];
-    spark_9_factor_t [label = "9\nFactor.alignment()\nalignment_model_t";shape = doublecircle;comment = "";color = darkblue;];
-    spark_a_factor_t [label = "A\nFactor.receive()\nreceive_interface_t";shape = invtriangle;comment = "";color = darkred;];
-    spark_b_factor_t [label = "B\nFactor.send()\nsend_interface_t";shape = triangle;comment = "";color = darkred;];
-    spark_c_factor_t [label = "C\nFactor.dispatch()\ndispatch_interface_t";shape = doublecircle;comment = "";color = darkred;];
-    spark_d_factor_t [label = "D\nFactor.commit()\ncorpus_interface_t";shape = doublecircle;comment = "";color = darkgreen;];
-    spark_e_factor_t [label = "E\nFactor.serve()\nservice_interface_t";shape = doublecircle;comment = "";color = darkblue;];
-    spark_f_factor_t [label = "F\nFactor.exec()\ncmd_interface_t";shape = doublecircle;comment = "";];
+    spark_0_factor_t [label = "Structure.meta()\nmeta_interface_t";shape = doublecircle;comment = "";];
+    spark_1_factor_t [label = "Structure.heart()\nheart_interface_t";shape = circle;comment = "";];
+    spark_2_factor_t [label = "Structure.astral()\nshell_interface_t";shape = circle;comment = "";];
+    spark_4_factor_t [label = "Structure.astral()\nastral_interface_t";shape = circle;comment = "";];
+    spark_8_factor_t [label = "Structure.spiritual()\nspiritual_interface_t";shape = circle;comment = "";];
+    spark_7_factor_t [label = "Structure.material()\nmaterial_interface_t";shape = circle;comment = "";];
+    spark_5_factor_t [label = "Structure.celestial()\ncelestial_interface_t";shape = circle;comment = "";];
+    spark_3_factor_t [label = "Structure.observer()\nobserver_model_t";shape = doublecircle;comment = "";];
+    spark_6_factor_t [label = "Structure.spectral()\nspectral_model_t";shape = doublecircle;comment = "";];
+    spark_9_factor_t [label = "Structure.alignment()\nalignment_model_t";shape = doublecircle;comment = "";];
+    spark_a_factor_t [label = "Structure.receive()\nreceive_interface_t";shape = invtriangle;comment = "";];
+    spark_b_factor_t [label = "Structure.send()\nsend_interface_t";shape = triangle;comment = "";];
+    spark_c_factor_t [label = "Structure.dispatch()\ndispatch_interface_t";shape = doublecircle;comment = "";];
+    spark_d_factor_t [label = "Structure.commit()\ncorpus_interface_t";shape = doublecircle;comment = "";];
+    spark_e_factor_t [label = "Structure.serve()\nservice_interface_t";shape = doublecircle;comment = "";];
+    spark_f_factor_t [label = "Structure.exec()\ncmd_interface_t";shape = doublecircle;comment = "";];
     
     // I = Input
     // O = Output

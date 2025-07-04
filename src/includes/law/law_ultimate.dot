@@ -1,5 +1,5 @@
-strict digraph Vikara {
-    label = "Vikara\n(/proc/reality/concept/vikara)";
+strict digraph UltimateLaw {
+    label = "Ultimate Law\n(/proc/origin/law/ultimate)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -9,22 +9,22 @@ strict digraph Vikara {
     // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "Vikara.meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Vikara.r1()";comment = "";shape = circle;];
-    spark_2_t [label = "Vikara.r2()";comment = "";shape = circle;];
-    spark_4_t [label = "Vikara.r4()";comment = "";shape = circle;];
-    spark_8_t [label = "Vikara.r8()";comment = "";shape = circle;];
-    spark_7_t [label = "Vikara.r7()";comment = "";shape = circle;];
-    spark_5_t [label = "Vikara.r5()";comment = "";shape = circle;];
-    spark_3_t [label = "Vikara.r3()";comment = "Chaos and Order";shape = doublecircle;];
-    spark_6_t [label = "Vikara.r6()";comment = "Destruction and Creation";shape = doublecircle;];
-    spark_9_t [label = "Vikara.r9()";comment = "Probability and Causality";shape = doublecircle;];
-    spark_a_t [label = "Vikara.receive()";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Vikara.send()";comment = "";shape = triangle;];
-    spark_c_t [label = "Vikara.dispatch()";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Vikara.commit()";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Vikara.serve()";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Vikara.exec()";comment = "";shape = doublecircle;];
+    spark_0_t [label = "Ultimate.meta(Perfect Law)";comment = "";shape = doublecircle;];
+    spark_1_t [label = "Ultimate.r1()\nLaw of Eternity";comment = "";shape = circle;];
+    spark_2_t [label = "Ultimate.r2()\nLaw of Creation";comment = "";shape = circle;];
+    spark_4_t [label = "Ultimate.r4()\nLaw of Death";comment = "";shape = circle;];
+    spark_8_t [label = "Ultimate.r8()\nLaw of Infinity";comment = "";shape = circle;];
+    spark_7_t [label = "Ultimate.r7()\nLaw of Destruction";comment = "";shape = circle;];
+    spark_5_t [label = "Ultimate.r5()\nLaw of Life";comment = "";shape = circle;];
+    spark_3_t [label = "Ultimate.r3()\nLaw of Desire";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Ultimate.r6()\nLaw of Memory";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Ultimate.r9()\nLaw of Emotion";comment = "";shape = doublecircle;];
+    spark_a_t [label = "Ultimate.receive()\nLaw of Destiny";comment = "";shape = invtriangle;];
+    spark_b_t [label = "Ultimate.send()\nLaw of Faith";comment = "";shape = triangle;];
+    spark_c_t [label = "Ultimate.dispatch()\nLaw of Divinity";comment = "";shape = doublecircle;];
+    spark_d_t [label = "Ultimate.commit()\nLaw of Essence";comment = "";shape = doublecircle;];
+    spark_e_t [label = "Ultimate.serve()\nLaw of Soul";comment = "";shape = doublecircle;];
+    spark_f_t [label = "Ultimate.exec()\n";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
