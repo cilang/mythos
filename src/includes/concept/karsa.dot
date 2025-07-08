@@ -10,17 +10,17 @@ strict digraph Karsa {
     // The Router C-D-E
     // The Closure F
     spark_0_t [label = "Karsa.meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Karsa.r1()";comment = "";shape = circle;];
-    spark_2_t [label = "Karsa.r2()";comment = "";shape = circle;];
-    spark_4_t [label = "Karsa.r4()";comment = "";shape = circle;];
-    spark_8_t [label = "Karsa.r8()";comment = "";shape = circle;];
-    spark_7_t [label = "Karsa.r7()";comment = "";shape = circle;];
-    spark_5_t [label = "Karsa.r5()";comment = "";shape = circle;];
-    spark_3_t [label = "Karsa.r3()";comment = "Rhythm and Pattern";shape = doublecircle;];
-    spark_6_t [label = "Karsa.r6()";comment = "Inertia and Momentum";shape = doublecircle;];
-    spark_9_t [label = "Karsa.r9()";comment = "Time and Space";shape = doublecircle;];
-    spark_a_t [label = "Karsa.receive()";comment = "Fixation";shape = invtriangle;];
-    spark_b_t [label = "Karsa.send()";comment = "Excitation";shape = triangle;];
+    spark_1_t [label = "Karsa.r1()\nPattern";comment = "";shape = circle;];
+    spark_2_t [label = "Karsa.r2()\nMomentum";comment = "";shape = circle;];
+    spark_4_t [label = "Karsa.r4()\nSpace";comment = "";shape = circle;];
+    spark_8_t [label = "Karsa.r8()\nRhythm";comment = "";shape = circle;];
+    spark_7_t [label = "Karsa.r7()\nInertia";comment = "";shape = circle;];
+    spark_5_t [label = "Karsa.r5()\nTime";comment = "";shape = circle;];
+    spark_3_t [label = "Karsa.r3()";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Karsa.r6()";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Karsa.r9()";comment = "";shape = doublecircle;];
+    spark_a_t [label = "Karsa.receive()\nExcitation";comment = "";shape = invtriangle;];
+    spark_b_t [label = "Karsa.send()\nFixation";comment = "";shape = triangle;];
     spark_c_t [label = "Karsa.dispatch()";comment = "";shape = doublecircle;];
     spark_d_t [label = "Karsa.commit()";comment = "";shape = doublecircle;];
     spark_e_t [label = "Karsa.serve()";comment = "";shape = doublecircle;];

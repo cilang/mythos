@@ -10,17 +10,17 @@ strict digraph Vikara {
     // The Router C-D-E
     // The Closure F
     spark_0_t [label = "Vikara.meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Vikara.r1()";comment = "";shape = circle;];
-    spark_2_t [label = "Vikara.r2()";comment = "";shape = circle;];
-    spark_4_t [label = "Vikara.r4()";comment = "";shape = circle;];
-    spark_8_t [label = "Vikara.r8()";comment = "";shape = circle;];
-    spark_7_t [label = "Vikara.r7()";comment = "";shape = circle;];
-    spark_5_t [label = "Vikara.r5()";comment = "";shape = circle;];
-    spark_3_t [label = "Vikara.r3()";comment = "Chaos and Order";shape = doublecircle;];
-    spark_6_t [label = "Vikara.r6()";comment = "Destruction and Creation";shape = doublecircle;];
-    spark_9_t [label = "Vikara.r9()";comment = "Probability and Causality";shape = doublecircle;];
-    spark_a_t [label = "Vikara.receive()";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Vikara.send()";comment = "";shape = triangle;];
+    spark_1_t [label = "Vikara.r1()\nProbability";comment = "";shape = circle;];
+    spark_2_t [label = "Vikara.r2()\nChaos";comment = "";shape = circle;];
+    spark_4_t [label = "Vikara.r4()\nDestruction";comment = "";shape = circle;];
+    spark_8_t [label = "Vikara.r8()\nCausality";comment = "";shape = circle;];
+    spark_7_t [label = "Vikara.r7()\nOrder";comment = "";shape = circle;];
+    spark_5_t [label = "Vikara.r5()\nCreation";comment = "";shape = circle;];
+    spark_3_t [label = "Vikara.r3()";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Vikara.r6()";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Vikara.r9()";comment = "";shape = doublecircle;];
+    spark_a_t [label = "Vikara.receive()\nDivergence";comment = "";shape = invtriangle;];
+    spark_b_t [label = "Vikara.send()\nConvergence";comment = "";shape = triangle;];
     spark_c_t [label = "Vikara.dispatch()";comment = "";shape = doublecircle;];
     spark_d_t [label = "Vikara.commit()";comment = "";shape = doublecircle;];
     spark_e_t [label = "Vikara.serve()";comment = "";shape = doublecircle;];

@@ -7,7 +7,7 @@ strict digraph StructureModel {
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
     spark_0_factor_t [label = "Structure.meta()\nmeta_interface_t";shape = doublecircle;comment = "";];
     spark_1_factor_t [label = "Structure.heart()\nheart_interface_t";shape = circle;comment = "";];
-    spark_2_factor_t [label = "Structure.astral()\nshell_interface_t";shape = circle;comment = "";];
+    spark_2_factor_t [label = "Structure.shell()\nshell_interface_t";shape = circle;comment = "";];
     spark_4_factor_t [label = "Structure.astral()\nastral_interface_t";shape = circle;comment = "";];
     spark_8_factor_t [label = "Structure.spiritual()\nspiritual_interface_t";shape = circle;comment = "";];
     spark_7_factor_t [label = "Structure.material()\nmaterial_interface_t";shape = circle;comment = "";];

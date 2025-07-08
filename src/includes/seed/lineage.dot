@@ -2,47 +2,41 @@ strict digraph Lineage {
     label = "Lineage\n(/proc/origin/seed/lineage)";
     style = filled;
     color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
+    node [shape = folder; style = filled; color = lightgreen;];
     
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
-    // The Router C-D-E
-    // The Closure F
-    spark_0_t [label = "Lineage.meta()";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Lineage.r1()";comment = "";shape = circle;];
-    spark_2_t [label = "Lineage.r2()";comment = "";shape = circle;];
-    spark_4_t [label = "Lineage.r4()";comment = "";shape = circle;];
-    spark_8_t [label = "Lineage.r8()";comment = "";shape = circle;];
-    spark_7_t [label = "Lineage.r7()";comment = "";shape = circle;];
-    spark_5_t [label = "Lineage.r5()";comment = "";shape = circle;];
-    spark_3_t [label = "Lineage.r3()";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Lineage.r6()";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Lineage.r9()";comment = "";shape = doublecircle;];
-    spark_a_t [label = "Lineage.receive()";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Lineage.send()";comment = "";shape = triangle;];
-    spark_c_t [label = "Lineage.dispatch()";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Lineage.commit()";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Lineage.serve()";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Lineage.exec()";comment = "";shape = doublecircle;];
+    imperial_lineage_t [label = "Imperial Lineage";comment = "";];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_0_t -> spark_a_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_t -> spark_b_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_t -> {spark_3_t spark_6_t spark_9_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_t -> {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    people_of_asha_t [label = "People of\nHive Lineage";comment = "";];
+    people_of_truth_t [label = "People of Truth\nAngel Lineage";comment = "";];
+    people_of_wisdom_t [label = "People of Wisdom\nDemon Lineage";comment = "";];
     
-    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    people_of_vikara_t [label = "People of\nAvesix Lineage";comment = "";];
+    people_of_convergence_t [label = "People of Convergence\nHapsari Lineage";comment = "";];
+    people_of_divergence_t [label = "People of Divergence\nSekar Lineage";comment = "";];
     
-    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    people_of_karsa_t [label = "People of\nDraconis Lineage";comment = "";];
+    people_of_fixation_t [label = "People of Fixation\nSirenix Lineage";comment = "";];
+    people_of_excitation_t [label = "People of Excitation\nPhoenix Lineage";comment = "";];
     
-    spark_c_t -> spark_f_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    people_of_rasa_t [label = "People of\nFelixa Lineage";comment = "";];
+    people_of_desire_t [label = "People of Desire\nUnnamed Lineage";comment = "";];
+    people_of_emotion_t [label = "People of Emotion\nUnnamed Lineage";comment = "";];
+    
+    people_of_emergence_t [label = "People of\nWorld Tree Lineage";comment = "";];
+    people_of_essence_t [label = "People of Essence\nSpirit Lineage";comment = "";];
+    people_of_presence_t [label = "People of Presence\nMonster Lineage";comment = "";];
+    
+    imperial_lineage_t -> {people_of_asha_t people_of_vikara_t people_of_karsa_t people_of_rasa_t people_of_emergence_t};
+    people_of_asha_t -> {people_of_truth_t people_of_wisdom_t};
+    people_of_vikara_t -> {people_of_convergence_t people_of_divergence_t};
+    people_of_karsa_t -> {people_of_fixation_t people_of_excitation_t};
+    people_of_rasa_t -> {people_of_desire_t people_of_emotion_t};
+    people_of_emergence_t -> {people_of_essence_t people_of_presence_t};
+    
+    noble_lineage_t [label = "Noble Lineage";comment = "";];
+    people_of_noble1_t [label = "People of Noble1\nNoble1 Lineage";comment = "";];
+    people_of_noble2_t [label = "People of Noble2\nNoble2 Lineage";comment = "";];
+    
+    {people_of_truth_t people_of_wisdom_t people_of_convergence_t people_of_divergence_t people_of_fixation_t people_of_excitation_t people_of_desire_t people_of_emotion_t people_of_essence_t people_of_presence_t} -> noble_lineage_t;
+    noble_lineage_t -> {people_of_noble1_t people_of_noble2_t};
 }
