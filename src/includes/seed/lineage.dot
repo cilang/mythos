@@ -34,9 +34,6 @@ strict digraph Lineage {
     people_of_emergence_t -> {people_of_essence_t people_of_presence_t};
     
     noble_lineage_t [label = "Noble Lineage";comment = "";];
-    people_of_noble1_t [label = "People of Noble1\nNoble1 Lineage";comment = "";];
-    people_of_noble2_t [label = "People of Noble2\nNoble2 Lineage";comment = "";];
     
     {people_of_truth_t people_of_wisdom_t people_of_convergence_t people_of_divergence_t people_of_fixation_t people_of_excitation_t people_of_desire_t people_of_emotion_t people_of_essence_t people_of_presence_t} -> noble_lineage_t;
-    noble_lineage_t -> {people_of_noble1_t people_of_noble2_t};
 }
