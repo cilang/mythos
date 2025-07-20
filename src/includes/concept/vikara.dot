@@ -16,9 +16,9 @@ strict digraph Vikara {
     spark_8_t [label = "Vikara.r8()\nCausality";comment = "";shape = circle;];
     spark_7_t [label = "Vikara.r7()\nOrder";comment = "";shape = circle;];
     spark_5_t [label = "Vikara.r5()\nCreation";comment = "";shape = circle;];
-    spark_3_t [label = "Vikara.r3()";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Vikara.r6()";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Vikara.r9()";comment = "";shape = doublecircle;];
+    spark_3_t [label = "Vikara.r3()\nLuck";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Vikara.r6()\nFaith";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Vikara.r9()\nDestiny";comment = "";shape = doublecircle;];
     spark_a_t [label = "Vikara.receive()\nDivergence";comment = "";shape = invtriangle;];
     spark_b_t [label = "Vikara.send()\nConvergence";comment = "";shape = triangle;];
     spark_c_t [label = "Vikara.dispatch()";comment = "";shape = doublecircle;];

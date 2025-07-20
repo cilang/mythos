@@ -16,14 +16,14 @@ strict digraph Karsa {
     spark_8_t [label = "Karsa.r8()\nRhythm";comment = "";shape = circle;];
     spark_7_t [label = "Karsa.r7()\nInertia";comment = "";shape = circle;];
     spark_5_t [label = "Karsa.r5()\nTime";comment = "";shape = circle;];
-    spark_3_t [label = "Karsa.r3()";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Karsa.r6()";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Karsa.r9()";comment = "";shape = doublecircle;];
+    spark_3_t [label = "Karsa.r3()\nLife";comment = "";shape = doublecircle;];
+    spark_6_t [label = "Karsa.r6()\nDeath";comment = "";shape = doublecircle;];
+    spark_9_t [label = "Karsa.r9()\nBirth";comment = "";shape = doublecircle;];
     spark_a_t [label = "Karsa.receive()\nExcitation";comment = "";shape = invtriangle;];
     spark_b_t [label = "Karsa.send()\nFixation";comment = "";shape = triangle;];
     spark_c_t [label = "Karsa.dispatch()";comment = "";shape = doublecircle;];
     spark_d_t [label = "Karsa.commit()";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Karsa.serve()";comment = "";shape = doublecircle;];
+    spark_e_t [label = "Karsa.serve()\nReincarnation";comment = "";shape = doublecircle;];
     spark_f_t [label = "Karsa.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input

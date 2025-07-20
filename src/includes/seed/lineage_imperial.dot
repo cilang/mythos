@@ -10,20 +10,20 @@ strict digraph ImperialLineage {
     // The Router C-D-E
     // The Closure F
     spark_0_t [label = "Imperial.meta()\n";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Imperial.r1()\nPeople of Truth\nAngel Lineage";comment = "";shape = circle;];
+    spark_1_t [label = "Imperial.r1()\nPeople of Truth\nInsect Lineage";comment = "";shape = circle;];
     spark_2_t [label = "Imperial.r2()\nPeople of Convergence\nHapsari Lineage";comment = "";shape = circle;];
-    spark_4_t [label = "Imperial.r4()\nPeople of Fixation\nXuanwu Lineage";comment = "";shape = circle;];
-    spark_8_t [label = "Imperial.r8()\nPeople of Wisdom\nDemon Lineage";comment = "";shape = circle;];
+    spark_4_t [label = "Imperial.r4()\nPeople of Fixation\nChimera Lineage";comment = "";shape = circle;];
+    spark_8_t [label = "Imperial.r8()\nPeople of Wisdom\nWorm Lineage";comment = "";shape = circle;];
     spark_7_t [label = "Imperial.r7()\nPeople of Divergence\nSekar Lineage";comment = "";shape = circle;];
-    spark_5_t [label = "Imperial.r5()\nPeople of Excitation\nSuzaku Lineage";comment = "";shape = circle;];
-    spark_3_t [label = "Imperial.r3()\nPeople of Asha\nHive Lineage";comment = "";shape = doublecircle;];
+    spark_5_t [label = "Imperial.r5()\nPeople of Excitation\nSerpentine Lineage";comment = "";shape = circle;];
+    spark_3_t [label = "Imperial.r3()\nPeople of Asha\nArachnid Lineage";comment = "";shape = doublecircle;];
     spark_6_t [label = "Imperial.r6()\nPeople of Vikara\nAvesix Lineage";comment = "";shape = doublecircle;];
     spark_9_t [label = "Imperial.r9()\nPeople of Karsa\nDraconis Lineage";comment = "";shape = doublecircle;];
-    spark_a_t [label = "Imperial.receive()\nPeople of Essence\nSpirit Lineage";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Imperial.send()\nPeople of Presence\nEther Lineage";comment = "";shape = triangle;];
-    spark_c_t [label = "Imperial.dispatch()\nPeople of Emotion\nSpark Lineage";comment = "";shape = doublecircle;];
+    spark_a_t [label = "Imperial.receive()\nPeople of Essence\nMineral Lineage";comment = "";shape = invtriangle;];
+    spark_b_t [label = "Imperial.send()\nPeople of Presence\nPlant Lineage";comment = "";shape = triangle;];
+    spark_c_t [label = "Imperial.dispatch()\nPeople of Desire\nVulpine Lineage";comment = "";shape = doublecircle;];
     spark_d_t [label = "Imperial.commit()\nPeople of Rasa\nFelixa Lineage";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Imperial.serve()\nPeople of Desire\nVoid Lineage";comment = "";shape = doublecircle;];
+    spark_e_t [label = "Imperial.serve()\nPeople of Emotion\nCanine Lineage";comment = "";shape = doublecircle;];
     spark_f_t [label = "Imperial.exec()\nPeople of Emergence\nWorld Tree Lineage";comment = "";shape = doublecircle;];
     
     // IN = Input
