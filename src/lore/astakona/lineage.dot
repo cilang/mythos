@@ -1,0 +1,30 @@
+strict digraph Lineage {
+    label = "Lineage";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    lineage_t [label = "Lineage";comment = "";shape = folder;];
+    lineage_asha_t [label = "People of Asha\nArachnid Lineage";comment = "";shape = folder;];
+    lineage_vikara_t [label = "People of Vikara\nAvesix Lineage";comment = "";shape = folder;];
+    lineage_karsa_t [label = "People of Karsa\nDraconis Lineage";comment = "";shape = folder;];
+    lineage_rasa_t [label = "People of Rasa\nFelixa Lineage";comment = "";shape = folder;];
+    lineage_emergence_t [label = "People of Emergence\nWorld Tree Lineage";comment = "";shape = folder;];
+    lineage_truth_t [label = "People of Truth\nInsect Lineage";comment = "";shape = folder;];
+    lineage_wisdom_t [label = "People of Wisdom\nWorm Lineage";comment = "";shape = folder;];
+    lineage_convergence_t [label = "People of Convergence\nNawang Lineage";comment = "";shape = folder;];
+    lineage_divergence_t [label = "People of Divergence\nPawang Lineage";comment = "";shape = folder;];
+    lineage_fixation_t [label = "People of Fixation\nSerpentine Lineage";comment = "";shape = folder;];
+    lineage_excitation_t [label = "People of Excitation\nChimera Lineage";comment = "";shape = folder;];
+    lineage_desire_t [label = "People of Desire\nVulpine Lineage";comment = "";shape = folder;];
+    lineage_emotion_t [label = "People of Emotion\nCanine Lineage";comment = "";shape = folder;];
+    lineage_essence_t [label = "People of Essence\nMineral Lineage";comment = "";shape = folder;];
+    lineage_presence_t [label = "People of Presence\nPlant Lineage";comment = "";shape = folder;];
+    
+    lineage_t -> {lineage_asha_t lineage_vikara_t lineage_karsa_t lineage_rasa_t lineage_emergence_t} [label = "REC"; color = darkblue; comment = "";];
+    lineage_asha_t -> {lineage_truth_t lineage_wisdom_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    lineage_vikara_t -> {lineage_convergence_t lineage_divergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    lineage_karsa_t -> {lineage_fixation_t lineage_excitation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    lineage_rasa_t -> {lineage_desire_t lineage_emotion_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    lineage_emergence_t -> {lineage_essence_t lineage_presence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+}

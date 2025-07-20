@@ -1,0 +1,27 @@
+strict digraph Character {
+    label = "Character";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    damarwulan_t [label = "Damarwulan\nPrime Prince of Avesix\nMale";comment = "";shape = folder;];
+    lintang_kinasih_t [label = "Lintang Kinasih\nPrime Princess of Draconis\nFemale";comment = "";shape = folder;];
+    anastasia_t [label = "Anastasia\nSecond Princess Sekar Lineage\nFemale";comment = "";shape = folder;];
+    tirta_kencana_t [label = "Tirta Kencana\nSecond Princess Felixa Lineage\nFemale";comment = "";shape = folder;];
+    ariningtyas_t [label = "Ariningtyas\nSecond Princess Hapsari Lineage\nFemale";comment = "";shape = folder;];
+    vikiana_t [label = "Vikiana\nSecond Princess Vulpine Lineage\nFemale";comment = "";shape = folder;];
+    
+    chandra_t [label = "Chandra Sasmitha\nPrime Prince of Avesix\nMale";comment = "";shape = folder;];
+    
+    kirana_t [label = "Kirana Larasati\nPrime Queen of Arachnid\nFemale";comment = "";shape = folder;];
+    risa_t [label = "Risa\nPrime Princess of Hapsari\nFemale";comment = "";shape = folder;];
+    rina_t [label = "Rina\nPrime Princess of Sekar\nFemale";comment = "";shape = folder;];
+    laila_t [label = "Luna\nPrime Princess of Felixa\nFemale";comment = "";shape = folder;];
+    
+    astacitari_t [label = "Astawidya Citra Lestari\nPrime Princess of Avesix\nFemale";comment = "";shape = folder;];
+    
+    damarwulan_t -> {lintang_kinasih_t anastasia_t tirta_kencana_t ariningtyas_t vikiana_t} [label = "Wife"; color = darkblue; comment = "";];
+    {lintang_kinasih_t anastasia_t tirta_kencana_t ariningtyas_t vikiana_t} -> chandra_t [label = "Child"; color = darkblue; comment = "";];
+    chandra_t -> {kirana_t risa_t rina_t laila_t} [label = "Wife"; color = darkblue; comment = "";];
+    {kirana_t risa_t rina_t laila_t} -> astacitari_t [label = "Child"; color = darkblue; comment = "";];
+}
