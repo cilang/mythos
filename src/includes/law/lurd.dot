@@ -9,40 +9,40 @@ strict digraph LURD {
     // The Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "Spark.meta(Dumadi)\nOrigin";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Spark.r1(Resource)\nBrane";comment = "";shape = circle;];
-    spark_2_t [label = "Spark.r2(Authority)\nCelestial";comment = "";shape = circle;];
-    spark_4_t [label = "Spark.r4(Relation)\nStellar";comment = "";shape = circle;];
-    spark_8_t [label = "Spark.r8(Axiom)\nPlanar";comment = "";shape = circle;];
-    spark_7_t [label = "Spark.r7(Knowledge)\nCradle";comment = "";shape = circle;];
-    spark_5_t [label = "Spark.r5(Lineage)\nMythogenic";comment = "";shape = circle;];
-    spark_3_t [label = "Spark.r3(Asumsi)";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Spark.r6(Sugesti)";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Spark.r9(Persepsi)";comment = "";shape = doublecircle;];
-    spark_a_t [label = "Spark.receive(Sangkan)";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Spark.send(Paran)";comment = "";shape = triangle;];
-    spark_c_t [label = "Spark.dispatch(Why|Who)";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Spark.commit(What|How)";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Spark.serve(When|When)";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Spark.exec(Which|Closure)";comment = "";shape = doublecircle;];
+    spark_0_lurd_t [label = "LURD.meta()\nOrigin";comment = "";shape = doublecircle;];
+    spark_1_lurd_t [label = "LURD.r1()\nBrane";comment = "";shape = circle;];
+    spark_2_lurd_t [label = "LURD.r2()\nCelestial";comment = "";shape = circle;];
+    spark_4_lurd_t [label = "LURD.r4()\nStellar";comment = "";shape = circle;];
+    spark_8_lurd_t [label = "LURD.r8()\nPlanar";comment = "";shape = circle;];
+    spark_7_lurd_t [label = "LURD.r7()\nCradle";comment = "";shape = circle;];
+    spark_5_lurd_t [label = "LURD.r5()\nMythogenic";comment = "";shape = circle;];
+    spark_3_lurd_t [label = "LURD.r3(Asumsi)";comment = "";shape = doublecircle;];
+    spark_6_lurd_t [label = "LURD.r6(Sugesti)";comment = "";shape = doublecircle;];
+    spark_9_lurd_t [label = "LURD.r9(Persepsi)";comment = "";shape = doublecircle;];
+    spark_a_lurd_t [label = "LURD.receive(Sangkan)";comment = "";shape = invtriangle;];
+    spark_b_lurd_t [label = "LURD.send(Paran)";comment = "";shape = triangle;];
+    spark_c_lurd_t [label = "LURD.dispatch(Why|Who)";comment = "";shape = doublecircle;];
+    spark_d_lurd_t [label = "LURD.commit()\nDigital";comment = "";shape = doublecircle;];
+    spark_e_lurd_t [label = "LURD.serve(When|When)";comment = "";shape = doublecircle;];
+    spark_f_lurd_t [label = "LURD.exec(Which|Closure)";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_t -> spark_a_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_t -> spark_b_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_t -> {spark_3_t spark_6_t spark_9_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_t -> {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_0_lurd_t -> spark_a_lurd_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_lurd_t -> spark_b_lurd_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_lurd_t -> {spark_3_lurd_t spark_6_lurd_t spark_9_lurd_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_lurd_t -> {spark_1_lurd_t spark_2_lurd_t spark_4_lurd_t spark_8_lurd_t spark_7_lurd_t spark_5_lurd_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    {spark_a_lurd_t spark_b_lurd_t} -> spark_c_lurd_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_lurd_t spark_2_lurd_t spark_4_lurd_t spark_8_lurd_t spark_7_lurd_t spark_5_lurd_t} -> spark_d_lurd_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_lurd_t spark_6_lurd_t spark_9_lurd_t} -> spark_e_lurd_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_lurd_t -> spark_2_lurd_t -> spark_4_lurd_t -> spark_8_lurd_t -> spark_7_lurd_t -> spark_5_lurd_t -> spark_1_lurd_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_lurd_t -> spark_6_lurd_t -> spark_9_lurd_t -> spark_3_lurd_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_lurd_t -> spark_b_lurd_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_lurd_t -> spark_f_lurd_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_lurd_t -> spark_f_lurd_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_lurd_t -> spark_f_lurd_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

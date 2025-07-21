@@ -8,8 +8,19 @@ strict digraph Ariadiana {
     hapsari_t [label = "People of Convergence\nHapsari Lineage";comment = "Sub House of Nawang Lineage";shape = folder;];
     sekar_t [label = "People of Divergence\nSekar Lineage";comment = "Sub House of Pawang Lineage";shape = folder;];
     felixa_t [label = "People of Rasa\nFelixa Lineage";comment = "";shape = folder;];
-    draconis_t [label = "People of Karsa\nDraconis Lineage";comment = "";shape = folder;];
-    arachnid_t [label = "People of Asha\nArachnid Lineage";comment = "";shape = folder;];
+    first_class_house_t [label = "First Class House";comment = "";shape = folder;];
+    second_class_house_t [label = "Second Class House";comment = "";shape = folder;];
+    third_class_house_t [label = "Third Class House";comment = "";shape = folder;];
+    fourth_class_house_t [label = "Fourth Class House";comment = "";shape = folder;];
+    fifth_class_house_t [label = "Fifth Class House";comment = "";shape = folder;];
+    sixth_class_house_t [label = "Sixth Class House";comment = "";shape = folder;];
+    seventh_class_house_t [label = "Seventh Class House";comment = "";shape = folder;];
     
-    avesix_t -> {hapsari_t sekar_t felixa_t draconis_t arachnid_t} [label = "Member"; color = darkblue; comment = "";];
+    avesix_t -> {hapsari_t sekar_t felixa_t first_class_house_t} [label = "Member"; color = darkblue; comment = "";];
+    first_class_house_t -> second_class_house_t [label = "Member"; color = darkblue; comment = "";];
+    second_class_house_t -> third_class_house_t [label = "Member"; color = darkblue; comment = "";];
+    third_class_house_t -> fourth_class_house_t [label = "Member"; color = darkblue; comment = "";];
+    fourth_class_house_t -> fifth_class_house_t [label = "Member"; color = darkblue; comment = "";];
+    fifth_class_house_t -> sixth_class_house_t [label = "Member"; color = darkblue; comment = "";];
+    sixth_class_house_t -> seventh_class_house_t [label = "Member"; color = darkblue; comment = "";];
 }
