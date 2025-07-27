@@ -23,7 +23,7 @@ strict digraph Sparklet {
     spark_b_t [label = "Spark.send(Paran)";comment = "";shape = triangle;];
     spark_c_t [label = "Spark.dispatch(Why|Who)";comment = "";shape = doublecircle;];
     spark_d_t [label = "Spark.commit(What|How)";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Spark.serve(When|When)";comment = "";shape = doublecircle;];
+    spark_e_t [label = "Spark.serve(When|Where)";comment = "";shape = doublecircle;];
     spark_f_t [label = "Spark.exec(Which|Closure)";comment = "";shape = doublecircle;];
     
     // IN = Input
