@@ -1,0 +1,48 @@
+strict digraph ColorModel {
+    label = "Color Model\n(/proc/reality/factor/color)";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // The Axis A-0-B (In-Meta-Out).
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
+    // The Router C-D-E
+    // The Closure F
+    spark_0_color_seed_t [label = "Color.meta()";comment = "";shape = doublecircle;];
+    spark_1_color_seed_t [label = "Color.r1()\nRed";comment = "";shape = circle;];
+    spark_2_color_seed_t [label = "Color.r2()\nBlue";comment = "";shape = circle;];
+    spark_4_color_seed_t [label = "Color.r4()\nGreen";comment = "";shape = circle;];
+    spark_8_color_seed_t [label = "Color.r8()\nCyan";comment = "";shape = circle;];
+    spark_7_color_seed_t [label = "Color.r7()\nMagenta";comment = "";shape = circle;];
+    spark_5_color_seed_t [label = "Color.r5()\nYellow";comment = "";shape = circle;];
+    spark_3_color_seed_t [label = "Color.r3()\nBlack";comment = "";shape = doublecircle;];
+    spark_6_color_seed_t [label = "Color.r6()\nWhite";comment = "";shape = doublecircle;];
+    spark_9_color_seed_t [label = "Color.r9()\nGray";comment = "";shape = doublecircle;];
+    spark_a_color_seed_t [label = "Color.receive()\nGold";comment = "";shape = invtriangle;];
+    spark_b_color_seed_t [label = "Color.send()\nSilver";comment = "";shape = triangle;];
+    spark_c_color_seed_t [label = "Color.dispatch()\nIndigo";comment = "";shape = doublecircle;];
+    spark_d_color_seed_t [label = "Color.commit()\nMilky-White";comment = "";shape = doublecircle;];
+    spark_e_color_seed_t [label = "Color.serve()\nAmethyst";comment = "";shape = doublecircle;];
+    spark_f_color_seed_t [label = "Color.exec()";comment = "";shape = doublecircle;];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_color_seed_t -> spark_a_color_seed_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_color_seed_t -> spark_b_color_seed_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_color_seed_t -> {spark_3_color_seed_t spark_6_color_seed_t spark_9_color_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_color_seed_t -> {spark_1_color_seed_t spark_2_color_seed_t spark_4_color_seed_t spark_8_color_seed_t spark_7_color_seed_t spark_5_color_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    
+    {spark_a_color_seed_t spark_b_color_seed_t} -> spark_c_color_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_color_seed_t spark_2_color_seed_t spark_4_color_seed_t spark_8_color_seed_t spark_7_color_seed_t spark_5_color_seed_t} -> spark_d_color_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_color_seed_t spark_6_color_seed_t spark_9_color_seed_t} -> spark_e_color_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    
+    spark_1_color_seed_t -> spark_2_color_seed_t -> spark_4_color_seed_t -> spark_8_color_seed_t -> spark_7_color_seed_t -> spark_5_color_seed_t -> spark_1_color_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_color_seed_t -> spark_6_color_seed_t -> spark_9_color_seed_t -> spark_3_color_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_color_seed_t -> spark_b_color_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    spark_c_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+}
