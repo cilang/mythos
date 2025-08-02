@@ -1,0 +1,48 @@
+strict digraph Emergence {
+    label = "Emergence\n(/proc/reality/concept/emergence)";
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    
+    // The Axis A-0-B (In-Meta-Out).
+    // The Sacred 3-6-9 (Boundary of Perception).
+    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
+    // The Router C-D-E
+    // The Closure F
+    spark_0_emergence_t [label = "meta()";comment = "";shape = doublecircle;];
+    spark_1_emergence_t [label = "r1()\nSingularity";comment = "";shape = circle;];
+    spark_2_emergence_t [label = "r2()\nHorizon";comment = "";shape = circle;];
+    spark_4_emergence_t [label = "r4()\nAttribute";comment = "";shape = circle;];
+    spark_8_emergence_t [label = "r8()\nRecursion";comment = "";shape = circle;];
+    spark_7_emergence_t [label = "r7()\nAwareness";comment = "";shape = circle;];
+    spark_5_emergence_t [label = "r5()\nProperty";comment = "";shape = circle;];
+    spark_3_emergence_t [label = "r3()";comment = "";shape = doublecircle;];
+    spark_6_emergence_t [label = "r6()";comment = "";shape = doublecircle;];
+    spark_9_emergence_t [label = "r9()";comment = "";shape = doublecircle;];
+    spark_a_emergence_t [label = "receive()\nPresence";comment = "";shape = invtriangle;];
+    spark_b_emergence_t [label = "send()\nEssence";comment = "";shape = triangle;];
+    spark_c_emergence_t [label = "dispatch()";comment = "";shape = doublecircle;];
+    spark_d_emergence_t [label = "commit()";comment = "";shape = doublecircle;];
+    spark_e_emergence_t [label = "serve()";comment = "";shape = doublecircle;];
+    spark_f_emergence_t [label = "exec()";comment = "";shape = doublecircle;];
+    
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_0_emergence_t -> spark_a_emergence_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_emergence_t -> spark_b_emergence_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_emergence_t -> {spark_3_emergence_t spark_6_emergence_t spark_9_emergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_emergence_t -> {spark_1_emergence_t spark_2_emergence_t spark_4_emergence_t spark_8_emergence_t spark_7_emergence_t spark_5_emergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    
+    {spark_a_emergence_t spark_b_emergence_t} -> spark_c_emergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_emergence_t spark_2_emergence_t spark_4_emergence_t spark_8_emergence_t spark_7_emergence_t spark_5_emergence_t} -> spark_d_emergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_emergence_t spark_6_emergence_t spark_9_emergence_t} -> spark_e_emergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    
+    spark_1_emergence_t -> spark_2_emergence_t -> spark_4_emergence_t -> spark_8_emergence_t -> spark_7_emergence_t -> spark_5_emergence_t -> spark_1_emergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_emergence_t -> spark_6_emergence_t -> spark_9_emergence_t -> spark_3_emergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_emergence_t -> spark_b_emergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    spark_c_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+}

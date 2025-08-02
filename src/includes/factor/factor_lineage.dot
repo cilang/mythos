@@ -11,10 +11,10 @@ strict digraph LineageModel {
     // The Closure F
     spark_0_lineage_seed_t [label = "Lineage.meta()\n";comment = "";shape = doublecircle;];
     spark_1_lineage_seed_t [label = "Lineage.r1()\nPeople of Truth\nInsect Lineage";comment = "";shape = circle;];
-    spark_2_lineage_seed_t [label = "Lineage.r2()\nPeople of Convergence\nHapsari Lineage";comment = "";shape = circle;];
+    spark_2_lineage_seed_t [label = "Lineage.r2()\nPeople of Convergence\nNawang Lineage";comment = "";shape = circle;];
     spark_4_lineage_seed_t [label = "Lineage.r4()\nPeople of Fixation\nChimera Lineage";comment = "";shape = circle;];
     spark_8_lineage_seed_t [label = "Lineage.r8()\nPeople of Wisdom\nWorm Lineage";comment = "";shape = circle;];
-    spark_7_lineage_seed_t [label = "Lineage.r7()\nPeople of Divergence\nSekar Lineage";comment = "";shape = circle;];
+    spark_7_lineage_seed_t [label = "Lineage.r7()\nPeople of Divergence\nPawang Lineage";comment = "";shape = circle;];
     spark_5_lineage_seed_t [label = "Lineage.r5()\nPeople of Excitation\nSerpentine Lineage";comment = "";shape = circle;];
     spark_3_lineage_seed_t [label = "Lineage.r3()\nPeople of Asha\nArachnid Lineage";comment = "";shape = doublecircle;];
     spark_6_lineage_seed_t [label = "Lineage.r6()\nPeople of Vikara\nAvesix Lineage";comment = "";shape = doublecircle;];
