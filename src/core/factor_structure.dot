@@ -3,43 +3,43 @@ strict digraph StructureModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
-
+    
     // Structure Model
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_factor_t [label = "Structure.meta()\nmeta_interface_t";shape = doublecircle;comment = "";];
-    spark_1_factor_t [label = "Structure.heart()\nheart_interface_t";shape = circle;comment = "";];
-    spark_2_factor_t [label = "Structure.shell()\nshell_interface_t";shape = circle;comment = "";];
-    spark_4_factor_t [label = "Structure.astral()\nastral_interface_t";shape = circle;comment = "";];
-    spark_8_factor_t [label = "Structure.spiritual()\nspiritual_interface_t";shape = circle;comment = "";];
-    spark_7_factor_t [label = "Structure.material()\nmaterial_interface_t";shape = circle;comment = "";];
-    spark_5_factor_t [label = "Structure.celestial()\ncelestial_interface_t";shape = circle;comment = "";];
-    spark_3_factor_t [label = "Structure.observer()\nobserver_model_t";shape = doublecircle;comment = "";];
-    spark_6_factor_t [label = "Structure.spectral()\nspectral_model_t";shape = doublecircle;comment = "";];
-    spark_9_factor_t [label = "Structure.alignment()\nalignment_model_t";shape = doublecircle;comment = "";];
-    spark_a_factor_t [label = "Structure.receive()\nreceive_interface_t";shape = invtriangle;comment = "";];
-    spark_b_factor_t [label = "Structure.send()\nsend_interface_t";shape = triangle;comment = "";];
-    spark_c_factor_t [label = "Structure.dispatch()\ndispatch_interface_t";shape = doublecircle;comment = "";];
-    spark_d_factor_t [label = "Structure.commit()\ncorpus_interface_t";shape = doublecircle;comment = "";];
-    spark_e_factor_t [label = "Structure.serve()\nservice_interface_t";shape = doublecircle;comment = "";];
-    spark_f_factor_t [label = "Structure.exec()\ncmd_interface_t";shape = doublecircle;comment = "";];
-
+    spark_0_structure_seed_t [label = "Structure.meta()\nmeta_interface_t";shape = doublecircle;comment = "";];
+    spark_1_structure_seed_t [label = "Structure.heart()\nheart_interface_t";shape = circle;comment = "";];
+    spark_2_structure_seed_t [label = "Structure.shell()\nshell_interface_t";shape = circle;comment = "";];
+    spark_4_structure_seed_t [label = "Structure.astral()\nastral_interface_t";shape = circle;comment = "";];
+    spark_8_structure_seed_t [label = "Structure.spiritual()\nspiritual_interface_t";shape = circle;comment = "";];
+    spark_7_structure_seed_t [label = "Structure.material()\nmaterial_interface_t";shape = circle;comment = "";];
+    spark_5_structure_seed_t [label = "Structure.celestial()\ncelestial_interface_t";shape = circle;comment = "";];
+    spark_3_structure_seed_t [label = "Structure.observer()\nobserver_model_t";shape = doublecircle;comment = "";];
+    spark_6_structure_seed_t [label = "Structure.spectral()\nspectral_model_t";shape = doublecircle;comment = "";];
+    spark_9_structure_seed_t [label = "Structure.alignment()\nalignment_model_t";shape = doublecircle;comment = "";];
+    spark_a_structure_seed_t [label = "Structure.receive()\nreceive_interface_t";shape = invtriangle;comment = "";];
+    spark_b_structure_seed_t [label = "Structure.send()\nsend_interface_t";shape = triangle;comment = "";];
+    spark_c_structure_seed_t [label = "Structure.dispatch()\ndispatch_interface_t";shape = doublecircle;comment = "";];
+    spark_d_structure_seed_t [label = "Structure.commit()\ncorpus_interface_t";shape = doublecircle;comment = "";];
+    spark_e_structure_seed_t [label = "Structure.serve()\nservice_interface_t";shape = doublecircle;comment = "";];
+    spark_f_structure_seed_t [label = "Structure.exec()\ncmd_interface_t";shape = doublecircle;comment = "";];
+    
     // I = Input
     // O = Output
     // R = Recursion
-    spark_0_factor_t -> spark_a_factor_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_factor_t -> spark_b_factor_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_factor_t -> {spark_3_factor_t spark_6_factor_t spark_9_factor_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_factor_t -> {spark_1_factor_t spark_2_factor_t spark_4_factor_t spark_8_factor_t spark_7_factor_t spark_5_factor_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-
-    {spark_a_factor_t spark_b_factor_t} -> spark_c_factor_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_factor_t spark_2_factor_t spark_4_factor_t spark_8_factor_t spark_7_factor_t spark_5_factor_t} -> spark_d_factor_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_factor_t spark_6_factor_t spark_9_factor_t} -> spark_e_factor_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-
-    spark_1_factor_t -> spark_2_factor_t -> spark_4_factor_t -> spark_8_factor_t -> spark_7_factor_t -> spark_5_factor_t -> spark_1_factor_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_factor_t -> spark_6_factor_t -> spark_9_factor_t -> spark_3_factor_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_factor_t -> spark_b_factor_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-
-    spark_c_factor_t -> spark_f_factor_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_factor_t -> spark_f_factor_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_factor_t -> spark_f_factor_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_0_structure_seed_t -> spark_a_structure_seed_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_structure_seed_t -> spark_b_structure_seed_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_structure_seed_t -> {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_structure_seed_t -> {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    
+    {spark_a_structure_seed_t spark_b_structure_seed_t} -> spark_c_structure_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} -> spark_d_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} -> spark_e_structure_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    
+    spark_1_structure_seed_t -> spark_2_structure_seed_t -> spark_4_structure_seed_t -> spark_8_structure_seed_t -> spark_7_structure_seed_t -> spark_5_structure_seed_t -> spark_1_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_structure_seed_t -> spark_6_structure_seed_t -> spark_9_structure_seed_t -> spark_3_structure_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_structure_seed_t -> spark_b_structure_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    spark_c_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }
