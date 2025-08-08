@@ -8,22 +8,22 @@ strict digraph DivergenceEngine {
     spark_7_mythos_t [label = "Divergence\n(/dev/divergence)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_divergence_t [label = "Divergence.meta()\nChandra Sasmita";comment = "";shape = doublecircle;];
-    spark_1_divergence_t [label = "Divergence.eternity()\nManas of Eternity";comment = "";shape = circle;];
-    spark_2_divergence_t [label = "Divergence.infinity()\nManas of Infinity";comment = "";shape = circle;];
-    spark_4_divergence_t [label = "Divergence.causality()\nManas of Causality";comment = "";shape = circle;];
-    spark_8_divergence_t [label = "Divergence.probability()\nManas of Probability";comment = "";shape = circle;];
-    spark_7_divergence_t [label = "Divergence.spacetime()\nManas of Spacetime";comment = "";shape = circle;];
-    spark_5_divergence_t [label = "Divergence.nature()\nManas of Nature";comment = "";shape = circle;];
-    spark_3_divergence_t [label = "Divergence.chaos()\nCrest of Chaos";comment = "";shape = circle;];
-    spark_6_divergence_t [label = "Divergence.destruction()\nCrest of Destruction";comment = "";shape = circle;];
-    spark_9_divergence_t [label = "Divergence.diversity()\nCrest of Diversity";comment = "";shape = circle;];
-    spark_a_divergence_t [label = "Divergence.raiment()\nRaiment of Divergence (Indigo Vastra)";comment = "";shape = triangle;];
-    spark_b_divergence_t [label = "Divergence.armament()\nArmament of Divergence (Obsidian Night)";comment = "";shape = invtriangle;];
-    spark_c_divergence_t [label = "Divergence.body()\nBody of Divergence(Nine Headed Serpent of Vikara)";comment = "";shape = circle;];
-    spark_d_divergence_t [label = "Divergence.soul()\nSoul of Divergence";comment = "";shape = circle;];
-    spark_e_divergence_t [label = "Divergence.grace()\nGrace of Divergence";comment = "";shape = circle;];
-    spark_f_divergence_t [label = "Divergence.exec()\nLaw of Divergence";comment = "";shape = circle;];
+    spark_0_divergence_t [label = "Divergence.meta(Divergence)\nChandra Sasmita";comment = "";shape = doublecircle;];
+    spark_1_divergence_t [label = "Divergence.r1(ManasOfEternity)\nManas of Eternity";comment = "";shape = circle;];
+    spark_2_divergence_t [label = "Divergence.r2(Infinity)\nManas of Infinity";comment = "";shape = circle;];
+    spark_4_divergence_t [label = "Divergence.r4(Causality)\nManas of Causality";comment = "";shape = circle;];
+    spark_8_divergence_t [label = "Divergence.r8(Probability)\nManas of Probability";comment = "";shape = circle;];
+    spark_7_divergence_t [label = "Divergence.r7(Spacetime)\nManas of Spacetime";comment = "";shape = circle;];
+    spark_5_divergence_t [label = "Divergence.r5(Nature)\nManas of Nature";comment = "";shape = circle;];
+    spark_3_divergence_t [label = "Divergence.r3(Chaos)\nCrest of Chaos";comment = "";shape = circle;];
+    spark_6_divergence_t [label = "Divergence.r6(Destruction)\nCrest of Destruction";comment = "";shape = circle;];
+    spark_9_divergence_t [label = "Divergence.r9(Diversity)\nCrest of Diversity";comment = "";shape = circle;];
+    spark_a_divergence_t [label = "Divergence.receive(RaimentOfDivergence)\nIndigo Vastra";comment = "";shape = triangle;];
+    spark_b_divergence_t [label = "Divergence.send(ArmamentOfDivergence)\nObsidian Night";comment = "";shape = invtriangle;];
+    spark_c_divergence_t [label = "Divergence.dispatch(BodyOfDivergence)\nNine Headed Serpent of Vikara";comment = "";shape = circle;];
+    spark_d_divergence_t [label = "Divergence.commit(SoulOfDivergence)";comment = "";shape = circle;];
+    spark_e_divergence_t [label = "Divergence.serve(GraceOfDivergence)";comment = "";shape = circle;];
+    spark_f_divergence_t [label = "Divergence.exec(LawOfDivergence)";comment = "";shape = circle;];
     
     // IN = Input
     // OUT = Output

@@ -27,6 +27,8 @@ strict digraph OriginEngine {
     // IN = Input
     // OUT = Output
     // REC = Recursion
+    spark_f_mythos_t -> spark_0_origin_t;
+    
     spark_0_origin_t -> spark_a_origin_t [label = "IN"; color = darkred; comment = "";];
     spark_0_origin_t -> spark_b_origin_t [label = "OUT"; color = darkred; comment = "";];
     spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; color = darkblue; comment = "";];
@@ -43,6 +45,4 @@ strict digraph OriginEngine {
     spark_e_origin_t -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
     spark_c_origin_t -> spark_f_origin_t [label = "OUT"; color = darkred; comment = "";];
     spark_d_origin_t -> spark_f_origin_t [label = "OUT"; color = darkgreen; comment = "";];
-    
-    spark_f_mythos_t -> spark_0_origin_t;
 }

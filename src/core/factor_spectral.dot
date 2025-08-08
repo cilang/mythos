@@ -6,18 +6,18 @@ strict digraph SpectralModel {
     
     // Spectral Model
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_spectral_seed_t [label = "Spectral.meta()";shape = doublecircle;comment = "";];
-    spark_1_spectral_seed_t [label = "Spectral.m()\nMass";shape = circle;comment = "";];
-    spark_2_spectral_seed_t [label = "Spectral.G()\nGravity";shape = circle;comment = "";];
-    spark_4_spectral_seed_t [label = "Spectral.E()\nEnergy";shape = circle;comment = "";];
-    spark_8_spectral_seed_t [label = "Spectral.Φ()\nFlux";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
-    spark_7_spectral_seed_t [label = "Spectral.L()\nAngular Momentum";shape = circle;comment = "";];
-    spark_5_spectral_seed_t [label = "Spectral.c()\nSpeed of Causality";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
-    spark_3_spectral_seed_t [label = "Spectral.I()\nInertia";shape = circle;comment = "";];
-    spark_6_spectral_seed_t [label = "Spectral.p()\nMomentum";shape = circle;comment = "";];
-    spark_9_spectral_seed_t [label = "Spectral.Q()\nQuanta";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
-    spark_a_spectral_seed_t [label = "Spectral.fixation()\nRhythm";shape = triangle;comment = "";];
-    spark_b_spectral_seed_t [label = "Spectral.excitation()\nPattern";shape = invtriangle;comment = "";];
+    spark_0_spectral_seed_t [label = "Spectral.meta(SpectralModel)";shape = doublecircle;comment = "";];
+    spark_1_spectral_seed_t [label = "Spectral.r1(Mass)";shape = circle;comment = "";];
+    spark_2_spectral_seed_t [label = "Spectral.r2(Gravity)";shape = circle;comment = "";];
+    spark_4_spectral_seed_t [label = "Spectral.r4(Energy)";shape = circle;comment = "";];
+    spark_8_spectral_seed_t [label = "Spectral.r8(Flux)";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
+    spark_7_spectral_seed_t [label = "Spectral.r7(AngularMomentum)";shape = circle;comment = "";];
+    spark_5_spectral_seed_t [label = "Spectral.r5(SpeedOfCausality)";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
+    spark_3_spectral_seed_t [label = "Spectral.r3(Inertia)";shape = circle;comment = "";];
+    spark_6_spectral_seed_t [label = "Spectral.r6(Momentum)";shape = circle;comment = "";];
+    spark_9_spectral_seed_t [label = "Spectral.r9(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+    spark_a_spectral_seed_t [label = "Spectral.receive(Rhythm)";shape = triangle;comment = "";];
+    spark_b_spectral_seed_t [label = "Spectral.send(Pattern)";shape = invtriangle;comment = "";];
     spark_c_spectral_seed_t [label = "Spectral.dispatch()";comment = "";];
     spark_d_spectral_seed_t [label = "Spectral.commit()";comment = "";];
     spark_e_spectral_seed_t [label = "Spectral.serve()";comment = "";];

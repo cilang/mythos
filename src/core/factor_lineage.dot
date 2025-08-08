@@ -4,27 +4,27 @@ strict digraph LineageModel {
     color = lightgray;
     node [shape = folder; style = filled; color = lightgreen;];
     
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Vortex of Perception).
-    // The Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
+    // The Axis A-0-B
+    // The Vortex 3-6-9
+    // The Vortex 1-2-4-8-7-5
     // The Router C-D-E
     // The Closure F
-    spark_0_lineage_seed_t [label = "Lineage.meta()\n";comment = "";shape = doublecircle;];
-    spark_1_lineage_seed_t [label = "Lineage.r1()\nPeople of Truth\nInsect Lineage";comment = "";shape = circle;];
-    spark_2_lineage_seed_t [label = "Lineage.r2()\nPeople of Convergence\nNawang Lineage";comment = "";shape = circle;];
-    spark_4_lineage_seed_t [label = "Lineage.r4()\nPeople of Fixation\nChimera Lineage";comment = "";shape = circle;];
-    spark_8_lineage_seed_t [label = "Lineage.r8()\nPeople of Wisdom\nWorm Lineage";comment = "";shape = circle;];
-    spark_7_lineage_seed_t [label = "Lineage.r7()\nPeople of Divergence\nPawang Lineage";comment = "";shape = circle;];
-    spark_5_lineage_seed_t [label = "Lineage.r5()\nPeople of Excitation\nSerpentine Lineage";comment = "";shape = circle;];
-    spark_3_lineage_seed_t [label = "Lineage.r3()\nPeople of Asha\nArachnid Lineage";comment = "";shape = doublecircle;];
-    spark_6_lineage_seed_t [label = "Lineage.r6()\nPeople of Vikara\nAvesix Lineage";comment = "";shape = doublecircle;];
-    spark_9_lineage_seed_t [label = "Lineage.r9()\nPeople of Karsa\nDraconis Lineage";comment = "";shape = doublecircle;];
-    spark_a_lineage_seed_t [label = "Lineage.receive()\nPeople of Essence\nMineral Lineage";comment = "";shape = invtriangle;];
-    spark_b_lineage_seed_t [label = "Lineage.send()\nPeople of Presence\nPlant Lineage";comment = "";shape = triangle;];
-    spark_c_lineage_seed_t [label = "Lineage.dispatch()\nPeople of Desire\nVulpine Lineage";comment = "";shape = doublecircle;];
-    spark_d_lineage_seed_t [label = "Lineage.commit()\nPeople of Rasa\nFelixa Lineage";comment = "";shape = doublecircle;];
-    spark_e_lineage_seed_t [label = "Lineage.serve()\nPeople of Emotion\nCanine Lineage";comment = "";shape = doublecircle;];
-    spark_f_lineage_seed_t [label = "Lineage.exec()\nPeople of Emergence\nWorld Tree Lineage";comment = "";shape = doublecircle;];
+    spark_0_lineage_seed_t [label = "Lineage.meta(LineageModel)\n";comment = "";shape = doublecircle;];
+    spark_1_lineage_seed_t [label = "Lineage.r1(InsectLineage)\nPeople of Truth";comment = "";shape = circle;];
+    spark_2_lineage_seed_t [label = "Lineage.r2(NawangLineage)\nPeople of Convergence";comment = "";shape = circle;];
+    spark_4_lineage_seed_t [label = "Lineage.r4(ChimeraLineage)\nPeople of Fixation";comment = "";shape = circle;];
+    spark_8_lineage_seed_t [label = "Lineage.r8(WormLineage)\nPeople of Wisdom";comment = "";shape = circle;];
+    spark_7_lineage_seed_t [label = "Lineage.r7(PawangLineage)\nPeople of Divergence";comment = "";shape = circle;];
+    spark_5_lineage_seed_t [label = "Lineage.r5(SerpentineLineage)\nPeople of Excitation";comment = "";shape = circle;];
+    spark_3_lineage_seed_t [label = "Lineage.r3(ArachnidLineage)\nPeople of Asha";comment = "";shape = doublecircle;];
+    spark_6_lineage_seed_t [label = "Lineage.r6(AvesixLineage)\nPeople of Vikara";comment = "";shape = doublecircle;];
+    spark_9_lineage_seed_t [label = "Lineage.r9(DraconisLineage)\nPeople of Karsa";comment = "";shape = doublecircle;];
+    spark_a_lineage_seed_t [label = "Lineage.receive(MineralLineage)\nPeople of Essence";comment = "";shape = invtriangle;];
+    spark_b_lineage_seed_t [label = "Lineage.send(PlantLineage)\nPeople of Presence";comment = "";shape = triangle;];
+    spark_c_lineage_seed_t [label = "Lineage.dispatch(VulpineLineage)\nPeople of Desire";comment = "";shape = doublecircle;];
+    spark_d_lineage_seed_t [label = "Lineage.commit(FelixaLineage)\nPeople of Rasa";comment = "";shape = doublecircle;];
+    spark_e_lineage_seed_t [label = "Lineage.serve(CanineLineage)\nPeople of Emotion";comment = "";shape = doublecircle;];
+    spark_f_lineage_seed_t [label = "Lineage.exec(WorldTreeLineage)\nPeople of Emergence";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

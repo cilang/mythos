@@ -29,6 +29,8 @@ strict digraph RealityEngine {
     // IN = Input
     // OUT = Output
     // REC = Recursion
+    spark_0_mythos_t -> spark_0_reality_t;
+    
     spark_0_reality_t -> spark_a_reality_t [label = "IN"; color = darkred; comment = "";];
     spark_0_reality_t -> spark_b_reality_t [label = "OUT"; color = darkred; comment = "";];
     spark_0_reality_t -> {spark_3_reality_t spark_6_reality_t spark_9_reality_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
@@ -45,6 +47,4 @@ strict digraph RealityEngine {
     spark_c_reality_t -> spark_f_reality_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
     spark_d_reality_t -> spark_f_reality_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
     spark_e_reality_t -> spark_f_reality_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_0_mythos_t -> spark_0_reality_t;
 }

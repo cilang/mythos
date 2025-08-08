@@ -4,26 +4,26 @@ strict digraph ColorModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
+    // The Axis A-0-B
+    // The Vortex 3-6-9
+    // The Vortex 1-2-4-8-7-5
     // The Router C-D-E
     // The Closure F
-    spark_0_color_seed_t [label = "Color.meta()";comment = "";shape = doublecircle;];
-    spark_1_color_seed_t [label = "Color.r1()\nRed";comment = "";shape = circle;];
-    spark_2_color_seed_t [label = "Color.r2()\nBlue";comment = "";shape = circle;];
-    spark_4_color_seed_t [label = "Color.r4()\nGreen";comment = "";shape = circle;];
-    spark_8_color_seed_t [label = "Color.r8()\nCyan";comment = "";shape = circle;];
-    spark_7_color_seed_t [label = "Color.r7()\nMagenta";comment = "";shape = circle;];
-    spark_5_color_seed_t [label = "Color.r5()\nYellow";comment = "";shape = circle;];
-    spark_3_color_seed_t [label = "Color.r3()\nBlack";comment = "";shape = doublecircle;];
-    spark_6_color_seed_t [label = "Color.r6()\nWhite";comment = "";shape = doublecircle;];
-    spark_9_color_seed_t [label = "Color.r9()\nGray";comment = "";shape = doublecircle;];
-    spark_a_color_seed_t [label = "Color.receive()\nGold";comment = "";shape = invtriangle;];
-    spark_b_color_seed_t [label = "Color.send()\nSilver";comment = "";shape = triangle;];
-    spark_c_color_seed_t [label = "Color.dispatch()\nIndigo";comment = "";shape = doublecircle;];
-    spark_d_color_seed_t [label = "Color.commit()\nMilky-White";comment = "";shape = doublecircle;];
-    spark_e_color_seed_t [label = "Color.serve()\nAmethyst";comment = "";shape = doublecircle;];
+    spark_0_color_seed_t [label = "Color.meta(ColorModel)";comment = "";shape = doublecircle;];
+    spark_1_color_seed_t [label = "Color.r1(Red)";comment = "";shape = circle;];
+    spark_2_color_seed_t [label = "Color.r2(Blue)";comment = "";shape = circle;];
+    spark_4_color_seed_t [label = "Color.r4(Green)";comment = "";shape = circle;];
+    spark_8_color_seed_t [label = "Color.r8(Cyan)";comment = "";shape = circle;];
+    spark_7_color_seed_t [label = "Color.r7(Magenta)";comment = "";shape = circle;];
+    spark_5_color_seed_t [label = "Color.r5(Yellow)";comment = "";shape = circle;];
+    spark_3_color_seed_t [label = "Color.r3(Black)";comment = "";shape = doublecircle;];
+    spark_6_color_seed_t [label = "Color.r6(White)";comment = "";shape = doublecircle;];
+    spark_9_color_seed_t [label = "Color.r9(Gray)";comment = "";shape = doublecircle;];
+    spark_a_color_seed_t [label = "Color.receive(Gold)";comment = "";shape = invtriangle;];
+    spark_b_color_seed_t [label = "Color.send(Silver)";comment = "";shape = triangle;];
+    spark_c_color_seed_t [label = "Color.dispatch(Obsidian-Black)";comment = "";shape = doublecircle;];
+    spark_d_color_seed_t [label = "Color.commit(Milky-White)";comment = "";shape = doublecircle;];
+    spark_e_color_seed_t [label = "Color.serve(Amethyst-Violet)";comment = "";shape = doublecircle;];
     spark_f_color_seed_t [label = "Color.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input

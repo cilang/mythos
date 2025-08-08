@@ -12,35 +12,40 @@ strict digraph ObserverModel {
     // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
     // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_observer_seed_t [label = "Observer.meta()\nDumadi";shape = doublecircle;comment = "";];
-    spark_1_observer_seed_t [label = "Observer.harta()\nResources";shape = circle;comment = "";];
-    spark_2_observer_seed_t [label = "Observer.tahta()\nAuthority";shape = circle;comment = "";];
-    spark_4_observer_seed_t [label = "Observer.wanita()\nRelations";shape = circle;comment = "";];
-    spark_8_observer_seed_t [label = "Observer.agama()\nAxiom";shape = circle;comment = "";];
-    spark_7_observer_seed_t [label = "Observer.ilmu()\nKnowledge";shape = circle;comment = "";];
-    spark_5_observer_seed_t [label = "Observer.keturunan()\nLineage";shape = circle;comment = "";];
-    spark_3_observer_seed_t [label = "Observer.asumsi()\nAssumption";shape = circle;comment = "";];
-    spark_6_observer_seed_t [label = "Observer.sugesti()\nSuggestion";shape = circle;comment = "";];
-    spark_9_observer_seed_t [label = "Observer.persepsi()\nPerception";shape = circle;comment = "";];
-    spark_a_observer_seed_t [label = "Observer.receive()\nSangkan";shape = triangle;comment = "";];
-    spark_b_observer_seed_t [label = "Observer.send()\nParan";shape = invtriangle;comment = "";];
-    spark_c_observer_seed_t [label = "Observer.dispatch()\nWhy/Who";shape = doublecircle;comment = "";];
-    spark_d_observer_seed_t [label = "Observer.commit()\nWhat/How";shape = doublecircle;comment = "";];
-    spark_e_observer_seed_t [label = "Observer.serve()\nWhen/Where";shape = doublecircle;comment = "";];
-    spark_f_observer_seed_t [label = "Observer.exec()\nWhich/Closure";shape = doublecircle;comment = "";];
+    spark_0_observer_seed_t [label = "Observer.meta(ObserverModel)";shape = doublecircle;comment = "";];
+    spark_1_observer_seed_t [label = "Observer.r1(Resource)";shape = circle;comment = "";];
+    spark_2_observer_seed_t [label = "Observer.r2(Authority)";shape = circle;comment = "";];
+    spark_4_observer_seed_t [label = "Observer.r4(Relation)";shape = circle;comment = "";];
+    spark_8_observer_seed_t [label = "Observer.r8(Axiom)";shape = circle;comment = "";];
+    spark_7_observer_seed_t [label = "Observer.r7(Knowledge)";shape = circle;comment = "";];
+    spark_5_observer_seed_t [label = "Observer.r5(Lineage)";shape = circle;comment = "";];
+    spark_3_observer_seed_t [label = "Observer.r3(Assumption)";shape = circle;comment = "";];
+    spark_6_observer_seed_t [label = "Observer.r6(Suggestion)";shape = circle;comment = "";];
+    spark_9_observer_seed_t [label = "Observer.r9(Perception)";shape = circle;comment = "";];
+    spark_a_observer_seed_t [label = "Observer.receive(Sangkan)";shape = triangle;comment = "";];
+    spark_b_observer_seed_t [label = "Observer.send(Paran)";shape = invtriangle;comment = "";];
+    spark_c_observer_seed_t [label = "Observer.dispatch(Why|Who)";shape = doublecircle;comment = "";];
+    spark_d_observer_seed_t [label = "Observer.commit(What|How)";shape = doublecircle;comment = "";];
+    spark_e_observer_seed_t [label = "Observer.serve(When|Where)";shape = doublecircle;comment = "";];
+    spark_f_observer_seed_t [label = "Observer.exec(Which|Closure)";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_observer_seed_t -> {spark_a_observer_seed_t spark_b_observer_seed_t spark_1_observer_seed_t spark_2_observer_seed_t spark_3_observer_seed_t spark_4_observer_seed_t spark_5_observer_seed_t spark_6_observer_seed_t spark_7_observer_seed_t spark_8_observer_seed_t spark_9_observer_seed_t} [label = "IN"; color = yellow; comment = "";];
+    spark_0_observer_seed_t -> spark_a_observer_seed_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_observer_seed_t -> spark_b_observer_seed_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_observer_seed_t -> {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_observer_seed_t -> {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_observer_seed_t spark_b_observer_seed_t} -> spark_c_observer_seed_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} -> spark_d_observer_seed_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} -> spark_e_observer_seed_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_observer_seed_t spark_b_observer_seed_t} -> spark_c_observer_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} -> spark_d_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} -> spark_e_observer_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_observer_seed_t -> spark_2_observer_seed_t -> spark_4_observer_seed_t -> spark_8_observer_seed_t -> spark_7_observer_seed_t -> spark_5_observer_seed_t -> spark_1_observer_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_observer_seed_t -> spark_6_observer_seed_t -> spark_9_observer_seed_t -> spark_3_observer_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_observer_seed_t -> spark_b_observer_seed_t -> spark_a_observer_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_observer_seed_t -> spark_2_observer_seed_t -> spark_4_observer_seed_t -> spark_8_observer_seed_t -> spark_7_observer_seed_t -> spark_5_observer_seed_t -> spark_1_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_observer_seed_t -> spark_6_observer_seed_t -> spark_9_observer_seed_t -> spark_3_observer_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_observer_seed_t -> spark_b_observer_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    {spark_c_observer_seed_t spark_d_observer_seed_t spark_e_observer_seed_t} -> spark_f_observer_seed_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

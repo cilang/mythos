@@ -4,27 +4,27 @@ strict digraph LURDModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Vortex of Perception).
-    // The Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
+    // The Axis A-0-B
+    // The Vortex 3-6-9
+    // The Vortex 1-2-4-8-7-5
     // The Router C-D-E
     // The Closure F
-    spark_0_lurd_seed_t [label = "LURD.meta()\nOrigin";comment = "";shape = doublecircle;];
-    spark_1_lurd_seed_t [label = "LURD.r1()\nBrane";comment = "";shape = circle;];
-    spark_2_lurd_seed_t [label = "LURD.r2()\nCelestial";comment = "";shape = circle;];
-    spark_4_lurd_seed_t [label = "LURD.r4()\nStellar";comment = "";shape = circle;];
-    spark_8_lurd_seed_t [label = "LURD.r8()\nPlanar";comment = "";shape = circle;];
-    spark_7_lurd_seed_t [label = "LURD.r7()\nCradle";comment = "";shape = circle;];
-    spark_5_lurd_seed_t [label = "LURD.r5()\nMythogenic";comment = "";shape = circle;];
-    spark_3_lurd_seed_t [label = "LURD.r3()\n";comment = "";shape = doublecircle;];
-    spark_6_lurd_seed_t [label = "LURD.r6()\n";comment = "";shape = doublecircle;];
-    spark_9_lurd_seed_t [label = "LURD.r9()\n";comment = "";shape = doublecircle;];
-    spark_a_lurd_seed_t [label = "LURD.receive()\n";comment = "";shape = invtriangle;];
-    spark_b_lurd_seed_t [label = "LURD.send()\n";comment = "";shape = triangle;];
-    spark_c_lurd_seed_t [label = "LURD.dispatch()\n";comment = "";shape = doublecircle;];
-    spark_d_lurd_seed_t [label = "LURD.commit()\nDigital";comment = "";shape = doublecircle;];
-    spark_e_lurd_seed_t [label = "LURD.serve()\n";comment = "";shape = doublecircle;];
-    spark_f_lurd_seed_t [label = "LURD.exec()\n";comment = "";shape = doublecircle;];
+    spark_0_lurd_seed_t [label = "LURD.meta(LURDModel)";comment = "";shape = doublecircle;];
+    spark_1_lurd_seed_t [label = "LURD.r1(BraneDescriptor)";comment = "";shape = circle;];
+    spark_2_lurd_seed_t [label = "LURD.r2(CosmicDescriptor)";comment = "";shape = circle;];
+    spark_4_lurd_seed_t [label = "LURD.r4(StellarDescriptor)";comment = "";shape = circle;];
+    spark_8_lurd_seed_t [label = "LURD.r8(PlanarDescriptor)";comment = "";shape = circle;];
+    spark_7_lurd_seed_t [label = "LURD.r7(CradleDescriptor)";comment = "";shape = circle;];
+    spark_5_lurd_seed_t [label = "LURD.r5(MythogenicDescriptor)";comment = "";shape = circle;];
+    spark_3_lurd_seed_t [label = "LURD.r3(MaterialEssence)";comment = "";shape = doublecircle;];
+    spark_6_lurd_seed_t [label = "LURD.r6(SpiritualEssence)";comment = "";shape = doublecircle;];
+    spark_9_lurd_seed_t [label = "LURD.r9(InformationEssence)";comment = "";shape = doublecircle;];
+    spark_a_lurd_seed_t [label = "LURD.receive(DirectiveDescriptor)";comment = "";shape = invtriangle;];
+    spark_b_lurd_seed_t [label = "LURD.send(OriginDescriptor)";comment = "";shape = triangle;];
+    spark_c_lurd_seed_t [label = "LURD.dispatch(InterfaceDescriptor)";comment = "";shape = doublecircle;];
+    spark_d_lurd_seed_t [label = "LURD.commit(DigitalDescriptor)";comment = "";shape = doublecircle;];
+    spark_e_lurd_seed_t [label = "LURD.serve(ManifestDescriptor)";comment = "";shape = doublecircle;];
+    spark_f_lurd_seed_t [label = "LURD.exec()";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

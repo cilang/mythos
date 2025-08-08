@@ -8,35 +8,42 @@ digraph CorporaEngine {
     spark_d_mythos_t [label = "Corpora\n(/srv/corpora)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_corpus_t [label = "Corpora.meta()";shape = doublecircle;comment = "";];
-    spark_1_corpus_t [label = "Corpora.heart()\nHeart";shape = circle;comment = "";];
-    spark_2_corpus_t [label = "Corpora.shell()\nShell";shape = circle;comment = "";];
-    spark_4_corpus_t [label = "Corpora.astral()\nAstral Body";shape = circle;comment = "";];
-    spark_8_corpus_t [label = "Corpora.spiritual()\nSpiritual Body";shape = circle;comment = "";];
-    spark_7_corpus_t [label = "Corpora.material()\nMaterial Body";shape = circle;comment = "";];
-    spark_5_corpus_t [label = "Corpora.celestial()\nCelestial Body";shape = circle;comment = "";];
-    spark_3_corpus_t [label = "Corpora.ego()\nEgo";shape = doublecircle;comment = "";];
-    spark_6_corpus_t [label = "Corpora.will()\nWill";shape = doublecircle;comment = "";];
-    spark_9_corpus_t [label = "Corpora.intent()\nIntent";shape = doublecircle;comment = "";];
-    spark_a_corpus_t [label = "Corpora.receive()\nPrevious LURD";shape = triangle;comment = "";];
-    spark_b_corpus_t [label = "Corpora.send()\nNext LURD";shape = invtriangle;comment = "";];
-    spark_c_corpus_t [label = "Corpora.response()\nCurrent LURD";shape = doublecircle;comment = "";];
-    spark_d_corpus_t [label = "Corpora.compile()\nCorpus";shape = doublecircle;comment = "";];
-    spark_e_corpus_t [label = "Corpora.serve()\nMind";shape = doublecircle;comment = "`/srv/corpora`";];
-    spark_f_corpus_t [label = "Corpora.exec()\nLaw of Corpus";shape = doublecircle;comment = "";];
+    spark_0_corpora_t [label = "Corpora.meta()";shape = doublecircle;comment = "";];
+    spark_1_corpora_t [label = "Corpora.heart()\nHeart";shape = circle;comment = "";];
+    spark_2_corpora_t [label = "Corpora.shell()\nShell";shape = circle;comment = "";];
+    spark_4_corpora_t [label = "Corpora.astral()\nAstral Body";shape = circle;comment = "";];
+    spark_8_corpora_t [label = "Corpora.spiritual()\nSpiritual Body";shape = circle;comment = "";];
+    spark_7_corpora_t [label = "Corpora.material()\nMaterial Body";shape = circle;comment = "";];
+    spark_5_corpora_t [label = "Corpora.celestial()\nCelestial Body";shape = circle;comment = "";];
+    spark_3_corpora_t [label = "Corpora.ego()\nEgo";shape = doublecircle;comment = "";];
+    spark_6_corpora_t [label = "Corpora.will()\nWill";shape = doublecircle;comment = "";];
+    spark_9_corpora_t [label = "Corpora.intent()\nIntent";shape = doublecircle;comment = "";];
+    spark_a_corpora_t [label = "Corpora.receive()\nPrevious LURD";shape = triangle;comment = "";];
+    spark_b_corpora_t [label = "Corpora.send()\nNext LURD";shape = invtriangle;comment = "";];
+    spark_c_corpora_t [label = "Corpora.response()\nCurrent LURD";shape = doublecircle;comment = "";];
+    spark_d_corpora_t [label = "Corpora.compile()\nCorpus";shape = doublecircle;comment = "";];
+    spark_e_corpora_t [label = "Corpora.serve()\nMind";shape = doublecircle;comment = "`/srv/corpora`";];
+    spark_f_corpora_t [label = "Corpora.exec()\nLaw of Corpus";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_d_mythos_t -> spark_0_corpus_t -> {spark_a_corpus_t spark_b_corpus_t spark_1_corpus_t spark_2_corpus_t spark_3_corpus_t spark_4_corpus_t spark_5_corpus_t spark_6_corpus_t spark_7_corpus_t spark_8_corpus_t spark_9_corpus_t} [label = "IN"; color = yellow; comment = "";];
+    spark_d_mythos_t -> spark_0_corpora_t;
     
-    {spark_a_corpus_t spark_b_corpus_t} -> spark_c_corpus_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_corpus_t spark_2_corpus_t spark_4_corpus_t spark_8_corpus_t spark_7_corpus_t spark_5_corpus_t} -> spark_d_corpus_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_corpus_t spark_6_corpus_t spark_9_corpus_t} -> spark_e_corpus_t [label = "REC"; color = darkblue; comment = "";];
+    spark_0_corpora_t -> spark_a_corpora_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_corpora_t -> spark_b_corpora_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_corpora_t -> {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_corpora_t -> {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    spark_1_corpus_t -> spark_2_corpus_t -> spark_4_corpus_t -> spark_8_corpus_t -> spark_7_corpus_t -> spark_5_corpus_t -> spark_1_corpus_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_corpus_t -> spark_6_corpus_t -> spark_9_corpus_t -> spark_3_corpus_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_corpus_t -> spark_b_corpus_t -> spark_a_corpus_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    {spark_a_corpora_t spark_b_corpora_t} -> spark_c_corpora_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} -> spark_d_corpora_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} -> spark_e_corpora_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    {spark_c_corpus_t spark_d_corpus_t spark_e_corpus_t} -> spark_f_corpus_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_1_corpora_t -> spark_2_corpora_t -> spark_4_corpora_t -> spark_8_corpora_t -> spark_7_corpora_t -> spark_5_corpora_t -> spark_1_corpora_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_corpora_t -> spark_6_corpora_t -> spark_9_corpora_t -> spark_3_corpora_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_corpora_t -> spark_b_corpora_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    
+    spark_c_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

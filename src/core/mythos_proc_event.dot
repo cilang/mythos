@@ -25,7 +25,7 @@ strict digraph EventEngine {
     spark_c_event_t [label = "Event.dispatch()";comment = "";shape = doublecircle;];
     spark_d_event_t [label = "Event.commit()";comment = "";shape = doublecircle;];
     spark_e_event_t [label = "Event.serve()";comment = "`/proc/event`";shape = doublecircle;];
-    spark_f_event_t [label = "Event.exec()\nLaw of Probability (law_of_probability_t)";comment = "`/proc/probability`";shape = doublecircle;];
+    spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "`/proc/probability`";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

@@ -24,11 +24,13 @@ strict digraph SamsaraEngine {
     spark_c_samsara_t [label = "Samsara.dispatch()";comment = "";shape = doublecircle;];
     spark_d_samsara_t [label = "Samsara.commit()";comment = "`/proc/cycle`";shape = doublecircle;];
     spark_e_samsara_t [label = "Samsara.serve()";comment = "`/proc/samsara`";shape = doublecircle;];
-    spark_f_samsara_t [label = "Samsara.exec()\nLaw of Causality (law_of_causality_t)";comment = "`/proc/causality`";shape = doublecircle;];
+    spark_f_samsara_t [label = "Samsara.exec(LawOfCausality)";comment = "`/proc/causality`";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
+    spark_b_mythos_t -> spark_0_samsara_t;
+    
     spark_0_samsara_t -> spark_a_samsara_t [label = "IN"; color = darkred; comment = "";];
     spark_0_samsara_t -> spark_b_samsara_t [label = "OUT"; color = darkred; comment = "";];
     spark_0_samsara_t -> {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
@@ -45,5 +47,4 @@ strict digraph SamsaraEngine {
     spark_c_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
     spark_d_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
     spark_e_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
-    spark_b_mythos_t -> spark_0_samsara_t;
 }
