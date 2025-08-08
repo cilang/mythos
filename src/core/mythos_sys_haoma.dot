@@ -5,25 +5,25 @@ digraph HaomaEngine {
     comment = "";
     node [shape = polygon; sides = 6; style = filled; color = lightgreen;];
     
-    spark_9_mythos_t [label = "0x9\nHaoma\n(/srv/haoma)";shape = doublecircle;];
+    spark_9_mythos_t [label = "Haoma\n(/srv/haoma)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_haoma_t [label = "0\nHaoma.meta()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_haoma_t [label = "1\nHaoma.r1()";shape = circle;comment = "";];
-    spark_2_haoma_t [label = "2\nHaoma.r2()";shape = circle;comment = "";];
-    spark_4_haoma_t [label = "4\nHaoma.r4()";shape = circle;comment = "";];
-    spark_8_haoma_t [label = "8\nHaoma.r8()";shape = circle;comment = "";];
-    spark_7_haoma_t [label = "7\nHaoma.r7()";shape = circle;comment = "";];
-    spark_5_haoma_t [label = "5\nHaoma.r5()";shape = circle;comment = "";];
-    spark_3_haoma_t [label = "3\nHaoma.r3()";shape = doublecircle;comment = "`/sys/lurd`";];
-    spark_6_haoma_t [label = "6\nHaoma.r6()";shape = doublecircle;comment = "";];
-    spark_9_haoma_t [label = "9\nHaoma.r9()";shape = doublecircle;comment = "";];
-    spark_a_haoma_t [label = "A\nHaoma.receive()";shape = triangle;comment = "";];
-    spark_b_haoma_t [label = "B\nHaoma.send()";shape = invtriangle;comment = "";];
-    spark_c_haoma_t [label = "C\nHaoma.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_haoma_t [label = "D\nHaoma.commit()";shape = doublecircle;comment = "";];
-    spark_e_haoma_t [label = "E\nHaoma.serve()";shape = doublecircle;comment = "`/sys/haoma`";];
-    spark_f_haoma_t [label = "F\nHaoma.exec()\nLaw of Factor";shape = doublecircle;comment = "";];
+    spark_0_haoma_t [label = "Haoma.meta()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_haoma_t [label = "Haoma.r1()";shape = circle;comment = "";];
+    spark_2_haoma_t [label = "Haoma.r2()";shape = circle;comment = "";];
+    spark_4_haoma_t [label = "Haoma.r4()";shape = circle;comment = "";];
+    spark_8_haoma_t [label = "Haoma.r8()";shape = circle;comment = "";];
+    spark_7_haoma_t [label = "Haoma.r7()";shape = circle;comment = "";];
+    spark_5_haoma_t [label = "Haoma.r5()";shape = circle;comment = "";];
+    spark_3_haoma_t [label = "Haoma.r3()";shape = doublecircle;comment = "`/sys/lurd`";];
+    spark_6_haoma_t [label = "Haoma.r6()";shape = doublecircle;comment = "";];
+    spark_9_haoma_t [label = "Haoma.r9()";shape = doublecircle;comment = "";];
+    spark_a_haoma_t [label = "Haoma.receive()";shape = triangle;comment = "";];
+    spark_b_haoma_t [label = "Haoma.send()";shape = invtriangle;comment = "";];
+    spark_c_haoma_t [label = "Haoma.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_haoma_t [label = "Haoma.commit()";shape = doublecircle;comment = "";];
+    spark_e_haoma_t [label = "Haoma.serve()";shape = doublecircle;comment = "`/sys/haoma`";];
+    spark_f_haoma_t [label = "Haoma.exec()\nLaw of Factor";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

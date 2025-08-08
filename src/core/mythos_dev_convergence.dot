@@ -5,25 +5,25 @@ strict digraph ConvergenceEngine {
     comment = "";
     node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
     
-    spark_2_mythos_t [label = "0x2\nConvergence\n(/dev/convergence)";];
+    spark_2_mythos_t [label = "Convergence\n(/dev/convergence)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_convergence_t [label = "0x0\nConvergence.meta()\nKirana Larasati";shape = doublecircle;];
-    spark_1_convergence_t [label = "0x1\nConvergence.r1()\n";comment = "";shape = circle;];
-    spark_2_convergence_t [label = "0x2\nConvergence.r2()\n";comment = "";shape = circle;];
-    spark_4_convergence_t [label = "0x4\nConvergence.r4()\n";comment = "";shape = circle;];
-    spark_8_convergence_t [label = "0x8\nConvergence.r8()\n";comment = "";shape = circle;];
-    spark_7_convergence_t [label = "0x7\nConvergence.r7()\n";comment = "";shape = circle;];
-    spark_5_convergence_t [label = "0x5\nConvergence.r5()\n";comment = "";shape = circle;];
-    spark_3_convergence_t [label = "0x3\nConvergence.order()\nCrest of Order";comment = "";shape = circle;];
-    spark_6_convergence_t [label = "0x6\nConvergence.creation()\nCrest of Creation";comment = "";shape = circle;];
-    spark_9_convergence_t [label = "0x9\nConvergence.unity()\nCrest of Unity";comment = "";shape = circle;];
-    spark_a_convergence_t [label = "0xA\nConvergence.raiment()\nRaiment of Convergence";comment = "";shape = triangle;];
-    spark_b_convergence_t [label = "0xB\nConvergence.armament()\nArmament of Convergence";comment = "";shape = invtriangle;];
-    spark_c_convergence_t [label = "0xC\nConvergence.body()\nBody of Convergence(Nine Tailed Aves of Vikara)";comment = "";shape = circle;];
-    spark_d_convergence_t [label = "0xD\nConvergence.soul()\nSoul of Convergence";comment = "";shape = circle;];
-    spark_e_convergence_t [label = "0xE\nConvergence.grace()\nGrace of Convergence";comment = "";shape = circle;];
-    spark_f_convergence_t [label = "0xF\nConvergence.exec()\nLaw of Convergence";comment = "";shape = circle;];
+    spark_0_convergence_t [label = "Convergence.meta()\nKirana Larasati";shape = doublecircle;];
+    spark_1_convergence_t [label = "Convergence.r1()\n";comment = "";shape = circle;];
+    spark_2_convergence_t [label = "Convergence.r2()\n";comment = "";shape = circle;];
+    spark_4_convergence_t [label = "Convergence.r4()\n";comment = "";shape = circle;];
+    spark_8_convergence_t [label = "Convergence.r8()\n";comment = "";shape = circle;];
+    spark_7_convergence_t [label = "Convergence.r7()\n";comment = "";shape = circle;];
+    spark_5_convergence_t [label = "Convergence.r5()\n";comment = "";shape = circle;];
+    spark_3_convergence_t [label = "Convergence.order()\nCrest of Order";comment = "";shape = circle;];
+    spark_6_convergence_t [label = "Convergence.creation()\nCrest of Creation";comment = "";shape = circle;];
+    spark_9_convergence_t [label = "Convergence.unity()\nCrest of Unity";comment = "";shape = circle;];
+    spark_a_convergence_t [label = "Convergence.raiment()\nRaiment of Convergence";comment = "";shape = triangle;];
+    spark_b_convergence_t [label = "Convergence.armament()\nArmament of Convergence";comment = "";shape = invtriangle;];
+    spark_c_convergence_t [label = "Convergence.body()\nBody of Convergence(Nine Tailed Aves of Vikara)";comment = "";shape = circle;];
+    spark_d_convergence_t [label = "Convergence.soul()\nSoul of Convergence";comment = "";shape = circle;];
+    spark_e_convergence_t [label = "Convergence.grace()\nGrace of Convergence";comment = "";shape = circle;];
+    spark_f_convergence_t [label = "Convergence.exec()\nLaw of Convergence";comment = "";shape = circle;];
     
     // IN = Input
     // OUT = Output

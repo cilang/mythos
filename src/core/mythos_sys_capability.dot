@@ -5,25 +5,25 @@ digraph CapabilityEngine {
     comment = "";
     node [shape = polygon; sides = 6; style = filled; color = lightgreen;];
     
-    spark_3_mythos_t [label = "0x3\nCapability\n(/srv/capability)";shape = doublecircle;];
+    spark_3_mythos_t [label = "Capability\n(/srv/capability)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_capability_t [label = "0\nCapability.init()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_capability_t [label = "1\nCapability.parse()";shape = circle;comment = "";];
-    spark_2_capability_t [label = "2\nCapability.validate()";shape = circle;comment = "";];
-    spark_4_capability_t [label = "4\nCapability.normalize()";shape = circle;comment = "";];
-    spark_8_capability_t [label = "8\nCapability.reset()";shape = circle;comment = "";];
-    spark_7_capability_t [label = "7\nCapability.evolve()";shape = circle;comment = "";];
-    spark_5_capability_t [label = "5\nCapability.refactor()";shape = circle;comment = "";];
-    spark_3_capability_t [label = "3\nCapability.codex()";shape = doublecircle;comment = "`/sys/codex`";];
-    spark_6_capability_t [label = "6\nCapability.listen()";shape = doublecircle;comment = "";];
-    spark_9_capability_t [label = "9\nCapability.assert()";shape = doublecircle;comment = "";];
-    spark_a_capability_t [label = "A\nCapability.receive()";shape = triangle;comment = "";];
-    spark_b_capability_t [label = "B\nCapability.send()";shape = invtriangle;comment = "";];
-    spark_c_capability_t [label = "C\nCapability.response()";shape = doublecircle;comment = "";];
-    spark_d_capability_t [label = "D\nCapability.compile()";shape = doublecircle;comment = "";];
-    spark_e_capability_t [label = "E\nCapability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
-    spark_f_capability_t [label = "F\nCapability.exec()\nLaw of Capability";shape = doublecircle;comment = "";];
+    spark_0_capability_t [label = "Capability.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_capability_t [label = "Capability.parse()";shape = circle;comment = "";];
+    spark_2_capability_t [label = "Capability.validate()";shape = circle;comment = "";];
+    spark_4_capability_t [label = "Capability.normalize()";shape = circle;comment = "";];
+    spark_8_capability_t [label = "Capability.reset()";shape = circle;comment = "";];
+    spark_7_capability_t [label = "Capability.evolve()";shape = circle;comment = "";];
+    spark_5_capability_t [label = "Capability.refactor()";shape = circle;comment = "";];
+    spark_3_capability_t [label = "Capability.codex()";shape = doublecircle;comment = "`/sys/codex`";];
+    spark_6_capability_t [label = "Capability.listen()";shape = doublecircle;comment = "";];
+    spark_9_capability_t [label = "Capability.assert()";shape = doublecircle;comment = "";];
+    spark_a_capability_t [label = "Capability.receive()";shape = triangle;comment = "";];
+    spark_b_capability_t [label = "Capability.send()";shape = invtriangle;comment = "";];
+    spark_c_capability_t [label = "Capability.response()";shape = doublecircle;comment = "";];
+    spark_d_capability_t [label = "Capability.compile()";shape = doublecircle;comment = "";];
+    spark_e_capability_t [label = "Capability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
+    spark_f_capability_t [label = "Capability.exec()\nLaw of Capability";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

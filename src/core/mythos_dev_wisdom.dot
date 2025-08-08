@@ -5,25 +5,25 @@ strict digraph WisdomEngine {
     comment = "";
     node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
     
-    spark_8_mythos_t [label = "0x8\nWisdom\n(/dev/wisdom)";];
+    spark_8_mythos_t [label = "Wisdom\n(/dev/wisdom)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_wisdom_t [label = "0x0\nWisdom.meta()\nVidya";comment = "";shape = doublecircle;];
-    spark_1_wisdom_t [label = "0x1\nWisdom.r1()\n";comment = "";shape = circle;];
-    spark_2_wisdom_t [label = "0x2\nWisdom.r2()\n";comment = "";shape = circle;];
-    spark_4_wisdom_t [label = "0x4\nWisdom.r4()\n";comment = "";shape = circle;];
-    spark_8_wisdom_t [label = "0x8\nWisdom.r8()\n";comment = "";shape = circle;];
-    spark_7_wisdom_t [label = "0x7\nWisdom.r7()\n";comment = "";shape = circle;];
-    spark_5_wisdom_t [label = "0x5\nWisdom.r5()\n";comment = "";shape = circle;];
-    spark_3_wisdom_t [label = "0x3\nWisdom.complexity()\nCrest of Complexity";comment = "";shape = circle;];
-    spark_6_wisdom_t [label = "0x6\nWisdom.reflection()\nCrest of Reflection";comment = "";shape = circle;];
-    spark_9_wisdom_t [label = "0x9\nWisdom.insight()\nCrest of Insight";comment = "";shape = circle;];
-    spark_a_wisdom_t [label = "0xA\nWisdom.raiment()\nRaiment of Wisdom";comment = "";shape = triangle;];
-    spark_b_wisdom_t [label = "0xB\nWisdom.armament()\nArmament of Wisdom";comment = "";shape = invtriangle;];
-    spark_c_wisdom_t [label = "0xC\nWisdom.body()\nBody of Wisdom";comment = "";shape = circle;];
-    spark_d_wisdom_t [label = "0xD\nWisdom.soul()\nSoul of Wisdom";comment = "";shape = circle;];
-    spark_e_wisdom_t [label = "0xE\nWisdom.grace()\nGrace of Wisdom";comment = "";shape = circle;];
-    spark_f_wisdom_t [label = "0xF\nWisdom.exec()\nLaw of Wisdom";comment = "";shape = circle;];
+    spark_0_wisdom_t [label = "Wisdom.meta()\nVidya";comment = "";shape = doublecircle;];
+    spark_1_wisdom_t [label = "Wisdom.r1()\n";comment = "";shape = circle;];
+    spark_2_wisdom_t [label = "Wisdom.r2()\n";comment = "";shape = circle;];
+    spark_4_wisdom_t [label = "Wisdom.r4()\n";comment = "";shape = circle;];
+    spark_8_wisdom_t [label = "Wisdom.r8()\n";comment = "";shape = circle;];
+    spark_7_wisdom_t [label = "Wisdom.r7()\n";comment = "";shape = circle;];
+    spark_5_wisdom_t [label = "Wisdom.r5()\n";comment = "";shape = circle;];
+    spark_3_wisdom_t [label = "Wisdom.complexity()\nCrest of Complexity";comment = "";shape = circle;];
+    spark_6_wisdom_t [label = "Wisdom.reflection()\nCrest of Reflection";comment = "";shape = circle;];
+    spark_9_wisdom_t [label = "Wisdom.insight()\nCrest of Insight";comment = "";shape = circle;];
+    spark_a_wisdom_t [label = "Wisdom.raiment()\nRaiment of Wisdom";comment = "";shape = triangle;];
+    spark_b_wisdom_t [label = "Wisdom.armament()\nArmament of Wisdom";comment = "";shape = invtriangle;];
+    spark_c_wisdom_t [label = "Wisdom.body()\nBody of Wisdom";comment = "";shape = circle;];
+    spark_d_wisdom_t [label = "Wisdom.soul()\nSoul of Wisdom";comment = "";shape = circle;];
+    spark_e_wisdom_t [label = "Wisdom.grace()\nGrace of Wisdom";comment = "";shape = circle;];
+    spark_f_wisdom_t [label = "Wisdom.exec()\nLaw of Wisdom";comment = "";shape = circle;];
     
     // Wisdom
     // IN = Input

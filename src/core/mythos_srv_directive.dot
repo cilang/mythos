@@ -5,25 +5,25 @@ digraph DirectiveEngine {
     comment = "";
     node [shape = circle; style = filled; color = darkcyan;];
     
-    spark_c_mythos_t [label = "0xC\nDirective\n(/srv/directive)";shape = doublecircle;];
+    spark_c_mythos_t [label = "Directive\n(/srv/directive)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_directive_t [label = "0\nDirective.meta()";shape = doublecircle;comment = "";];
-    spark_1_directive_t [label = "1\nDirective.r1\n()";shape = circle;comment = "";];
-    spark_2_directive_t [label = "2\nDirective.r2\n()";shape = circle;comment = "";];
-    spark_4_directive_t [label = "4\nDirective.r4\n()";shape = circle;comment = "";];
-    spark_8_directive_t [label = "8\nDirective.r8\n()";shape = circle;comment = "";];
-    spark_7_directive_t [label = "7\nDirective.r7\n()";shape = circle;comment = "";];
-    spark_5_directive_t [label = "5\nDirective.r5\n()";shape = circle;comment = "";];
-    spark_3_directive_t [label = "3\nDirective.r3()";shape = doublecircle;comment = "";];
-    spark_6_directive_t [label = "6\nDirective.r6()";shape = doublecircle;comment = "";];
-    spark_9_directive_t [label = "9\nDirective.r9()";shape = doublecircle;comment = "";];
-    spark_a_directive_t [label = "A\nDirective.receive()";shape = triangle;comment = "";];
-    spark_b_directive_t [label = "B\nDirective.send()";shape = invtriangle;comment = "";];
-    spark_c_directive_t [label = "C\nDirective.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_directive_t [label = "D\nDirective.commit()";shape = doublecircle;comment = "";];
-    spark_e_directive_t [label = "E\nDirective.serve()";shape = doublecircle;comment = "`/srv/directive`";];
-    spark_f_directive_t [label = "F\nDirective.exec()";shape = doublecircle;comment = "";];
+    spark_0_directive_t [label = "Directive.meta()";shape = doublecircle;comment = "";];
+    spark_1_directive_t [label = "Directive.r1()";shape = circle;comment = "";];
+    spark_2_directive_t [label = "Directive.r2()";shape = circle;comment = "";];
+    spark_4_directive_t [label = "Directive.r4()";shape = circle;comment = "";];
+    spark_8_directive_t [label = "Directive.r8()";shape = circle;comment = "";];
+    spark_7_directive_t [label = "Directive.r7()";shape = circle;comment = "";];
+    spark_5_directive_t [label = "Directive.r5()";shape = circle;comment = "";];
+    spark_3_directive_t [label = "Directive.r3()";shape = doublecircle;comment = "";];
+    spark_6_directive_t [label = "Directive.r6()";shape = doublecircle;comment = "";];
+    spark_9_directive_t [label = "Directive.r9()";shape = doublecircle;comment = "";];
+    spark_a_directive_t [label = "Directive.receive()";shape = triangle;comment = "";];
+    spark_b_directive_t [label = "Directive.send()";shape = invtriangle;comment = "";];
+    spark_c_directive_t [label = "Directive.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_directive_t [label = "Directive.commit()";shape = doublecircle;comment = "";];
+    spark_e_directive_t [label = "Directive.serve()";shape = doublecircle;comment = "`/srv/directive`";];
+    spark_f_directive_t [label = "Directive.exec()";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

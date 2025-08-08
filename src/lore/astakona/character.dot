@@ -4,23 +4,22 @@ strict digraph Character {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     
-    damarwulan_t [label = "Damarwulan\nPatriarch of Avesix\nMale";comment = "";shape = folder;];
-    lintang_kinasih_t [label = "Lintang Kinasih\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
-    anastasia_t [label = "Anastasia\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
-    tirta_kencana_t [label = "Tirta Kencana\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
-    ariningtyas_t [label = "Ariningtyas\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
+    damar_t [label = "Damarwulan\nPatriarch of Avesix\nMale";comment = "";shape = folder;];
+    lintang_t [label = "Lintang Kinasih\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
+    ana_t [label = "Anastasia\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
+    tirta_t [label = "Tirta Kencana\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
+    tyas_t [label = "Ariningtyas\nMatriarch of Avesix\nFemale";comment = "";shape = folder;];
     
-    chandra_t [label = "Chandra Sasmitha\nPrime Prince of Avesix\nMale";comment = "";shape = folder;];
-    
-    kirana_t [label = "Kirana Larasati (Yavuna)\nPrime Queen of Arachnid\nFemale";comment = "";shape = folder;];
-    risa_t [label = "Risa\nPrime Princess of Draconis\nFemale";comment = "";shape = folder;];
-    rina_t [label = "Rina\nPrime Princess of Felixa\nFemale";comment = "";shape = folder;];
-    leafa_t [label = "Leafa\nSpirit of World Tree\nFemale";comment = "";shape = folder;];
+    tina_t [label = "Tina\nArachnid Queen\nFemale";comment = "";shape = folder;];
+    erna_t [label = "Erna\nPrime Princess of Draconis\nFemale";comment = "";shape = folder;];
+    nala_t [label = "Nala\nPrime Prince of Avesix\nMale";comment = "";shape = folder;];
+    esti_t [label = "Esti\nPrime Princess of Felixa\nFemale";comment = "";shape = folder;];
+    tika_t [label = "Tika\nSpirit Queen\nFemale";comment = "";shape = folder;];
     
     astacitari_t [label = "Astawidya Citra Lestari\nPrime Princess of Avesix\nFemale";comment = "";shape = folder;];
     
-    damarwulan_t -> {lintang_kinasih_t anastasia_t tirta_kencana_t ariningtyas_t} [label = "Wife"; color = darkblue; comment = "";];
-    {lintang_kinasih_t anastasia_t tirta_kencana_t ariningtyas_t} -> chandra_t [label = "Child"; color = darkblue; comment = "";];
-    chandra_t -> {kirana_t risa_t rina_t leafa_t} [label = "Wife"; color = darkblue; comment = "";];
-    {kirana_t risa_t rina_t leafa_t} -> astacitari_t [label = "Child"; color = darkblue; comment = "";];
+    damar_t -> {lintang_t ana_t tirta_t tyas_t} [label = "Wife"; color = darkblue; comment = "";];
+    {lintang_t ana_t tirta_t tyas_t} -> nala_t [label = "Child"; color = darkblue; comment = "";];
+    nala_t -> {tina_t erna_t esti_t tika_t} [label = "Wife"; color = darkblue; comment = "";];
+    {tina_t erna_t esti_t tika_t} -> astacitari_t [label = "Child"; color = darkblue; comment = "";];
 }

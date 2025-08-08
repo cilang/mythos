@@ -6,25 +6,25 @@ strict digraph RealityEngine {
     comment = "";
     node [shape = circle; style = filled; color = lightgreen;];
     
-    spark_0_mythos_t [label = "0x0\nReality\n(/proc/reality)";shape = doublecircle;];
+    spark_0_mythos_t [label = "Reality\n(/proc/reality)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_reality_t [label = "R0\nReality.meta()";comment = "Init Engine";shape = doublecircle;];
-    spark_1_reality_t [label = "R1\nReality.initFactor()";comment = "initFactor() factor_t";shape = circle;color = darkgreen;];
-    spark_2_reality_t [label = "R2\nReality.feedFactor()";comment = "feedFactor() observer_model_t, alignment_model_t, and spectral_model_t";shape = circle;color = darkgreen;];
-    spark_4_reality_t [label = "R4\nReality.validateFactor()";comment = "validateFactor() factor_t integrity before/after injection";shape = circle;color = darkgreen;];
-    spark_8_reality_t [label = "R8\nReality.finalizeFactor()";comment = "finalizeFactor() factor_t into information_factor_t";shape = circle;color = darkgreen;];
-    spark_7_reality_t [label = "R7\nReality.reloadFactor()";comment = "reloadFactor() in the case feedFactor() failed";shape = circle;color = darkgreen;];
-    spark_5_reality_t [label = "R5\nReality.loadFactor()";comment = "loadFactor() mainly used by Reality.factor()";shape = circle;color = darkgreen;];
-    spark_3_reality_t [label = "R3\nReality.avatar()";comment = "`/proc/avatar`";shape = doublecircle;color = darkblue;];
-    spark_6_reality_t [label = "R6\nReality.listen()";comment = "";shape = doublecircle;color = darkblue;];
-    spark_9_reality_t [label = "R9\nReality.wakeEngine()";comment = "";shape = doublecircle;color = darkblue;];
-    spark_a_reality_t [label = "RA\nReality.receive()";comment = "receive()";shape = invtriangle;color = darkred;];
-    spark_b_reality_t [label = "RB\nReality.send()";comment = "send()";shape = triangle;color = darkred;];
-    spark_c_reality_t [label = "RC\nReality.dispatch()";comment = "dispatch()";shape = doublecircle;color = darkred;];
-    spark_d_reality_t [label = "RD\nReality.factor()";comment = "`/proc/factor` Inquiry system";shape = doublecircle;color = darkgreen;];
-    spark_e_reality_t [label = "RE\nReality.serve()";comment = "`/proc/reality`";shape = doublecircle;color = darkblue;];
-    spark_f_reality_t [label = "RF\nReality.exec()";comment = "exec()";shape = doublecircle;];
+    spark_0_reality_t [label = "Reality.meta()";comment = "Init Engine";shape = doublecircle;];
+    spark_1_reality_t [label = "Reality.initFactor()";comment = "initFactor() factor_t";shape = circle;];
+    spark_2_reality_t [label = "Reality.feedFactor()";comment = "feedFactor() observer_model_t, alignment_model_t, and spectral_model_t";shape = circle;];
+    spark_4_reality_t [label = "Reality.validateFactor()";comment = "validateFactor() factor_t integrity before/after injection";shape = circle;];
+    spark_8_reality_t [label = "Reality.finalizeFactor()";comment = "finalizeFactor() factor_t into information_factor_t";shape = circle;];
+    spark_7_reality_t [label = "Reality.reloadFactor()";comment = "reloadFactor() in the case feedFactor() failed";shape = circle;];
+    spark_5_reality_t [label = "Reality.loadFactor()";comment = "loadFactor() mainly used by Reality.factor()";shape = circle;];
+    spark_3_reality_t [label = "Reality.avatar()";comment = "`/proc/avatar`";shape = doublecircle;];
+    spark_6_reality_t [label = "Reality.listen()";comment = "";shape = doublecircle;];
+    spark_9_reality_t [label = "Reality.wakeEngine()";comment = "";shape = doublecircle;];
+    spark_a_reality_t [label = "Reality.receive()";comment = "receive()";shape = invtriangle;];
+    spark_b_reality_t [label = "Reality.send()";comment = "send()";shape = triangle;];
+    spark_c_reality_t [label = "Reality.dispatch()";comment = "dispatch()";shape = doublecircle;];
+    spark_d_reality_t [label = "Reality.factor()";comment = "`/proc/factor` Inquiry system";shape = doublecircle;];
+    spark_e_reality_t [label = "Reality.serve()";comment = "`/proc/reality`";shape = doublecircle;];
+    spark_f_reality_t [label = "Reality.exec()";comment = "exec()";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output

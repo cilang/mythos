@@ -7,22 +7,22 @@ strict digraph OriginEngine {
     spark_f_mythos_t [label = "Origin\n(/var)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_origin_t [label = "0\nOrigin.meta()";shape = doublecircle;comment = "Engine Meta";];
-    spark_1_origin_t [label = "1\nOrigin.r1()";shape = circle;comment = "";];
-    spark_2_origin_t [label = "2\nOrigin.r2()";shape = circle;comment = "";];
-    spark_4_origin_t [label = "4\nOrigin.r4()";shape = circle;comment = "";];
-    spark_8_origin_t [label = "8\nOrigin.r8()";shape = circle;comment = "";];
-    spark_7_origin_t [label = "7\nOrigin.r7()";shape = circle;comment = "";];
-    spark_5_origin_t [label = "5\nOrigin.r5()";shape = circle;comment = "";];
-    spark_3_origin_t [label = "3\nOrigin.pattern()";shape = doublecircle;comment = "";];
-    spark_6_origin_t [label = "6\nOrigin.rhythm()";shape = doublecircle;comment = "";];
-    spark_9_origin_t [label = "9\nOrigin.brane()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
-    spark_a_origin_t [label = "A\nOrigin.manthan()";shape = triangle;comment = "`/var/manthan`";];
-    spark_b_origin_t [label = "B\nOrigin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
-    spark_c_origin_t [label = "C\nOrigin.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_origin_t [label = "D\nOrigin.commit()";shape = doublecircle;comment = "";];
-    spark_e_origin_t [label = "E\nOrigin.serve()";shape = doublecircle;comment = "`/var`";];
-    spark_f_origin_t [label = "F\nOrigin.exec()\nLaw of Spacetime";shape = doublecircle;comment = "";];
+    spark_0_origin_t [label = "Origin.meta()";shape = doublecircle;comment = "Engine Meta";];
+    spark_1_origin_t [label = "Origin.r1()";shape = circle;comment = "";];
+    spark_2_origin_t [label = "Origin.r2()";shape = circle;comment = "";];
+    spark_4_origin_t [label = "Origin.r4()";shape = circle;comment = "";];
+    spark_8_origin_t [label = "Origin.r8()";shape = circle;comment = "";];
+    spark_7_origin_t [label = "Origin.r7()";shape = circle;comment = "";];
+    spark_5_origin_t [label = "Origin.r5()";shape = circle;comment = "";];
+    spark_3_origin_t [label = "Origin.pattern()";shape = doublecircle;comment = "";];
+    spark_6_origin_t [label = "Origin.rhythm()";shape = doublecircle;comment = "";];
+    spark_9_origin_t [label = "Origin.brane()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
+    spark_a_origin_t [label = "Origin.manthan()";shape = triangle;comment = "`/var/manthan`";];
+    spark_b_origin_t [label = "Origin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
+    spark_c_origin_t [label = "Origin.dispatch()";shape = doublecircle;comment = "";];
+    spark_d_origin_t [label = "Origin.commit()";shape = doublecircle;comment = "";];
+    spark_e_origin_t [label = "Origin.serve()";shape = doublecircle;comment = "`/var`";];
+    spark_f_origin_t [label = "Origin.exec()\nLaw of Spacetime";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

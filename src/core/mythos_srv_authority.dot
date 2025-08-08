@@ -5,25 +5,25 @@ digraph AuthorityEngine {
     comment = "";
     node [shape = circle; style = filled; color = darkcyan;];
     
-    spark_e_mythos_t [label = "0xE\nAuthority\n(/srv/authority)";shape = doublecircle;];
+    spark_e_mythos_t [label = "Authority\n(/srv/authority)";shape = doublecircle;];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_authority_t [label = "0\nAuthority.init()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_authority_t [label = "1\nAuthority.create()";shape = circle;comment = "";];
-    spark_2_authority_t [label = "2\nAuthority.validate()";shape = circle;comment = "";];
-    spark_4_authority_t [label = "4\nAuthority.normalize()";shape = circle;comment = "";];
-    spark_8_authority_t [label = "8\nAuthority.reset()";shape = circle;comment = "";];
-    spark_7_authority_t [label = "7\nAuthority.evolve()";shape = circle;comment = "";];
-    spark_5_authority_t [label = "5\nAuthority.refactor()";shape = circle;comment = "";];
-    spark_3_authority_t [label = "3\nAuthority.codex()";shape = doublecircle;comment = "";];
-    spark_6_authority_t [label = "6\nAuthority.listen()";shape = doublecircle;comment = "";];
-    spark_9_authority_t [label = "9\nAuthority.assert()";shape = doublecircle;comment = "";];
-    spark_a_authority_t [label = "A\nAuthority.receive()";shape = triangle;comment = "";];
-    spark_b_authority_t [label = "B\nAuthority.send()";shape = invtriangle;comment = "";];
-    spark_c_authority_t [label = "C\nAuthority.response()";shape = doublecircle;comment = "";];
-    spark_d_authority_t [label = "D\nAuthority.compile()";shape = doublecircle;comment = "";];
-    spark_e_authority_t [label = "E\nAuthority.serve()";shape = doublecircle;comment = "`/srv/authority`";];
-    spark_f_authority_t [label = "F\nAuthority.exec()\nLaw of Divinity";shape = doublecircle;comment = "";];
+    spark_0_authority_t [label = "Authority.init()";shape = doublecircle;comment = "Engine Init";];
+    spark_1_authority_t [label = "Authority.create()";shape = circle;comment = "";];
+    spark_2_authority_t [label = "Authority.validate()";shape = circle;comment = "";];
+    spark_4_authority_t [label = "Authority.normalize()";shape = circle;comment = "";];
+    spark_8_authority_t [label = "Authority.reset()";shape = circle;comment = "";];
+    spark_7_authority_t [label = "Authority.evolve()";shape = circle;comment = "";];
+    spark_5_authority_t [label = "Authority.refactor()";shape = circle;comment = "";];
+    spark_3_authority_t [label = "Authority.codex()";shape = doublecircle;comment = "";];
+    spark_6_authority_t [label = "Authority.listen()";shape = doublecircle;comment = "";];
+    spark_9_authority_t [label = "Authority.assert()";shape = doublecircle;comment = "";];
+    spark_a_authority_t [label = "Authority.receive()";shape = triangle;comment = "";];
+    spark_b_authority_t [label = "Authority.send()";shape = invtriangle;comment = "";];
+    spark_c_authority_t [label = "Authority.response()";shape = doublecircle;comment = "";];
+    spark_d_authority_t [label = "Authority.compile()";shape = doublecircle;comment = "";];
+    spark_e_authority_t [label = "Authority.serve()";shape = doublecircle;comment = "`/srv/authority`";];
+    spark_f_authority_t [label = "Authority.exec()\nLaw of Divinity";shape = doublecircle;comment = "";];
     
     // IN = Input
     // OUT = Output

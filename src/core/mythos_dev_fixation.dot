@@ -5,25 +5,25 @@ strict digraph FixationEngine {
     comment = "";
     node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
     
-    spark_4_mythos_t [label = "0x4\nFixation\n(/dev/fixation)";];
+    spark_4_mythos_t [label = "Fixation\n(/dev/fixation)";];
     
     // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_fixation_t [label = "0xA\nFixation.meta()\nTha";comment = "";shape = doublecircle;];
-    spark_1_fixation_t [label = "0x1\nFixation.r1()\n";comment = "";shape = circle;];
-    spark_2_fixation_t [label = "0x2\nFixation.r2()\n";comment = "";shape = circle;];
-    spark_4_fixation_t [label = "0x4\nFixation.r4()\n";comment = "";shape = circle;];
-    spark_8_fixation_t [label = "0x8\nFixation.r8()\n";comment = "";shape = circle;];
-    spark_7_fixation_t [label = "0x7\nFixation.r7()\n";comment = "";shape = circle;];
-    spark_5_fixation_t [label = "0x5\nFixation.r5()\n";comment = "";shape = circle;];
-    spark_3_fixation_t [label = "0x3\nFixation.desire()\nCrest of Desire";comment = "";shape = circle;];
-    spark_6_fixation_t [label = "0x6\nFixation.transformation()\nCrest of Transformation";comment = "";shape = circle;];
-    spark_9_fixation_t [label = "0x9\nFixation.matter()\nCrest of Matter";comment = "";shape = circle;];
-    spark_a_fixation_t [label = "0xA\nFixation.raiment()\nRaiment of Fixation";comment = "";shape = triangle;];
-    spark_b_fixation_t [label = "0xB\nFixation.armament()\nArmament of Fixation";comment = "";shape = invtriangle;];
-    spark_c_fixation_t [label = "0xC\nFixation.body()\nBody of Fixation";comment = "";shape = circle;];
-    spark_d_fixation_t [label = "0xD\nFixation.soul()\nSoul of Fixation";comment = "";shape = circle;];
-    spark_e_fixation_t [label = "0xE\nFixation.grace()\nGrace of Fixation";comment = "";shape = circle;];
-    spark_f_fixation_t [label = "0xF\nFixation.exec()\nLaw of Fixation";comment = "";shape = circle;];
+    spark_0_fixation_t [label = "Fixation.meta()\nTha";comment = "";shape = doublecircle;];
+    spark_1_fixation_t [label = "Fixation.r1()\n";comment = "";shape = circle;];
+    spark_2_fixation_t [label = "Fixation.r2()\n";comment = "";shape = circle;];
+    spark_4_fixation_t [label = "Fixation.r4()\n";comment = "";shape = circle;];
+    spark_8_fixation_t [label = "Fixation.r8()\n";comment = "";shape = circle;];
+    spark_7_fixation_t [label = "Fixation.r7()\n";comment = "";shape = circle;];
+    spark_5_fixation_t [label = "Fixation.r5()\n";comment = "";shape = circle;];
+    spark_3_fixation_t [label = "Fixation.desire()\nCrest of Desire";comment = "";shape = circle;];
+    spark_6_fixation_t [label = "Fixation.transformation()\nCrest of Transformation";comment = "";shape = circle;];
+    spark_9_fixation_t [label = "Fixation.matter()\nCrest of Matter";comment = "";shape = circle;];
+    spark_a_fixation_t [label = "Fixation.raiment()\nRaiment of Fixation";comment = "";shape = triangle;];
+    spark_b_fixation_t [label = "Fixation.armament()\nArmament of Fixation";comment = "";shape = invtriangle;];
+    spark_c_fixation_t [label = "Fixation.body()\nBody of Fixation";comment = "";shape = circle;];
+    spark_d_fixation_t [label = "Fixation.soul()\nSoul of Fixation";comment = "";shape = circle;];
+    spark_e_fixation_t [label = "Fixation.grace()\nGrace of Fixation";comment = "";shape = circle;];
+    spark_f_fixation_t [label = "Fixation.exec()\nLaw of Fixation";comment = "";shape = circle;];
     
     // IN = Input
     // OUT = Output
@@ -34,7 +34,7 @@ strict digraph FixationEngine {
     spark_0_fixation_t -> {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
     spark_0_fixation_t -> {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_t spark_b_t} -> spark_c_fixation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_a_fixation_t spark_b_fixation_t} -> spark_c_fixation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
     {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} -> spark_d_fixation_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} -> spark_e_fixation_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     

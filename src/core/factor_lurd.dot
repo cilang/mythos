@@ -16,15 +16,15 @@ strict digraph LURDModel {
     spark_8_lurd_seed_t [label = "LURD.r8()\nPlanar";comment = "";shape = circle;];
     spark_7_lurd_seed_t [label = "LURD.r7()\nCradle";comment = "";shape = circle;];
     spark_5_lurd_seed_t [label = "LURD.r5()\nMythogenic";comment = "";shape = circle;];
-    spark_3_lurd_seed_t [label = "LURD.r3(Asumsi)";comment = "";shape = doublecircle;];
-    spark_6_lurd_seed_t [label = "LURD.r6(Sugesti)";comment = "";shape = doublecircle;];
-    spark_9_lurd_seed_t [label = "LURD.r9(Persepsi)";comment = "";shape = doublecircle;];
-    spark_a_lurd_seed_t [label = "LURD.receive(Sangkan)";comment = "";shape = invtriangle;];
-    spark_b_lurd_seed_t [label = "LURD.send(Paran)";comment = "";shape = triangle;];
-    spark_c_lurd_seed_t [label = "LURD.dispatch(Why|Who)";comment = "";shape = doublecircle;];
+    spark_3_lurd_seed_t [label = "LURD.r3()\n";comment = "";shape = doublecircle;];
+    spark_6_lurd_seed_t [label = "LURD.r6()\n";comment = "";shape = doublecircle;];
+    spark_9_lurd_seed_t [label = "LURD.r9()\n";comment = "";shape = doublecircle;];
+    spark_a_lurd_seed_t [label = "LURD.receive()\n";comment = "";shape = invtriangle;];
+    spark_b_lurd_seed_t [label = "LURD.send()\n";comment = "";shape = triangle;];
+    spark_c_lurd_seed_t [label = "LURD.dispatch()\n";comment = "";shape = doublecircle;];
     spark_d_lurd_seed_t [label = "LURD.commit()\nDigital";comment = "";shape = doublecircle;];
-    spark_e_lurd_seed_t [label = "LURD.serve(When|When)";comment = "";shape = doublecircle;];
-    spark_f_lurd_seed_t [label = "LURD.exec(Which|Closure)";comment = "";shape = doublecircle;];
+    spark_e_lurd_seed_t [label = "LURD.serve()\n";comment = "";shape = doublecircle;];
+    spark_f_lurd_seed_t [label = "LURD.exec()\n";comment = "";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
