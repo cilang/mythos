@@ -26,15 +26,20 @@ strict digraph SpectralModel {
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_spectral_seed_t -> {spark_a_spectral_seed_t spark_b_spectral_seed_t spark_1_spectral_seed_t spark_2_spectral_seed_t spark_3_spectral_seed_t spark_4_spectral_seed_t spark_5_spectral_seed_t spark_6_spectral_seed_t spark_7_spectral_seed_t spark_8_spectral_seed_t spark_9_spectral_seed_t} [label = "IN"; color = yellow; comment = "";];
+    spark_0_spectral_seed_t -> spark_a_spectral_seed_t [label = "IN"; color = darkred; comment = "";];
+    spark_0_spectral_seed_t -> spark_b_spectral_seed_t [label = "OUT"; color = darkred; comment = "";];
+    spark_0_spectral_seed_t -> {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_0_spectral_seed_t -> {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
     
-    {spark_a_spectral_seed_t spark_b_spectral_seed_t} -> spark_c_spectral_seed_t [label = "REC"; color = darkred; comment = "";];
-    {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} -> spark_d_spectral_seed_t [label = "REC"; color = darkgreen; comment = "";];
-    {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} -> spark_e_spectral_seed_t [label = "REC"; color = darkblue; comment = "";];
+    {spark_a_spectral_seed_t spark_b_spectral_seed_t} -> spark_c_spectral_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+    {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} -> spark_d_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} -> spark_e_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
     
-    spark_1_spectral_seed_t -> spark_2_spectral_seed_t -> spark_4_spectral_seed_t -> spark_8_spectral_seed_t -> spark_7_spectral_seed_t -> spark_5_spectral_seed_t -> spark_1_spectral_seed_t [label = "REC"; color = darkcyan; comment = ""; style = dotted; constraint = false;];
-    spark_3_spectral_seed_t -> spark_6_spectral_seed_t -> spark_9_spectral_seed_t -> spark_3_spectral_seed_t [label = "REC"; color = darkmagenta; comment = ""; style = dotted; constraint = false;];
-    spark_a_spectral_seed_t -> spark_b_spectral_seed_t -> spark_a_spectral_seed_t [label = "REC"; color = gold; comment = ""; style = dotted; constraint = false;];
+    spark_1_spectral_seed_t -> spark_2_spectral_seed_t -> spark_4_spectral_seed_t -> spark_8_spectral_seed_t -> spark_7_spectral_seed_t -> spark_5_spectral_seed_t -> spark_1_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_3_spectral_seed_t -> spark_6_spectral_seed_t -> spark_9_spectral_seed_t -> spark_3_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+    spark_a_spectral_seed_t -> spark_b_spectral_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
     
-    {spark_c_spectral_seed_t spark_d_spectral_seed_t spark_e_spectral_seed_t} -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+    spark_d_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+    spark_e_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
 }

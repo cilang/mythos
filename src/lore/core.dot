@@ -1,0 +1,1140 @@
+digraph Core {
+    label = "MythOS";
+    style = filled;
+    node [shape = circle; style = filled; color = green;];
+
+    subgraph cluster_0_InformationFactor {
+        label = "Information Factor";
+
+        subgraph cluster_0_0_ObserverModel {
+            label = "Observer Model\n(/proc/reality/factor/observer-model)";
+
+            spark_0_observer_seed_t [label = "Observer.meta(ObserverModel)";shape = doublecircle;comment = "";];
+            spark_1_observer_seed_t [label = "Observer.r1(Resource)";shape = circle;comment = "";];
+            spark_2_observer_seed_t [label = "Observer.r2(Authority)";shape = circle;comment = "";];
+            spark_4_observer_seed_t [label = "Observer.r4(Relation)";shape = circle;comment = "";];
+            spark_8_observer_seed_t [label = "Observer.r8(Axiom)";shape = circle;comment = "";];
+            spark_7_observer_seed_t [label = "Observer.r7(Knowledge)";shape = circle;comment = "";];
+            spark_5_observer_seed_t [label = "Observer.r5(Lineage)";shape = circle;comment = "";];
+            spark_3_observer_seed_t [label = "Observer.r3(Assumption)";shape = circle;comment = "";];
+            spark_6_observer_seed_t [label = "Observer.r6(Suggestion)";shape = circle;comment = "";];
+            spark_9_observer_seed_t [label = "Observer.r9(Perception)";shape = circle;comment = "";];
+            spark_a_observer_seed_t [label = "Observer.receive(Sangkan)";shape = triangle;comment = "";];
+            spark_b_observer_seed_t [label = "Observer.send(Paran)";shape = invtriangle;comment = "";];
+            spark_c_observer_seed_t [label = "Observer.dispatch(Why|Who)";shape = doublecircle;comment = "";];
+            spark_d_observer_seed_t [label = "Observer.commit(What|How)";shape = doublecircle;comment = "";];
+            spark_e_observer_seed_t [label = "Observer.serve(When|Where)";shape = doublecircle;comment = "";];
+            spark_f_observer_seed_t [label = "Observer.exec(Which|Closure)";shape = doublecircle;comment = "";];
+
+            spark_0_observer_seed_t -> spark_a_observer_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_observer_seed_t -> spark_b_observer_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_observer_seed_t -> {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_observer_seed_t -> {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_observer_seed_t spark_b_observer_seed_t} -> spark_c_observer_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} -> spark_d_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} -> spark_e_observer_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_observer_seed_t -> spark_2_observer_seed_t -> spark_4_observer_seed_t -> spark_8_observer_seed_t -> spark_7_observer_seed_t -> spark_5_observer_seed_t -> spark_1_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_observer_seed_t -> spark_6_observer_seed_t -> spark_9_observer_seed_t -> spark_3_observer_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_observer_seed_t -> spark_b_observer_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_1_AlignmentModel {
+            label = "Alignment Model\n(/proc/reality/factor/alignment-model)";
+
+            spark_0_alignment_seed_t [label = "Alignment.meta(AlignmentModel)";shape = doublecircle;comment = "Raw potential (unformatted).";];
+            spark_1_alignment_seed_t [label = "Alignment.r1(Causality)";shape = circle;comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
+            spark_2_alignment_seed_t [label = "Alignment.r2(Topology)";shape = circle;comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
+            spark_4_alignment_seed_t [label = "Alignment.r4(Dimensionality)";shape = circle;comment = "Number of compact/unfolded dimensions. M-theory (Calabi-Yau)";];
+            spark_8_alignment_seed_t [label = "Alignment.r8(Void)";shape = circle;comment = "Null state (deletion/entropy sink). Information Theory (Landauer)	";];
+            spark_7_alignment_seed_t [label = "Alignment.r7(Phase)";shape = circle;comment = "Particle/Wave toggle (quantum superposition). QFT (Feynman paths)";];
+            spark_5_alignment_seed_t [label = "Alignment.r5(Logic)";shape = circle;comment = "Boolean gates (AND/OR/NOT). Digital Physics (Fredkin)";];
+            spark_3_alignment_seed_t [label = "Alignment.r3(Charge)";shape = circle;comment = "Trinity (+, -, neutral). Fundamental polarity.";];
+            spark_6_alignment_seed_t [label = "Alignment.r6(Parity)";shape = circle;comment = "Mirroring/negation (e.g., ¬x). Chiral symmetry breaking.";];
+            spark_9_alignment_seed_t [label = "Alignment.r9(Time)";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
+            spark_a_alignment_seed_t [label = "Alignment.receive(Unity)";shape = triangle;comment = "Cosmic bus (information routing).";];
+            spark_b_alignment_seed_t [label = "Alignment.send(Diversity)";shape = invtriangle;comment = "Cosmic bus (information routing).";];
+            spark_c_alignment_seed_t [label = "Alignment.dispatch()";shape = doublecircle;comment = "";];
+            spark_d_alignment_seed_t [label = "Alignment.commit()";shape = doublecircle;comment = "";];
+            spark_e_alignment_seed_t [label = "Alignment.serve()";shape = doublecircle;comment = "";];
+            spark_f_alignment_seed_t [label = "Alignment.exec()";shape = doublecircle;comment = "";];
+
+            spark_0_alignment_seed_t -> spark_a_alignment_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_alignment_seed_t -> spark_b_alignment_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_alignment_seed_t -> {spark_3_alignment_seed_t spark_6_alignment_seed_t spark_9_alignment_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_alignment_seed_t -> {spark_1_alignment_seed_t spark_2_alignment_seed_t spark_4_alignment_seed_t spark_8_alignment_seed_t spark_7_alignment_seed_t spark_5_alignment_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_alignment_seed_t spark_b_alignment_seed_t} -> spark_c_alignment_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_alignment_seed_t spark_2_alignment_seed_t spark_4_alignment_seed_t spark_8_alignment_seed_t spark_7_alignment_seed_t spark_5_alignment_seed_t} -> spark_d_alignment_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_alignment_seed_t spark_6_alignment_seed_t spark_9_alignment_seed_t} -> spark_e_alignment_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_alignment_seed_t -> spark_2_alignment_seed_t -> spark_4_alignment_seed_t -> spark_8_alignment_seed_t -> spark_7_alignment_seed_t -> spark_5_alignment_seed_t -> spark_1_alignment_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_alignment_seed_t -> spark_6_alignment_seed_t -> spark_9_alignment_seed_t -> spark_3_alignment_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_alignment_seed_t -> spark_b_alignment_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_alignment_seed_t -> spark_f_alignment_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_alignment_seed_t -> spark_f_alignment_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_alignment_seed_t -> spark_f_alignment_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_2_SpectralModel {
+            label = "Spectral Model\n(/proc/reality/factor/spectral-model)";
+
+            spark_0_spectral_seed_t [label = "Spectral.meta(SpectralModel)";shape = doublecircle;comment = "";];
+            spark_1_spectral_seed_t [label = "Spectral.r1(Mass)";shape = circle;comment = "";];
+            spark_2_spectral_seed_t [label = "Spectral.r2(Gravity)";shape = circle;comment = "";];
+            spark_4_spectral_seed_t [label = "Spectral.r4(Energy)";shape = circle;comment = "";];
+            spark_8_spectral_seed_t [label = "Spectral.r8(Flux)";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
+            spark_7_spectral_seed_t [label = "Spectral.r7(AngularMomentum)";shape = circle;comment = "";];
+            spark_5_spectral_seed_t [label = "Spectral.r5(SpeedOfCausality)";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
+            spark_3_spectral_seed_t [label = "Spectral.r3(Inertia)";shape = circle;comment = "";];
+            spark_6_spectral_seed_t [label = "Spectral.r6(Momentum)";shape = circle;comment = "";];
+            spark_9_spectral_seed_t [label = "Spectral.r9(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
+            spark_a_spectral_seed_t [label = "Spectral.receive(Rhythm)";shape = triangle;comment = "";];
+            spark_b_spectral_seed_t [label = "Spectral.send(Pattern)";shape = invtriangle;comment = "";];
+            spark_c_spectral_seed_t [label = "Spectral.dispatch()";comment = "";];
+            spark_d_spectral_seed_t [label = "Spectral.commit()";comment = "";];
+            spark_e_spectral_seed_t [label = "Spectral.serve()";comment = "";];
+            spark_f_spectral_seed_t [label = "Spectral.exec()";comment = "";];
+
+            spark_0_spectral_seed_t -> spark_a_spectral_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_spectral_seed_t -> spark_b_spectral_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_spectral_seed_t -> {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_spectral_seed_t -> {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_spectral_seed_t spark_b_spectral_seed_t} -> spark_c_spectral_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} -> spark_d_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} -> spark_e_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_spectral_seed_t -> spark_2_spectral_seed_t -> spark_4_spectral_seed_t -> spark_8_spectral_seed_t -> spark_7_spectral_seed_t -> spark_5_spectral_seed_t -> spark_1_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_spectral_seed_t -> spark_6_spectral_seed_t -> spark_9_spectral_seed_t -> spark_3_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_spectral_seed_t -> spark_b_spectral_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_3_StructureModel {
+            label = "Structure Model\n(/proc/reality/factor/structure)";
+
+            spark_0_structure_seed_t [label = "Structure.meta(StructureModel)";shape = doublecircle;comment = "";];
+            spark_1_structure_seed_t [label = "Structure.r1(HeartInterface)";shape = circle;comment = "";];
+            spark_2_structure_seed_t [label = "Structure.r2(ShellInterface)";shape = circle;comment = "";];
+            spark_4_structure_seed_t [label = "Structure.r4(AstralInterface)";shape = circle;comment = "";];
+            spark_8_structure_seed_t [label = "Structure.r8(SpiritualInterface)";shape = circle;comment = "";];
+            spark_7_structure_seed_t [label = "Structure.r7(MaterialInterface)";shape = circle;comment = "";];
+            spark_5_structure_seed_t [label = "Structure.r5(CelestialInterface)";shape = circle;comment = "";];
+            spark_3_structure_seed_t [label = "Structure.r3(ObserverInterface)";shape = doublecircle;comment = "";];
+            spark_6_structure_seed_t [label = "Structure.r6(SpectralInterface)";shape = doublecircle;comment = "";];
+            spark_9_structure_seed_t [label = "Structure.r9(AlignmentInterface)";shape = doublecircle;comment = "";];
+            spark_a_structure_seed_t [label = "Structure.receive(ReceiveInterface)";shape = invtriangle;comment = "";];
+            spark_b_structure_seed_t [label = "Structure.send(SendInterface)";shape = triangle;comment = "";];
+            spark_c_structure_seed_t [label = "Structure.dispatch(DispatchInterface)";shape = doublecircle;comment = "";];
+            spark_d_structure_seed_t [label = "Structure.commit(CorpusInterface)";shape = doublecircle;comment = "";];
+            spark_e_structure_seed_t [label = "Structure.serve(ServiceInterface)";shape = doublecircle;comment = "";];
+            spark_f_structure_seed_t [label = "Structure.exec(CommandInterface)";shape = doublecircle;comment = "";];
+
+            spark_0_structure_seed_t -> spark_a_structure_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_structure_seed_t -> spark_b_structure_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_structure_seed_t -> {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_structure_seed_t -> {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_structure_seed_t spark_b_structure_seed_t} -> spark_c_structure_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} -> spark_d_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} -> spark_e_structure_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_structure_seed_t -> spark_2_structure_seed_t -> spark_4_structure_seed_t -> spark_8_structure_seed_t -> spark_7_structure_seed_t -> spark_5_structure_seed_t -> spark_1_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_structure_seed_t -> spark_6_structure_seed_t -> spark_9_structure_seed_t -> spark_3_structure_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_structure_seed_t -> spark_b_structure_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_4_ColorModel {
+            label = "Color Model\n(/proc/reality/factor/color)";
+
+            spark_0_color_seed_t [label = "Color.meta(ColorModel)";comment = "";shape = doublecircle;];
+            spark_1_color_seed_t [label = "Color.r1(Red)";comment = "";shape = circle;];
+            spark_2_color_seed_t [label = "Color.r2(Blue)";comment = "";shape = circle;];
+            spark_4_color_seed_t [label = "Color.r4(Green)";comment = "";shape = circle;];
+            spark_8_color_seed_t [label = "Color.r8(Cyan)";comment = "";shape = circle;];
+            spark_7_color_seed_t [label = "Color.r7(Magenta)";comment = "";shape = circle;];
+            spark_5_color_seed_t [label = "Color.r5(Yellow)";comment = "";shape = circle;];
+            spark_3_color_seed_t [label = "Color.r3(Black)";comment = "";shape = doublecircle;];
+            spark_6_color_seed_t [label = "Color.r6(White)";comment = "";shape = doublecircle;];
+            spark_9_color_seed_t [label = "Color.r9(Gray)";comment = "";shape = doublecircle;];
+            spark_a_color_seed_t [label = "Color.receive(Gold)";comment = "";shape = invtriangle;];
+            spark_b_color_seed_t [label = "Color.send(Silver)";comment = "";shape = triangle;];
+            spark_c_color_seed_t [label = "Color.dispatch(Obsidian-Black)";comment = "";shape = doublecircle;];
+            spark_d_color_seed_t [label = "Color.commit(Milky-White)";comment = "";shape = doublecircle;];
+            spark_e_color_seed_t [label = "Color.serve(Amethyst-Violet)";comment = "";shape = doublecircle;];
+            spark_f_color_seed_t [label = "Color.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_color_seed_t -> spark_a_color_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_color_seed_t -> spark_b_color_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_color_seed_t -> {spark_3_color_seed_t spark_6_color_seed_t spark_9_color_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_color_seed_t -> {spark_1_color_seed_t spark_2_color_seed_t spark_4_color_seed_t spark_8_color_seed_t spark_7_color_seed_t spark_5_color_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_color_seed_t spark_b_color_seed_t} -> spark_c_color_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_color_seed_t spark_2_color_seed_t spark_4_color_seed_t spark_8_color_seed_t spark_7_color_seed_t spark_5_color_seed_t} -> spark_d_color_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_color_seed_t spark_6_color_seed_t spark_9_color_seed_t} -> spark_e_color_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_color_seed_t -> spark_2_color_seed_t -> spark_4_color_seed_t -> spark_8_color_seed_t -> spark_7_color_seed_t -> spark_5_color_seed_t -> spark_1_color_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_color_seed_t -> spark_6_color_seed_t -> spark_9_color_seed_t -> spark_3_color_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_color_seed_t -> spark_b_color_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_color_seed_t -> spark_f_color_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_5_LineageModel {
+            label = "Lineage Model\n(/proc/reality/factor/lineage)";
+
+            spark_0_lineage_seed_t [label = "Lineage.meta(LineageModel)\n";comment = "";shape = doublecircle;];
+            spark_1_lineage_seed_t [label = "Lineage.r1(InsectLineage)\nPeople of Truth";comment = "";shape = circle;];
+            spark_2_lineage_seed_t [label = "Lineage.r2(NawangLineage)\nPeople of Convergence";comment = "";shape = circle;];
+            spark_4_lineage_seed_t [label = "Lineage.r4(ChimeraLineage)\nPeople of Fixation";comment = "";shape = circle;];
+            spark_8_lineage_seed_t [label = "Lineage.r8(WormLineage)\nPeople of Wisdom";comment = "";shape = circle;];
+            spark_7_lineage_seed_t [label = "Lineage.r7(PawangLineage)\nPeople of Divergence";comment = "";shape = circle;];
+            spark_5_lineage_seed_t [label = "Lineage.r5(SerpentineLineage)\nPeople of Excitation";comment = "";shape = circle;];
+            spark_3_lineage_seed_t [label = "Lineage.r3(ArachnidLineage)\nPeople of Asha";comment = "";shape = doublecircle;];
+            spark_6_lineage_seed_t [label = "Lineage.r6(AvesixLineage)\nPeople of Vikara";comment = "";shape = doublecircle;];
+            spark_9_lineage_seed_t [label = "Lineage.r9(DraconisLineage)\nPeople of Karsa";comment = "";shape = doublecircle;];
+            spark_a_lineage_seed_t [label = "Lineage.receive(MineralLineage)\nPeople of Essence";comment = "";shape = invtriangle;];
+            spark_b_lineage_seed_t [label = "Lineage.send(PlantLineage)\nPeople of Presence";comment = "";shape = triangle;];
+            spark_c_lineage_seed_t [label = "Lineage.dispatch(VulpineLineage)\nPeople of Desire";comment = "";shape = doublecircle;];
+            spark_d_lineage_seed_t [label = "Lineage.commit(FelixaLineage)\nPeople of Rasa";comment = "";shape = doublecircle;];
+            spark_e_lineage_seed_t [label = "Lineage.serve(CanineLineage)\nPeople of Emotion";comment = "";shape = doublecircle;];
+            spark_f_lineage_seed_t [label = "Lineage.exec(WorldTreeLineage)\nPeople of Emergence";comment = "";shape = doublecircle;];
+
+            spark_0_lineage_seed_t -> spark_a_lineage_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_lineage_seed_t -> spark_b_lineage_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_lineage_seed_t -> {spark_3_lineage_seed_t spark_6_lineage_seed_t spark_9_lineage_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_lineage_seed_t -> {spark_1_lineage_seed_t spark_2_lineage_seed_t spark_4_lineage_seed_t spark_8_lineage_seed_t spark_7_lineage_seed_t spark_5_lineage_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_lineage_seed_t spark_b_lineage_seed_t} -> spark_c_lineage_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_lineage_seed_t spark_2_lineage_seed_t spark_4_lineage_seed_t spark_8_lineage_seed_t spark_7_lineage_seed_t spark_5_lineage_seed_t} -> spark_d_lineage_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_lineage_seed_t spark_6_lineage_seed_t spark_9_lineage_seed_t} -> spark_e_lineage_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_lineage_seed_t -> spark_2_lineage_seed_t -> spark_4_lineage_seed_t -> spark_8_lineage_seed_t -> spark_7_lineage_seed_t -> spark_5_lineage_seed_t -> spark_1_lineage_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_lineage_seed_t -> spark_6_lineage_seed_t -> spark_9_lineage_seed_t -> spark_3_lineage_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_lineage_seed_t -> spark_b_lineage_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_0_6_LURDModel {
+            label = "LURD Model\n(/proc/reality/factor/lurd)";
+
+            spark_0_lurd_seed_t [label = "LURD.meta(LURDModel)";comment = "";shape = doublecircle;];
+            spark_1_lurd_seed_t [label = "LURD.r1(BraneDescriptor)";comment = "";shape = circle;];
+            spark_2_lurd_seed_t [label = "LURD.r2(CosmicDescriptor)";comment = "";shape = circle;];
+            spark_4_lurd_seed_t [label = "LURD.r4(StellarDescriptor)";comment = "";shape = circle;];
+            spark_8_lurd_seed_t [label = "LURD.r8(PlanarDescriptor)";comment = "";shape = circle;];
+            spark_7_lurd_seed_t [label = "LURD.r7(CradleDescriptor)";comment = "";shape = circle;];
+            spark_5_lurd_seed_t [label = "LURD.r5(MythogenicDescriptor)";comment = "";shape = circle;];
+            spark_3_lurd_seed_t [label = "LURD.r3(MaterialEssence)";comment = "";shape = doublecircle;];
+            spark_6_lurd_seed_t [label = "LURD.r6(SpiritualEssence)";comment = "";shape = doublecircle;];
+            spark_9_lurd_seed_t [label = "LURD.r9(InformationEssence)";comment = "";shape = doublecircle;];
+            spark_a_lurd_seed_t [label = "LURD.receive(DirectiveDescriptor)";comment = "";shape = invtriangle;];
+            spark_b_lurd_seed_t [label = "LURD.send(OriginDescriptor)";comment = "";shape = triangle;];
+            spark_c_lurd_seed_t [label = "LURD.dispatch(InterfaceDescriptor)";comment = "";shape = doublecircle;];
+            spark_d_lurd_seed_t [label = "LURD.commit(DigitalDescriptor)";comment = "";shape = doublecircle;];
+            spark_e_lurd_seed_t [label = "LURD.serve(ManifestDescriptor)";comment = "";shape = doublecircle;];
+            spark_f_lurd_seed_t [label = "LURD.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_lurd_seed_t -> spark_a_lurd_seed_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_lurd_seed_t -> spark_b_lurd_seed_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_lurd_seed_t -> {spark_3_lurd_seed_t spark_6_lurd_seed_t spark_9_lurd_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_lurd_seed_t -> {spark_1_lurd_seed_t spark_2_lurd_seed_t spark_4_lurd_seed_t spark_8_lurd_seed_t spark_7_lurd_seed_t spark_5_lurd_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_lurd_seed_t spark_b_lurd_seed_t} -> spark_c_lurd_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_lurd_seed_t spark_2_lurd_seed_t spark_4_lurd_seed_t spark_8_lurd_seed_t spark_7_lurd_seed_t spark_5_lurd_seed_t} -> spark_d_lurd_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_lurd_seed_t spark_6_lurd_seed_t spark_9_lurd_seed_t} -> spark_e_lurd_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_lurd_seed_t -> spark_2_lurd_seed_t -> spark_4_lurd_seed_t -> spark_8_lurd_seed_t -> spark_7_lurd_seed_t -> spark_5_lurd_seed_t -> spark_1_lurd_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_lurd_seed_t -> spark_6_lurd_seed_t -> spark_9_lurd_seed_t -> spark_3_lurd_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_lurd_seed_t -> spark_b_lurd_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_lurd_seed_t -> spark_f_lurd_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_lurd_seed_t -> spark_f_lurd_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_lurd_seed_t -> spark_f_lurd_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+    }
+
+    subgraph cluster_1_Engines {
+        subgraph cluster_1_0_TruthEngine {
+            label = "Truth Engine\n(/dev/truth)";
+
+            spark_0_truth_t [label = "Truth.meta(Truth)\nAsha";comment = "";shape = doublecircle;];
+            spark_1_truth_t [label = "Truth.r1()\n";comment = "";shape = circle;];
+            spark_2_truth_t [label = "Truth.r2()\n";comment = "";shape = circle;];
+            spark_4_truth_t [label = "Truth.r4()\n";comment = "";shape = circle;];
+            spark_8_truth_t [label = "Truth.r8()\n";comment = "";shape = circle;];
+            spark_7_truth_t [label = "Truth.r7()\n";comment = "";shape = circle;];
+            spark_5_truth_t [label = "Truth.r5()\n";comment = "";shape = circle;];
+            spark_3_truth_t [label = "Truth.r3(CrestOfObjectivity)";comment = "";shape = circle;];
+            spark_6_truth_t [label = "Truth.r6(CrestOfBoundary)";comment = "";shape = circle;];
+            spark_9_truth_t [label = "Truth.r9(CrestOfClarity)";comment = "";shape = circle;];
+            spark_a_truth_t [label = "Truth.receive(RaimentOfTruth)";comment = "";shape = triangle;];
+            spark_b_truth_t [label = "Truth.send(ArmamentOfTruth)";comment = "";shape = invtriangle;];
+            spark_c_truth_t [label = "Truth.dispatch(BodyOfTruth)";comment = "";shape = circle;];
+            spark_d_truth_t [label = "Truth.commit(SoulOfTruth)";comment = "";shape = circle;];
+            spark_e_truth_t [label = "Truth.serve(GraceOf)";comment = "";shape = circle;];
+            spark_f_truth_t [label = "Truth.exec(LawOfTruth)";comment = "";shape = circle;];
+
+            spark_1_mythos_t -> spark_0_truth_t;
+            spark_0_truth_t -> spark_a_truth_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_truth_t -> spark_b_truth_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_truth_t -> {spark_3_truth_t spark_6_truth_t spark_9_truth_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_truth_t -> {spark_1_truth_t spark_2_truth_t spark_4_truth_t spark_8_truth_t spark_7_truth_t spark_5_truth_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_truth_t spark_b_truth_t} -> spark_c_truth_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_truth_t spark_2_truth_t spark_4_truth_t spark_8_truth_t spark_7_truth_t spark_5_truth_t} -> spark_d_truth_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_truth_t spark_6_truth_t spark_9_truth_t} -> spark_e_truth_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_truth_t -> spark_2_truth_t -> spark_4_truth_t -> spark_8_truth_t -> spark_7_truth_t -> spark_5_truth_t -> spark_1_truth_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_truth_t -> spark_6_truth_t -> spark_9_truth_t -> spark_3_truth_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_truth_t -> spark_b_truth_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_truth_t -> spark_f_truth_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_truth_t -> spark_f_truth_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_truth_t -> spark_f_truth_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_1_WisdomEngine {
+            label = "Wisdom Engine\n(/dev/wisdom)";
+
+            spark_0_wisdom_t [label = "Wisdom.meta(Wisdom)\nVidya";comment = "";shape = doublecircle;];
+            spark_1_wisdom_t [label = "Wisdom.r1()\n";comment = "";shape = circle;];
+            spark_2_wisdom_t [label = "Wisdom.r2()\n";comment = "";shape = circle;];
+            spark_4_wisdom_t [label = "Wisdom.r4()\n";comment = "";shape = circle;];
+            spark_8_wisdom_t [label = "Wisdom.r8()\n";comment = "";shape = circle;];
+            spark_7_wisdom_t [label = "Wisdom.r7()\n";comment = "";shape = circle;];
+            spark_5_wisdom_t [label = "Wisdom.r5()\n";comment = "";shape = circle;];
+            spark_3_wisdom_t [label = "Wisdom.r3(CrestOfComplexity)";comment = "";shape = circle;];
+            spark_6_wisdom_t [label = "Wisdom.r6(CrestOfReflection)";comment = "";shape = circle;];
+            spark_9_wisdom_t [label = "Wisdom.r9(CrestOfInsight)";comment = "";shape = circle;];
+            spark_a_wisdom_t [label = "Wisdom.receive(RaimentOfWisdom)";comment = "";shape = triangle;];
+            spark_b_wisdom_t [label = "Wisdom.send(ArmamentOfWisdom)";comment = "";shape = invtriangle;];
+            spark_c_wisdom_t [label = "Wisdom.dispatch(BodyOfWisdom)";comment = "";shape = circle;];
+            spark_d_wisdom_t [label = "Wisdom.commit(SoulOfWisdom)";comment = "";shape = circle;];
+            spark_e_wisdom_t [label = "Wisdom.serve(GraceOfWisdom)";comment = "";shape = circle;];
+            spark_f_wisdom_t [label = "Wisdom.exec(LawOfWisdom)";comment = "";shape = circle;];
+
+            spark_8_mythos_t -> spark_0_wisdom_t;
+            spark_0_wisdom_t -> spark_a_wisdom_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_wisdom_t -> spark_b_wisdom_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_wisdom_t -> {spark_3_wisdom_t spark_6_wisdom_t spark_9_wisdom_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_wisdom_t -> {spark_1_wisdom_t spark_2_wisdom_t spark_4_wisdom_t spark_8_wisdom_t spark_7_wisdom_t spark_5_wisdom_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_wisdom_t spark_b_wisdom_t} -> spark_c_wisdom_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_wisdom_t spark_2_wisdom_t spark_4_wisdom_t spark_8_wisdom_t spark_7_wisdom_t spark_5_wisdom_t} -> spark_d_wisdom_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_wisdom_t spark_6_wisdom_t spark_9_wisdom_t} -> spark_e_wisdom_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_wisdom_t -> spark_2_wisdom_t -> spark_4_wisdom_t -> spark_8_wisdom_t -> spark_7_wisdom_t -> spark_5_wisdom_t -> spark_1_wisdom_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_wisdom_t -> spark_6_wisdom_t -> spark_9_wisdom_t -> spark_3_wisdom_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_wisdom_t -> spark_b_wisdom_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_wisdom_t -> spark_f_wisdom_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_wisdom_t -> spark_f_wisdom_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_wisdom_t -> spark_f_wisdom_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_2_ConvergenceEngine {
+            label = "Convergence Engine\n(/dev/convergence)";
+
+            spark_0_convergence_t [label = "Convergence.meta(Convergence)\nKirana Larasati";shape = doublecircle;];
+            spark_1_convergence_t [label = "Convergence.r1()\n";comment = "";shape = circle;];
+            spark_2_convergence_t [label = "Convergence.r2()\n";comment = "";shape = circle;];
+            spark_4_convergence_t [label = "Convergence.r4()\n";comment = "";shape = circle;];
+            spark_8_convergence_t [label = "Convergence.r8()\n";comment = "";shape = circle;];
+            spark_7_convergence_t [label = "Convergence.r7()\n";comment = "";shape = circle;];
+            spark_5_convergence_t [label = "Convergence.r5()\n";comment = "";shape = circle;];
+            spark_3_convergence_t [label = "Convergence.r3(Order)\nCrest of Order";comment = "";shape = circle;];
+            spark_6_convergence_t [label = "Convergence.r6(Creation)\nCrest of Creation";comment = "";shape = circle;];
+            spark_9_convergence_t [label = "Convergence.r9(Unity)\nCrest of Unity";comment = "";shape = circle;];
+            spark_a_convergence_t [label = "Convergence.receive(RaimentOfConvergence)\nRaiment of Convergence";comment = "";shape = triangle;];
+            spark_b_convergence_t [label = "Convergence.send(ArmamentOfConvergence)\nArmament of Convergence";comment = "";shape = invtriangle;];
+            spark_c_convergence_t [label = "Convergence.dispatch(BodyOfConvergence)\nNine Tailed Aves of Vikara";comment = "";shape = circle;];
+            spark_d_convergence_t [label = "Convergence.commit(SoulOfConvergence)\nSoul of Convergence";comment = "";shape = circle;];
+            spark_e_convergence_t [label = "Convergence.serve(GraceOfConvergence)\nGrace of Convergence";comment = "";shape = circle;];
+            spark_f_convergence_t [label = "Convergence.exec(LawOfConvergence)\nLaw of Convergence";comment = "";shape = circle;];
+
+            spark_2_mythos_t -> spark_0_convergence_t;
+            spark_0_convergence_t -> spark_a_convergence_t [label = "IN"; color = darkred;];
+            spark_0_convergence_t -> spark_b_convergence_t [label = "OUT"; color = darkred;];
+            spark_0_convergence_t -> {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_convergence_t -> {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_convergence_t -> spark_b_convergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_3_DivergenceEngine {
+            label = "Divergence Engine\n(/dev/divergence)";
+
+            spark_0_divergence_t [label = "Divergence.meta(Divergence)\nChandra Sasmita";comment = "";shape = doublecircle;];
+            spark_1_divergence_t [label = "Divergence.r1(ManasOfEternity)\nManas of Eternity";comment = "";shape = circle;];
+            spark_2_divergence_t [label = "Divergence.r2(Infinity)\nManas of Infinity";comment = "";shape = circle;];
+            spark_4_divergence_t [label = "Divergence.r4(Causality)\nManas of Causality";comment = "";shape = circle;];
+            spark_8_divergence_t [label = "Divergence.r8(Probability)\nManas of Probability";comment = "";shape = circle;];
+            spark_7_divergence_t [label = "Divergence.r7(Spacetime)\nManas of Spacetime";comment = "";shape = circle;];
+            spark_5_divergence_t [label = "Divergence.r5(Nature)\nManas of Nature";comment = "";shape = circle;];
+            spark_3_divergence_t [label = "Divergence.r3(Chaos)\nCrest of Chaos";comment = "";shape = circle;];
+            spark_6_divergence_t [label = "Divergence.r6(Destruction)\nCrest of Destruction";comment = "";shape = circle;];
+            spark_9_divergence_t [label = "Divergence.r9(Diversity)\nCrest of Diversity";comment = "";shape = circle;];
+            spark_a_divergence_t [label = "Divergence.receive(RaimentOfDivergence)\nIndigo Vastra";comment = "";shape = triangle;];
+            spark_b_divergence_t [label = "Divergence.send(ArmamentOfDivergence)\nObsidian Night";comment = "";shape = invtriangle;];
+            spark_c_divergence_t [label = "Divergence.dispatch(BodyOfDivergence)\nNine Headed Serpent of Vikara";comment = "";shape = circle;];
+            spark_d_divergence_t [label = "Divergence.commit(SoulOfDivergence)";comment = "";shape = circle;];
+            spark_e_divergence_t [label = "Divergence.serve(GraceOfDivergence)";comment = "";shape = circle;];
+            spark_f_divergence_t [label = "Divergence.exec(LawOfDivergence)";comment = "";shape = circle;];
+
+            spark_7_mythos_t -> spark_0_divergence_t;
+            spark_0_divergence_t -> spark_a_divergence_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_divergence_t -> spark_b_divergence_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_divergence_t -> {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_divergence_t -> {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_divergence_t spark_b_divergence_t} -> spark_c_divergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} -> spark_d_divergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} -> spark_e_divergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_divergence_t -> spark_2_divergence_t -> spark_4_divergence_t -> spark_8_divergence_t -> spark_7_divergence_t -> spark_5_divergence_t -> spark_1_divergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_divergence_t -> spark_6_divergence_t -> spark_9_divergence_t -> spark_3_divergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_divergence_t -> spark_b_divergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_4_FixationEngine {
+            label = "Fixation Engine\n(/dev/fixation)";
+
+            spark_0_fixation_t [label = "Fixation.meta(Fixation)\nTha";comment = "";shape = doublecircle;];
+            spark_1_fixation_t [label = "Fixation.r1()\n";comment = "";shape = circle;];
+            spark_2_fixation_t [label = "Fixation.r2()\n";comment = "";shape = circle;];
+            spark_4_fixation_t [label = "Fixation.r4()\n";comment = "";shape = circle;];
+            spark_8_fixation_t [label = "Fixation.r8()\n";comment = "";shape = circle;];
+            spark_7_fixation_t [label = "Fixation.r7()\n";comment = "";shape = circle;];
+            spark_5_fixation_t [label = "Fixation.r5()\n";comment = "";shape = circle;];
+            spark_3_fixation_t [label = "Fixation.r3(CrestOfDesire)";comment = "";shape = circle;];
+            spark_6_fixation_t [label = "Fixation.r6(CrestOfTransformation)";comment = "";shape = circle;];
+            spark_9_fixation_t [label = "Fixation.r9(CrestOfMatter)";comment = "";shape = circle;];
+            spark_a_fixation_t [label = "Fixation.receive(RaimentOfFixation)";comment = "";shape = triangle;];
+            spark_b_fixation_t [label = "Fixation.send(ArmamentOfFixation)";comment = "";shape = invtriangle;];
+            spark_c_fixation_t [label = "Fixation.dispatch(BodyOfFixation)";comment = "";shape = circle;];
+            spark_d_fixation_t [label = "Fixation.commit(SoulOfFixation)";comment = "";shape = circle;];
+            spark_e_fixation_t [label = "Fixation.serve(GraceOfFixation)";comment = "";shape = circle;];
+            spark_f_fixation_t [label = "Fixation.exec(LawOfFixation)";comment = "";shape = circle;];
+
+            spark_4_mythos_t -> spark_0_fixation_t;
+            spark_0_fixation_t -> spark_a_fixation_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_fixation_t -> spark_b_fixation_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_fixation_t -> {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_fixation_t -> {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_fixation_t spark_b_fixation_t} -> spark_c_fixation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} -> spark_d_fixation_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} -> spark_e_fixation_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_fixation_t -> spark_2_fixation_t -> spark_4_fixation_t -> spark_8_fixation_t -> spark_7_fixation_t -> spark_5_fixation_t -> spark_1_fixation_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_fixation_t -> spark_6_fixation_t -> spark_9_fixation_t -> spark_3_fixation_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_fixation_t -> spark_b_fixation_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_fixation_t -> spark_f_fixation_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_fixation_t -> spark_f_fixation_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_fixation_t -> spark_f_fixation_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_5_ExcitationEngine {
+            label = "Excitation Engine\n(/dev/excitation)";
+
+            spark_0_excitation_t [label = "Excitation.meta(Excitation)\nNda";comment = "";shape = doublecircle;];
+            spark_1_excitation_t [label = "Excitation.r1()\n";comment = "";shape = circle;];
+            spark_2_excitation_t [label = "Excitation.r2()\n";comment = "";shape = circle;];
+            spark_4_excitation_t [label = "Excitation.r4()\n";comment = "";shape = circle;];
+            spark_8_excitation_t [label = "Excitation.r8()\n";comment = "";shape = circle;];
+            spark_7_excitation_t [label = "Excitation.r7()\n";comment = "";shape = circle;];
+            spark_5_excitation_t [label = "Excitation.r5()\n";comment = "";shape = circle;];
+            spark_3_excitation_t [label = "Excitation.r3(CrestOfEmotion)";comment = "";shape = circle;];
+            spark_6_excitation_t [label = "Excitation.r6(CrestOfMemory)";comment = "";shape = circle;];
+            spark_9_excitation_t [label = "Excitation.r9(CrestOfEnergy)";comment = "";shape = circle;];
+            spark_a_excitation_t [label = "Excitation.receive(RaimentOfExcitation)";comment = "";shape = triangle;];
+            spark_b_excitation_t [label = "Excitation.send(ArmamentOfExcitation)";comment = "";shape = invtriangle;];
+            spark_c_excitation_t [label = "Excitation.dispatch(BodyOfExcitation)";comment = "";shape = circle;];
+            spark_d_excitation_t [label = "Excitation.commit(SoulOfExcitation)";comment = "";shape = circle;];
+            spark_e_excitation_t [label = "Excitation.serve(GraceOfExcitation)";comment = "";shape = circle;];
+            spark_f_excitation_t [label = "Excitation.exec(LawOfExcitation)";comment = "";shape = circle;];
+
+            spark_5_mythos_t -> spark_0_excitation_t;
+            spark_0_excitation_t -> spark_a_excitation_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_excitation_t -> spark_b_excitation_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_excitation_t -> {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_excitation_t -> {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_excitation_t spark_b_excitation_t} -> spark_c_excitation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} -> spark_d_excitation_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} -> spark_e_excitation_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_excitation_t -> spark_2_excitation_t -> spark_4_excitation_t -> spark_8_excitation_t -> spark_7_excitation_t -> spark_5_excitation_t -> spark_1_excitation_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_excitation_t -> spark_6_excitation_t -> spark_9_excitation_t -> spark_3_excitation_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_excitation_t -> spark_b_excitation_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_6_RealityEngine {
+            label = "Reality Engine\n(/proc/reality)";
+
+            spark_0_reality_t [label = "Reality.meta()";comment = "Init Engine";shape = doublecircle;];
+            spark_1_reality_t [label = "Reality.initFactor()";comment = "initFactor() factor_t";shape = circle;];
+            spark_2_reality_t [label = "Reality.feedFactor()";comment = "feedFactor() observer_model_t, alignment_model_t, and spectral_model_t";shape = circle;];
+            spark_4_reality_t [label = "Reality.validateFactor()";comment = "validateFactor() factor_t integrity before/after injection";shape = circle;];
+            spark_8_reality_t [label = "Reality.finalizeFactor()";comment = "finalizeFactor() factor_t into information_factor_t";shape = circle;];
+            spark_7_reality_t [label = "Reality.reloadFactor()";comment = "reloadFactor() in the case feedFactor() failed";shape = circle;];
+            spark_5_reality_t [label = "Reality.loadFactor()";comment = "loadFactor() mainly used by Reality.factor()";shape = circle;];
+            spark_3_reality_t [label = "Reality.avatar()";comment = "`/proc/avatar`";shape = doublecircle;];
+            spark_6_reality_t [label = "Reality.listen()";comment = "";shape = doublecircle;];
+            spark_9_reality_t [label = "Reality.wakeEngine()";comment = "";shape = doublecircle;];
+            spark_a_reality_t [label = "Reality.receive()";comment = "receive()";shape = invtriangle;];
+            spark_b_reality_t [label = "Reality.send()";comment = "send()";shape = triangle;];
+            spark_c_reality_t [label = "Reality.dispatch()";comment = "dispatch()";shape = doublecircle;];
+            spark_d_reality_t [label = "Reality.factor()";comment = "`/proc/factor` Inquiry system";shape = doublecircle;];
+            spark_e_reality_t [label = "Reality.serve()";comment = "`/proc/reality`";shape = doublecircle;];
+            spark_f_reality_t [label = "Reality.exec()";comment = "exec()";shape = doublecircle;];
+
+            spark_0_mythos_t -> spark_0_reality_t;
+
+            spark_0_reality_t -> spark_a_reality_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_reality_t -> spark_b_reality_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_reality_t -> {spark_3_reality_t spark_6_reality_t spark_9_reality_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_reality_t -> {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_reality_t spark_b_reality_t} -> spark_c_reality_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} -> spark_d_reality_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_reality_t spark_6_reality_t spark_9_reality_t} -> spark_e_reality_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_reality_t -> spark_2_reality_t -> spark_4_reality_t -> spark_8_reality_t -> spark_7_reality_t -> spark_5_reality_t -> spark_1_reality_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_reality_t -> spark_6_reality_t -> spark_9_reality_t -> spark_3_reality_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_reality_t -> spark_b_reality_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_reality_t -> spark_f_reality_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_reality_t -> spark_f_reality_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_reality_t -> spark_f_reality_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_7_EventEngine {
+            label = "Event Engine\n(/proc/event)";
+
+            spark_0_event_t [label = "Event.meta()";comment = "Engine Init";shape = doublecircle;];
+            spark_1_event_t [label = "Event.r1()";comment = "";shape = circle;];
+            spark_2_event_t [label = "Event.r2()";comment = "";shape = circle;];
+            spark_4_event_t [label = "Event.r4()";comment = "";shape = circle;];
+            spark_8_event_t [label = "Event.r8()";comment = "";shape = circle;];
+            spark_7_event_t [label = "Event.r7()";comment = "";shape = circle;];
+            spark_5_event_t [label = "Event.r5()";comment = "";shape = circle;];
+            spark_3_event_t [label = "Event.r3()";comment = "";shape = doublecircle;];
+            spark_6_event_t [label = "Event.r6()";comment = "";shape = doublecircle;];
+            spark_9_event_t [label = "Event.r9()";comment = "";shape = doublecircle;];
+            spark_a_event_t [label = "Event.receive()";comment = "";shape = triangle;];
+            spark_b_event_t [label = "Event.send()";comment = "";shape = invtriangle;];
+            spark_c_event_t [label = "Event.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_event_t [label = "Event.commit()";comment = "";shape = doublecircle;];
+            spark_e_event_t [label = "Event.serve()";comment = "`/proc/event`";shape = doublecircle;];
+            spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "`/proc/probability`";shape = doublecircle;];
+
+            spark_0_event_t -> spark_a_event_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_event_t -> spark_b_event_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_event_t -> {spark_3_event_t spark_6_event_t spark_9_event_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_event_t -> {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_event_t spark_b_event_t} -> spark_c_event_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} -> spark_d_event_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_event_t spark_6_event_t spark_9_event_t} -> spark_e_event_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_event_t -> spark_2_event_t -> spark_4_event_t -> spark_8_event_t -> spark_7_event_t -> spark_5_event_t -> spark_1_event_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_event_t -> spark_6_event_t -> spark_9_event_t -> spark_3_event_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_event_t -> spark_b_event_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_event_t -> spark_f_event_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_event_t -> spark_f_event_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_event_t -> spark_f_event_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+            spark_a_mythos_t -> spark_0_event_t;
+        }
+
+        subgraph cluster_1_8_SamsaraEngine {
+            label = "Samsara Engine\n(/proc/samsara)";
+
+            spark_0_samsara_t [label = "Samsara.meta()";comment = "Engine Init";shape = doublecircle;];
+            spark_1_samsara_t [label = "Samsara.r1()";comment = "initSoul() create new Soul";shape = circle;];
+            spark_2_samsara_t [label = "Samsara.r2()";comment = "validateSoul() validate Soul integrity";shape = circle;];
+            spark_4_samsara_t [label = "Samsara.r4()";comment = "normalizeSoul() normalize Soul";shape = circle;];
+            spark_8_samsara_t [label = "Samsara.r8()";comment = "resetSoul() reset Soul";shape = circle;];
+            spark_7_samsara_t [label = "Samsara.r7()";comment = "reincarnateSoul() reincarnate Soul";shape = circle;];
+            spark_5_samsara_t [label = "Samsara.r5()";comment = "refactorSoul() refactor Soul";shape = circle;];
+            spark_3_samsara_t [label = "Samsara.r3()";comment = "";shape = doublecircle;];
+            spark_6_samsara_t [label = "Samsara.r6()";comment = "";shape = doublecircle;];
+            spark_9_samsara_t [label = "Samsara.r9()";comment = "";shape = doublecircle;];
+            spark_a_samsara_t [label = "Samsara.receive()";comment = "";shape = invtriangle;];
+            spark_b_samsara_t [label = "Samsara.send()";comment = "";shape = doublecircle;shape = triangle;];
+            spark_c_samsara_t [label = "Samsara.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_samsara_t [label = "Samsara.commit()";comment = "`/proc/cycle`";shape = doublecircle;];
+            spark_e_samsara_t [label = "Samsara.serve()";comment = "`/proc/samsara`";shape = doublecircle;];
+            spark_f_samsara_t [label = "Samsara.exec(LawOfCausality)";comment = "`/proc/causality`";shape = doublecircle;];
+
+            spark_b_mythos_t -> spark_0_samsara_t;
+
+            spark_0_samsara_t -> spark_a_samsara_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_samsara_t -> spark_b_samsara_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_samsara_t -> {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_samsara_t -> {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_samsara_t spark_b_samsara_t} -> spark_c_samsara_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} -> spark_d_samsara_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} -> spark_e_samsara_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_samsara_t -> spark_2_samsara_t -> spark_4_samsara_t -> spark_8_samsara_t -> spark_7_samsara_t -> spark_5_samsara_t -> spark_1_samsara_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_samsara_t -> spark_6_samsara_t -> spark_9_samsara_t -> spark_3_samsara_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_samsara_t -> spark_b_samsara_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_9_RepositoryEngine {
+            label = "Repository Engine\n(/sys/repository)";
+
+            spark_0_repository_t [label = "Repository.meta()";shape = doublecircle;comment = "";];
+            spark_1_repository_t [label = "Repository.r1()";shape = circle;comment = "";];
+            spark_2_repository_t [label = "Repository.r2()";shape = circle;comment = "";];
+            spark_4_repository_t [label = "Repository.r4()";shape = circle;comment = "";];
+            spark_8_repository_t [label = "Repository.r8()";shape = circle;comment = "";];
+            spark_7_repository_t [label = "Repository.r7()";shape = circle;comment = "";];
+            spark_5_repository_t [label = "Repository.r5()";shape = circle;comment = "";];
+            spark_3_repository_t [label = "Repository.r3()";shape = doublecircle;comment = "";];
+            spark_6_repository_t [label = "Repository.r6()";shape = doublecircle;comment = "";];
+            spark_9_repository_t [label = "Repository.r9()";shape = doublecircle;comment = "";];
+            spark_a_repository_t [label = "Repository.receive()";shape = triangle;comment = "";];
+            spark_b_repository_t [label = "Repository.send()";shape = invtriangle;comment = "";];
+            spark_c_repository_t [label = "Repository.dispatch()";shape = doublecircle;];
+            spark_d_repository_t [label = "Repository.commit()";shape = doublecircle;];
+            spark_e_repository_t [label = "Repository.serve()";shape = doublecircle;];
+            spark_f_repository_t [label = "Repository.exec()";shape = doublecircle;];
+
+            spark_6_mythos_t -> spark_0_repository_t;
+            spark_0_repository_t -> spark_a_repository_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_repository_t -> spark_b_repository_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_repository_t -> {spark_3_repository_t spark_6_repository_t spark_9_repository_t} [label = "IN"; color = darkblue; comment = "";];
+            spark_0_repository_t -> {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_5_repository_t spark_7_repository_t spark_8_repository_t} [label = "IN"; color = darkgreen; comment = "";];
+
+            {spark_a_repository_t spark_b_repository_t} -> spark_c_repository_t [label = "REC"; color = darkred; comment = "";];
+            {spark_3_repository_t spark_6_repository_t spark_9_repository_t} -> spark_e_repository_t [label = "REC"; color = darkblue; comment = "";];
+            {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_8_repository_t spark_7_repository_t spark_5_repository_t} -> spark_d_repository_t [label = "REC"; color = darkgreen; comment = "";];
+
+            spark_a_repository_t -> spark_b_repository_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_repository_t -> spark_6_repository_t -> spark_9_repository_t -> spark_3_repository_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+            spark_1_repository_t -> spark_2_repository_t -> spark_4_repository_t -> spark_8_repository_t -> spark_7_repository_t -> spark_5_repository_t -> spark_1_repository_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
+
+            spark_c_repository_t -> spark_f_repository_t [label = "OUT"; color = darkred; comment = "";];
+            spark_e_repository_t -> spark_f_repository_t [label = "OUT"; color = darkblue; comment = "";];
+            spark_d_repository_t -> spark_f_repository_t [label = "OUT"; color = darkgreen; comment = "";];
+        }
+
+        subgraph cluster_1_10_HaomaEngine {
+            label = "Haoma Engine\n(/sys/haoma)";
+
+            spark_0_haoma_t [label = "Haoma.meta()";shape = doublecircle;comment = "Engine Init";];
+            spark_1_haoma_t [label = "Haoma.r1()";shape = circle;comment = "";];
+            spark_2_haoma_t [label = "Haoma.r2()";shape = circle;comment = "";];
+            spark_4_haoma_t [label = "Haoma.r4()";shape = circle;comment = "";];
+            spark_8_haoma_t [label = "Haoma.r8()";shape = circle;comment = "";];
+            spark_7_haoma_t [label = "Haoma.r7()";shape = circle;comment = "";];
+            spark_5_haoma_t [label = "Haoma.r5()";shape = circle;comment = "";];
+            spark_3_haoma_t [label = "Haoma.r3()";shape = doublecircle;comment = "`/sys/lurd`";];
+            spark_6_haoma_t [label = "Haoma.r6()";shape = doublecircle;comment = "";];
+            spark_9_haoma_t [label = "Haoma.r9()";shape = doublecircle;comment = "";];
+            spark_a_haoma_t [label = "Haoma.receive()";shape = triangle;comment = "";];
+            spark_b_haoma_t [label = "Haoma.send()";shape = invtriangle;comment = "";];
+            spark_c_haoma_t [label = "Haoma.dispatch()";shape = doublecircle;comment = "";];
+            spark_d_haoma_t [label = "Haoma.commit()";shape = doublecircle;comment = "";];
+            spark_e_haoma_t [label = "Haoma.serve()";shape = doublecircle;comment = "`/sys/haoma`";];
+            spark_f_haoma_t [label = "Haoma.exec()\nLaw of Factor";shape = doublecircle;comment = "";];
+
+            spark_9_mythos_t -> spark_0_haoma_t;
+            spark_0_haoma_t -> spark_a_haoma_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_haoma_t -> spark_b_haoma_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_haoma_t -> {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} [label = "IN"; color = darkblue; comment = "";];
+            spark_0_haoma_t -> {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_5_haoma_t spark_7_haoma_t spark_8_haoma_t} [label = "IN"; color = darkgreen; comment = "";];
+
+            {spark_a_haoma_t spark_b_haoma_t} -> spark_c_haoma_t [label = "REC"; color = darkred; comment = "";];
+            {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} -> spark_e_haoma_t [label = "REC"; color = darkblue; comment = "";];
+            {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_8_haoma_t spark_7_haoma_t spark_5_haoma_t} -> spark_d_haoma_t [label = "REC"; color = darkgreen; comment = "";];
+
+            spark_a_haoma_t -> spark_b_haoma_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_haoma_t -> spark_6_haoma_t -> spark_9_haoma_t -> spark_3_haoma_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+            spark_1_haoma_t -> spark_2_haoma_t -> spark_4_haoma_t -> spark_8_haoma_t -> spark_7_haoma_t -> spark_5_haoma_t -> spark_1_haoma_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
+
+            spark_c_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkred; comment = "";];
+            spark_d_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkgreen; comment = "";];
+            spark_e_haoma_t -> spark_f_haoma_t [label = "OUT"; color = darkblue; comment = "";];
+        }
+
+        subgraph cluster_1_11_CapabilityEngine {
+            label = "Capability Engine\n(/sys/capability)";
+
+            spark_0_capability_t [label = "Capability.meta()";shape = doublecircle;comment = "Engine Init";];
+            spark_1_capability_t [label = "Capability.parse()";shape = circle;comment = "";];
+            spark_2_capability_t [label = "Capability.validate()";shape = circle;comment = "";];
+            spark_4_capability_t [label = "Capability.normalize()";shape = circle;comment = "";];
+            spark_8_capability_t [label = "Capability.reset()";shape = circle;comment = "";];
+            spark_7_capability_t [label = "Capability.evolve()";shape = circle;comment = "";];
+            spark_5_capability_t [label = "Capability.refactor()";shape = circle;comment = "";];
+            spark_3_capability_t [label = "Capability.codex()";shape = doublecircle;comment = "`/sys/codex`";];
+            spark_6_capability_t [label = "Capability.listen()";shape = doublecircle;comment = "";];
+            spark_9_capability_t [label = "Capability.assert()";shape = doublecircle;comment = "";];
+            spark_a_capability_t [label = "Capability.receive()";shape = triangle;comment = "";];
+            spark_b_capability_t [label = "Capability.send()";shape = invtriangle;comment = "";];
+            spark_c_capability_t [label = "Capability.response()";shape = doublecircle;comment = "";];
+            spark_d_capability_t [label = "Capability.compile()";shape = doublecircle;comment = "";];
+            spark_e_capability_t [label = "Capability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
+            spark_f_capability_t [label = "Capability.exec()\nLaw of Capability";shape = doublecircle;comment = "";];
+
+            spark_3_mythos_t -> spark_0_capability_t;
+
+            spark_0_capability_t -> spark_a_capability_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_capability_t -> spark_b_capability_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_capability_t -> {spark_3_capability_t spark_6_capability_t spark_9_capability_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_capability_t -> {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_capability_t spark_b_capability_t} -> spark_c_capability_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} -> spark_d_capability_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_capability_t spark_6_capability_t spark_9_capability_t} -> spark_e_capability_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_capability_t -> spark_2_capability_t -> spark_4_capability_t -> spark_8_capability_t -> spark_7_capability_t -> spark_5_capability_t -> spark_1_capability_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_capability_t -> spark_6_capability_t -> spark_9_capability_t -> spark_3_capability_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_capability_t -> spark_b_capability_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_capability_t -> spark_f_capability_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_capability_t -> spark_f_capability_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_capability_t -> spark_f_capability_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_12_DirectiveEngine {
+            label = "Directive Engine\n(/srv/directive)";
+
+            spark_0_directive_t [label = "Directive.meta()";shape = doublecircle;comment = "";];
+            spark_1_directive_t [label = "Directive.r1()";shape = circle;comment = "";];
+            spark_2_directive_t [label = "Directive.r2()";shape = circle;comment = "";];
+            spark_4_directive_t [label = "Directive.r4()";shape = circle;comment = "";];
+            spark_8_directive_t [label = "Directive.r8()";shape = circle;comment = "";];
+            spark_7_directive_t [label = "Directive.r7()";shape = circle;comment = "";];
+            spark_5_directive_t [label = "Directive.r5()";shape = circle;comment = "";];
+            spark_3_directive_t [label = "Directive.r3()";shape = doublecircle;comment = "";];
+            spark_6_directive_t [label = "Directive.r6()";shape = doublecircle;comment = "";];
+            spark_9_directive_t [label = "Directive.r9()";shape = doublecircle;comment = "";];
+            spark_a_directive_t [label = "Directive.receive()";shape = triangle;comment = "";];
+            spark_b_directive_t [label = "Directive.send()";shape = invtriangle;comment = "";];
+            spark_c_directive_t [label = "Directive.dispatch()";shape = doublecircle;comment = "";];
+            spark_d_directive_t [label = "Directive.commit()";shape = doublecircle;comment = "";];
+            spark_e_directive_t [label = "Directive.serve()";shape = doublecircle;comment = "`/srv/directive`";];
+            spark_f_directive_t [label = "Directive.exec()";shape = doublecircle;comment = "";];
+
+            spark_c_mythos_t -> spark_0_directive_t;
+
+            spark_0_directive_t -> spark_a_directive_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_directive_t -> spark_b_directive_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_directive_t -> {spark_3_directive_t spark_6_directive_t spark_9_directive_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_directive_t -> {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_directive_t spark_b_directive_t} -> spark_c_directive_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} -> spark_d_directive_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_directive_t spark_6_directive_t spark_9_directive_t} -> spark_e_directive_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_directive_t -> spark_2_directive_t -> spark_4_directive_t -> spark_8_directive_t -> spark_7_directive_t -> spark_5_directive_t -> spark_1_directive_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_directive_t -> spark_6_directive_t -> spark_9_directive_t -> spark_3_directive_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_directive_t -> spark_b_directive_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_directive_t -> spark_f_directive_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_directive_t -> spark_f_directive_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_directive_t -> spark_f_directive_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_13_AuthorityEngine {
+            label = "Authority Engine\n(/srv/authority)";
+
+            spark_0_authority_t [label = "Authority.meta()";shape = doublecircle;comment = "Engine Init";];
+            spark_1_authority_t [label = "Authority.create()";shape = circle;comment = "";];
+            spark_2_authority_t [label = "Authority.validate()";shape = circle;comment = "";];
+            spark_4_authority_t [label = "Authority.normalize()";shape = circle;comment = "";];
+            spark_8_authority_t [label = "Authority.reset()";shape = circle;comment = "";];
+            spark_7_authority_t [label = "Authority.evolve()";shape = circle;comment = "";];
+            spark_5_authority_t [label = "Authority.refactor()";shape = circle;comment = "";];
+            spark_3_authority_t [label = "Authority.codex()";shape = doublecircle;comment = "";];
+            spark_6_authority_t [label = "Authority.listen()";shape = doublecircle;comment = "";];
+            spark_9_authority_t [label = "Authority.assert()";shape = doublecircle;comment = "";];
+            spark_a_authority_t [label = "Authority.receive()";shape = triangle;comment = "";];
+            spark_b_authority_t [label = "Authority.send()";shape = invtriangle;comment = "";];
+            spark_c_authority_t [label = "Authority.response()";shape = doublecircle;comment = "";];
+            spark_d_authority_t [label = "Authority.compile()";shape = doublecircle;comment = "";];
+            spark_e_authority_t [label = "Authority.serve()";shape = doublecircle;comment = "`/srv/authority`";];
+            spark_f_authority_t [label = "Authority.exec(LawOfAuthority)";shape = doublecircle;comment = "";];
+
+            spark_e_mythos_t -> spark_0_authority_t;
+
+            spark_0_authority_t -> spark_a_authority_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_authority_t -> spark_b_authority_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_authority_t -> {spark_3_authority_t spark_6_authority_t spark_9_authority_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_authority_t -> {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_authority_t spark_b_authority_t} -> spark_c_authority_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} -> spark_d_authority_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_authority_t spark_6_authority_t spark_9_authority_t} -> spark_e_authority_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_authority_t -> spark_2_authority_t -> spark_4_authority_t -> spark_8_authority_t -> spark_7_authority_t -> spark_5_authority_t -> spark_1_authority_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_authority_t -> spark_6_authority_t -> spark_9_authority_t -> spark_3_authority_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_authority_t -> spark_b_authority_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_authority_t -> spark_f_authority_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_authority_t -> spark_f_authority_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_authority_t -> spark_f_authority_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_14_CorporaEngine {
+            label = "Corpora Engine\n(/srv/corpora)";
+
+            spark_0_corpora_t [label = "Corpora.meta()";shape = doublecircle;comment = "";];
+            spark_1_corpora_t [label = "Corpora.heart()\nHeart";shape = circle;comment = "";];
+            spark_2_corpora_t [label = "Corpora.shell()\nShell";shape = circle;comment = "";];
+            spark_4_corpora_t [label = "Corpora.astral()\nAstral Body";shape = circle;comment = "";];
+            spark_8_corpora_t [label = "Corpora.spiritual()\nSpiritual Body";shape = circle;comment = "";];
+            spark_7_corpora_t [label = "Corpora.material()\nMaterial Body";shape = circle;comment = "";];
+            spark_5_corpora_t [label = "Corpora.celestial()\nCelestial Body";shape = circle;comment = "";];
+            spark_3_corpora_t [label = "Corpora.ego()\nEgo";shape = doublecircle;comment = "";];
+            spark_6_corpora_t [label = "Corpora.will()\nWill";shape = doublecircle;comment = "";];
+            spark_9_corpora_t [label = "Corpora.intent()\nIntent";shape = doublecircle;comment = "";];
+            spark_a_corpora_t [label = "Corpora.receive()\nPrevious LURD";shape = triangle;comment = "";];
+            spark_b_corpora_t [label = "Corpora.send()\nNext LURD";shape = invtriangle;comment = "";];
+            spark_c_corpora_t [label = "Corpora.response()\nCurrent LURD";shape = doublecircle;comment = "";];
+            spark_d_corpora_t [label = "Corpora.compile()\nCorpus";shape = doublecircle;comment = "";];
+            spark_e_corpora_t [label = "Corpora.serve()\nMind";shape = doublecircle;comment = "`/srv/corpora`";];
+            spark_f_corpora_t [label = "Corpora.exec()\nLaw of Corpus";shape = doublecircle;comment = "";];
+
+            spark_d_mythos_t -> spark_0_corpora_t;
+
+            spark_0_corpora_t -> spark_a_corpora_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_corpora_t -> spark_b_corpora_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_corpora_t -> {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_corpora_t -> {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_corpora_t spark_b_corpora_t} -> spark_c_corpora_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} -> spark_d_corpora_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} -> spark_e_corpora_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_corpora_t -> spark_2_corpora_t -> spark_4_corpora_t -> spark_8_corpora_t -> spark_7_corpora_t -> spark_5_corpora_t -> spark_1_corpora_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_corpora_t -> spark_6_corpora_t -> spark_9_corpora_t -> spark_3_corpora_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_corpora_t -> spark_b_corpora_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_corpora_t -> spark_f_corpora_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_1_15_OriginEngine {
+            label = "Origin Engine\n(/var/origin)";
+
+            spark_0_origin_t [label = "Origin.meta()";shape = doublecircle;comment = "Engine Meta";];
+            spark_1_origin_t [label = "Origin.r1()";shape = circle;comment = "";];
+            spark_2_origin_t [label = "Origin.r2()";shape = circle;comment = "";];
+            spark_4_origin_t [label = "Origin.r4()";shape = circle;comment = "";];
+            spark_8_origin_t [label = "Origin.r8()";shape = circle;comment = "";];
+            spark_7_origin_t [label = "Origin.r7()";shape = circle;comment = "";];
+            spark_5_origin_t [label = "Origin.r5()";shape = circle;comment = "";];
+            spark_3_origin_t [label = "Origin.pattern()";shape = doublecircle;comment = "";];
+            spark_6_origin_t [label = "Origin.rhythm()";shape = doublecircle;comment = "";];
+            spark_9_origin_t [label = "Origin.brane()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
+            spark_a_origin_t [label = "Origin.manthan()";shape = triangle;comment = "`/var/manthan`";];
+            spark_b_origin_t [label = "Origin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
+            spark_c_origin_t [label = "Origin.dispatch()";shape = doublecircle;comment = "";];
+            spark_d_origin_t [label = "Origin.commit()";shape = doublecircle;comment = "";];
+            spark_e_origin_t [label = "Origin.serve()";shape = doublecircle;comment = "`/var`";];
+            spark_f_origin_t [label = "Origin.exec()\nLaw of Spacetime";shape = doublecircle;comment = "";];
+
+            spark_f_mythos_t -> spark_0_origin_t;
+
+            spark_0_origin_t -> spark_a_origin_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_origin_t -> spark_b_origin_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; color = darkblue; comment = "";];
+            spark_0_origin_t -> {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_5_origin_t spark_7_origin_t spark_8_origin_t} [label = "IN"; color = darkgreen; comment = "";];
+
+            {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; color = darkred; comment = "";];
+            {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; color = darkblue; comment = "";];
+            {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
+
+            spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+            spark_a_origin_t -> spark_b_origin_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkgreen; comment = ""; style = dassed; constraint = false;];
+
+            spark_e_origin_t -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
+            spark_c_origin_t -> spark_f_origin_t [label = "OUT"; color = darkred; comment = "";];
+            spark_d_origin_t -> spark_f_origin_t [label = "OUT"; color = darkgreen; comment = "";];
+        }
+    }
+
+    subgraph cluster_2_MythOS {
+        label = "MythOS\n(/)";
+
+        spark_0_mythos_t [label = "0x0\nReality Engine\n(/proc/reality)\nLaw of Origin";shape = doublecircle;comment = "The Kernel";];
+        spark_1_mythos_t [label = "0x1\nTruth Engine\n(/dev/truth)\nLaw of Truth";comment = "Axiomatic Verification";];
+        spark_2_mythos_t [label = "0x2\nConvergence Engine\n(/dev/convergence)\nLaw of Convergence";comment = "Unification Management";];
+        spark_4_mythos_t [label = "0x4\nFixation Engine\n(/dev/fixation)\nLaw of Fixation";comment = "Rhythm Management";];
+        spark_8_mythos_t [label = "0x8\nWisdom Engine\n(/dev/wisdom)\nLaw of Wisdom";comment = "Adaptive Verification";];
+        spark_7_mythos_t [label = "0x7\nDivergence Engine\n(/dev/divergence)\nLaw of Divergence";comment = "Diversity Management";];
+        spark_5_mythos_t [label = "0x5\nExcitation Engine\n(/dev/excitation)\nLaw of Excitation";comment = "Pattern Management";];
+        spark_3_mythos_t [label = "0x3\nCapability Engine\n(/sys/capability)\nLaw of Capability";shape = doublecircle;comment = "Capability System";];
+        spark_6_mythos_t [label = "0x6\nRepository Engine\n(/sys/repository)\nLaw of Repository";shape = doublecircle;comment = "Storage System";];
+        spark_9_mythos_t [label = "0x9\nHaoma Engine\n(/sys/haoma)\nLaw of Factor";shape = doublecircle;comment = "Entity Recursion Descriptor Engine";];
+        spark_a_mythos_t [label = "0xA\nEvent Engine\n(/proc/event)\nLaw of Probability";shape = doublecircle;comment = "Probability Field";];
+        spark_b_mythos_t [label = "0xB\nSamsara Engine\n(/proc/samsara)\nLaw of Causality";shape = doublecircle;comment = "Causality Enforcement";];
+        spark_c_mythos_t [label = "0xC\nDirective Engine\n(/srv/directive)\nLaw of Directive";shape = doublecircle;comment = "";];
+        spark_d_mythos_t [label = "0xD\nCorpora Engine\n(/srv/corpora)\nLaw of Corpus";shape = doublecircle;comment = "Entity Manifestation Engine";];
+        spark_e_mythos_t [label = "0xE\nAuthority Engine\n(/srv/authority)\nLaw of Authority";shape = doublecircle;comment = "Entity Access Control";];
+        spark_f_mythos_t [label = "0xF\nOrigin Engine\n(/var/origin)\nLaw of Spacetime";shape = doublecircle;comment = "";];
+
+        spark_0_mythos_t -> spark_a_mythos_t [label = "IN"; color = darkred; comment = "";];
+        spark_0_mythos_t -> spark_b_mythos_t [label = "OUT"; color = darkred; comment = "";];
+        spark_0_mythos_t -> {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} [label = "IN"; color = darkblue; comment = "";];
+        spark_0_mythos_t -> {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_5_mythos_t spark_7_mythos_t spark_8_mythos_t} [label = "IN"; color = darkgreen; comment = "";];
+
+        {spark_a_mythos_t spark_b_mythos_t} -> spark_c_mythos_t [label = "REC"; color = darkred; comment = "";];
+        {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; color = darkblue; comment = "";];
+        {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; color = darkgreen; comment = "";];
+
+        spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
+        spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
+
+        spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkred; comment = "";];
+        spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkgreen; comment = "";];
+        spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkblue; comment = "";];
+    }
+
+    subgraph cluster_3_FundamentalConcepts {
+        label = "Fundamental Concepts";
+
+        subgraph cluster_3_0_Asha {
+            label = "Asha\n(/proc/reality/concept/asha)";
+
+            spark_0_asha_t [label = "Asha.meta()";comment = "";shape = doublecircle;];
+            spark_1_asha_t [label = "Asha.r1()\nInsight";comment = "";shape = circle;];
+            spark_2_asha_t [label = "Asha.r2()\nDiscernment";comment = "";shape = circle;];
+            spark_4_asha_t [label = "Asha.r4()\nComprehension";comment = "";shape = circle;];
+            spark_8_asha_t [label = "Asha.r8()\nClarity";comment = "";shape = circle;];
+            spark_7_asha_t [label = "Asha.r7()\nIntegrity";comment = "";shape = circle;];
+            spark_5_asha_t [label = "Asha.r5()\nSincerity";comment = "";shape = circle;];
+            spark_3_asha_t [label = "Asha.r3()";comment = "";shape = doublecircle;];
+            spark_6_asha_t [label = "Asha.r6()";comment = "";shape = doublecircle;];
+            spark_9_asha_t [label = "Asha.r9()";comment = "";shape = doublecircle;];
+            spark_a_asha_t [label = "Asha.receive()\nWisdom";comment = "";shape = invtriangle;];
+            spark_b_asha_t [label = "Asha.send()\nInsight";comment = "";shape = triangle;];
+            spark_c_asha_t [label = "Asha.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_asha_t [label = "Asha.commit()";comment = "";shape = doublecircle;];
+            spark_e_asha_t [label = "Asha.serve()";comment = "";shape = doublecircle;];
+            spark_f_asha_t [label = "Asha.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_asha_t -> spark_a_asha_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_asha_t -> spark_b_asha_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_asha_t -> {spark_3_asha_t spark_6_asha_t spark_9_asha_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_asha_t -> {spark_1_asha_t spark_2_asha_t spark_4_asha_t spark_8_asha_t spark_7_asha_t spark_5_asha_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_asha_t spark_b_asha_t} -> spark_c_asha_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_asha_t spark_2_asha_t spark_4_asha_t spark_8_asha_t spark_7_asha_t spark_5_asha_t} -> spark_d_asha_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_asha_t spark_6_asha_t spark_9_asha_t} -> spark_e_asha_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_asha_t -> spark_2_asha_t -> spark_4_asha_t -> spark_8_asha_t -> spark_7_asha_t -> spark_5_asha_t -> spark_1_asha_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_asha_t -> spark_6_asha_t -> spark_9_asha_t -> spark_3_asha_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_asha_t -> spark_b_asha_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_asha_t -> spark_f_asha_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_asha_t -> spark_f_asha_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_asha_t -> spark_f_asha_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_3_1_Vikara {
+            label = "Vikara\n(/proc/reality/concept/vikara)";
+
+            spark_0_vikara_t [label = "Vikara.meta()";comment = "";shape = doublecircle;];
+            spark_1_vikara_t [label = "Vikara.r1()\nProbability";comment = "";shape = circle;];
+            spark_2_vikara_t [label = "Vikara.r2()\nChaos";comment = "";shape = circle;];
+            spark_4_vikara_t [label = "Vikara.r4()\nDestruction";comment = "";shape = circle;];
+            spark_8_vikara_t [label = "Vikara.r8()\nCausality";comment = "";shape = circle;];
+            spark_7_vikara_t [label = "Vikara.r7()\nOrder";comment = "";shape = circle;];
+            spark_5_vikara_t [label = "Vikara.r5()\nCreation";comment = "";shape = circle;];
+            spark_3_vikara_t [label = "Vikara.r3()\nLuck";comment = "";shape = doublecircle;];
+            spark_6_vikara_t [label = "Vikara.r6()\nFaith";comment = "";shape = doublecircle;];
+            spark_9_vikara_t [label = "Vikara.r9()\nDestiny";comment = "";shape = doublecircle;];
+            spark_a_vikara_t [label = "Vikara.receive()\nDivergence";comment = "";shape = invtriangle;];
+            spark_b_vikara_t [label = "Vikara.send()\nConvergence";comment = "";shape = triangle;];
+            spark_c_vikara_t [label = "Vikara.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_vikara_t [label = "Vikara.commit()";comment = "";shape = doublecircle;];
+            spark_e_vikara_t [label = "Vikara.serve()";comment = "";shape = doublecircle;];
+            spark_f_vikara_t [label = "Vikara.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_vikara_t -> spark_a_vikara_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_vikara_t -> spark_b_vikara_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_vikara_t -> {spark_3_vikara_t spark_6_vikara_t spark_9_vikara_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_vikara_t -> {spark_1_vikara_t spark_2_vikara_t spark_4_vikara_t spark_8_vikara_t spark_7_vikara_t spark_5_vikara_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_vikara_t spark_b_vikara_t} -> spark_c_vikara_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_vikara_t spark_2_vikara_t spark_4_vikara_t spark_8_vikara_t spark_7_vikara_t spark_5_vikara_t} -> spark_d_vikara_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_vikara_t spark_6_vikara_t spark_9_vikara_t} -> spark_e_vikara_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_vikara_t -> spark_2_vikara_t -> spark_4_vikara_t -> spark_8_vikara_t -> spark_7_vikara_t -> spark_5_vikara_t -> spark_1_vikara_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_vikara_t -> spark_6_vikara_t -> spark_9_vikara_t -> spark_3_vikara_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_vikara_t -> spark_b_vikara_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_vikara_t -> spark_f_vikara_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_vikara_t -> spark_f_vikara_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_vikara_t -> spark_f_vikara_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_3_2_Karsa {
+            label = "Karsa\n(/proc/reality/concept/karsa)";
+
+            spark_0_karsa_t [label = "Karsa.meta()";comment = "";shape = doublecircle;];
+            spark_1_karsa_t [label = "Karsa.r1()\nPattern";comment = "";shape = circle;];
+            spark_2_karsa_t [label = "Karsa.r2()\nMomentum";comment = "";shape = circle;];
+            spark_4_karsa_t [label = "Karsa.r4()\nSpace";comment = "";shape = circle;];
+            spark_8_karsa_t [label = "Karsa.r8()\nRhythm";comment = "";shape = circle;];
+            spark_7_karsa_t [label = "Karsa.r7()\nInertia";comment = "";shape = circle;];
+            spark_5_karsa_t [label = "Karsa.r5()\nTime";comment = "";shape = circle;];
+            spark_3_karsa_t [label = "Karsa.r3()\nLife";comment = "";shape = doublecircle;];
+            spark_6_karsa_t [label = "Karsa.r6()\nDeath";comment = "";shape = doublecircle;];
+            spark_9_karsa_t [label = "Karsa.r9()\nBirth";comment = "";shape = doublecircle;];
+            spark_a_karsa_t [label = "Karsa.receive()\nExcitation";comment = "";shape = invtriangle;];
+            spark_b_karsa_t [label = "Karsa.send()\nFixation";comment = "";shape = triangle;];
+            spark_c_karsa_t [label = "Karsa.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_karsa_t [label = "Karsa.commit()";comment = "";shape = doublecircle;];
+            spark_e_karsa_t [label = "Karsa.serve()\nReincarnation";comment = "";shape = doublecircle;];
+            spark_f_karsa_t [label = "Karsa.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_karsa_t -> spark_a_karsa_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_karsa_t -> spark_b_karsa_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_karsa_t -> {spark_3_karsa_t spark_6_karsa_t spark_9_karsa_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_karsa_t -> {spark_1_karsa_t spark_2_karsa_t spark_4_karsa_t spark_8_karsa_t spark_7_karsa_t spark_5_karsa_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_karsa_t spark_b_karsa_t} -> spark_c_karsa_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_karsa_t spark_2_karsa_t spark_4_karsa_t spark_8_karsa_t spark_7_karsa_t spark_5_karsa_t} -> spark_d_karsa_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_karsa_t spark_6_karsa_t spark_9_karsa_t} -> spark_e_karsa_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_karsa_t -> spark_2_karsa_t -> spark_4_karsa_t -> spark_8_karsa_t -> spark_7_karsa_t -> spark_5_karsa_t -> spark_1_karsa_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_karsa_t -> spark_6_karsa_t -> spark_9_karsa_t -> spark_3_karsa_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_karsa_t -> spark_b_karsa_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_karsa_t -> spark_f_karsa_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_karsa_t -> spark_f_karsa_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_karsa_t -> spark_f_karsa_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_3_4_Rasa {
+            label = "Rasa\n(/proc/reality/concept/asha)";
+
+            spark_0_rasa_t [label = "Rasa.meta()";comment = "";shape = doublecircle;];
+            spark_1_rasa_t [label = "Rasa.r1()\nInstinct";comment = "";shape = circle;];
+            spark_2_rasa_t [label = "Rasa.r2()\nMotivation";comment = "";shape = circle;];
+            spark_4_rasa_t [label = "Rasa.r4()\nSin";comment = "";shape = circle;];
+            spark_8_rasa_t [label = "Rasa.r8()\nIntuition";comment = "";shape = circle;];
+            spark_7_rasa_t [label = "Rasa.r7()\nResonance";comment = "";shape = circle;];
+            spark_5_rasa_t [label = "Rasa.r5()\nVirtue";comment = "";shape = circle;];
+            spark_3_rasa_t [label = "Rasa.r3()\nHope";comment = "";shape = doublecircle;];
+            spark_6_rasa_t [label = "Rasa.r6()\nDespair";comment = "";shape = doublecircle;];
+            spark_9_rasa_t [label = "Rasa.r9()\nLove";comment = "";shape = doublecircle;];
+            spark_a_rasa_t [label = "Rasa.receive()\nDesire";comment = "";shape = invtriangle;];
+            spark_b_rasa_t [label = "Rasa.send()\nEmotion";comment = "";shape = triangle;];
+            spark_c_rasa_t [label = "Rasa.dispatch()";comment = "";shape = doublecircle;];
+            spark_d_rasa_t [label = "Rasa.commit()";comment = "";shape = doublecircle;];
+            spark_e_rasa_t [label = "Rasa.serve()";comment = "";shape = doublecircle;];
+            spark_f_rasa_t [label = "Rasa.exec()";comment = "";shape = doublecircle;];
+
+            spark_0_rasa_t -> spark_a_rasa_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_rasa_t -> spark_b_rasa_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_rasa_t -> {spark_3_rasa_t spark_6_rasa_t spark_9_rasa_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_rasa_t -> {spark_1_rasa_t spark_2_rasa_t spark_4_rasa_t spark_8_rasa_t spark_7_rasa_t spark_5_rasa_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_rasa_t spark_b_rasa_t} -> spark_c_rasa_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_rasa_t spark_2_rasa_t spark_4_rasa_t spark_8_rasa_t spark_7_rasa_t spark_5_rasa_t} -> spark_d_rasa_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_rasa_t spark_6_rasa_t spark_9_rasa_t} -> spark_e_rasa_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_rasa_t -> spark_2_rasa_t -> spark_4_rasa_t -> spark_8_rasa_t -> spark_7_rasa_t -> spark_5_rasa_t -> spark_1_rasa_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_rasa_t -> spark_6_rasa_t -> spark_9_rasa_t -> spark_3_rasa_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_rasa_t -> spark_b_rasa_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_rasa_t -> spark_f_rasa_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_rasa_t -> spark_f_rasa_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_rasa_t -> spark_f_rasa_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+
+        subgraph cluster_3_5_Emergence {
+            label = "Emergence\n(/proc/reality/concept/emergence)";
+
+            spark_0_emergence_t [label = "meta()";comment = "";shape = doublecircle;];
+            spark_1_emergence_t [label = "r1()\nSingularity";comment = "";shape = circle;];
+            spark_2_emergence_t [label = "r2()\nHorizon";comment = "";shape = circle;];
+            spark_4_emergence_t [label = "r4()\nAttribute";comment = "";shape = circle;];
+            spark_8_emergence_t [label = "r8()\nRecursion";comment = "";shape = circle;];
+            spark_7_emergence_t [label = "r7()\nAwareness";comment = "";shape = circle;];
+            spark_5_emergence_t [label = "r5()\nProperty";comment = "";shape = circle;];
+            spark_3_emergence_t [label = "r3()";comment = "";shape = doublecircle;];
+            spark_6_emergence_t [label = "r6()";comment = "";shape = doublecircle;];
+            spark_9_emergence_t [label = "r9()";comment = "";shape = doublecircle;];
+            spark_a_emergence_t [label = "receive()\nPresence";comment = "";shape = invtriangle;];
+            spark_b_emergence_t [label = "send()\nEssence";comment = "";shape = triangle;];
+            spark_c_emergence_t [label = "dispatch()";comment = "";shape = doublecircle;];
+            spark_d_emergence_t [label = "commit()";comment = "";shape = doublecircle;];
+            spark_e_emergence_t [label = "serve()";comment = "";shape = doublecircle;];
+            spark_f_emergence_t [label = "exec()";comment = "";shape = doublecircle;];
+
+            spark_0_emergence_t -> spark_a_emergence_t [label = "IN"; color = darkred; comment = "";];
+            spark_0_emergence_t -> spark_b_emergence_t [label = "OUT"; color = darkred; comment = "";];
+            spark_0_emergence_t -> {spark_3_emergence_t spark_6_emergence_t spark_9_emergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+            spark_0_emergence_t -> {spark_1_emergence_t spark_2_emergence_t spark_4_emergence_t spark_8_emergence_t spark_7_emergence_t spark_5_emergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+
+            {spark_a_emergence_t spark_b_emergence_t} -> spark_c_emergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+            {spark_1_emergence_t spark_2_emergence_t spark_4_emergence_t spark_8_emergence_t spark_7_emergence_t spark_5_emergence_t} -> spark_d_emergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+            {spark_3_emergence_t spark_6_emergence_t spark_9_emergence_t} -> spark_e_emergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+
+            spark_1_emergence_t -> spark_2_emergence_t -> spark_4_emergence_t -> spark_8_emergence_t -> spark_7_emergence_t -> spark_5_emergence_t -> spark_1_emergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_3_emergence_t -> spark_6_emergence_t -> spark_9_emergence_t -> spark_3_emergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+            spark_a_emergence_t -> spark_b_emergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+
+            spark_c_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+            spark_d_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+            spark_e_emergence_t -> spark_f_emergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        }
+    }
+}
