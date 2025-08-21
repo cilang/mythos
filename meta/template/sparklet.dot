@@ -1,5 +1,5 @@
 strict digraph Sparklet {
-    label = "Sparklet\n(/proc/origin/seed/sparklet)";
+    label = "Sparklet\n(/proc/reality/seed/sparklet)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -10,12 +10,12 @@ strict digraph Sparklet {
     // The Router C-D-E
     // The Closure F
     spark_0_t [label = "Spark.meta(Dumadi)";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Spark.r1(Resource)";comment = "";shape = circle;];
-    spark_2_t [label = "Spark.r2(Authority)";comment = "";shape = circle;];
-    spark_4_t [label = "Spark.r4(Relation)";comment = "";shape = circle;];
-    spark_8_t [label = "Spark.r8(Axiom)";comment = "";shape = circle;];
-    spark_7_t [label = "Spark.r7(Knowledge)";comment = "";shape = circle;];
-    spark_5_t [label = "Spark.r5(Lineage)";comment = "";shape = circle;];
+    spark_1_t [label = "Spark.r1(Harta)";comment = "";shape = circle;];
+    spark_2_t [label = "Spark.r2(Tahta)";comment = "";shape = circle;];
+    spark_4_t [label = "Spark.r4(Wanita)";comment = "";shape = circle;];
+    spark_8_t [label = "Spark.r8(Agama)";comment = "";shape = circle;];
+    spark_7_t [label = "Spark.r7(Ilmu)";comment = "";shape = circle;];
+    spark_5_t [label = "Spark.r5(Keturunan)";comment = "";shape = circle;];
     spark_3_t [label = "Spark.r3(Asumsi)";comment = "";shape = doublecircle;];
     spark_6_t [label = "Spark.r6(Sugesti)";comment = "";shape = doublecircle;];
     spark_9_t [label = "Spark.r9(Persepsi)";comment = "";shape = doublecircle;];

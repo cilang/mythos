@@ -9,12 +9,17 @@ strict digraph Core {
     // ================================================================================================================
     // Fundamental Concepts
     // ================================================================================================================
-    // *.meta(): Backend or Kernel
-    // *.r{1,2,4,8,7,5}(): Mechanical Vortex
-    // *.r{3,6,9}(): Cognitive Vortex
-    // *.{receive, send}(): I/O Port
-    // *.{dispatch, commit, serve}(): Router
-    // *.exec(): Frontend
+    // 
+    // Sparklet {
+    //   Spark.meta(), // Backend or Kernel
+    //   Spark.r{1,2,4,8,7,5}(), // Mechanical Vortex
+    //   Spark.r{3,6,9}(), // Cognitive Vortex
+    //   Spark.{receive, send}(), // I/O Port
+    //   Spark.{dispatch, commit, serve}(), // Router
+    //   Spark.exec() // Frontend
+    // }
+    // 
+    // Those 16 Sparks is collectively called Sparklet, hence a
     subgraph cluster_0_FundamentalConcept {
         style = filled;
         color = lightgray;
@@ -177,20 +182,20 @@ strict digraph Core {
             
             // 
             spark_0_vidya_t [label = "Vidya.meta(Vidya)";comment = "";shape = doublecircle;];
-            spark_1_vidya_t [label = "Vidya.r1(TBD)";comment = "";shape = circle;];
-            spark_2_vidya_t [label = "Vidya.r2(TBD)";comment = "";shape = circle;];
-            spark_4_vidya_t [label = "Vidya.r4(TBD)";comment = "";shape = circle;];
-            spark_8_vidya_t [label = "Vidya.r8(TBD)";comment = "";shape = circle;];
-            spark_7_vidya_t [label = "Vidya.r7(TBD)";comment = "";shape = circle;];
-            spark_5_vidya_t [label = "Vidya.r5(TBD)";comment = "";shape = circle;];
-            spark_3_vidya_t [label = "Vidya.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_vidya_t [label = "Vidya.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_vidya_t [label = "Vidya.r9(TBD)";comment = "";shape = doublecircle;];
+            spark_1_vidya_t [label = "Vidya.r1(Inspiration)";comment = "";shape = circle;];
+            spark_2_vidya_t [label = "Vidya.r2(Theorem)";comment = "";shape = circle;];
+            spark_4_vidya_t [label = "Vidya.r4(Data)";comment = "";shape = circle;];
+            spark_8_vidya_t [label = "Vidya.r8(Algorithm)";comment = "";shape = circle;];
+            spark_7_vidya_t [label = "Vidya.r7(Heuristic)";comment = "";shape = circle;];
+            spark_5_vidya_t [label = "Vidya.r5(Model)";comment = "";shape = circle;];
+            spark_3_vidya_t [label = "Vidya.r3(Hypothesis)";comment = "";shape = doublecircle;];
+            spark_6_vidya_t [label = "Vidya.r6(Theory)";comment = "";shape = doublecircle;];
+            spark_9_vidya_t [label = "Vidya.r9(Paradigm)";comment = "";shape = doublecircle;];
             spark_a_vidya_t [label = "Vidya.receive(Concept)";comment = "";shape = invtriangle;];
             spark_b_vidya_t [label = "Vidya.send(Context)";comment = "";shape = triangle;];
-            spark_c_vidya_t [label = "Vidya.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_vidya_t [label = "Vidya.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_vidya_t [label = "Vidya.serve(TBD)";comment = "";shape = doublecircle;];
+            spark_c_vidya_t [label = "Vidya.dispatch(Interpretation)";comment = "";shape = doublecircle;];
+            spark_d_vidya_t [label = "Vidya.commit(Framework)";comment = "";shape = doublecircle;];
+            spark_e_vidya_t [label = "Vidya.serve(Education)";comment = "";shape = doublecircle;];
             spark_f_vidya_t [label = "Vidya.exec(Logos)";comment = "";shape = doublecircle;];
         }
         
@@ -369,10 +374,10 @@ strict digraph Core {
             spark_9_alignment_model_t [label = "Alignment.r9(Time)";shape = circle;comment = "Sequential vs. parallel processing. Cyclic flow/termination.";];
             spark_a_alignment_model_t [label = "Alignment.receive(Unity)";shape = triangle;comment = "Cosmic bus (information routing).";];
             spark_b_alignment_model_t [label = "Alignment.send(Diversity)";shape = invtriangle;comment = "Cosmic bus (information routing).";];
-            spark_c_alignment_model_t [label = "Alignment.dispatch(TBD)";shape = doublecircle;comment = "";];
-            spark_d_alignment_model_t [label = "Alignment.commit(TBD)";shape = doublecircle;comment = "";];
-            spark_e_alignment_model_t [label = "Alignment.serve(TBD)";shape = doublecircle;comment = "";];
-            spark_f_alignment_model_t [label = "Alignment.exec(TBD)";shape = doublecircle;comment = "";];
+            spark_c_alignment_model_t [label = "Alignment.dispatch(Quantization)";shape = doublecircle;comment = "";];
+            spark_d_alignment_model_t [label = "Alignment.commit(Superposition)";shape = doublecircle;comment = "";];
+            spark_e_alignment_model_t [label = "Alignment.serve(Entanglement)";shape = doublecircle;comment = "";];
+            spark_f_alignment_model_t [label = "Alignment.exec(Wavefunction)";shape = doublecircle;comment = "";];
         }
         
         // ============================================================================================================
@@ -397,10 +402,10 @@ strict digraph Core {
             spark_9_spectral_model_t [label = "Spectral.r9(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
             spark_a_spectral_model_t [label = "Spectral.receive(Rhythm)";shape = triangle;comment = "";];
             spark_b_spectral_model_t [label = "Spectral.send(Pattern)";shape = invtriangle;comment = "";];
-            spark_c_spectral_model_t [label = "Spectral.dispatch(TBD)";comment = "";];
-            spark_d_spectral_model_t [label = "Spectral.commit(TBD)";comment = "";];
-            spark_e_spectral_model_t [label = "Spectral.serve(TBD)";comment = "";];
-            spark_f_spectral_model_t [label = "Spectral.exec(TBD)";comment = "";];
+            spark_c_spectral_model_t [label = "Spectral.dispatch(Resonance)";comment = "";];
+            spark_d_spectral_model_t [label = "Spectral.commit(StateChange)";comment = "";];
+            spark_e_spectral_model_t [label = "Spectral.serve(Emission)";comment = "";];
+            spark_f_spectral_model_t [label = "Spectral.exec(Spectrum)";comment = "";];
         }
         
         // ============================================================================================================
@@ -428,7 +433,7 @@ strict digraph Core {
             spark_c_structure_model_t [label = "Structure.dispatch(LineageInterface)";shape = doublecircle;comment = "";];
             spark_d_structure_model_t [label = "Structure.commit(CorpusInterface)";shape = doublecircle;comment = "";];
             spark_e_structure_model_t [label = "Structure.serve(LURDInterface)";shape = doublecircle;comment = "";];
-            spark_f_structure_model_t [label = "Structure.exec(TBD)";shape = doublecircle;comment = "";];
+            spark_f_structure_model_t [label = "Structure.exec(Corpus)";shape = doublecircle;comment = "";];
         }
         
         // ============================================================================================================
@@ -512,91 +517,91 @@ strict digraph Core {
             spark_c_lurd_model_t [label = "LURD.dispatch(InterfaceDescriptor)";comment = "";shape = doublecircle;];
             spark_d_lurd_model_t [label = "LURD.commit(DigitalDescriptor)";comment = "";shape = doublecircle;];
             spark_e_lurd_model_t [label = "LURD.serve(ManifestDescriptor)";comment = "";shape = doublecircle;];
-            spark_f_lurd_model_t [label = "LURD.exec(TBD)";comment = "";shape = doublecircle;];
+            spark_f_lurd_model_t [label = "LURD.exec(Factor)";comment = "";shape = doublecircle;];
         }
         
         // ============================================================================================================
-        // Seventh Model
+        // Praxis Model
         // ============================================================================================================
-        subgraph cluster_1_7_SeventhModel {
+        subgraph cluster_1_7_PraxisModel {
             style = filled;
             color = darkgray;
-            label = "Seventh Model\n(/proc/factor/model/seventh)";
-            comment = "";
+            label = "Praxis Model\n(/proc/factor/model/praxis)";
+            comment = "This is the How. The model of practical application, technique, and skill.";
             
             // 
-            spark_0_seventh_model_t [label = "Seventh.meta(TBD)";comment = "";shape = doublecircle;];
-            spark_1_seventh_model_t [label = "Seventh.r1(TBD)";comment = "";shape = circle;];
-            spark_2_seventh_model_t [label = "Seventh.r2(TBD)";comment = "";shape = circle;];
-            spark_4_seventh_model_t [label = "Seventh.r4(TBD)";comment = "";shape = circle;];
-            spark_8_seventh_model_t [label = "Seventh.r8(TBD)";comment = "";shape = circle;];
-            spark_7_seventh_model_t [label = "Seventh.r7(TBD)";comment = "";shape = circle;];
-            spark_5_seventh_model_t [label = "Seventh.r5(TBD)";comment = "";shape = circle;];
-            spark_3_seventh_model_t [label = "Seventh.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_seventh_model_t [label = "Seventh.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_seventh_model_t [label = "Seventh.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_seventh_model_t [label = "Seventh.receive(TBD)";comment = "";shape = invtriangle;];
-            spark_b_seventh_model_t [label = "Seventh.send(TBD)";comment = "";shape = triangle;];
-            spark_c_seventh_model_t [label = "Seventh.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_seventh_model_t [label = "Seventh.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_seventh_model_t [label = "Seventh.serve(TBD)";comment = "";shape = doublecircle;];
-            spark_f_seventh_model_t [label = "Seventh.exec(TBD)";comment = "";shape = doublecircle;];
+            spark_0_praxis_model_t [label = "Praxis.meta(Praxis)";comment = "The fundamental nature of applied power.";shape = doublecircle;];
+            spark_1_praxis_model_t [label = "Praxis.r1(Invocation)";comment = "Calling upon an Engine's function.";shape = circle;];
+            spark_2_praxis_model_t [label = "Praxis.r2(Transmutation)";comment = "Changing the state of Matter/Energy.";shape = circle;];
+            spark_4_praxis_model_t [label = "Praxis.r4(Conjuration)";comment = "Creating something from nothing.";shape = circle;];
+            spark_8_praxis_model_t [label = "Praxis.r8(Abjuration)";comment = "Warding, protection, creating boundary.";shape = circle;];
+            spark_7_praxis_model_t [label = "Praxis.r7(Divination)";comment = "Querying the system for information.";shape = circle;];
+            spark_5_praxis_model_t [label = "Praxis.r5(Enchantment)";comment = "Embedding a function into an object.";shape = circle;];
+            spark_3_praxis_model_t [label = "Praxis.r3(Intuition)";comment = "Non-logical grasp of Praxis.";shape = doublecircle;];
+            spark_6_praxis_model_t [label = "Praxis.r6(Theory)";comment = "The intellectual framework behind Praxis.";shape = doublecircle;];
+            spark_9_praxis_model_t [label = "Praxis.r9(Mastery)";comment = "The synthesis of Intuition and Theory.";shape = doublecircle;];
+            spark_a_praxis_model_t [label = "Praxis.receive(Intent)";comment = "";shape = invtriangle;];
+            spark_b_praxis_model_t [label = "Praxis.send(Effect)";comment = "";shape = triangle;];
+            spark_c_praxis_model_t [label = "Praxis.dispatch(Method)";comment = "";shape = doublecircle;];
+            spark_d_praxis_model_t [label = "Praxis.commit(Rote)";comment = "";shape = doublecircle;];
+            spark_e_praxis_model_t [label = "Praxis.serve(Ritual)";comment = "";shape = doublecircle;];
+            spark_f_praxis_model_t [label = "Praxis.exec(LawOfPraxis)";comment = "";shape = doublecircle;];
         }
         
         // ============================================================================================================
-        // Eighth Model
+        // Dynamis Model
         // ============================================================================================================
-        subgraph cluster_1_8_EightModel {
+        subgraph cluster_1_8_DynamisModel {
             style = filled;
             color = darkgray;
-            label = "Eight Model\n(/proc/factor/model/eighth)";
-            comment = "";
+            label = "Dynamis Model\n(/proc/factor/model/dynamis)";
+            comment = "This is the Fuel. The model of potential and resources.";
             
             // 
-            spark_0_eighth_model_t [label = "Eight.meta(TBD)";comment = "";shape = doublecircle;];
-            spark_1_eighth_model_t [label = "Eight.r1(TBD)";comment = "";shape = circle;];
-            spark_2_eighth_model_t [label = "Eight.r2(TBD)";comment = "";shape = circle;];
-            spark_4_eighth_model_t [label = "Eight.r4(TBD)";comment = "";shape = circle;];
-            spark_8_eighth_model_t [label = "Eight.r8(TBD)";comment = "";shape = circle;];
-            spark_7_eighth_model_t [label = "Eight.r7(TBD)";comment = "";shape = circle;];
-            spark_5_eighth_model_t [label = "Eight.r5(TBD)";comment = "";shape = circle;];
-            spark_3_eighth_model_t [label = "Eight.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_eighth_model_t [label = "Eight.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_eighth_model_t [label = "Eight.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_eighth_model_t [label = "Eight.receive(TBD)";comment = "";shape = invtriangle;];
-            spark_b_eighth_model_t [label = "Eight.send(TBD)";comment = "";shape = triangle;];
-            spark_c_eighth_model_t [label = "Eight.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_eighth_model_t [label = "Eight.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_eighth_model_t [label = "Eight.serve(TBD)";comment = "";shape = doublecircle;];
-            spark_f_eighth_model_t [label = "Eight.exec(TBD)";comment = "";shape = doublecircle;];
+            spark_0_dynamis_model_t [label = "Dynamis.meta(Dynamis)";comment = "The fundamental nature of energetic resources.";shape = doublecircle;];
+            spark_1_dynamis_model_t [label = "Dynamis.r1(Mana)";comment = "";shape = circle;];
+            spark_2_dynamis_model_t [label = "Dynamis.r2(Stamina)";comment = "";shape = circle;];
+            spark_4_dynamis_model_t [label = "Dynamis.r4(Arcane)";comment = "";shape = circle;];
+            spark_8_dynamis_model_t [label = "Dynamis.r8(Entropic)";comment = "";shape = circle;];
+            spark_7_dynamis_model_t [label = "Dynamis.r7(Spiritual)";comment = "";shape = circle;];
+            spark_5_dynamis_model_t [label = "Dynamis.r5(Elemental)";comment = "";shape = circle;];
+            spark_3_dynamis_model_t [label = "Dynamis.r3(Reserve)";comment = "";shape = doublecircle;];
+            spark_6_dynamis_model_t [label = "Dynamis.r6(Flow)";comment = "";shape = doublecircle;];
+            spark_9_dynamis_model_t [label = "Dynamis.r9(Potency)";comment = "";shape = doublecircle;];
+            spark_a_dynamis_model_t [label = "Dynamis.receive(Potential)";comment = "";shape = invtriangle;];
+            spark_b_dynamis_model_t [label = "Dynamis.send(Current)";comment = "";shape = triangle;];
+            spark_c_dynamis_model_t [label = "Dynamis.dispatch(Channel)";comment = "";shape = doublecircle;];
+            spark_d_dynamis_model_t [label = "Dynamis.commit(Reservoir)";comment = "";shape = doublecircle;];
+            spark_e_dynamis_model_t [label = "Dynamis.serve(Conduit)";comment = "";shape = doublecircle;];
+            spark_f_dynamis_model_t [label = "Dynamis.exec(LawOfConservation)";comment = "";shape = doublecircle;];
         }
         
         // ============================================================================================================
-        // Ninth Model
+        // Kratos Model
         // ============================================================================================================
-        subgraph cluster_1_9_NinthModel {
+        subgraph cluster_1_9_KratosModel {
             style = filled;
             color = darkgray;
-            label = "Ninth Model\n(/proc/factor/model/lurd)";
+            label = "Kratos Model\n(/proc/factor/model/kratos)";
             comment = "";
             
             // 
-            spark_0_ninth_model_t [label = "Ninth.meta(TBD)";comment = "";shape = doublecircle;];
-            spark_1_ninth_model_t [label = "Ninth.r1(TBD)";comment = "";shape = circle;];
-            spark_2_ninth_model_t [label = "Ninth.r2(TBD)";comment = "";shape = circle;];
-            spark_4_ninth_model_t [label = "Ninth.r4(TBD)";comment = "";shape = circle;];
-            spark_8_ninth_model_t [label = "Ninth.r8(TBD)";comment = "";shape = circle;];
-            spark_7_ninth_model_t [label = "Ninth.r7(TBD)";comment = "";shape = circle;];
-            spark_5_ninth_model_t [label = "Ninth.r5(TBD)";comment = "";shape = circle;];
-            spark_3_ninth_model_t [label = "Ninth.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_ninth_model_t [label = "Ninth.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_ninth_model_t [label = "Ninth.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_ninth_model_t [label = "Ninth.receive(TBD)";comment = "";shape = invtriangle;];
-            spark_b_ninth_model_t [label = "Ninth.send(TBD)";comment = "";shape = triangle;];
-            spark_c_ninth_model_t [label = "Ninth.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_ninth_model_t [label = "Ninth.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_ninth_model_t [label = "Ninth.serve(TBD)";comment = "";shape = doublecircle;];
-            spark_f_ninth_model_t [label = "Ninth.exec(TBD)";comment = "";shape = doublecircle;];
+            spark_0_kratos_model_t [label = "Kratos.meta(Kratos)";comment = "";shape = doublecircle;];
+            spark_1_kratos_model_t [label = "Kratos.r1(Access)";comment = "";shape = circle;];
+            spark_2_kratos_model_t [label = "Kratos.r2(Modify)";comment = "";shape = circle;];
+            spark_4_kratos_model_t [label = "Kratos.r4(Execute)";comment = "";shape = circle;];
+            spark_8_kratos_model_t [label = "Kratos.r8(Delegate)";comment = "";shape = circle;];
+            spark_7_kratos_model_t [label = "Kratos.r7(Own)";comment = "";shape = circle;];
+            spark_5_kratos_model_t [label = "Kratos.r5(Link)";comment = "";shape = circle;];
+            spark_3_kratos_model_t [label = "Kratos.r3(Inherited)";comment = "";shape = doublecircle;];
+            spark_6_kratos_model_t [label = "Kratos.r6(Earned)";comment = "";shape = doublecircle;];
+            spark_9_kratos_model_t [label = "Kratos.r9(Bestowed)";comment = "";shape = doublecircle;];
+            spark_a_kratos_model_t [label = "Kratos.receive(Petition)";comment = "";shape = invtriangle;];
+            spark_b_kratos_model_t [label = "Kratos.send(Warrant)";comment = "";shape = triangle;];
+            spark_c_kratos_model_t [label = "Kratos.dispatch(Authorization)";comment = "";shape = doublecircle;];
+            spark_d_kratos_model_t [label = "Kratos.commit(License)";comment = "";shape = doublecircle;];
+            spark_e_kratos_model_t [label = "Kratos.serve(Sanction)";comment = "";shape = doublecircle;];
+            spark_f_kratos_model_t [label = "Kratos.exec(LawOfAuthority)";comment = "";shape = doublecircle;];
         }
         
         // ============================================================================================================
@@ -733,62 +738,62 @@ strict digraph Core {
         spark_d_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
         spark_e_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
         // ============================================================================================================
-        // seventh Model
+        // Praxis Model
         // ============================================================================================================
-        spark_0_seventh_model_t -> spark_a_seventh_model_t [label = "IN"; color = darkred; comment = "";];
-        spark_0_seventh_model_t -> spark_b_seventh_model_t [label = "OUT"; color = darkred; comment = "";];
-        spark_0_seventh_model_t -> {spark_3_seventh_model_t spark_6_seventh_model_t spark_9_seventh_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-        spark_0_seventh_model_t -> {spark_1_seventh_model_t spark_2_seventh_model_t spark_4_seventh_model_t spark_8_seventh_model_t spark_7_seventh_model_t spark_5_seventh_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        spark_0_praxis_model_t -> spark_a_praxis_model_t [label = "IN"; color = darkred; comment = "";];
+        spark_0_praxis_model_t -> spark_b_praxis_model_t [label = "OUT"; color = darkred; comment = "";];
+        spark_0_praxis_model_t -> {spark_3_praxis_model_t spark_6_praxis_model_t spark_9_praxis_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        spark_0_praxis_model_t -> {spark_1_praxis_model_t spark_2_praxis_model_t spark_4_praxis_model_t spark_8_praxis_model_t spark_7_praxis_model_t spark_5_praxis_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
         
-        {spark_a_seventh_model_t spark_b_seventh_model_t} -> spark_c_seventh_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-        {spark_1_seventh_model_t spark_2_seventh_model_t spark_4_seventh_model_t spark_8_seventh_model_t spark_7_seventh_model_t spark_5_seventh_model_t} -> spark_d_seventh_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-        {spark_3_seventh_model_t spark_6_seventh_model_t spark_9_seventh_model_t} -> spark_e_seventh_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        {spark_a_praxis_model_t spark_b_praxis_model_t} -> spark_c_praxis_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+        {spark_1_praxis_model_t spark_2_praxis_model_t spark_4_praxis_model_t spark_8_praxis_model_t spark_7_praxis_model_t spark_5_praxis_model_t} -> spark_d_praxis_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        {spark_3_praxis_model_t spark_6_praxis_model_t spark_9_praxis_model_t} -> spark_e_praxis_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
         
-        spark_1_seventh_model_t -> spark_2_seventh_model_t -> spark_4_seventh_model_t -> spark_8_seventh_model_t -> spark_7_seventh_model_t -> spark_5_seventh_model_t -> spark_1_seventh_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_3_seventh_model_t -> spark_6_seventh_model_t -> spark_9_seventh_model_t -> spark_3_seventh_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_a_seventh_model_t -> spark_b_seventh_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+        spark_1_praxis_model_t -> spark_2_praxis_model_t -> spark_4_praxis_model_t -> spark_8_praxis_model_t -> spark_7_praxis_model_t -> spark_5_praxis_model_t -> spark_1_praxis_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_3_praxis_model_t -> spark_6_praxis_model_t -> spark_9_praxis_model_t -> spark_3_praxis_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_a_praxis_model_t -> spark_b_praxis_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
         
-        spark_c_seventh_model_t -> spark_f_seventh_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-        spark_d_seventh_model_t -> spark_f_seventh_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-        spark_e_seventh_model_t -> spark_f_seventh_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        spark_c_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+        spark_d_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+        spark_e_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
         // ============================================================================================================
-        // Eighth Model
+        // Dynamis Model
         // ============================================================================================================
-        spark_0_eighth_model_t -> spark_a_eighth_model_t [label = "IN"; color = darkred; comment = "";];
-        spark_0_eighth_model_t -> spark_b_eighth_model_t [label = "OUT"; color = darkred; comment = "";];
-        spark_0_eighth_model_t -> {spark_3_eighth_model_t spark_6_eighth_model_t spark_9_eighth_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-        spark_0_eighth_model_t -> {spark_1_eighth_model_t spark_2_eighth_model_t spark_4_eighth_model_t spark_8_eighth_model_t spark_7_eighth_model_t spark_5_eighth_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        spark_0_dynamis_model_t -> spark_a_dynamis_model_t [label = "IN"; color = darkred; comment = "";];
+        spark_0_dynamis_model_t -> spark_b_dynamis_model_t [label = "OUT"; color = darkred; comment = "";];
+        spark_0_dynamis_model_t -> {spark_3_dynamis_model_t spark_6_dynamis_model_t spark_9_dynamis_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        spark_0_dynamis_model_t -> {spark_1_dynamis_model_t spark_2_dynamis_model_t spark_4_dynamis_model_t spark_8_dynamis_model_t spark_7_dynamis_model_t spark_5_dynamis_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
         
-        {spark_a_eighth_model_t spark_b_eighth_model_t} -> spark_c_eighth_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-        {spark_1_eighth_model_t spark_2_eighth_model_t spark_4_eighth_model_t spark_8_eighth_model_t spark_7_eighth_model_t spark_5_eighth_model_t} -> spark_d_eighth_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-        {spark_3_eighth_model_t spark_6_eighth_model_t spark_9_eighth_model_t} -> spark_e_eighth_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        {spark_a_dynamis_model_t spark_b_dynamis_model_t} -> spark_c_dynamis_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+        {spark_1_dynamis_model_t spark_2_dynamis_model_t spark_4_dynamis_model_t spark_8_dynamis_model_t spark_7_dynamis_model_t spark_5_dynamis_model_t} -> spark_d_dynamis_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        {spark_3_dynamis_model_t spark_6_dynamis_model_t spark_9_dynamis_model_t} -> spark_e_dynamis_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
         
-        spark_1_eighth_model_t -> spark_2_eighth_model_t -> spark_4_eighth_model_t -> spark_8_eighth_model_t -> spark_7_eighth_model_t -> spark_5_eighth_model_t -> spark_1_eighth_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_3_eighth_model_t -> spark_6_eighth_model_t -> spark_9_eighth_model_t -> spark_3_eighth_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_a_eighth_model_t -> spark_b_eighth_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+        spark_1_dynamis_model_t -> spark_2_dynamis_model_t -> spark_4_dynamis_model_t -> spark_8_dynamis_model_t -> spark_7_dynamis_model_t -> spark_5_dynamis_model_t -> spark_1_dynamis_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_3_dynamis_model_t -> spark_6_dynamis_model_t -> spark_9_dynamis_model_t -> spark_3_dynamis_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_a_dynamis_model_t -> spark_b_dynamis_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
         
-        spark_c_eighth_model_t -> spark_f_eighth_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-        spark_d_eighth_model_t -> spark_f_eighth_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-        spark_e_eighth_model_t -> spark_f_eighth_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        spark_c_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+        spark_d_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+        spark_e_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
         // ============================================================================================================
-        // Ninth Model
+        // Kratos Model
         // ============================================================================================================
-        spark_0_ninth_model_t -> spark_a_ninth_model_t [label = "IN"; color = darkred; comment = "";];
-        spark_0_ninth_model_t -> spark_b_ninth_model_t [label = "OUT"; color = darkred; comment = "";];
-        spark_0_ninth_model_t -> {spark_3_ninth_model_t spark_6_ninth_model_t spark_9_ninth_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-        spark_0_ninth_model_t -> {spark_1_ninth_model_t spark_2_ninth_model_t spark_4_ninth_model_t spark_8_ninth_model_t spark_7_ninth_model_t spark_5_ninth_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        spark_0_kratos_model_t -> spark_a_kratos_model_t [label = "IN"; color = darkred; comment = "";];
+        spark_0_kratos_model_t -> spark_b_kratos_model_t [label = "OUT"; color = darkred; comment = "";];
+        spark_0_kratos_model_t -> {spark_3_kratos_model_t spark_6_kratos_model_t spark_9_kratos_model_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        spark_0_kratos_model_t -> {spark_1_kratos_model_t spark_2_kratos_model_t spark_4_kratos_model_t spark_8_kratos_model_t spark_7_kratos_model_t spark_5_kratos_model_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
         
-        {spark_a_ninth_model_t spark_b_ninth_model_t} -> spark_c_ninth_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-        {spark_1_ninth_model_t spark_2_ninth_model_t spark_4_ninth_model_t spark_8_ninth_model_t spark_7_ninth_model_t spark_5_ninth_model_t} -> spark_d_ninth_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-        {spark_3_ninth_model_t spark_6_ninth_model_t spark_9_ninth_model_t} -> spark_e_ninth_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+        {spark_a_kratos_model_t spark_b_kratos_model_t} -> spark_c_kratos_model_t [label = "REC"; color = darkred; comment = ""; dir = both;];
+        {spark_1_kratos_model_t spark_2_kratos_model_t spark_4_kratos_model_t spark_8_kratos_model_t spark_7_kratos_model_t spark_5_kratos_model_t} -> spark_d_kratos_model_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+        {spark_3_kratos_model_t spark_6_kratos_model_t spark_9_kratos_model_t} -> spark_e_kratos_model_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
         
-        spark_1_ninth_model_t -> spark_2_ninth_model_t -> spark_4_ninth_model_t -> spark_8_ninth_model_t -> spark_7_ninth_model_t -> spark_5_ninth_model_t -> spark_1_ninth_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_3_ninth_model_t -> spark_6_ninth_model_t -> spark_9_ninth_model_t -> spark_3_ninth_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-        spark_a_ninth_model_t -> spark_b_ninth_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+        spark_1_kratos_model_t -> spark_2_kratos_model_t -> spark_4_kratos_model_t -> spark_8_kratos_model_t -> spark_7_kratos_model_t -> spark_5_kratos_model_t -> spark_1_kratos_model_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_3_kratos_model_t -> spark_6_kratos_model_t -> spark_9_kratos_model_t -> spark_3_kratos_model_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
+        spark_a_kratos_model_t -> spark_b_kratos_model_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
         
-        spark_c_ninth_model_t -> spark_f_ninth_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-        spark_d_ninth_model_t -> spark_f_ninth_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-        spark_e_ninth_model_t -> spark_f_ninth_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+        spark_c_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
+        spark_d_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
+        spark_e_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
     }
     
     // ================================================================================================================
@@ -811,12 +816,12 @@ strict digraph Core {
             
             // 
             spark_0_truth_t [label = "Truth.meta(Truth)";comment = "Asha";shape = doublecircle;];
-            spark_1_truth_t [label = "Truth.r1(TBD)";comment = "";shape = circle;];
-            spark_2_truth_t [label = "Truth.r2(TBD)";comment = "";shape = circle;];
-            spark_4_truth_t [label = "Truth.r4(TBD)";comment = "";shape = circle;];
-            spark_8_truth_t [label = "Truth.r8(TBD)";comment = "";shape = circle;];
-            spark_7_truth_t [label = "Truth.r7(TBD)";comment = "";shape = circle;];
-            spark_5_truth_t [label = "Truth.r5(TBD)";comment = "";shape = circle;];
+            spark_1_truth_t [label = "Truth.r1(Verification)";comment = "";shape = circle;];
+            spark_2_truth_t [label = "Truth.r2(Evidence)";comment = "";shape = circle;];
+            spark_4_truth_t [label = "Truth.r4(Definition)";comment = "";shape = circle;];
+            spark_8_truth_t [label = "Truth.r8(Consistency)";comment = "";shape = circle;];
+            spark_7_truth_t [label = "Truth.r7(Recognition)";comment = "";shape = circle;];
+            spark_5_truth_t [label = "Truth.r5(Authenticity)";comment = "";shape = circle;];
             spark_3_truth_t [label = "Truth.r3(CrestOfObjectivity)";comment = "";shape = circle;];
             spark_6_truth_t [label = "Truth.r6(CrestOfBoundary)";comment = "";shape = circle;];
             spark_9_truth_t [label = "Truth.r9(CrestOfClarity)";comment = "";shape = circle;];
@@ -839,12 +844,12 @@ strict digraph Core {
             
             // 
             spark_0_wisdom_t [label = "Wisdom.meta(Wisdom)";comment = "Vidya";shape = doublecircle;];
-            spark_1_wisdom_t [label = "Wisdom.r1(TBD)";comment = "";shape = circle;];
-            spark_2_wisdom_t [label = "Wisdom.r2(TBD)";comment = "";shape = circle;];
-            spark_4_wisdom_t [label = "Wisdom.r4(TBD)";comment = "";shape = circle;];
-            spark_8_wisdom_t [label = "Wisdom.r8(TBD)";comment = "";shape = circle;];
-            spark_7_wisdom_t [label = "Wisdom.r7(TBD)";comment = "";shape = circle;];
-            spark_5_wisdom_t [label = "Wisdom.r5(TBD)";comment = "";shape = circle;];
+            spark_1_wisdom_t [label = "Wisdom.r1(Discernment)";comment = "";shape = circle;];
+            spark_2_wisdom_t [label = "Wisdom.r2(Analogy)";comment = "";shape = circle;];
+            spark_4_wisdom_t [label = "Wisdom.r4(Memory)";comment = "";shape = circle;];
+            spark_8_wisdom_t [label = "Wisdom.r8(Foresight)";comment = "";shape = circle;];
+            spark_7_wisdom_t [label = "Wisdom.r7(Adaptation)";comment = "";shape = circle;];
+            spark_5_wisdom_t [label = "Wisdom.r5(Transmission)";comment = "";shape = circle;];
             spark_3_wisdom_t [label = "Wisdom.r3(CrestOfComplexity)";comment = "";shape = circle;];
             spark_6_wisdom_t [label = "Wisdom.r6(CrestOfReflection)";comment = "";shape = circle;];
             spark_9_wisdom_t [label = "Wisdom.r9(CrestOfInsight)";comment = "";shape = circle;];
@@ -867,12 +872,12 @@ strict digraph Core {
             
             // 
             spark_0_convergence_t [label = "Convergence.meta(Convergence)";comment = "Kirana Larasati";shape = doublecircle;];
-            spark_1_convergence_t [label = "Convergence.r1(TBD)";comment = "";shape = circle;];
-            spark_2_convergence_t [label = "Convergence.r2(TBD)";comment = "";shape = circle;];
-            spark_4_convergence_t [label = "Convergence.r4(TBD)";comment = "";shape = circle;];
-            spark_8_convergence_t [label = "Convergence.r8(TBD)";comment = "";shape = circle;];
-            spark_7_convergence_t [label = "Convergence.r7(TBD)";comment = "";shape = circle;];
-            spark_5_convergence_t [label = "Convergence.r5(TBD)";comment = "";shape = circle;];
+            spark_1_convergence_t [label = "Convergence.r1(Attraction)";comment = "";shape = circle;];
+            spark_2_convergence_t [label = "Convergence.r2(Alignment)";comment = "";shape = circle;];
+            spark_4_convergence_t [label = "Convergence.r4(Fusion)";comment = "";shape = circle;];
+            spark_8_convergence_t [label = "Convergence.r8(Balance)";comment = "";shape = circle;];
+            spark_7_convergence_t [label = "Convergence.r7(Synergy)";comment = "";shape = circle;];
+            spark_5_convergence_t [label = "Convergence.r5(Harmony)";comment = "";shape = circle;];
             spark_3_convergence_t [label = "Convergence.r3(CrestOfOrder)";comment = "";shape = circle;];
             spark_6_convergence_t [label = "Convergence.r6(CrestOfCreation)";comment = "";shape = circle;];
             spark_9_convergence_t [label = "Convergence.r9(CrestOfUnity)";comment = "";shape = circle;];
@@ -923,12 +928,12 @@ strict digraph Core {
             
             // 
             spark_0_fixation_t [label = "Fixation.meta(Fixation)";comment = "Tha";shape = doublecircle;];
-            spark_1_fixation_t [label = "Fixation.r1(TBD)";comment = "";shape = circle;];
-            spark_2_fixation_t [label = "Fixation.r2(TBD)";comment = "";shape = circle;];
-            spark_4_fixation_t [label = "Fixation.r4(TBD)";comment = "";shape = circle;];
-            spark_8_fixation_t [label = "Fixation.r8(TBD)";comment = "";shape = circle;];
-            spark_7_fixation_t [label = "Fixation.r7(TBD)";comment = "";shape = circle;];
-            spark_5_fixation_t [label = "Fixation.r5(TBD)";comment = "";shape = circle;];
+            spark_1_fixation_t [label = "Fixation.r1(Focus)";comment = "";shape = circle;];
+            spark_2_fixation_t [label = "Fixation.r2(Constraint)";comment = "";shape = circle;];
+            spark_4_fixation_t [label = "Fixation.r4(Attachment)";comment = "";shape = circle;];
+            spark_8_fixation_t [label = "Fixation.r8(Stability)";comment = "";shape = circle;];
+            spark_7_fixation_t [label = "Fixation.r7(Accumulation)";comment = "";shape = circle;];
+            spark_5_fixation_t [label = "Fixation.r5(Inheritance)";comment = "";shape = circle;];
             spark_3_fixation_t [label = "Fixation.r3(CrestOfDesire)";comment = "";shape = circle;];
             spark_6_fixation_t [label = "Fixation.r6(CrestOfTransformation)";comment = "";shape = circle;];
             spark_9_fixation_t [label = "Fixation.r9(CrestOfMatter)";comment = "";shape = circle;];
@@ -950,15 +955,15 @@ strict digraph Core {
             comment = "";
             
             spark_0_excitation_t [label = "Excitation.meta(Excitation)";comment = "Nda";shape = doublecircle;];
-            spark_1_excitation_t [label = "Excitation.r1(TBD)";comment = "";shape = circle;];
-            spark_2_excitation_t [label = "Excitation.r2(TBD)";comment = "";shape = circle;];
-            spark_4_excitation_t [label = "Excitation.r4(TBD)";comment = "";shape = circle;];
-            spark_8_excitation_t [label = "Excitation.r8(TBD)";comment = "";shape = circle;];
-            spark_7_excitation_t [label = "Excitation.r7(TBD)";comment = "";shape = circle;];
-            spark_5_excitation_t [label = "Excitation.r5(TBD)";comment = "";shape = circle;];
-            spark_3_excitation_t [label = "Excitation.r3(CrestOfEmotion)";comment = "";shape = circle;];
-            spark_6_excitation_t [label = "Excitation.r6(CrestOfMemory)";comment = "";shape = circle;];
-            spark_9_excitation_t [label = "Excitation.r9(CrestOfEnergy)";comment = "";shape = circle;];
+            spark_1_excitation_t [label = "Excitation.r1(Impulse)";comment = "";shape = circle;];
+            spark_2_excitation_t [label = "Excitation.r2(Catalyst)";comment = "";shape = circle;];
+            spark_4_excitation_t [label = "Excitation.r4(Resonance)";comment = "";shape = circle;];
+            spark_8_excitation_t [label = "Excitation.r8(Expansion)";comment = "";shape = circle;];
+            spark_7_excitation_t [label = "Excitation.r7(Oscillation)";comment = "";shape = circle;];
+            spark_5_excitation_t [label = "Excitation.r5(Propagation)";comment = "";shape = circle;];
+            spark_3_excitation_t [label = "Excitation.r3(CrestOfDynamism)";comment = "";shape = circle;];
+            spark_6_excitation_t [label = "Excitation.r6(CrestOfTransformation)";comment = "";shape = circle;];
+            spark_9_excitation_t [label = "Excitation.r9(CrestOfVitality)";comment = "";shape = circle;];
             spark_a_excitation_t [label = "Excitation.receive(RaimentOfExcitation)";comment = "";shape = triangle;];
             spark_b_excitation_t [label = "Excitation.send(ArmamentOfExcitation)";comment = "";shape = invtriangle;];
             spark_c_excitation_t [label = "Excitation.dispatch(BodyOfExcitation)";comment = "";shape = circle;];
@@ -987,11 +992,11 @@ strict digraph Core {
             spark_3_reality_t [label = "Reality.r3(Avatar)";comment = "";shape = doublecircle;];
             spark_6_reality_t [label = "Reality.r6(Listen)";comment = "";shape = doublecircle;];
             spark_9_reality_t [label = "Reality.r9(WakeEngine)";comment = "";shape = doublecircle;];
-            spark_a_reality_t [label = "Reality.receive(TBD)";comment = "";shape = invtriangle;];
-            spark_b_reality_t [label = "Reality.send(TBD)";comment = "";shape = triangle;];
-            spark_c_reality_t [label = "Reality.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_reality_t [label = "Reality.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_reality_t [label = "Reality.serve(TBD)";comment = "";shape = doublecircle;];
+            spark_a_reality_t [label = "Reality.receive(PotentialEventStream)";comment = "";shape = invtriangle;];
+            spark_b_reality_t [label = "Reality.send(ManifestEventStream)";comment = "";shape = triangle;];
+            spark_c_reality_t [label = "Reality.dispatch(ContextSwitch)";comment = "";shape = doublecircle;];
+            spark_d_reality_t [label = "Reality.commit(StateSync)";comment = "";shape = doublecircle;];
+            spark_e_reality_t [label = "Reality.serve(Continuity)";comment = "";shape = doublecircle;];
             spark_f_reality_t [label = "Reality.exec(LawOfReality)";comment = "";shape = doublecircle;];
         }
         
@@ -1010,16 +1015,16 @@ strict digraph Core {
             spark_2_event_t [label = "Event.r2(ValidateEvent)";comment = "";shape = circle;];
             spark_4_event_t [label = "Event.r4(NormalizeEvent)";comment = "";shape = circle;];
             spark_8_event_t [label = "Event.r8(ResetEvent)";comment = "";shape = circle;];
-            spark_7_event_t [label = "Event.r7(TBD)";comment = "";shape = circle;];
-            spark_5_event_t [label = "Event.r5(TBD)";comment = "";shape = circle;];
-            spark_3_event_t [label = "Event.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_event_t [label = "Event.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_event_t [label = "Event.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_event_t [label = "Event.receive(TBD)";comment = "";shape = triangle;];
-            spark_b_event_t [label = "Event.send(TBD)";comment = "";shape = invtriangle;];
-            spark_c_event_t [label = "Event.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_event_t [label = "Event.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_event_t [label = "Event.serve(TBD)";comment = "`/proc/event`";shape = doublecircle;];
+            spark_7_event_t [label = "Event.r7(PotentialEvent)";comment = "";shape = circle;];
+            spark_5_event_t [label = "Event.r5(ActualEvent)";comment = "";shape = circle;];
+            spark_3_event_t [label = "Event.r3(CrestOfOrigin)";comment = "";shape = doublecircle;];
+            spark_6_event_t [label = "Event.r6(CrestOfFlow)";comment = "";shape = doublecircle;];
+            spark_9_event_t [label = "Event.r9(CrestOfSignificance)";comment = "";shape = doublecircle;];
+            spark_a_event_t [label = "Event.receive(PotentialEvent)";comment = "";shape = triangle;];
+            spark_b_event_t [label = "Event.send(ActualEvent)";comment = "";shape = invtriangle;];
+            spark_c_event_t [label = "Event.dispatch(Routing)";comment = "";shape = doublecircle;];
+            spark_d_event_t [label = "Event.commit(Binding)";comment = "";shape = doublecircle;];
+            spark_e_event_t [label = "Event.serve(Reflection)";comment = "`/proc/event`";shape = doublecircle;];
             spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "`/proc/probability`";shape = doublecircle;];
         }
         
@@ -1062,21 +1067,21 @@ strict digraph Core {
             
             // 
             spark_0_repository_t [label = "Repository.meta(Repository)";comment = "";shape = doublecircle;];
-            spark_1_repository_t [label = "Repository.r1(TBD)";comment = "";shape = circle;];
-            spark_2_repository_t [label = "Repository.r2(TBD)";comment = "";shape = circle;];
-            spark_4_repository_t [label = "Repository.r4(TBD)";comment = "";shape = circle;];
-            spark_8_repository_t [label = "Repository.r8(TBD)";comment = "";shape = circle;];
-            spark_7_repository_t [label = "Repository.r7(TBD)";comment = "";shape = circle;];
-            spark_5_repository_t [label = "Repository.r5(TBD)";comment = "";shape = circle;];
-            spark_3_repository_t [label = "Repository.r3(TBD)";comment = "";shape = doublecircle;];
-            spark_6_repository_t [label = "Repository.r6(TBD)";comment = "";shape = doublecircle;];
-            spark_9_repository_t [label = "Repository.r9(TBD)";comment = "";shape = doublecircle;];
+            spark_1_repository_t [label = "Repository.r1(Cache)";comment = "";shape = circle;];
+            spark_2_repository_t [label = "Repository.r2(Registry)";comment = "";shape = circle;];
+            spark_4_repository_t [label = "Repository.r4(Archive)";comment = "";shape = circle;];
+            spark_8_repository_t [label = "Repository.r8(Buffer)";comment = "";shape = circle;];
+            spark_7_repository_t [label = "Repository.r7(Database)";comment = "";shape = circle;];
+            spark_5_repository_t [label = "Repository.r5(Memory)";comment = "";shape = circle;];
+            spark_3_repository_t [label = "Repository.r3(Codex)";comment = "";shape = doublecircle;];
+            spark_6_repository_t [label = "Repository.r6(Log)";comment = "";shape = doublecircle;];
+            spark_9_repository_t [label = "Repository.r9(Template)";comment = "";shape = doublecircle;];
             spark_a_repository_t [label = "Repository.receive(Sub)";comment = "";shape = triangle;];
             spark_b_repository_t [label = "Repository.send(Pub)";comment = "";shape = invtriangle;];
-            spark_c_repository_t [label = "Repository.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_repository_t [label = "Repository.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_repository_t [label = "Repository.serve(TBD)";comment = "";shape = doublecircle;];
-            spark_f_repository_t [label = "Repository.exec(TBD)";comment = "";shape = doublecircle;];
+            spark_c_repository_t [label = "Repository.dispatch(Query)";comment = "";shape = doublecircle;];
+            spark_d_repository_t [label = "Repository.commit(Transaction)";comment = "";shape = doublecircle;];
+            spark_e_repository_t [label = "Repository.serve(Replication)";comment = "";shape = doublecircle;];
+            spark_f_repository_t [label = "Repository.exec(LawOfPersistence)";comment = "";shape = doublecircle;];
         }
         
         // ============================================================================================================
@@ -1099,11 +1104,11 @@ strict digraph Core {
             spark_3_haoma_t [label = "Haoma.r3(TBD)";comment = "`/sys/lurd`";shape = doublecircle;];
             spark_6_haoma_t [label = "Haoma.r6(TBD)";comment = "";shape = doublecircle;];
             spark_9_haoma_t [label = "Haoma.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_haoma_t [label = "Haoma.receive(TBD)";comment = "";shape = triangle;];
-            spark_b_haoma_t [label = "Haoma.send(TBD)";comment = "";shape = invtriangle;];
-            spark_c_haoma_t [label = "Haoma.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_haoma_t [label = "Haoma.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_haoma_t [label = "Haoma.serve(TBD)";comment = "`/sys/haoma`";shape = doublecircle;];
+            spark_a_haoma_t [label = "Haoma.receive(Blueprint)";comment = "";shape = triangle;];
+            spark_b_haoma_t [label = "Haoma.send(Instance)";comment = "";shape = invtriangle;];
+            spark_c_haoma_t [label = "Haoma.dispatch(Materialization)";comment = "";shape = doublecircle;];
+            spark_d_haoma_t [label = "Haoma.commit(Initialization)";comment = "";shape = doublecircle;];
+            spark_e_haoma_t [label = "Haoma.serve(Animation)";comment = "`/sys/haoma`";shape = doublecircle;];
             spark_f_haoma_t [label = "Haoma.exec(LawOfFactor)";comment = "";shape = doublecircle;];
         }
         
@@ -1155,11 +1160,11 @@ strict digraph Core {
             spark_3_directive_t [label = "Directive.r3(CodexOfDirective)";comment = "";shape = doublecircle;];
             spark_6_directive_t [label = "Directive.r6(TBD)";comment = "";shape = doublecircle;];
             spark_9_directive_t [label = "Directive.r9(TBD)";comment = "";shape = doublecircle;];
-            spark_a_directive_t [label = "Directive.receive(TBD)";comment = "";shape = triangle;];
-            spark_b_directive_t [label = "Directive.send(TBD)";comment = "";shape = invtriangle;];
-            spark_c_directive_t [label = "Directive.dispatch(TBD)";comment = "";shape = doublecircle;];
-            spark_d_directive_t [label = "Directive.commit(TBD)";comment = "";shape = doublecircle;];
-            spark_e_directive_t [label = "Directive.serve(TBD)";comment = "`/srv/directive`";shape = doublecircle;];
+            spark_a_directive_t [label = "Directive.receive(Goal)";comment = "";shape = triangle;];
+            spark_b_directive_t [label = "Directive.send(Action)";comment = "";shape = invtriangle;];
+            spark_c_directive_t [label = "Directive.dispatch(Strategy)";comment = "";shape = doublecircle;];
+            spark_d_directive_t [label = "Directive.commit(Tactic)";comment = "";shape = doublecircle;];
+            spark_e_directive_t [label = "Directive.serve(Command)";comment = "`/srv/directive`";shape = doublecircle;];
             spark_f_directive_t [label = "Directive.exec(LawOfDirective)";comment = "";shape = doublecircle;];
         }
         
@@ -1230,12 +1235,12 @@ strict digraph Core {
             
             // 
             spark_0_origin_t [label = "Origin.meta(Origin)";comment = "";shape = doublecircle;];
-            spark_1_origin_t [label = "Origin.r1(TBD)";comment = "";shape = circle;];
-            spark_2_origin_t [label = "Origin.r2(TBD)";comment = "";shape = circle;];
-            spark_4_origin_t [label = "Origin.r4(TBD)";comment = "";shape = circle;];
-            spark_8_origin_t [label = "Origin.r8(TBD)";comment = "";shape = circle;];
-            spark_7_origin_t [label = "Origin.r7(TBD)";comment = "";shape = circle;];
-            spark_5_origin_t [label = "Origin.r5(TBD)";comment = "";shape = circle;];
+            spark_1_origin_t [label = "Origin.r1(PrimordialSingularity)";comment = "";shape = circle;];
+            spark_2_origin_t [label = "Origin.r2(QuantumFoam)";comment = "";shape = circle;];
+            spark_4_origin_t [label = "Origin.r4(TheFirstSymmetryBreaking)";comment = "";shape = circle;];
+            spark_8_origin_t [label = "Origin.r8(TheFirstRecursion)";comment = "";shape = circle;];
+            spark_7_origin_t [label = "Origin.r7(TheFirstObservation)";comment = "";shape = circle;];
+            spark_5_origin_t [label = "Origin.r5(TheFirstCause)";comment = "";shape = circle;];
             spark_3_origin_t [label = "Origin.r3(Pattern)";comment = "";shape = doublecircle;];
             spark_6_origin_t [label = "Origin.r6(Rhythm)";comment = "";shape = doublecircle;];
             spark_9_origin_t [label = "Origin.r9(Brane)";comment = "Brane Object, Brane World, Brane Lifeform";shape = doublecircle;];
