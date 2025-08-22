@@ -7,7 +7,7 @@ strict digraph Ariadiana {
     avesix_t [label = "People of Vikara\nAvesix";comment = "";shape = folder;];
     hapsari_t [label = "People of Convergence\nHapsari Lineage";comment = "Sub House of Nawang Lineage";shape = folder;];
     sekar_t [label = "People of Divergence\nSekar Lineage";comment = "Sub House of Pawang Lineage";shape = folder;];
-    felixa_t [label = "People of Rasa\nFelixa Lineage";comment = "";shape = folder;];
+    felixa_t [label = "People of Rasa\nFelixa Lineage";comment = "T";shape = folder;];
     first_class_house_t [label = "First Class House";comment = "";shape = folder;];
     second_class_house_t [label = "Second Class House";comment = "";shape = folder;];
     third_class_house_t [label = "Third Class House";comment = "";shape = folder;];
