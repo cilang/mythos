@@ -138,4 +138,5 @@ dist
 .vscode/
 .obsidian/
 dist/
-src/lore/closure
+src/lore/closure/
+lore/closure/
