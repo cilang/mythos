@@ -1,46 +1,39 @@
 ---
 aliases:
+  - Fixation
+  - Fixation Engine
 tags:
   - grade-1
 r0:
+  - "[[FixationEngine|Fixation]]"
 ra:
+  - "[[RaimentOfFixation]]"
 rb:
+  - "[[ArmamentOfFixation]]"
 r1:
+  - "[[Focus]]"
 r2:
+  - "[[Constraint]]"
 r4:
+  - "[[Attachment]]"
 r8:
+  - "[[Stability]]"
 r7:
+  - "[[Accumulation]]"
 r5:
+  - "[[Inheritance]]"
 r3:
+  - "[[CrestOfDesire]]"
 r6:
+  - "[[CrestOfTransformation]]"
 r9:
+  - "[[CrestOfMatter]]"
 rc:
+  - "[[BodyOfFixation]]"
 rd:
+  - "[[SoulOfFixation]]"
 re:
+  - "[[GraceOfFixation]]"
 rf:
+  - "[[LawOfFixation]]"
 ---
-
-subgraph cluster_2_4_FixationEngine {
-            style = filled;
-            color = darkgray;
-            label = "Fixation Engine (/dev/fixation)";
-            comment = "";
-
-            //
-            spark_0_fixation_t [label = "Fixation.meta(Fixation)";comment = "Tha";shape = doublecircle;];
-            spark_1_fixation_t [label = "Fixation.r1(Focus)";comment = "";shape = circle;];
-            spark_2_fixation_t [label = "Fixation.r2(Constraint)";comment = "";shape = circle;];
-            spark_4_fixation_t [label = "Fixation.r4(Attachment)";comment = "";shape = circle;];
-            spark_8_fixation_t [label = "Fixation.r8(Stability)";comment = "";shape = circle;];
-            spark_7_fixation_t [label = "Fixation.r7(Accumulation)";comment = "";shape = circle;];
-            spark_5_fixation_t [label = "Fixation.r5(Inheritance)";comment = "";shape = circle;];
-            spark_3_fixation_t [label = "Fixation.r3(CrestOfDesire)";comment = "";shape = circle;];
-            spark_6_fixation_t [label = "Fixation.r6(CrestOfTransformation)";comment = "";shape = circle;];
-            spark_9_fixation_t [label = "Fixation.r9(CrestOfMatter)";comment = "";shape = circle;];
-            spark_a_fixation_t [label = "Fixation.receive(RaimentOfFixation)";comment = "";shape = triangle;];
-            spark_b_fixation_t [label = "Fixation.send(ArmamentOfFixation)";comment = "";shape = invtriangle;];
-            spark_c_fixation_t [label = "Fixation.dispatch(BodyOfFixation)";comment = "";shape = circle;];
-            spark_d_fixation_t [label = "Fixation.commit(SoulOfFixation)";comment = "";shape = circle;];
-            spark_e_fixation_t [label = "Fixation.serve(GraceOfFixation)";comment = "";shape = circle;];
-            spark_f_fixation_t [label = "Fixation.exec(LawOfFixation)";comment = "";shape = circle;];
-        }
