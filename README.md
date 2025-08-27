@@ -1,6 +1,6 @@
 # MythOS
 
-![Image](nava.svg)
+![Image](meta/shared/nava.svg)
 
 # MythOS
 

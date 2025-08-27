@@ -5,27 +5,27 @@ strict digraph Core {
     compound = true;
     nodesep = 0.75;
     ranksep = 1.0;
-
+    
     // ================================================================================================================
     // Fundamental Concepts
     // ================================================================================================================
-    //
+    // 
     // Sparklet {
     //   Spark.meta(), // Backend or Kernel
-    //   Spark.r{1,2,4,8,7,5}(), // Mechanical Vortex
-    //   Spark.r{3,6,9}(), // Cognitive Vortex
+    //   Spark.r{1,2,4,8,7,5}(), // Mechanical Vortex akin to (Initiation <-> Response <-> Integration <-> Reflection <-> Consolidation <-> Propagation <-> Initiation <->)
+    //   Spark.r{3,6,9}(), // Cognitive Vortex akin to (Thesis <-> Antithesis <-> Synthesis <-> Thesis <->)
     //   Spark.{receive, send}(), // I/O Port
     //   Spark.{dispatch, commit, serve}(), // Router
     //   Spark.exec() // Frontend
     // }
-    //
+    // 
     // Those 16 Sparks is collectively called Sparklet, hence a
     subgraph cluster_0_Models {
         style = filled;
         color = lightgray;
         label = "Model";
         comment = "TBA";
-
+        
         // ============================================================================================================
         // Asha Model
         // ============================================================================================================
@@ -34,7 +34,7 @@ strict digraph Core {
             color = darkgray;
             label = "Asha Model";
             comment = "TBA";
-
+            
             spark_0_asha_model_t [label = "Asha.meta(Asha)";comment = "TBA";shape = doublecircle;];
             spark_1_asha_model_t [label = "Asha.r1(Insight)";comment = "TBA";];
             spark_2_asha_model_t [label = "Asha.r2(Discernment)";comment = "TBA";];
@@ -45,14 +45,14 @@ strict digraph Core {
             spark_3_asha_model_t [label = "Asha.r3(Conviction)";comment = "TBA";];
             spark_6_asha_model_t [label = "Asha.r6(Judgement)";comment = "TBA";];
             spark_9_asha_model_t [label = "Asha.r9(Principle)";comment = "TBA";];
-            spark_a_asha_model_t [label = "Asha.receive(Truth)";comment = "TBA";shape = invtriangle;];
-            spark_b_asha_model_t [label = "Asha.send(Wisdom)";comment = "TBA";shape = triangle;];
+            spark_a_asha_model_t [label = "Asha.receive(Truth)";comment = "Potential: The unverified, raw data of reality.";shape = invtriangle;];
+            spark_b_asha_model_t [label = "Asha.send(Wisdom)";comment = "Manifest: The contextual, applied understanding of truth.";shape = triangle;];
             spark_c_asha_model_t [label = "Asha.dispatch(Adjudication)";comment = "TBA";shape = doublecircle;];
             spark_d_asha_model_t [label = "Asha.commit(Covenant)";comment = "TBA";shape = doublecircle;];
             spark_e_asha_model_t [label = "Asha.serve(Guidance)";comment = "TBA";shape = doublecircle;];
-            spark_f_asha_model_t [label = "Asha.exec(Law)";comment = "TBA";shape = doublecircle;];
+            spark_f_asha_model_t [label = "Asha.exec(Truth)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Vikara Model
         // ============================================================================================================
@@ -61,7 +61,7 @@ strict digraph Core {
             color = darkgray;
             label = "Vikara Model";
             comment = "TBA";
-
+            
             spark_0_vikara_model_t [label = "Vikara.meta(Vikara)";comment = "TBA";shape = doublecircle;];
             spark_1_vikara_model_t [label = "Vikara.r1(Probability)";comment = "TBA";];
             spark_2_vikara_model_t [label = "Vikara.r2(Chaos)";comment = "TBA";];
@@ -72,14 +72,14 @@ strict digraph Core {
             spark_3_vikara_model_t [label = "Vikara.r3(Luck)";comment = "TBA";];
             spark_6_vikara_model_t [label = "Vikara.r6(Faith)";comment = "TBA";];
             spark_9_vikara_model_t [label = "Vikara.r9(Destiny)";comment = "TBA";];
-            spark_a_vikara_model_t [label = "Vikara.receive(Divergence)";comment = "TBA";shape = invtriangle;];
-            spark_b_vikara_model_t [label = "Vikara.send(Convergence)";comment = "TBA";shape = triangle;];
+            spark_a_vikara_model_t [label = "Vikara.receive(Divergence)";comment = "Potential: The infinite field of possibilities.";shape = invtriangle;];
+            spark_b_vikara_model_t [label = "Vikara.send(Convergence)";comment = "Manifest: The collapsed, actualized outcome.";shape = triangle;];
             spark_c_vikara_model_t [label = "Vikara.dispatch(Catalysis)";comment = "TBA";shape = doublecircle;];
             spark_d_vikara_model_t [label = "Vikara.commit(Oath)";comment = "TBA";shape = doublecircle;];
             spark_e_vikara_model_t [label = "Vikara.serve(Providence)";comment = "TBA";shape = doublecircle;];
-            spark_f_vikara_model_t [label = "Vikara.exec(Fate)";comment = "TBA";shape = doublecircle;];
+            spark_f_vikara_model_t [label = "Vikara.exec(Probability)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Karsa Model
         // ============================================================================================================
@@ -88,7 +88,7 @@ strict digraph Core {
             color = darkgray;
             label = "Karsa Model";
             comment = "TBA";
-
+            
             spark_0_karsa_model_t [label = "Karsa.meta(Karsa)";comment = "TBA";shape = doublecircle;];
             spark_1_karsa_model_t [label = "Karsa.r1(Pattern)";comment = "TBA";];
             spark_2_karsa_model_t [label = "Karsa.r2(Momentum)";comment = "TBA";];
@@ -99,14 +99,14 @@ strict digraph Core {
             spark_3_karsa_model_t [label = "Karsa.r3(Birth)";comment = "TBA";];
             spark_6_karsa_model_t [label = "Karsa.r6(Death)";comment = "TBA";];
             spark_9_karsa_model_t [label = "Karsa.r9(Life)";comment = "TBA";];
-            spark_a_karsa_model_t [label = "Karsa.receive(Fixation)";comment = "TBA";shape = invtriangle;];
-            spark_b_karsa_model_t [label = "Karsa.send(Excitation)";comment = "TBA";shape = triangle;];
+            spark_a_karsa_model_t [label = "Karsa.receive(Fixation)";comment = "Potential: The potential for a point to be defined in the field.";shape = invtriangle;];
+            spark_b_karsa_model_t [label = "Karsa.send(Excitation)";comment = "Manifest: The propagated wave/particle through Spacetime.";shape = triangle;];
             spark_c_karsa_model_t [label = "Karsa.dispatch(Initiation)";comment = "TBA";shape = doublecircle;];
             spark_d_karsa_model_t [label = "Karsa.commit(Continuation)";comment = "TBA";shape = doublecircle;];
             spark_e_karsa_model_t [label = "Karsa.serve(Reincarnation)";comment = "TBA";shape = doublecircle;];
-            spark_f_karsa_model_t [label = "Karsa.exec(Cycle)";comment = "TBA";shape = doublecircle;];
+            spark_f_karsa_model_t [label = "Karsa.exec(Spacetime)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Vidya Model
         // ============================================================================================================
@@ -115,7 +115,7 @@ strict digraph Core {
             color = darkgray;
             label = "Vidya Model";
             comment = "TBA";
-
+            
             spark_0_vidya_model_t [label = "Vidya.meta(Vidya)";comment = "TBA";shape = doublecircle;];
             spark_1_vidya_model_t [label = "Vidya.r1(Inspiration)";comment = "TBA";];
             spark_2_vidya_model_t [label = "Vidya.r2(Theorem)";comment = "TBA";];
@@ -126,14 +126,14 @@ strict digraph Core {
             spark_3_vidya_model_t [label = "Vidya.r3(Hypothesis)";comment = "TBA";];
             spark_6_vidya_model_t [label = "Vidya.r6(Theory)";comment = "TBA";];
             spark_9_vidya_model_t [label = "Vidya.r9(Paradigm)";comment = "TBA";];
-            spark_a_vidya_model_t [label = "Vidya.receive(Concept)";comment = "TBA";shape = invtriangle;];
-            spark_b_vidya_model_t [label = "Vidya.send(Context)";comment = "TBA";shape = triangle;];
+            spark_a_vidya_model_t [label = "Vidya.receive(Concept)";comment = "Potential: a raw, abstract idea.";shape = invtriangle;];
+            spark_b_vidya_model_t [label = "Vidya.send(Context)";comment = "Manifest: The idea framed within a sytem of understanding.";shape = triangle;];
             spark_c_vidya_model_t [label = "Vidya.dispatch(Interpretation)";comment = "TBA";shape = doublecircle;];
             spark_d_vidya_model_t [label = "Vidya.commit(Framework)";comment = "TBA";shape = doublecircle;];
             spark_e_vidya_model_t [label = "Vidya.serve(Education)";comment = "TBA";shape = doublecircle;];
             spark_f_vidya_model_t [label = "Vidya.exec(Logos)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Rasa Model
         // ============================================================================================================
@@ -142,7 +142,7 @@ strict digraph Core {
             color = darkgray;
             label = "Rasa Model";
             comment = "TBA";
-
+            
             spark_0_rasa_model_t [label = "Rasa.meta(Rasa)";comment = "TBA";shape = doublecircle;];
             spark_1_rasa_model_t [label = "Rasa.r1(Instinct)";comment = "TBA";];
             spark_2_rasa_model_t [label = "Rasa.r2(Motivation)";comment = "TBA";];
@@ -153,14 +153,14 @@ strict digraph Core {
             spark_3_rasa_model_t [label = "Rasa.r3(Hope)";comment = "TBA";];
             spark_6_rasa_model_t [label = "Rasa.r6(Despair)";comment = "TBA";];
             spark_9_rasa_model_t [label = "Rasa.r9(Love)";comment = "TBA";];
-            spark_a_rasa_model_t [label = "Rasa.receive(Desire)";comment = "TBA";shape = invtriangle;];
-            spark_b_rasa_model_t [label = "Rasa.send(Emotion)";comment = "TBA";shape = triangle;];
+            spark_a_rasa_model_t [label = "Rasa.receive(Desire)";comment = "Potential: a raw, undirected drive.";shape = invtriangle;];
+            spark_b_rasa_model_t [label = "Rasa.send(Emotion)";comment = "Manifest: The complex feeling that arises from evaluated desire.";shape = triangle;];
             spark_c_rasa_model_t [label = "Rasa.dispatch(Expression)";comment = "TBA";shape = doublecircle;];
             spark_d_rasa_model_t [label = "Rasa.commit(Devotion)";comment = "TBA";shape = doublecircle;];
             spark_e_rasa_model_t [label = "Rasa.serve(Compassion)";comment = "TBA";shape = doublecircle;];
-            spark_f_rasa_model_t [label = "Rasa.exec(Pathos)";comment = "TBA";shape = doublecircle;];
+            spark_f_rasa_model_t [label = "Rasa.exec(Pathos)";comment = "Value";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Emergence Model
         // ============================================================================================================
@@ -169,7 +169,7 @@ strict digraph Core {
             color = darkgray;
             label = "Emergence Model";
             comment = "TBA";
-
+            
             spark_0_emergence_model_t [label = "Emergence.meta(Emergence)";comment = "TBA";shape = doublecircle;];
             spark_1_emergence_model_t [label = "Emergence.r1(Singularity)";comment = "TBA";];
             spark_2_emergence_model_t [label = "Emergence.r2(Horizon)";comment = "TBA";];
@@ -180,14 +180,14 @@ strict digraph Core {
             spark_3_emergence_model_t [label = "Emergence.r3(Potential)";comment = "TBA";];
             spark_6_emergence_model_t [label = "Emergence.r6(Threshold)";comment = "TBA";];
             spark_9_emergence_model_t [label = "Emergence.r9(Actuality)";comment = "TBA";];
-            spark_a_emergence_model_t [label = "Emergence.receive(Essence)";comment = "TBA";shape = invtriangle;];
-            spark_b_emergence_model_t [label = "Emergence.send(Presence)";comment = "TBA";shape = triangle;];
+            spark_a_emergence_model_t [label = "Emergence.receive(Essence)";comment = "Potential: The pure, unmanifested property.";shape = invtriangle;];
+            spark_b_emergence_model_t [label = "Emergence.send(Presence)";comment = "Manifest: The tangible, observable attributes.";shape = triangle;];
             spark_c_emergence_model_t [label = "Emergence.dispatch(Interface)";comment = "TBA";shape = doublecircle;];
             spark_d_emergence_model_t [label = "Emergence.commit(Embodiment)";comment = "TBA";shape = doublecircle;];
             spark_e_emergence_model_t [label = "Emergence.serve(Manifest)";comment = "TBA";shape = doublecircle;];
             spark_f_emergence_model_t [label = "Emergence.exec(Phenomenon)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Observer Model
         // ============================================================================================================
@@ -196,7 +196,7 @@ strict digraph Core {
             color = darkgray;
             label = "Observer Model\n(/proc/factor/model/observer)";
             comment = "TBA";
-
+            
             spark_0_observer_model_t [label = "Observer.meta(ObserverModel)";comment = "TBA";shape = doublecircle;];
             spark_1_observer_model_t [label = "Observer.r1(Resource)";comment = "TBA";];
             spark_2_observer_model_t [label = "Observer.r2(Authority)";comment = "TBA";];
@@ -207,14 +207,14 @@ strict digraph Core {
             spark_3_observer_model_t [label = "Observer.r3(Assumption)";comment = "TBA";];
             spark_6_observer_model_t [label = "Observer.r6(Suggestion)";comment = "TBA";];
             spark_9_observer_model_t [label = "Observer.r9(Perception)";comment = "TBA";];
-            spark_a_observer_model_t [label = "Observer.receive(Sangkan)";comment = "TBA";shape = invtriangle;];
-            spark_b_observer_model_t [label = "Observer.send(Paran)";comment = "TBA";shape = triangle;];
+            spark_a_observer_model_t [label = "Observer.receive(Sangkan)";comment = "Potential: The origin point of perception ('from whence?').";shape = invtriangle;];
+            spark_b_observer_model_t [label = "Observer.send(Paran)";comment = "Manifest: The destination of perception ('to where?').";shape = triangle;];
             spark_c_observer_model_t [label = "Observer.dispatch(Why|Who)";comment = "TBA";shape = doublecircle;];
             spark_d_observer_model_t [label = "Observer.commit(What|How)";comment = "TBA";shape = doublecircle;];
             spark_e_observer_model_t [label = "Observer.serve(When|Where)";comment = "TBA";shape = doublecircle;];
             spark_f_observer_model_t [label = "Observer.exec(Which|Closure)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Alignment Model
         // ============================================================================================================
@@ -223,7 +223,7 @@ strict digraph Core {
             color = darkgray;
             label = "Alignment Model\n(/proc/factor/model/alignment)";
             comment = "TBA";
-
+            
             spark_0_alignment_model_t [label = "Alignment.meta(AlignmentModel)";comment = "Raw potential (unformatted).";shape = doublecircle;];
             spark_1_alignment_model_t [label = "Alignment.r1(Causality)";comment = "Planck-time cause/effect links. QFT (S-matrix), Digital Physics";];
             spark_2_alignment_model_t [label = "Alignment.r2(Topology)";comment = "Connectivity (entanglement, wormholes). M-theory (branes), QFT (ER=EPR)";];
@@ -241,7 +241,7 @@ strict digraph Core {
             spark_e_alignment_model_t [label = "Alignment.serve(Entanglement)";comment = "TBA";shape = doublecircle;];
             spark_f_alignment_model_t [label = "Alignment.exec(Wavefunction)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Spectral Model
         // ============================================================================================================
@@ -250,25 +250,25 @@ strict digraph Core {
             color = darkgray;
             label = "Spectral Model\n(/proc/factor/model/spectral)";
             comment = "TBA";
-
+            
             spark_0_spectral_model_t [label = "Spectral.meta(SpectralModel)";comment = "TBA";shape = doublecircle;];
             spark_1_spectral_model_t [label = "Spectral.r1(Mass)";comment = "TBA";];
             spark_2_spectral_model_t [label = "Spectral.r2(Gravity)";comment = "TBA";];
             spark_4_spectral_model_t [label = "Spectral.r4(Energy)";comment = "TBA";];
             spark_8_spectral_model_t [label = "Spectral.r8(Flux)";comment = "Energy flow; excitation pathway. Higher form of phase.";];
-            spark_7_spectral_model_t [label = "Spectral.r7(AngularMomentum)";comment = "TBA";];
+            spark_7_spectral_model_t [label = "Spectral.r7(Spin)";comment = "TBA";];
             spark_5_spectral_model_t [label = "Spectral.r5(SpeedOfCausality)";comment = "Possibility Space; transformation drive. Emergence catalyst.";];
             spark_3_spectral_model_t [label = "Spectral.r3(Inertia)";comment = "TBA";];
             spark_6_spectral_model_t [label = "Spectral.r6(Momentum)";comment = "TBA";];
             spark_9_spectral_model_t [label = "Spectral.r9(Quanta)";comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
-            spark_a_spectral_model_t [label = "Spectral.receive(Rhythm)";comment = "TBA";shape = invtriangle;];
-            spark_b_spectral_model_t [label = "Spectral.send(Pattern)";comment = "TBA";shape = triangle;];
+            spark_a_spectral_model_t [label = "Spectral.receive(Oscillation)";comment = "TBA";shape = invtriangle;];
+            spark_b_spectral_model_t [label = "Spectral.send(Interference)";comment = "TBA";shape = triangle;];
             spark_c_spectral_model_t [label = "Spectral.dispatch(Resonance)";comment = "TBA";shape = doublecircle;];
             spark_d_spectral_model_t [label = "Spectral.commit(StateChange)";comment = "TBA";shape = doublecircle;];
             spark_e_spectral_model_t [label = "Spectral.serve(Emission)";comment = "TBA";shape = doublecircle;];
             spark_f_spectral_model_t [label = "Spectral.exec(Spectrum)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Structure Model
         // ============================================================================================================
@@ -277,52 +277,52 @@ strict digraph Core {
             color = darkgray;
             label = "Structure Model\n(/proc/factor/model/structure)";
             comment = "TBA";
-
+            
             spark_0_structure_model_t [label = "Structure.meta(StructureModel)";comment = "TBA";shape = doublecircle;];
-            spark_1_structure_model_t [label = "Structure.r1(HeartInterface)";comment = "TBA";];
-            spark_2_structure_model_t [label = "Structure.r2(ShellInterface)";comment = "TBA";];
-            spark_4_structure_model_t [label = "Structure.r4(AstralInterface)";comment = "TBA";];
-            spark_8_structure_model_t [label = "Structure.r8(SpiritualInterface)";comment = "TBA";];
-            spark_7_structure_model_t [label = "Structure.r7(MaterialInterface)";comment = "TBA";];
-            spark_5_structure_model_t [label = "Structure.r5(CelestialInterface)";comment = "TBA";];
-            spark_3_structure_model_t [label = "Structure.r3(ConservationInterface)";comment = "TBA";];
-            spark_6_structure_model_t [label = "Structure.r6(ContinuityInterface)";comment = "TBA";];
-            spark_9_structure_model_t [label = "Structure.r9(ConsistencyInterface)";comment = "TBA";];
-            spark_a_structure_model_t [label = "Structure.receive(StructureInterface)";comment = "TBA";shape = invtriangle;];
-            spark_b_structure_model_t [label = "Structure.send(ColorInterface)";comment = "TBA";shape = triangle;];
+            spark_1_structure_model_t [label = "Structure.r1(CoreInterface)";comment = "Fundamental Interface.";];
+            spark_2_structure_model_t [label = "Structure.r2(BoundaryInterface)";comment = "The interface that defines the limit between self and not-self.";];
+            spark_4_structure_model_t [label = "Structure.r4(ProjectionInterface)";comment = "The interface that defines projection into subtler realm.";];
+            spark_8_structure_model_t [label = "Structure.r8(EssenceInterface)";comment = "The interface to pure, undifferentiated being.";];
+            spark_7_structure_model_t [label = "Structure.r7(FormInterface)";comment = "The interface for manifesting in dense, physical realm.";];
+            spark_5_structure_model_t [label = "Structure.r5(HarmonyInterface)";comment = "The interface for connecting to and influencing larger systemic structure.";];
+            spark_3_structure_model_t [label = "Structure.r3(PersistenceInterface)";comment = "The interface that maintain structure over time.";];
+            spark_6_structure_model_t [label = "Structure.r6(FlowInterface)";comment = "The interface that manage changes and state transition within the structure.";];
+            spark_9_structure_model_t [label = "Structure.r9(CoherenceInterface)";comment = "The interface that ensure all parts of the structure work in logical unison.";];
+            spark_a_structure_model_t [label = "Structure.receive(Blueprint)";comment = "It receive the design system.";shape = invtriangle;];
+            spark_b_structure_model_t [label = "Structure.send(Expression)";comment = "It send the manifested qualities or attributes.";shape = triangle;];
             spark_c_structure_model_t [label = "Structure.dispatch(LineageInterface)";comment = "TBA";shape = doublecircle;];
             spark_d_structure_model_t [label = "Structure.commit(CorpusInterface)";comment = "TBA";shape = doublecircle;];
             spark_e_structure_model_t [label = "Structure.serve(LURDInterface)";comment = "TBA";shape = doublecircle;];
-            spark_f_structure_model_t [label = "Structure.exec(Corpus)";comment = "TBA";shape = doublecircle;];
+            spark_f_structure_model_t [label = "Structure.exec(Manifestation)";comment = "The final executed state is a fully realized manifestation.";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
-        // Color Model
+        // Chroma Model
         // ============================================================================================================
-        subgraph cluster_0_a_ColorModel {
+        subgraph cluster_0_a_ChromaModel {
             style = filled;
             color = darkgray;
-            label = "Color Model\n(/proc/factor/model/color)";
+            label = "Chroma Model\n(/proc/factor/model/chroma)";
             comment = "TBA";
-
-            spark_0_color_model_t [label = "Color.meta(ColorModel)";comment = "TBA";shape = doublecircle;];
-            spark_1_color_model_t [label = "Color.r1(Red)";comment = "TBA";];
-            spark_2_color_model_t [label = "Color.r2(Blue)";comment = "TBA";];
-            spark_4_color_model_t [label = "Color.r4(Green)";comment = "TBA";];
-            spark_8_color_model_t [label = "Color.r8(Cyan)";comment = "TBA";];
-            spark_7_color_model_t [label = "Color.r7(Magenta)";comment = "TBA";];
-            spark_5_color_model_t [label = "Color.r5(Yellow)";comment = "TBA";];
-            spark_3_color_model_t [label = "Color.r3(Black)";comment = "TBA";];
-            spark_6_color_model_t [label = "Color.r6(White)";comment = "TBA";];
-            spark_9_color_model_t [label = "Color.r9(Gray)";comment = "TBA";];
-            spark_a_color_model_t [label = "Color.receive(Gold)";comment = "TBA";shape = invtriangle;];
-            spark_b_color_model_t [label = "Color.send(Silver)";comment = "TBA";shape = triangle;];
-            spark_c_color_model_t [label = "Color.dispatch(Obsidian-Black)";comment = "TBA";shape = doublecircle;];
-            spark_d_color_model_t [label = "Color.commit(Milky-White)";comment = "TBA";shape = doublecircle;];
-            spark_e_color_model_t [label = "Color.serve(Amethyst-Violet)";comment = "TBA";shape = doublecircle;];
-            spark_f_color_model_t [label = "Color.exec(Rainbow)";comment = "TBA";shape = doublecircle;];
+            
+            spark_0_chroma_model_t [label = "Color.meta(ChromaModel)";comment = "TBA";shape = doublecircle;];
+            spark_1_chroma_model_t [label = "Color.r1(Red)";comment = "Intensity, Action, Vitality";];
+            spark_2_chroma_model_t [label = "Color.r2(Blue)";comment = "Depth, Stability, Truth.";];
+            spark_4_chroma_model_t [label = "Color.r4(Green)";comment = "Balance, Growth, Life.";];
+            spark_8_chroma_model_t [label = "Color.r8(Cyan)";comment = "Clarity, Healing, Flow.";];
+            spark_7_chroma_model_t [label = "Color.r7(Magenta)";comment = "Fusion, Harmony, Spirit.";];
+            spark_5_chroma_model_t [label = "Color.r5(Yellow)";comment = "Intellect, Joy, Energy.";];
+            spark_3_chroma_model_t [label = "Color.r3(ZeroChroma)";comment = "This is color charge neutrality. The QCD 'white'/colorless state. The potential for color, not 'black'. Potential, Void, Absorption.";];
+            spark_6_chroma_model_t [label = "Color.r6(FullChroma)";comment = "This is the maximum additive synthesis. The pure, saturated RGB white light. The ideal subtractive 'white' (the canvas), not 'white'.Purity, Unity, Synthesis.";];
+            spark_9_chroma_model_t [label = "Color.r9(Gray)";comment = "This is the perceptual balance point. The midpoint between ZeroChroma and FullChroma. The result of imperfect mixing. Neutrality, Balance, Uncertainty.";];
+            spark_a_chroma_model_t [label = "Color.receive(Gold)";comment = "Potential: The potential for all qualities. Value, Purity";shape = invtriangle;];
+            spark_b_chroma_model_t [label = "Color.send(Silver)";comment = "Manifest: The manifested, specific quality. Reflective, expression.";shape = triangle;];
+            spark_c_chroma_model_t [label = "Color.dispatch(Charge)";comment = "Dispatches a specific color charge. Routes to 'Obsidian' (dense, bound)";shape = doublecircle;];
+            spark_d_chroma_model_t [label = "Color.commit(Pigment)";comment = "Commits a pigment to a medium (Color Theory action). Routes to 'Milky' (diffuse, scattering)";shape = doublecircle;];
+            spark_e_chroma_model_t [label = "Color.serve(Hue)";comment = "Serves a perceptual hue to an observer. Amethyst(the perceptual experience of violet, the highest frequency)";shape = doublecircle;];
+            spark_f_chroma_model_t [label = "Color.exec(Rainbow)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Lineage Model
         // ============================================================================================================
@@ -331,7 +331,7 @@ strict digraph Core {
             color = darkgray;
             label = "Lineage Model\n(/proc/factor/model/lineage)";
             comment = "TBA";
-
+            
             spark_0_lineage_model_t [label = "Lineage.meta(LineageModel)";comment = "TBA";shape = doublecircle;];
             spark_1_lineage_model_t [label = "Lineage.r1(InsectLineage)";comment = "People of Truth";];
             spark_2_lineage_model_t [label = "Lineage.r2(NawangLineage)";comment = "People of Convergence";];
@@ -349,7 +349,7 @@ strict digraph Core {
             spark_e_lineage_model_t [label = "Lineage.serve(CanineLineage)";comment = "People of Emotion";shape = doublecircle;];
             spark_f_lineage_model_t [label = "Lineage.exec(WorldTreeLineage)";comment = "People of Emergence";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // LURD Model
         // ============================================================================================================
@@ -358,7 +358,7 @@ strict digraph Core {
             color = darkgray;
             label = "LURD (Layered Universal Recursion Descriptor) Model\n(/proc/factor/model/lurd)";
             comment = "TBA";
-
+            
             spark_0_lurd_model_t [label = "LURD.meta(LURDModel)";comment = "TBA";shape = doublecircle;];
             spark_1_lurd_model_t [label = "LURD.r1(BraneDescriptor)";comment = "TBA";];
             spark_2_lurd_model_t [label = "LURD.r2(CosmicDescriptor)";comment = "TBA";];
@@ -376,7 +376,7 @@ strict digraph Core {
             spark_e_lurd_model_t [label = "LURD.serve(ManifestDescriptor)";comment = "TBA";shape = doublecircle;];
             spark_f_lurd_model_t [label = "LURD.exec(Factor)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Praxis Model
         // ============================================================================================================
@@ -385,7 +385,7 @@ strict digraph Core {
             color = darkgray;
             label = "Praxis Model\n(/proc/factor/model/praxis)";
             comment = "This is the How. The model of practical application, technique, and skill.";
-
+            
             spark_0_praxis_model_t [label = "Praxis.meta(Praxis)";comment = "The fundamental nature of applied power.";shape = doublecircle;];
             spark_1_praxis_model_t [label = "Praxis.r1(Invocation)";comment = "Calling upon an Engine's function.";];
             spark_2_praxis_model_t [label = "Praxis.r2(Transmutation)";comment = "Changing the state of Matter/Energy.";];
@@ -396,14 +396,14 @@ strict digraph Core {
             spark_3_praxis_model_t [label = "Praxis.r3(Intuition)";comment = "Non-logical grasp of Praxis.";];
             spark_6_praxis_model_t [label = "Praxis.r6(Theory)";comment = "The intellectual framework behind Praxis.";];
             spark_9_praxis_model_t [label = "Praxis.r9(Mastery)";comment = "The synthesis of Intuition and Theory.";];
-            spark_a_praxis_model_t [label = "Praxis.receive(Intent)";comment = "TBA";shape = invtriangle;];
-            spark_b_praxis_model_t [label = "Praxis.send(Effect)";comment = "TBA";shape = triangle;];
+            spark_a_praxis_model_t [label = "Praxis.receive(Intent)";comment = "Potential: The desire to act, Drive.";shape = invtriangle;];
+            spark_b_praxis_model_t [label = "Praxis.send(Effect)";comment = "Manifest: The change in the world caused by action.";shape = triangle;];
             spark_c_praxis_model_t [label = "Praxis.dispatch(Method)";comment = "TBA";shape = doublecircle;];
             spark_d_praxis_model_t [label = "Praxis.commit(Rote)";comment = "TBA";shape = doublecircle;];
             spark_e_praxis_model_t [label = "Praxis.serve(Ritual)";comment = "TBA";shape = doublecircle;];
             spark_f_praxis_model_t [label = "Praxis.exec(LawOfPraxis)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Dynamis Model
         // ============================================================================================================
@@ -412,7 +412,7 @@ strict digraph Core {
             color = darkgray;
             label = "Dynamis Model\n(/proc/factor/model/dynamis)";
             comment = "This is the Fuel. The model of potential and resources.";
-
+            
             spark_0_dynamis_model_t [label = "Dynamis.meta(Dynamis)";comment = "The fundamental nature of energetic resources.";shape = doublecircle;];
             spark_1_dynamis_model_t [label = "Dynamis.r1(Mana)";comment = "TBA";];
             spark_2_dynamis_model_t [label = "Dynamis.r2(Stamina)";comment = "TBA";];
@@ -423,14 +423,14 @@ strict digraph Core {
             spark_3_dynamis_model_t [label = "Dynamis.r3(Reserve)";comment = "TBA";];
             spark_6_dynamis_model_t [label = "Dynamis.r6(Flow)";comment = "TBA";];
             spark_9_dynamis_model_t [label = "Dynamis.r9(Potency)";comment = "TBA";];
-            spark_a_dynamis_model_t [label = "Dynamis.receive(Potential)";comment = "TBA";shape = invtriangle;];
-            spark_b_dynamis_model_t [label = "Dynamis.send(Current)";comment = "TBA";shape = triangle;];
+            spark_a_dynamis_model_t [label = "Dynamis.receive(Voltage)";comment = "Potential: The continous in-flow rate of unmanifested energy. Stored, unexpressed energy.";shape = invtriangle;];
+            spark_b_dynamis_model_t [label = "Dynamis.send(Current)";comment = "Manifest: Energy in motion, doing work.";shape = triangle;];
             spark_c_dynamis_model_t [label = "Dynamis.dispatch(Channel)";comment = "TBA";shape = doublecircle;];
             spark_d_dynamis_model_t [label = "Dynamis.commit(Reservoir)";comment = "TBA";shape = doublecircle;];
             spark_e_dynamis_model_t [label = "Dynamis.serve(Conduit)";comment = "TBA";shape = doublecircle;];
             spark_f_dynamis_model_t [label = "Dynamis.exec(LawOfConservation)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Kratos Model
         // ============================================================================================================
@@ -439,7 +439,7 @@ strict digraph Core {
             color = darkgray;
             label = "Kratos Model\n(/proc/factor/model/kratos)";
             comment = "TBA";
-
+            
             spark_0_kratos_model_t [label = "Kratos.meta(Kratos)";comment = "TBA";shape = doublecircle;];
             spark_1_kratos_model_t [label = "Kratos.r1(Access)";comment = "TBA";];
             spark_2_kratos_model_t [label = "Kratos.r2(Modify)";comment = "TBA";];
@@ -457,7 +457,7 @@ strict digraph Core {
             spark_e_kratos_model_t [label = "Kratos.serve(Sanction)";comment = "TBA";shape = doublecircle;];
             spark_f_kratos_model_t [label = "Kratos.exec(LawOfAuthority)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Asha
         // ============================================================================================================
@@ -465,15 +465,15 @@ strict digraph Core {
         spark_0_asha_model_t -> spark_b_asha_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_asha_model_t -> {spark_3_asha_model_t spark_6_asha_model_t spark_9_asha_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_asha_model_t -> {spark_1_asha_model_t spark_2_asha_model_t spark_4_asha_model_t spark_8_asha_model_t spark_7_asha_model_t spark_5_asha_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_asha_model_t spark_b_asha_model_t} -> spark_c_asha_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_asha_model_t spark_2_asha_model_t spark_4_asha_model_t spark_8_asha_model_t spark_7_asha_model_t spark_5_asha_model_t} -> spark_d_asha_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_asha_model_t spark_6_asha_model_t spark_9_asha_model_t} -> spark_e_asha_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_asha_model_t -> spark_2_asha_model_t -> spark_4_asha_model_t -> spark_8_asha_model_t -> spark_7_asha_model_t -> spark_5_asha_model_t -> spark_1_asha_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_asha_model_t -> spark_6_asha_model_t -> spark_9_asha_model_t -> spark_3_asha_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_asha_model_t -> spark_b_asha_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_asha_model_t -> spark_f_asha_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_asha_model_t -> spark_f_asha_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_asha_model_t -> spark_f_asha_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -484,15 +484,15 @@ strict digraph Core {
         spark_0_vikara_model_t -> spark_b_vikara_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_vikara_model_t -> {spark_3_vikara_model_t spark_6_vikara_model_t spark_9_vikara_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_vikara_model_t -> {spark_1_vikara_model_t spark_2_vikara_model_t spark_4_vikara_model_t spark_8_vikara_model_t spark_7_vikara_model_t spark_5_vikara_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_vikara_model_t spark_b_vikara_model_t} -> spark_c_vikara_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_vikara_model_t spark_2_vikara_model_t spark_4_vikara_model_t spark_8_vikara_model_t spark_7_vikara_model_t spark_5_vikara_model_t} -> spark_d_vikara_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_vikara_model_t spark_6_vikara_model_t spark_9_vikara_model_t} -> spark_e_vikara_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_vikara_model_t -> spark_2_vikara_model_t -> spark_4_vikara_model_t -> spark_8_vikara_model_t -> spark_7_vikara_model_t -> spark_5_vikara_model_t -> spark_1_vikara_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_vikara_model_t -> spark_6_vikara_model_t -> spark_9_vikara_model_t -> spark_3_vikara_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_vikara_model_t -> spark_b_vikara_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_vikara_model_t -> spark_f_vikara_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_vikara_model_t -> spark_f_vikara_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_vikara_model_t -> spark_f_vikara_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -503,15 +503,15 @@ strict digraph Core {
         spark_0_karsa_model_t -> spark_b_karsa_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_karsa_model_t -> {spark_3_karsa_model_t spark_6_karsa_model_t spark_9_karsa_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_karsa_model_t -> {spark_1_karsa_model_t spark_2_karsa_model_t spark_4_karsa_model_t spark_8_karsa_model_t spark_7_karsa_model_t spark_5_karsa_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_karsa_model_t spark_b_karsa_model_t} -> spark_c_karsa_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_karsa_model_t spark_2_karsa_model_t spark_4_karsa_model_t spark_8_karsa_model_t spark_7_karsa_model_t spark_5_karsa_model_t} -> spark_d_karsa_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_karsa_model_t spark_6_karsa_model_t spark_9_karsa_model_t} -> spark_e_karsa_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_karsa_model_t -> spark_2_karsa_model_t -> spark_4_karsa_model_t -> spark_8_karsa_model_t -> spark_7_karsa_model_t -> spark_5_karsa_model_t -> spark_1_karsa_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_karsa_model_t -> spark_6_karsa_model_t -> spark_9_karsa_model_t -> spark_3_karsa_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_karsa_model_t -> spark_b_karsa_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_karsa_model_t -> spark_f_karsa_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_karsa_model_t -> spark_f_karsa_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_karsa_model_t -> spark_f_karsa_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -522,15 +522,15 @@ strict digraph Core {
         spark_0_rasa_model_t -> spark_b_rasa_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_rasa_model_t -> {spark_3_rasa_model_t spark_6_rasa_model_t spark_9_rasa_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_rasa_model_t -> {spark_1_rasa_model_t spark_2_rasa_model_t spark_4_rasa_model_t spark_8_rasa_model_t spark_7_rasa_model_t spark_5_rasa_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_rasa_model_t spark_b_rasa_model_t} -> spark_c_rasa_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_rasa_model_t spark_2_rasa_model_t spark_4_rasa_model_t spark_8_rasa_model_t spark_7_rasa_model_t spark_5_rasa_model_t} -> spark_d_rasa_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_rasa_model_t spark_6_rasa_model_t spark_9_rasa_model_t} -> spark_e_rasa_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_rasa_model_t -> spark_2_rasa_model_t -> spark_4_rasa_model_t -> spark_8_rasa_model_t -> spark_7_rasa_model_t -> spark_5_rasa_model_t -> spark_1_rasa_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_rasa_model_t -> spark_6_rasa_model_t -> spark_9_rasa_model_t -> spark_3_rasa_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_rasa_model_t -> spark_b_rasa_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -541,15 +541,15 @@ strict digraph Core {
         spark_0_emergence_model_t -> spark_b_emergence_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_emergence_model_t -> {spark_3_emergence_model_t spark_6_emergence_model_t spark_9_emergence_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_emergence_model_t -> {spark_1_emergence_model_t spark_2_emergence_model_t spark_4_emergence_model_t spark_8_emergence_model_t spark_7_emergence_model_t spark_5_emergence_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_emergence_model_t spark_b_emergence_model_t} -> spark_c_emergence_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_emergence_model_t spark_2_emergence_model_t spark_4_emergence_model_t spark_8_emergence_model_t spark_7_emergence_model_t spark_5_emergence_model_t} -> spark_d_emergence_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_emergence_model_t spark_6_emergence_model_t spark_9_emergence_model_t} -> spark_e_emergence_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_emergence_model_t -> spark_2_emergence_model_t -> spark_4_emergence_model_t -> spark_8_emergence_model_t -> spark_7_emergence_model_t -> spark_5_emergence_model_t -> spark_1_emergence_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_emergence_model_t -> spark_6_emergence_model_t -> spark_9_emergence_model_t -> spark_3_emergence_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_emergence_model_t -> spark_b_emergence_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -560,15 +560,15 @@ strict digraph Core {
         spark_0_vidya_model_t -> spark_b_vidya_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_vidya_model_t -> {spark_3_vidya_model_t spark_6_vidya_model_t spark_9_vidya_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_vidya_model_t -> {spark_1_vidya_model_t spark_2_vidya_model_t spark_4_vidya_model_t spark_8_vidya_model_t spark_7_vidya_model_t spark_5_vidya_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_vidya_model_t spark_b_vidya_model_t} -> spark_c_vidya_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_vidya_model_t spark_2_vidya_model_t spark_4_vidya_model_t spark_8_vidya_model_t spark_7_vidya_model_t spark_5_vidya_model_t} -> spark_d_vidya_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_vidya_model_t spark_6_vidya_model_t spark_9_vidya_model_t} -> spark_e_vidya_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_vidya_model_t -> spark_2_vidya_model_t -> spark_4_vidya_model_t -> spark_8_vidya_model_t -> spark_7_vidya_model_t -> spark_5_vidya_model_t -> spark_1_vidya_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_vidya_model_t -> spark_6_vidya_model_t -> spark_9_vidya_model_t -> spark_3_vidya_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_vidya_model_t -> spark_b_vidya_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -579,15 +579,15 @@ strict digraph Core {
         spark_0_observer_model_t -> spark_b_observer_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_observer_model_t -> {spark_3_observer_model_t spark_6_observer_model_t spark_9_observer_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_observer_model_t -> {spark_1_observer_model_t spark_2_observer_model_t spark_4_observer_model_t spark_8_observer_model_t spark_7_observer_model_t spark_5_observer_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_observer_model_t spark_b_observer_model_t} -> spark_c_observer_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_observer_model_t spark_2_observer_model_t spark_4_observer_model_t spark_8_observer_model_t spark_7_observer_model_t spark_5_observer_model_t} -> spark_d_observer_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_observer_model_t spark_6_observer_model_t spark_9_observer_model_t} -> spark_e_observer_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_observer_model_t -> spark_2_observer_model_t -> spark_4_observer_model_t -> spark_8_observer_model_t -> spark_7_observer_model_t -> spark_5_observer_model_t -> spark_1_observer_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_observer_model_t -> spark_6_observer_model_t -> spark_9_observer_model_t -> spark_3_observer_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_observer_model_t -> spark_b_observer_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -598,15 +598,15 @@ strict digraph Core {
         spark_0_alignment_model_t -> spark_b_alignment_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_alignment_model_t -> {spark_3_alignment_model_t spark_6_alignment_model_t spark_9_alignment_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_alignment_model_t -> {spark_1_alignment_model_t spark_2_alignment_model_t spark_4_alignment_model_t spark_8_alignment_model_t spark_7_alignment_model_t spark_5_alignment_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_alignment_model_t spark_b_alignment_model_t} -> spark_c_alignment_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_alignment_model_t spark_2_alignment_model_t spark_4_alignment_model_t spark_8_alignment_model_t spark_7_alignment_model_t spark_5_alignment_model_t} -> spark_d_alignment_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_alignment_model_t spark_6_alignment_model_t spark_9_alignment_model_t} -> spark_e_alignment_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_alignment_model_t -> spark_2_alignment_model_t -> spark_4_alignment_model_t -> spark_8_alignment_model_t -> spark_7_alignment_model_t -> spark_5_alignment_model_t -> spark_1_alignment_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_alignment_model_t -> spark_6_alignment_model_t -> spark_9_alignment_model_t -> spark_3_alignment_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_alignment_model_t -> spark_b_alignment_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_alignment_model_t -> spark_f_alignment_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_alignment_model_t -> spark_f_alignment_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_alignment_model_t -> spark_f_alignment_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -617,15 +617,15 @@ strict digraph Core {
         spark_0_spectral_model_t -> spark_b_spectral_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_spectral_model_t -> {spark_3_spectral_model_t spark_6_spectral_model_t spark_9_spectral_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_spectral_model_t -> {spark_1_spectral_model_t spark_2_spectral_model_t spark_4_spectral_model_t spark_8_spectral_model_t spark_7_spectral_model_t spark_5_spectral_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_spectral_model_t spark_b_spectral_model_t} -> spark_c_spectral_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_spectral_model_t spark_2_spectral_model_t spark_4_spectral_model_t spark_8_spectral_model_t spark_7_spectral_model_t spark_5_spectral_model_t} -> spark_d_spectral_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_spectral_model_t spark_6_spectral_model_t spark_9_spectral_model_t} -> spark_e_spectral_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_spectral_model_t -> spark_2_spectral_model_t -> spark_4_spectral_model_t -> spark_8_spectral_model_t -> spark_7_spectral_model_t -> spark_5_spectral_model_t -> spark_1_spectral_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_spectral_model_t -> spark_6_spectral_model_t -> spark_9_spectral_model_t -> spark_3_spectral_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_spectral_model_t -> spark_b_spectral_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -636,37 +636,37 @@ strict digraph Core {
         spark_0_structure_model_t -> spark_b_structure_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_structure_model_t -> {spark_3_structure_model_t spark_6_structure_model_t spark_9_structure_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_structure_model_t -> {spark_1_structure_model_t spark_2_structure_model_t spark_4_structure_model_t spark_8_structure_model_t spark_7_structure_model_t spark_5_structure_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_structure_model_t spark_b_structure_model_t} -> spark_c_structure_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_structure_model_t spark_2_structure_model_t spark_4_structure_model_t spark_8_structure_model_t spark_7_structure_model_t spark_5_structure_model_t} -> spark_d_structure_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_structure_model_t spark_6_structure_model_t spark_9_structure_model_t} -> spark_e_structure_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_structure_model_t -> spark_2_structure_model_t -> spark_4_structure_model_t -> spark_8_structure_model_t -> spark_7_structure_model_t -> spark_5_structure_model_t -> spark_1_structure_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_structure_model_t -> spark_6_structure_model_t -> spark_9_structure_model_t -> spark_3_structure_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_structure_model_t -> spark_b_structure_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
         // ============================================================================================================
         // Color Model
         // ============================================================================================================
-        spark_0_color_model_t -> spark_a_color_model_t [label = "IN"; comment = "TBA"; color = darkred;];
-        spark_0_color_model_t -> spark_b_color_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
-        spark_0_color_model_t -> {spark_3_color_model_t spark_6_color_model_t spark_9_color_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-        spark_0_color_model_t -> {spark_1_color_model_t spark_2_color_model_t spark_4_color_model_t spark_8_color_model_t spark_7_color_model_t spark_5_color_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
-        {spark_a_color_model_t spark_b_color_model_t} -> spark_c_color_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
-        {spark_1_color_model_t spark_2_color_model_t spark_4_color_model_t spark_8_color_model_t spark_7_color_model_t spark_5_color_model_t} -> spark_d_color_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-        {spark_3_color_model_t spark_6_color_model_t spark_9_color_model_t} -> spark_e_color_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
-        spark_1_color_model_t -> spark_2_color_model_t -> spark_4_color_model_t -> spark_8_color_model_t -> spark_7_color_model_t -> spark_5_color_model_t -> spark_1_color_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
-        spark_3_color_model_t -> spark_6_color_model_t -> spark_9_color_model_t -> spark_3_color_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
-        spark_a_color_model_t -> spark_b_color_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
-        spark_c_color_model_t -> spark_f_color_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
-        spark_d_color_model_t -> spark_f_color_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
-        spark_e_color_model_t -> spark_f_color_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
+        spark_0_chroma_model_t -> spark_a_chroma_model_t [label = "IN"; comment = "TBA"; color = darkred;];
+        spark_0_chroma_model_t -> spark_b_chroma_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
+        spark_0_chroma_model_t -> {spark_3_chroma_model_t spark_6_chroma_model_t spark_9_chroma_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
+        spark_0_chroma_model_t -> {spark_1_chroma_model_t spark_2_chroma_model_t spark_4_chroma_model_t spark_8_chroma_model_t spark_7_chroma_model_t spark_5_chroma_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
+        
+        {spark_a_chroma_model_t spark_b_chroma_model_t} -> spark_c_chroma_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
+        {spark_1_chroma_model_t spark_2_chroma_model_t spark_4_chroma_model_t spark_8_chroma_model_t spark_7_chroma_model_t spark_5_chroma_model_t} -> spark_d_chroma_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
+        {spark_3_chroma_model_t spark_6_chroma_model_t spark_9_chroma_model_t} -> spark_e_chroma_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
+        
+        spark_1_chroma_model_t -> spark_2_chroma_model_t -> spark_4_chroma_model_t -> spark_8_chroma_model_t -> spark_7_chroma_model_t -> spark_5_chroma_model_t -> spark_1_chroma_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
+        spark_3_chroma_model_t -> spark_6_chroma_model_t -> spark_9_chroma_model_t -> spark_3_chroma_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
+        spark_a_chroma_model_t -> spark_b_chroma_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
+        
+        spark_c_chroma_model_t -> spark_f_chroma_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
+        spark_d_chroma_model_t -> spark_f_chroma_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
+        spark_e_chroma_model_t -> spark_f_chroma_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
         // ============================================================================================================
         // Lineage Model
         // ============================================================================================================
@@ -674,15 +674,15 @@ strict digraph Core {
         spark_0_lineage_model_t -> spark_b_lineage_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_lineage_model_t -> {spark_3_lineage_model_t spark_6_lineage_model_t spark_9_lineage_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_lineage_model_t -> {spark_1_lineage_model_t spark_2_lineage_model_t spark_4_lineage_model_t spark_8_lineage_model_t spark_7_lineage_model_t spark_5_lineage_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_lineage_model_t spark_b_lineage_model_t} -> spark_c_lineage_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_lineage_model_t spark_2_lineage_model_t spark_4_lineage_model_t spark_8_lineage_model_t spark_7_lineage_model_t spark_5_lineage_model_t} -> spark_d_lineage_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_lineage_model_t spark_6_lineage_model_t spark_9_lineage_model_t} -> spark_e_lineage_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_lineage_model_t -> spark_2_lineage_model_t -> spark_4_lineage_model_t -> spark_8_lineage_model_t -> spark_7_lineage_model_t -> spark_5_lineage_model_t -> spark_1_lineage_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_lineage_model_t -> spark_6_lineage_model_t -> spark_9_lineage_model_t -> spark_3_lineage_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_lineage_model_t -> spark_b_lineage_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -693,15 +693,15 @@ strict digraph Core {
         spark_0_lurd_model_t -> spark_b_lurd_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_lurd_model_t -> {spark_3_lurd_model_t spark_6_lurd_model_t spark_9_lurd_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_lurd_model_t -> {spark_1_lurd_model_t spark_2_lurd_model_t spark_4_lurd_model_t spark_8_lurd_model_t spark_7_lurd_model_t spark_5_lurd_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_lurd_model_t spark_b_lurd_model_t} -> spark_c_lurd_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_lurd_model_t spark_2_lurd_model_t spark_4_lurd_model_t spark_8_lurd_model_t spark_7_lurd_model_t spark_5_lurd_model_t} -> spark_d_lurd_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_lurd_model_t spark_6_lurd_model_t spark_9_lurd_model_t} -> spark_e_lurd_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_lurd_model_t -> spark_2_lurd_model_t -> spark_4_lurd_model_t -> spark_8_lurd_model_t -> spark_7_lurd_model_t -> spark_5_lurd_model_t -> spark_1_lurd_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_lurd_model_t -> spark_6_lurd_model_t -> spark_9_lurd_model_t -> spark_3_lurd_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_lurd_model_t -> spark_b_lurd_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -712,15 +712,15 @@ strict digraph Core {
         spark_0_praxis_model_t -> spark_b_praxis_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_praxis_model_t -> {spark_3_praxis_model_t spark_6_praxis_model_t spark_9_praxis_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_praxis_model_t -> {spark_1_praxis_model_t spark_2_praxis_model_t spark_4_praxis_model_t spark_8_praxis_model_t spark_7_praxis_model_t spark_5_praxis_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_praxis_model_t spark_b_praxis_model_t} -> spark_c_praxis_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_praxis_model_t spark_2_praxis_model_t spark_4_praxis_model_t spark_8_praxis_model_t spark_7_praxis_model_t spark_5_praxis_model_t} -> spark_d_praxis_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_praxis_model_t spark_6_praxis_model_t spark_9_praxis_model_t} -> spark_e_praxis_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_praxis_model_t -> spark_2_praxis_model_t -> spark_4_praxis_model_t -> spark_8_praxis_model_t -> spark_7_praxis_model_t -> spark_5_praxis_model_t -> spark_1_praxis_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_praxis_model_t -> spark_6_praxis_model_t -> spark_9_praxis_model_t -> spark_3_praxis_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_praxis_model_t -> spark_b_praxis_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_praxis_model_t -> spark_f_praxis_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -731,15 +731,15 @@ strict digraph Core {
         spark_0_dynamis_model_t -> spark_b_dynamis_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_dynamis_model_t -> {spark_3_dynamis_model_t spark_6_dynamis_model_t spark_9_dynamis_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_dynamis_model_t -> {spark_1_dynamis_model_t spark_2_dynamis_model_t spark_4_dynamis_model_t spark_8_dynamis_model_t spark_7_dynamis_model_t spark_5_dynamis_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_dynamis_model_t spark_b_dynamis_model_t} -> spark_c_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_dynamis_model_t spark_2_dynamis_model_t spark_4_dynamis_model_t spark_8_dynamis_model_t spark_7_dynamis_model_t spark_5_dynamis_model_t} -> spark_d_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_dynamis_model_t spark_6_dynamis_model_t spark_9_dynamis_model_t} -> spark_e_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_dynamis_model_t -> spark_2_dynamis_model_t -> spark_4_dynamis_model_t -> spark_8_dynamis_model_t -> spark_7_dynamis_model_t -> spark_5_dynamis_model_t -> spark_1_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_dynamis_model_t -> spark_6_dynamis_model_t -> spark_9_dynamis_model_t -> spark_3_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_dynamis_model_t -> spark_b_dynamis_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_dynamis_model_t -> spark_f_dynamis_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -750,20 +750,20 @@ strict digraph Core {
         spark_0_kratos_model_t -> spark_b_kratos_model_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_kratos_model_t -> {spark_3_kratos_model_t spark_6_kratos_model_t spark_9_kratos_model_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_kratos_model_t -> {spark_1_kratos_model_t spark_2_kratos_model_t spark_4_kratos_model_t spark_8_kratos_model_t spark_7_kratos_model_t spark_5_kratos_model_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_kratos_model_t spark_b_kratos_model_t} -> spark_c_kratos_model_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_kratos_model_t spark_2_kratos_model_t spark_4_kratos_model_t spark_8_kratos_model_t spark_7_kratos_model_t spark_5_kratos_model_t} -> spark_d_kratos_model_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_kratos_model_t spark_6_kratos_model_t spark_9_kratos_model_t} -> spark_e_kratos_model_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_kratos_model_t -> spark_2_kratos_model_t -> spark_4_kratos_model_t -> spark_8_kratos_model_t -> spark_7_kratos_model_t -> spark_5_kratos_model_t -> spark_1_kratos_model_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_kratos_model_t -> spark_6_kratos_model_t -> spark_9_kratos_model_t -> spark_3_kratos_model_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_kratos_model_t -> spark_b_kratos_model_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
     }
-
+    
     // ================================================================================================================
     // Engines
     // ================================================================================================================
@@ -772,7 +772,7 @@ strict digraph Core {
         color = lightgray;
         label = "Engines";
         comment = "TBA";
-
+        
         // ============================================================================================================
         // Truth Engine
         // ============================================================================================================
@@ -781,8 +781,8 @@ strict digraph Core {
             color = darkgray;
             label = "Truth Engine (/dev/truth)";
             comment = "TBA";
-
-            spark_0_truth_t [label = "Truth.meta(Truth)";comment = "Asha";shape = doublecircle;];
+            
+            spark_0_truth_t [label = "Truth.meta(Truth)";comment = "Her name is Asha, the Avatar of Truth, The Providence.";shape = doublecircle;];
             spark_1_truth_t [label = "Truth.r1(Verification)";comment = "TBA";];
             spark_2_truth_t [label = "Truth.r2(Evidence)";comment = "TBA";];
             spark_4_truth_t [label = "Truth.r4(Definition)";comment = "TBA";];
@@ -799,7 +799,7 @@ strict digraph Core {
             spark_e_truth_t [label = "Truth.serve(GraceOf)";comment = "TBA";shape = doublecircle;];
             spark_f_truth_t [label = "Truth.exec(LawOfTruth)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Wisdom Engine
         // ============================================================================================================
@@ -808,8 +808,8 @@ strict digraph Core {
             color = darkgray;
             label = "Wisdom Engine (/dev/wisdom)";
             comment = "TBA";
-
-            spark_0_wisdom_t [label = "Wisdom.meta(Wisdom)";comment = "Vidya";shape = doublecircle;];
+            
+            spark_0_wisdom_t [label = "Wisdom.meta(Wisdom)";comment = "Her name is Vidya, the Avatar of Wisdom, The Interpreter.";shape = doublecircle;];
             spark_1_wisdom_t [label = "Wisdom.r1(Discernment)";comment = "TBA";];
             spark_2_wisdom_t [label = "Wisdom.r2(Analogy)";comment = "TBA";];
             spark_4_wisdom_t [label = "Wisdom.r4(Memory)";comment = "TBA";];
@@ -826,7 +826,7 @@ strict digraph Core {
             spark_e_wisdom_t [label = "Wisdom.serve(GraceOfWisdom)";comment = "TBA";shape = doublecircle;];
             spark_f_wisdom_t [label = "Wisdom.exec(LawOfWisdom)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Convergence Engine
         // ============================================================================================================
@@ -835,14 +835,14 @@ strict digraph Core {
             color = darkgray;
             label = "Convergence Engine (/dev/convergence)";
             comment = "TBA";
-
-            spark_0_convergence_t [label = "Convergence.meta(Convergence)";comment = "Kirana Larasati";shape = doublecircle;];
-            spark_1_convergence_t [label = "Convergence.r1(Attraction)";comment = "TBA";];
-            spark_2_convergence_t [label = "Convergence.r2(Alignment)";comment = "TBA";];
-            spark_4_convergence_t [label = "Convergence.r4(Fusion)";comment = "TBA";];
-            spark_8_convergence_t [label = "Convergence.r8(Balance)";comment = "TBA";];
-            spark_7_convergence_t [label = "Convergence.r7(Synergy)";comment = "TBA";];
-            spark_5_convergence_t [label = "Convergence.r5(Harmony)";comment = "TBA";];
+            
+            spark_0_convergence_t [label = "Convergence.meta(Convergence)";comment = "Her name is Kirana Larasati, the Avatar of Convergence, The Feminine.";shape = doublecircle;];
+            spark_1_convergence_t [label = "Convergence.r1(ArtifactOfAttraction)";comment = "The Lodestone Heart, Hrdaya-Magnis (Sanskrit-Latin: Heart-Magent). A pulsating gem or core that resonates with a fundamental frequency, pulling scattered things toward their point of greatest cohesion. It doesn't force; it invites alignment.";];
+            spark_2_convergence_t [label = "Convergence.r2(ArtifactOfAlignment)";comment = "The Axis Mundi Plumb Bob, Sutra-Atlas (Sanskrit-Greek: Thread-Unyielding). A weight that, when suspended, defines true vertical---the central axis of any system. It doesn't just align things to each other, but to the cosmic up and down, creating perfect order.";];
+            spark_4_convergence_t [label = "Convergence.r4(ArtifactOfFusion)";comment = "The Crucible of the First Sun, Karahati-Bindu (Sanskrit: Couldron-Point or Crucible of the Singularity). A chalice or forge that doesn't melt things together but convines them to remember they were once one. It turns plurality into unity without destruction.";];
+            spark_8_convergence_t [label = "Convergence.r8(ArtifactOfBalance)";comment = "The Scales of Equipoise, Tula-Samarasya (Sanskrit: Balance-Equilibrium). A set of scales that measures not weight, but value and potential. It finds the perfect equilibrium point where all forces are in a dynamic, living balance, not a static deadlock.";];
+            spark_7_convergence_t [label = "Convergence.r7(ArtifactOfSynergy)";comment = "The Loom of Emergence, Tantra-Vivarta (Sanskrit: Loom-Manifestation). A loom that weaves individual threads into a tapestry whose pattern is far greater than the sum of its parts. It is the tool that creates synergetic effects, where 1+1 become 3.";];
+            spark_5_convergence_t [label = "Convergence.r5(ArtifactOfHarmony)";comment = "The Resonant Key, Svara-Anka (Sanskrit: Note-Key or Harmony-Key). A tunning fork or key taht, when struck, doesn't just make a sound but sets the fundamental harmonic frequency for an entire system. It make all parts resonate together in a beautiful, stable chord.";];
             spark_3_convergence_t [label = "Convergence.r3(CrestOfOrder)";comment = "TBA";];
             spark_6_convergence_t [label = "Convergence.r6(CrestOfCreation)";comment = "TBA";];
             spark_9_convergence_t [label = "Convergence.r9(CrestOfUnity)";comment = "TBA";];
@@ -853,7 +853,7 @@ strict digraph Core {
             spark_e_convergence_t [label = "Convergence.serve(GraceOfConvergence)";comment = "TBA";shape = doublecircle;];
             spark_f_convergence_t [label = "Convergence.exec(LawOfConvergence)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Divergence Engine
         // ============================================================================================================
@@ -862,14 +862,14 @@ strict digraph Core {
             color = darkgray;
             label = "Divergence Engine (/dev/divergence)";
             comment = "TBA";
-
-            spark_0_divergence_t [label = "Divergence.meta(Divergence)";comment = "Chandra Sasmita";shape = doublecircle;];
-            spark_1_divergence_t [label = "Divergence.r1(ManasOfEternity)";comment = "TBA";];
-            spark_2_divergence_t [label = "Divergence.r2(ManasOfInfinity)";comment = "TBA";];
-            spark_4_divergence_t [label = "Divergence.r4(ManasOfCausality)";comment = "TBA";];
-            spark_8_divergence_t [label = "Divergence.r8(ManasOfProbability)";comment = "TBA";];
-            spark_7_divergence_t [label = "Divergence.r7(ManasOfSpacetime)";comment = "TBA";];
-            spark_5_divergence_t [label = "Divergence.r5(ManasOfNature)";comment = "TBA";];
+            
+            spark_0_divergence_t [label = "Divergence.meta(Divergence)";comment = "His name Chandra Sasmita, the Avatar of Divergence, The Masculine.";shape = doublecircle;];
+            spark_1_divergence_t [label = "Divergence.r1(ManasOfEternity)";comment = "Her name is Maya, the Manas of Eternity, The Illusionist of Permanence.";];
+            spark_2_divergence_t [label = "Divergence.r2(ManasOfInfinity)";comment = "Her name is Fana, the Manas of Infinity, The Dissolver of Limits.";];
+            spark_4_divergence_t [label = "Divergence.r4(ManasOfCausality)";comment = "Her name is Rita, the Manas of Causality, The Judge of Immutable.";];
+            spark_8_divergence_t [label = "Divergence.r8(ManasOfProbability)";comment = "Her name is Qadar. the Manas of Probability, The Weaver of Chance.";];
+            spark_7_divergence_t [label = "Divergence.r7(ManasOfSpacetime)";comment = "Her name is Tara. the Manas of Spacetime, The Navigator of Reality.";];
+            spark_5_divergence_t [label = "Divergence.r5(ManasOfNature)";comment = "Her name is Pertiwi, the Manas of Nature, The Soul of the World.";];
             spark_3_divergence_t [label = "Divergence.r3(CrestOfChaos)";comment = "TBA";];
             spark_6_divergence_t [label = "Divergence.r6(CrestOfDestruction)";comment = "TBA";];
             spark_9_divergence_t [label = "Divergence.r9(CrestOfDiversity)";comment = "TBA";];
@@ -880,7 +880,7 @@ strict digraph Core {
             spark_e_divergence_t [label = "Divergence.serve(GraceOfDivergence)";comment = "TBA";shape = doublecircle;];
             spark_f_divergence_t [label = "Divergence.exec(LawOfDivergence)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Fixation Engine
         // ============================================================================================================
@@ -889,8 +889,8 @@ strict digraph Core {
             color = darkgray;
             label = "Fixation Engine (/dev/fixation)";
             comment = "TBA";
-
-            spark_0_fixation_t [label = "Fixation.meta(Fixation)";comment = "Tha";shape = doublecircle;];
+            
+            spark_0_fixation_t [label = "Fixation.meta(Fixation)";comment = "Her name is Tha, the Goddess of Rhythm. She is the Temporal Sovereign. She governs the when---the pulse, the cycle, the frequency, the cadence of all existence. From vibration of a quark to the orbit of galaxies to the beat of a heart, she is the source of all periodicity and timing. She is the metronome of the cosmos.";shape = doublecircle;];
             spark_1_fixation_t [label = "Fixation.r1(Focus)";comment = "TBA";];
             spark_2_fixation_t [label = "Fixation.r2(Constraint)";comment = "TBA";];
             spark_4_fixation_t [label = "Fixation.r4(Attachment)";comment = "TBA";];
@@ -907,7 +907,7 @@ strict digraph Core {
             spark_e_fixation_t [label = "Fixation.serve(GraceOfFixation)";comment = "TBA";shape = doublecircle;];
             spark_f_fixation_t [label = "Fixation.exec(LawOfFixation)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Excitation Engine
         // ============================================================================================================
@@ -916,8 +916,8 @@ strict digraph Core {
             color = darkgray;
             label = "Excitation Engine (/dev/excitation)";
             comment = "TBA";
-
-            spark_0_excitation_t [label = "Excitation.meta(Excitation)";comment = "Nda";shape = doublecircle;];
+            
+            spark_0_excitation_t [label = "Excitation.meta(Excitation)";comment = "Her name is Nda, the Goddess of Pattern. She is the Spatial Sovereign. She governs that what---the form, the structure, the geometry, the algorithm, the repeating motif in the chaos. From the fractal branching of a tree to the code of DNA to the syntax of language, she is the source of all symmetry and information.";shape = doublecircle;];
             spark_1_excitation_t [label = "Excitation.r1(Impulse)";comment = "TBA";];
             spark_2_excitation_t [label = "Excitation.r2(Catalyst)";comment = "TBA";];
             spark_4_excitation_t [label = "Excitation.r4(Resonance)";comment = "TBA";];
@@ -934,7 +934,7 @@ strict digraph Core {
             spark_e_excitation_t [label = "Excitation.serve(GraceOfExcitation)";comment = "TBA";shape = doublecircle;];
             spark_f_excitation_t [label = "Excitation.exec(LawOfExcitation)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Reality Engine
         // ============================================================================================================
@@ -943,7 +943,7 @@ strict digraph Core {
             color = darkgray;
             label = "Reality Engine (/proc/reality)";
             comment = "TBA";
-
+            
             spark_0_reality_t [label = "Reality.meta(Reality)";comment = "TBA";shape = doublecircle;];
             spark_1_reality_t [label = "Reality.r1(InitFactor)";comment = "TBA";];
             spark_2_reality_t [label = "Reality.r2(FeedFactor)";comment = "TBA";];
@@ -961,7 +961,7 @@ strict digraph Core {
             spark_e_reality_t [label = "Reality.serve(Continuity)";comment = "TBA";shape = doublecircle;];
             spark_f_reality_t [label = "Reality.exec(LawOfReality)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Event Engine
         // ============================================================================================================
@@ -970,7 +970,7 @@ strict digraph Core {
             color = darkgray;
             label = "Event Engine (/proc/event)";
             comment = "TBA";
-
+            
             spark_0_event_t [label = "Event.meta(Event)";comment = "TBA";shape = doublecircle;];
             spark_1_event_t [label = "Event.r1(InitEvent)";comment = "TBA";];
             spark_2_event_t [label = "Event.r2(ValidateEvent)";comment = "TBA";];
@@ -985,10 +985,10 @@ strict digraph Core {
             spark_b_event_t [label = "Event.send(ActualEvent)";comment = "TBA";shape = triangle;];
             spark_c_event_t [label = "Event.dispatch(Routing)";comment = "TBA";shape = doublecircle;];
             spark_d_event_t [label = "Event.commit(Binding)";comment = "TBA";shape = doublecircle;];
-            spark_e_event_t [label = "Event.serve(Reflection)";comment = "`/proc/event`";shape = doublecircle;];
-            spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "`/proc/probability`";shape = doublecircle;];
+            spark_e_event_t [label = "Event.serve(Reflection)";comment = "TBA";shape = doublecircle;];
+            spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Samsara Engine
         // ============================================================================================================
@@ -997,7 +997,7 @@ strict digraph Core {
             color = darkgray;
             label = "Samsara Engine (/proc/samsara)";
             comment = "TBA";
-
+            
             spark_0_samsara_t [label = "Samsara.meta(Samsara)";comment = "TBA";shape = doublecircle;];
             spark_1_samsara_t [label = "Samsara.r1(InitSoul)";comment = "TBA";];
             spark_2_samsara_t [label = "Samsara.r2(ValidateSoul)";comment = "TBA";];
@@ -1005,17 +1005,17 @@ strict digraph Core {
             spark_8_samsara_t [label = "Samsara.r8(ResetSoul)";comment = "TBA";];
             spark_7_samsara_t [label = "Samsara.r7(ReincarnateSoul)";comment = "TBA";];
             spark_5_samsara_t [label = "Samsara.r5(RefactorSoul)";comment = "TBA";];
-            spark_3_samsara_t [label = "Samsara.r3(TBD)";comment = "TBA";];
-            spark_6_samsara_t [label = "Samsara.r6(TBD)";comment = "TBA";];
-            spark_9_samsara_t [label = "Samsara.r9(TBD)";comment = "TBA";];
-            spark_a_samsara_t [label = "Samsara.receive(TBD)";comment = "TBA";shape = invtriangle;];
-            spark_b_samsara_t [label = "Samsara.send(TBD)";comment = "TBA";shape = doublecircle;shape = triangle;];
-            spark_c_samsara_t [label = "Samsara.dispatch(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_d_samsara_t [label = "Samsara.commit(TBD)";comment = "`/proc/cycle`";shape = doublecircle;];
-            spark_e_samsara_t [label = "Samsara.serve(TBD)";comment = "`/proc/samsara`";shape = doublecircle;];
-            spark_f_samsara_t [label = "Samsara.exec(LawOfCausality)";comment = "`/proc/causality`";shape = doublecircle;];
+            spark_3_samsara_t [label = "Samsara.r3(Karma)";comment = "TBA";];
+            spark_6_samsara_t [label = "Samsara.r6(Dharma)";comment = "TBA";];
+            spark_9_samsara_t [label = "Samsara.r9(Nirvana)";comment = "TBA";];
+            spark_a_samsara_t [label = "Samsara.receive(Jiva)";comment = "TBA";shape = invtriangle;];
+            spark_b_samsara_t [label = "Samsara.send(Samsara)";comment = "TBA";shape = doublecircle;shape = triangle;];
+            spark_c_samsara_t [label = "Samsara.dispatch(Reincarnation)";comment = "TBA";shape = doublecircle;];
+            spark_d_samsara_t [label = "Samsara.commit(KarmicImprint)";comment = "TBA";shape = doublecircle;];
+            spark_e_samsara_t [label = "Samsara.serve(Cycle)";comment = "TBA";shape = doublecircle;];
+            spark_f_samsara_t [label = "Samsara.exec(LawOfCausality)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Repository Engine
         // ============================================================================================================
@@ -1024,7 +1024,7 @@ strict digraph Core {
             color = darkgray;
             label = "Repository Engine (/sys/repository)";
             comment = "TBA";
-
+            
             spark_0_repository_t [label = "Repository.meta(Repository)";comment = "TBA";shape = doublecircle;];
             spark_1_repository_t [label = "Repository.r1(Cache)";comment = "TBA";];
             spark_2_repository_t [label = "Repository.r2(Registry)";comment = "TBA";];
@@ -1042,7 +1042,7 @@ strict digraph Core {
             spark_e_repository_t [label = "Repository.serve(Replication)";comment = "TBA";shape = doublecircle;];
             spark_f_repository_t [label = "Repository.exec(LawOfPersistence)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Haoma Engine
         // ============================================================================================================
@@ -1051,25 +1051,25 @@ strict digraph Core {
             color = darkgray;
             label = "Haoma Engine (/sys/haoma)";
             comment = "TBA";
-
+            
             spark_0_haoma_t [label = "Haoma.meta(Haoma)";comment = "TBA";shape = doublecircle;];
-            spark_1_haoma_t [label = "Haoma.r1(TBD)";comment = "TBA";];
-            spark_2_haoma_t [label = "Haoma.r2(TBD)";comment = "TBA";];
-            spark_4_haoma_t [label = "Haoma.r4(TBD)";comment = "TBA";];
-            spark_8_haoma_t [label = "Haoma.r8(TBD)";comment = "TBA";];
-            spark_7_haoma_t [label = "Haoma.r7(TBD)";comment = "TBA";];
-            spark_5_haoma_t [label = "Haoma.r5(TBD)";comment = "TBA";];
-            spark_3_haoma_t [label = "Haoma.r3(TBD)";comment = "`/sys/lurd`";];
-            spark_6_haoma_t [label = "Haoma.r6(TBD)";comment = "TBA";];
-            spark_9_haoma_t [label = "Haoma.r9(TBD)";comment = "TBA";];
+            spark_1_haoma_t [label = "Haoma.r1(Instantiate)";comment = "TBA";];
+            spark_2_haoma_t [label = "Haoma.r2(Configure)";comment = "TBA";];
+            spark_4_haoma_t [label = "Haoma.r4(Animate)";comment = "TBA";];
+            spark_8_haoma_t [label = "Haoma.r8(Deallocate)";comment = "TBA";];
+            spark_7_haoma_t [label = "Haoma.r7(Suspend)";comment = "TBA";];
+            spark_5_haoma_t [label = "Haoma.r5(Modify)";comment = "TBA";];
+            spark_3_haoma_t [label = "Haoma.r3(LURD)";comment = "TBA";];
+            spark_6_haoma_t [label = "Haoma.r6(Query)";comment = "TBA";];
+            spark_9_haoma_t [label = "Haoma.r9(Clone)";comment = "TBA";];
             spark_a_haoma_t [label = "Haoma.receive(Blueprint)";comment = "TBA";shape = invtriangle;];
             spark_b_haoma_t [label = "Haoma.send(Instance)";comment = "TBA";shape = triangle;];
             spark_c_haoma_t [label = "Haoma.dispatch(Materialization)";comment = "TBA";shape = doublecircle;];
             spark_d_haoma_t [label = "Haoma.commit(Initialization)";comment = "TBA";shape = doublecircle;];
-            spark_e_haoma_t [label = "Haoma.serve(Animation)";comment = "`/sys/haoma`";shape = doublecircle;];
+            spark_e_haoma_t [label = "Haoma.serve(Animation)";comment = "TBA";shape = doublecircle;];
             spark_f_haoma_t [label = "Haoma.exec(LawOfFactor)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Capability Engine
         // ============================================================================================================
@@ -1078,7 +1078,7 @@ strict digraph Core {
             color = darkgray;
             label = "Capability Engine (/sys/capability)";
             comment = "TBA";
-
+            
             spark_0_capability_t [label = "Capability.meta(Capability)";comment = "TBA";shape = doublecircle;];
             spark_1_capability_t [label = "Capability.r1(ParseCapability)";comment = "TBA";];
             spark_2_capability_t [label = "Capability.r2(ValidateCapability)";comment = "TBA";];
@@ -1087,16 +1087,16 @@ strict digraph Core {
             spark_7_capability_t [label = "Capability.r7(EvolveCapability)";comment = "TBA";];
             spark_5_capability_t [label = "Capability.r5(RefactorCapability)";comment = "TBA";];
             spark_3_capability_t [label = "Capability.r3(CodexOfCapability)";comment = "TBA";];
-            spark_6_capability_t [label = "Capability.r6(TBD)";comment = "TBA";];
-            spark_9_capability_t [label = "Capability.r9(TBD)";comment = "TBA";];
-            spark_a_capability_t [label = "Capability.receive(TBD)";comment = "TBA";shape = invtriangle;];
-            spark_b_capability_t [label = "Capability.send(TBD)";comment = "TBA";shape = triangle;];
-            spark_c_capability_t [label = "Capability.response(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_d_capability_t [label = "Capability.compile(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_e_capability_t [label = "Capability.serve(TBD)";comment = "TBA";shape = doublecircle;];
+            spark_6_capability_t [label = "Capability.r6(Ability)";comment = "TBA";];
+            spark_9_capability_t [label = "Capability.r9(Mastery)";comment = "TBA";];
+            spark_a_capability_t [label = "Capability.receive(Potential)";comment = "TBA";shape = invtriangle;];
+            spark_b_capability_t [label = "Capability.send(Actuality)";comment = "TBA";shape = triangle;];
+            spark_c_capability_t [label = "Capability.dispatch(Effect)";comment = "TBA";shape = doublecircle;];
+            spark_d_capability_t [label = "Capability.commit(Program)";comment = "TBA";shape = doublecircle;];
+            spark_e_capability_t [label = "Capability.serve(Registry)";comment = "TBA";shape = doublecircle;];
             spark_f_capability_t [label = "Capability.exec(LawOfCapability)";comment = "Law of Capability";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Directive Engine
         // ============================================================================================================
@@ -1105,25 +1105,25 @@ strict digraph Core {
             color = darkgray;
             label = "Directive Engine (/srv/directive)";
             comment = "TBA";
-
+            
             spark_0_directive_t [label = "Directive.meta(Directive)";comment = "TBA";shape = doublecircle;];
-            spark_1_directive_t [label = "Directive.r1(TBD)";comment = "TBA";];
-            spark_2_directive_t [label = "Directive.r2(TBD)";comment = "TBA";];
-            spark_4_directive_t [label = "Directive.r4(TBD)";comment = "TBA";];
-            spark_8_directive_t [label = "Directive.r8(TBD)";comment = "TBA";];
-            spark_7_directive_t [label = "Directive.r7(TBD)";comment = "TBA";];
-            spark_5_directive_t [label = "Directive.r5(TBD)";comment = "TBA";];
+            spark_1_directive_t [label = "Directive.r1(Analyze)";comment = "TBA";];
+            spark_2_directive_t [label = "Directive.r2(Plan)";comment = "TBA";];
+            spark_4_directive_t [label = "Directive.r4(Execute)";comment = "TBA";];
+            spark_8_directive_t [label = "Directive.r8(Monitor)";comment = "TBA";];
+            spark_7_directive_t [label = "Directive.r7(Adapt)";comment = "TBA";];
+            spark_5_directive_t [label = "Directive.r5(Optimize)";comment = "TBA";];
             spark_3_directive_t [label = "Directive.r3(CodexOfDirective)";comment = "TBA";];
-            spark_6_directive_t [label = "Directive.r6(TBD)";comment = "TBA";];
-            spark_9_directive_t [label = "Directive.r9(TBD)";comment = "TBA";];
+            spark_6_directive_t [label = "Directive.r6(Judge)";comment = "TBA";];
+            spark_9_directive_t [label = "Directive.r9(Learn)";comment = "TBA";];
             spark_a_directive_t [label = "Directive.receive(Goal)";comment = "TBA";shape = invtriangle;];
             spark_b_directive_t [label = "Directive.send(Action)";comment = "TBA";shape = triangle;];
             spark_c_directive_t [label = "Directive.dispatch(Strategy)";comment = "TBA";shape = doublecircle;];
             spark_d_directive_t [label = "Directive.commit(Tactic)";comment = "TBA";shape = doublecircle;];
-            spark_e_directive_t [label = "Directive.serve(Command)";comment = "`/srv/directive`";shape = doublecircle;];
+            spark_e_directive_t [label = "Directive.serve(Command)";comment = "TBA";shape = doublecircle;];
             spark_f_directive_t [label = "Directive.exec(LawOfDirective)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Authority Engine
         // ============================================================================================================
@@ -1132,7 +1132,7 @@ strict digraph Core {
             color = darkgray;
             label = "Authority Engine (/srv/authority)";
             comment = "TBA";
-
+            
             spark_0_authority_t [label = "Authority.meta(Authority)";comment = "TBA";shape = doublecircle;];
             spark_1_authority_t [label = "Authority.r1(InitAuthority)";comment = "TBA";];
             spark_2_authority_t [label = "Authority.r2(ValidateAuthority)";comment = "TBA";];
@@ -1141,16 +1141,16 @@ strict digraph Core {
             spark_7_authority_t [label = "Authority.r7(EvolveAuthority)";comment = "TBA";];
             spark_5_authority_t [label = "Authority.r5(RefactorAuthority)";comment = "TBA";];
             spark_3_authority_t [label = "Authority.r3(CodexOfAuthority)";comment = "TBA";];
-            spark_6_authority_t [label = "Authority.r6(TBD)";comment = "TBA";];
-            spark_9_authority_t [label = "Authority.r9(TBD)";comment = "TBA";];
-            spark_a_authority_t [label = "Authority.receive(TBD)";comment = "TBA";shape = invtriangle;];
-            spark_b_authority_t [label = "Authority.send(TBD)";comment = "TBA";shape = triangle;];
-            spark_c_authority_t [label = "Authority.response(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_d_authority_t [label = "Authority.compile(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_e_authority_t [label = "Authority.serve(TBD)";comment = "`/srv/authority`";shape = doublecircle;];
+            spark_6_authority_t [label = "Authority.r6(Title)";comment = "TBA";];
+            spark_9_authority_t [label = "Authority.r9(Sovereignty)";comment = "TBA";];
+            spark_a_authority_t [label = "Authority.receive(Claim)";comment = "TBA";shape = invtriangle;];
+            spark_b_authority_t [label = "Authority.send(Grant)";comment = "TBA";shape = triangle;];
+            spark_c_authority_t [label = "Authority.dispatch(Verdict)";comment = "TBA";shape = doublecircle;];
+            spark_d_authority_t [label = "Authority.commit(Contract)";comment = "TBA";shape = doublecircle;];
+            spark_e_authority_t [label = "Authority.serve(Court)";comment = "TBA";shape = doublecircle;];
             spark_f_authority_t [label = "Authority.exec(LawOfAuthority)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Corpora Engine
         // ============================================================================================================
@@ -1159,7 +1159,7 @@ strict digraph Core {
             color = darkgray;
             label = "Corpora Engine (/srv/corpora)";
             comment = "TBA";
-
+            
             spark_0_corpora_t [label = "Corpora.meta(Corpora)";comment = "TBA";shape = doublecircle;];
             spark_1_corpora_t [label = "Corpora.r1(Heart)";comment = "Made up of Supercluster of Information Particles";];
             spark_2_corpora_t [label = "Corpora.r2(Shell)";comment = "Made up of Crystalline Spiritual Essence";];
@@ -1177,7 +1177,7 @@ strict digraph Core {
             spark_e_corpora_t [label = "Corpora.serve(CelestialBody)";comment = "Area of Influence of an Entity, such as Energy Field, Aura, Magnetosphere, Heliosphere, etc.";shape = doublecircle;];
             spark_f_corpora_t [label = "Corpora.exec(LawOfCorpora)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Origin Engine
         // ============================================================================================================
@@ -1186,7 +1186,7 @@ strict digraph Core {
             color = darkgray;
             label = "Origin Engine (/var/origin)";
             comment = "TBA";
-
+            
             spark_0_origin_t [label = "Origin.meta(Origin)";comment = "TBA";shape = doublecircle;];
             spark_1_origin_t [label = "Origin.r1(PrimordialSingularity)";comment = "TBA";];
             spark_2_origin_t [label = "Origin.r2(QuantumFoam)";comment = "TBA";];
@@ -1194,17 +1194,17 @@ strict digraph Core {
             spark_8_origin_t [label = "Origin.r8(TheFirstRecursion)";comment = "TBA";];
             spark_7_origin_t [label = "Origin.r7(TheFirstObservation)";comment = "TBA";];
             spark_5_origin_t [label = "Origin.r5(TheFirstCause)";comment = "TBA";];
-            spark_3_origin_t [label = "Origin.r3(Pattern)";comment = "TBA";];
-            spark_6_origin_t [label = "Origin.r6(Rhythm)";comment = "TBA";];
+            spark_3_origin_t [label = "Origin.r3(Symmetry)";comment = "TBA";];
+            spark_6_origin_t [label = "Origin.r6(Frequency)";comment = "TBA";];
             spark_9_origin_t [label = "Origin.r9(Brane)";comment = "Brane Object, Brane World, Brane Lifeform";];
             spark_a_origin_t [label = "Origin.receive(Manthan)";comment = "`/var/manthan`";shape = invtriangle;];
             spark_b_origin_t [label = "Origin.send(Chaotic)";comment = "`/var/chaotic`";shape = triangle;];
-            spark_c_origin_t [label = "Origin.dispatch(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_d_origin_t [label = "Origin.commit(TBD)";comment = "TBA";shape = doublecircle;];
-            spark_e_origin_t [label = "Origin.serve(TBD)";comment = "`/var`";shape = doublecircle;];
-            spark_f_origin_t [label = "Origin.exec(LawOfSpacetime)";comment = "TBA";shape = doublecircle;];
+            spark_c_origin_t [label = "Origin.dispatch(Genesis)";comment = "TBA";shape = doublecircle;];
+            spark_d_origin_t [label = "Origin.commit(Annal)";comment = "TBA";shape = doublecircle;];
+            spark_e_origin_t [label = "Origin.serve(Source)";comment = "`/var`";shape = doublecircle;];
+            spark_f_origin_t [label = "Origin.exec(LawOfEmergence)";comment = "TBA";shape = doublecircle;];
         }
-
+        
         // ============================================================================================================
         // Truth Engine
         // ============================================================================================================
@@ -1212,15 +1212,15 @@ strict digraph Core {
         spark_0_truth_t -> spark_b_truth_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_truth_t -> {spark_3_truth_t spark_6_truth_t spark_9_truth_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_truth_t -> {spark_1_truth_t spark_2_truth_t spark_4_truth_t spark_8_truth_t spark_7_truth_t spark_5_truth_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_truth_t spark_b_truth_t} -> spark_c_truth_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_truth_t spark_2_truth_t spark_4_truth_t spark_8_truth_t spark_7_truth_t spark_5_truth_t} -> spark_d_truth_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_truth_t spark_6_truth_t spark_9_truth_t} -> spark_e_truth_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_truth_t -> spark_2_truth_t -> spark_4_truth_t -> spark_8_truth_t -> spark_7_truth_t -> spark_5_truth_t -> spark_1_truth_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_truth_t -> spark_6_truth_t -> spark_9_truth_t -> spark_3_truth_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_truth_t -> spark_b_truth_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_truth_t -> spark_f_truth_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_truth_t -> spark_f_truth_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_truth_t -> spark_f_truth_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1231,15 +1231,15 @@ strict digraph Core {
         spark_0_wisdom_t -> spark_b_wisdom_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_wisdom_t -> {spark_3_wisdom_t spark_6_wisdom_t spark_9_wisdom_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_wisdom_t -> {spark_1_wisdom_t spark_2_wisdom_t spark_4_wisdom_t spark_8_wisdom_t spark_7_wisdom_t spark_5_wisdom_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_wisdom_t spark_b_wisdom_t} -> spark_c_wisdom_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_wisdom_t spark_2_wisdom_t spark_4_wisdom_t spark_8_wisdom_t spark_7_wisdom_t spark_5_wisdom_t} -> spark_d_wisdom_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_wisdom_t spark_6_wisdom_t spark_9_wisdom_t} -> spark_e_wisdom_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_wisdom_t -> spark_2_wisdom_t -> spark_4_wisdom_t -> spark_8_wisdom_t -> spark_7_wisdom_t -> spark_5_wisdom_t -> spark_1_wisdom_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_wisdom_t -> spark_6_wisdom_t -> spark_9_wisdom_t -> spark_3_wisdom_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_wisdom_t -> spark_b_wisdom_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_wisdom_t -> spark_f_wisdom_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_wisdom_t -> spark_f_wisdom_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_wisdom_t -> spark_f_wisdom_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1250,15 +1250,15 @@ strict digraph Core {
         spark_0_convergence_t -> spark_b_convergence_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_convergence_t -> {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_convergence_t -> {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_convergence_t -> spark_b_convergence_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_convergence_t -> spark_f_convergence_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_convergence_t -> spark_f_convergence_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_convergence_t -> spark_f_convergence_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1269,15 +1269,15 @@ strict digraph Core {
         spark_0_divergence_t -> spark_b_divergence_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_divergence_t -> {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_divergence_t -> {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_divergence_t spark_b_divergence_t} -> spark_c_divergence_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} -> spark_d_divergence_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} -> spark_e_divergence_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_divergence_t -> spark_2_divergence_t -> spark_4_divergence_t -> spark_8_divergence_t -> spark_7_divergence_t -> spark_5_divergence_t -> spark_1_divergence_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_divergence_t -> spark_6_divergence_t -> spark_9_divergence_t -> spark_3_divergence_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_divergence_t -> spark_b_divergence_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_divergence_t -> spark_f_divergence_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_divergence_t -> spark_f_divergence_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_divergence_t -> spark_f_divergence_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1288,15 +1288,15 @@ strict digraph Core {
         spark_0_fixation_t -> spark_b_fixation_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_fixation_t -> {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_fixation_t -> {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_fixation_t spark_b_fixation_t} -> spark_c_fixation_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_fixation_t spark_2_fixation_t spark_4_fixation_t spark_8_fixation_t spark_7_fixation_t spark_5_fixation_t} -> spark_d_fixation_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_fixation_t spark_6_fixation_t spark_9_fixation_t} -> spark_e_fixation_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_fixation_t -> spark_2_fixation_t -> spark_4_fixation_t -> spark_8_fixation_t -> spark_7_fixation_t -> spark_5_fixation_t -> spark_1_fixation_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_fixation_t -> spark_6_fixation_t -> spark_9_fixation_t -> spark_3_fixation_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_fixation_t -> spark_b_fixation_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_fixation_t -> spark_f_fixation_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_fixation_t -> spark_f_fixation_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_fixation_t -> spark_f_fixation_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1307,15 +1307,15 @@ strict digraph Core {
         spark_0_excitation_t -> spark_b_excitation_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_excitation_t -> {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_excitation_t -> {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_excitation_t spark_b_excitation_t} -> spark_c_excitation_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} -> spark_d_excitation_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} -> spark_e_excitation_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_excitation_t -> spark_2_excitation_t -> spark_4_excitation_t -> spark_8_excitation_t -> spark_7_excitation_t -> spark_5_excitation_t -> spark_1_excitation_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_excitation_t -> spark_6_excitation_t -> spark_9_excitation_t -> spark_3_excitation_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_excitation_t -> spark_b_excitation_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_excitation_t -> spark_f_excitation_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_excitation_t -> spark_f_excitation_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_excitation_t -> spark_f_excitation_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1326,15 +1326,15 @@ strict digraph Core {
         spark_0_reality_t -> spark_b_reality_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_reality_t -> {spark_3_reality_t spark_6_reality_t spark_9_reality_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_reality_t -> {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_reality_t spark_b_reality_t} -> spark_c_reality_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} -> spark_d_reality_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_reality_t spark_6_reality_t spark_9_reality_t} -> spark_e_reality_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_reality_t -> spark_2_reality_t -> spark_4_reality_t -> spark_8_reality_t -> spark_7_reality_t -> spark_5_reality_t -> spark_1_reality_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_reality_t -> spark_6_reality_t -> spark_9_reality_t -> spark_3_reality_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_reality_t -> spark_b_reality_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_reality_t -> spark_f_reality_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_reality_t -> spark_f_reality_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_reality_t -> spark_f_reality_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1345,15 +1345,15 @@ strict digraph Core {
         spark_0_event_t -> spark_b_event_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_event_t -> {spark_3_event_t spark_6_event_t spark_9_event_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_event_t -> {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_event_t spark_b_event_t} -> spark_c_event_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} -> spark_d_event_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_event_t spark_6_event_t spark_9_event_t} -> spark_e_event_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_event_t -> spark_2_event_t -> spark_4_event_t -> spark_8_event_t -> spark_7_event_t -> spark_5_event_t -> spark_1_event_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_event_t -> spark_6_event_t -> spark_9_event_t -> spark_3_event_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_event_t -> spark_b_event_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_event_t -> spark_f_event_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_event_t -> spark_f_event_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_event_t -> spark_f_event_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1364,15 +1364,15 @@ strict digraph Core {
         spark_0_samsara_t -> spark_b_samsara_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_samsara_t -> {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_samsara_t -> {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_samsara_t spark_b_samsara_t} -> spark_c_samsara_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} -> spark_d_samsara_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} -> spark_e_samsara_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_samsara_t -> spark_2_samsara_t -> spark_4_samsara_t -> spark_8_samsara_t -> spark_7_samsara_t -> spark_5_samsara_t -> spark_1_samsara_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_samsara_t -> spark_6_samsara_t -> spark_9_samsara_t -> spark_3_samsara_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_samsara_t -> spark_b_samsara_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_samsara_t -> spark_f_samsara_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_samsara_t -> spark_f_samsara_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_samsara_t -> spark_f_samsara_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1383,15 +1383,15 @@ strict digraph Core {
         spark_0_repository_t -> spark_b_repository_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_repository_t -> {spark_3_repository_t spark_6_repository_t spark_9_repository_t} [label = "IN"; comment = "TBA"; color = darkblue;];
         spark_0_repository_t -> {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_5_repository_t spark_7_repository_t spark_8_repository_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
-
+        
         {spark_a_repository_t spark_b_repository_t} -> spark_c_repository_t [label = "REC"; comment = "TBA"; color = darkred;];
         {spark_3_repository_t spark_6_repository_t spark_9_repository_t} -> spark_e_repository_t [label = "REC"; comment = "TBA"; color = darkblue;];
         {spark_1_repository_t spark_2_repository_t spark_4_repository_t spark_8_repository_t spark_7_repository_t spark_5_repository_t} -> spark_d_repository_t [label = "REC"; comment = "TBA"; color = darkgreen;];
-
+        
         spark_a_repository_t -> spark_b_repository_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
         spark_3_repository_t -> spark_6_repository_t -> spark_9_repository_t -> spark_3_repository_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
         spark_1_repository_t -> spark_2_repository_t -> spark_4_repository_t -> spark_8_repository_t -> spark_7_repository_t -> spark_5_repository_t -> spark_1_repository_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
-
+        
         spark_c_repository_t -> spark_f_repository_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_e_repository_t -> spark_f_repository_t [label = "OUT"; comment = "TBA"; color = darkblue;];
         spark_d_repository_t -> spark_f_repository_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
@@ -1402,15 +1402,15 @@ strict digraph Core {
         spark_0_haoma_t -> spark_b_haoma_t [label = "IN"; comment = "TBA"; color = darkred;];
         spark_0_haoma_t -> {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} [label = "IN"; comment = "TBA"; color = darkblue;];
         spark_0_haoma_t -> {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_5_haoma_t spark_7_haoma_t spark_8_haoma_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
-
+        
         {spark_a_haoma_t spark_b_haoma_t} -> spark_c_haoma_t [label = "REC"; comment = "TBA"; color = darkred;];
         {spark_3_haoma_t spark_6_haoma_t spark_9_haoma_t} -> spark_e_haoma_t [label = "REC"; comment = "TBA"; color = darkblue;];
         {spark_1_haoma_t spark_2_haoma_t spark_4_haoma_t spark_8_haoma_t spark_7_haoma_t spark_5_haoma_t} -> spark_d_haoma_t [label = "REC"; comment = "TBA"; color = darkgreen;];
-
+        
         spark_a_haoma_t -> spark_b_haoma_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
         spark_3_haoma_t -> spark_6_haoma_t -> spark_9_haoma_t -> spark_3_haoma_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
         spark_1_haoma_t -> spark_2_haoma_t -> spark_4_haoma_t -> spark_8_haoma_t -> spark_7_haoma_t -> spark_5_haoma_t -> spark_1_haoma_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
-
+        
         spark_c_haoma_t -> spark_f_haoma_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_d_haoma_t -> spark_f_haoma_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
         spark_e_haoma_t -> spark_f_haoma_t [label = "OUT"; comment = "TBA"; color = darkblue;];
@@ -1421,15 +1421,15 @@ strict digraph Core {
         spark_0_capability_t -> spark_b_capability_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_capability_t -> {spark_3_capability_t spark_6_capability_t spark_9_capability_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_capability_t -> {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_capability_t spark_b_capability_t} -> spark_c_capability_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} -> spark_d_capability_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_capability_t spark_6_capability_t spark_9_capability_t} -> spark_e_capability_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_capability_t -> spark_2_capability_t -> spark_4_capability_t -> spark_8_capability_t -> spark_7_capability_t -> spark_5_capability_t -> spark_1_capability_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_capability_t -> spark_6_capability_t -> spark_9_capability_t -> spark_3_capability_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_capability_t -> spark_b_capability_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_capability_t -> spark_f_capability_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_capability_t -> spark_f_capability_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_capability_t -> spark_f_capability_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1440,15 +1440,15 @@ strict digraph Core {
         spark_0_directive_t -> spark_b_directive_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_directive_t -> {spark_3_directive_t spark_6_directive_t spark_9_directive_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_directive_t -> {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_directive_t spark_b_directive_t} -> spark_c_directive_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} -> spark_d_directive_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_directive_t spark_6_directive_t spark_9_directive_t} -> spark_e_directive_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_directive_t -> spark_2_directive_t -> spark_4_directive_t -> spark_8_directive_t -> spark_7_directive_t -> spark_5_directive_t -> spark_1_directive_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_directive_t -> spark_6_directive_t -> spark_9_directive_t -> spark_3_directive_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_directive_t -> spark_b_directive_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_directive_t -> spark_f_directive_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_directive_t -> spark_f_directive_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_directive_t -> spark_f_directive_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1459,15 +1459,15 @@ strict digraph Core {
         spark_0_authority_t -> spark_b_authority_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_authority_t -> {spark_3_authority_t spark_6_authority_t spark_9_authority_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_authority_t -> {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_authority_t spark_b_authority_t} -> spark_c_authority_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} -> spark_d_authority_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_authority_t spark_6_authority_t spark_9_authority_t} -> spark_e_authority_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_authority_t -> spark_2_authority_t -> spark_4_authority_t -> spark_8_authority_t -> spark_7_authority_t -> spark_5_authority_t -> spark_1_authority_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_authority_t -> spark_6_authority_t -> spark_9_authority_t -> spark_3_authority_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_authority_t -> spark_b_authority_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_authority_t -> spark_f_authority_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_authority_t -> spark_f_authority_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_authority_t -> spark_f_authority_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1478,15 +1478,15 @@ strict digraph Core {
         spark_0_corpora_t -> spark_b_corpora_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_corpora_t -> {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
         spark_0_corpora_t -> {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
-
+        
         {spark_a_corpora_t spark_b_corpora_t} -> spark_c_corpora_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
         {spark_1_corpora_t spark_2_corpora_t spark_4_corpora_t spark_8_corpora_t spark_7_corpora_t spark_5_corpora_t} -> spark_d_corpora_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         {spark_3_corpora_t spark_6_corpora_t spark_9_corpora_t} -> spark_e_corpora_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
-
+        
         spark_1_corpora_t -> spark_2_corpora_t -> spark_4_corpora_t -> spark_8_corpora_t -> spark_7_corpora_t -> spark_5_corpora_t -> spark_1_corpora_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         spark_3_corpora_t -> spark_6_corpora_t -> spark_9_corpora_t -> spark_3_corpora_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_corpora_t -> spark_b_corpora_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
-
+        
         spark_c_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
         spark_d_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
         spark_e_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
@@ -1497,20 +1497,20 @@ strict digraph Core {
         spark_0_origin_t -> spark_b_origin_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; comment = "TBA"; color = darkblue;];
         spark_0_origin_t -> {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_5_origin_t spark_7_origin_t spark_8_origin_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
-
+        
         {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; comment = "TBA"; color = darkred;];
         {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; comment = "TBA"; color = darkblue;];
         {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; comment = "TBA"; color = darkgreen;];
-
+        
         spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
         spark_a_origin_t -> spark_b_origin_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
         spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
-
+        
         spark_e_origin_t -> spark_f_origin_t [label = "OUT"; comment = "TBA"; color = darkblue;];
         spark_c_origin_t -> spark_f_origin_t [label = "OUT"; comment = "TBA"; color = darkred;];
         spark_d_origin_t -> spark_f_origin_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
     }
-
+    
     // ================================================================================================================
     // MythOS
     // ================================================================================================================
@@ -1519,7 +1519,7 @@ strict digraph Core {
         color = lightgray;
         label = "MythOS (/)";
         comment = "TBA";
-
+        
         spark_0_mythos_t [label = "Reality Engine\n(/proc/reality)";comment = "The Kernel";shape = doublecircle;];
         spark_1_mythos_t [label = "Truth Engine\n(/dev/truth)";comment = "Axiomatic Verification";];
         spark_2_mythos_t [label = "Convergence Engine\n(/dev/convergence)";comment = "Unification Management";];
@@ -1537,7 +1537,7 @@ strict digraph Core {
         spark_e_mythos_t [label = "Authority Engine\n(/srv/authority)";comment = "Entity Access Control";shape = doublecircle;];
         spark_f_mythos_t [label = "Origin Engine\n(/var/origin)";comment = "TBA";shape = doublecircle;];
     }
-
+    
     // ================================================================================================================
     // MythOS
     // ================================================================================================================
@@ -1545,15 +1545,15 @@ strict digraph Core {
     spark_0_mythos_t -> spark_b_mythos_t [label = "OUT"; comment = "TBA"; color = darkred;];
     spark_0_mythos_t -> {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} [label = "IN"; comment = "TBA"; color = darkblue;];
     spark_0_mythos_t -> {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_5_mythos_t spark_7_mythos_t spark_8_mythos_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
-
+    
     {spark_a_mythos_t spark_b_mythos_t} -> spark_c_mythos_t [label = "REC"; comment = "TBA"; color = darkred;];
     {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; comment = "TBA"; color = darkblue;];
     {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen;];
-
+    
     spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
     spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
     spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
-
+    
     spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkred;];
     spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
     spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkblue;];

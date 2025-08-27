@@ -1,46 +1,47 @@
 strict digraph Sparklet {
-    label = "Sparklet\n(/proc/reality/seed/sparklet)";
+    label = "Sparklet";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    comment = "A 'Theory of Everything' for Meaning.";
     
     // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Vortex of Perception).
-    // The Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
+    // The Cognitive Vortex 3-6-9 (Vortex of Perception).
+    // The Mechanical Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
     // The Router C-D-E
     // The Closure F
-    spark_0_t [label = "Spark.meta(Dumadi)";comment = "";shape = doublecircle;];
-    spark_1_t [label = "Spark.r1(Harta)";comment = "";shape = circle;];
-    spark_2_t [label = "Spark.r2(Tahta)";comment = "";shape = circle;];
-    spark_4_t [label = "Spark.r4(Wanita)";comment = "";shape = circle;];
-    spark_8_t [label = "Spark.r8(Agama)";comment = "";shape = circle;];
-    spark_7_t [label = "Spark.r7(Ilmu)";comment = "";shape = circle;];
-    spark_5_t [label = "Spark.r5(Keturunan)";comment = "";shape = circle;];
-    spark_3_t [label = "Spark.r3(Asumsi)";comment = "";shape = doublecircle;];
-    spark_6_t [label = "Spark.r6(Sugesti)";comment = "";shape = doublecircle;];
-    spark_9_t [label = "Spark.r9(Persepsi)";comment = "";shape = doublecircle;];
-    spark_a_t [label = "Spark.receive(Sangkan)";comment = "";shape = invtriangle;];
-    spark_b_t [label = "Spark.send(Paran)";comment = "";shape = triangle;];
-    spark_c_t [label = "Spark.dispatch(Why|Who)";comment = "";shape = doublecircle;];
-    spark_d_t [label = "Spark.commit(What|How)";comment = "";shape = doublecircle;];
-    spark_e_t [label = "Spark.serve(When|Where)";comment = "";shape = doublecircle;];
-    spark_f_t [label = "Spark.exec(Which|Closure)";comment = "";shape = doublecircle;];
+    spark_0_t [label = "Spark.meta()";comment = "Dumadi";shape = doublecircle;];
+    spark_1_t [label = "Spark.r1()";comment = "Harta/Resource, Initiation.";];
+    spark_2_t [label = "Spark.r2()";comment = "Tahta/Authority, Response.";];
+    spark_4_t [label = "Spark.r4()";comment = "Wanita/Relation, Integration.";];
+    spark_8_t [label = "Spark.r8()";comment = "Agama/Axiom, Reflection.";];
+    spark_7_t [label = "Spark.r7()";comment = "Ilmu/Knowledge, Consolidation.";];
+    spark_5_t [label = "Spark.r5()";comment = "Keturunan/Lineage, Propagation.";];
+    spark_3_t [label = "Spark.r3()";comment = "Asumsi/Assumption, The foundational thesis.";];
+    spark_6_t [label = "Spark.r6()";comment = "Sugesti/Suggestion, The challenging antithesis or alternative.";];
+    spark_9_t [label = "Spark.r9()";comment = "Persepsi/Perception, The resolved synthesis, the new understanding.";];
+    spark_a_t [label = "Spark.receive()";comment = "Sangkan";shape = invtriangle;];
+    spark_b_t [label = "Spark.send()";comment = "Paran";shape = triangle;];
+    spark_c_t [label = "Spark.dispatch()";comment = "Why and/or Who";shape = doublecircle;];
+    spark_d_t [label = "Spark.commit()";comment = "What and/or How";shape = doublecircle;];
+    spark_e_t [label = "Spark.serve()";comment = "When and/or Where";shape = doublecircle;];
+    spark_f_t [label = "Spark.exec()";comment = "Which and/or Closure";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_t -> spark_a_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_t -> spark_b_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_t -> {spark_3_t spark_6_t spark_9_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_t -> {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_0_t -> spark_a_t [label = "IN"; comment = ""; color = darkred;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = ""; color = darkred;];
+    spark_0_t -> {spark_3_t spark_6_t spark_9_t} [label = "REC"; comment = ""; color = darkblue; dir = both;];
+    spark_0_t -> {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} [label = "REC"; comment = ""; color = darkgreen; dir = both;];
     
-    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    {spark_a_t spark_b_t} -> spark_c_t [label = "REC"; comment = ""; color = darkred; comment = ""; dir = both;];
+    {spark_1_t spark_2_t spark_4_t spark_8_t spark_7_t spark_5_t} -> spark_d_t [label = "REC"; comment = ""; color = darkgreen; dir = both;];
+    {spark_3_t spark_6_t spark_9_t} -> spark_e_t [label = "REC"; comment = ""; color = darkblue; dir = both;];
     
-    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_t -> spark_2_t -> spark_4_t -> spark_8_t -> spark_7_t -> spark_5_t -> spark_1_t [label = "REC"; comment = ""; color = darkgreen; style = dashed; constraint = false; dir = both;];
+    spark_3_t -> spark_6_t -> spark_9_t -> spark_3_t [label = "REC"; comment = ""; color = darkblue; style = dashed; constraint = false; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = ""; color = darkred; constraint = false; style = dashed; dir = both;];
     
     spark_c_t -> spark_f_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
     spark_d_t -> spark_f_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
