@@ -52,3 +52,12 @@ next:
   - "[[DynamisModel]]"
   - "[[KratosModel]]"
 ---
+
+Primary Reference: Category Theory
+- Category Theory for Science by David I. Spivak
+- Conceptual Mathematics by F. William Lawvere and Stephen H. Samuel
+- Seven Sketches in Compositionality by Brenden Fong and David I. Spivak
+Secondary Reference: Complex System and Thermodynamics
+- Synergetic: Introduction and Advanced Topics by Hermann Haken
+- Into the Cool: Energy Flow, Thermodynamics, and Life by Eric D. Schneider and Dorion Sagan
+- Complexity: A Guided Tour by Melanie Mitchell

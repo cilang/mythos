@@ -77,7 +77,7 @@ strict digraph Core {
             spark_c_vikara_model_t [label = "Vikara.dispatch(Catalysis)";comment = "TBA";shape = doublecircle;];
             spark_d_vikara_model_t [label = "Vikara.commit(Oath)";comment = "TBA";shape = doublecircle;];
             spark_e_vikara_model_t [label = "Vikara.serve(Providence)";comment = "TBA";shape = doublecircle;];
-            spark_f_vikara_model_t [label = "Vikara.exec(Probability)";comment = "TBA";shape = doublecircle;];
+            spark_f_vikara_model_t [label = "Vikara.exec(Variability)";comment = "TBA";shape = doublecircle;];
         }
         
         // ============================================================================================================
@@ -1487,9 +1487,9 @@ strict digraph Core {
         spark_3_corpora_t -> spark_6_corpora_t -> spark_9_corpora_t -> spark_3_corpora_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_corpora_t -> spark_b_corpora_t [label = "REC"; comment = "TBA"; color = darkred; constraint = false; style = dashed; dir = both;];
         
-        spark_c_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkred; dir = both;];
-        spark_d_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkgreen; dir = both;];
-        spark_e_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkblue; dir = both;];
+        spark_c_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkred;];
+        spark_d_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
+        spark_e_corpora_t -> spark_f_corpora_t [label = "OUT"; comment = "TBA"; color = darkblue;];
         // ============================================================================================================
         // Origin Engine
         // ============================================================================================================
@@ -1498,13 +1498,13 @@ strict digraph Core {
         spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; comment = "TBA"; color = darkblue;];
         spark_0_origin_t -> {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_5_origin_t spark_7_origin_t spark_8_origin_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
         
-        {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; comment = "TBA"; color = darkred;];
-        {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; comment = "TBA"; color = darkblue;];
-        {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; comment = "TBA"; color = darkgreen;];
+        {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
+        {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
+        {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
         
-        spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
+        spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
         spark_a_origin_t -> spark_b_origin_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
-        spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
+        spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
         
         spark_e_origin_t -> spark_f_origin_t [label = "OUT"; comment = "TBA"; color = darkblue;];
         spark_c_origin_t -> spark_f_origin_t [label = "OUT"; comment = "TBA"; color = darkred;];
@@ -1520,22 +1520,22 @@ strict digraph Core {
         label = "MythOS (/)";
         comment = "TBA";
         
-        spark_0_mythos_t [label = "Reality Engine\n(/proc/reality)";comment = "The Kernel";shape = doublecircle;];
+        spark_0_mythos_t [label = "Reality Engine\n(/proc/reality)";comment = "The Kernel. Noumenon, backend, unconditional truth.";shape = doublecircle;];
         spark_1_mythos_t [label = "Truth Engine\n(/dev/truth)";comment = "Axiomatic Verification";];
         spark_2_mythos_t [label = "Convergence Engine\n(/dev/convergence)";comment = "Unification Management";];
         spark_4_mythos_t [label = "Fixation Engine\n(/dev/fixation)";comment = "Rhythm Management";];
-        spark_8_mythos_t [label = "Wisdom Engine\n(/dev/wisdom)\nLaw of Wisdom";comment = "Adaptive Verification";];
+        spark_8_mythos_t [label = "Wisdom Engine\n(/dev/wisdom)";comment = "Adaptive Verification";];
         spark_7_mythos_t [label = "Divergence Engine\n(/dev/divergence)";comment = "Diversity Management";];
         spark_5_mythos_t [label = "Excitation Engine\n(/dev/excitation)";comment = "Pattern Management";];
         spark_3_mythos_t [label = "Capability Engine\n(/sys/capability)";comment = "Capability System";];
         spark_6_mythos_t [label = "Repository Engine\n(/sys/repository)";comment = "Storage System";];
-        spark_9_mythos_t [label = "Haoma Engine\n(/sys/haoma)";comment = "Entity Recursion Descriptor Engine";];
+        spark_9_mythos_t [label = "Haoma Engine\n(/sys/haoma)";comment = "Entity Recursion Descriptor";];
         spark_a_mythos_t [label = "Event Engine\n(/proc/event)";comment = "Probability Field";shape = invtriangle;];
         spark_b_mythos_t [label = "Samsara Engine\n(/proc/samsara)";comment = "Causality Enforcement";shape = triangle;];
-        spark_c_mythos_t [label = "Directive Engine\n(/srv/directive)";comment = "TBA";shape = doublecircle;];
-        spark_d_mythos_t [label = "Corpora Engine\n(/srv/corpora)";comment = "Entity Manifestation Engine";shape = doublecircle;];
+        spark_c_mythos_t [label = "Directive Engine\n(/srv/directive)";comment = "Directive Manager";shape = doublecircle;];
+        spark_d_mythos_t [label = "Corpora Engine\n(/srv/corpora)";comment = "Entity Manifestation";shape = doublecircle;];
         spark_e_mythos_t [label = "Authority Engine\n(/srv/authority)";comment = "Entity Access Control";shape = doublecircle;];
-        spark_f_mythos_t [label = "Origin Engine\n(/var/origin)";comment = "TBA";shape = doublecircle;];
+        spark_f_mythos_t [label = "Origin Engine\n(/var/origin)";comment = "Phenomenon, frontend, conditioned reality.";shape = doublecircle;];
     }
     
     // ================================================================================================================
@@ -1551,10 +1551,10 @@ strict digraph Core {
     {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen;];
     
     spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
-    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false;];
-    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false;];
+    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
+    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
     
-    spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkred;];
-    spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkgreen;];
-    spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "TBA"; color = darkblue;];
+    spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From the Directive flows the unseen command, the pulse of intent that sets the dance in motion; and in the Origin it finds its mirror, weaving the illusion of form and fate---Maya shimmering as if real, Fana dissolving as if it never was."; color = darkred;];
+    spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "Through Corpora arises the clothed word, the body of meaning incarnated in semblance; and in the Origin it unfurls as world and matter, patterns dressed in time, only to scatter back into the silence from which they came."; color = darkgreen;];
+    spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads."; color = darkblue;];
 }

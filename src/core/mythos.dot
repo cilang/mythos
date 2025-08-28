@@ -5,40 +5,40 @@ strict digraph MythOS {
     node [shape = circle; style = filled; color = green;];
     edge [color = darkgray;];
     
-    spark_0_mythos_t [label = "0x0\nReality Engine\n(/proc/reality)\nLaw of Origin";shape = doublecircle;comment = "The Kernel";];
-    spark_1_mythos_t [label = "0x1\nTruth Engine\n(/dev/truth)\nLaw of Truth";comment = "Axiomatic Verification";];
-    spark_2_mythos_t [label = "0x2\nConvergence Engine\n(/dev/convergence)\nLaw of Convergence";comment = "Unification Management";];
-    spark_4_mythos_t [label = "0x4\nFixation Engine\n(/dev/fixation)\nLaw of Fixation";comment = "Rhythm Management";];
-    spark_8_mythos_t [label = "0x8\nWisdom Engine\n(/dev/wisdom)\nLaw of Wisdom";comment = "Adaptive Verification";];
-    spark_7_mythos_t [label = "0x7\nDivergence Engine\n(/dev/divergence)\nLaw of Divergence";comment = "Diversity Management";];
-    spark_5_mythos_t [label = "0x5\nExcitation Engine\n(/dev/excitation)\nLaw of Excitation";comment = "Pattern Management";];
-    spark_3_mythos_t [label = "0x3\nCapability Engine\n(/sys/capability)\nLaw of Capability";shape = doublecircle;comment = "Capability System";];
-    spark_6_mythos_t [label = "0x6\nRepository Engine\n(/sys/repository)\nLaw of Repository";shape = doublecircle;comment = "Storage System";];
-    spark_9_mythos_t [label = "0x9\nHaoma Engine\n(/sys/haoma)\nLaw of Factor";shape = doublecircle;comment = "Entity Recursion Descriptor Engine";];
-    spark_a_mythos_t [label = "0xA\nEvent Engine\n(/proc/event)\nLaw of Probability";shape = doublecircle;comment = "Probability Field";];
-    spark_b_mythos_t [label = "0xB\nSamsara Engine\n(/proc/samsara)\nLaw of Causality";shape = doublecircle;comment = "Causality Enforcement";];
-    spark_c_mythos_t [label = "0xC\nDirective Engine\n(/srv/directive)\nLaw of Directive";shape = doublecircle;comment = "";];
-    spark_d_mythos_t [label = "0xD\nCorpora Engine\n(/srv/corpora)\nLaw of Corpus";shape = doublecircle;comment = "Entity Manifestation Engine";];
-    spark_e_mythos_t [label = "0xE\nAuthority Engine\n(/srv/authority)\nLaw of Authority";shape = doublecircle;comment = "Entity Access Control";];
-    spark_f_mythos_t [label = "0xF\nOrigin Engine\n(/var/origin)\nLaw of Spacetime";shape = doublecircle;comment = "";];
+    spark_0_mythos_t [label = "Reality Engine\n(/proc/reality)";comment = "The Kernel. Noumenon, backend, unconditional truth.";shape = doublecircle;];
+    spark_1_mythos_t [label = "Truth Engine\n(/dev/truth)";comment = "Axiomatic Verification";];
+    spark_2_mythos_t [label = "Convergence Engine\n(/dev/convergence)";comment = "Unification Management";];
+    spark_4_mythos_t [label = "Fixation Engine\n(/dev/fixation)";comment = "Rhythm Management";];
+    spark_8_mythos_t [label = "Wisdom Engine\n(/dev/wisdom)";comment = "Adaptive Verification";];
+    spark_7_mythos_t [label = "Divergence Engine\n(/dev/divergence)";comment = "Diversity Management";];
+    spark_5_mythos_t [label = "Excitation Engine\n(/dev/excitation)";comment = "Pattern Management";];
+    spark_3_mythos_t [label = "Capability Engine\n(/sys/capability)";comment = "Capability System";];
+    spark_6_mythos_t [label = "Repository Engine\n(/sys/repository)";comment = "Storage System";];
+    spark_9_mythos_t [label = "Haoma Engine\n(/sys/haoma)";comment = "Entity Recursion Descriptor";];
+    spark_a_mythos_t [label = "Event Engine\n(/proc/event)";comment = "Probability Field";shape = invtriangle;];
+    spark_b_mythos_t [label = "Samsara Engine\n(/proc/samsara)";comment = "Causality Enforcement";shape = triangle;];
+    spark_c_mythos_t [label = "Directive Engine\n(/srv/directive)";comment = "Directive Manager";shape = doublecircle;];
+    spark_d_mythos_t [label = "Corpora Engine\n(/srv/corpora)";comment = "Entity Manifestation";shape = doublecircle;];
+    spark_e_mythos_t [label = "Authority Engine\n(/srv/authority)";comment = "Entity Access Control";shape = doublecircle;];
+    spark_f_mythos_t [label = "Origin Engine\n(/var/origin)";comment = "Phenomenon, frontend, conditioned reality.";shape = doublecircle;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_mythos_t -> spark_a_mythos_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_mythos_t -> spark_b_mythos_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_mythos_t -> {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} [label = "IN"; color = darkblue; comment = "";];
-    spark_0_mythos_t -> {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_5_mythos_t spark_7_mythos_t spark_8_mythos_t} [label = "IN"; color = darkgreen; comment = "";];
+    spark_0_mythos_t -> spark_a_mythos_t [label = "IN"; comment = "TBA"; color = darkred;];
+    spark_0_mythos_t -> spark_b_mythos_t [label = "OUT"; comment = "TBA"; color = darkred;];
+    spark_0_mythos_t -> {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} [label = "IN"; comment = "TBA"; color = darkblue;];
+    spark_0_mythos_t -> {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_5_mythos_t spark_7_mythos_t spark_8_mythos_t} [label = "IN"; comment = "TBA"; color = darkgreen;];
     
-    {spark_a_mythos_t spark_b_mythos_t} -> spark_c_mythos_t [label = "REC"; color = darkred; comment = "";];
-    {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; color = darkblue; comment = "";];
-    {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; color = darkgreen; comment = "";];
+    {spark_a_mythos_t spark_b_mythos_t} -> spark_c_mythos_t [label = "REC"; comment = "TBA"; color = darkred; dir = both;];
+    {spark_3_mythos_t spark_6_mythos_t spark_9_mythos_t} -> spark_e_mythos_t [label = "REC"; comment = "TBA"; color = darkblue; dir = both;];
+    {spark_1_mythos_t spark_2_mythos_t spark_4_mythos_t spark_8_mythos_t spark_7_mythos_t spark_5_mythos_t} -> spark_d_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen; dir = both;];
     
-    spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
-    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false;];
+    spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; comment = "TBA"; color = darkred; style = dashed; constraint = false; dir = both;];
+    spark_3_mythos_t -> spark_6_mythos_t -> spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "TBA"; color = darkblue; style = dashed; constraint = false; dir = both;];
+    spark_1_mythos_t -> spark_2_mythos_t -> spark_4_mythos_t -> spark_8_mythos_t -> spark_7_mythos_t -> spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "TBA"; color = darkgreen; style = dashed; constraint = false; dir = both;];
     
-    spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkred; comment = "";];
-    spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkgreen; comment = "";];
-    spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; color = darkblue; comment = "";];
+    spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From the Directive flows the unseen command, the pulse of intent that sets the dance in motion; and in the Origin it finds its mirror, weaving the illusion of form and fate---Maya shimmering as if real, Fana dissolving as if it never was."; color = darkred;];
+    spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "Through Corpora arises the clothed word, the body of meaning incarnated in semblance; and in the Origin it unfurls as world and matter, patterns dressed in time, only to scatter back into the silence from which they came."; color = darkgreen;];
+    spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads."; color = darkblue;];
 }
