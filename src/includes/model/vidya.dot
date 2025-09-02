@@ -1,0 +1,72 @@
+strict digraph Vidya {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Vidya\n(/proc/reality/concept/vidya)";
+    comment = "TODO";
+
+    // The Axis A-0-B (In-Meta-Out).
+    // The Cognitive Vortex 3-6-9 (Vortex of Perception).
+    // The Mechanical Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
+    // The Router C-D-E
+    // The Closure F
+    spark_0_vidya_model_t [label = "Vidya.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_vidya_model_t [label = "Vidya.r1(Inspiration)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_vidya_model_t [label = "Vidya.r2(Theorm)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_vidya_model_t [label = "Vidya.r4(Data)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_vidya_model_t [label = "Vidya.r8(Algorithm)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_vidya_model_t [label = "Vidya.r7(Heuristic)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_vidya_model_t [label = "Vidya.r5(Model)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_vidya_model_t [label = "Vidya.r3(Hypothesis)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_vidya_model_t [label = "Vidya.r6(Theory)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_vidya_model_t [label = "Vidya.r9(Paradigm)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_vidya_model_t [label = "Vidya.receive(Concept)";comment = "Potential: A raw, abstract idea.";shape = invtriangle;color = darkred;];
+    spark_b_vidya_model_t [label = "Vidya.send(Context)";comment = "Manifest: The idea framed within a system of understanding.";shape = triangle;color = darkred;];
+    spark_c_vidya_model_t [label = "Vidya.dispatch(Interpretation)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_vidya_model_t [label = "Vidya.commit(Framework)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_vidya_model_t [label = "Vidya.serve(Education)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_vidya_model_t [label = "Vidya.exec(Logos)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+
+    // IN = Input
+    // OUT = Output
+    // REC = Recursion
+    spark_a_vidya_model_t -> spark_0_vidya_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_vidya_model_t -> spark_b_vidya_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_vidya_model_t -> spark_3_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_vidya_model_t -> spark_6_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_vidya_model_t -> spark_9_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_vidya_model_t -> spark_1_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_vidya_model_t -> spark_2_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_vidya_model_t -> spark_4_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_vidya_model_t -> spark_8_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_vidya_model_t -> spark_7_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_vidya_model_t -> spark_5_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+
+    spark_a_vidya_model_t -> spark_c_vidya_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_vidya_model_t -> spark_c_vidya_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_vidya_model_t -> spark_d_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_vidya_model_t -> spark_e_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_vidya_model_t -> spark_e_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_vidya_model_t -> spark_e_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+
+    spark_1_vidya_model_t -> spark_2_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_vidya_model_t -> spark_4_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_vidya_model_t -> spark_8_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_vidya_model_t -> spark_7_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_vidya_model_t -> spark_5_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_vidya_model_t -> spark_1_vidya_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_vidya_model_t -> spark_6_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_vidya_model_t -> spark_9_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_vidya_model_t -> spark_3_vidya_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_vidya_model_t -> spark_b_vidya_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_vidya_model_t -> spark_f_vidya_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+}
