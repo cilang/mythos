@@ -1,48 +1,64 @@
 strict digraph ExcitationEngine {
-    label = "Excitation";
     style = filled;
-    color = blue;
-    comment = "";
-    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Excitation Engine (/dev/excitation)";
+    comment = "The spark of novelty, the surge of restlessness; it breaks rhythm to make song, chaos to make fire.";
     
-    spark_5_mythos_t [label = "Excitation\n(/dev/excitation)";];
+    spark_0_excitation_engine_t [label = "Excitation.meta(Excitation)";comment = "Abstract: Her name is Nda, the Goddess of Pattern. She is the Spatial Sovereign. She governs that what---the form, the structure, the geometry, the algorithm, the repeating motif in the chaos. From the fractal branching of a tree to the code of DNA to the syntax of language, she is the source of all symmetry and information.";shape = doublecircle;color = darkgray;];
+    spark_1_excitation_engine_t [label = "Excitation.r1(PatternOfImpulse)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_excitation_engine_t [label = "Excitation.r2(PatternOfCatalyst)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_excitation_engine_t [label = "Excitation.r4(PatternOfResonance)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_excitation_engine_t [label = "Excitation.r8(PatternOfExpansion)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_excitation_engine_t [label = "Excitation.r7(PatternOfOscillation)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_excitation_engine_t [label = "Excitation.r5(PatternOfPropagation)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_excitation_engine_t [label = "Excitation.r3(CrestOfDynamism)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_excitation_engine_t [label = "Excitation.r6(CrestOfAcceleration)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_excitation_engine_t [label = "Excitation.r9(CrestOfVitality)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_excitation_engine_t [label = "Excitation.receive(RaimentOfExcitation)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_excitation_engine_t [label = "Excitation.send(ArmamentOfExcitation)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_excitation_engine_t [label = "Excitation.dispatch(BodyOfExcitation)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_excitation_engine_t [label = "Excitation.commit(SoulOfExcitation)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_excitation_engine_t [label = "Excitation.serve(GraceOfExcitation)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_excitation_engine_t [label = "Excitation.exec(LawOfExcitation)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_excitation_t [label = "Excitation.meta(Excitation)\nNda";comment = "";shape = doublecircle;];
-    spark_1_excitation_t [label = "Excitation.r1()\n";comment = "";shape = circle;];
-    spark_2_excitation_t [label = "Excitation.r2()\n";comment = "";shape = circle;];
-    spark_4_excitation_t [label = "Excitation.r4()\n";comment = "";shape = circle;];
-    spark_8_excitation_t [label = "Excitation.r8()\n";comment = "";shape = circle;];
-    spark_7_excitation_t [label = "Excitation.r7()\n";comment = "";shape = circle;];
-    spark_5_excitation_t [label = "Excitation.r5()\n";comment = "";shape = circle;];
-    spark_3_excitation_t [label = "Excitation.r3(CrestOfEmotion)";comment = "";shape = circle;];
-    spark_6_excitation_t [label = "Excitation.r6(CrestOfMemory)";comment = "";shape = circle;];
-    spark_9_excitation_t [label = "Excitation.r9(CrestOfEnergy)";comment = "";shape = circle;];
-    spark_a_excitation_t [label = "Excitation.receive(RaimentOfExcitation)";comment = "";shape = triangle;];
-    spark_b_excitation_t [label = "Excitation.send(ArmamentOfExcitation)";comment = "";shape = invtriangle;];
-    spark_c_excitation_t [label = "Excitation.dispatch(BodyOfExcitation)";comment = "";shape = circle;];
-    spark_d_excitation_t [label = "Excitation.commit(SoulOfExcitation)";comment = "";shape = circle;];
-    spark_e_excitation_t [label = "Excitation.serve(GraceOfExcitation)";comment = "";shape = circle;];
-    spark_f_excitation_t [label = "Excitation.exec(LawOfExcitation)";comment = "";shape = circle;];
+    spark_a_excitation_engine_t -> spark_0_excitation_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_excitation_engine_t -> spark_b_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_excitation_engine_t -> spark_3_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_excitation_engine_t -> spark_6_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_excitation_engine_t -> spark_9_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_excitation_engine_t -> spark_1_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_excitation_engine_t -> spark_2_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_excitation_engine_t -> spark_4_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_excitation_engine_t -> spark_8_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_excitation_engine_t -> spark_7_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_excitation_engine_t -> spark_5_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_5_mythos_t -> spark_0_excitation_t;
-    spark_0_excitation_t -> spark_a_excitation_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_excitation_t -> spark_b_excitation_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_excitation_t -> {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_excitation_t -> {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_excitation_engine_t -> spark_c_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_excitation_engine_t -> spark_c_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    {spark_a_excitation_t spark_b_excitation_t} -> spark_c_excitation_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_excitation_t spark_2_excitation_t spark_4_excitation_t spark_8_excitation_t spark_7_excitation_t spark_5_excitation_t} -> spark_d_excitation_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_excitation_t spark_6_excitation_t spark_9_excitation_t} -> spark_e_excitation_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_1_excitation_engine_t -> spark_2_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_excitation_engine_t -> spark_4_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_excitation_engine_t -> spark_8_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_excitation_engine_t -> spark_7_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_excitation_engine_t -> spark_5_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_excitation_engine_t -> spark_1_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_excitation_engine_t -> spark_6_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_excitation_engine_t -> spark_9_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_excitation_engine_t -> spark_3_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_excitation_engine_t -> spark_b_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_excitation_t -> spark_2_excitation_t -> spark_4_excitation_t -> spark_8_excitation_t -> spark_7_excitation_t -> spark_5_excitation_t -> spark_1_excitation_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_excitation_t -> spark_6_excitation_t -> spark_9_excitation_t -> spark_3_excitation_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_excitation_t -> spark_b_excitation_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_excitation_t -> spark_f_excitation_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

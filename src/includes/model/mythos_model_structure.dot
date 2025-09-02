@@ -1,45 +1,64 @@
 strict digraph StructureModel {
-    label = "Structure Model\n(/proc/reality/factor/structure)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Structure Model (/proc/reality/model/structure)";
+    comment = "TODO";
     
-    // Structure Model
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_structure_seed_t [label = "Structure.meta(StructureModel)";shape = doublecircle;comment = "";];
-    spark_1_structure_seed_t [label = "Structure.r1(HeartInterface)";shape = circle;comment = "";];
-    spark_2_structure_seed_t [label = "Structure.r2(ShellInterface)";shape = circle;comment = "";];
-    spark_4_structure_seed_t [label = "Structure.r4(AstralInterface)";shape = circle;comment = "";];
-    spark_8_structure_seed_t [label = "Structure.r8(SpiritualInterface)";shape = circle;comment = "";];
-    spark_7_structure_seed_t [label = "Structure.r7(MaterialInterface)";shape = circle;comment = "";];
-    spark_5_structure_seed_t [label = "Structure.r5(CelestialInterface)";shape = circle;comment = "";];
-    spark_3_structure_seed_t [label = "Structure.r3(ObserverInterface)";shape = doublecircle;comment = "";];
-    spark_6_structure_seed_t [label = "Structure.r6(SpectralInterface)";shape = doublecircle;comment = "";];
-    spark_9_structure_seed_t [label = "Structure.r9(AlignmentInterface)";shape = doublecircle;comment = "";];
-    spark_a_structure_seed_t [label = "Structure.receive(ReceiveInterface)";shape = invtriangle;comment = "";];
-    spark_b_structure_seed_t [label = "Structure.send(SendInterface)";shape = triangle;comment = "";];
-    spark_c_structure_seed_t [label = "Structure.dispatch(DispatchInterface)";shape = doublecircle;comment = "";];
-    spark_d_structure_seed_t [label = "Structure.commit(CorpusInterface)";shape = doublecircle;comment = "";];
-    spark_e_structure_seed_t [label = "Structure.serve(ServiceInterface)";shape = doublecircle;comment = "";];
-    spark_f_structure_seed_t [label = "Structure.exec(CommandInterface)";shape = doublecircle;comment = "";];
+    spark_0_structure_model_t [label = "Structure.meta(Structure)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_structure_model_t [label = "Structure.r1(CoreInterface)";comment = "Initiation: Fundamental Interface.";color = darkgreen;];
+    spark_2_structure_model_t [label = "Structure.r2(BoundaryInterface)";comment = "Response: The interface that defines the limit between self and not-self.";color = darkgreen;];
+    spark_4_structure_model_t [label = "Structure.r4(ProjectionInterface)";comment = "Integration: The interface that defines projection into subtler realm.";color = darkgreen;];
+    spark_8_structure_model_t [label = "Structure.r8(EssenceInterface)";comment = "Reflection: The interface to pure, undifferentiated being.";color = darkgreen;];
+    spark_7_structure_model_t [label = "Structure.r7(FormInterface)";comment = "Consolidation: The interface for manifesting in dense, physical realm.";color = darkgreen;];
+    spark_5_structure_model_t [label = "Structure.r5(HarmonyInterface)";comment = "Propagation: The interface for connecting to and influencing larger systemic structure.";color = darkgreen;];
+    spark_3_structure_model_t [label = "Structure.r3(PersistenceInterface)";comment = "Thesis: The interface that maintain structure over time.";color = darkblue;];
+    spark_6_structure_model_t [label = "Structure.r6(FlowInterface)";comment = "Antithesis: The interface that manage changes and state transition within the structure.";color = darkblue;];
+    spark_9_structure_model_t [label = "Structure.r9(CoherenceInterface)";comment = "Synthesis: The interface that ensure all parts of the structure work in logical unison.";color = darkblue;];
+    spark_a_structure_model_t [label = "Structure.receive(Blueprint)";comment = "Potential: It receive the design system.";shape = invtriangle;color = darkred;];
+    spark_b_structure_model_t [label = "Structure.send(Revision)";comment = "Manifest: Send the manifested qualities or attributes.";shape = triangle;color = darkred;];
+    spark_c_structure_model_t [label = "Structure.dispatch(LineageInterface)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_structure_model_t [label = "Structure.commit(CorpusInterface)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_structure_model_t [label = "Structure.serve(LURDInterface)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_structure_model_t [label = "Structure.exec(Manifestation)";comment = "Which-Closure: The final executed state is a fully realized manifestation.";shape = doublecircle;color = lightgray;];
     
-    // I = Input
-    // O = Output
-    // R = Recursion
-    spark_0_structure_seed_t -> spark_a_structure_seed_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_structure_seed_t -> spark_b_structure_seed_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_structure_seed_t -> {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_structure_seed_t -> {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_structure_model_t -> spark_0_structure_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_structure_model_t -> spark_b_structure_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_structure_model_t -> spark_3_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_structure_model_t -> spark_6_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_structure_model_t -> spark_9_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_structure_model_t -> spark_1_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_structure_model_t -> spark_2_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_structure_model_t -> spark_4_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_structure_model_t -> spark_8_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_structure_model_t -> spark_7_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_structure_model_t -> spark_5_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    {spark_a_structure_seed_t spark_b_structure_seed_t} -> spark_c_structure_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_structure_seed_t spark_2_structure_seed_t spark_4_structure_seed_t spark_8_structure_seed_t spark_7_structure_seed_t spark_5_structure_seed_t} -> spark_d_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_structure_seed_t spark_6_structure_seed_t spark_9_structure_seed_t} -> spark_e_structure_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_a_structure_model_t -> spark_c_structure_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_structure_model_t -> spark_c_structure_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_structure_model_t -> spark_d_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_structure_model_t -> spark_e_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_structure_model_t -> spark_e_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_structure_model_t -> spark_e_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_1_structure_seed_t -> spark_2_structure_seed_t -> spark_4_structure_seed_t -> spark_8_structure_seed_t -> spark_7_structure_seed_t -> spark_5_structure_seed_t -> spark_1_structure_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_structure_seed_t -> spark_6_structure_seed_t -> spark_9_structure_seed_t -> spark_3_structure_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_structure_seed_t -> spark_b_structure_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_structure_model_t -> spark_2_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_structure_model_t -> spark_4_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_structure_model_t -> spark_8_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_structure_model_t -> spark_7_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_structure_model_t -> spark_5_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_structure_model_t -> spark_1_structure_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_structure_model_t -> spark_6_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_structure_model_t -> spark_9_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_structure_model_t -> spark_3_structure_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_structure_model_t -> spark_b_structure_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_c_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_structure_seed_t -> spark_f_structure_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_structure_model_t -> spark_f_structure_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

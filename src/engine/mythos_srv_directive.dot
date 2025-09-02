@@ -1,49 +1,64 @@
 digraph DirectiveEngine {
-    label = "Directive Engine";
     style = filled;
-    color = red;
-    comment = "";
-    node [shape = circle; style = filled; color = darkcyan;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Directive Engine (/srv/directive)";
+    comment = "From the Directive flows the unseen command, the pulse of intent that sets the dance in motion; and in the Origin it finds its mirror, weaving the illusion of form and fate — Maya shimmering as if real, Fana dissolving as if it never was.";
     
-    spark_c_mythos_t [label = "Directive\n(/srv/directive)";shape = doublecircle;];
+    spark_0_directive_engine_t [label = "Directive.meta(Directive)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_directive_engine_t [label = "Directive.r1(Analyze)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_directive_engine_t [label = "Directive.r2(Plan)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_directive_engine_t [label = "Directive.r4(Execute)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_directive_engine_t [label = "Directive.r8(Monitor)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_directive_engine_t [label = "Directive.r7(Adapt)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_directive_engine_t [label = "Directive.r5(Optimize)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_directive_engine_t [label = "Directive.r3(CodexOfDirective)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_directive_engine_t [label = "Directive.r6(Judge)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_directive_engine_t [label = "Directive.r9(Learn)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_directive_engine_t [label = "Directive.receive(Goal)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_directive_engine_t [label = "Directive.send(Action)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_directive_engine_t [label = "Directive.dispatch(Strategy)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_directive_engine_t [label = "Directive.commit(Tactic)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_directive_engine_t [label = "Directive.serve(Command)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_directive_engine_t [label = "Directive.exec(LawOfDirective)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_directive_t [label = "Directive.meta()";shape = doublecircle;comment = "";];
-    spark_1_directive_t [label = "Directive.r1()";shape = circle;comment = "";];
-    spark_2_directive_t [label = "Directive.r2()";shape = circle;comment = "";];
-    spark_4_directive_t [label = "Directive.r4()";shape = circle;comment = "";];
-    spark_8_directive_t [label = "Directive.r8()";shape = circle;comment = "";];
-    spark_7_directive_t [label = "Directive.r7()";shape = circle;comment = "";];
-    spark_5_directive_t [label = "Directive.r5()";shape = circle;comment = "";];
-    spark_3_directive_t [label = "Directive.r3()";shape = doublecircle;comment = "";];
-    spark_6_directive_t [label = "Directive.r6()";shape = doublecircle;comment = "";];
-    spark_9_directive_t [label = "Directive.r9()";shape = doublecircle;comment = "";];
-    spark_a_directive_t [label = "Directive.receive()";shape = triangle;comment = "";];
-    spark_b_directive_t [label = "Directive.send()";shape = invtriangle;comment = "";];
-    spark_c_directive_t [label = "Directive.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_directive_t [label = "Directive.commit()";shape = doublecircle;comment = "";];
-    spark_e_directive_t [label = "Directive.serve()";shape = doublecircle;comment = "`/srv/directive`";];
-    spark_f_directive_t [label = "Directive.exec()";shape = doublecircle;comment = "";];
+    spark_a_directive_engine_t -> spark_0_directive_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_directive_engine_t -> spark_b_directive_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_directive_engine_t -> spark_3_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_directive_engine_t -> spark_6_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_directive_engine_t -> spark_9_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_directive_engine_t -> spark_1_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_directive_engine_t -> spark_2_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_directive_engine_t -> spark_4_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_directive_engine_t -> spark_8_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_directive_engine_t -> spark_7_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_directive_engine_t -> spark_5_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_c_mythos_t -> spark_0_directive_t;
+    spark_a_directive_engine_t -> spark_c_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_directive_engine_t -> spark_c_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_directive_t -> spark_a_directive_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_directive_t -> spark_b_directive_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_directive_t -> {spark_3_directive_t spark_6_directive_t spark_9_directive_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_directive_t -> {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_directive_engine_t -> spark_2_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_directive_engine_t -> spark_4_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_directive_engine_t -> spark_8_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_directive_engine_t -> spark_7_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_directive_engine_t -> spark_5_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_directive_engine_t -> spark_1_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_directive_engine_t -> spark_6_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_directive_engine_t -> spark_9_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_directive_engine_t -> spark_3_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_directive_engine_t -> spark_b_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_directive_t spark_b_directive_t} -> spark_c_directive_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_directive_t spark_2_directive_t spark_4_directive_t spark_8_directive_t spark_7_directive_t spark_5_directive_t} -> spark_d_directive_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_directive_t spark_6_directive_t spark_9_directive_t} -> spark_e_directive_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_directive_t -> spark_2_directive_t -> spark_4_directive_t -> spark_8_directive_t -> spark_7_directive_t -> spark_5_directive_t -> spark_1_directive_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_directive_t -> spark_6_directive_t -> spark_9_directive_t -> spark_3_directive_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_directive_t -> spark_b_directive_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_directive_t -> spark_f_directive_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_directive_t -> spark_f_directive_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_directive_t -> spark_f_directive_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

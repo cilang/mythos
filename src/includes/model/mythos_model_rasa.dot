@@ -1,14 +1,11 @@
-strict digraph Rasa {
-    label = "Rasa\n(/proc/reality/concept/asha)";
+strict digraph RasaModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
-
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
-    // The Router C-D-E
-    // The Closure F
+    edge [color = darkgray;];
+    label = "Rasa Model (/proc/reality/model/rasa)";
+    comment = "TODO";
+    
     spark_0_rasa_model_t [label = "Rasa.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_rasa_model_t [label = "Rasa.r1(Instinct)";comment = "Initiation: TODO";color = darkgreen;];
     spark_2_rasa_model_t [label = "Rasa.r2(Motivation)";comment = "Response: TODO";color = darkgreen;];
@@ -25,10 +22,7 @@ strict digraph Rasa {
     spark_d_rasa_model_t [label = "Rasa.commit(Devotion)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
     spark_e_rasa_model_t [label = "Rasa.serve(Compassion)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_rasa_model_t [label = "Rasa.exec(Pathos)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
+    
     spark_a_rasa_model_t -> spark_0_rasa_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_rasa_model_t -> spark_b_rasa_model_t [label = "OUT"; comment = "todo"; color = darkred;];
     spark_0_rasa_model_t -> spark_3_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
@@ -40,7 +34,7 @@ strict digraph Rasa {
     spark_0_rasa_model_t -> spark_8_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     spark_0_rasa_model_t -> spark_7_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     spark_0_rasa_model_t -> spark_5_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-
+    
     spark_a_rasa_model_t -> spark_c_rasa_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
     spark_b_rasa_model_t -> spark_c_rasa_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
     spark_1_rasa_model_t -> spark_d_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
@@ -52,7 +46,7 @@ strict digraph Rasa {
     spark_3_rasa_model_t -> spark_e_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     spark_6_rasa_model_t -> spark_e_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     spark_9_rasa_model_t -> spark_e_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-
+    
     spark_1_rasa_model_t -> spark_2_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_2_rasa_model_t -> spark_4_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_4_rasa_model_t -> spark_8_rasa_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
@@ -63,7 +57,7 @@ strict digraph Rasa {
     spark_6_rasa_model_t -> spark_9_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_9_rasa_model_t -> spark_3_rasa_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_a_rasa_model_t -> spark_b_rasa_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-
+    
     spark_c_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
     spark_d_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
     spark_e_rasa_model_t -> spark_f_rasa_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];

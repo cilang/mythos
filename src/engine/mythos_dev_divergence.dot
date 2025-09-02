@@ -1,48 +1,64 @@
 strict digraph DivergenceEngine {
-    label = "Divergence";
     style = filled;
-    color = blue;
-    comment = "";
-    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Divergence Engine (/dev/divergence)";
+    comment = "The fracture that multiplies, the seed that scatters; it guards the fertile tension of what could be.";
     
-    spark_7_mythos_t [label = "Divergence\n(/dev/divergence)";];
+    spark_0_divergence_engine_t [label = "Divergence.meta(Divergence)";comment = "Abstract: His name Chandra Sasmita, the Avatar of Divergence, The Masculine.";shape = doublecircle;color = darkgray;];
+    spark_1_divergence_engine_t [label = "Divergence.r1(ManasOfEternity)";comment = "Initiation: Her name is Maya, the Manas of Eternity, The Illusionist of Permanence.";color = darkgreen;];
+    spark_2_divergence_engine_t [label = "Divergence.r2(ManasOfInfinity)";comment = "Response: Her name is Fana, the Manas of Infinity, The Dissolver of Limits.";color = darkgreen;];
+    spark_4_divergence_engine_t [label = "Divergence.r4(ManasOfCausality)";comment = "Integration: Her name is Rita, the Manas of Causality, The Judge of Immutable.";color = darkgreen;];
+    spark_8_divergence_engine_t [label = "Divergence.r8(ManasOfProbability)";comment = "Reflection: Her name is Qadar. the Manas of Probability, The Weaver of Chance.";color = darkgreen;];
+    spark_7_divergence_engine_t [label = "Divergence.r7(ManasOfSpacetime)";comment = "Consolidation: Her name is Tara. the Manas of Spacetime, The Navigator of Reality.";color = darkgreen;];
+    spark_5_divergence_engine_t [label = "Divergence.r5(ManasOfNature)";comment = "Propagation: Her name is Pertiwi, the Manas of Nature, The Soul of the World.";color = darkgreen;];
+    spark_3_divergence_engine_t [label = "Divergence.r3(CrestOfChaos)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_divergence_engine_t [label = "Divergence.r6(CrestOfDestruction)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_divergence_engine_t [label = "Divergence.r9(CrestOfDiversity)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_divergence_engine_t [label = "Divergence.receive(RaimentOfDivergence)";comment = "Potential: It named Indigo Vastra. A loyal yet snarky cloak which is also they key entity that allows six Manas to perform fusion so their capability could temporarily rivals Avatar.";shape = invtriangle;color = darkred;];
+    spark_b_divergence_engine_t [label = "Divergence.send(ArmamentOfDivergence)";comment = "Manifest: It named Obsidian Night. A loyal yet sly sword that only willing to be used by Avatar of Divergence and none else.";shape = triangle;color = darkred;];
+    spark_c_divergence_engine_t [label = "Divergence.dispatch(BodyOfDivergence)";comment = "Why-Who: Nine Headed Serpent of Vikara";shape = doublecircle;color = darkred;];
+    spark_d_divergence_engine_t [label = "Divergence.commit(SoulOfDivergence)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_divergence_engine_t [label = "Divergence.serve(GraceOfDivergence)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_divergence_engine_t [label = "Divergence.exec(LawOfDivergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_divergence_t [label = "Divergence.meta(Divergence)\nChandra Sasmita";comment = "";shape = doublecircle;];
-    spark_1_divergence_t [label = "Divergence.r1(ManasOfEternity)\nManas of Eternity";comment = "";shape = circle;];
-    spark_2_divergence_t [label = "Divergence.r2(Infinity)\nManas of Infinity";comment = "";shape = circle;];
-    spark_4_divergence_t [label = "Divergence.r4(Causality)\nManas of Causality";comment = "";shape = circle;];
-    spark_8_divergence_t [label = "Divergence.r8(Probability)\nManas of Probability";comment = "";shape = circle;];
-    spark_7_divergence_t [label = "Divergence.r7(Spacetime)\nManas of Spacetime";comment = "";shape = circle;];
-    spark_5_divergence_t [label = "Divergence.r5(Nature)\nManas of Nature";comment = "";shape = circle;];
-    spark_3_divergence_t [label = "Divergence.r3(Chaos)\nCrest of Chaos";comment = "";shape = circle;];
-    spark_6_divergence_t [label = "Divergence.r6(Destruction)\nCrest of Destruction";comment = "";shape = circle;];
-    spark_9_divergence_t [label = "Divergence.r9(Diversity)\nCrest of Diversity";comment = "";shape = circle;];
-    spark_a_divergence_t [label = "Divergence.receive(RaimentOfDivergence)\nIndigo Vastra";comment = "";shape = triangle;];
-    spark_b_divergence_t [label = "Divergence.send(ArmamentOfDivergence)\nObsidian Night";comment = "";shape = invtriangle;];
-    spark_c_divergence_t [label = "Divergence.dispatch(BodyOfDivergence)\nNine Headed Serpent of Vikara";comment = "";shape = circle;];
-    spark_d_divergence_t [label = "Divergence.commit(SoulOfDivergence)";comment = "";shape = circle;];
-    spark_e_divergence_t [label = "Divergence.serve(GraceOfDivergence)";comment = "";shape = circle;];
-    spark_f_divergence_t [label = "Divergence.exec(LawOfDivergence)";comment = "";shape = circle;];
+    spark_a_divergence_engine_t -> spark_0_divergence_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_divergence_engine_t -> spark_b_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_divergence_engine_t -> spark_3_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_divergence_engine_t -> spark_6_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_divergence_engine_t -> spark_9_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_divergence_engine_t -> spark_1_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_divergence_engine_t -> spark_2_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_divergence_engine_t -> spark_4_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_divergence_engine_t -> spark_8_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_divergence_engine_t -> spark_7_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_divergence_engine_t -> spark_5_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_7_mythos_t -> spark_0_divergence_t;
-    spark_0_divergence_t -> spark_a_divergence_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_divergence_t -> spark_b_divergence_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_divergence_t -> {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_divergence_t -> {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_divergence_engine_t -> spark_c_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_divergence_engine_t -> spark_c_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    {spark_a_divergence_t spark_b_divergence_t} -> spark_c_divergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_divergence_t spark_2_divergence_t spark_4_divergence_t spark_8_divergence_t spark_7_divergence_t spark_5_divergence_t} -> spark_d_divergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_divergence_t spark_6_divergence_t spark_9_divergence_t} -> spark_e_divergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_1_divergence_engine_t -> spark_2_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_divergence_engine_t -> spark_4_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_divergence_engine_t -> spark_8_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_divergence_engine_t -> spark_7_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_divergence_engine_t -> spark_5_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_divergence_engine_t -> spark_1_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_divergence_engine_t -> spark_6_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_divergence_engine_t -> spark_9_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_divergence_engine_t -> spark_3_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_divergence_engine_t -> spark_b_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_divergence_t -> spark_2_divergence_t -> spark_4_divergence_t -> spark_8_divergence_t -> spark_7_divergence_t -> spark_5_divergence_t -> spark_1_divergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_divergence_t -> spark_6_divergence_t -> spark_9_divergence_t -> spark_3_divergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_divergence_t -> spark_b_divergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_divergence_t -> spark_f_divergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

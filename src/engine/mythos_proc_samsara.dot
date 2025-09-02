@@ -1,50 +1,64 @@
 strict digraph SamsaraEngine {
-    label = "Samsara Engine";
     style = filled;
-    color = lightgrey;
-    fontsize = "36";
-    comment = "";
+    color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Samsara Engine (/proc/samsara)";
+    comment = "The wheel that binds, turning cause into consequence; no act escapes its circle, no flame burns without leaving ash.";
     
-    spark_b_mythos_t [label = "Samsara\n(/proc/samsara)";shape = doublecircle;];
+    spark_0_samsara_engine_t [label = "Samsara.meta(Causality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_samsara_engine_t [label = "Samsara.r1(InitCausality)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_samsara_engine_t [label = "Samsara.r2(FeedCausality)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_samsara_engine_t [label = "Samsara.r4(ValidateCausality)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_samsara_engine_t [label = "Samsara.r8(CastCausality)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_samsara_engine_t [label = "Samsara.r7(FinalizeCausality)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_samsara_engine_t [label = "Samsara.r5(PropagateCausality)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_samsara_engine_t [label = "Samsara.r3(Karma)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_samsara_engine_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_samsara_engine_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_samsara_engine_t [label = "Samsara.receive(Vertices)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_samsara_engine_t [label = "Samsara.send(Edges)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_samsara_engine_t [label = "Samsara.dispatch(Graph)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_samsara_engine_t [label = "Samsara.commit(KarmicImprint)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_samsara_engine_t [label = "Samsara.serve(Samsara)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_samsara_engine_t [label = "Samsara.exec(LawOfCausality)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_samsara_t [label = "Samsara.meta()";comment = "Engine Init";shape = doublecircle;];
-    spark_1_samsara_t [label = "Samsara.r1()";comment = "initSoul() create new Soul";shape = circle;];
-    spark_2_samsara_t [label = "Samsara.r2()";comment = "validateSoul() validate Soul integrity";shape = circle;];
-    spark_4_samsara_t [label = "Samsara.r4()";comment = "normalizeSoul() normalize Soul";shape = circle;];
-    spark_8_samsara_t [label = "Samsara.r8()";comment = "resetSoul() reset Soul";shape = circle;];
-    spark_7_samsara_t [label = "Samsara.r7()";comment = "reincarnateSoul() reincarnate Soul";shape = circle;];
-    spark_5_samsara_t [label = "Samsara.r5()";comment = "refactorSoul() refactor Soul";shape = circle;];
-    spark_3_samsara_t [label = "Samsara.r3()";comment = "";shape = doublecircle;];
-    spark_6_samsara_t [label = "Samsara.r6()";comment = "";shape = doublecircle;];
-    spark_9_samsara_t [label = "Samsara.r9()";comment = "";shape = doublecircle;];
-    spark_a_samsara_t [label = "Samsara.receive()";comment = "";shape = invtriangle;];
-    spark_b_samsara_t [label = "Samsara.send()";comment = "";shape = doublecircle;shape = triangle;];
-    spark_c_samsara_t [label = "Samsara.dispatch()";comment = "";shape = doublecircle;];
-    spark_d_samsara_t [label = "Samsara.commit()";comment = "`/proc/cycle`";shape = doublecircle;];
-    spark_e_samsara_t [label = "Samsara.serve()";comment = "`/proc/samsara`";shape = doublecircle;];
-    spark_f_samsara_t [label = "Samsara.exec(LawOfCausality)";comment = "`/proc/causality`";shape = doublecircle;];
+    spark_a_samsara_engine_t -> spark_0_samsara_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_samsara_engine_t -> spark_b_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_b_mythos_t -> spark_0_samsara_t;
+    spark_a_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_samsara_t -> spark_a_samsara_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_samsara_t -> spark_b_samsara_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_samsara_t -> {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_samsara_t -> {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_samsara_engine_t -> spark_b_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_samsara_t spark_b_samsara_t} -> spark_c_samsara_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_samsara_t spark_2_samsara_t spark_4_samsara_t spark_8_samsara_t spark_7_samsara_t spark_5_samsara_t} -> spark_d_samsara_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_samsara_t spark_6_samsara_t spark_9_samsara_t} -> spark_e_samsara_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_samsara_t -> spark_2_samsara_t -> spark_4_samsara_t -> spark_8_samsara_t -> spark_7_samsara_t -> spark_5_samsara_t -> spark_1_samsara_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_samsara_t -> spark_6_samsara_t -> spark_9_samsara_t -> spark_3_samsara_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_samsara_t -> spark_b_samsara_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_samsara_t -> spark_f_samsara_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

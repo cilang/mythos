@@ -1,45 +1,64 @@
 strict digraph SpectralModel {
-    label = "Spectral Model\n(/proc/reality/factor/spectral-model)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Spectral Model (/proc/reality/model/spectral)";
+    comment = "TODO";
     
-    // Spectral Model
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_spectral_seed_t [label = "Spectral.meta(SpectralModel)";shape = doublecircle;comment = "";];
-    spark_1_spectral_seed_t [label = "Spectral.r1(Mass)";shape = circle;comment = "";];
-    spark_2_spectral_seed_t [label = "Spectral.r2(Gravity)";shape = circle;comment = "";];
-    spark_4_spectral_seed_t [label = "Spectral.r4(Energy)";shape = circle;comment = "";];
-    spark_8_spectral_seed_t [label = "Spectral.r8(Flux)";shape = circle;comment = "Energy flow; excitation pathway. Higher form of phase.";];
-    spark_7_spectral_seed_t [label = "Spectral.r7(AngularMomentum)";shape = circle;comment = "";];
-    spark_5_spectral_seed_t [label = "Spectral.r5(SpeedOfCausality)";shape = circle;comment = "Possibility Space; transformation drive. Emergence catalyst.";];
-    spark_3_spectral_seed_t [label = "Spectral.r3(Inertia)";shape = circle;comment = "";];
-    spark_6_spectral_seed_t [label = "Spectral.r6(Momentum)";shape = circle;comment = "";];
-    spark_9_spectral_seed_t [label = "Spectral.r9(Quanta)";shape = circle;comment = "Discrete unit of existence. Bridge between Mass and Energy.";];
-    spark_a_spectral_seed_t [label = "Spectral.receive(Rhythm)";shape = triangle;comment = "";];
-    spark_b_spectral_seed_t [label = "Spectral.send(Pattern)";shape = invtriangle;comment = "";];
-    spark_c_spectral_seed_t [label = "Spectral.dispatch()";comment = "";];
-    spark_d_spectral_seed_t [label = "Spectral.commit()";comment = "";];
-    spark_e_spectral_seed_t [label = "Spectral.serve()";comment = "";];
-    spark_f_spectral_seed_t [label = "Spectral.exec()";comment = "";];
+    spark_0_spectral_model_t [label = "Spectral.meta(Spectral)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_spectral_model_t [label = "Spectral.r1(Mass)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_spectral_model_t [label = "Spectral.r2(Gravity)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_spectral_model_t [label = "Spectral.r4(Energy)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_spectral_model_t [label = "Spectral.r8(Flux)";comment = "Reflection: Energy flow; excitation pathway. Higher form of phase.";color = darkgreen;];
+    spark_7_spectral_model_t [label = "Spectral.r7(Spin)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_spectral_model_t [label = "Spectral.r5(SpeedOfCausality)";comment = "Propagation: Possibility Space; transformation drive. Emergence catalyst.";color = darkgreen;];
+    spark_3_spectral_model_t [label = "Spectral.r3(Inertia)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_spectral_model_t [label = "Spectral.r6(Momentum)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_spectral_model_t [label = "Spectral.r9(Quanta)";comment = "Synthesis: Discrete unit of existence. Bridge between Mass and Energy.";color = darkblue;];
+    spark_a_spectral_model_t [label = "Spectral.receive(Oscillation)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_spectral_model_t [label = "Spectral.send(Interference)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_spectral_model_t [label = "Spectral.dispatch(Resonance)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_spectral_model_t [label = "Spectral.commit(StateChange)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_spectral_model_t [label = "Spectral.serve(Emission)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_spectral_model_t [label = "Spectral.exec(Spectrum)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_0_spectral_seed_t -> spark_a_spectral_seed_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_spectral_seed_t -> spark_b_spectral_seed_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_spectral_seed_t -> {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_spectral_seed_t -> {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_spectral_model_t -> spark_0_spectral_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_spectral_model_t -> spark_b_spectral_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_spectral_model_t -> spark_3_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_spectral_model_t -> spark_6_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_spectral_model_t -> spark_9_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_spectral_model_t -> spark_1_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_spectral_model_t -> spark_2_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_spectral_model_t -> spark_4_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_spectral_model_t -> spark_8_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_spectral_model_t -> spark_7_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_spectral_model_t -> spark_5_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    {spark_a_spectral_seed_t spark_b_spectral_seed_t} -> spark_c_spectral_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_spectral_seed_t spark_2_spectral_seed_t spark_4_spectral_seed_t spark_8_spectral_seed_t spark_7_spectral_seed_t spark_5_spectral_seed_t} -> spark_d_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_spectral_seed_t spark_6_spectral_seed_t spark_9_spectral_seed_t} -> spark_e_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_a_spectral_model_t -> spark_c_spectral_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_spectral_model_t -> spark_c_spectral_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_spectral_model_t -> spark_d_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_spectral_model_t -> spark_e_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_spectral_model_t -> spark_e_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_spectral_model_t -> spark_e_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_1_spectral_seed_t -> spark_2_spectral_seed_t -> spark_4_spectral_seed_t -> spark_8_spectral_seed_t -> spark_7_spectral_seed_t -> spark_5_spectral_seed_t -> spark_1_spectral_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_spectral_seed_t -> spark_6_spectral_seed_t -> spark_9_spectral_seed_t -> spark_3_spectral_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_spectral_seed_t -> spark_b_spectral_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_spectral_model_t -> spark_2_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_spectral_model_t -> spark_4_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_spectral_model_t -> spark_8_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_spectral_model_t -> spark_7_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_spectral_model_t -> spark_5_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_spectral_model_t -> spark_1_spectral_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_spectral_model_t -> spark_6_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_spectral_model_t -> spark_9_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_spectral_model_t -> spark_3_spectral_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_spectral_model_t -> spark_b_spectral_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_c_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_spectral_seed_t -> spark_f_spectral_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_spectral_model_t -> spark_f_spectral_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

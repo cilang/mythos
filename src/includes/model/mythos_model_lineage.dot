@@ -1,48 +1,64 @@
 strict digraph LineageModel {
-    label = "Lineage Model\n(/proc/reality/factor/lineage-imperial)";
     style = filled;
     color = lightgray;
-    node [shape = folder; style = filled; color = lightgreen;];
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Lineage Model (/proc/reality/model/lineage)";
+    comment = "TODO";
     
-    // The Axis A-0-B
-    // The Vortex 3-6-9
-    // The Vortex 1-2-4-8-7-5
-    // The Router C-D-E
-    // The Closure F
-    spark_0_lineage_seed_t [label = "Lineage.meta(LineageModel)\n";comment = "";shape = doublecircle;];
-    spark_1_lineage_seed_t [label = "Lineage.r1(InsectLineage)\nPeople of Truth";comment = "";shape = circle;];
-    spark_2_lineage_seed_t [label = "Lineage.r2(NawangLineage)\nPeople of Convergence";comment = "";shape = circle;];
-    spark_4_lineage_seed_t [label = "Lineage.r4(ChimeraLineage)\nPeople of Fixation";comment = "";shape = circle;];
-    spark_8_lineage_seed_t [label = "Lineage.r8(WormLineage)\nPeople of Wisdom";comment = "";shape = circle;];
-    spark_7_lineage_seed_t [label = "Lineage.r7(PawangLineage)\nPeople of Divergence";comment = "";shape = circle;];
-    spark_5_lineage_seed_t [label = "Lineage.r5(SerpentineLineage)\nPeople of Excitation";comment = "";shape = circle;];
-    spark_3_lineage_seed_t [label = "Lineage.r3(ArachnidLineage)\nPeople of Asha";comment = "";shape = doublecircle;];
-    spark_6_lineage_seed_t [label = "Lineage.r6(AvesixLineage)\nPeople of Vikara";comment = "";shape = doublecircle;];
-    spark_9_lineage_seed_t [label = "Lineage.r9(DraconisLineage)\nPeople of Karsa";comment = "";shape = doublecircle;];
-    spark_a_lineage_seed_t [label = "Lineage.receive(MineralLineage)\nPeople of Essence";comment = "";shape = invtriangle;];
-    spark_b_lineage_seed_t [label = "Lineage.send(PlantLineage)\nPeople of Presence";comment = "";shape = triangle;];
-    spark_c_lineage_seed_t [label = "Lineage.dispatch(VulpineLineage)\nPeople of Desire";comment = "";shape = doublecircle;];
-    spark_d_lineage_seed_t [label = "Lineage.commit(FelixaLineage)\nPeople of Rasa";comment = "";shape = doublecircle;];
-    spark_e_lineage_seed_t [label = "Lineage.serve(CanineLineage)\nPeople of Emotion";comment = "";shape = doublecircle;];
-    spark_f_lineage_seed_t [label = "Lineage.exec(WorldTreeLineage)\nPeople of Emergence";comment = "";shape = doublecircle;];
+    spark_0_lineage_model_t [label = "Lineage.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_lineage_model_t [label = "Lineage.r1(WormLineage)";comment = "Initiation: People of Wisdom. The humble, soil-turning, foundational processors. They work unseen to nourish and prepare the ground for growth. (The humble healers, the gardeners of reality).";color = darkgreen;];
+    spark_2_lineage_model_t [label = "Lineage.r2(InsectLineage)";comment = "Response: People of Truth. The relentless, axiomatic, hive-minded builders. They manifest order and structure. (e.g., ants, bees, but also fundamental forces that 'just work').";color = darkgreen;];
+    spark_4_lineage_model_t [label = "Lineage.r4(ChimeraLineage)";comment = "Integration: People of Fixation. The stable, stubborn, enduring forms. They hold shapes and patterns against entropy. (e.g., mountains, ancient trees, but also cultural traditions).";color = darkgreen;];
+    spark_8_lineage_model_t [label = "Lineage.r8(SerpentineLineage)";comment = "Reflection: People of Excitation. The energizers, the catalysts. They provoke change and stimulate action. (e.g., lightning, nerve impulses, inspirations).";color = darkgreen;];
+    spark_7_lineage_model_t [label = "Lineage.r7(NawangLineage)";comment = "Consolidation: People of Convergence. The unifiers, the diplomats, the bringers-together. They reduce complexity into harmony.";color = darkgreen;];
+    spark_5_lineage_model_t [label = "Lineage.r5(PawangLineage)";comment = "Propagation: People of Divergence. The innovators, the creators of chaos and possibility. They break forms to make new ones.";color = darkgreen;];
+    spark_3_lineage_model_t [label = "Lineage.r3(ArachnidLineage)";comment = "Thesis: People of Asha. The weavers of fate, the spinners of truths into tangible webs. They create the structures of reality.";color = darkblue;];
+    spark_6_lineage_model_t [label = "Lineage.r6(FelixaLineage)";comment = "Antithesis: People of Rasa. The aesthetic, sensual, graceful masters of action. They commit with style and essence. They are the How.";color = darkblue;];
+    spark_9_lineage_model_t [label = "Lineage.r9(DraconisLineage)";comment = "Synthesis: People of Karsa. The sovereigns, the wielders of immense will. They synthesize all elements under their desire. The apex archetype of power and hoarding.";color = darkblue;];
+    spark_a_lineage_model_t [label = "Lineage.receive(MineralLineage)";comment = "Potential: People of Essence. The crystalline, latent potential. The raw material. The Blueprint.";shape = invtriangle;color = darkred;];
+    spark_b_lineage_model_t [label = "Lineage.send(PlantLineage)";comment = "Manifest: People of Presence. The silent, growing, life-giving presence. They turn essence into manifest, breathable reality.";shape = triangle;color = darkred;];
+    spark_c_lineage_model_t [label = "Lineage.dispatch(CanineLineage)";comment = "Why-Who: People of Emotion. The loyal, emotional, pack-oriented servers. They provide the context of When and Where through their emotional resonance.";shape = doublecircle;color = darkred;];
+    spark_d_lineage_model_t [label = "Lineage.commit(VulpineLineage)";comment = "What-How: People of Desire. The clever, cunning, goal-oriented tricksters. They provide the Why—the desire that drives action.";shape = doublecircle;color = darkgreen;];
+    spark_e_lineage_model_t [label = "Lineage.serve(AvesixLineage)";comment = "When-Where: People of Vikara. The changelings, the shapeshifters. They embody transformation itself. (e.g., birds that molt, creatures that metamorphose).";shape = doublecircle;color = darkblue;];
+    spark_f_lineage_model_t [label = "Lineage.exec(WorldTreeLineage)";comment = "Which-Closure: People of Emergence. The ultimate synthesis. The World Tree is the exec() of all lineages—the full, emergent, interconnected system of reality itself. It is the closure where all potentials have manifested in harmony.";shape = doublecircle;color = lightgray;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_0_lineage_seed_t -> spark_a_lineage_seed_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_lineage_seed_t -> spark_b_lineage_seed_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_lineage_seed_t -> {spark_3_lineage_seed_t spark_6_lineage_seed_t spark_9_lineage_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_lineage_seed_t -> {spark_1_lineage_seed_t spark_2_lineage_seed_t spark_4_lineage_seed_t spark_8_lineage_seed_t spark_7_lineage_seed_t spark_5_lineage_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_lineage_model_t -> spark_0_lineage_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_lineage_model_t -> spark_b_lineage_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_lineage_model_t -> spark_3_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_lineage_model_t -> spark_6_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_lineage_model_t -> spark_9_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_lineage_model_t -> spark_1_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_lineage_model_t -> spark_2_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_lineage_model_t -> spark_4_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_lineage_model_t -> spark_8_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_lineage_model_t -> spark_7_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_lineage_model_t -> spark_5_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    {spark_a_lineage_seed_t spark_b_lineage_seed_t} -> spark_c_lineage_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_lineage_seed_t spark_2_lineage_seed_t spark_4_lineage_seed_t spark_8_lineage_seed_t spark_7_lineage_seed_t spark_5_lineage_seed_t} -> spark_d_lineage_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_lineage_seed_t spark_6_lineage_seed_t spark_9_lineage_seed_t} -> spark_e_lineage_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_a_lineage_model_t -> spark_c_lineage_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_lineage_model_t -> spark_c_lineage_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_lineage_model_t -> spark_d_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_lineage_model_t -> spark_e_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_lineage_model_t -> spark_e_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_lineage_model_t -> spark_e_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_1_lineage_seed_t -> spark_2_lineage_seed_t -> spark_4_lineage_seed_t -> spark_8_lineage_seed_t -> spark_7_lineage_seed_t -> spark_5_lineage_seed_t -> spark_1_lineage_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_lineage_seed_t -> spark_6_lineage_seed_t -> spark_9_lineage_seed_t -> spark_3_lineage_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_lineage_seed_t -> spark_b_lineage_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_lineage_model_t -> spark_2_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_lineage_model_t -> spark_4_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_lineage_model_t -> spark_8_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_lineage_model_t -> spark_7_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_lineage_model_t -> spark_5_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_lineage_model_t -> spark_1_lineage_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_lineage_model_t -> spark_6_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_lineage_model_t -> spark_9_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_lineage_model_t -> spark_3_lineage_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_lineage_model_t -> spark_b_lineage_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_c_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_lineage_seed_t -> spark_f_lineage_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_lineage_model_t -> spark_f_lineage_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

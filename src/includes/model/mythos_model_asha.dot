@@ -1,14 +1,11 @@
-strict digraph Asha {
-    label = "Asha\n(/proc/reality/concept/asha)";
+strict digraph AshaModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Asha Model (/proc/reality/model/asha)";
+    comment = "TODO";
     
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
-    // The Router C-D-E
-    // The Closure F
     spark_0_asha_model_t [label = "Asha.meta(Asha)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_asha_model_t [label = "Asha.r1(Insight)";comment = "Initiation: TODO";color = darkgreen;];
     spark_2_asha_model_t [label = "Asha.r2(Discernment)";comment = "Response: TODO";color = darkgreen;];
@@ -26,9 +23,6 @@ strict digraph Asha {
     spark_e_asha_model_t [label = "Asha.serve(Guidance)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_asha_model_t [label = "Asha.exec(Credibility)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
     spark_a_asha_model_t -> spark_0_asha_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_asha_model_t -> spark_b_asha_model_t [label = "OUT"; comment = "todo"; color = darkred;];
     spark_0_asha_model_t -> spark_3_asha_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];

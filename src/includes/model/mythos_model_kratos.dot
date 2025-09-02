@@ -1,72 +1,64 @@
-strict digraph Sparklet {
+strict digraph KratosModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Sparklet";
-    comment = "A 'Theory of Everything' for Meaning.";
-
-    // The Axis A-0-B (In-Meta-Out).
-    // The Cognitive Vortex 3-6-9 (Vortex of Perception).
-    // The Mechanical Vortex 1-2-4-8-7-5 (Vortex of Comprehension).
-    // The Router C-D-E
-    // The Closure F
-    spark_0_t [label = "Sparklet.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_t [label = "Sparklet.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_t [label = "Sparklet.r2(todo)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_t [label = "Sparklet.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_t [label = "Sparklet.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_t [label = "Sparklet.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_t [label = "Sparklet.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_t [label = "Sparklet.r3(todo)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_t [label = "Sparklet.r6(todo)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_t [label = "Sparklet.r9(todo)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_t [label = "Sparklet.receive(todo)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Sparklet.send(todo)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_t [label = "Sparklet.dispatch(todo)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Sparklet.commit(todo)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Sparklet.serve(todo)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Sparklet.exec(todo)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_a_t -> spark_0_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-
-    spark_a_t -> spark_c_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-
-    spark_1_t -> spark_2_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+    label = "Kratos Model (/proc/reality/model/kratos)";
+    comment = "TODO";
+    
+    spark_0_kratos_model_t [label = "Kratos.meta(Kratos)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_kratos_model_t [label = "Kratos.r1(Access)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_kratos_model_t [label = "Kratos.r2(Modify)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_kratos_model_t [label = "Kratos.r4(Execute)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_kratos_model_t [label = "Kratos.r8(Delegate)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_kratos_model_t [label = "Kratos.r7(Own)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_kratos_model_t [label = "Kratos.r5(Link)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_kratos_model_t [label = "Kratos.r3(Inherited)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_kratos_model_t [label = "Kratos.r6(Earned)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_kratos_model_t [label = "Kratos.r9(Bestowed)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_kratos_model_t [label = "Kratos.receive(Petition)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_kratos_model_t [label = "Kratos.send(Warrant)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_kratos_model_t [label = "Kratos.dispatch(Authorization)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_kratos_model_t [label = "Kratos.commit(License)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_kratos_model_t [label = "Kratos.serve(Sanction)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_kratos_model_t [label = "Kratos.exec(LawOfAuthority)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    
+    spark_a_kratos_model_t -> spark_0_kratos_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_kratos_model_t -> spark_b_kratos_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_kratos_model_t -> spark_3_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_kratos_model_t -> spark_6_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_kratos_model_t -> spark_9_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_kratos_model_t -> spark_1_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_kratos_model_t -> spark_2_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_kratos_model_t -> spark_4_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_kratos_model_t -> spark_8_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_kratos_model_t -> spark_7_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_kratos_model_t -> spark_5_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    
+    spark_a_kratos_model_t -> spark_c_kratos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_kratos_model_t -> spark_c_kratos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_kratos_model_t -> spark_d_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_kratos_model_t -> spark_e_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_kratos_model_t -> spark_e_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_kratos_model_t -> spark_e_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    
+    spark_1_kratos_model_t -> spark_2_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_kratos_model_t -> spark_4_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_kratos_model_t -> spark_8_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_kratos_model_t -> spark_7_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_kratos_model_t -> spark_5_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_kratos_model_t -> spark_1_kratos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_kratos_model_t -> spark_6_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_kratos_model_t -> spark_9_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_kratos_model_t -> spark_3_kratos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_kratos_model_t -> spark_b_kratos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_kratos_model_t -> spark_f_kratos_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

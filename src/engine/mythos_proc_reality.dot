@@ -1,50 +1,64 @@
 strict digraph RealityEngine {
-    label = "Reality Engine";
     style = filled;
-    color = lightgrey;
-    fontsize = "36";
-    comment = "";
+    color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Reality Engine (/proc/reality)";
+    comment = "The kernel beneath all becoming, still yet restless, the canvas of possibility upon which all engines inscribe their trace";
     
-    spark_0_mythos_t [label = "Reality\n(/proc/reality)";shape = doublecircle;];
+    spark_0_reality_engine_t [label = "Reality.meta(Reality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_reality_engine_t [label = "Reality.r1(InitFactor)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_reality_engine_t [label = "Reality.r2(FeedFactor)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_reality_engine_t [label = "Reality.r4(ValidateFactor)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_reality_engine_t [label = "Reality.r8(CastFactor)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_reality_engine_t [label = "Reality.r7(FinalizeFactor)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_reality_engine_t [label = "Reality.r5(PropagateFactor)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_reality_engine_t [label = "Reality.r3(Knot)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_reality_engine_t [label = "Reality.r6(Monad)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_reality_engine_t [label = "Reality.r9(Meaning)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_reality_engine_t [label = "Reality.receive(PotentialEventStream)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_reality_engine_t [label = "Reality.send(ManifestEventStream)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_reality_engine_t [label = "Reality.dispatch(ContextSwitch)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_reality_engine_t [label = "Reality.commit(StateSync)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_reality_engine_t [label = "Reality.serve(Continuum)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_reality_engine_t [label = "Reality.exec(LawOfReality)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_reality_t [label = "Reality.meta()";comment = "Init Engine";shape = doublecircle;];
-    spark_1_reality_t [label = "Reality.initFactor()";comment = "initFactor() factor_t";shape = circle;];
-    spark_2_reality_t [label = "Reality.feedFactor()";comment = "feedFactor() observer_model_t, alignment_model_t, and spectral_model_t";shape = circle;];
-    spark_4_reality_t [label = "Reality.validateFactor()";comment = "validateFactor() factor_t integrity before/after injection";shape = circle;];
-    spark_8_reality_t [label = "Reality.finalizeFactor()";comment = "finalizeFactor() factor_t into information_factor_t";shape = circle;];
-    spark_7_reality_t [label = "Reality.reloadFactor()";comment = "reloadFactor() in the case feedFactor() failed";shape = circle;];
-    spark_5_reality_t [label = "Reality.loadFactor()";comment = "loadFactor() mainly used by Reality.factor()";shape = circle;];
-    spark_3_reality_t [label = "Reality.avatar()";comment = "`/proc/avatar`";shape = doublecircle;];
-    spark_6_reality_t [label = "Reality.listen()";comment = "";shape = doublecircle;];
-    spark_9_reality_t [label = "Reality.wakeEngine()";comment = "";shape = doublecircle;];
-    spark_a_reality_t [label = "Reality.receive()";comment = "receive()";shape = invtriangle;];
-    spark_b_reality_t [label = "Reality.send()";comment = "send()";shape = triangle;];
-    spark_c_reality_t [label = "Reality.dispatch()";comment = "dispatch()";shape = doublecircle;];
-    spark_d_reality_t [label = "Reality.factor()";comment = "`/proc/factor` Inquiry system";shape = doublecircle;];
-    spark_e_reality_t [label = "Reality.serve()";comment = "`/proc/reality`";shape = doublecircle;];
-    spark_f_reality_t [label = "Reality.exec()";comment = "exec()";shape = doublecircle;];
+    spark_a_reality_engine_t -> spark_0_reality_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_reality_engine_t -> spark_b_reality_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_reality_engine_t -> spark_3_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_reality_engine_t -> spark_6_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_reality_engine_t -> spark_9_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_reality_engine_t -> spark_1_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_reality_engine_t -> spark_2_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_reality_engine_t -> spark_4_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_reality_engine_t -> spark_8_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_reality_engine_t -> spark_7_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_reality_engine_t -> spark_5_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_0_mythos_t -> spark_0_reality_t;
+    spark_a_reality_engine_t -> spark_c_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_reality_engine_t -> spark_c_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_reality_t -> spark_a_reality_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_reality_t -> spark_b_reality_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_reality_t -> {spark_3_reality_t spark_6_reality_t spark_9_reality_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_reality_t -> {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_reality_engine_t -> spark_2_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_reality_engine_t -> spark_4_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_reality_engine_t -> spark_8_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_reality_engine_t -> spark_7_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_reality_engine_t -> spark_5_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_reality_engine_t -> spark_1_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_reality_engine_t -> spark_6_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_reality_engine_t -> spark_9_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_reality_engine_t -> spark_3_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_reality_engine_t -> spark_b_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_reality_t spark_b_reality_t} -> spark_c_reality_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_reality_t spark_2_reality_t spark_4_reality_t spark_8_reality_t spark_7_reality_t spark_5_reality_t} -> spark_d_reality_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_reality_t spark_6_reality_t spark_9_reality_t} -> spark_e_reality_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_reality_t -> spark_2_reality_t -> spark_4_reality_t -> spark_8_reality_t -> spark_7_reality_t -> spark_5_reality_t -> spark_1_reality_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_reality_t -> spark_6_reality_t -> spark_9_reality_t -> spark_3_reality_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_reality_t -> spark_b_reality_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_reality_t -> spark_f_reality_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_reality_t -> spark_f_reality_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_reality_t -> spark_f_reality_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

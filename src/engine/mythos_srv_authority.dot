@@ -1,49 +1,64 @@
 digraph AuthorityEngine {
-    label = "Authority Engine";
     style = filled;
-    color = red;
-    comment = "";
-    node [shape = circle; style = filled; color = darkcyan;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Authority Engine (/srv/authority)";
+    comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads.";
     
-    spark_e_mythos_t [label = "Authority\n(/srv/authority)";shape = doublecircle;];
+    spark_0_authority_engine_t [label = "Authority.meta(Authority)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_authority_engine_t [label = "Authority.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_authority_engine_t [label = "Authority.r2(todo)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_authority_engine_t [label = "Authority.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_authority_engine_t [label = "Authority.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_authority_engine_t [label = "Authority.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_authority_engine_t [label = "Authority.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_authority_engine_t [label = "Authority.r3(CodexOfAuthority)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_authority_engine_t [label = "Authority.r6(Title)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_authority_engine_t [label = "Authority.r9(Sovereignty)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_authority_engine_t [label = "Authority.receive(Claim)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_authority_engine_t [label = "Authority.send(Grant)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_authority_engine_t [label = "Authority.dispatch(Verdict)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_authority_engine_t [label = "Authority.commit(Contract)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_authority_engine_t [label = "Authority.serve(Court)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_authority_engine_t [label = "Authority.exec(LawOfAuthority)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_authority_t [label = "Authority.meta()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_authority_t [label = "Authority.create()";shape = circle;comment = "";];
-    spark_2_authority_t [label = "Authority.validate()";shape = circle;comment = "";];
-    spark_4_authority_t [label = "Authority.normalize()";shape = circle;comment = "";];
-    spark_8_authority_t [label = "Authority.reset()";shape = circle;comment = "";];
-    spark_7_authority_t [label = "Authority.evolve()";shape = circle;comment = "";];
-    spark_5_authority_t [label = "Authority.refactor()";shape = circle;comment = "";];
-    spark_3_authority_t [label = "Authority.codex()";shape = doublecircle;comment = "";];
-    spark_6_authority_t [label = "Authority.listen()";shape = doublecircle;comment = "";];
-    spark_9_authority_t [label = "Authority.assert()";shape = doublecircle;comment = "";];
-    spark_a_authority_t [label = "Authority.receive()";shape = triangle;comment = "";];
-    spark_b_authority_t [label = "Authority.send()";shape = invtriangle;comment = "";];
-    spark_c_authority_t [label = "Authority.response()";shape = doublecircle;comment = "";];
-    spark_d_authority_t [label = "Authority.compile()";shape = doublecircle;comment = "";];
-    spark_e_authority_t [label = "Authority.serve()";shape = doublecircle;comment = "`/srv/authority`";];
-    spark_f_authority_t [label = "Authority.exec(LawOfAuthority)";shape = doublecircle;comment = "";];
+    spark_a_authority_engine_t -> spark_0_authority_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_authority_engine_t -> spark_b_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_e_mythos_t -> spark_0_authority_t;
+    spark_a_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_authority_t -> spark_a_authority_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_authority_t -> spark_b_authority_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_authority_t -> {spark_3_authority_t spark_6_authority_t spark_9_authority_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_authority_t -> {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_authority_engine_t -> spark_b_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_authority_t spark_b_authority_t} -> spark_c_authority_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_authority_t spark_2_authority_t spark_4_authority_t spark_8_authority_t spark_7_authority_t spark_5_authority_t} -> spark_d_authority_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_authority_t spark_6_authority_t spark_9_authority_t} -> spark_e_authority_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_authority_t -> spark_2_authority_t -> spark_4_authority_t -> spark_8_authority_t -> spark_7_authority_t -> spark_5_authority_t -> spark_1_authority_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_authority_t -> spark_6_authority_t -> spark_9_authority_t -> spark_3_authority_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_authority_t -> spark_b_authority_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_authority_t -> spark_f_authority_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_authority_t -> spark_f_authority_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_authority_t -> spark_f_authority_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

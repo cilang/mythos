@@ -1,48 +1,64 @@
 strict digraph OriginEngine {
-    label = "Origin\n(/var)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Origin Engine (/var/origin)";
+    comment = "Here, in the veil called Origin, all currents converge; command, form, and law entwine as Maya — fleeting as dawn mist, certain as its vanishing.";
     
-    spark_f_mythos_t [label = "Origin\n(/var)";shape = doublecircle;];
+    spark_0_origin_engine_t [label = "Origin.meta(Origin)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_origin_engine_t [label = "Origin.r3(Symmetry)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_origin_engine_t [label = "Origin.r6(Frequency)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_origin_engine_t [label = "Origin.r9(Manifold)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_origin_engine_t [label = "Origin.receive(Manthan)";comment = "Potential: `/var/manthan`";shape = invtriangle;color = darkred;];
+    spark_b_origin_engine_t [label = "Origin.send(Chaotic)";comment = "Manifest: `var/chaotic`";shape = triangle;color = darkred;];
+    spark_c_origin_engine_t [label = "Origin.dispatch(Genesis)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_origin_engine_t [label = "Origin.commit(Annal)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_origin_engine_t [label = "Origin.serve(Source)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_origin_t [label = "Origin.meta()";shape = doublecircle;comment = "Engine Meta";];
-    spark_1_origin_t [label = "Origin.r1()";shape = circle;comment = "";];
-    spark_2_origin_t [label = "Origin.r2()";shape = circle;comment = "";];
-    spark_4_origin_t [label = "Origin.r4()";shape = circle;comment = "";];
-    spark_8_origin_t [label = "Origin.r8()";shape = circle;comment = "";];
-    spark_7_origin_t [label = "Origin.r7()";shape = circle;comment = "";];
-    spark_5_origin_t [label = "Origin.r5()";shape = circle;comment = "";];
-    spark_3_origin_t [label = "Origin.pattern()";shape = doublecircle;comment = "";];
-    spark_6_origin_t [label = "Origin.rhythm()";shape = doublecircle;comment = "";];
-    spark_9_origin_t [label = "Origin.brane()";shape = doublecircle;comment = "Brane Object, Brane World, Brane Lifeform";];
-    spark_a_origin_t [label = "Origin.manthan()";shape = triangle;comment = "`/var/manthan`";];
-    spark_b_origin_t [label = "Origin.chaotic()";shape = invtriangle;comment = "`/var/chaotic`";];
-    spark_c_origin_t [label = "Origin.dispatch()";shape = doublecircle;comment = "";];
-    spark_d_origin_t [label = "Origin.commit()";shape = doublecircle;comment = "";];
-    spark_e_origin_t [label = "Origin.serve()";shape = doublecircle;comment = "`/var`";];
-    spark_f_origin_t [label = "Origin.exec()\nLaw of Spacetime";shape = doublecircle;comment = "";];
+    spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_f_mythos_t -> spark_0_origin_t;
+    spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_origin_t -> spark_a_origin_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_origin_t -> spark_b_origin_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_origin_t -> {spark_3_origin_t spark_6_origin_t spark_9_origin_t} [label = "IN"; color = darkblue; comment = "";];
-    spark_0_origin_t -> {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_5_origin_t spark_7_origin_t spark_8_origin_t} [label = "IN"; color = darkgreen; comment = "";];
+    spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_origin_t spark_b_origin_t} -> spark_c_origin_t [label = "REC"; color = darkred; comment = "";];
-    {spark_3_origin_t spark_6_origin_t spark_9_origin_t} -> spark_e_origin_t [label = "REC"; color = darkblue; comment = "";];
-    {spark_1_origin_t spark_2_origin_t spark_4_origin_t spark_8_origin_t spark_7_origin_t spark_5_origin_t} -> spark_d_origin_t [label = "REC"; color = darkgreen; comment = "";];
-    
-    spark_3_origin_t -> spark_6_origin_t -> spark_9_origin_t -> spark_3_origin_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false;];
-    spark_a_origin_t -> spark_b_origin_t [label = "REC"; color = darkred; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_1_origin_t -> spark_2_origin_t -> spark_4_origin_t -> spark_8_origin_t -> spark_7_origin_t -> spark_5_origin_t -> spark_1_origin_t [label = "REC"; color = darkgreen; comment = ""; style = dassed; constraint = false;];
-    
-    spark_e_origin_t -> spark_f_origin_t [label = "OUT"; color = darkblue; comment = "";];
-    spark_c_origin_t -> spark_f_origin_t [label = "OUT"; color = darkred; comment = "";];
-    spark_d_origin_t -> spark_f_origin_t [label = "OUT"; color = darkgreen; comment = "";];
+    spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

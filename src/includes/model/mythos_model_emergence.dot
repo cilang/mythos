@@ -1,14 +1,11 @@
-strict digraph Emergence {
-    label = "Emergence\n(/proc/reality/concept/emergence)";
+strict digraph EmergenceModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
-
-    // The Axis A-0-B (In-Meta-Out).
-    // The Sacred 3-6-9 (Boundary of Perception).
-    // The Vortex 1-2-4-8-7-5 (Boundary of Comprehension).
-    // The Router C-D-E
-    // The Closure F
+    edge [color = darkgray;];
+    label = "Emergence Model (/proc/reality/model/emergence)";
+    comment = "TODO";
+    
     spark_0_emergence_model_t [label = "Emergence.meta(Emergence)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_emergence_model_t [label = "Emergence.r1(Singularity)";comment = "Initiation: TODO";color = darkgreen;];
     spark_2_emergence_model_t [label = "Emergence.r2(Horizon)";comment = "Response: TODO";color = darkgreen;];
@@ -25,10 +22,7 @@ strict digraph Emergence {
     spark_d_emergence_model_t [label = "Emergence.commit(Embodiment)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
     spark_e_emergence_model_t [label = "Emergence.serve(Manifest)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_emergence_model_t [label = "Emergence.exec(Phenomenon)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
+    
     spark_a_emergence_model_t -> spark_0_emergence_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_emergence_model_t -> spark_b_emergence_model_t [label = "OUT"; comment = "todo"; color = darkred;];
     spark_0_emergence_model_t -> spark_3_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
@@ -40,7 +34,7 @@ strict digraph Emergence {
     spark_0_emergence_model_t -> spark_8_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     spark_0_emergence_model_t -> spark_7_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     spark_0_emergence_model_t -> spark_5_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-
+    
     spark_a_emergence_model_t -> spark_c_emergence_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
     spark_b_emergence_model_t -> spark_c_emergence_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
     spark_1_emergence_model_t -> spark_d_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
@@ -52,7 +46,7 @@ strict digraph Emergence {
     spark_3_emergence_model_t -> spark_e_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     spark_6_emergence_model_t -> spark_e_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     spark_9_emergence_model_t -> spark_e_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-
+    
     spark_1_emergence_model_t -> spark_2_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_2_emergence_model_t -> spark_4_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_4_emergence_model_t -> spark_8_emergence_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
@@ -63,7 +57,7 @@ strict digraph Emergence {
     spark_6_emergence_model_t -> spark_9_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_9_emergence_model_t -> spark_3_emergence_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_a_emergence_model_t -> spark_b_emergence_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-
+    
     spark_c_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
     spark_d_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
     spark_e_emergence_model_t -> spark_f_emergence_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];

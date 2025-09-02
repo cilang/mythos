@@ -1,10 +1,10 @@
 strict digraph MythOS {
-    label = "MythOS";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    comment = "A 'Theory of Everything' for Meaning.";
+    label = "MythOS";
+    comment = "A Fictional Cosmology that aim to be capable sustaining `Hard and High Scientific Fantasy Worldbuilding and Conlang`.";
     
     spark_0_mythos_t [label = "MythOS.meta(RealityEngine)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_mythos_t [label = "MythOS.r1(TruthEngine)";comment = "Initiation: Axiomatic Verification";color = darkgreen;];

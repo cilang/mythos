@@ -1,8 +1,10 @@
 strict digraph ObserverModel {
-    label = "Observer Model\n(/proc/reality/factor/observer-model)";
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Observer Model\n(/proc/reality/model/observer)";
+    comment = "TODO";
     
     // Sangkan paraning dumadi.
     // Nava manunggal nastiti ning tyas.
@@ -10,42 +12,62 @@ strict digraph ObserverModel {
     // memayu hayuning bawana
     // manunggal kawula ning gusti.
     // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
-    // Truth and Wisdom also give further context to "Sangkan Paraning Dumadi" beyond what "Factor" provided.
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_observer_seed_t [label = "Observer.meta(ObserverModel)";shape = doublecircle;comment = "";];
-    spark_1_observer_seed_t [label = "Observer.r1(Resource)";shape = circle;comment = "";];
-    spark_2_observer_seed_t [label = "Observer.r2(Authority)";shape = circle;comment = "";];
-    spark_4_observer_seed_t [label = "Observer.r4(Relation)";shape = circle;comment = "";];
-    spark_8_observer_seed_t [label = "Observer.r8(Axiom)";shape = circle;comment = "";];
-    spark_7_observer_seed_t [label = "Observer.r7(Knowledge)";shape = circle;comment = "";];
-    spark_5_observer_seed_t [label = "Observer.r5(Lineage)";shape = circle;comment = "";];
-    spark_3_observer_seed_t [label = "Observer.r3(Assumption)";shape = circle;comment = "";];
-    spark_6_observer_seed_t [label = "Observer.r6(Suggestion)";shape = circle;comment = "";];
-    spark_9_observer_seed_t [label = "Observer.r9(Perception)";shape = circle;comment = "";];
-    spark_a_observer_seed_t [label = "Observer.receive(Sangkan)";shape = triangle;comment = "";];
-    spark_b_observer_seed_t [label = "Observer.send(Paran)";shape = invtriangle;comment = "";];
-    spark_c_observer_seed_t [label = "Observer.dispatch(Why|Who)";shape = doublecircle;comment = "";];
-    spark_d_observer_seed_t [label = "Observer.commit(What|How)";shape = doublecircle;comment = "";];
-    spark_e_observer_seed_t [label = "Observer.serve(When|Where)";shape = doublecircle;comment = "";];
-    spark_f_observer_seed_t [label = "Observer.exec(Which|Closure)";shape = doublecircle;comment = "";];
+    spark_0_observer_model_t [label = "Observer.meta(Observer)";comment = "Abstract: Dumadi";shape = doublecircle;color = darkgray;];
+    spark_1_observer_model_t [label = "Observer.r1(Resource)";comment = "Initiation: Harta";color = darkgreen;];
+    spark_2_observer_model_t [label = "Observer.r2(Authority)";comment = "Response: Tahta";color = darkgreen;];
+    spark_4_observer_model_t [label = "Observer.r4(Relation)";comment = "Integration: Wanita (Javanese: Wani di tata)";color = darkgreen;];
+    spark_8_observer_model_t [label = "Observer.r8(Axiom)";comment = "Reflection: Agama";color = darkgreen;];
+    spark_7_observer_model_t [label = "Observer.r7(Knowledge)";comment = "Consolidation: Ilmu";color = darkgreen;];
+    spark_5_observer_model_t [label = "Observer.r5(Lineage)";comment = "Propagation: Keturunan";color = darkgreen;];
+    spark_3_observer_model_t [label = "Observer.r3(Assumption)";comment = "Thesis: Asumsi";color = darkblue;];
+    spark_6_observer_model_t [label = "Observer.r6(Suggestion)";comment = "Antithesis: Sugesti";color = darkblue;];
+    spark_9_observer_model_t [label = "Observer.r9(Perception)";comment = "Synthesis: Persepsi";color = darkblue;];
+    spark_a_observer_model_t [label = "Observer.receive(Sangkan)";comment = "Potential: The origin point of perception ('from whence?').";shape = invtriangle;color = darkred;];
+    spark_b_observer_model_t [label = "Observer.send(Paran)";comment = "Manifest: The destination of perception ('to where?').";shape = triangle;color = darkred;];
+    spark_c_observer_model_t [label = "Observer.dispatch(Why|Who)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_observer_model_t [label = "Observer.commit(What|How)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_observer_model_t [label = "Observer.serve(When|Where)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_observer_model_t [label = "Observer.exec(Which|Closure)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
     // IN = Input
     // OUT = Output
     // REC = Recursion
-    spark_0_observer_seed_t -> spark_a_observer_seed_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_observer_seed_t -> spark_b_observer_seed_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_observer_seed_t -> {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_observer_seed_t -> {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_observer_model_t -> spark_0_observer_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_observer_model_t -> spark_b_observer_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_observer_model_t -> spark_3_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_observer_model_t -> spark_6_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_observer_model_t -> spark_9_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_observer_model_t -> spark_1_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_observer_model_t -> spark_2_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_observer_model_t -> spark_4_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_observer_model_t -> spark_8_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_observer_model_t -> spark_7_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_observer_model_t -> spark_5_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    {spark_a_observer_seed_t spark_b_observer_seed_t} -> spark_c_observer_seed_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_observer_seed_t spark_2_observer_seed_t spark_4_observer_seed_t spark_8_observer_seed_t spark_7_observer_seed_t spark_5_observer_seed_t} -> spark_d_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_observer_seed_t spark_6_observer_seed_t spark_9_observer_seed_t} -> spark_e_observer_seed_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_a_observer_model_t -> spark_c_observer_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_observer_model_t -> spark_c_observer_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_observer_model_t -> spark_d_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_observer_model_t -> spark_e_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_observer_model_t -> spark_e_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_observer_model_t -> spark_e_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_1_observer_seed_t -> spark_2_observer_seed_t -> spark_4_observer_seed_t -> spark_8_observer_seed_t -> spark_7_observer_seed_t -> spark_5_observer_seed_t -> spark_1_observer_seed_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_observer_seed_t -> spark_6_observer_seed_t -> spark_9_observer_seed_t -> spark_3_observer_seed_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_observer_seed_t -> spark_b_observer_seed_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
+    spark_1_observer_model_t -> spark_2_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_observer_model_t -> spark_4_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_observer_model_t -> spark_8_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_observer_model_t -> spark_7_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_observer_model_t -> spark_5_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_observer_model_t -> spark_1_observer_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_observer_model_t -> spark_6_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_observer_model_t -> spark_9_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_observer_model_t -> spark_3_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_observer_model_t -> spark_b_observer_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_c_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_observer_seed_t -> spark_f_observer_seed_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_observer_model_t -> spark_f_observer_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

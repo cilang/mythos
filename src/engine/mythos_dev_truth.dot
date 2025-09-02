@@ -1,69 +1,64 @@
 strict digraph TruthEngine {
-    label = "Truth";
     style = filled;
-    color = blue;
-    comment = "";
-    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Truth Engine (/dev/truth)";
+    comment = "The flame that tests, the line that measures; unyielding in its clarity, it grants certitude to what survives its gaze.";
     
-    spark_1_mythos_truth_t [label = "Truth\n(/dev/truth)";];
+    spark_0_truth_engine_t [label = "Truth.meta(Truth)";comment = "Abstract: Her name is Asha, the Avatar of Truth. The Providence.";shape = doublecircle;color = darkgray;];
+    spark_1_truth_engine_t [label = "Truth.r1(AxiomOfVerification)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_truth_engine_t [label = "Truth.r2(AxiomOfEvidence)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_truth_engine_t [label = "Truth.r4(AxiomOfDefinition)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_truth_engine_t [label = "Truth.r8(AxiomOfConsistency)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_truth_engine_t [label = "Truth.r7(AxiomOfRecognition)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_truth_engine_t [label = "Truth.r5(AxiomOfAuthenticity)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_truth_engine_t [label = "Truth.r3(CrestOfObjectivity)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_truth_engine_t [label = "Truth.r6(CrestOfBoundary)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_truth_engine_t [label = "Truth.r9(CrestOfClarity)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_truth_engine_t [label = "Truth.receive(RaimentOfTruth)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_truth_engine_t [label = "Truth.send(ArmamentOfTruth)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_truth_engine_t [label = "Truth.dispatch(BodyOfTruth)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_truth_engine_t [label = "Truth.commit(SoulOfTruth)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_truth_engine_t [label = "Truth.serve(GraceOfTruth)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_truth_engine_t [label = "Truth.exec(LawOfTruth)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_truth_t [label = "Truth.meta(Truth)\nAsha";comment = "";shape = doublecircle;];
-    spark_1_truth_t [label = "Truth.r1()\n";comment = "";shape = circle;];
-    spark_2_truth_t [label = "Truth.r2()\n";comment = "";shape = circle;];
-    spark_4_truth_t [label = "Truth.r4()\n";comment = "";shape = circle;];
-    spark_8_truth_t [label = "Truth.r8()\n";comment = "";shape = circle;];
-    spark_7_truth_t [label = "Truth.r7()\n";comment = "";shape = circle;];
-    spark_5_truth_t [label = "Truth.r5()\n";comment = "";shape = circle;];
-    spark_3_truth_t [label = "Truth.r3(CrestOfObjectivity)";comment = "";shape = circle;];
-    spark_6_truth_t [label = "Truth.r6(CrestOfBoundary)";comment = "";shape = circle;];
-    spark_9_truth_t [label = "Truth.r9(CrestOfClarity)";comment = "";shape = circle;];
-    spark_a_truth_t [label = "Truth.receive(RaimentOfTruth)";comment = "";shape = triangle;];
-    spark_b_truth_t [label = "Truth.send(ArmamentOfTruth)";comment = "";shape = invtriangle;];
-    spark_c_truth_t [label = "Truth.dispatch(BodyOfTruth)";comment = "";shape = circle;];
-    spark_d_truth_t [label = "Truth.commit(SoulOfTruth)";comment = "";shape = circle;];
-    spark_e_truth_t [label = "Truth.serve(GraceOf)";comment = "";shape = circle;];
-    spark_f_truth_t [label = "Truth.exec(LawOfTruth)";comment = "";shape = circle;];
+    spark_a_truth_engine_t -> spark_0_truth_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_truth_engine_t -> spark_b_truth_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_truth_engine_t -> spark_3_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_truth_engine_t -> spark_6_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_truth_engine_t -> spark_9_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_truth_engine_t -> spark_1_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_truth_engine_t -> spark_2_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_truth_engine_t -> spark_4_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_truth_engine_t -> spark_8_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_truth_engine_t -> spark_7_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_truth_engine_t -> spark_5_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_a_truth_t -> spark_0_truth_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_truth_t -> spark_b_truth_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_truth_t -> spark_3_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_truth_t -> spark_6_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_truth_t -> spark_9_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_truth_t -> spark_1_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_truth_t -> spark_2_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_truth_t -> spark_4_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_truth_t -> spark_8_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_truth_t -> spark_7_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_truth_t -> spark_5_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_a_truth_engine_t -> spark_c_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_truth_engine_t -> spark_c_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_a_truth_t -> spark_c_truth_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_truth_t -> spark_c_truth_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_truth_t -> spark_d_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_truth_t -> spark_e_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_truth_t -> spark_e_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_truth_t -> spark_e_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_1_truth_engine_t -> spark_2_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_truth_engine_t -> spark_4_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_truth_engine_t -> spark_8_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_truth_engine_t -> spark_7_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_truth_engine_t -> spark_5_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_truth_engine_t -> spark_1_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_truth_engine_t -> spark_6_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_truth_engine_t -> spark_9_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_truth_engine_t -> spark_3_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_truth_engine_t -> spark_b_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_truth_t -> spark_2_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_truth_t -> spark_4_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_truth_t -> spark_8_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_truth_t -> spark_7_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_truth_t -> spark_5_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_truth_t -> spark_1_truth_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_truth_t -> spark_6_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_truth_t -> spark_9_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_truth_t -> spark_3_truth_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_truth_t -> spark_b_truth_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_truth_t -> spark_f_truth_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_truth_t -> spark_f_truth_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_truth_t -> spark_f_truth_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+    spark_c_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

@@ -1,48 +1,64 @@
 strict digraph ConvergenceEngine {
-    label = "Convergence";
     style = filled;
-    color = blue;
-    comment = "";
-    node [shape = polygon; sides = 8; style = filled; color = darkseagreen;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Convergence Engine (/dev/convergence)";
+    comment = "The gravity of likeness, pulling strands into one; unity not as sameness, but as harmony of difference.";
     
-    spark_2_mythos_t [label = "Convergence\n(/dev/convergence)";];
+    spark_0_convergence_engine_t [label = "Convergence.meta(Convergence)";comment = "Abstract: Her name is Kirana Larasati, the Avatar of Convergence, The Feminine.";shape = doublecircle;color = darkgray;];
+    spark_1_convergence_engine_t [label = "Convergence.r1(ArtifactOfAttraction)";comment = "Initiation: The Lodestone Heart, Hrdaya-Magnis (Sanskrit-Latin: Heart-Magent). A pulsating gem or core that resonates with a fundamental frequency, pulling scattered things toward their point of greatest cohesion. It doesn't force; it invites alignment.";color = darkgreen;];
+    spark_2_convergence_engine_t [label = "Convergence.r2(ArtifactOfAlignment)";comment = "Response: The Axis Mundi Plumb Bob, Sutra-Atlas (Sanskrit-Greek: Thread-Unyielding). A weight that, when suspended, defines true vertical---the central axis of any system. It doesn't just align things to each other, but to the cosmic up and down, creating perfect order.";color = darkgreen;];
+    spark_4_convergence_engine_t [label = "Convergence.r4(ArtifactOfFusion)";comment = "Integration: The Crucible of the First Sun, Karahati-Bindu (Sanskrit: Couldron-Point or Crucible of the Singularity). A chalice or forge that doesn't melt things together but convines them to remember they were once one. It turns plurality into unity without destruction.";color = darkgreen;];
+    spark_8_convergence_engine_t [label = "Convergence.r8(ArtifactOfBalance)";comment = "Reflection: The Scales of Equipoise, Tula-Samarasya (Sanskrit: Balance-Equilibrium). A set of scales that measures not weight, but value and potential. It finds the perfect equilibrium point where all forces are in a dynamic, living balance, not a static deadlock.";color = darkgreen;];
+    spark_7_convergence_engine_t [label = "Convergence.r7(ArtifactOfSynergy)";comment = "Consolidation: The Loom of Emergence, Tantra-Vivarta (Sanskrit: Loom-Manifestation). A loom that weaves individual threads into a tapestry whose pattern is far greater than the sum of its parts. It is the tool that creates synergetic effects, where 1+1 become 3.";color = darkgreen;];
+    spark_5_convergence_engine_t [label = "Convergence.r5(ArtifactOfHarmony)";comment = "Propagation: The Resonant Key, Svara-Anka (Sanskrit: Note-Key or Harmony-Key). A tunning fork or key that, when struck, doesn't just make a sound but sets the fundamental harmonic frequency for an entire system. It make all parts resonate together in a beautiful, stable chord.";color = darkgreen;];
+    spark_3_convergence_engine_t [label = "Convergence.r3(CrestOfOrder)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_convergence_engine_t [label = "Convergence.r6(CrestOfCreation)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_convergence_engine_t [label = "Convergence.r9(CrestOfUnity)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_convergence_engine_t [label = "Convergence.receive(RaimentOfConvergence)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_convergence_engine_t [label = "Convergence.send(ArmamentOfConvergence)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_convergence_engine_t [label = "Convergence.dispatch(BodyOfConvergence)";comment = "Why-Who: Nine Tailed Aves of Vikara";shape = doublecircle;color = darkred;];
+    spark_d_convergence_engine_t [label = "Convergence.commit(SoulOfConvergence)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_convergence_engine_t [label = "Convergence.serve(GraceOfConvergence)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_convergence_engine_t [label = "Convergence.exec(LawOfConvergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_convergence_t [label = "Convergence.meta(Convergence)\nKirana Larasati";shape = doublecircle;];
-    spark_1_convergence_t [label = "Convergence.r1()\n";comment = "";shape = circle;];
-    spark_2_convergence_t [label = "Convergence.r2()\n";comment = "";shape = circle;];
-    spark_4_convergence_t [label = "Convergence.r4()\n";comment = "";shape = circle;];
-    spark_8_convergence_t [label = "Convergence.r8()\n";comment = "";shape = circle;];
-    spark_7_convergence_t [label = "Convergence.r7()\n";comment = "";shape = circle;];
-    spark_5_convergence_t [label = "Convergence.r5()\n";comment = "";shape = circle;];
-    spark_3_convergence_t [label = "Convergence.r3(Order)\nCrest of Order";comment = "";shape = circle;];
-    spark_6_convergence_t [label = "Convergence.r6(Creation)\nCrest of Creation";comment = "";shape = circle;];
-    spark_9_convergence_t [label = "Convergence.r9(Unity)\nCrest of Unity";comment = "";shape = circle;];
-    spark_a_convergence_t [label = "Convergence.receive(RaimentOfConvergence)\nRaiment of Convergence";comment = "";shape = triangle;];
-    spark_b_convergence_t [label = "Convergence.send(ArmamentOfConvergence)\nArmament of Convergence";comment = "";shape = invtriangle;];
-    spark_c_convergence_t [label = "Convergence.dispatch(BodyOfConvergence)\nNine Tailed Aves of Vikara";comment = "";shape = circle;];
-    spark_d_convergence_t [label = "Convergence.commit(SoulOfConvergence)\nSoul of Convergence";comment = "";shape = circle;];
-    spark_e_convergence_t [label = "Convergence.serve(GraceOfConvergence)\nGrace of Convergence";comment = "";shape = circle;];
-    spark_f_convergence_t [label = "Convergence.exec(LawOfConvergence)\nLaw of Convergence";comment = "";shape = circle;];
+    spark_a_convergence_engine_t -> spark_0_convergence_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_convergence_engine_t -> spark_b_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_convergence_engine_t -> spark_3_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_convergence_engine_t -> spark_6_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_convergence_engine_t -> spark_9_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_convergence_engine_t -> spark_1_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_convergence_engine_t -> spark_2_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_convergence_engine_t -> spark_4_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_convergence_engine_t -> spark_8_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_convergence_engine_t -> spark_7_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_convergence_engine_t -> spark_5_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_2_mythos_t -> spark_0_convergence_t;
-    spark_0_convergence_t -> spark_a_convergence_t [label = "IN"; color = darkred;];
-    spark_0_convergence_t -> spark_b_convergence_t [label = "OUT"; color = darkred;];
-    spark_0_convergence_t -> {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_convergence_t -> {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_a_convergence_engine_t -> spark_c_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_convergence_engine_t -> spark_c_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    {spark_a_convergence_t spark_b_convergence_t} -> spark_c_convergence_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_convergence_t spark_2_convergence_t spark_4_convergence_t spark_8_convergence_t spark_7_convergence_t spark_5_convergence_t} -> spark_d_convergence_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_convergence_t spark_6_convergence_t spark_9_convergence_t} -> spark_e_convergence_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
+    spark_1_convergence_engine_t -> spark_2_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_convergence_engine_t -> spark_4_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_convergence_engine_t -> spark_8_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_convergence_engine_t -> spark_7_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_convergence_engine_t -> spark_5_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_convergence_engine_t -> spark_1_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_convergence_engine_t -> spark_6_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_convergence_engine_t -> spark_9_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_convergence_engine_t -> spark_3_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_convergence_engine_t -> spark_b_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_convergence_t -> spark_2_convergence_t -> spark_4_convergence_t -> spark_8_convergence_t -> spark_7_convergence_t -> spark_5_convergence_t -> spark_1_convergence_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_convergence_t -> spark_6_convergence_t -> spark_9_convergence_t -> spark_3_convergence_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_convergence_t -> spark_b_convergence_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_convergence_t -> spark_f_convergence_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

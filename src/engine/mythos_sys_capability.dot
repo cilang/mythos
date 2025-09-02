@@ -1,49 +1,64 @@
 digraph CapabilityEngine {
-    label = "Capability Engine";
     style = filled;
-    color = red;
-    comment = "";
-    node [shape = polygon; sides = 6; style = filled; color = lightgreen;];
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Capability Engine (/sys/capability)";
+    comment = "The strength of the vessel, the scope of its reach; each limit a frontier, each permission a horizon.";
     
-    spark_3_mythos_t [label = "Capability\n(/srv/capability)";shape = doublecircle;];
+    spark_0_capability_engine_t [label = "Capability.meta(Capability)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_capability_engine_t [label = "Capability.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_capability_engine_t [label = "Capability.r2(todo)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_capability_engine_t [label = "Capability.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_capability_engine_t [label = "Capability.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_capability_engine_t [label = "Capability.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_capability_engine_t [label = "Capability.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_capability_engine_t [label = "Capability.r3(CodexOfCapability)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_capability_engine_t [label = "Capability.r6(Action)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_capability_engine_t [label = "Capability.r9(Mastery)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_capability_engine_t [label = "Capability.receive(Potential)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_capability_engine_t [label = "Capability.send(Actuality)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_capability_engine_t [label = "Capability.dispatch(Effect)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_capability_engine_t [label = "Capability.commit(Program)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_capability_engine_t [label = "Capability.serve(Registry)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_capability_t [label = "Capability.meta()";shape = doublecircle;comment = "Engine Init";];
-    spark_1_capability_t [label = "Capability.parse()";shape = circle;comment = "";];
-    spark_2_capability_t [label = "Capability.validate()";shape = circle;comment = "";];
-    spark_4_capability_t [label = "Capability.normalize()";shape = circle;comment = "";];
-    spark_8_capability_t [label = "Capability.reset()";shape = circle;comment = "";];
-    spark_7_capability_t [label = "Capability.evolve()";shape = circle;comment = "";];
-    spark_5_capability_t [label = "Capability.refactor()";shape = circle;comment = "";];
-    spark_3_capability_t [label = "Capability.codex()";shape = doublecircle;comment = "`/sys/codex`";];
-    spark_6_capability_t [label = "Capability.listen()";shape = doublecircle;comment = "";];
-    spark_9_capability_t [label = "Capability.assert()";shape = doublecircle;comment = "";];
-    spark_a_capability_t [label = "Capability.receive()";shape = triangle;comment = "";];
-    spark_b_capability_t [label = "Capability.send()";shape = invtriangle;comment = "";];
-    spark_c_capability_t [label = "Capability.response()";shape = doublecircle;comment = "";];
-    spark_d_capability_t [label = "Capability.compile()";shape = doublecircle;comment = "";];
-    spark_e_capability_t [label = "Capability.serve()";shape = doublecircle;comment = "`/sys/capability`";];
-    spark_f_capability_t [label = "Capability.exec()\nLaw of Capability";shape = doublecircle;comment = "";];
+    spark_a_capability_engine_t -> spark_0_capability_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_capability_engine_t -> spark_b_capability_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_3_mythos_t -> spark_0_capability_t;
+    spark_a_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    spark_0_capability_t -> spark_a_capability_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_capability_t -> spark_b_capability_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_capability_t -> {spark_3_capability_t spark_6_capability_t spark_9_capability_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_capability_t -> {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_capability_engine_t -> spark_b_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_capability_t spark_b_capability_t} -> spark_c_capability_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_capability_t spark_2_capability_t spark_4_capability_t spark_8_capability_t spark_7_capability_t spark_5_capability_t} -> spark_d_capability_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_capability_t spark_6_capability_t spark_9_capability_t} -> spark_e_capability_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_capability_t -> spark_2_capability_t -> spark_4_capability_t -> spark_8_capability_t -> spark_7_capability_t -> spark_5_capability_t -> spark_1_capability_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_capability_t -> spark_6_capability_t -> spark_9_capability_t -> spark_3_capability_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_capability_t -> spark_b_capability_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_capability_t -> spark_f_capability_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_capability_t -> spark_f_capability_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_capability_t -> spark_f_capability_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
+    spark_c_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }

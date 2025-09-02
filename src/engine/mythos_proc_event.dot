@@ -1,50 +1,64 @@
 strict digraph EventEngine {
-    label = "Event Engine";
     style = filled;
-    color = lightgrey;
-    fontsize = "36";
-    comment = "";
+    color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Event Engine (/proc/event)";
+    comment = "The tremor of chance, a ripple without master; each fluctuation a seed of becoming, whispering of paths not yet walked.";
     
-    spark_a_mythos_t [label = "Event\n(/proc/event)";shape = doublecircle;];
+    spark_0_event_engine_t [label = "Event.meta(Event)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_event_engine_t [label = "Event.r1(InitEvent)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_event_engine_t [label = "Event.r2(FeedEvent)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_event_engine_t [label = "Event.r4(ValidateEvent)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_event_engine_t [label = "Event.r8(CastEvent)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_event_engine_t [label = "Event.r7(FinalizeEvent)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_event_engine_t [label = "Event.r5(PropagateEvent)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_event_engine_t [label = "Event.r3(Origin)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_event_engine_t [label = "Event.r6(Flow)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_event_engine_t [label = "Event.r9(Significance)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_event_engine_t [label = "Event.receive(PotentialEvent)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_event_engine_t [label = "Event.send(ActualEvent)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_event_engine_t [label = "Event.dispatch(Routing)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_event_engine_t [label = "Event.commit(Binding)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_event_engine_t [label = "Event.serve(Reflection)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_event_engine_t [label = "Event.exec(LawOfProbability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
+    spark_a_event_engine_t -> spark_0_event_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_event_engine_t -> spark_b_event_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_event_engine_t -> spark_3_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_event_engine_t -> spark_6_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_event_engine_t -> spark_9_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_event_engine_t -> spark_1_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_event_engine_t -> spark_2_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_event_engine_t -> spark_4_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_event_engine_t -> spark_8_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_event_engine_t -> spark_7_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_event_engine_t -> spark_5_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
     
-    // r0::meta();r1,r2,r4,r8,r7,r5;r3,r6,r;ra::receive(),rb::send(),rc::dispatch(),rd::commit(),re::serve(),rf::exec()
-    spark_0_event_t [label = "Event.meta()";comment = "Engine Init";shape = doublecircle;];
-    spark_1_event_t [label = "Event.r1()";comment = "";shape = circle;];
-    spark_2_event_t [label = "Event.r2()";comment = "";shape = circle;];
-    spark_4_event_t [label = "Event.r4()";comment = "";shape = circle;];
-    spark_8_event_t [label = "Event.r8()";comment = "";shape = circle;];
-    spark_7_event_t [label = "Event.r7()";comment = "";shape = circle;];
-    spark_5_event_t [label = "Event.r5()";comment = "";shape = circle;];
-    spark_3_event_t [label = "Event.r3()";comment = "";shape = doublecircle;];
-    spark_6_event_t [label = "Event.r6()";comment = "";shape = doublecircle;];
-    spark_9_event_t [label = "Event.r9()";comment = "";shape = doublecircle;];
-    spark_a_event_t [label = "Event.receive()";comment = "";shape = triangle;];
-    spark_b_event_t [label = "Event.send()";comment = "";shape = invtriangle;];
-    spark_c_event_t [label = "Event.dispatch()";comment = "";shape = doublecircle;];
-    spark_d_event_t [label = "Event.commit()";comment = "";shape = doublecircle;];
-    spark_e_event_t [label = "Event.serve()";comment = "`/proc/event`";shape = doublecircle;];
-    spark_f_event_t [label = "Event.exec(LawOfProbability)";comment = "`/proc/probability`";shape = doublecircle;];
+    spark_a_event_engine_t -> spark_c_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_event_engine_t -> spark_c_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
-    spark_0_event_t -> spark_a_event_t [label = "IN"; color = darkred; comment = "";];
-    spark_0_event_t -> spark_b_event_t [label = "OUT"; color = darkred; comment = "";];
-    spark_0_event_t -> {spark_3_event_t spark_6_event_t spark_9_event_t} [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    spark_0_event_t -> {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} [label = "REC"; color = darkgreen; comment = ""; dir = both;];
+    spark_1_event_engine_t -> spark_2_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_event_engine_t -> spark_4_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_event_engine_t -> spark_8_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_event_engine_t -> spark_7_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_event_engine_t -> spark_5_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_event_engine_t -> spark_1_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_event_engine_t -> spark_6_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_event_engine_t -> spark_9_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_event_engine_t -> spark_3_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_event_engine_t -> spark_b_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    {spark_a_event_t spark_b_event_t} -> spark_c_event_t [label = "REC"; color = darkred; comment = ""; dir = both;];
-    {spark_1_event_t spark_2_event_t spark_4_event_t spark_8_event_t spark_7_event_t spark_5_event_t} -> spark_d_event_t [label = "REC"; color = darkgreen; comment = ""; dir = both;];
-    {spark_3_event_t spark_6_event_t spark_9_event_t} -> spark_e_event_t [label = "REC"; color = darkblue; comment = ""; dir = both;];
-    
-    spark_1_event_t -> spark_2_event_t -> spark_4_event_t -> spark_8_event_t -> spark_7_event_t -> spark_5_event_t -> spark_1_event_t [label = "REC"; color = darkgreen; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_3_event_t -> spark_6_event_t -> spark_9_event_t -> spark_3_event_t [label = "REC"; color = darkblue; comment = ""; style = dashed; constraint = false; dir = both;];
-    spark_a_event_t -> spark_b_event_t [label = "REC"; color = darkred; comment = ""; constraint = false; style = dashed; dir = both;];
-    
-    spark_c_event_t -> spark_f_event_t [label = "OUT"; color = darkred; comment = ""; dir = both;];
-    spark_d_event_t -> spark_f_event_t [label = "OUT"; color = darkgreen; comment = ""; dir = both;];
-    spark_e_event_t -> spark_f_event_t [label = "OUT"; color = darkblue; comment = ""; dir = both;];
-    spark_a_mythos_t -> spark_0_event_t;
+    spark_c_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
 }
