@@ -4,7 +4,7 @@ strict digraph Sparklet {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Sparklet";
-    comment = "A 'Theory of Everything' for Meaning.";
+    comment = "A Theory of Meaning.";
     
     spark_0_t [label = "Sparklet.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_t [label = "Sparklet.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
