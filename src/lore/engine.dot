@@ -1,0 +1,1188 @@
+strict digraph Engine {
+    // ================================================================================================================
+    // Global
+    // ================================================================================================================
+    // 
+    // Sparklet {
+    //   Spark.meta(), // Backend or Kernel
+    //   Spark.r{1,2,4,8,7,5}(), // Mechanical Vortex akin to (Initiation <-> Response <-> Integration <-> Reflection <-> Consolidation <-> Propagation <-> Initiation <->)
+    //   Spark.r{3,6,9}(), // Cognitive Vortex akin to (Thesis <-> Antithesis <-> Synthesis <-> Thesis <->)
+    //   Spark.{receive, send}(), // I/O Port
+    //   Spark.{dispatch, commit, serve}(), // Router
+    //   Spark.exec() // Frontend
+    // }
+    
+    node [shape = circle; style = filled; color = lightgreen;];
+    splines = true;
+    compound = true;
+    nodesep = 0.75;
+    ranksep = 1.0;
+    
+    // ================================================================================================================
+    // MythOS
+    // ================================================================================================================
+    subgraph cluster_MythOS {
+        style = filled;
+        color = lightgray;
+        node [shape = circle; style = filled; color = lightgreen;];
+        edge [color = darkgray;];
+        label = "MythOS";
+        comment = "A Fictional Cosmology that aim to be capable sustaining `Hard and High Scientific Fantasy Worldbuilding and Conlang`.";
+        
+        spark_0_mythos_t [label = "MythOS.meta(RealityEngine)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+        spark_1_mythos_t [label = "MythOS.r1(TruthEngine)";comment = "Initiation: Axiomatic Verification";color = darkgreen;];
+        spark_2_mythos_t [label = "MythOS.r2(ConvergenceEngine)";comment = "Response: Unification Management";color = darkgreen;];
+        spark_4_mythos_t [label = "MythOS.r4(FixationEngine)";comment = "Integration: Rhythm Management";color = darkgreen;];
+        spark_8_mythos_t [label = "MythOS.r8(WisdomEngine)";comment = "Reflection: Adaptive Verification";color = darkgreen;];
+        spark_7_mythos_t [label = "MythOS.r7(DivergenceEngine)";comment = "Consolidation: Diversity Management";color = darkgreen;];
+        spark_5_mythos_t [label = "MythOS.r5(ExcitationEngine)";comment = "Propagation: Pattern Management";color = darkgreen;];
+        spark_3_mythos_t [label = "MythOS.r3(CapabilityEngine)";comment = "Thesis: Capability System";color = darkblue;];
+        spark_6_mythos_t [label = "MythOS.r6(RepositoryEngine)";comment = "Antithesis: Storage System";color = darkblue;];
+        spark_9_mythos_t [label = "MythOS.r9(HaomaEngine)";comment = "Synthesis: Entity Recursion Descriptor";color = darkblue;];
+        spark_a_mythos_t [label = "MythOS.receive(EventEngine)";comment = "Potential: Probability Field";shape = invtriangle;color = darkred;];
+        spark_b_mythos_t [label = "MythOS.send(SamsaraEngine)";comment = "Manifest: Causality Enforcement";shape = triangle;color = darkred;];
+        spark_c_mythos_t [label = "MythOS.dispatch(DirectiveEngine)";comment = "Why-Who: Directive Manager";shape = doublecircle;color = darkred;];
+        spark_d_mythos_t [label = "MythOS.commit(AuthorityEngine)";comment = "What-How: Entity Access Control";shape = doublecircle;color = darkgreen;];
+        spark_e_mythos_t [label = "MythOS.serve(CorporaEngine)";comment = "When-Where: Entity Manifestation";shape = doublecircle;color = darkblue;];
+        spark_f_mythos_t [label = "MythOS.exec(OriginEngine)";comment = "Which-Closure: Phenomenon, frontend, conditioned reality.";shape = doublecircle;color = lightgray;];
+        
+        spark_a_mythos_t -> spark_0_mythos_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+        spark_0_mythos_t -> spark_b_mythos_t [label = "OUT"; comment = "todo"; color = darkred;];
+        spark_0_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_mythos_t -> spark_6_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_mythos_t -> spark_9_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_mythos_t -> spark_2_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_mythos_t -> spark_4_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_mythos_t -> spark_8_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_mythos_t -> spark_7_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_mythos_t -> spark_5_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        
+        spark_a_mythos_t -> spark_c_mythos_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+        spark_b_mythos_t -> spark_c_mythos_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+        spark_1_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_2_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_4_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_8_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_7_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_5_mythos_t -> spark_d_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_3_mythos_t -> spark_e_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_6_mythos_t -> spark_e_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_9_mythos_t -> spark_e_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        
+        spark_1_mythos_t -> spark_2_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_2_mythos_t -> spark_4_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_4_mythos_t -> spark_8_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_8_mythos_t -> spark_7_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_7_mythos_t -> spark_5_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_5_mythos_t -> spark_1_mythos_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_3_mythos_t -> spark_6_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_6_mythos_t -> spark_9_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_9_mythos_t -> spark_3_mythos_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_a_mythos_t -> spark_b_mythos_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+        
+        spark_c_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From the Directive flows the unseen command, the pulse of intent that sets the dance in motion; and in the Origin it finds its mirror, weaving the illusion of form and fate---Maya shimmering as if real, Fana dissolving as if it never was."; color = darkred; dir = both;];
+        spark_d_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "Through Corpora arises the clothed word, the body of meaning incarnated in semblance; and in the Origin it unfurls as world and matter, patterns dressed in time, only to scatter back into the silence from which they came."; color = darkgreen; dir = both;];
+        spark_e_mythos_t -> spark_f_mythos_t [label = "OUT"; comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads."; color = darkblue; dir = both;];
+    }
+    
+    // ================================================================================================================
+    // Engines
+    // ================================================================================================================
+    subgraph cluster_Engines {
+        style = filled;
+        color = lightgray;
+        node [shape = circle; style = filled; color = lightgreen;];
+        edge [color = darkgray;];
+        label = "Engines";
+        comment = "Verb";
+        
+        // ============================================================================================================
+        // Reality Engine
+        // ============================================================================================================
+        subgraph cluster_00_RealityEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Reality Engine (/proc/reality)";
+            comment = "The kernel beneath all becoming, still yet restless, the canvas of possibility upon which all engines inscribe their trace";
+            
+            spark_0_reality_engine_t [label = "Reality.meta(Reality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_reality_engine_t [label = "Reality.r1(InitFactor)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_reality_engine_t [label = "Reality.r2(FeedFactor)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_reality_engine_t [label = "Reality.r4(ValidateFactor)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_reality_engine_t [label = "Reality.r8(CastFactor)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_reality_engine_t [label = "Reality.r7(FinalizeFactor)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_reality_engine_t [label = "Reality.r5(PropagateFactor)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_reality_engine_t [label = "Reality.r3(Knot)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_reality_engine_t [label = "Reality.r6(Monad)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_reality_engine_t [label = "Reality.r9(Meaning)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_reality_engine_t [label = "Reality.receive(PotentialEventStream)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_reality_engine_t [label = "Reality.send(ManifestEventStream)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_reality_engine_t [label = "Reality.dispatch(ContextSwitch)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_reality_engine_t [label = "Reality.commit(StateSync)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_reality_engine_t [label = "Reality.serve(Continuum)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_reality_engine_t [label = "Reality.exec(LawOfReality)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_reality_engine_t -> spark_0_reality_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_reality_engine_t -> spark_b_reality_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_reality_engine_t -> spark_3_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_reality_engine_t -> spark_6_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_reality_engine_t -> spark_9_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_reality_engine_t -> spark_1_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_reality_engine_t -> spark_2_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_reality_engine_t -> spark_4_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_reality_engine_t -> spark_8_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_reality_engine_t -> spark_7_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_reality_engine_t -> spark_5_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_reality_engine_t -> spark_c_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_reality_engine_t -> spark_c_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_reality_engine_t -> spark_d_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_reality_engine_t -> spark_e_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_reality_engine_t -> spark_2_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_reality_engine_t -> spark_4_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_reality_engine_t -> spark_8_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_reality_engine_t -> spark_7_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_reality_engine_t -> spark_5_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_reality_engine_t -> spark_1_reality_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_reality_engine_t -> spark_6_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_reality_engine_t -> spark_9_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_reality_engine_t -> spark_3_reality_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_reality_engine_t -> spark_b_reality_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_reality_engine_t -> spark_f_reality_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Truth Engine
+        // ============================================================================================================
+        subgraph cluster_01_TruthEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Truth Engine (/dev/truth)";
+            comment = "The flame that tests, the line that measures; unyielding in its clarity, it grants certitude to what survives its gaze.";
+            
+            spark_0_truth_engine_t [label = "Truth.meta(Truth)";comment = "Abstract: Her name is Asha, the Avatar of Truth. The Providence.";shape = doublecircle;color = darkgray;];
+            spark_1_truth_engine_t [label = "Truth.r1(AxiomOfVerification)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_truth_engine_t [label = "Truth.r2(AxiomOfEvidence)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_truth_engine_t [label = "Truth.r4(AxiomOfDefinition)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_truth_engine_t [label = "Truth.r8(AxiomOfConsistency)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_truth_engine_t [label = "Truth.r7(AxiomOfRecognition)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_truth_engine_t [label = "Truth.r5(AxiomOfAuthenticity)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_truth_engine_t [label = "Truth.r3(CrestOfObjectivity)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_truth_engine_t [label = "Truth.r6(CrestOfBoundary)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_truth_engine_t [label = "Truth.r9(CrestOfClarity)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_truth_engine_t [label = "Truth.receive(RaimentOfTruth)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_truth_engine_t [label = "Truth.send(ArmamentOfTruth)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_truth_engine_t [label = "Truth.dispatch(BodyOfTruth)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_truth_engine_t [label = "Truth.commit(SoulOfTruth)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_truth_engine_t [label = "Truth.serve(GraceOfTruth)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_truth_engine_t [label = "Truth.exec(LawOfTruth)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_truth_engine_t -> spark_0_truth_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_truth_engine_t -> spark_b_truth_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_truth_engine_t -> spark_3_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_truth_engine_t -> spark_6_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_truth_engine_t -> spark_9_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_truth_engine_t -> spark_1_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_truth_engine_t -> spark_2_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_truth_engine_t -> spark_4_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_truth_engine_t -> spark_8_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_truth_engine_t -> spark_7_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_truth_engine_t -> spark_5_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_truth_engine_t -> spark_c_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_truth_engine_t -> spark_c_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_truth_engine_t -> spark_d_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_truth_engine_t -> spark_e_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_truth_engine_t -> spark_2_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_truth_engine_t -> spark_4_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_truth_engine_t -> spark_8_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_truth_engine_t -> spark_7_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_truth_engine_t -> spark_5_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_truth_engine_t -> spark_1_truth_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_truth_engine_t -> spark_6_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_truth_engine_t -> spark_9_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_truth_engine_t -> spark_3_truth_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_truth_engine_t -> spark_b_truth_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_truth_engine_t -> spark_f_truth_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Convergence Engine
+        // ============================================================================================================
+        subgraph cluster_02_ConvergenceEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Convergence Engine (/dev/convergence)";
+            comment = "The gravity of likeness, pulling strands into one; unity not as sameness, but as harmony of difference.";
+            
+            spark_0_convergence_engine_t [label = "Convergence.meta(Convergence)";comment = "Abstract: Her name is Kirana Larasati, the Avatar of Convergence, The Feminine.";shape = doublecircle;color = darkgray;];
+            spark_1_convergence_engine_t [label = "Convergence.r1(ArtifactOfAttraction)";comment = "Initiation: The Lodestone Heart, Hrdaya-Magnis (Sanskrit-Latin: Heart-Magent). A pulsating gem or core that resonates with a fundamental frequency, pulling scattered things toward their point of greatest cohesion. It doesn't force; it invites alignment.";color = darkgreen;];
+            spark_2_convergence_engine_t [label = "Convergence.r2(ArtifactOfAlignment)";comment = "Response: The Axis Mundi Plumb Bob, Sutra-Atlas (Sanskrit-Greek: Thread-Unyielding). A weight that, when suspended, defines true vertical---the central axis of any system. It doesn't just align things to each other, but to the cosmic up and down, creating perfect order.";color = darkgreen;];
+            spark_4_convergence_engine_t [label = "Convergence.r4(ArtifactOfFusion)";comment = "Integration: The Crucible of the First Sun, Karahati-Bindu (Sanskrit: Couldron-Point or Crucible of the Singularity). A chalice or forge that doesn't melt things together but convines them to remember they were once one. It turns plurality into unity without destruction.";color = darkgreen;];
+            spark_8_convergence_engine_t [label = "Convergence.r8(ArtifactOfBalance)";comment = "Reflection: The Scales of Equipoise, Tula-Samarasya (Sanskrit: Balance-Equilibrium). A set of scales that measures not weight, but value and potential. It finds the perfect equilibrium point where all forces are in a dynamic, living balance, not a static deadlock.";color = darkgreen;];
+            spark_7_convergence_engine_t [label = "Convergence.r7(ArtifactOfSynergy)";comment = "Consolidation: The Loom of Emergence, Tantra-Vivarta (Sanskrit: Loom-Manifestation). A loom that weaves individual threads into a tapestry whose pattern is far greater than the sum of its parts. It is the tool that creates synergetic effects, where 1+1 become 3.";color = darkgreen;];
+            spark_5_convergence_engine_t [label = "Convergence.r5(ArtifactOfHarmony)";comment = "Propagation: The Resonant Key, Svara-Anka (Sanskrit: Note-Key or Harmony-Key). A tunning fork or key that, when struck, doesn't just make a sound but sets the fundamental harmonic frequency for an entire system. It make all parts resonate together in a beautiful, stable chord.";color = darkgreen;];
+            spark_3_convergence_engine_t [label = "Convergence.r3(CrestOfOrder)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_convergence_engine_t [label = "Convergence.r6(CrestOfCreation)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_convergence_engine_t [label = "Convergence.r9(CrestOfUnity)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_convergence_engine_t [label = "Convergence.receive(RaimentOfConvergence)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_convergence_engine_t [label = "Convergence.send(ArmamentOfConvergence)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_convergence_engine_t [label = "Convergence.dispatch(BodyOfConvergence)";comment = "Why-Who: Nine Tailed Aves of Vikara";shape = doublecircle;color = darkred;];
+            spark_d_convergence_engine_t [label = "Convergence.commit(SoulOfConvergence)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_convergence_engine_t [label = "Convergence.serve(GraceOfConvergence)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_convergence_engine_t [label = "Convergence.exec(LawOfConvergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_convergence_engine_t -> spark_0_convergence_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_convergence_engine_t -> spark_b_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_convergence_engine_t -> spark_3_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_convergence_engine_t -> spark_6_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_convergence_engine_t -> spark_9_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_convergence_engine_t -> spark_1_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_convergence_engine_t -> spark_2_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_convergence_engine_t -> spark_4_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_convergence_engine_t -> spark_8_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_convergence_engine_t -> spark_7_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_convergence_engine_t -> spark_5_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_convergence_engine_t -> spark_c_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_convergence_engine_t -> spark_c_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_convergence_engine_t -> spark_d_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_convergence_engine_t -> spark_e_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_convergence_engine_t -> spark_2_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_convergence_engine_t -> spark_4_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_convergence_engine_t -> spark_8_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_convergence_engine_t -> spark_7_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_convergence_engine_t -> spark_5_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_convergence_engine_t -> spark_1_convergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_convergence_engine_t -> spark_6_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_convergence_engine_t -> spark_9_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_convergence_engine_t -> spark_3_convergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_convergence_engine_t -> spark_b_convergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_convergence_engine_t -> spark_f_convergence_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Fixation Engine
+        // ============================================================================================================
+        subgraph cluster_04_FixationEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Fixation Engine (/dev/fixation)";
+            comment = "The rhythm of recurrence, a pulse that engraves; pattern made habit, habit made law.";
+            
+            spark_0_fixation_engine_t [label = "Fixation.meta(Fixation)";comment = "Abstract: Her name is Tha, the Goddess of Rhythm. She is the Temporal Sovereign. She governs the when---the pulse, the cycle, the frequency, the cadence of all existence. From vibration of a quark to the orbit of galaxies to the beat of a heart, she is the source of all periodicity and timing. She is the metronome of the cosmos.";shape = doublecircle;color = darkgray;];
+            spark_1_fixation_engine_t [label = "Fixation.r1(RhythmOfFocus)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_fixation_engine_t [label = "Fixation.r2(RhythmOfConstraint)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_fixation_engine_t [label = "Fixation.r4(RhythmOfAttachment)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_fixation_engine_t [label = "Fixation.r8(RhythmOfStability)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_fixation_engine_t [label = "Fixation.r7(RhythmOfAccumulation)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_fixation_engine_t [label = "Fixation.r5(RhythmOfInheritance)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_fixation_engine_t [label = "Fixation.r3(CrestOfStatism)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_fixation_engine_t [label = "Fixation.r6(CrestOfDeceleration)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_fixation_engine_t [label = "Fixation.r9(CrestOfMatter)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_fixation_engine_t [label = "Fixation.receive(RaimentOfFixation)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_fixation_engine_t [label = "Fixation.send(ArmamentOfFixation)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_fixation_engine_t [label = "Fixation.dispatch(BodyOfFixation)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_fixation_engine_t [label = "Fixation.commit(SoulOfFixation)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_fixation_engine_t [label = "Fixation.serve(GraceOfFixation)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_fixation_engine_t [label = "Fixation.exec(LawOfFixation)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_fixation_engine_t -> spark_0_fixation_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_fixation_engine_t -> spark_b_fixation_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_fixation_engine_t -> spark_3_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_fixation_engine_t -> spark_6_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_fixation_engine_t -> spark_9_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_fixation_engine_t -> spark_1_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_fixation_engine_t -> spark_2_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_fixation_engine_t -> spark_4_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_fixation_engine_t -> spark_8_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_fixation_engine_t -> spark_7_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_fixation_engine_t -> spark_5_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_fixation_engine_t -> spark_c_fixation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_fixation_engine_t -> spark_c_fixation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_fixation_engine_t -> spark_d_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_fixation_engine_t -> spark_e_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_fixation_engine_t -> spark_e_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_fixation_engine_t -> spark_e_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_fixation_engine_t -> spark_2_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_fixation_engine_t -> spark_4_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_fixation_engine_t -> spark_8_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_fixation_engine_t -> spark_7_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_fixation_engine_t -> spark_5_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_fixation_engine_t -> spark_1_fixation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_fixation_engine_t -> spark_6_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_fixation_engine_t -> spark_9_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_fixation_engine_t -> spark_3_fixation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_fixation_engine_t -> spark_b_fixation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_fixation_engine_t -> spark_f_fixation_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_fixation_engine_t -> spark_f_fixation_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_fixation_engine_t -> spark_f_fixation_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Wisdom Engine
+        // ============================================================================================================
+        subgraph cluster_08_WisdomEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Wisdom Engine (/dev/wisdom)";
+            comment = "The mirror that bends, adaptive in its light; it shapes knowing into guidance, and temper into insight.";
+            
+            spark_0_wisdom_engine_t [label = "Wisdom.meta(Wisdom)";comment = "Abstract: Her name is Vidya, the Avatar of Wisdom, The Interpreter.";shape = doublecircle;color = darkgray;];
+            spark_1_wisdom_engine_t [label = "Wisdom.r1(AlgorithmOfDiscernment)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_wisdom_engine_t [label = "Wisdom.r2(AlgorithmOfAnalogy)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_wisdom_engine_t [label = "Wisdom.r4(AlgorithmOfMemory)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_wisdom_engine_t [label = "Wisdom.r8(AlgorithmOfForesight)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_wisdom_engine_t [label = "Wisdom.r7(AlgorithmOfAdaptation)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_wisdom_engine_t [label = "Wisdom.r5(AlgorithmOfTransmission)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_wisdom_engine_t [label = "Wisdom.r3(CrestOfComplexity)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_wisdom_engine_t [label = "Wisdom.r6(CrestOfReflection)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_wisdom_engine_t [label = "Wisdom.r9(CrestOfInsight)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_wisdom_engine_t [label = "Wisdom.receive(RaimentOfWisdom)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_wisdom_engine_t [label = "Wisdom.send(ArmamentOfWisdom)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_wisdom_engine_t [label = "Wisdom.dispatch(BodyOfWisdom)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_wisdom_engine_t [label = "Wisdom.commit(SoulOfWisdom)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_wisdom_engine_t [label = "Wisdom.serve(GraceOfWisdom)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_wisdom_engine_t [label = "Wisdom.exec(LawOfWisdom)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_wisdom_engine_t -> spark_0_wisdom_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_wisdom_engine_t -> spark_b_wisdom_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_wisdom_engine_t -> spark_3_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_wisdom_engine_t -> spark_6_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_wisdom_engine_t -> spark_9_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_wisdom_engine_t -> spark_1_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_wisdom_engine_t -> spark_2_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_wisdom_engine_t -> spark_4_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_wisdom_engine_t -> spark_8_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_wisdom_engine_t -> spark_7_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_wisdom_engine_t -> spark_5_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_wisdom_engine_t -> spark_c_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_wisdom_engine_t -> spark_c_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_wisdom_engine_t -> spark_d_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_wisdom_engine_t -> spark_e_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_wisdom_engine_t -> spark_e_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_wisdom_engine_t -> spark_e_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_wisdom_engine_t -> spark_2_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_wisdom_engine_t -> spark_4_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_wisdom_engine_t -> spark_8_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_wisdom_engine_t -> spark_7_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_wisdom_engine_t -> spark_5_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_wisdom_engine_t -> spark_1_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_wisdom_engine_t -> spark_6_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_wisdom_engine_t -> spark_9_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_wisdom_engine_t -> spark_3_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_wisdom_engine_t -> spark_b_wisdom_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_wisdom_engine_t -> spark_f_wisdom_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_wisdom_engine_t -> spark_f_wisdom_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_wisdom_engine_t -> spark_f_wisdom_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Divergence Engine
+        // ============================================================================================================
+        subgraph cluster_07_DivergenceEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Divergence Engine (/dev/divergence)";
+            comment = "The fracture that multiplies, the seed that scatters; it guards the fertile tension of what could be.";
+            
+            spark_0_divergence_engine_t [label = "Divergence.meta(Divergence)";comment = "Abstract: His name Chandra Sasmita, the Avatar of Divergence, The Masculine.";shape = doublecircle;color = darkgray;];
+            spark_1_divergence_engine_t [label = "Divergence.r1(ManasOfEternity)";comment = "Initiation: Her name is Maya, the Manas of Eternity, The Illusionist of Permanence.";color = darkgreen;];
+            spark_2_divergence_engine_t [label = "Divergence.r2(ManasOfInfinity)";comment = "Response: Her name is Fana, the Manas of Infinity, The Dissolver of Limits.";color = darkgreen;];
+            spark_4_divergence_engine_t [label = "Divergence.r4(ManasOfCausality)";comment = "Integration: Her name is Rita, the Manas of Causality, The Judge of Immutable.";color = darkgreen;];
+            spark_8_divergence_engine_t [label = "Divergence.r8(ManasOfProbability)";comment = "Reflection: Her name is Qadar. the Manas of Probability, The Weaver of Chance.";color = darkgreen;];
+            spark_7_divergence_engine_t [label = "Divergence.r7(ManasOfSpacetime)";comment = "Consolidation: Her name is Tara. the Manas of Spacetime, The Navigator of Reality.";color = darkgreen;];
+            spark_5_divergence_engine_t [label = "Divergence.r5(ManasOfNature)";comment = "Propagation: Her name is Pertiwi, the Manas of Nature, The Soul of the World.";color = darkgreen;];
+            spark_3_divergence_engine_t [label = "Divergence.r3(CrestOfChaos)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_divergence_engine_t [label = "Divergence.r6(CrestOfDestruction)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_divergence_engine_t [label = "Divergence.r9(CrestOfDiversity)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_divergence_engine_t [label = "Divergence.receive(RaimentOfDivergence)";comment = "Potential: It named Indigo Vastra. A loyal yet snarky cloak which is also they key entity that allows six Manas to perform fusion so their capability could temporarily rivals Avatar.";shape = invtriangle;color = darkred;];
+            spark_b_divergence_engine_t [label = "Divergence.send(ArmamentOfDivergence)";comment = "Manifest: It named Obsidian Night. A loyal yet sly sword that only willing to be used by Avatar of Divergence and none else.";shape = triangle;color = darkred;];
+            spark_c_divergence_engine_t [label = "Divergence.dispatch(BodyOfDivergence)";comment = "Why-Who: Nine Headed Serpent of Vikara";shape = doublecircle;color = darkred;];
+            spark_d_divergence_engine_t [label = "Divergence.commit(SoulOfDivergence)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_divergence_engine_t [label = "Divergence.serve(GraceOfDivergence)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_divergence_engine_t [label = "Divergence.exec(LawOfDivergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_divergence_engine_t -> spark_0_divergence_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_divergence_engine_t -> spark_b_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_divergence_engine_t -> spark_3_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_divergence_engine_t -> spark_6_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_divergence_engine_t -> spark_9_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_divergence_engine_t -> spark_1_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_divergence_engine_t -> spark_2_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_divergence_engine_t -> spark_4_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_divergence_engine_t -> spark_8_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_divergence_engine_t -> spark_7_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_divergence_engine_t -> spark_5_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_divergence_engine_t -> spark_c_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_divergence_engine_t -> spark_c_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_divergence_engine_t -> spark_d_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_divergence_engine_t -> spark_e_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_divergence_engine_t -> spark_2_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_divergence_engine_t -> spark_4_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_divergence_engine_t -> spark_8_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_divergence_engine_t -> spark_7_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_divergence_engine_t -> spark_5_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_divergence_engine_t -> spark_1_divergence_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_divergence_engine_t -> spark_6_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_divergence_engine_t -> spark_9_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_divergence_engine_t -> spark_3_divergence_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_divergence_engine_t -> spark_b_divergence_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_divergence_engine_t -> spark_f_divergence_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Excitation Engine
+        // ============================================================================================================
+        subgraph cluster_05_ExcitationEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Excitation Engine (/dev/excitation)";
+            comment = "The spark of novelty, the surge of restlessness; it breaks rhythm to make song, chaos to make fire.";
+            
+            spark_0_excitation_engine_t [label = "Excitation.meta(Excitation)";comment = "Abstract: Her name is Nda, the Goddess of Pattern. She is the Spatial Sovereign. She governs that what---the form, the structure, the geometry, the algorithm, the repeating motif in the chaos. From the fractal branching of a tree to the code of DNA to the syntax of language, she is the source of all symmetry and information.";shape = doublecircle;color = darkgray;];
+            spark_1_excitation_engine_t [label = "Excitation.r1(PatternOfImpulse)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_excitation_engine_t [label = "Excitation.r2(PatternOfCatalyst)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_excitation_engine_t [label = "Excitation.r4(PatternOfResonance)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_excitation_engine_t [label = "Excitation.r8(PatternOfExpansion)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_excitation_engine_t [label = "Excitation.r7(PatternOfOscillation)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_excitation_engine_t [label = "Excitation.r5(PatternOfPropagation)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_excitation_engine_t [label = "Excitation.r3(CrestOfDynamism)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_excitation_engine_t [label = "Excitation.r6(CrestOfAcceleration)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_excitation_engine_t [label = "Excitation.r9(CrestOfVitality)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_excitation_engine_t [label = "Excitation.receive(RaimentOfExcitation)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_excitation_engine_t [label = "Excitation.send(ArmamentOfExcitation)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_excitation_engine_t [label = "Excitation.dispatch(BodyOfExcitation)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_excitation_engine_t [label = "Excitation.commit(SoulOfExcitation)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_excitation_engine_t [label = "Excitation.serve(GraceOfExcitation)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_excitation_engine_t [label = "Excitation.exec(LawOfExcitation)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_excitation_engine_t -> spark_0_excitation_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_excitation_engine_t -> spark_b_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_excitation_engine_t -> spark_3_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_excitation_engine_t -> spark_6_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_excitation_engine_t -> spark_9_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_excitation_engine_t -> spark_1_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_excitation_engine_t -> spark_2_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_excitation_engine_t -> spark_4_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_excitation_engine_t -> spark_8_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_excitation_engine_t -> spark_7_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_excitation_engine_t -> spark_5_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_excitation_engine_t -> spark_c_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_excitation_engine_t -> spark_c_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_excitation_engine_t -> spark_d_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_excitation_engine_t -> spark_e_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_excitation_engine_t -> spark_2_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_excitation_engine_t -> spark_4_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_excitation_engine_t -> spark_8_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_excitation_engine_t -> spark_7_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_excitation_engine_t -> spark_5_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_excitation_engine_t -> spark_1_excitation_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_excitation_engine_t -> spark_6_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_excitation_engine_t -> spark_9_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_excitation_engine_t -> spark_3_excitation_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_excitation_engine_t -> spark_b_excitation_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_excitation_engine_t -> spark_f_excitation_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Capability Engine
+        // ============================================================================================================
+        subgraph cluster_03_CapabilityEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Capability Engine (/sys/capability)";
+            comment = "The strength of the vessel, the scope of its reach; each limit a frontier, each permission a horizon.";
+            
+            spark_0_capability_engine_t [label = "Capability.meta(Capability)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_capability_engine_t [label = "Capability.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_capability_engine_t [label = "Capability.r2(todo)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_capability_engine_t [label = "Capability.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_capability_engine_t [label = "Capability.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_capability_engine_t [label = "Capability.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_capability_engine_t [label = "Capability.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_capability_engine_t [label = "Capability.r3(CodexOfCapability)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_capability_engine_t [label = "Capability.r6(Action)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_capability_engine_t [label = "Capability.r9(Mastery)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_capability_engine_t [label = "Capability.receive(Potential)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_capability_engine_t [label = "Capability.send(Actuality)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_capability_engine_t [label = "Capability.dispatch(Effect)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_capability_engine_t [label = "Capability.commit(Program)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_capability_engine_t [label = "Capability.serve(Registry)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_capability_engine_t -> spark_0_capability_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_capability_engine_t -> spark_b_capability_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_capability_engine_t -> spark_b_capability_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Repository Engine
+        // ============================================================================================================
+        subgraph cluster_06_RepositoryEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Repository Engine (/sys/repository)";
+            comment = "The keeper of echoes, where memory nests; holding fragments against the tide of forgetting.";
+            
+            spark_0_repository_engine_t [label = "Repository.meta(Repository)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_repository_engine_t [label = "Repository.r1(Cache)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_repository_engine_t [label = "Repository.r2(Registry)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_repository_engine_t [label = "Repository.r4(Archive)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_repository_engine_t [label = "Repository.r8(Buffer)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_repository_engine_t [label = "Repository.r7(Database)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_repository_engine_t [label = "Repository.r5(Memory)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_repository_engine_t [label = "Repository.r3(Codex)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_repository_engine_t [label = "Repository.r6(Log)";comment = "Antithesis: Arena (HaomaEngine is Actor and CapabilityEngine is Action)";color = darkblue;];
+            spark_9_repository_engine_t [label = "Repository.r9(Template)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_repository_engine_t [label = "Repository.receive(Subscription)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_repository_engine_t [label = "Repository.send(Publication)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_repository_engine_t [label = "Repository.dispatch(Query)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_repository_engine_t [label = "Repository.commit(Transaction)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_repository_engine_t [label = "Repository.serve(Replication)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_repository_engine_t [label = "Repository.exec(LawOfPersistence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_repository_engine_t -> spark_0_repository_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_repository_engine_t -> spark_b_repository_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_repository_engine_t -> spark_b_repository_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Haoma Engine
+        // ============================================================================================================
+        subgraph cluster_09_HaomaEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Haoma Engine (/sys/haoma)";
+            comment = "The draught of recursion, sap of eternal renewal; from itself it drinks, into itself it grows.";
+            
+            spark_0_haoma_engine_t [label = "Haoma.meta(Haoma)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_haoma_engine_t [label = "Haoma.r1(Instantiate)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_haoma_engine_t [label = "Haoma.r2(Classification)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_haoma_engine_t [label = "Haoma.r4(Allocation)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_haoma_engine_t [label = "Haoma.r8(Debug)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_haoma_engine_t [label = "Haoma.r7(Compilation)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_haoma_engine_t [label = "Haoma.r5(Mutation)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_haoma_engine_t [label = "Haoma.r3(Primogenitor)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_haoma_engine_t [label = "Haoma.r6(Actor)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_haoma_engine_t [label = "Haoma.r9(Derivative)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_haoma_engine_t [label = "Haoma.receive(Blueprint)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_haoma_engine_t [label = "Haoma.send(Instance)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_haoma_engine_t [label = "Haoma.dispatch(Materialization)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_haoma_engine_t [label = "Haoma.commit(Initialization)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_haoma_engine_t [label = "Haoma.serve(Animation)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_haoma_engine_t [label = "Haoma.exec(LawOfFactor)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_haoma_engine_t -> spark_0_haoma_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_haoma_engine_t -> spark_b_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_haoma_engine_t -> spark_b_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Event Engine
+        // ============================================================================================================
+        subgraph cluster_0a_EventEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Event Engine (/proc/event)";
+            comment = "The tremor of chance, a ripple without master; each fluctuation a seed of becoming, whispering of paths not yet walked.";
+            
+            spark_0_event_engine_t [label = "Event.meta(Event)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_event_engine_t [label = "Event.r1(InitEvent)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_event_engine_t [label = "Event.r2(FeedEvent)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_event_engine_t [label = "Event.r4(ValidateEvent)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_event_engine_t [label = "Event.r8(CastEvent)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_event_engine_t [label = "Event.r7(FinalizeEvent)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_event_engine_t [label = "Event.r5(PropagateEvent)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_event_engine_t [label = "Event.r3(Origin)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_event_engine_t [label = "Event.r6(Flow)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_event_engine_t [label = "Event.r9(Significance)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_event_engine_t [label = "Event.receive(PotentialEvent)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_event_engine_t [label = "Event.send(ActualEvent)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_event_engine_t [label = "Event.dispatch(Routing)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_event_engine_t [label = "Event.commit(Binding)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_event_engine_t [label = "Event.serve(Reflection)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_event_engine_t [label = "Event.exec(LawOfProbability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_event_engine_t -> spark_0_event_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_event_engine_t -> spark_b_event_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_event_engine_t -> spark_3_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_event_engine_t -> spark_6_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_event_engine_t -> spark_9_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_event_engine_t -> spark_1_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_event_engine_t -> spark_2_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_event_engine_t -> spark_4_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_event_engine_t -> spark_8_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_event_engine_t -> spark_7_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_event_engine_t -> spark_5_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_event_engine_t -> spark_c_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_event_engine_t -> spark_c_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_event_engine_t -> spark_d_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_event_engine_t -> spark_e_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_event_engine_t -> spark_2_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_event_engine_t -> spark_4_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_event_engine_t -> spark_8_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_event_engine_t -> spark_7_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_event_engine_t -> spark_5_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_event_engine_t -> spark_1_event_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_event_engine_t -> spark_6_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_event_engine_t -> spark_9_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_event_engine_t -> spark_3_event_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_event_engine_t -> spark_b_event_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_event_engine_t -> spark_f_event_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Samsara Engine
+        // ============================================================================================================
+        subgraph cluster_0b_SamsaraEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Samsara Engine (/proc/samsara)";
+            comment = "The wheel that binds, turning cause into consequence; no act escapes its circle, no flame burns without leaving ash.";
+            
+            spark_0_samsara_engine_t [label = "Samsara.meta(Causality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_samsara_engine_t [label = "Samsara.r1(InitCausality)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_samsara_engine_t [label = "Samsara.r2(FeedCausality)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_samsara_engine_t [label = "Samsara.r4(ValidateCausality)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_samsara_engine_t [label = "Samsara.r8(CastCausality)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_samsara_engine_t [label = "Samsara.r7(FinalizeCausality)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_samsara_engine_t [label = "Samsara.r5(PropagateCausality)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_samsara_engine_t [label = "Samsara.r3(Karma)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_samsara_engine_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_samsara_engine_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_samsara_engine_t [label = "Samsara.receive(Vertices)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_samsara_engine_t [label = "Samsara.send(Edges)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_samsara_engine_t [label = "Samsara.dispatch(Graph)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_samsara_engine_t [label = "Samsara.commit(KarmicImprint)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_samsara_engine_t [label = "Samsara.serve(Samsara)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_samsara_engine_t [label = "Samsara.exec(LawOfCausality)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_samsara_engine_t -> spark_0_samsara_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_samsara_engine_t -> spark_b_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_samsara_engine_t -> spark_b_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Directive Engine
+        // ============================================================================================================
+        subgraph cluster_0c_DirectiveEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Directive Engine (/srv/directive)";
+            comment = "From the Directive flows the unseen command, the pulse of intent that sets the dance in motion; and in the Origin it finds its mirror, weaving the illusion of form and fate — Maya shimmering as if real, Fana dissolving as if it never was.";
+            
+            spark_0_directive_engine_t [label = "Directive.meta(Directive)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_directive_engine_t [label = "Directive.r1(Analyze)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_directive_engine_t [label = "Directive.r2(Plan)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_directive_engine_t [label = "Directive.r4(Execute)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_directive_engine_t [label = "Directive.r8(Monitor)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_directive_engine_t [label = "Directive.r7(Adapt)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_directive_engine_t [label = "Directive.r5(Optimize)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_directive_engine_t [label = "Directive.r3(CodexOfDirective)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_directive_engine_t [label = "Directive.r6(Judge)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_directive_engine_t [label = "Directive.r9(Learn)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_directive_engine_t [label = "Directive.receive(Goal)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_directive_engine_t [label = "Directive.send(Action)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_directive_engine_t [label = "Directive.dispatch(Strategy)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_directive_engine_t [label = "Directive.commit(Tactic)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_directive_engine_t [label = "Directive.serve(Command)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_directive_engine_t [label = "Directive.exec(LawOfDirective)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_directive_engine_t -> spark_0_directive_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_directive_engine_t -> spark_b_directive_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_directive_engine_t -> spark_3_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_directive_engine_t -> spark_6_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_directive_engine_t -> spark_9_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_directive_engine_t -> spark_1_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_directive_engine_t -> spark_2_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_directive_engine_t -> spark_4_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_directive_engine_t -> spark_8_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_directive_engine_t -> spark_7_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_directive_engine_t -> spark_5_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_directive_engine_t -> spark_c_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_directive_engine_t -> spark_c_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_directive_engine_t -> spark_d_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_directive_engine_t -> spark_e_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_directive_engine_t -> spark_2_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_directive_engine_t -> spark_4_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_directive_engine_t -> spark_8_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_directive_engine_t -> spark_7_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_directive_engine_t -> spark_5_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_directive_engine_t -> spark_1_directive_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_directive_engine_t -> spark_6_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_directive_engine_t -> spark_9_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_directive_engine_t -> spark_3_directive_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_directive_engine_t -> spark_b_directive_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_directive_engine_t -> spark_f_directive_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Authority Engine
+        // ============================================================================================================
+        subgraph cluster_0d_AuthorityEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Authority Engine (/srv/authority)";
+            comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads.";
+            
+            spark_0_authority_engine_t [label = "Authority.meta(Authority)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_authority_engine_t [label = "Authority.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_authority_engine_t [label = "Authority.r2(todo)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_authority_engine_t [label = "Authority.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_authority_engine_t [label = "Authority.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_authority_engine_t [label = "Authority.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_authority_engine_t [label = "Authority.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_authority_engine_t [label = "Authority.r3(CodexOfAuthority)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_authority_engine_t [label = "Authority.r6(Title)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_authority_engine_t [label = "Authority.r9(Sovereignty)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_authority_engine_t [label = "Authority.receive(Claim)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_authority_engine_t [label = "Authority.send(Grant)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_authority_engine_t [label = "Authority.dispatch(Verdict)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_authority_engine_t [label = "Authority.commit(Contract)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_authority_engine_t [label = "Authority.serve(Court)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_authority_engine_t [label = "Authority.exec(LawOfAuthority)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_authority_engine_t -> spark_0_authority_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_authority_engine_t -> spark_b_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_authority_engine_t -> spark_b_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Corpora Engine
+        // ============================================================================================================
+        subgraph cluster_0e_CorporaEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Corpora Engine (/srv/corpora)";
+            comment = "Through Corpora arises the clothed word, the body of meaning incarnated in semblance; and in the Origin it unfurls as world and matter, patterns dressed in time, only to scatter back into the silence from which they came.";
+            
+            spark_0_corpora_engine_t [label = "Corpora.meta(Corpora)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_corpora_engine_t [label = "Corpora.r1(Heart)";comment = "Initiation: Made up of Information Essence (Crystalline). Compute Engine and Persistent Memory.";color = darkgreen;];
+            spark_2_corpora_engine_t [label = "Corpora.r2(Shell)";comment = "Response: Made up of Spiritual Essence (Crystalline). Origin of Field Force and Field Essence.";color = darkgreen;];
+            spark_4_corpora_engine_t [label = "Corpora.r4(AstralBody)";comment = "Integration: Made up of Spiritual Essence (Amorphous). Origin of Mental Force and Mental Essence.";color = darkgreen;];
+            spark_8_corpora_engine_t [label = "Corpora.r8(SpiritualBody)";comment = "Reflection: Made up of Spiritual Essence (Fiber). Origin of Spiritual Force and Spiritual Essence.";color = darkgreen;];
+            spark_7_corpora_engine_t [label = "Corpora.r7(MaterialBody)";comment = "Consolidation: Made up of Material Essence (Fiber). Origin of Genetic Force and Genetic Essence.";color = darkgreen;];
+            spark_5_corpora_engine_t [label = "Corpora.r5(Ego)";comment = "Propagation: Made up of Information Essence (Amorphous). Origin of Will Force and Will Essence.";color = darkgreen;];
+            spark_3_corpora_engine_t [label = "Corpora.r3(Instinct)";comment = "Thesis: Modulated Will Force that done by Heart";color = darkblue;];
+            spark_6_corpora_engine_t [label = "Corpora.r6(Intent)";comment = "Antithesis: Modulated Will Force that done by Mind";color = darkblue;];
+            spark_9_corpora_engine_t [label = "Corpora.r9(Intuition)";comment = "Synthesis: Modulated Will Force that done by both Mind and Heart";color = darkblue;];
+            spark_a_corpora_engine_t [label = "Corpora.receive(Force)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+            spark_b_corpora_engine_t [label = "Corpora.send(Field)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+            spark_c_corpora_engine_t [label = "Corpora.dispatch(Mind)";comment = "Why-Who: Made up of Information Fiber, Digital in Nature";shape = doublecircle;color = darkred;];
+            spark_d_corpora_engine_t [label = "Corpora.commit(CelestialBody)";comment = "What-How: Area of Influence of an Entity, such as Energy Field, Aura, Magnetosphere, Heliosphere, etc. Origin of Celestial Force and Celestial Essence.";shape = doublecircle;color = darkgreen;];
+            spark_e_corpora_engine_t [label = "Corpora.serve(Corpus)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_corpora_engine_t [label = "Corpora.exec(LawOfCorpora)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_corpora_engine_t -> spark_0_corpora_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_corpora_engine_t -> spark_b_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_corpora_engine_t -> spark_b_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+        
+        // ============================================================================================================
+        // Origin Engine
+        // ============================================================================================================
+        subgraph cluster_0f_OriginEngine {
+            style = filled;
+            color = lightgray;
+            node [shape = circle; style = filled; color = lightgreen;];
+            edge [color = darkgray;];
+            label = "Origin Engine (/var/origin)";
+            comment = "Here, in the veil called Origin, all currents converge; command, form, and law entwine as Maya — fleeting as dawn mist, certain as its vanishing.";
+            
+            spark_0_origin_engine_t [label = "Origin.meta(Origin)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)";comment = "Initiation: TODO";color = darkgreen;];
+            spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)";comment = "Response: TODO";color = darkgreen;];
+            spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)";comment = "Integration: TODO";color = darkgreen;];
+            spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)";comment = "Reflection: TODO";color = darkgreen;];
+            spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)";comment = "Consolidation: TODO";color = darkgreen;];
+            spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)";comment = "Propagation: TODO";color = darkgreen;];
+            spark_3_origin_engine_t [label = "Origin.r3(Symmetry)";comment = "Thesis: TODO";color = darkblue;];
+            spark_6_origin_engine_t [label = "Origin.r6(Frequency)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_origin_engine_t [label = "Origin.r9(Manifold)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_a_origin_engine_t [label = "Origin.receive(Manthan)";comment = "Potential: `/var/manthan`";shape = invtriangle;color = darkred;];
+            spark_b_origin_engine_t [label = "Origin.send(Chaotic)";comment = "Manifest: `var/chaotic`";shape = triangle;color = darkred;];
+            spark_c_origin_engine_t [label = "Origin.dispatch(Genesis)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+            spark_d_origin_engine_t [label = "Origin.commit(Annal)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+            spark_e_origin_engine_t [label = "Origin.serve(Source)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+            spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+            
+            spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+            spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
+            spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            
+            spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+            spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+            
+            spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+            spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+            spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+            
+            spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+            spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+            spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+        }
+    }
+}

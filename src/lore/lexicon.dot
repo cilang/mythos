@@ -1,0 +1,209 @@
+strict digraph Lexicon {
+    // ================================================================================================================
+    // Global
+    // ================================================================================================================
+    // 
+    // Sparklet {
+    // Spark.meta(), // Backend or Kernel
+    // Spark.r{1,2,4,8,7,5}(), // Mechanical Vortex akin to (Initiation <-> Response <-> Integration <-> Reflection <-> Consolidation <-> Propagation <-> Initiation <->)
+    // Spark.r{3,6,9}(), // Cognitive Vortex akin to (Thesis <-> Antithesis <-> Synthesis <-> Thesis <->)
+    // Spark.{receive, send}(), // I/O Port
+    // Spark.{dispatch, commit, serve}(), // Router
+    // Spark.exec() // Frontend
+    // }
+    
+    node [shape = circle; style = filled; color = lightgreen;];
+    splines = true;
+    compound = true;
+    nodesep = 0.75;
+    ranksep = 1.0;
+    
+    // ================================================================================================================
+    // MythOS
+    // ================================================================================================================
+    subgraph cluster_MythOSLexicon {
+        style = filled;
+        color = lightgray;
+        node [shape = circle; style = filled; color = lightgreen;];
+        edge [color = darkgray;];
+        label = "MythOS Lexicon";
+        comment = "Adjective";
+        
+        spark_0_lexicon_t [label = "Lexicon.meta(Lexicon)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+        spark_1_lexicon_t [label = "Lexicon.r1(TheEquilibrium)";comment = "Initiation: Al-Adl (The Just), Al-Muqsit (The Equitable), Al-Haqq (The Truth)";color = darkgreen;];
+        spark_2_lexicon_t [label = "Lexicon.r2(TheUnity)";comment = "Response: Al-Wadud (The Loving), Al-Wali (The Protecting Friend), Al-Jami (The Gatherer).";color = darkgreen;];
+        spark_4_lexicon_t [label = "Lexicon.r4()";comment = "Integration: TODO";color = darkgreen;];
+        spark_8_lexicon_t [label = "Lexicon.r8(TheOmniscience)";comment = "Reflection: Al-Alim (The All-Knowing), Al-Khabir (The All-Aware), As-Sami (The All-Hearing), Al-Basir (The All-Seeing).";color = darkgreen;];
+        spark_7_lexicon_t [label = "Lexicon.r7()";comment = "Consolidation: TODO";color = darkgreen;];
+        spark_5_lexicon_t [label = "Lexicon.r5()";comment = "Propagation: TODO";color = darkgreen;];
+        spark_3_lexicon_t [label = "Lexicon.r3()";comment = "Thesis: TODO";color = darkblue;];
+        spark_6_lexicon_t [label = "Lexicon.r6()";comment = "Antithesis: TODO";color = darkblue;];
+        spark_9_lexicon_t [label = "Lexicon.r9()";comment = "Synthesis: TODO";color = darkblue;];
+        spark_a_lexicon_t [label = "Lexicon.receive(TheSourceAngReturn)";comment = "Potential: Al-Awwal (The First), All-Akhir (The Last), All-Mu'id (The Restorer), Al-Ba'ith (The Resurrector)";shape = invtriangle;color = darkred;];
+        spark_b_lexicon_t [label = "Lexicon.send()";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+        spark_c_lexicon_t [label = "Lexicon.dispatch(TheSovereignWill)";comment = "Why-Who: Al-Malik (The King), Al-Jabar (The Compeller), Al-Qahar (The Subduer)";shape = doublecircle;color = darkred;];
+        spark_d_lexicon_t [label = "Lexicon.commit(TheManifestation)";comment = "What-How: Al-Kaliq (The Creator), Al-Bari (The Maker), Al-Musawwir (The Fashioner)";shape = doublecircle;color = darkgreen;];
+        spark_e_lexicon_t [label = "Lexicon.serve(TheSustenance)";comment = "When-Where: Ar-Rahman (The Most Merciful), Ar-Rahim (The Especially Merciful), Ar-Razzaq (The Provider), Al-Fattah (The Opener), Al-Wahhab (The Bestower), As-Salam (The Source of Peace).";shape = doublecircle;color = darkblue;];
+        spark_f_lexicon_t [label = "Lexicon.exec(TheClosure)";comment = "Which-Closure: Al-Muhyi (The Giver of Life), Al-Mumit (The Bringer of Death), Al-Hakam (The Judge).";shape = doublecircle;color = lightgray;];
+        
+        spark_a_lexicon_t -> spark_0_lexicon_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+        spark_0_lexicon_t -> spark_b_lexicon_t [label = "OUT"; comment = "todo"; color = darkred;];
+        spark_0_lexicon_t -> spark_3_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_lexicon_t -> spark_6_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_lexicon_t -> spark_9_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_0_lexicon_t -> spark_1_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_lexicon_t -> spark_2_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_lexicon_t -> spark_4_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_lexicon_t -> spark_8_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_lexicon_t -> spark_7_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_0_lexicon_t -> spark_5_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        
+        spark_a_lexicon_t -> spark_c_lexicon_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+        spark_b_lexicon_t -> spark_c_lexicon_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+        spark_1_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_2_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_4_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_8_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_7_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_5_lexicon_t -> spark_d_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_3_lexicon_t -> spark_e_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_6_lexicon_t -> spark_e_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        spark_9_lexicon_t -> spark_e_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+        
+        spark_1_lexicon_t -> spark_2_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_2_lexicon_t -> spark_4_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_4_lexicon_t -> spark_8_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_8_lexicon_t -> spark_7_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_7_lexicon_t -> spark_5_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_5_lexicon_t -> spark_1_lexicon_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+        spark_3_lexicon_t -> spark_6_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_6_lexicon_t -> spark_9_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_9_lexicon_t -> spark_3_lexicon_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+        spark_a_lexicon_t -> spark_b_lexicon_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+        
+        spark_c_lexicon_t -> spark_f_lexicon_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+        spark_d_lexicon_t -> spark_f_lexicon_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+        spark_e_lexicon_t -> spark_f_lexicon_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+    }
+
+    cluster_Lexicon {
+        style = filled;
+        color = lightgray;
+        node [shape = circle; style = filled; color = lightgreen;];
+        edge [color = darkgray;];
+        label = "Lexicon";
+        comment = "Adjective, Adverb";
+
+        // ============================================================================================================
+        // 20
+        // ============================================================================================================
+        subgraph cluster_20 {
+            //
+        }
+
+        // ============================================================================================================
+        // 21
+        // ============================================================================================================
+        subgraph cluster_21 {
+            //
+        }
+
+        // ============================================================================================================
+        // 22
+        // ============================================================================================================
+        subgraph cluster_22 {
+            //
+        }
+
+        // ============================================================================================================
+        // 23
+        // ============================================================================================================
+        subgraph cluster_23 {
+            //
+        }
+
+        // ============================================================================================================
+        // 24
+        // ============================================================================================================
+        subgraph cluster_24 {
+            //
+        }
+
+        // ============================================================================================================
+        // 25
+        // ============================================================================================================
+        subgraph cluster_25 {
+            //
+        }
+
+        // ============================================================================================================
+        // 26
+        // ============================================================================================================
+        subgraph cluster_26 {
+            //
+        }
+
+        // ============================================================================================================
+        // 27
+        // ============================================================================================================
+        subgraph cluster_27 {
+            //
+        }
+
+        // ============================================================================================================
+        // 28
+        // ============================================================================================================
+        subgraph cluster_28 {
+            //
+        }
+
+        // ============================================================================================================
+        // 29
+        // ============================================================================================================
+        subgraph cluster_29 {
+            //
+        }
+
+        // ============================================================================================================
+        // 2a
+        // ============================================================================================================
+        subgraph cluster_2a {
+            //
+        }
+
+        // ============================================================================================================
+        // 2b
+        // ============================================================================================================
+        subgraph cluster_2b {
+            //
+        }
+
+        // ============================================================================================================
+        // 2c
+        // ============================================================================================================
+        subgraph cluster_2c {
+            //
+        }
+
+        // ============================================================================================================
+        // 2d
+        // ============================================================================================================
+        subgraph cluster_2d {
+            //
+        }
+
+        // ============================================================================================================
+        // 2e
+        // ============================================================================================================
+        subgraph cluster_2e {
+            //
+        }
+
+        // ============================================================================================================
+        // 2f
+        // ============================================================================================================
+        subgraph cluster_2f {
+            //
+        }
+    }
+}
