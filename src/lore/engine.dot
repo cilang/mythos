@@ -592,8 +592,8 @@ strict digraph Engine {
             spark_7_capability_engine_t [label = "Capability.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
             spark_5_capability_engine_t [label = "Capability.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
             spark_3_capability_engine_t [label = "Capability.r3(CodexOfCapability)";comment = "Thesis: TODO";color = darkblue;];
-            spark_6_capability_engine_t [label = "Capability.r6(Action)";comment = "Antithesis: TODO";color = darkblue;];
-            spark_9_capability_engine_t [label = "Capability.r9(Mastery)";comment = "Synthesis: TODO";color = darkblue;];
+            spark_6_capability_engine_t [label = "Capability.r6(CodexOfAction)";comment = "Antithesis: TODO";color = darkblue;];
+            spark_9_capability_engine_t [label = "Capability.r9(CodexOfMastery)";comment = "Synthesis: TODO";color = darkblue;];
             spark_a_capability_engine_t [label = "Capability.receive(Potential)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
             spark_b_capability_engine_t [label = "Capability.send(Actuality)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
             spark_c_capability_engine_t [label = "Capability.dispatch(Effect)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];

@@ -103,7 +103,7 @@ strict digraph Model {
             node [shape = circle; style = filled; color = lightgreen;];
             edge [color = darkgray;];
             label = "Structure Model (/proc/reality/model/structure)";
-            comment = "TODO";
+            comment = "Implementation of Sparklet System for MythOS.";
             
             spark_0_structure_model_t [label = "Structure.meta(Structure)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
             spark_1_structure_model_t [label = "Structure.r1(CoreInterface)";comment = "Initiation: Fundamental Interface.";color = darkgreen;];
