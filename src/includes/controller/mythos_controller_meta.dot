@@ -1,0 +1,64 @@
+strict digraph MetaController {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Meta Controller";
+    comment = "TODO";
+    
+    spark_0_meta_t [label = "Meta.meta()";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_meta_t [label = "Meta.r1(What)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_meta_t [label = "Meta.r2(When)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_meta_t [label = "Meta.r4(How)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_meta_t [label = "Meta.r8(Why)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_meta_t [label = "Meta.r7(Where)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_meta_t [label = "Meta.r5(Who)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_meta_t [label = "Meta.r3(IN)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_meta_t [label = "Meta.r6(OUT)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_meta_t [label = "Meta.r9(REC)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_meta_t [label = "Meta.receive()";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_meta_t [label = "Meta.send()";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_meta_t [label = "Meta.dispatch()";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_meta_t [label = "Meta.commit(Which)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_meta_t [label = "Meta.serve(Relationship)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_meta_t [label = "Meta.exec()";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    
+    spark_a_meta_t -> spark_0_meta_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_meta_t -> spark_b_meta_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_meta_t -> spark_3_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_meta_t -> spark_6_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_meta_t -> spark_9_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_meta_t -> spark_1_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_meta_t -> spark_2_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_meta_t -> spark_4_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_meta_t -> spark_8_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_meta_t -> spark_7_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_meta_t -> spark_5_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    
+    spark_a_meta_t -> spark_c_meta_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_meta_t -> spark_c_meta_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_meta_t -> spark_d_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_meta_t -> spark_e_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_meta_t -> spark_e_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_meta_t -> spark_e_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    
+    spark_1_meta_t -> spark_2_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_meta_t -> spark_4_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_meta_t -> spark_8_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_meta_t -> spark_7_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_meta_t -> spark_5_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_meta_t -> spark_1_meta_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_meta_t -> spark_6_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_meta_t -> spark_9_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_meta_t -> spark_3_meta_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_meta_t -> spark_b_meta_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_meta_t -> spark_f_meta_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_meta_t -> spark_f_meta_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_meta_t -> spark_f_meta_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+}
