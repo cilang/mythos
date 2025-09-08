@@ -445,7 +445,7 @@ strict digraph Model {
             label = "Karsa Model (/proc/reality/model/karsa)";
             comment = "TODO";
             
-            spark_0_karsa_model_t [label = "Karsa.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+            spark_0_karsa_model_t [label = "Karsa.meta(Karsa)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
             spark_1_karsa_model_t [label = "Karsa.r1(Pattern)";comment = "Initiation: TODO";color = darkgreen;];
             spark_2_karsa_model_t [label = "Karsa.r2(Momentum)";comment = "Response: TODO";color = darkgreen;];
             spark_4_karsa_model_t [label = "Karsa.r4(Spatial)";comment = "Integration: TODO";color = darkgreen;];
@@ -727,7 +727,7 @@ strict digraph Model {
             spark_3_chroma_model_t [label = "Chroma.r3(ZeroChroma)";comment = "Thesis: This is color charge neutrality. The QCD 'white'/colorless state. The potential for color, not 'black'. Potential, Void, Absorption.";color = darkblue;];
             spark_6_chroma_model_t [label = "Chroma.r6(FullChroma)";comment = "Antithesis: This is the maximum additive synthesis. The pure, saturated RGB white light. The ideal subtractive 'white' (the canvas), not 'white'.Purity, Unity, Synthesis.";color = darkblue;];
             spark_9_chroma_model_t [label = "Chroma.r9(Gray)";comment = "Synthesis: This is the perceptual balance point. The midpoint between ZeroChroma and FullChroma. The result of imperfect mixing. Neutrality, Balance, Uncertainty.";color = darkblue;];
-            spark_a_chroma_model_t [label = "Chroma.receive(Gold)";comment = "Potential: The potential for all qualities. Value, Purity.";shape = invtriangle;color = darkred;];
+            spark_a_chroma_model_t [label = "Chroma.receive(Golden)";comment = "Potential: The potential for all qualities. Value, Purity.";shape = invtriangle;color = darkred;];
             spark_b_chroma_model_t [label = "Chroma.send(Silver)";comment = "Manifest: The manifested, specific quality. Reflective, expression.";shape = triangle;color = darkred;];
             spark_c_chroma_model_t [label = "Chroma.dispatch(Charge)";comment = "Why-Who: Dispatches a specific color charge. Routes to 'Obsidian' (dense, bound).";shape = doublecircle;color = darkred;];
             spark_d_chroma_model_t [label = "Chroma.commit(Pigment)";comment = "What-How: Commits a pigment to a medium (Color Theory action). Routes to 'Milky' (diffuse, scattering).";shape = doublecircle;color = darkgreen;];

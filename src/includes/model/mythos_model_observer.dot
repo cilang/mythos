@@ -6,16 +6,10 @@ strict digraph ObserverModel {
     label = "Observer Model\n(/proc/reality/model/observer)";
     comment = "TODO";
     
-    // Sangkan paraning dumadi.
-    // Nava manunggal nastiti ning tyas.
-    // Suradira jayadiningrat lebur dening pangastuti.
-    // memayu hayuning bawana
-    // manunggal kawula ning gusti.
-    // (ꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦱꦁꦏꦤ꧀ꦥꦫꦤꦶꦁꦢꦸꦩꦢꦶꦤꦮꦩꦤꦸꦁꦒꦭ꧀ꦤꦱ꧀ꦠꦶꦠꦶꦔꦶꦁꦠꦾꦱ꧀ꦯꦹꦫꦢꦶꦫꦗꦪꦢꦶꦤꦶꦁꦫꦠ꧀ꦭꦺꦧꦸꦂꦢꦺꦤꦶꦁꦥꦔꦱ꧀ꦠꦸꦠꦶꦩꦼꦩꦪꦸꦲꦪꦸꦤꦶꦁꦧꦮꦤꦩꦤꦸꦁꦒꦭ꧀ꦏꦮꦸꦭꦔꦶꦁꦒꦸꦱ꧀ꦠꦶ)
     spark_0_observer_model_t [label = "Observer.meta(Observer)";comment = "Abstract: Dumadi";shape = doublecircle;color = darkgray;];
     spark_1_observer_model_t [label = "Observer.r1(Resource)";comment = "Initiation: Harta";color = darkgreen;];
     spark_2_observer_model_t [label = "Observer.r2(Authority)";comment = "Response: Tahta";color = darkgreen;];
-    spark_4_observer_model_t [label = "Observer.r4(Relation)";comment = "Integration: Wanita (Javanese: Wani di tata)";color = darkgreen;];
+    spark_4_observer_model_t [label = "Observer.r4(Relation)";comment = "Integration: Wanita (Javanese: Wani ditata)";color = darkgreen;];
     spark_8_observer_model_t [label = "Observer.r8(Axiom)";comment = "Reflection: Agama";color = darkgreen;];
     spark_7_observer_model_t [label = "Observer.r7(Knowledge)";comment = "Consolidation: Ilmu";color = darkgreen;];
     spark_5_observer_model_t [label = "Observer.r5(Lineage)";comment = "Propagation: Keturunan";color = darkgreen;];
@@ -29,9 +23,6 @@ strict digraph ObserverModel {
     spark_e_observer_model_t [label = "Observer.serve(When|Where)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_observer_model_t [label = "Observer.exec(Which|Closure)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
-    // IN = Input
-    // OUT = Output
-    // REC = Recursion
     spark_a_observer_model_t -> spark_0_observer_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_observer_model_t -> spark_b_observer_model_t [label = "OUT"; comment = "todo"; color = darkred;];
     spark_0_observer_model_t -> spark_3_observer_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];

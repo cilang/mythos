@@ -6,7 +6,7 @@ strict digraph LineageModel {
     label = "Lineage Model (/proc/reality/model/lineage)";
     comment = "TODO";
     
-    spark_0_lineage_model_t [label = "Lineage.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_0_lineage_model_t [label = "Lineage.meta(Lineage)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_lineage_model_t [label = "Lineage.r1(WormLineage)";comment = "Initiation: People of Wisdom. The humble, soil-turning, foundational processors. They work unseen to nourish and prepare the ground for growth. (The humble healers, the gardeners of reality).";color = darkgreen;];
     spark_2_lineage_model_t [label = "Lineage.r2(InsectLineage)";comment = "Response: People of Truth. The relentless, axiomatic, hive-minded builders. They manifest order and structure. (e.g., ants, bees, but also fundamental forces that 'just work').";color = darkgreen;];
     spark_4_lineage_model_t [label = "Lineage.r4(ChimeraLineage)";comment = "Integration: People of Fixation. The stable, stubborn, enduring forms. They hold shapes and patterns against entropy. (e.g., mountains, ancient trees, but also cultural traditions).";color = darkgreen;];

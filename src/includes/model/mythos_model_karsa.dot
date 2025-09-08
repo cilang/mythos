@@ -6,13 +6,13 @@ strict digraph KarsaModel {
     label = "Karsa Model (/proc/reality/model/karsa)";
     comment = "TODO";
     
-    spark_0_karsa_model_t [label = "Karsa.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_karsa_model_t [label = "Karsa.r1(Pattern)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_karsa_model_t [label = "Karsa.r2(Momentum)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_karsa_model_t [label = "Karsa.r4(Spatial)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_karsa_model_t [label = "Karsa.r8(Rhythm)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_karsa_model_t [label = "Karsa.r7(Inertia)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_karsa_model_t [label = "Karsa.r5(Temporal)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_0_karsa_model_t [label = "Karsa.meta(Karsa)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_karsa_model_t [label = "Karsa.r1(Rhythm)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_karsa_model_t [label = "Karsa.r2(Inertia)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_karsa_model_t [label = "Karsa.r4(Temporal)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_karsa_model_t [label = "Karsa.r8(Pattern)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_karsa_model_t [label = "Karsa.r7(Momentum)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_karsa_model_t [label = "Karsa.r5(Spatial)";comment = "Propagation: TODO";color = darkgreen;];
     spark_3_karsa_model_t [label = "Karsa.r3(Birth)";comment = "Thesis: TODO";color = darkblue;];
     spark_6_karsa_model_t [label = "Karsa.r6(Death)";comment = "Antithesis: TODO";color = darkblue;];
     spark_9_karsa_model_t [label = "Karsa.r9(Life)";comment = "Synthesis: TODO";color = darkblue;];
