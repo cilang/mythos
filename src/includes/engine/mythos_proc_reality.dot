@@ -4,7 +4,7 @@ strict digraph RealityEngine {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Reality Engine (/proc/reality)";
-    comment = "The kernel beneath all becoming, still yet restless, the canvas of possibility upon which all engines inscribe their trace";
+    comment = "The kernel beneath all becoming, still yet restless, the canvas of possibility upon which all Engines inscribe their trace";
     
     spark_0_reality_engine_t [label = "Reality.meta(Reality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_reality_engine_t [label = "Reality.r1(InitFactor)";comment = "Initiation: TODO";color = darkgreen;];

@@ -1,0 +1,64 @@
+strict digraph CommitView {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Commit View";
+    comment = "A Theory of Meaning.";
+    
+    spark_0_commit_view_t [label = "Commit.meta()";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_commit_view_t [label = "Commit.r1()";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_commit_view_t [label = "Commit.r2()";comment = "Response: TODO";color = darkgreen;];
+    spark_4_commit_view_t [label = "Commit.r4()";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_commit_view_t [label = "Commit.r8()";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_commit_view_t [label = "Commit.r7()";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_commit_view_t [label = "Commit.r5()";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_commit_view_t [label = "Commit.r3()";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_commit_view_t [label = "Commit.r6()";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_commit_view_t [label = "Commit.r9()";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_commit_view_t [label = "Commit.receive()";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_commit_view_t [label = "Commit.send()";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_commit_view_t [label = "Commit.dispatch()";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_commit_view_t [label = "Commit.commit()";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_commit_view_t [label = "Commit.serve()";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_commit_view_t [label = "Commit.exec()";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    
+    spark_a_commit_view_t -> spark_0_commit_view_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_commit_view_t -> spark_b_commit_view_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_commit_view_t -> spark_3_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_commit_view_t -> spark_6_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_commit_view_t -> spark_9_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_commit_view_t -> spark_1_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_commit_view_t -> spark_2_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_commit_view_t -> spark_4_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_commit_view_t -> spark_8_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_commit_view_t -> spark_7_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_commit_view_t -> spark_5_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    
+    spark_a_commit_view_t -> spark_c_commit_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_commit_view_t -> spark_c_commit_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_commit_view_t -> spark_d_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_commit_view_t -> spark_e_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_commit_view_t -> spark_e_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_commit_view_t -> spark_e_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    
+    spark_1_commit_view_t -> spark_2_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_commit_view_t -> spark_4_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_commit_view_t -> spark_8_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_commit_view_t -> spark_7_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_commit_view_t -> spark_5_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_commit_view_t -> spark_1_commit_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_commit_view_t -> spark_6_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_commit_view_t -> spark_9_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_commit_view_t -> spark_3_commit_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_commit_view_t -> spark_b_commit_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_commit_view_t -> spark_f_commit_view_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_commit_view_t -> spark_f_commit_view_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_commit_view_t -> spark_f_commit_view_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+}

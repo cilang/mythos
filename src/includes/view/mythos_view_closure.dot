@@ -1,0 +1,64 @@
+strict digraph ClosureView {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled;];
+    edge [color = darkgray;];
+    label = "ClosureView: The Theory of Completion";
+    comment = "The Meta-View for Execution, Termination, and Realization. Governs the .exec() method.";
+    
+    spark_0_closure_view_t [label = "Closure.meta(FixedPoint)";comment = "Abstract: The abstract state of equilibrium and resolution. The concept of a final state.";shape = doublecircle;color = darkgray;];
+    spark_1_closure_view_t [label = "Closure.r1(Equivalence)";comment = "Initiation: Closure as completed relation. Formation of stable equivalence classes.";color = darkgreen;];
+    spark_2_closure_view_t [label = "Closure.r2(Entropy)";comment = "Response: Closure as the state of maximum local order/minimum unresolved potential.";color = darkgreen;];
+    spark_4_closure_view_t [label = "Closure.r4(Completeness)";comment = "Integration: Closure as logical finality. A system where all true statements are provable.";color = darkgreen;];
+    spark_8_closure_view_t [label = "Closure.r8(Identity)";comment = "Reflection: Closure as self-awareness. The system's recognition of its own final state.";color = darkgreen;];
+    spark_7_closure_view_t [label = "Closure.r7(Constraint)";comment = "Consolidation: Closure as fulfilled boundary condition. All constraints are satisfied.";color = darkgreen;];
+    spark_5_closure_view_t [label = "Closure.r5(Invariance)";comment = "Propagation: Closure as stability under transformation. The state is unchanged by further operations.";color = darkgreen;];
+    spark_3_closure_view_t [label = "Closure.r3(Thesis)";comment = "Thesis: The initial state to be resolved. The question posed.";color = darkblue;];
+    spark_6_closure_view_t [label = "Closure.r6(Antithesis)";comment = "Antithesis: The opposing force or conflicting information. The tension that demands resolution.";color = darkblue;];
+    spark_9_closure_view_t [label = "Closure.r9(Synthesis)";comment = "Synthesis: The resolved whole. The answer that transcends and contains the conflict.";color = darkblue;];
+    spark_a_closure_view_t [label = "Closure.receive(Tension)";comment = "Potential: The input of unresolved potential, a problem to be closed.";shape = invtriangle;color = darkred;];
+    spark_b_closure_view_t [label = "Closure.send(Resolution)";comment = "Manifest: The output of the resolved, closed state.";shape = triangle;color = darkred;];
+    spark_c_closure_view_t [label = "Closure.dispatch(HaltCondition)";comment = "Why-Who: Determines the criteria for termination. The 'why' we stop and 'who' (which process) is involved.";shape = doublecircle;color = darkred;];
+    spark_d_closure_view_t [label = "Closure.commit(Selection)";comment = "What-How: The act of selecting the correct resolution from possibilities ('Which').";shape = doublecircle;color = darkgreen;];
+    spark_e_closure_view_t [label = "Closure.serve(Gestalt)";comment = "When-Where: Presents the closed state as a complete, perceivable whole.";shape = doublecircle;color = darkblue;];
+    spark_f_closure_view_t [label = "Closure.exec(Realization)";comment = "Which-Closure: The final, atomic act of binding. The event of closure itself.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_closure_view_t -> spark_0_closure_view_t [label = "IN"; color = darkred; constraint = false;];
+    spark_0_closure_view_t -> spark_b_closure_view_t [label = "OUT"; color = darkred;];
+    spark_0_closure_view_t -> spark_3_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    spark_0_closure_view_t -> spark_6_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    spark_0_closure_view_t -> spark_9_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    spark_0_closure_view_t -> spark_1_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_0_closure_view_t -> spark_2_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_0_closure_view_t -> spark_4_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_0_closure_view_t -> spark_8_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_0_closure_view_t -> spark_7_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_0_closure_view_t -> spark_5_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    
+    spark_a_closure_view_t -> spark_c_closure_view_t [label = "REC"; color = darkred; dir = both;];
+    spark_b_closure_view_t -> spark_c_closure_view_t [label = "REC"; color = darkred; dir = both;];
+    spark_1_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_2_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_4_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_8_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_7_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_5_closure_view_t -> spark_d_closure_view_t [label = "REC"; color = darkgreen; dir = both;];
+    spark_3_closure_view_t -> spark_e_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    spark_6_closure_view_t -> spark_e_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    spark_9_closure_view_t -> spark_e_closure_view_t [label = "REC"; color = darkblue; dir = both;];
+    
+    spark_1_closure_view_t -> spark_2_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_2_closure_view_t -> spark_4_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_4_closure_view_t -> spark_8_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_8_closure_view_t -> spark_7_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_7_closure_view_t -> spark_5_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_5_closure_view_t -> spark_1_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_3_closure_view_t -> spark_6_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_6_closure_view_t -> spark_9_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_9_closure_view_t -> spark_3_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    spark_a_closure_view_t -> spark_b_closure_view_t [label = "REC"; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_closure_view_t -> spark_f_closure_view_t [label = "OUT"; color = darkred; dir = both;];
+    spark_d_closure_view_t -> spark_f_closure_view_t [label = "OUT"; color = darkgreen; dir = both;];
+    spark_e_closure_view_t -> spark_f_closure_view_t [label = "OUT"; color = darkblue; dir = both;];
+}
