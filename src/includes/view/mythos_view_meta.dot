@@ -16,12 +16,12 @@ strict digraph MetaView {
     spark_3_meta_view_t [label = "Meta.r3(IN)";comment = "Thesis: The fundamental principle of Potential and Reception. The beginning.";color = darkblue;];
     spark_6_meta_view_t [label = "Meta.r6(OUT)";comment = "Antithesis: The fundamental principle of Manifestation and Emission. The end.";color = darkblue;];
     spark_9_meta_view_t [label = "Meta.r9(REC)";comment = "Synthesis: The fundamental principle of Relationship and Recursion. The cycle that binds IN to OUT.";color = darkblue;];
-    spark_a_meta_view_t [label = "Meta.receive(Potential)";comment = "Potential: The undifferentiated source of all possible patterns and questions.";shape = invtriangle;color = darkred;];
-    spark_b_meta_view_t [label = "Meta.send(Manifest)";comment = "Manifest: The emission of a fully resolved and defined pattern, ready for execution.";shape = triangle;color = darkred;];
+    spark_a_meta_view_t [label = "Meta.receive(Whence)";comment = "Potential: The undifferentiated source of all possible patterns and questions.";shape = invtriangle;color = darkred;];
+    spark_b_meta_view_t [label = "Meta.send(Whither)";comment = "Manifest: The emission of a fully resolved and defined pattern, ready for execution.";shape = triangle;color = darkred;];
     spark_c_meta_view_t [label = "Meta.dispatch(Context)";comment = "Why-Who: Determines the contextual framework for processing the potential.";shape = doublecircle;color = darkred;];
     spark_d_meta_view_t [label = "Meta.commit(Which)";comment = "What-How: The act of selection and commitment. Resolves 'Which specific answer to the 6W questions?'";shape = doublecircle;color = darkgreen;];
     spark_e_meta_view_t [label = "Meta.serve(Relationship)";comment = "When-Where: Serves the web of Relationships between all concepts (IN/OUT, the 6Ws).";shape = doublecircle;color = darkblue;];
-    spark_f_meta_view_t [label = "Meta.exec(Closure)";comment = "Which-Closure: The final binding of a pattern into a manifest, executable unit of reality.";shape = doublecircle;color = lightgray;];
+    spark_f_meta_view_t [label = "Meta.exec(Whether)";comment = "Which-Closure: The final binding of a pattern into a manifest, executable unit of reality.";shape = doublecircle;color = lightgray;];
     
     spark_a_meta_view_t -> spark_0_meta_view_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_meta_view_t -> spark_b_meta_view_t [label = "OUT"; comment = "todo"; color = darkred;];
