@@ -1,0 +1,64 @@
+strict digraph MythOS_Model {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "MythOS Model";
+    comment = "TODO";
+    
+    spark_0_mythos_model_t [label = "Model.meta(LURDModel)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_1_mythos_model_t [label = "Model.r1(AshaModel)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_mythos_model_t [label = "Model.r2(VikaraModel)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_mythos_model_t [label = "Model.r4(KarsaModel)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_mythos_model_t [label = "Model.r8(VidyaModel)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_mythos_model_t [label = "Model.r7(RasaModel)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_mythos_model_t [label = "Model.r5(EmergenceModel)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_3_mythos_model_t [label = "Model.r3(AlignmentModel)";comment = "Thesis: TODO";color = darkblue;];
+    spark_6_mythos_model_t [label = "Model.r6(SpectralModel)";comment = "Antithesis: TODO";color = darkblue;];
+    spark_9_mythos_model_t [label = "Model.r9(ChromaModel)";comment = "Synthesis: TODO";color = darkblue;];
+    spark_a_mythos_model_t [label = "Model.receive(DynamisModel)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
+    spark_b_mythos_model_t [label = "Model.send(PraxisModel)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
+    spark_c_mythos_model_t [label = "Model.dispatch(KratosModel)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_d_mythos_model_t [label = "Model.commit(ObserverModel)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_e_mythos_model_t [label = "Model.serve(StructureModel)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_mythos_model_t [label = "Model.exec(LineageModel)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    
+    spark_a_mythos_model_t -> spark_0_mythos_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_mythos_model_t -> spark_b_mythos_model_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_mythos_model_t -> spark_3_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_mythos_model_t -> spark_6_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_mythos_model_t -> spark_9_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_mythos_model_t -> spark_1_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_mythos_model_t -> spark_2_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_mythos_model_t -> spark_4_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_mythos_model_t -> spark_8_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_mythos_model_t -> spark_7_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_mythos_model_t -> spark_5_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    
+    spark_a_mythos_model_t -> spark_c_mythos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_mythos_model_t -> spark_c_mythos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_mythos_model_t -> spark_d_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_mythos_model_t -> spark_e_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_mythos_model_t -> spark_e_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_mythos_model_t -> spark_e_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    
+    spark_1_mythos_model_t -> spark_2_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_mythos_model_t -> spark_4_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_mythos_model_t -> spark_8_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_mythos_model_t -> spark_7_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_mythos_model_t -> spark_5_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_mythos_model_t -> spark_1_mythos_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_mythos_model_t -> spark_6_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_mythos_model_t -> spark_9_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_mythos_model_t -> spark_3_mythos_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_mythos_model_t -> spark_b_mythos_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_mythos_model_t -> spark_f_mythos_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_mythos_model_t -> spark_f_mythos_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_mythos_model_t -> spark_f_mythos_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+}
