@@ -1,4 +1,4 @@
-strict digraph MythOS_te_theoreticalEquivalence {
+strict digraph MythOS_TheoreticalEquivalence {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
