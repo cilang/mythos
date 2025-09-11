@@ -3,7 +3,7 @@ strict digraph PraxisModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Praxis Model (/proc/reality/model/praxis)";
+    label = "Praxis Model (/proc/model/praxis)";
     comment = "This is the How. The model of practical application, technique, and skill.";
     
     spark_0_praxis_model_t [label = "Praxis.meta(Praxis)";comment = "Abstract: The fundamental nature of applied power.";shape = doublecircle;color = darkgray;];

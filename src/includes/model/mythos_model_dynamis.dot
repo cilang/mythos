@@ -3,7 +3,7 @@ strict digraph DynamisModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Dynamis Model (/proc/reality/model/dynamis)";
+    label = "Dynamis Model (/proc/model/dynamis)";
     comment = "TODO";
     
     spark_0_dynamis_model_t [label = "Dynamis.meta(Dynamis)";comment = "Abstract: The fundamental nature of energetic resources.";shape = doublecircle;color = darkgray;];

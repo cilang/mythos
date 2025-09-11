@@ -3,7 +3,7 @@ strict digraph LURDModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "LURD (Layered Universal Recursion Descriptor) Model (/proc/reality/model/lurd)";
+    label = "LURD (Layered Universal Recursion Descriptor) Model (/proc/model/lurd)";
     comment = "TODO";
     
     spark_0_lurd_model_t [label = "LURD.meta(MetaDescriptor)";comment = "Abstract: LURD-0, the World of Meta.";shape = doublecircle;color = darkgray;];

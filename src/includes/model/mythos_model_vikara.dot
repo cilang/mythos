@@ -3,7 +3,7 @@ strict digraph VikaraModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Vikara Model (/proc/reality/model/vikara)";
+    label = "Vikara Model (/proc/model/vikara)";
     comment = "TODO";
     
     spark_0_vikara_model_t [label = "Vikara.meta(Vikara)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

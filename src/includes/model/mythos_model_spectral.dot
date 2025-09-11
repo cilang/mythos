@@ -3,7 +3,7 @@ strict digraph SpectralModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Spectral Model (/proc/reality/model/spectral)";
+    label = "Spectral Model (/proc/model/spectral)";
     comment = "TODO";
     
     spark_0_spectral_model_t [label = "Spectral.meta(Spectral)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

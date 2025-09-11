@@ -3,7 +3,7 @@ strict digraph RasaModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Rasa Model (/proc/reality/model/rasa)";
+    label = "Rasa Model (/proc/model/rasa)";
     comment = "TODO";
     
     spark_0_rasa_model_t [label = "Rasa.meta(Rasa)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

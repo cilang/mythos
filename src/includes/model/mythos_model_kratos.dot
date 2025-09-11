@@ -3,7 +3,7 @@ strict digraph KratosModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Kratos Model (/proc/reality/model/kratos)";
+    label = "Kratos Model (/proc/model/kratos)";
     comment = "TODO";
     
     spark_0_kratos_model_t [label = "Kratos.meta(Kratos)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

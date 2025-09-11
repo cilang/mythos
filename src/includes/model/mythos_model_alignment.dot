@@ -3,7 +3,7 @@ strict digraph AlignmentModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Alignment Model (/proc/reality/model/alignment)";
+    label = "Alignment Model (/proc/model/alignment)";
     comment = "TODO";
     
     spark_0_alignment_model_t [label = "Alignment.meta(Alignment)";comment = "Abstract: Raw potential (unformatted).";shape = doublecircle;color = darkgray;];

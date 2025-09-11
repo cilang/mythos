@@ -6,7 +6,7 @@ strict digraph MythOS_Model {
     label = "MythOS Model";
     comment = "TODO";
     
-    spark_0_mythos_model_t [label = "Model.meta(LURDModel)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_0_mythos_model_t [label = "Model.meta(StructureModel)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_mythos_model_t [label = "Model.r1(AshaModel)";comment = "Initiation: TODO";color = darkgreen;];
     spark_2_mythos_model_t [label = "Model.r2(VikaraModel)";comment = "Response: TODO";color = darkgreen;];
     spark_4_mythos_model_t [label = "Model.r4(KarsaModel)";comment = "Integration: TODO";color = darkgreen;];
@@ -20,8 +20,8 @@ strict digraph MythOS_Model {
     spark_b_mythos_model_t [label = "Model.send(PraxisModel)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
     spark_c_mythos_model_t [label = "Model.dispatch(KratosModel)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
     spark_d_mythos_model_t [label = "Model.commit(ObserverModel)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_mythos_model_t [label = "Model.serve(StructureModel)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_mythos_model_t [label = "Model.exec(LineageModel)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    spark_e_mythos_model_t [label = "Model.serve(LineageModel)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
+    spark_f_mythos_model_t [label = "Model.exec(LURDModel)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
     spark_a_mythos_model_t -> spark_0_mythos_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_mythos_model_t -> spark_b_mythos_model_t [label = "OUT"; comment = "todo"; color = darkred;];

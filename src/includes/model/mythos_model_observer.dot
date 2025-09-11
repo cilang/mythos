@@ -3,7 +3,7 @@ strict digraph ObserverModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Observer Model\n(/proc/reality/model/observer)";
+    label = "Observer Model (/proc/model/observer)";
     comment = "TODO";
     
     spark_0_observer_model_t [label = "Observer.meta(Observer)";comment = "Abstract: Dumadi";shape = doublecircle;color = darkgray;];

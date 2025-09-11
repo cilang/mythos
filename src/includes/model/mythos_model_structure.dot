@@ -3,7 +3,7 @@ strict digraph StructureModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Structure Model (/proc/reality/model/structure)";
+    label = "Structure Model (/proc/model/structure)";
     comment = "TODO";
     
     spark_0_structure_model_t [label = "Structure.meta(Structure)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

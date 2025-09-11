@@ -3,7 +3,7 @@ strict digraph EmergenceModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Emergence Model (/proc/reality/model/emergence)";
+    label = "Emergence Model (/proc/model/emergence)";
     comment = "TODO";
     
     spark_0_emergence_model_t [label = "Emergence.meta(Emergence)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

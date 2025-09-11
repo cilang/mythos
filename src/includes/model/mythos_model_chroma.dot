@@ -3,7 +3,7 @@ strict digraph ChromaModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Chroma Model (/proc/reality/model/chroma)";
+    label = "Chroma Model (/proc/model/chroma)";
     comment = "TODO";
     
     spark_0_chroma_model_t [label = "Chroma.meta(Chroma)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

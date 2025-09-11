@@ -3,7 +3,7 @@ strict digraph AshaModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Asha Model (/proc/reality/model/asha)";
+    label = "Asha Model (/proc/model/asha)";
     comment = "TODO";
     
     spark_0_asha_model_t [label = "Asha.meta(Asha)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

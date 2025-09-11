@@ -3,7 +3,7 @@ strict digraph VidyaModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Vidya Model\n(/proc/reality/model/vidya)";
+    label = "Vidya Model (/proc/model/vidya)";
     comment = "TODO";
     
     spark_0_vidya_model_t [label = "Vidya.meta(Vidya)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
