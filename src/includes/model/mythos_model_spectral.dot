@@ -18,7 +18,7 @@ strict digraph SpectralModel {
     spark_9_spectral_model_t [label = "Spectral.r9(Quanta)";comment = "Synthesis: Discrete unit of existence. Bridge between Mass and Energy.";color = darkblue;];
     spark_a_spectral_model_t [label = "Spectral.receive(Oscillation)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
     spark_b_spectral_model_t [label = "Spectral.send(Interference)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_spectral_model_t [label = "Spectral.dispatch(Resonance)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_c_spectral_model_t [label = "Spectral.dispatch(Transition)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
     spark_d_spectral_model_t [label = "Spectral.commit(StateChange)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
     spark_e_spectral_model_t [label = "Spectral.serve(Emission)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_spectral_model_t [label = "Spectral.exec(Spectrum)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];

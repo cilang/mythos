@@ -6,7 +6,7 @@ strict digraph VikaraModel {
     label = "Vikara Model (/proc/reality/model/vikara)";
     comment = "TODO";
     
-    spark_0_vikara_model_t [label = "Vikara.meta(todo)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
+    spark_0_vikara_model_t [label = "Vikara.meta(Vikara)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_vikara_model_t [label = "Vikara.r1(Availability)";comment = "Initiation: TODO";color = darkgreen;];
     spark_2_vikara_model_t [label = "Vikara.r2(Chaos)";comment = "Response: TODO";color = darkgreen;];
     spark_4_vikara_model_t [label = "Vikara.r4(Destruction)";comment = "Integration: TODO";color = darkgreen;];
@@ -19,7 +19,7 @@ strict digraph VikaraModel {
     spark_a_vikara_model_t [label = "Vikara.receive(Divergence)";comment = "Potential: The infinite field of possibilities.";shape = invtriangle;color = darkred;];
     spark_b_vikara_model_t [label = "Vikara.send(Convergence)";comment = "Manifest: The collapsed, actualized outcome.";shape = triangle;color = darkred;];
     spark_c_vikara_model_t [label = "Vikara.dispatch(Catalysis)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_vikara_model_t [label = "Vikara.commit(Contract)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
+    spark_d_vikara_model_t [label = "Vikara.commit(Oath)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
     spark_e_vikara_model_t [label = "Vikara.serve(Providence)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_vikara_model_t [label = "Vikara.exec(Variability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
