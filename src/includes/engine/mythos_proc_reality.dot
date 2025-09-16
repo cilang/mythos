@@ -7,12 +7,12 @@ strict digraph RealityEngine {
     comment = "The kernel beneath all becoming, still yet restless, the canvas of possibility upon which all Engines inscribe their trace";
     
     spark_0_reality_engine_t [label = "Reality.meta(Reality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_reality_engine_t [label = "Reality.r1(InitFactor)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_reality_engine_t [label = "Reality.r2(FeedFactor)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_reality_engine_t [label = "Reality.r4(ValidateFactor)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_reality_engine_t [label = "Reality.r8(CastFactor)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_reality_engine_t [label = "Reality.r7(FinalizeFactor)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_reality_engine_t [label = "Reality.r5(PropagateFactor)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_1_reality_engine_t [label = "Reality.r1(FactorInitialization)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_reality_engine_t [label = "Reality.r2(FactorInstantiation)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_reality_engine_t [label = "Reality.r4(FactorIntegration)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_reality_engine_t [label = "Reality.r8(FactorReflection)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_reality_engine_t [label = "Reality.r7(FactorConsolidation)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_reality_engine_t [label = "Reality.r5(FactorPropagation)";comment = "Propagation: TODO";color = darkgreen;];
     spark_3_reality_engine_t [label = "Reality.r3(Knot)";comment = "Thesis: TODO";color = darkblue;];
     spark_6_reality_engine_t [label = "Reality.r6(Monad)";comment = "Antithesis: TODO";color = darkblue;];
     spark_9_reality_engine_t [label = "Reality.r9(Meaning)";comment = "Synthesis: TODO";color = darkblue;];

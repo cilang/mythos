@@ -16,9 +16,9 @@ strict digraph OriginEngine {
     spark_3_origin_engine_t [label = "Origin.r3(Symmetry)";comment = "Thesis: TODO";color = darkblue;];
     spark_6_origin_engine_t [label = "Origin.r6(Frequency)";comment = "Antithesis: TODO";color = darkblue;];
     spark_9_origin_engine_t [label = "Origin.r9(Manifold)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_origin_engine_t [label = "Origin.receive(Manthan)";comment = "Potential: `/var/manthan`";shape = invtriangle;color = darkred;];
-    spark_b_origin_engine_t [label = "Origin.send(Chaotic)";comment = "Manifest: `var/chaotic`";shape = triangle;color = darkred;];
-    spark_c_origin_engine_t [label = "Origin.dispatch(Genesis)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
+    spark_a_origin_engine_t [label = "Origin.receive(ManthanaSpace)";comment = "Potential: `/var/manthan`";shape = invtriangle;color = darkred;];
+    spark_b_origin_engine_t [label = "Origin.send(ChaoticSpace)";comment = "Manifest: `var/chaotic`";shape = triangle;color = darkred;];
+    spark_c_origin_engine_t [label = "Origin.dispatch(OriginSpace)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
     spark_d_origin_engine_t [label = "Origin.commit(Annal)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
     spark_e_origin_engine_t [label = "Origin.serve(Source)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
     spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];

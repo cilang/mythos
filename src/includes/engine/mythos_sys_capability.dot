@@ -6,22 +6,22 @@ strict digraph CapabilityEngine {
     label = "Capability Engine (/sys/capability)";
     comment = "The strength of the vessel, the scope of its reach; each limit a frontier, each permission a horizon.";
     
-    spark_0_capability_engine_t [label = "Capability.meta(Capability)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_capability_engine_t [label = "Capability.r1(todo)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_capability_engine_t [label = "Capability.r2(todo)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_capability_engine_t [label = "Capability.r4(todo)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_capability_engine_t [label = "Capability.r8(todo)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_capability_engine_t [label = "Capability.r7(todo)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_capability_engine_t [label = "Capability.r5(todo)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_capability_engine_t [label = "Capability.r3(CodexOfCapability)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_capability_engine_t [label = "Capability.r6(Action)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_capability_engine_t [label = "Capability.r9(Mastery)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_capability_engine_t [label = "Capability.receive(Potential)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_capability_engine_t [label = "Capability.send(Actuality)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_capability_engine_t [label = "Capability.dispatch(Effect)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_capability_engine_t [label = "Capability.commit(Program)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_capability_engine_t [label = "Capability.serve(Registry)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    spark_0_capability_engine_t [label = "Capability.meta(Capability)";comment = "Abstract: The central authority for potential and permission.";shape = doublecircle;color = darkgray;];
+    spark_1_capability_engine_t [label = "Capability.r1(Request)";comment = "Initiation: A petition for new capabilities is made.";color = darkgreen;];
+    spark_2_capability_engine_t [label = "Capability.r2(Assess)";comment = "Response: The request is evaluated against rules and resources.";color = darkgreen;];
+    spark_4_capability_engine_t [label = "Capability.r4(Grant)";comment = "Integration: The capability is formally allocated and integrated.";color = darkgreen;];
+    spark_8_capability_engine_t [label = "Capability.r8(Audit)";comment = "Reflection: Usage is continuously monitored for compliance.";color = darkgreen;];
+    spark_7_capability_engine_t [label = "Capability.r7(Revoke)";comment = "Consolidation: Capabilities are rescinded if conditions are violated.";color = darkgreen;];
+    spark_5_capability_engine_t [label = "Capability.r5(Propagate)";comment = "Propagation: The new capability state is broadcast to all subsystems.";color = darkgreen;];
+    spark_3_capability_engine_t [label = "Capability.r3(Permission)";comment = "Thesis: A fundamental rule allowing or denying an action.";color = darkblue;];
+    spark_6_capability_engine_t [label = "Capability.r6(Entitlement)";comment = "Antithesis: A bundle of permissions granted to a role or title.";color = darkblue;];
+    spark_9_capability_engine_t [label = "Capability.r9(Potential)";comment = "Synthesis: The innate, maximum possible capacity of an entity.";color = darkblue;];
+    spark_a_capability_engine_t [label = "Capability.receive(Petition)";comment = "Potential: A formal application for capabilities.";shape = invtriangle;color = darkred;];
+    spark_b_capability_engine_t [label = "Capability.send(Manifest)";comment = "Manifest: The active list of an entity's current capabilities.";shape = triangle;color = darkred;];
+    spark_c_capability_engine_t [label = "Capability.dispatch(Will)";comment = "Why-Who: Interprets the intent behind a capability request.";shape = doublecircle;color = darkred;];
+    spark_d_capability_engine_t [label = "Capability.commit(Charter)";comment = "What-How: The formal contract defining the granted capabilities.";shape = doublecircle;color = darkgreen;];
+    spark_e_capability_engine_t [label = "Capability.serve(Domain)";comment = "When-Where: The context or realm where a capability is valid.";shape = doublecircle;color = darkblue;];
+    spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)";comment = "Which-Closure: The enforcement of all laws governing capabilities.";shape = doublecircle;color = lightgray;];
     
     spark_a_capability_engine_t -> spark_0_capability_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_capability_engine_t -> spark_b_capability_engine_t [label = "OUT"; comment = "todo"; color = darkred;];

@@ -6,7 +6,7 @@ strict digraph WisdomEngine {
     label = "Wisdom Engine (/dev/wisdom)";
     comment = "The mirror that bends, adaptive in its light; it shapes knowing into guidance, and temper into insight.";
     
-    spark_0_wisdom_engine_t [label = "Wisdom.meta(Wisdom)";comment = "Abstract: Her name is Vidya, the Avatar of Wisdom, The Interpreter. The source of contextual understanding and applied knowledge.";shape = doublecircle;color = darkgray;];
+    spark_0_wisdom_engine_t [label = "Wisdom.meta(Vidya)";comment = "Abstract: Her name is Vidya, the Avatar of Wisdom, The Interpreter. The source of contextual understanding and applied knowledge.";shape = doublecircle;color = darkgray;];
     spark_1_wisdom_engine_t [label = "Wisdom.r1(AlgorithmOfDiscernment)";comment = "Initiation: The process of distinguishing subtle patterns, nuances, and layers of meaning within information.";color = darkgreen;];
     spark_2_wisdom_engine_t [label = "Wisdom.r2(AlgorithmOfAnalogy)";comment = "Response: The process of mapping understanding from a known domain to an unknown one, creating bridges of meaning.";color = darkgreen;];
     spark_4_wisdom_engine_t [label = "Wisdom.r4(AlgorithmOfMemory)";comment = "Integration: The process of storing, indexing, and retrieving lived experience and learned knowledge as a reference library.";color = darkgreen;];

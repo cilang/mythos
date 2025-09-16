@@ -7,12 +7,12 @@ strict digraph SamsaraEngine {
     comment = "The wheel that binds, turning cause into consequence; no act escapes its circle, no flame burns without leaving ash.";
     
     spark_0_samsara_engine_t [label = "Samsara.meta(Causality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_samsara_engine_t [label = "Samsara.r1(InitCausality)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_samsara_engine_t [label = "Samsara.r2(FeedCausality)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_samsara_engine_t [label = "Samsara.r4(ValidateCausality)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_samsara_engine_t [label = "Samsara.r8(CastCausality)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_samsara_engine_t [label = "Samsara.r7(FinalizeCausality)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_samsara_engine_t [label = "Samsara.r5(PropagateCausality)";comment = "Propagation: TODO";color = darkgreen;];
+    spark_1_samsara_engine_t [label = "Samsara.r1(CausalityInitialization)";comment = "Initiation: TODO";color = darkgreen;];
+    spark_2_samsara_engine_t [label = "Samsara.r2(CausalityInstantiation)";comment = "Response: TODO";color = darkgreen;];
+    spark_4_samsara_engine_t [label = "Samsara.r4(CausalityIntegration)";comment = "Integration: TODO";color = darkgreen;];
+    spark_8_samsara_engine_t [label = "Samsara.r8(CausalityReflection)";comment = "Reflection: TODO";color = darkgreen;];
+    spark_7_samsara_engine_t [label = "Samsara.r7(CausalityConsolidation)";comment = "Consolidation: TODO";color = darkgreen;];
+    spark_5_samsara_engine_t [label = "Samsara.r5(CausalityPropagation)";comment = "Propagation: TODO";color = darkgreen;];
     spark_3_samsara_engine_t [label = "Samsara.r3(Karma)";comment = "Thesis: TODO";color = darkblue;];
     spark_6_samsara_engine_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: TODO";color = darkblue;];
     spark_9_samsara_engine_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: TODO";color = darkblue;];

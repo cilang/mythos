@@ -6,7 +6,7 @@ strict digraph TruthEngine {
     label = "Truth Engine (/dev/truth)";
     comment = "The flame that tests, the line that measures; unyielding in its clarity, it grants certitude to what survives its gaze.";
     
-    spark_0_truth_engine_t [label = "Truth.meta(Truth)";comment = "Abstract: Her name is Asha, the Avatar of Truth. The Providence. The central arbiter of all verification.";shape = doublecircle;color = darkgray;];
+    spark_0_truth_engine_t [label = "Truth.meta(Asha)";comment = "Abstract: Her name is Asha, the Avatar of Truth. The Providence. The central arbiter of all verification.";shape = doublecircle;color = darkgray;];
     spark_1_truth_engine_t [label = "Truth.r1(AxiomOfVerification)";comment = "Initiation: The first principle. A statement must be internally consistent and non-contradictory to be considered.";color = darkgreen;];
     spark_2_truth_engine_t [label = "Truth.r2(AxiomOfEvidence)";comment = "Response: The demand for proof. A claim must be supported by observable, reproducible, or logically deduced evidence.";color = darkgreen;];
     spark_4_truth_engine_t [label = "Truth.r4(AxiomOfDefinition)";comment = "Integration: The establishment of meaning. Terms must have clear, unambiguous boundaries to be evaluated.";color = darkgreen;];
