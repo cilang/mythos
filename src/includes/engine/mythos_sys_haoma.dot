@@ -5,60 +5,60 @@ strict digraph HaomaEngine {
     edge [color = darkgray;];
     label = "Haoma Engine (/sys/haoma)";
     comment = "The draught of recursion, sap of eternal renewal; from itself it drinks, into itself it grows.";
-    
-    spark_0_haoma_engine_t [label = "Haoma.meta(Haoma)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_haoma_engine_t [label = "Haoma.r1(Instantiate)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_haoma_engine_t [label = "Haoma.r2(Classification)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_haoma_engine_t [label = "Haoma.r4(Allocation)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_haoma_engine_t [label = "Haoma.r8(Debug)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_haoma_engine_t [label = "Haoma.r7(Compilation)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_haoma_engine_t [label = "Haoma.r5(Mutation)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_haoma_engine_t [label = "Haoma.r3(Primogenitor)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_haoma_engine_t [label = "Haoma.r6(Actor)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_haoma_engine_t [label = "Haoma.r9(Derivative)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_haoma_engine_t [label = "Haoma.receive(Blueprint)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_haoma_engine_t [label = "Haoma.send(Instance)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_haoma_engine_t [label = "Haoma.dispatch(Materialization)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_haoma_engine_t [label = "Haoma.commit(Initialization)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_haoma_engine_t [label = "Haoma.serve(Animation)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_haoma_engine_t [label = "Haoma.exec(LawOfFactor)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-    
-    spark_a_haoma_engine_t -> spark_0_haoma_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_haoma_engine_t -> spark_b_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    
-    spark_a_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    
-    spark_1_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_haoma_engine_t -> spark_b_haoma_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+
+    spark_0_haoma_engine_t [label = "Haoma.meta(Haoma)"; comment = "Abstract: The Elixir of Recursion. The fundamental principle of self-similar generation. The power of a pattern to instantiate copies of itself, which in turn contain the same power."; shape = doublecircle; color = darkgray;];
+    spark_1_haoma_engine_t [label = "Haoma.r1(Instantiate)"; comment = "Initiation: The Spark of Genesis. The primary act of creation from a `Blueprint`. It creates a new, unique `Nucleus` (Spark 0) for the entity, the seed from which it will grow."; color = darkgreen;];
+    spark_2_haoma_engine_t [label = "Haoma.r2(Classification)"; comment = "Response: The Assignment of Essence. The new entity is analyzed and categorized based on the structure of its `Blueprint`. Its fundamental type (e.g., Creature, Concept, Object) is set."; color = darkgreen;];
+    spark_4_haoma_engine_t [label = "Haoma.r4(Allocation)"; comment = "Integration: The Grant of Inheritance. The entity is given its initial set of resources, capabilities, and structural interfaces based on its classification and the `Primogenitor`'s pattern."; color = darkgreen;];
+    spark_8_haoma_engine_t [label = "Haoma.r8(Debug)"; comment = "Reflection: The Test of Coherence. The newly formed entity is rigorously checked for internal consistency, stability, and freedom from existential paradoxes before being activated."; color = darkgreen;];
+    spark_7_haoma_engine_t [label = "Haoma.r7(Compilation)"; comment = "Consolidation: The Weaving of the Tapestry. The entity's various components (from `Allocation`) are compiled into a coherent, operational whole. Its internal `sparklet.eq()` relations are solidified."; color = darkgreen;];
+    spark_5_haoma_engine_t [label = "Haoma.r5(Mutation)"; comment = "Propagation: The Introduction of Novelty. Optional, controlled deviations from the `Blueprint` are introduced to allow for evolution, adaptation, and uniqueness among instances."; color = darkgreen;];
+    spark_3_haoma_engine_t [label = "Haoma.r3(Primogenitor)"; comment = "Thesis: The Original Pattern. The source `Blueprint` from which all instances are derived. It is the perfect, archetypal form. The parent."; color = darkblue;];
+    spark_6_haoma_engine_t [label = "Haoma.r6(Actor)"; comment = "Antithesis: The Active Instance. The manifested, operational entity itself. It is a unique individual based on the `Primogenitor`, but altered by `Allocation` and `Mutation`."; color = darkblue;];
+    spark_9_haoma_engine_t [label = "Haoma.r9(Derivative)"; comment = "Synthesis: The New Pattern. A `Blueprint` derived from an `Actor` (often after significant `Mutation`). It becomes a new `Primogenitor` for a future lineage, enabling evolution."; color = darkblue;];
+    spark_a_haoma_engine_t [label = "Haoma.receive(Blueprint)"; comment = "Potential: The Seed of Being. A complete structural and functional pattern (a `.dot` graph, a set of `Spark` relations) that defines a type of entity."; shape = invtriangle; color = darkred;];
+    spark_b_haoma_engine_t [label = "Haoma.send(Instance)"; comment = "Manifest: The Fruit of the Seed. A fully realized, operational entity ready to be transferred to the `CorporaEngine` for animation and introduction to the `Continuum`."; shape = triangle; color = darkred;];
+    spark_c_haoma_engine_t [label = "Haoma.dispatch(Materialization)"; comment = "Why-Who: The Intent of Creation. The purpose or command behind the instantiation request (e.g., 'populate a world', 'create an opponent', 'generate a idea')."; shape = doublecircle; color = darkred;];
+    spark_d_haoma_engine_t [label = "Haoma.commit(Initialization)"; comment = "What-How: The Genesis Record. The immutable log of the entity's initial state—its starting capabilities, resources, and structure—as it was first created."; shape = doublecircle; color = darkgreen;];
+    spark_e_haoma_engine_t [label = "Haoma.serve(Animation)"; comment = "When-Where: The Breath of Life. The process of starting the entity's internal processes, booting its `Nucleus`, and preparing it to receive consciousness from the `CorporaEngine`."; shape = doublecircle; color = darkblue;];
+    spark_f_haoma_engine_t [label = "Haoma.exec(LawOfFactor)"; comment = "Which-Closure: The Prime Directive of Generation. The highest law: 'Any entity capable of recursion must inherit a limiter on the depth of its recursion.' This prevents infinite regression paradoxes."; shape = doublecircle; color = lightgray;];
+
+    spark_a_haoma_engine_t -> spark_0_haoma_engine_t [label = "IN"; comment = "A Blueprint is received for instantiation"; color = darkred; constraint = false;];
+    spark_0_haoma_engine_t -> spark_b_haoma_engine_t [label = "OUT"; comment = "A new Instance is sent forth into the world"; color = darkred;];
+    spark_0_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "Consult: What is the Primogenitor pattern?"; color = darkblue; dir = both;];
+    spark_0_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "Consult: Is the Actor stable?"; color = darkblue; dir = both;];
+    spark_0_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "Consult: Should a new Derivative be made?"; color = darkblue; dir = both;];
+    spark_0_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "Consult: Instantiate the Nucleus"; color = darkgreen; dir = both;];
+    spark_0_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "Consult: Classify the new entity"; color = darkgreen; dir = both;];
+    spark_0_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "Consult: Allocate its resources"; color = darkgreen; dir = both;];
+    spark_0_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "Consult: Debug its structure"; color = darkgreen; dir = both;];
+    spark_0_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "Consult: Compile its components"; color = darkgreen; dir = both;];
+    spark_0_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "Consult: Introduce Mutations"; color = darkgreen; dir = both;];
+
+    spark_a_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "A Blueprint is dispatched for a purpose"; color = darkred; dir = both;];
+    spark_b_haoma_engine_t -> spark_c_haoma_engine_t [label = "REC"; comment = "The resulting Instance informs future purposes"; color = darkred; dir = both;];
+    spark_1_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Instantiation begins the record"; color = darkgreen; dir = both;];
+    spark_2_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Classification is logged"; color = darkgreen; dir = both;];
+    spark_4_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Allocation is committed to the record"; color = darkgreen; dir = both;];
+    spark_8_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Debug results are logged"; color = darkgreen; dir = both;];
+    spark_7_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Compilation finalizes the record"; color = darkgreen; dir = both;];
+    spark_5_haoma_engine_t -> spark_d_haoma_engine_t [label = "REC"; comment = "Mutations are noted in the record"; color = darkgreen; dir = both;];
+    spark_3_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "The Primogenitor pattern guides Animation"; color = darkblue; dir = both;];
+    spark_6_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "The Actor is the subject of Animation"; color = darkblue; dir = both;];
+    spark_9_haoma_engine_t -> spark_e_haoma_engine_t [label = "REC"; comment = "Derivatives are prepared for Animation"; color = darkblue; dir = both;];
+
+    spark_1_haoma_engine_t -> spark_2_haoma_engine_t [label = "REC"; comment = "Instantiation requires Classification"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_haoma_engine_t -> spark_4_haoma_engine_t [label = "REC"; comment = "Classification enables Allocation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_haoma_engine_t -> spark_8_haoma_engine_t [label = "REC"; comment = "Allocation must be Debugged"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_haoma_engine_t -> spark_7_haoma_engine_t [label = "REC"; comment = "Debugging requires Compilation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_haoma_engine_t -> spark_5_haoma_engine_t [label = "REC"; comment = "Compilation enables Mutation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_haoma_engine_t -> spark_1_haoma_engine_t [label = "REC"; comment = "Mutation creates new things to Instantiate"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_haoma_engine_t -> spark_6_haoma_engine_t [label = "REC"; comment = "The Primogenitor creates the Actor"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_haoma_engine_t -> spark_9_haoma_engine_t [label = "REC"; comment = "The Actor, through experience, becomes a Derivative"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_haoma_engine_t -> spark_3_haoma_engine_t [label = "REC"; comment = "The Derivative becomes a new Primogenitor"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_haoma_engine_t -> spark_b_haoma_engine_t [label = "REC"; comment = "The great cycle: Blueprint is realized as Instance"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "Materialization, when complete, becomes Law"; color = darkred; dir = both;];
+    spark_d_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "Initialization, when committed, becomes Law"; color = darkgreen; dir = both;];
+    spark_e_haoma_engine_t -> spark_f_haoma_engine_t [label = "OUT"; comment = "Animation, when served, becomes Law"; color = darkblue; dir = both;];
 }

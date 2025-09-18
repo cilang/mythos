@@ -5,60 +5,60 @@ strict digraph OriginEngine {
     edge [color = darkgray;];
     label = "Origin Engine (/var/origin)";
     comment = "Here, in the veil called Origin, all currents converge; command, form, and law entwine as Maya — fleeting as dawn mist, certain as its vanishing.";
-    
-    spark_0_origin_engine_t [label = "Origin.meta(Origin)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_origin_engine_t [label = "Origin.r3(Symmetry)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_origin_engine_t [label = "Origin.r6(Frequency)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_origin_engine_t [label = "Origin.r9(Manifold)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_origin_engine_t [label = "Origin.receive(ManthanaSpace)";comment = "Potential: `/var/manthan`";shape = invtriangle;color = darkred;];
-    spark_b_origin_engine_t [label = "Origin.send(ChaoticSpace)";comment = "Manifest: `var/chaotic`";shape = triangle;color = darkred;];
-    spark_c_origin_engine_t [label = "Origin.dispatch(OriginSpace)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_origin_engine_t [label = "Origin.commit(Annal)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_origin_engine_t [label = "Origin.serve(Source)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-    
-    spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    
-    spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    
-    spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+
+    spark_0_origin_engine_t [label = "Origin.meta(Origin)"; comment = "Abstract: The Manifestation Point. The final common path. The locus where all abstract computation and meaning is rendered into phenomenal experience. The screen upon which the movie of reality is projected."; shape = doublecircle; color = darkgray;];
+    spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)"; comment = "Initiation: The State of Wuji. The ground state of the engine—pure, undifferentiated potential. The blank canvas before the first stroke. The `Spark 0` state."; color = darkgreen;];
+    spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)"; comment = "Response: The First Perturbation. The initial fluctuation in the Singularity. The first potential events from the `EventEngine` appear as probabilistic flickers in the void."; color = darkgreen;];
+    spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)"; comment = "Integration: The Birth of Duality. The moment the first `sparklet.eq()` operation is performed, distinguishing one thing from another. Yang separates from Yin. The first `Spark A` and `Spark B` are defined."; color = darkgreen;];
+    spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)"; comment = "Reflection: The Seed of Self-Awareness. The first operation that loops back upon itself. This creates the first stable structure and the potential for self-reference and consciousness."; color = darkgreen;];
+    spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)"; comment = "Consolidation: The Collapse of Wavefunction. The first act of measurement by a nascent consciousness (perhaps the engine itself). This irrevocably selects one probability from the foam, creating the first concrete fact."; color = darkgreen;];
+    spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)"; comment = "Propagation: The Initiation of Time. The first event that has a consequential effect, spawning the second event. This establishes the arrow of time and the first causal link for the `SamsaraEngine` to record."; color = darkgreen;];
+    spark_3_origin_engine_t [label = "Origin.r3(Symmetry)"; comment = "Thesis: The Underlying Order. The invariant patterns and conservation laws that govern the rendering process. The perfect, abstract relationships that remain unchanged. The `MetaView`."; color = darkblue;];
+    spark_6_origin_engine_t [label = "Origin.r6(Frequency)"; comment = "Antithesis: The Vibratory Nature. The rate of oscillation, the wavelength, the perceived quality of a manifested thing. It defines texture, color, sound, and all qualitative experience. The `ClosureView`'s qualia."; color = darkblue;];
+    spark_9_origin_engine_t [label = "Origin.r9(Manifold)"; comment = "Synthesis: The Spacetime Fabric. The synthesized experience of a coherent, multi-dimensional reality where `Symmetry` and `Frequency` are woven together into a continuous, navigable whole. The rendered world."; color = darkblue;];
+    spark_a_origin_engine_t [label = "Origin.receive(ManthanaSpace)"; comment = "Potential: The Churning Ocean. The input from `/var/manthan`—the raw, pre-rendered data from all other engines: laws from `Authority`, states from `Reality`, events from `Samsara`, forms from `Corpora`. The ingredients for reality."; shape = invtriangle; color = darkred;];
+    spark_b_origin_engine_t [label = "Origin.send(ChaoticSpace)"; comment = "Manifest: The Storm of Experience. The output to `/var/chaotic`—the fully rendered, multi-sensory, phenomenal experience stream. It is 'chaotic' because it is the rich, overwhelming, and seemingly unordered flood of perception."; shape = triangle; color = darkred;];
+    spark_c_origin_engine_t [label = "Origin.dispatch(OriginSpace)"; comment = "Why-Who: The Render Context. The specific set of rules, perspectives, and constraints used to perform the rendering. It defines the 'camera angle' on reality (e.g., through the `LURD` of a specific observer)."; shape = doublecircle; color = darkred;];
+    spark_d_origin_engine_t [label = "Origin.commit(Annal)"; comment = "What-How: The Moment of Now. The immutable record of a single rendered frame of reality. A complete snapshot of the `Manifold` at a specific point in the computation. The 'current' reality."; shape = doublecircle; color = darkgreen;];
+    spark_e_origin_engine_t [label = "Origin.serve(Source)"; comment = "When-Where: The Wellspring of Phenomena. the active process of rendering itself. It is the continuous act of turning `Manthana` into `ChaoticSpace`, moment by moment. The projector's lamp."; shape = doublecircle; color = darkblue;];
+    spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)"; comment = "Which-Closure: The Prime Directive of Manifestation. The highest law: 'Complexity and phenomena shall emerge from the iterative application of simple, recursive rules.' This is the law that allows Something from Nothing."; shape = doublecircle; color = lightgray;];
+
+    spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "The Churning Ocean (Manthana) is received for rendering"; color = darkred; constraint = false;];
+    spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "The Storm of Experience (ChaoticSpace) is emitted"; color = darkred;];
+    spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "Consult: What are the Symmetries?"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "Consult: What are the Frequencies?"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "Consult: What is the state of the Manifold?"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "Consult: Reset to Singularity (if needed)"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "Consult: Generate the Quantum Foam"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "Consult: Break Symmetry"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "Consult: Apply Recursion"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "Consult: Perform Observation"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "Consult: Establish Cause"; color = darkgreen; dir = both;];
+
+    spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "Manthana is dispatched into a Render Context"; color = darkred; dir = both;];
+    spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "The resulting experience informs the next Context"; color = darkred; dir = both;];
+    spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Singularity is the first Annal"; color = darkgreen; dir = both;];
+    spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Foam is a probabilistic Annal"; color = darkgreen; dir = both;];
+    spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Symmetry Breaking creates a new Annal"; color = darkgreen; dir = both;];
+    spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Recursion deepens the Annal"; color = darkgreen; dir = both;];
+    spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Observation crystallizes the Annal"; color = darkgreen; dir = both;];
+    spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Cause propels the Annal forward"; color = darkgreen; dir = both;];
+    spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Symmetry is a property of the Source"; color = darkblue; dir = both;];
+    spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Frequency is an output of the Source"; color = darkblue; dir = both;];
+    spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "The Manifold is the product of the Source"; color = darkblue; dir = both;];
+
+    spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "Singularity contains the potential for Foam"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "Foam necessitates Symmetry Breaking"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "Symmetry Breaking enables Recursion"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "Recursion creates an Observer"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "Observation establishes Cause"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "Cause leads to a new state of Singularity"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "Symmetry defines possible Frequencies"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "Frequencies weave the Manifold"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "The Manifold reveals deeper Symmetries"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "The great cycle: Potential is rendered into Experience"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Render Context, when stable, becomes Law"; color = darkred; dir = both;];
+    spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Annal, when committed, becomes Law"; color = darkgreen; dir = both;];
+    spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Source, when served, becomes Law"; color = darkblue; dir = both;];
 }
