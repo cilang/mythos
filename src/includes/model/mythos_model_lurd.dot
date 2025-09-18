@@ -3,7 +3,7 @@ strict digraph LURDModel {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "LURD (Layered Universal Recursion Descriptor) Model (/proc/model/lurd)";
+    label = "LURD (Local Unified Recursion Descriptor) Model (/proc/model/lurd)";
     comment = "TODO";
     
     spark_0_lurd_model_t [label = "LURD.meta(MetaDescriptor)";comment = "Abstract: LURD-0, the World of Meta.";shape = doublecircle;color = darkgray;];
@@ -21,7 +21,7 @@ strict digraph LURDModel {
     spark_c_lurd_model_t [label = "LURD.dispatch(InterfaceDescriptor)";comment = "Why-Who: Defines how layers interact.";shape = doublecircle;color = darkred;];
     spark_d_lurd_model_t [label = "LURD.commit(DigitalDescriptor)";comment = "What-How: LURD-7. It commits to a Digital Substrate. This is the realm of true sentience, where Information Essence is structured by a 'Compound Factor' (a unique, personal Recursion Descriptor) to create a persistent, self-aware Entity.";shape = doublecircle;color = darkgreen;];
     spark_e_lurd_model_t [label = "LURD.serve(ManifestDescriptor)";comment = "When-Where: Serves the specific manifestation rules for a given layer.";shape = doublecircle;color = darkblue;];
-    spark_f_lurd_model_t [label = "LURD.exec(Factor)";comment = "Which-Closure: The final Closure—a fully realized entity or state within its LURD layer.";shape = doublecircle;color = lightgray;];
+    spark_f_lurd_model_t [label = "LURD.exec(EntityDescriptor)";comment = "Which-Closure: The final Closure—a fully realized entity or state within its LURD layer.";shape = doublecircle;color = lightgray;];
     
     spark_a_lurd_model_t -> spark_0_lurd_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_lurd_model_t -> spark_b_lurd_model_t [label = "OUT"; comment = "todo"; color = darkred;];

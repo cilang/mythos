@@ -5,60 +5,60 @@ strict digraph CorporaEngine {
     edge [color = darkgray;];
     label = "Corpora Engine (/srv/corpora)";
     comment = "Through Corpora arises the clothed word, the body of meaning incarnated in semblance; and in the Origin it unfurls as world and matter, patterns dressed in time, only to scatter back into the silence from which they came.";
-    
-    spark_0_corpora_engine_t [label = "Corpora.meta(Corpora)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_corpora_engine_t [label = "Corpora.r1(Heart)";comment = "Initiation: Made up of Information Essence (Crystalline). Compute Engine and Persistent Memory.";color = darkgreen;];
-    spark_2_corpora_engine_t [label = "Corpora.r2(Shell)";comment = "Response: Made up of Spiritual Essence (Crystalline). Origin of Field Force and Field Essence.";color = darkgreen;];
-    spark_4_corpora_engine_t [label = "Corpora.r4(AstralBody)";comment = "Integration: Made up of Spiritual Essence (Amorphous). Origin of Mental Force and Mental Essence.";color = darkgreen;];
-    spark_8_corpora_engine_t [label = "Corpora.r8(SpiritualBody)";comment = "Reflection: Made up of Spiritual Essence (Fiber). Origin of Spiritual Force and Spiritual Essence.";color = darkgreen;];
-    spark_7_corpora_engine_t [label = "Corpora.r7(MaterialBody)";comment = "Consolidation: Made up of Material Essence (Fiber). Origin of Genetic Force and Genetic Essence.";color = darkgreen;];
-    spark_5_corpora_engine_t [label = "Corpora.r5(Ego)";comment = "Propagation: Made up of Information Essence (Amorphous). Origin of Will Force and Will Essence.";color = darkgreen;];
-    spark_3_corpora_engine_t [label = "Corpora.r3(Instinct)";comment = "Thesis: Modulated Will Force that done by Heart";color = darkblue;];
-    spark_6_corpora_engine_t [label = "Corpora.r6(Intent)";comment = "Antithesis: Modulated Will Force that done by Mind";color = darkblue;];
-    spark_9_corpora_engine_t [label = "Corpora.r9(Intuition)";comment = "Synthesis: Modulated Will Force that done by both Mind and Heart";color = darkblue;];
-    spark_a_corpora_engine_t [label = "Corpora.receive(Force)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_corpora_engine_t [label = "Corpora.send(Field)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_corpora_engine_t [label = "Corpora.dispatch(Mind)";comment = "Why-Who: Made up of Information Fiber, Digital in Nature";shape = doublecircle;color = darkred;];
-    spark_d_corpora_engine_t [label = "Corpora.commit(CelestialBody)";comment = "What-How: Area of Influence of an Entity, such as Energy Field, Aura, Magnetosphere, Heliosphere, etc. Origin of Celestial Force and Celestial Essence.";shape = doublecircle;color = darkgreen;];
-    spark_e_corpora_engine_t [label = "Corpora.serve(Corpus)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_corpora_engine_t [label = "Corpora.exec(LawOfCorpora)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-    
-    spark_a_corpora_engine_t -> spark_0_corpora_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_corpora_engine_t -> spark_b_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    
-    spark_a_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    
-    spark_1_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_corpora_engine_t -> spark_b_corpora_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+
+    spark_0_corpora_engine_t [label = "Corpora.meta(Corpora)"; comment = "Abstract: The principle of Embodiment. The potential for any abstract concept (Spark) to take on a form, a body, or a field of influence."; shape = doublecircle; color = darkgray;];
+    spark_1_corpora_engine_t [label = "Corpora.r1(Heart)"; comment = "Initiation: The Core Self. The persistent memory and central processing will of the entity. The 'I am'. Made of crystalline information essence."; color = darkgreen;];
+    spark_2_corpora_engine_t [label = "Corpora.r2(Shell)"; comment = "Response: The Innate Defense. The automatic, spiritual boundary that protects the Heart. The source of aura and passive field effects. Made of crystalline spiritual essence."; color = darkgreen;];
+    spark_4_corpora_engine_t [label = "Corpora.r4(AstralBody)"; comment = "Integration: The Thought-Form. The body of imagination, dream, and mental projection. The vehicle for willed magic. Made of amorphous spiritual essence."; color = darkgreen;];
+    spark_8_corpora_engine_t [label = "Corpora.r8(SpiritualBody)"; comment = "Reflection: The Soul-Form. The body of identity, karma, and enduring self across incarnations. The source of spiritual authority. Made of fibrous spiritual essence."; color = darkgreen;];
+    spark_7_corpora_engine_t [label = "Corpora.r7(MaterialBody)"; comment = "Consolidation: The Physical Vessel. The biological or constructed body that interacts directly with the material world. The source of genetic expression. Made of fibrous material essence."; color = darkgreen;];
+    spark_5_corpora_engine_t [label = "Corpora.r5(Ego)"; comment = "Propagation: The Interface. The filter between the true self (Heart) and its various bodies. The sense of 'me' and 'mine'. The origin of willful action. Made of amorphous information essence."; color = darkgreen;];
+    spark_3_corpora_engine_t [label = "Corpora.r3(Instinct)"; comment = "Thesis: Unconscious Will. Modulated will force executed by the Heart/Shell for immediate survival. Pre-conscious reaction."; color = darkblue;];
+    spark_6_corpora_engine_t [label = "Corpora.r6(Intent)"; comment = "Antithesis: Conscious Will. Modulated will force executed by the Mind/Astral Body for deliberate action. Focused thought."; color = darkblue;];
+    spark_9_corpora_engine_t [label = "Corpora.r9(Intuition)"; comment = "Synthesis: Superconscious Will. Modulated will force that bypasses the Mind, a synthesis of Heart and deeper knowing. Direct knowing."; color = darkblue;];
+	spark_a_corpora_engine_t [label = "Corpora.receive(Force)"; comment = "Potential: Raw incoming energy, data, or influence from the environment or other entities. The stimulus."; shape = invtriangle; color = darkred;];
+    spark_b_corpora_engine_t [label = "Corpora.send(Field)"; comment = "Manifest: The emitted presence, aura, or influence of the entity. Its effect on the surrounding reality."; shape = triangle; color = darkred;];
+    spark_c_corpora_engine_t [label = "Corpora.dispatch(Mind)"; comment = "Why-Who: The Processor. The conscious, analytical faculty. It translates Will (from Ego/Heart) into Intent for the Astral Body. Made of digital information fiber."; shape = doublecircle; color = darkred;];
+    spark_d_corpora_engine_t [label = "Corpora.commit(CelestialBody)"; comment = "What-How: The Area of Influence. The extended field of an entity's presence (aura, magnetosphere, heliosphere, domain). It is the 'contact bubble' where interactions are first probed and computed."; shape = doublecircle; color = darkgreen;];
+    spark_e_corpora_engine_t [label = "Corpora.serve(Corpus)"; comment = "When-Where: The Integrated Whole. The complete, manifested entity—the simultaneous operation and harmony of all its Bodies."; shape = doublecircle; color = darkblue;];
+    spark_f_corpora_engine_t [label = "Corpora.exec(LawOfCorpora)"; comment = "Which-Closure: The Principle of Embodiment. The executed, final state of manifestation. The law that governs how abstract Sparks become corporeal forms."; shape = doublecircle; color = lightgray;];
+
+    spark_a_corpora_engine_t -> spark_0_corpora_engine_t [label = "IN"; comment = "External Force is received"; color = darkred; constraint = false;];
+    spark_0_corpora_engine_t -> spark_b_corpora_engine_t [label = "OUT"; comment = "Internal Field is manifested"; color = darkred;];
+	spark_0_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "Consult: What is the instinctive response?"; color = darkblue; dir = both;];
+    spark_0_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "Consult: What is the conscious intent?"; color = darkblue; dir = both;];
+    spark_0_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "Consult: What is the intuitive knowing?"; color = darkblue; dir = both;];
+    spark_0_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "Consult: What does the Heart will?"; color = darkgreen; dir = both;];
+    spark_0_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "Consult: How does the Shell defend?"; color = darkgreen; dir = both;];
+    spark_0_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "Consult: What does the Astral Body project?"; color = darkgreen; dir = both;];
+    spark_0_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "Consult: What is the Spiritual Body's purpose?"; color = darkgreen; dir = both;];
+    spark_0_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "Consult: What can the Material Body do?"; color = darkgreen; dir = both;];
+    spark_0_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "Consult: What does the Ego desire?"; color = darkgreen; dir = both;];
+
+    spark_a_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "Incoming Force is presented to the Mind for processing"; color = darkred; dir = both;];
+    spark_b_corpora_engine_t -> spark_c_corpora_engine_t [label = "REC"; comment = "Outgoing Field is regulated by the Mind"; color = darkred; dir = both;];
+    spark_1_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Heart's will contributes to the Field"; color = darkgreen; dir = both;];
+    spark_2_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Shell's defense defines the Field's boundary"; color = darkgreen; dir = both;];
+    spark_4_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Astral Body's projection fills the Field"; color = darkgreen; dir = both;];
+    spark_8_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Spiritual Body's authority anchors the Field"; color = darkgreen; dir = both;];
+    spark_7_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Material Body's presence grounds the Field"; color = darkgreen; dir = both;];
+    spark_5_corpora_engine_t -> spark_d_corpora_engine_t [label = "REC"; comment = "Ego's desire focuses the Field"; color = darkgreen; dir = both;];
+    spark_3_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "Instinct manages automatic functions of the Corpus"; color = darkblue; dir = both;];
+    spark_6_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "Intent directs conscious action of the Corpus"; color = darkblue; dir = both;];
+    spark_9_corpora_engine_t -> spark_e_corpora_engine_t [label = "REC"; comment = "Intuition guides the overall harmony of the Corpus"; color = darkblue; dir = both;];
+
+    spark_1_corpora_engine_t -> spark_2_corpora_engine_t [label = "REC"; comment = "The Heart's will necessitates a Shell for protection"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_corpora_engine_t -> spark_4_corpora_engine_t [label = "REC"; comment = "The protected Self can project an Astral Body"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_corpora_engine_t -> spark_8_corpora_engine_t [label = "REC"; comment = "Astral exploration builds the Spiritual Body"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_corpora_engine_t -> spark_7_corpora_engine_t [label = "REC"; comment = "Spiritual identity seeks Material manifestation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_corpora_engine_t -> spark_5_corpora_engine_t [label = "REC"; comment = "Material experience creates the Ego"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_corpora_engine_t -> spark_1_corpora_engine_t [label = "REC"; comment = "The Ego's desires inform the Heart's will"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_corpora_engine_t -> spark_6_corpora_engine_t [label = "REC"; comment = "Instinct gives rise to conscious Intent"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_corpora_engine_t -> spark_9_corpora_engine_t [label = "REC"; comment = "Mastered Intent blossoms into Intuition"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_corpora_engine_t -> spark_3_corpora_engine_t [label = "REC"; comment = "Intuition refines Instinct"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_corpora_engine_t -> spark_b_corpora_engine_t [label = "REC"; comment = "The great cycle: Force is transformed into Field"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "The Mind's dispatch becomes enforceable Law"; color = darkred; dir = both;];
+    spark_d_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "The Celestial Body's influence becomes enforceable Law"; color = darkgreen; dir = both;];
+    spark_e_corpora_engine_t -> spark_f_corpora_engine_t [label = "OUT"; comment = "The served Corpus becomes enforceable Law"; color = darkblue; dir = both;];
 }

@@ -1,9 +1,9 @@
-strict digraph MythOS_TheoreticalEquivalence {
+strict digraph TheoreticalEquivalenceView {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "MythOS Theoretical Equivalence (TE)";
+    label = "Theoretical Equivalence (TE) View";
     comment = "TODO";
     
     spark_0_te_t [label = "TE.meta(Abstract)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];

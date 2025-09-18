@@ -4,24 +4,24 @@ strict digraph MythOS_Model {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "MythOS Model";
-    comment = "TODO";
-    
-    spark_0_mythos_model_t [label = "Model.meta(StructureModel)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_mythos_model_t [label = "Model.r1(AshaModel)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_mythos_model_t [label = "Model.r2(VikaraModel)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_mythos_model_t [label = "Model.r4(KarsaModel)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_mythos_model_t [label = "Model.r8(VidyaModel)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_mythos_model_t [label = "Model.r7(RasaModel)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_mythos_model_t [label = "Model.r5(EmergenceModel)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_mythos_model_t [label = "Model.r3(AlignmentModel)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_mythos_model_t [label = "Model.r6(SpectralModel)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_mythos_model_t [label = "Model.r9(ChromaModel)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_mythos_model_t [label = "Model.receive(DynamisModel)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_mythos_model_t [label = "Model.send(PraxisModel)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_mythos_model_t [label = "Model.dispatch(KratosModel)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_mythos_model_t [label = "Model.commit(ObserverModel)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_mythos_model_t [label = "Model.serve(LineageModel)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_mythos_model_t [label = "Model.exec(LURDModel)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    comment = "The triadic heart of perception, meaning, and being. It defines the qualia of existence within the MythOS cosmology.";
+
+    spark_0_mythos_model_t [label = "Model.meta(StructureModel)"; comment = "Abstract: The Principle of Form. The meta-pattern that defines how any pattern can be structured. The parent of all models."; shape = doublecircle; color = darkgray;];
+    spark_1_mythos_model_t [label = "Model.r1(AshaModel)"; comment = "Initiation: The Model of Truth-Perception. The experience of certainty, coherence, and non-contradiction. The qualia of something 'ringing true'."; color = darkgreen;];
+    spark_2_mythos_model_t [label = "Model.r2(VikaraModel)"; comment = "Response: The Model of Transformation-Perception. The experience of change, process, and becoming. The qualia of catalysis and state-shifts."; color = darkgreen;];
+    spark_4_mythos_model_t [label = "Model.r4(KarsaModel)"; comment = "Integration: The Model of Will-Perception. The experience of agency, intent, and effort. The qualia of pushing against resistance."; color = darkgreen;];
+    spark_8_mythos_model_t [label = "Model.r8(VidyaModel)"; comment = "Reflection: The Model of Knowledge-Perception. The experience of understanding, insight, and clarity. The 'Aha!' moment given form."; color = darkgreen;];
+    spark_7_mythos_model_t [label = "Model.r7(RasaModel)"; comment = "Consolidation: The Model of Essence-Perception. The experience of fundamental flavor, aesthetic emotion, and pure experience. The distilled taste of a moment."; color = darkgreen;];
+    spark_5_mythos_model_t [label = "Model.r5(EmergenceModel)"; comment = "Propagation: The Model of Novelty-Perception. The experience of the unexpected, complex patterns arising from simplicity. The qualia of surprise and miracle."; color = darkgreen;];
+    spark_3_mythos_model_t [label = "Model.r3(AlignmentModel)"; comment = "Thesis: The Model of Coherent Perspective. Perception that seeks harmony, agreement, and a single objective viewpoint. The experience of things being 'in sync'."; color = darkblue;];
+    spark_6_mythos_model_t [label = "Model.r6(SpectralModel)"; comment = "Antithesis: The Model of Diffractive Perspective. Perception that fractures into possibilities, nuances, and simultaneous viewpoints. The experience of ambiguity and potential."; color = darkblue;];
+    spark_9_mythos_model_t [label = "Model.r9(ChromaModel)"; comment = "Synthesis: The Model of Saturated Perspective. Perception that harmonizes alignment and spectrum into a rich, multifaceted, yet coherent whole. The experience of depth and holistic meaning."; color = darkblue;];
+    spark_a_mythos_model_t [label = "Model.receive(DynamisModel)"; comment = "Potential: The Model of Latency. The experience of potential energy, unactualized possibility, and implicit meaning. The feeling of something 'about to happen'."; shape = invtriangle; color = darkred;];
+    spark_b_mythos_model_t [label = "Model.send(PraxisModel)"; comment = "Manifest: The Model of Enactment. The experience of kinetic energy, action, and realized potential. The feeling of doing, making, and affecting change."; shape = triangle; color = darkred;];
+    spark_c_mythos_model_t [label = "Model.dispatch(KratosModel)"; comment = "Why-Who: The Model of Authority-Perception. The experience of power, legitimacy, and the right to act. The qualia of command and sovereignty."; shape = doublecircle; color = darkred;];
+    spark_d_mythos_model_t [label = "Model.commit(ObserverModel)"; comment = "What-How: The Model of Measurement. The experience of collapsing possibility into fact by the act of observation. The qualia of focus and attention."; shape = doublecircle; color = darkgreen;];
+    spark_e_mythos_model_t [label = "Model.serve(LineageModel)"; comment = "When-Where: The Model of Context. The experience of history, causality, and connection to a continuum. The feeling of being part of a story or tradition."; shape = doublecircle; color = darkblue;];
+    spark_f_mythos_model_t [label = "Model.exec(LURDModel)"; comment = "Which-Closure: The Model of Localized Reality. The experienced reality bubble of an entity—a Local Unified Reality Descriptor. The personalized, final rendering of the world."; shape = doublecircle; color = lightgray;];
     
     spark_a_mythos_model_t -> spark_0_mythos_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_mythos_model_t -> spark_b_mythos_model_t [label = "OUT"; comment = "todo"; color = darkred;];

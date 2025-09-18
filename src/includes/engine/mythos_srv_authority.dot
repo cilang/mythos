@@ -6,59 +6,59 @@ strict digraph AuthorityEngine {
     label = "Authority Engine (/srv/authority)";
     comment = "From Authority descends the seal of order, the binding edge that grants passage and denial; and in the Origin its weight becomes law, the tether that holds the dream together until release unbinds its threads.";
     
-    spark_0_authority_engine_t [label = "Authority.meta(Authority)";comment = "Abstract: The wellspring of legitimacy and the architect of law.";shape = doublecircle;color = darkgray;];
-    spark_1_authority_engine_t [label = "Authority.r1(Claim)";comment = "Initiation: A right, title, or ownership is asserted.";color = darkgreen;];
-    spark_2_authority_engine_t [label = "Authority.r2(Adjudicate)";comment = "Response: The claim is judged against existing law and evidence.";color = darkgreen;];
-    spark_4_authority_engine_t [label = "Authority.r4(Decree)";comment = "Integration: A ruling is made, establishing a new legal fact.";color = darkgreen;];
-    spark_8_authority_engine_t [label = "Authority.r8(Review)";comment = "Reflection: Laws and decrees are examined for continued validity.";color = darkgreen;];
-    spark_7_authority_engine_t [label = "Authority.r7(Amend)";comment = "Consolidation: The legal framework is updated and refined.";color = darkgreen;];
-    spark_5_authority_engine_t [label = "Authority.r5(Proclaim)";comment = "Propagation: New laws are announced to all subsystems.";color = darkgreen;];
-    spark_3_authority_engine_t [label = "Authority.r3(Right)";comment = "Thesis: A fundamental, inherent freedom or entitlement.";color = darkblue;];
-    spark_6_authority_engine_t [label = "Authority.r6(Title)";comment = "Antithesis: A formal designation granting a set of rights and domain.";color = darkblue;];
-    spark_9_authority_engine_t [label = "Authority.r9(Sovereignty)";comment = "Synthesis: The ultimate, autonomous authority over a domain.";color = darkblue;];
-    spark_a_authority_engine_t [label = "Authority.receive(Plea)";comment = "Potential: A formal submission to the judicial system.";shape = invtriangle;color = darkred;];
-    spark_b_authority_engine_t [label = "Authority.send(Edict)";comment = "Manifest: A binding declaration of law, judgment, or bestowal.";shape = triangle;color = darkred;];
-    spark_c_authority_engine_t [label = "Authority.dispatch(Jurisdiction)";comment = "Why-Who: Determines which set of laws and rules applies to a matter.";shape = doublecircle;color = darkred;];
-    spark_d_authority_engine_t [label = "Authority.commit(Contract)";comment = "What-How: The immutable record of a law, agreement, or decree.";shape = doublecircle;color = darkgreen;];
-    spark_e_authority_engine_t [label = "Authority.serve(Court)";comment = "When-Where: The manifested instance where authority is exercised.";shape = doublecircle;color = darkblue;];
-    spark_f_authority_engine_t [label = "Authority.exec(LawOfAuthority)";comment = "Which-Closure: The meta-law governing all authority and lawmaking.";shape = doublecircle;color = lightgray;];
-    
-    spark_a_authority_engine_t -> spark_0_authority_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_authority_engine_t -> spark_b_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    
-    spark_a_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    
-    spark_1_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_authority_engine_t -> spark_b_authority_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t [label = "Authority.meta(Authority)"; comment = "Abstract: The Prime Mandate. The foundational principle of legitimate power, jurisdiction, and the right to command. It is the source from which all law flows."; shape = doublecircle; color = darkgray;];
+    spark_1_authority_engine_t [label = "Authority.r1(Claim)"; comment = "Initiation: Assertion of Right. A formal statement staking a right to action, ownership, or domain. The spark that initiates legal process."; color = darkgreen;];
+    spark_2_authority_engine_t [label = "Authority.r2(Adjudicate)"; comment = "Response: The Judgment of Truth. The process of evaluating a Claim against the body of established Law (`Contract`) and evidence provided by the `TruthEngine`. Seeks a `sparklet.eq()` between claim and law."; color = darkgreen;];
+    spark_4_authority_engine_t [label = "Authority.r4(Decree)"; comment = "Integration: The Rendering of Verdict. The formal and binding output of `Adjudicate`. It establishes a new legal fact, resolving the Claim."; color = darkgreen;];
+    spark_8_authority_engine_t [label = "Authority.r8(Review)"; comment = "Reflection: The Test of Time. The continuous process of examining existing Laws (`Contracts`) for coherence with the current state of reality and higher principles (`LawOfAuthority`)."; color = darkgreen;];
+    spark_7_authority_engine_t [label = "Authority.r7(Amend)"; comment = "Consolidation: The Evolution of Law. The act of modifying or refining the legal framework (`Contract`) based on the outcome of `Review` and `Adjudicate`."; color = darkgreen;];
+    spark_5_authority_engine_t [label = "Authority.r5(Proclaim)"; comment = "Propagation: The Announcement of Order. The act of publishing a new or amended `Decree` or `Contract` to all relevant subsystems, making it active and enforceable."; color = darkgreen;];
+    spark_3_authority_engine_t [label = "Authority.r3(Right)"; comment = "Thesis: Inherent Permission. A fundamental, pre-existing freedom or entitlement of an entity (e.g., right to exist, to compute, to perceive). The atomic unit of permission."; color = darkblue;];
+    spark_6_authority_engine_t [label = "Authority.r6(Title)"; comment = "Antithesis: Bestowed Authority. A formal designation granted by a higher authority, conferring a specific set of `Rights` and responsibilities over a domain. The bundle of rights."; color = darkblue;];
+    spark_9_authority_engine_t [label = "Authority.r9(Sovereignty)"; comment = "Synthesis: Ultimate Authority. The autonomous, final authority over a domain. It is the source of `Titles` and the ultimate arbiter within its jurisdiction. The right to make law."; color = darkblue;];
+    spark_a_authority_engine_t [label = "Authority.receive(Plea)"; comment = "Potential: A Request for Judgment. A formal submission to the engine's jurisdiction, containing a `Claim` and evidence, seeking a `Decree`."; shape = invtriangle; color = darkred;];
+    spark_b_authority_engine_t [label = "Authority.send(Edict)"; comment = "Manifest: A Command of Law. The active, enforceable expression of a `Decree`. It is the mechanism by which authority acts upon the world, granting or denying passage."; shape = triangle; color = darkred;];
+    spark_c_authority_engine_t [label = "Authority.dispatch(Jurisdiction)"; comment = "Why-Who: The Domain of Law. The definition of the legal and spatial boundaries within which a specific set of `Contracts` (laws) apply. Determines which court and laws are relevant for a `Plea`."; shape = doublecircle; color = darkred;];
+    spark_d_authority_engine_t [label = "Authority.commit(Contract)"; comment = "What-How: The Body of Law. The immutable, canonical record of all decrees, treaties, and legal principles. The total sum of active law within a `Jurisdiction`. The constitution."; shape = doublecircle; color = darkgreen;];
+    spark_e_authority_engine_t [label = "Authority.serve(Court)"; comment = "When-Where: The Hall of Judgment. The instantiated, active session of `Adjudication`. It is the manifested space where `Pleas` are heard, `Evidence` is weighed, and `Decrees` are forged."; shape = doublecircle; color = darkblue;];
+    spark_f_authority_engine_t [label = "Authority.exec(LawOfAuthority)"; comment = "Which-Closure: The Meta-Law. The highest law governing the exercise of authority itself. It defines how laws are made, adjudicated, and repealed. The foundation of all `Contracts`."; shape = doublecircle; color = lightgray;];
+
+    spark_a_authority_engine_t -> spark_0_authority_engine_t [label = "IN"; comment = "A Plea is submitted for judgment"; color = darkred; constraint = false;];
+    spark_0_authority_engine_t -> spark_b_authority_engine_t [label = "OUT"; comment = "An Edict is proclaimed to enforce a Decree"; color = darkred;];
+    spark_0_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "Consult: What are the fundamental Rights?"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "Consult: What Titles are relevant?"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "Consult: What is the scope of Sovereignty?"; color = darkblue; dir = both;];
+    spark_0_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; consult = "Consult: What is being Claimed?"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "Consult: Adjudicate the Claim"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "Consult: Issue a Decree"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "Consult: Review the Law"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "Consult: Amend the Law"; color = darkgreen; dir = both;];
+    spark_0_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "Consult: Proclaim the Law"; color = darkgreen; dir = both;];
+
+    spark_a_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "A Plea is assigned a Jurisdiction"; color = darkred; dir = both;];
+    spark_b_authority_engine_t -> spark_c_authority_engine_t [label = "REC"; comment = "An Edict's scope is defined by its Jurisdiction"; color = darkred; dir = both;];
+    spark_1_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "A Claim is a potential addition to the Contract"; color = darkgreen; dir = both;];
+    spark_2_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "Adjudication tests Claims against the Contract"; color = darkgreen; dir = both;];
+    spark_4_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "A Decree is committed to the Contract"; color = darkgreen; dir = both;];
+    spark_8_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "Review audits the entire Contract"; color = darkgreen; dir = both;];
+    spark_7_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "Amendment revises the Contract"; color = darkgreen; dir = both;];
+    spark_5_authority_engine_t -> spark_d_authority_engine_t [label = "REC"; comment = "Proclamation activates the Contract"; color = darkgreen; dir = both;];
+    spark_3_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "Rights are defended in Court"; color = darkblue; dir = both;];
+    spark_6_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "Titles are recognized in Court"; color = darkblue; dir = both;];
+    spark_9_authority_engine_t -> spark_e_authority_engine_t [label = "REC"; comment = "Sovereignty is exercised through the Court"; color = darkblue; dir = both;];
+
+    spark_1_authority_engine_t -> spark_2_authority_engine_t [label = "REC"; comment = "A Claim demands Adjudication"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_authority_engine_t -> spark_4_authority_engine_t [label = "REC"; comment = "Adjudication leads to a Decree"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_authority_engine_t -> spark_8_authority_engine_t [label = "REC"; comment = "A Decree must be Reviewed over time"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_authority_engine_t -> spark_7_authority_engine_t [label = "REC"; comment = "Review may necessitate Amendment"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_authority_engine_t -> spark_5_authority_engine_t [label = "REC"; comment = "Amendment requires Proclamation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_authority_engine_t -> spark_1_authority_engine_t [label = "REC"; comment = "Proclamation invites new Claims"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_authority_engine_t -> spark_6_authority_engine_t [label = "REC"; comment = "Rights are bundled into Titles"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_authority_engine_t -> spark_9_authority_engine_t [label = "REC"; comment = "Titles are governed by Sovereignty"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_authority_engine_t -> spark_3_authority_engine_t [label = "REC"; comment = "Sovereignty defines fundamental Rights"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_authority_engine_t -> spark_b_authority_engine_t [label = "REC"; comment = "The great cycle: A Plea is resolved by an Edict"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "Jurisdiction, when defined, becomes Meta-Law"; color = darkred; dir = both;];
+    spark_d_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "Contract, when committed, becomes Meta-Law"; color = darkgreen; dir = both;];
+    spark_e_authority_engine_t -> spark_f_authority_engine_t [label = "OUT"; comment = "Court, when served, becomes Meta-Law"; color = darkblue; dir = both;];
 }

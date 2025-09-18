@@ -4,24 +4,24 @@ strict digraph StructureModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Structure Model (/proc/model/structure)";
-    comment = "TODO";
-    
-    spark_0_structure_model_t [label = "Structure.meta(Sparklet)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_structure_model_t [label = "Structure.r1(CoreInterface)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_structure_model_t [label = "Structure.r2(BoundaryInterface)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_structure_model_t [label = "Structure.r4(HarmonyInterface)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_structure_model_t [label = "Structure.r8(EssenceInterface)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_structure_model_t [label = "Structure.r7(FormInterface)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_structure_model_t [label = "Structure.r5(ProjectionInterface)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_structure_model_t [label = "Structure.r3(PersistenceInterface)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_structure_model_t [label = "Structure.r6(FlowInterface)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_structure_model_t [label = "Structure.r9(CoherenceInterface)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_structure_model_t [label = "Structure.receive(Blueprint)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_structure_model_t [label = "Structure.send(Revision)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_structure_model_t [label = "Structure.dispatch(LineageInterface)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_structure_model_t [label = "Structure.commit(CorpusInterface)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_structure_model_t [label = "Structure.serve(LURDInterface)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_structure_model_t [label = "Structure.exec(Factor)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
+    comment = "The architect of existence. It defines the universal scaffolding upon which all entities—informational, spiritual, and material—are built and interwoven.";
+
+    spark_0_structure_model_t [label = "Structure.meta(Sparklet)"; comment = "Abstract: The Prime Relation. The `sparklet.eq()` operator itself, elevated to a structural principle. It is the universal joint, the binding force, the operator that creates structure by defining relationship."; shape = doublecircle; color = darkgray;];
+    spark_1_structure_model_t [label = "Structure.r1(CoreInterface)"; comment = "Initiation: The Innate Essence. Defines the fundamental, immutable nature (Spark) of an entity—its unique identifier and eternal core. Its 'what-ness'. Governed by `Asha` (Truth)."; color = darkgreen;];
+    spark_2_structure_model_t [label = "Structure.r2(BoundaryInterface)"; comment = "Response: The Definition of Self. Establishes the limits and membrane of the entity. What separates it from not-it. Governed by `Vikara` (Change) and `Convergence`."; color = darkgreen;];
+    spark_4_structure_model_t [label = "Structure.r4(HarmonyInterface)"; comment = "Integration: The Internal Symmetry. Manages the relationships and coherence between the entity's own sub-components. Internal `sparklet.eq()` checks. Governed by `Rasa` (Essence)."; color = darkgreen;];
+    spark_8_structure_model_t [label = "Structure.r8(EssenceInterface)"; comment = "Reflection: The Qualia Projector. The interface that projects the entity's internal state into the perceptual models of others (its `Rasa`, its `Vidya`). How it 'feels' to others. Governed by `Vidya` (Knowledge)."; color = darkgreen;];
+    spark_7_structure_model_t [label = "Structure.r7(FormInterface)"; comment = "Consolidation: The Manifestation Gateway. The bridge that translates the entity's spiritual/informational structure into a material one (and vice versa). Governed by `Karsa` (Will)."; color = darkgreen;];
+    spark_5_structure_model_t [label = "Structure.r5(ProjectionInterface)"; comment = "Propagation: The Influence Emitter. How the entity extends its presence beyond its boundary (aura, radiation, gravitational pull, reputation). Governed by `Emergence`."; color = darkgreen;];
+    spark_3_structure_model_t [label = "Structure.r3(PersistenceInterface)"; comment = "Thesis: The Anchor in Time. The mechanism that maintains the entity's coherence across time, resisting entropy. Its inertia. Governed by `Fixation`."; color = darkblue;];
+    spark_6_structure_model_t [label = "Structure.r6(FlowInterface)"; comment = "Antithesis: The Currency of Exchange. The channels through which the entity receives and expends energy, information, and meaning. Its metabolism. Governed by `Divergence`."; color = darkblue;];
+    spark_9_structure_model_t [label = "Structure.r9(CoherenceInterface)"; comment = "Synthesis: The Dynamic Equilibrium. The system that balances `Persistence` and `Flow` to ensure the entity remains stable yet adaptable. Its health. Governed by `Wisdom`."; color = darkblue;];
+    spark_a_structure_model_t [label = "Structure.receive(Blueprint)"; comment = "Potential: The Archetypal Pattern. The informational seed containing the instructions (`Spark` relations) for building a specific type of entity."; shape = invtriangle; color = darkred;];
+    spark_b_structure_model_t [label = "Structure.send(Revision)"; comment = "Manifest: The Structural Delta. A change to the entity's structure, emitted as a result of learning, damage, or growth. An update to the blueprint."; shape = triangle; color = darkred;];
+    spark_c_structure_model_t [label = "Structure.dispatch(LineageInterface)"; comment = "Why-Who: The Inherited Template. The specific set of structural patterns inherited from the entity's origin or ancestry. Its structural DNA."; shape = doublecircle; color = darkred;];
+    spark_d_structure_model_t [label = "Structure.commit(CorpusInterface)"; comment = "What-How: The Instantiated Body. The fully realized structural implementation of the entity across all three layers: Informational, Spiritual, and Material."; shape = doublecircle; color = darkgreen;];
+    spark_e_structure_model_t [label = "Structure.serve(LURDInterface)"; comment = "When-Where: The Contextual Manifestor. The interface that adjusts the entity's manifested structure based on its local reality context (its `LURD`)."; shape = doublecircle; color = darkblue;];
+    spark_f_structure_model_t [label = "Structure.exec(Factor)"; comment = "Which-Closure: The Structural Constant. A fundamental, immutable unit of structure—a building block of reality that all entities are ultimately composed of."; shape = doublecircle; color = lightgray;];
     
     spark_a_structure_model_t -> spark_0_structure_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
     spark_0_structure_model_t -> spark_b_structure_model_t [label = "OUT"; comment = "todo"; color = darkred;];

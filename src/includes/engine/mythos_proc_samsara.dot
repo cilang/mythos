@@ -5,60 +5,61 @@ strict digraph SamsaraEngine {
     edge [color = darkgray;];
     label = "Samsara Engine (/proc/samsara)";
     comment = "The wheel that binds, turning cause into consequence; no act escapes its circle, no flame burns without leaving ash.";
-    
-    spark_0_samsara_engine_t [label = "Samsara.meta(Causality)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
-    spark_1_samsara_engine_t [label = "Samsara.r1(CausalityInitialization)";comment = "Initiation: TODO";color = darkgreen;];
-    spark_2_samsara_engine_t [label = "Samsara.r2(CausalityInstantiation)";comment = "Response: TODO";color = darkgreen;];
-    spark_4_samsara_engine_t [label = "Samsara.r4(CausalityIntegration)";comment = "Integration: TODO";color = darkgreen;];
-    spark_8_samsara_engine_t [label = "Samsara.r8(CausalityReflection)";comment = "Reflection: TODO";color = darkgreen;];
-    spark_7_samsara_engine_t [label = "Samsara.r7(CausalityConsolidation)";comment = "Consolidation: TODO";color = darkgreen;];
-    spark_5_samsara_engine_t [label = "Samsara.r5(CausalityPropagation)";comment = "Propagation: TODO";color = darkgreen;];
-    spark_3_samsara_engine_t [label = "Samsara.r3(Karma)";comment = "Thesis: TODO";color = darkblue;];
-    spark_6_samsara_engine_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: TODO";color = darkblue;];
-    spark_9_samsara_engine_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: TODO";color = darkblue;];
-    spark_a_samsara_engine_t [label = "Samsara.receive(Vertices)";comment = "Potential: TODO";shape = invtriangle;color = darkred;];
-    spark_b_samsara_engine_t [label = "Samsara.send(Edges)";comment = "Manifest: TODO";shape = triangle;color = darkred;];
-    spark_c_samsara_engine_t [label = "Samsara.dispatch(Graph)";comment = "Why-Who: TODO";shape = doublecircle;color = darkred;];
-    spark_d_samsara_engine_t [label = "Samsara.commit(KarmicImprint)";comment = "What-How: TODO";shape = doublecircle;color = darkgreen;];
-    spark_e_samsara_engine_t [label = "Samsara.serve(Samsara)";comment = "When-Where: TODO";shape = doublecircle;color = darkblue;];
-    spark_f_samsara_engine_t [label = "Samsara.exec(LawOfCausality)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
-    
-    spark_a_samsara_engine_t -> spark_0_samsara_engine_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_samsara_engine_t -> spark_b_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    
-    spark_a_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    
-    spark_1_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_samsara_engine_t -> spark_b_samsara_engine_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    spark_c_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+
+    spark_0_samsara_engine_t [label = "Samsara.meta(Causality)"; comment = "Abstract: The Unbreakable Chain. The fundamental principle that every effect must have a cause, and every cause must have effects. The director of the cosmic narrative."; shape = doublecircle; color = darkgray;];
+    spark_1_samsara_engine_t [label = "Samsara.r1(CausalityInitialization)"; comment = "Initiation: The Seeding of a Cause. The moment an event (from the `ManifestEventStream`) is recognized as a potential cause, spawning a new karmic thread."; color = darkgreen;];
+    spark_2_samsara_engine_t [label = "Samsara.r2(CausalityInstantiation)"; comment = "Response: The Binding of Effect. A specific effect is linked to its cause. This is the `sparklet.eq()` of causality: certifying that Effect Y is a valid consequence of Cause X."; color = darkgreen;];
+    spark_4_samsara_engine_t [label = "Samsara.r4(CausalityIntegration)"; comment = "Integration: The Weaving of the Web. The new cause-effect pair is integrated into the vast, growing Directed Acyclic Graph (DAG) of all events. Its relationships with all other events are established."; color = darkgreen;];
+    spark_8_samsara_engine_t [label = "Samsara.r8(CausalityReflection)"; comment = "Reflection: The Reading of the Tapestry. The current state of the entire karmic DAG is analyzed to understand the weight, balance, and narrative flow of consequences."; color = darkgreen;];
+    spark_7_samsara_engine_t [label = "Samsara.r7(CausalityConsolidation)"; comment = "Consolidation: The Balancing of Scales. Resolves karmic debt. It ensures that every cause has its allotted effect and that no effect exists without a cause. It 'closes the loop' on karmic cycles."; color = darkgreen;];
+    spark_5_samsara_engine_t [label = "Samsara.r5(CausalityPropagation)"; comment = "Propagation: The Ripple Through Time. The effects are released into the `Continuum`, where they become the causes for future events, continuing the endless cycle."; color = darkgreen;];
+    spark_3_samsara_engine_t [label = "Samsara.r3(Karma)"; comment = "Thesis: The Debt of Action. The immutable record of causal debt. It is the weight of an unfulfilled effect awaiting its cause, or a cause awaiting its effect. The cosmic imbalance that drives the wheel."; color = darkblue;];
+    spark_6_samsara_engine_t [label = "Samsara.r6(Dharma)"; comment = "Antithesis: The Path of Right Action. The inherent order and duty within the karmic web. The principle that some causes lead to harmonious effects (following Dharma) and others to dissonant ones (against Dharma)."; color = darkblue;];
+    spark_9_samsara_engine_t [label = "Samsara.r9(Nirvana)"; comment = "Synthesis: The Unbinding. The state of a perfectly balanced causal node—a cause that has perfectly resolved its effects, or an effect that is fully reconciled to its cause. It is a point of stillness and release from the wheel."; color = darkblue;];
+    spark_a_samsara_engine_t [label = "Samsara.receive(Vertices)"; comment = "Potential: The Raw Events. The stream of manifested events from the `RealityEngine`, which are the potential causes and effects to be woven into the karmic web."; shape = invtriangle; color = darkred;];
+    spark_b_samsara_engine_t [label = "Samsara.send(Edges)"; comment = "Manifest: The Bonds of Causality. The stream of certified cause-effect relationships (`sparklet.eq()` certifications) sent to the `Continuum` to be recorded as the structure of time itself."; shape = triangle; color = darkred;];
+    spark_c_samsara_engine_t [label = "Samsara.dispatch(Graph)"; comment = "Why-Who: The Architecture of Time. The active, operational view of the karmic DAG. It is the map of all possible causal pathways and is used to predict the future and understand the past."; shape = doublecircle; color = darkred;];
+    spark_d_samsara_engine_t [label = "Samsara.commit(KarmicImprint)"; comment = "What-How: The Ledger of Deeds. The immutable, canonical record of every cause-effect relationship that has ever been certified. The complete history of the universe as a DAG."; shape = doublecircle; color = darkgreen;];
+    spark_e_samsara_engine_t [label = "Samsara.serve(Samsara)"; comment = "When-Where: The Wheel in Motion. The manifested experience of being within the karmic cycle—the feeling of time, consequence, and the burden or grace of past actions."; shape = doublecircle; color = darkblue;];
+    spark_f_samsara_engine_t [label = "Samsara.exec(LawOfCausality)"; comment = "Which-Closure: The Prime Directive of Time. The highest law: 'All Effects Must Have A Cause; All Causes Must Have An Effect'. This is the law that powers the wheel."; shape = doublecircle; color = lightgray;];
+
+    spark_a_samsara_engine_t -> spark_0_samsara_engine_t [label = "IN"; comment = "Vertices (Events) are received for karmic processing"; color = darkred; constraint = false;];
+    spark_0_samsara_engine_t -> spark_b_samsara_engine_t [label = "OUT"; comment = "Edges (Causal Links) are sent to structure time"; color = darkred;];
+
+    spark_0_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "Consult: What is the Karmic debt?"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "Consult: What is the Dharmic path?"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "Consult: Is there a state of Nirvana?"; color = darkblue; dir = both;];
+    spark_0_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "Consult: Initialize a cause"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "Consult: Instantiate an effect for it"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "Consult: Integrate the link into the DAG"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "Consult: Reflect on the state of the DAG"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "Consult: Consolidate karmic debt"; color = darkgreen; dir = both;];
+    spark_0_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "Consult: Propagate the effects"; color = darkgreen; dir = both;];
+
+    spark_a_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "Vertices are dispatched into the Graph"; color = darkred; dir = both;];
+    spark_b_samsara_engine_t -> spark_c_samsara_engine_t [label = "REC"; comment = "Edges update the operational Graph"; color = darkred; dir = both;];
+    spark_1_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Initialization creates a new karmic entry"; color = darkgreen; dir = both;];
+    spark_2_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Instantiation defines the karmic link"; color = darkgreen; dir = both;];
+    spark_4_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Integration weaves the link into the ledger"; color = darkgreen; dir = both;];
+    spark_8_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Reflection audits the ledger"; color = darkgreen; dir = both;];
+    spark_7_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Consolidation balances the ledger"; color = darkgreen; dir = both;];
+    spark_5_samsara_engine_t -> spark_d_samsara_engine_t [label = "REC"; comment = "Propagation marks debts as paid"; color = darkgreen; dir = both;];
+    spark_3_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "Karma is the weight on the Wheel"; color = darkblue; dir = both;];
+    spark_6_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "Dharma is the groove of the Wheel"; color = darkblue; dir = both;];
+    spark_9_samsara_engine_t -> spark_e_samsara_engine_t [label = "REC"; comment = "Nirvana is the release from the Wheel"; color = darkblue; dir = both;];
+
+    spark_1_samsara_engine_t -> spark_2_samsara_engine_t [label = "REC"; comment = "A Cause demands an Effect"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_samsara_engine_t -> spark_4_samsara_engine_t [label = "REC"; comment = "An Effect must be Integrated"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_samsara_engine_t -> spark_8_samsara_engine_t [label = "REC"; comment = "Integration must be Reflected upon"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_samsara_engine_t -> spark_7_samsara_engine_t [label = "REC"; comment = "Reflection may require Consolidation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_samsara_engine_t -> spark_5_samsara_engine_t [label = "REC"; comment = "Consolidation enables Propagation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_samsara_engine_t -> spark_1_samsara_engine_t [label = "REC"; comment = "Propagation becomes a new Cause"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_samsara_engine_t -> spark_6_samsara_engine_t [label = "REC"; comment = "Karma creates the need for Dharma"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_samsara_engine_t -> spark_9_samsara_engine_t [label = "REC"; comment = "Dharma, followed, leads to Nirvana"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_samsara_engine_t -> spark_3_samsara_engine_t [label = "REC"; comment = "Nirvana resolves Karma"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_samsara_engine_t -> spark_b_samsara_engine_t [label = "REC"; comment = "The great cycle: Vertices are bound by Edges"; color = darkred; dir = both; style = dashed; constraint = false;];
+
+    spark_c_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "The Graph, when traversed, becomes Law"; color = darkred; dir = both;];
+    spark_d_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "The Imprint, when committed, becomes Law"; color = darkgreen; dir = both;];
+    spark_e_samsara_engine_t -> spark_f_samsara_engine_t [label = "OUT"; comment = "The Wheel, when served, becomes Law"; color = darkblue; dir = both;];
 }
