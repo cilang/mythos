@@ -16,11 +16,11 @@ strict digraph ChromaModel {
     spark_3_chroma_model_t [label = "Chroma.r3(ZeroChroma)";comment = "Thesis: This is color charge neutrality. The QCD 'white'/colorless state. The potential for color, not 'black'. Potential, Void, Absorption.";color = darkblue;];
     spark_6_chroma_model_t [label = "Chroma.r6(FullChroma)";comment = "Antithesis: This is the maximum additive synthesis. The pure, saturated RGB white light. The ideal subtractive 'white' (the canvas), not 'white'.Purity, Unity, Synthesis.";color = darkblue;];
     spark_9_chroma_model_t [label = "Chroma.r9(Gray)";comment = "Synthesis: This is the perceptual balance point. The midpoint between ZeroChroma and FullChroma. The result of imperfect mixing. Neutrality, Balance, Uncertainty.";color = darkblue;];
-    spark_a_chroma_model_t [label = "Chroma.receive(Gold)";comment = "Potential: The potential for all qualities. Value, Purity.";shape = invtriangle;color = darkred;];
+    spark_a_chroma_model_t [label = "Chroma.receive(Golden)";comment = "Potential: The potential for all qualities. Value, Purity.";shape = invtriangle;color = darkred;];
     spark_b_chroma_model_t [label = "Chroma.send(Silver)";comment = "Manifest: The manifested, specific quality. Reflective, expression.";shape = triangle;color = darkred;];
     spark_c_chroma_model_t [label = "Chroma.dispatch(Charge)";comment = "Why-Who: Dispatches a specific color charge. Routes to 'Obsidian' (dense, bound).";shape = doublecircle;color = darkred;];
     spark_d_chroma_model_t [label = "Chroma.commit(Pigment)";comment = "What-How: Commits a pigment to a medium (Color Theory action). Routes to 'Milky' (diffuse, scattering).";shape = doublecircle;color = darkgreen;];
-    spark_e_chroma_model_t [label = "Chroma.serve(Hue)";comment = "When-Where: Serves a perceptual hue to an observer. Amethyst(the perceptual experience of violet, the highest frequency).";shape = doublecircle;color = darkblue;];
+    spark_e_chroma_model_t [label = "Chroma.serve(HSB)";comment = "When-Where: Serves a perceptual hue, saturation, brightness to an observer. Amethyst(the perceptual experience of violet, the highest frequency).";shape = doublecircle;color = darkblue;];
     spark_f_chroma_model_t [label = "Chroma.exec(Chromatic)";comment = "Which-Closure: TODO";shape = doublecircle;color = lightgray;];
     
     spark_a_chroma_model_t -> spark_0_chroma_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
