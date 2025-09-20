@@ -1,9 +1,5 @@
 # MythOS
 
-![Image](meta/shared/nava.svg)
-
-# MythOS
-
 <a href="https://github.com/cilang/mythos/issues">
   <img src="https://img.shields.io/github/issues/cilang/mythos">
 </a>
@@ -18,6 +14,8 @@
 </a>
 <br>
 <br>
+
+![Image](src/specs/sparklet/sparklet.svg)
 
 - **MythOS** is ...
 
