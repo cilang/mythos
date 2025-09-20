@@ -1,0 +1,64 @@
+strict digraph ReceiveView {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Receive View";
+    comment = "The Sparklet of Preliminary Identification. The first light of understanding. It performs the initial quantification and qualification of raw potential, answering 'how much?' and 'what kind?' to extract its quintessence.";
+    
+    spark_0_receive_view_t [label = "Receive.meta(Quintessence)";comment = "Abstract: The concept of extracting essential characteristics from raw potential. The first gleam of meaning.";shape = doublecircle;color = darkgray;];
+    spark_1_receive_view_t [label = "Receive.r1(Scope)";comment = "Initiation: Defines the domain or set of the potential. 'Where does this apply?'";color = darkgreen;];
+    spark_2_receive_view_t [label = "Receive.r2(Amount)";comment = "Response: Specifies the quantity or proportion. 'How much is there?'";color = darkgreen;];
+    spark_4_receive_view_t [label = "Receive.r4(Property)";comment = "Integration: Identifies the core quality or attribute. 'What is its primary feature?'";color = darkgreen;];
+    spark_8_receive_view_t [label = "Receive.r8(Degree)";comment = "Reflection: Measures the intensity of the quality. 'To what extent?'";color = darkgreen;];
+    spark_7_receive_view_t [label = "Receive.r7(Modality)";comment = "Consolidation: Assesses possibility, necessity, or permission. 'Is it possible? Must it be?'";color = darkgreen;];
+    spark_5_receive_view_t [label = "Receive.r5(Aggregation)";comment = "Propagation: Determines if it is cumulative or distributed. 'Is it a total? A per-unit measure?'";color = darkgreen;];
+    spark_3_receive_view_t [label = "Receive.r3(Universal)";comment = "Thesis: The principle of totality—does this apply to all in the scope? (∀)";color = darkblue;];
+    spark_6_receive_view_t [label = "Receive.r6(Existential)";comment = "Antithesis: The principle of existence—does this apply to at least one? (∃)";color = darkblue;];
+    spark_9_receive_view_t [label = "Receive.r9(Modal)";comment = "Synthesis: The blend of possibility and actuality—what is its mode of being? (◇/□)";color = darkblue;];
+    spark_a_receive_view_t [label = "Receive.receive(RawPotential)";comment = "Potential: The unfiltered, raw input from the source (EventEngine or void).";shape = invtriangle;color = darkred;];
+    spark_b_receive_view_t [label = "Receive.send(TaggedPotential)";comment = "Manifest: The output—potential now tagged with initial quantity and quality labels.";shape = triangle;color = darkred;];
+    spark_c_receive_view_t [label = "Receive.dispatch(Filter)";comment = "Why-Who: The contextual filter that determines which qualities and quantities to look for.";shape = doublecircle;color = darkred;];
+    spark_d_receive_view_t [label = "Receive.commit(Selection)";comment = "What-How: The act of selecting and applying the specific quantifier and qualifier tags.";shape = doublecircle;color = darkgreen;];
+    spark_e_receive_view_t [label = "Receive.serve(Profile)";comment = "When-Where: Presents the initial identification as a measurable profile or signature.";shape = doublecircle;color = darkblue;];
+    spark_f_receive_view_t [label = "Receive.exec(Identification)";comment = "Which-Closure: The final act of stamping the initial identity onto the potential.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_receive_view_t -> spark_0_receive_view_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
+    spark_0_receive_view_t -> spark_b_receive_view_t [label = "OUT"; comment = "todo"; color = darkred;];
+    spark_0_receive_view_t -> spark_3_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_receive_view_t -> spark_6_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_receive_view_t -> spark_9_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_0_receive_view_t -> spark_1_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_receive_view_t -> spark_2_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_receive_view_t -> spark_4_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_receive_view_t -> spark_8_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_receive_view_t -> spark_7_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_0_receive_view_t -> spark_5_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    
+    spark_a_receive_view_t -> spark_c_receive_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_b_receive_view_t -> spark_c_receive_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
+    spark_1_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_2_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_4_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_8_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_7_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_5_receive_view_t -> spark_d_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_3_receive_view_t -> spark_e_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_6_receive_view_t -> spark_e_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_9_receive_view_t -> spark_e_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    
+    spark_1_receive_view_t -> spark_2_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_receive_view_t -> spark_4_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_receive_view_t -> spark_8_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_receive_view_t -> spark_7_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_receive_view_t -> spark_5_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_receive_view_t -> spark_1_receive_view_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_receive_view_t -> spark_6_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_receive_view_t -> spark_9_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_receive_view_t -> spark_3_receive_view_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_receive_view_t -> spark_b_receive_view_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_receive_view_t -> spark_f_receive_view_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
+    spark_d_receive_view_t -> spark_f_receive_view_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_e_receive_view_t -> spark_f_receive_view_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+}

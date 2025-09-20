@@ -1,10 +1,10 @@
-strict digraph MetaDescriptor {
+strict digraph MythOS_View {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "MythOS MetaDescriptor";
-    comment = "Adjective";
+    label = "MythOS View";
+    comment = "TODO";
     
     spark_0_view_t [label = "View.meta(MetaView)";comment = "Abstract: TODO";shape = doublecircle;color = darkgray;];
     spark_1_view_t [label = "View.r1(InitView)";comment = "Initiation: TODO";color = darkgreen;];
