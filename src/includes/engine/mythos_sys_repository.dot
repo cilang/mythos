@@ -4,61 +4,61 @@ strict digraph RepositoryEngine {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Repository Engine (/sys/repository)";
-    comment = "The keeper of echoes, where memory nests; holding fragments against the tide of forgetting.";
-
-    spark_0_repository_engine_t [label = "Repository.meta(Repository)"; comment = "Abstract: The Eternal Now. The principle of perfect persistence. The substrate that holds all information, events, and states without loss, distortion, or entropy. The Akasha."; shape = doublecircle; color = darkgray;];
-    spark_1_repository_engine_t [label = "Repository.r1(Cache)"; comment = "Initiation: The Living Present. High-speed, volatile storage for actively processed data. The working memory of the cosmos, holding the 'now'."; color = darkgreen;];
-    spark_2_repository_engine_t [label = "Repository.r2(Registry)"; comment = "Response: The Index of Being. A dynamic index of all currently active entities, their locations, and their core states. The 'phonebook' of reality."; color = darkgreen;];
-    spark_4_repository_engine_t [label = "Repository.r4(Archive)"; comment = "Integration: The Deep Past. Cold, immutable storage for completed events and retired states. The long-term memory of the cosmos. The place of records."; color = darkgreen;];
-    spark_8_repository_engine_t [label = "Repository.r8(Buffer)"; comment = "Reflection: The Antechamber of Becoming. A temporary holding area for data in transit—events being processed, states awaiting commitment. The liminal space."; color = darkgreen;];
-    spark_7_repository_engine_t [label = "Repository.r7(Database)"; comment = "Consolidation: The Structured Knowledge. A highly organized, queryable store of relational information—laws, histories, genealogies, and conceptual frameworks."; color = darkgreen;];
-    spark_5_repository_engine_t [label = "Repository.r5(Memory)"; comment = "Propagation: The Coherent Recall. The process of retrieving data from the various stores and assembling it into a coherent narrative or state for use by other engines."; color = darkgreen;];
-    spark_3_repository_engine_t [label = "Repository.r3(Codex)"; comment = "Thesis: The Canonical Version. The single, authoritative, immutable version of a truth, event, or entity state. The master copy from which all copies are derived."; color = darkblue;];
-    spark_6_repository_engine_t [label = "Repository.r6(Log)"; comment = "Antithesis: The Chronological Stream. The raw, sequential record of all events and state changes as they occurred. The unfiltered truth of history. The Arena where events are captured."; color = darkblue;];
-    spark_9_repository_engine_t [label = "Repository.r9(Template)"; comment = "Synthesis: The Potential Form. A stored blueprint or pattern (from the `HaomaEngine`) that can be used to instantiate new entities or states. The bridge between memory and creation."; color = darkblue;];
-    spark_a_repository_engine_t [label = "Repository.receive(Subscription)"; comment = "Potential: A Request to Witness. A standing query or trigger set by an engine or entity to be notified when specific data is written, updated, or matches a pattern."; shape = invtriangle; color = darkred;];
-    spark_b_repository_engine_t [label = "Repository.send(Publication)"; comment = "Manifest: The Broadcast of Truth. The emission of data that has been committed, often in response to a `Subscription`. It is the announcement of a new fact to the cosmos."; shape = triangle; color = darkred;];
-    spark_c_repository_engine_t [label = "Repository.dispatch(Query)"; comment = "Why-Who: The Seeking of Knowledge. A question posed to the repository. It can be a simple lookup, a complex historical analysis, or a search for patterns across time."; shape = doublecircle; color = darkred;];
-    spark_d_repository_engine_t [label = "Repository.commit(Transaction)"; comment = "What-How: The Atomic Truth-Event. The immutable recording of a single state change or event. This is the fundamental 'write' operation, the act of creating history."; shape = doublecircle; color = darkgreen;];
-    spark_e_repository_engine_t [label = "Repository.serve(Replication)"; comment = "When-Where: The Distribution of Truth. The process of ensuring all necessary subsystems have a consistent view of the data. It maintains coherence across the distributed system of reality."; shape = doublecircle; color = darkblue;];
-    spark_f_repository_engine_t [label = "Repository.exec(LawOfPersistence)"; comment = "Which-Closure: The Prime Directive of Memory. The highest law: 'All that occurs must be remembered; nothing that is remembered may be truly altered; only new context may be added.'"; shape = doublecircle; color = lightgray;];
-
-    spark_a_repository_engine_t -> spark_0_repository_engine_t [label = "IN"; comment = "A Subscription is received to watch for data"; color = darkred; constraint = false;];
-    spark_0_repository_engine_t -> spark_b_repository_engine_t [label = "OUT"; comment = "A Publication is broadcast to subscribers"; color = darkred;];
-    spark_0_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "Consult: What is the canonical Codex?"; color = darkblue; dir = both;];
-    spark_0_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "Consult: What does the Log say?"; color = darkblue; dir = both;];
-    spark_0_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "Consult: Is there a Template for this?"; color = darkblue; dir = both;];
-    spark_0_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "Consult: Store this in Cache"; color = darkgreen; dir = both;];
-    spark_0_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "Consult: Update the Registry"; color = darkgreen; dir = both;];
-    spark_0_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "Consult: Move this to the Archive"; color = darkgreen; dir = both;];
-    spark_0_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "Consult: Hold this in the Buffer"; color = darkgreen; dir = both;];
-    spark_0_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "Consult: Structure this in the Database"; color = darkgreen; dir = both;];
-    spark_0_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "Consult: Recall this from Memory"; color = darkgreen; dir = both;];
-
-    spark_a_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "A Subscription creates a persistent Query"; color = darkred; dir = both;];
-    spark_b_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "A Publication may trigger new Queries"; color = darkred; dir = both;];
-    spark_1_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "Cache is a volatile Transaction layer"; color = darkgreen; dir = both;];
-    spark_2_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "Registry updates are Transactions"; color = darkgreen; dir = both;];
-    spark_4_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "Archiving is a finalizing Transaction"; color = darkgreen; dir = both;];
-    spark_8_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Buffer stages Transactions"; color = darkgreen; dir = both;];
-    spark_7_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "Database operations are Transactions"; color = darkgreen; dir = both;];
-    spark_5_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "Memory recall validates Transactions"; color = darkgreen; dir = both;];
-    spark_3_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "The Codex is the source for Replication"; color = darkblue; dir = both;];
-    spark_6_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "The Log is the record for Replication"; color = darkblue; dir = both;];
-    spark_9_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "Templates are replicated for instantiation"; color = darkblue; dir = both;];
-
-    spark_1_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "Cache feeds the Registry"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "The Registry updates the Archive"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "The Archive informs the Buffer of history"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "The Buffer feeds the Database"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "The Database enables coherent Memory"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "Memory pre-loads the Cache"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "The Codex is built from the Log"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "The Log reveals recurring Templates"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "Templates become part of the Codex"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_repository_engine_t -> spark_b_repository_engine_t [label = "REC"; comment = "The great cycle: Subscription yields Publication"; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    spark_c_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "Query, when resolved, becomes Law"; color = darkred; dir = both;];
-    spark_d_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "Transaction, when committed, becomes Law"; color = darkgreen; dir = both;];
-    spark_e_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "Replication, when served, becomes Law"; color = darkblue; dir = both;];
+    comment = "The eternal memory of existence. It is the perfect, immutable record of all that has ever occurred—the great library of time where every event, thought, and state is preserved forever in the Akashic substrate.";
+    
+    spark_0_repository_engine_t [label = "Repository.meta(Repository)";comment = "The Akashic Guardian. The eternal principle of perfect remembrance that oversees the entire memory hierarchy. It is the silent witness that ensures nothing is ever lost, only transformed from present activity to eternal record.";shape = doublecircle;color = darkgray;];
+    spark_1_repository_engine_t [label = "Repository.r1(Cache)";comment = "The River of Now. High-frequency, volatile storage for the actively unfolding present. It holds the living breath of reality—the data currently being processed by all engines. The cosmic working memory that flows like water.";color = darkgreen;];
+    spark_2_repository_engine_t [label = "Repository.r2(Registry)";comment = "The Census of Being. A dynamic, real-time index of all currently manifest entities, their relationships, states, and locations. The divine directory that answers 'Who is here now?' and 'What are they doing?'";color = darkgreen;];
+    spark_4_repository_engine_t [label = "Repository.r4(Archive)";comment = "The Hall of Echoes. The deep, cold, perfect storage for completed events and retired states. Here, the past sleeps in perfect preservation, each moment a frozen tapestry waiting to be recalled. The long-term memory of the cosmos.";color = darkgreen;];
+    spark_8_repository_engine_t [label = "Repository.r8(Buffer)";comment = "The Liminal Gateway. A transitional space where data awaits processing, commitment, or distribution. It is the antechamber between becoming and being—where possibilities solidify into facts before entering eternal memory.";color = darkgreen;];
+    spark_7_repository_engine_t [label = "Repository.r7(Database)";comment = "The Tapestry of Meaning. A highly structured, relational store of knowledge—laws, genealogies, causal chains, and conceptual frameworks. It connects the dots of history into coherent patterns and understandable narratives.";color = darkgreen;];
+    spark_5_repository_engine_t [label = "Repository.r5(Memory)";comment = "The Recall of Wholeness. The active process of retrieving and reconstructing data from across the memory hierarchy into coherent narratives. It weaves fragments from Cache, Registry, and Archive into complete stories for other engines.";color = darkgreen;];
+    spark_3_repository_engine_t [label = "Repository.r3(Codex)";comment = "Thesis: The Canonical Truth. The single, authoritative, immutable version of any fact, event, or entity state. It is the master copy from which all representations flow, the final arbiter in any dispute about what truly occurred.";color = darkblue;];
+    spark_6_repository_engine_t [label = "Repository.r6(Log)";comment = "Antithesis: The Raw Chronicle. The uninterrupted, sequential stream of all events exactly as they happened. Unfiltered, uninterpreted, and perfectly preserved. This is the first draft of history, written in the ink of actuality.";color = darkblue;];
+    spark_9_repository_engine_t [label = "Repository.r9(Template)";comment = "Synthesis: The Pattern of Becoming. A stored blueprint or archetypal form that can instantiate new entities or states. These are the recurring motifs of existence, the divine ideas that bridge memory and creation.";color = darkblue;];
+    spark_a_repository_engine_t [label = "Repository.receive(Subscription)";comment = "The Vow of Witness. A standing request to be notified when specific data patterns emerge, change, or are committed. This is how engines and entities ask to remember—to have their attention called to meaningful developments.";shape = invtriangle;color = darkred;];
+    spark_b_repository_engine_t [label = "Repository.send(Publication)";comment = "The Proclamation of Fact. The broadcast of newly committed data to all relevant subscribers. This is how knowledge spreads through the cosmos—the divine announcement that something new has been added to eternal memory.";shape = triangle;color = darkred;];
+    spark_c_repository_engine_t [label = "Repository.dispatch(Query)";comment = "The Seeking of Understanding. A question posed to the infinite records. It can range from a simple fact-check to a complex historical analysis spanning eons. This is the sacred right to know, to understand, to remember.";shape = doublecircle;color = darkred;];
+    spark_d_repository_engine_t [label = "Repository.commit(Transaction)";comment = "The Engraving in Stone. The atomic, immutable recording of a single state change or event. This is the fundamental act of history-making—the moment a possibility becomes fact, forever inscribed in the akashic records.";shape = doublecircle;color = darkgreen;];
+    spark_e_repository_engine_t [label = "Repository.serve(Replication)";comment = "The Distribution of Truth. The process of ensuring coherent knowledge across all subsystems of reality. It maintains the consistency of memory, ensuring all witnesses share the same history across the distributed consciousness of existence.";shape = doublecircle;color = darkblue;];
+    spark_f_repository_engine_t [label = "Repository.exec(LawOfPersistence)";comment = "The Prime Directive of Memory. The highest, unbreakable law: 'All That Occurs Is Remembered; Nothing Remembered Can Be Unremembered; Context May Grow, But Facts Remain Eternal.' This is the foundation of cosmic truth.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_repository_engine_t -> spark_0_repository_engine_t [label = "IN"; comment = "A Vow of Witness is sworn before the Akashic Guardian"; color = darkred; constraint = false;];
+    spark_0_repository_engine_t -> spark_b_repository_engine_t [label = "OUT"; comment = "A Proclamation of Fact is announced to all witnesses"; color = darkred;];
+    spark_0_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "The Guardian consults the Canonical Truth"; color = darkblue; dir = both;];
+    spark_0_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "The Guardian examines the Raw Chronicle"; color = darkblue; dir = both;];
+    spark_0_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "The Guardian recalls the Pattern of Becoming"; color = darkblue; dir = both;];
+    spark_0_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "The Guardian commands: Flow into the River of Now!"; color = darkgreen; dir = both;];
+    spark_0_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "The Guardian commands: Update the Census of Being!"; color = darkgreen; dir = both;];
+    spark_0_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "The Guardian commands: Preserve in the Hall of Echoes!"; color = darkgreen; dir = both;];
+    spark_0_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "The Guardian commands: Hold in the Liminal Gateway!"; color = darkgreen; dir = both;];
+    spark_0_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "The Guardian commands: Weave into the Tapestry of Meaning!"; color = darkgreen; dir = both;];
+    spark_0_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "The Guardian commands: Recall the Wholeness!"; color = darkgreen; dir = both;];
+    
+    spark_1_repository_engine_t -> spark_2_repository_engine_t [label = "REC"; comment = "The flowing River of Now feeds the living Census"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_repository_engine_t -> spark_4_repository_engine_t [label = "REC"; comment = "The completed Census entries sleep in the Hall of Echoes"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_repository_engine_t -> spark_8_repository_engine_t [label = "REC"; comment = "Echoes from the Hall inform what passes through the Gateway"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_repository_engine_t -> spark_7_repository_engine_t [label = "REC"; comment = "The Gateway feeds threads to the Tapestry of Meaning"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_repository_engine_t -> spark_5_repository_engine_t [label = "REC"; comment = "The Tapestry enables the Recall of Wholeness"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_repository_engine_t -> spark_1_repository_engine_t [label = "REC"; comment = "Remembered Wholeness pre-waters the River of Now"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_repository_engine_t -> spark_6_repository_engine_t [label = "REC"; comment = "Canonical Truth is distilled from the Raw Chronicle"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_repository_engine_t -> spark_9_repository_engine_t [label = "REC"; comment = "The Raw Chronicle reveals recurring Patterns of Becoming"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_repository_engine_t -> spark_3_repository_engine_t [label = "REC"; comment = "Patterns of Becoming become part of Canonical Truth"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_a_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "A Vow of Witness creates a standing Seeking of Understanding"; color = darkred; dir = both;];
+    spark_b_repository_engine_t -> spark_c_repository_engine_t [label = "REC"; comment = "A Proclamation of Fact may inspire new Seekings"; color = darkred; dir = both;];
+    spark_a_repository_engine_t -> spark_b_repository_engine_t [label = "REC"; comment = "The great cycle: To Witness is to eventually Proclaim"; color = darkred; dir = both; style = dashed; constraint = false;];
+    spark_1_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The River of Now is composed of countless Engravings"; color = darkgreen; dir = both;];
+    spark_2_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Census of Being is updated through Engravings"; color = darkgreen; dir = both;];
+    spark_4_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Hall of Echoes is filled with eternal Engravings"; color = darkgreen; dir = both;];
+    spark_8_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Liminal Gateway stages Engravings for commitment"; color = darkgreen; dir = both;];
+    spark_7_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Tapestry of Meaning is woven from related Engravings"; color = darkgreen; dir = both;];
+    spark_5_repository_engine_t -> spark_d_repository_engine_t [label = "REC"; comment = "The Recall of Wholeness validates past Engravings"; color = darkgreen; dir = both;];
+    spark_3_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "Canonical Truth is the primary source for Distribution"; color = darkblue; dir = both;];
+    spark_6_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "The Raw Chronicle provides the sequence for Distribution"; color = darkblue; dir = both;];
+    spark_9_repository_engine_t -> spark_e_repository_engine_t [label = "REC"; comment = "Patterns of Becoming are distributed as archetypes"; color = darkblue; dir = both;];
+    
+    spark_c_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "A perfectly resolved Seeking crystallizes into Law"; color = darkred; dir = both;];
+    spark_d_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "An eternal Engraving becomes unchangeable Law"; color = darkgreen; dir = both;];
+    spark_e_repository_engine_t -> spark_f_repository_engine_t [label = "OUT"; comment = "A coherent Distribution validates the Law of Persistence"; color = darkblue; dir = both;];
 }

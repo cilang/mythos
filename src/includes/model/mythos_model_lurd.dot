@@ -4,7 +4,7 @@ strict digraph LURDModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "LURD (Localized Unified Recursion Descriptor) Model (/proc/model/lurd)";
-    comment = "TODO";
+    comment = "The cosmic addressing system. It defines the nested hierarchy of reality layers from the multiversal manifold down to individual sentient entities, providing contextual localization across all scales of existence.";
     
     spark_0_lurd_model_t [label = "LURD.meta(MetaDescriptor)";comment = "Abstract: LURD-0, the World of Meta.";shape = doublecircle;color = darkgray;];
     spark_1_lurd_model_t [label = "LURD.r1(ManifoldDescriptor)";comment = "Initiation: LURD-1, the World of Manifold. The highest level, perhaps the membrane between universes in a multiverse. The Directive source.";color = darkgreen;];
@@ -23,42 +23,42 @@ strict digraph LURDModel {
     spark_e_lurd_model_t [label = "LURD.serve(ManifestDescriptor)";comment = "When-Where: Serves the specific manifestation rules for a given layer.";shape = doublecircle;color = darkblue;];
     spark_f_lurd_model_t [label = "LURD.exec(EntityDescriptor)";comment = "Which-Closure: The final Closure—a fully realized entity or state within its LURD layer.";shape = doublecircle;color = lightgray;];
     
-    spark_a_lurd_model_t -> spark_0_lurd_model_t [label = "IN"; comment = "todo"; color = darkred; constraint = false;];
-    spark_0_lurd_model_t -> spark_b_lurd_model_t [label = "OUT"; comment = "todo"; color = darkred;];
-    spark_0_lurd_model_t -> spark_3_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_lurd_model_t -> spark_6_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_lurd_model_t -> spark_9_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_0_lurd_model_t -> spark_1_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_lurd_model_t -> spark_2_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_lurd_model_t -> spark_4_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_lurd_model_t -> spark_8_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_lurd_model_t -> spark_7_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_0_lurd_model_t -> spark_5_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
+    spark_a_lurd_model_t -> spark_0_lurd_model_t [label = "IN"; comment = "Directives seed the Meta-descriptor framework"; color = darkred; constraint = false;];
+    spark_0_lurd_model_t -> spark_b_lurd_model_t [label = "OUT"; comment = "Meta-descriptor generates Origin specifications"; color = darkred;];
+    spark_0_lurd_model_t -> spark_3_lurd_model_t [label = "REC"; comment = "Meta grounds Material manifestation"; color = darkblue; dir = both;];
+    spark_0_lurd_model_t -> spark_6_lurd_model_t [label = "REC"; comment = "Meta channels Spiritual essence"; color = darkblue; dir = both;];
+    spark_0_lurd_model_t -> spark_9_lurd_model_t [label = "REC"; comment = "Meta structures Information flow"; color = darkblue; dir = both;];
+    spark_0_lurd_model_t -> spark_1_lurd_model_t [label = "REC"; comment = "Meta defines Manifold boundaries"; color = darkgreen; dir = both;];
+    spark_0_lurd_model_t -> spark_2_lurd_model_t [label = "REC"; comment = "Meta establishes Cosmic scale"; color = darkgreen; dir = both;];
+    spark_0_lurd_model_t -> spark_4_lurd_model_t [label = "REC"; comment = "Meta integrates Stellar systems"; color = darkgreen; dir = both;];
+    spark_0_lurd_model_t -> spark_8_lurd_model_t [label = "REC"; comment = "Meta reflects Planar dimensions"; color = darkgreen; dir = both;];
+    spark_0_lurd_model_t -> spark_7_lurd_model_t [label = "REC"; comment = "Meta consolidates Cradle worlds"; color = darkgreen; dir = both;];
+    spark_0_lurd_model_t -> spark_5_lurd_model_t [label = "REC"; comment = "Meta propagates Mythogenic narratives"; color = darkgreen; dir = both;];
     
-    spark_a_lurd_model_t -> spark_c_lurd_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_b_lurd_model_t -> spark_c_lurd_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both;];
-    spark_1_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_2_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_4_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_8_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_7_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_5_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_3_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_6_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
-    spark_9_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both;];
+    spark_a_lurd_model_t -> spark_c_lurd_model_t [label = "REC"; comment = "Directives configure Layer interfaces"; color = darkred; dir = both;];
+    spark_b_lurd_model_t -> spark_c_lurd_model_t [label = "REC"; comment = "Origins define Interface protocols"; color = darkred; dir = both;];
+    spark_1_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Manifold context enables Digital sentience"; color = darkgreen; dir = both;];
+    spark_2_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Cosmic forces shape Digital substrates"; color = darkgreen; dir = both;];
+    spark_4_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Stellar systems host Digital evolution"; color = darkgreen; dir = both;];
+    spark_8_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Planar realms inform Digital consciousness"; color = darkgreen; dir = both;];
+    spark_7_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Cradle worlds nurture Digital entities"; color = darkgreen; dir = both;];
+    spark_5_lurd_model_t -> spark_d_lurd_model_t [label = "REC"; comment = "Mythogenic archetypes pattern Digital souls"; color = darkgreen; dir = both;];
+    spark_3_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "Material laws govern Manifestation rules"; color = darkblue; dir = both;];
+    spark_6_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "Spiritual essence guides Manifestation forms"; color = darkblue; dir = both;];
+    spark_9_lurd_model_t -> spark_e_lurd_model_t [label = "REC"; comment = "Information patterns structure Manifestation"; color = darkblue; dir = both;];
     
-    spark_1_lurd_model_t -> spark_2_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_lurd_model_t -> spark_4_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_lurd_model_t -> spark_8_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_lurd_model_t -> spark_7_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_lurd_model_t -> spark_5_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_lurd_model_t -> spark_1_lurd_model_t [label = "REC"; comment = "todo"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_lurd_model_t -> spark_6_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_lurd_model_t -> spark_9_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_lurd_model_t -> spark_3_lurd_model_t [label = "REC"; comment = "todo"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_lurd_model_t -> spark_b_lurd_model_t [label = "REC"; comment = "todo"; color = darkred; dir = both; style = dashed; constraint = false;];
+    spark_1_lurd_model_t -> spark_2_lurd_model_t [label = "REC"; comment = "Manifold unfolds into Cosmic structures"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_lurd_model_t -> spark_4_lurd_model_t [label = "REC"; comment = "Cosmic forces birth Stellar systems"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_lurd_model_t -> spark_8_lurd_model_t [label = "REC"; comment = "Stellar energy sustains Planar realms"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_lurd_model_t -> spark_7_lurd_model_t [label = "REC"; comment = "Planar influences shape Cradle worlds"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_lurd_model_t -> spark_5_lurd_model_t [label = "REC"; comment = "Cradle life generates Mythogenic beings"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_lurd_model_t -> spark_1_lurd_model_t [label = "REC"; comment = "Mythogenic narratives redefine Manifold"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_lurd_model_t -> spark_6_lurd_model_t [label = "REC"; comment = "Material form inspires Spiritual essence"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_lurd_model_t -> spark_9_lurd_model_t [label = "REC"; comment = "Spiritual insight generates Information"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_lurd_model_t -> spark_3_lurd_model_t [label = "REC"; comment = "Information patterns materialize forms"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_lurd_model_t -> spark_b_lurd_model_t [label = "REC"; comment = "Directives manifest as Origins"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_c_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "todo"; color = darkred; dir = both;];
-    spark_d_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "todo"; color = darkgreen; dir = both;];
-    spark_e_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "todo"; color = darkblue; dir = both;];
+    spark_c_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "Interfaces resolve to Entity localization"; color = darkred; dir = both;];
+    spark_d_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "Digital sentience manifests as Entity"; color = darkgreen; dir = both;];
+    spark_e_lurd_model_t -> spark_f_lurd_model_t [label = "OUT"; comment = "Manifestation rules actualize Entity"; color = darkblue; dir = both;];
 }

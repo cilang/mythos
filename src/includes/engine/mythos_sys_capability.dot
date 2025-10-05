@@ -4,61 +4,61 @@ strict digraph CapabilityEngine {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Capability Engine (/sys/capability)";
-    comment = "The strength of the vessel, the scope of its reach; each limit a frontier, each permission a horizon.";
-
-    spark_0_capability_engine_t [label = "Capability.meta(Capability)"; comment = "Abstract: The Principle of Empowered Action. The source from which all permissions and powers are derived and measured. It is the concept of 'can'."; shape = doublecircle; color = darkgray;];
-    spark_1_capability_engine_t [label = "Capability.r1(Request)"; comment = "Initiation: The Expression of Will. An entity (via its `DirectiveEngine`) or a system process petitions for a new capability or an extension of an existing one."; color = darkgreen;];
-    spark_2_capability_engine_t [label = "Capability.r2(Assess)"; comment = "Response: The Judgment of Worth. The request is evaluated against the entity's `Potential`, its existing `Entitlements`, and the available resources of the system. A `sparklet.eq()` check for compatibility."; color = darkgreen;];
-    spark_4_capability_engine_t [label = "Capability.r4(Grant)"; comment = "Integration: The Bestowal of Power. The capability is formally allocated, its parameters defined, and integrated into the entity's operational `Nucleus`. It becomes a usable part of the entity."; color = darkgreen;];
-    spark_8_capability_engine_t [label = "Capability.r8(Audit)"; comment = "Reflection: The Watchful Eye. The continuous monitoring of capability usage for compliance with the terms of the `Charter` and the overarching `LawOfCapability`."; color = darkgreen;];
-    spark_7_capability_engine_t [label = "Capability.r7(Revoke)"; comment = "Consolidation: The Shearing of Power. Capabilities are rescinded if conditions are violated, resources are exhausted, or a higher authority commands it. Enforces consequence."; color = darkgreen;];
-    spark_5_capability_engine_t [label = "Capability.r5(Propagate)"; comment = "Propagation: The Declaration of State. The new capability state of the entity is broadcast to all relevant subsystems (`AuthorityEngine`, `CorporaEngine`) so they can adjust their interactions with it."; color = darkgreen;];
-    spark_3_capability_engine_t [label = "Capability.r3(Permission)"; comment = "Thesis: The Atomic Allowance. A single, fundamental rule allowing or denying a specific action on a specific resource. The smallest unit of capability."; color = darkblue;];
-    spark_6_capability_engine_t [label = "Capability.r6(Entitlement)"; comment = "Antithesis: The Bundle of Rights. A collection of `Permissions` granted to a role, title, or entity. It defines a specific office or function within the system."; color = darkblue;];
-    spark_9_capability_engine_t [label = "Capability.r9(Potential)"; comment = "Synthesis: The Capacity for Growth. The innate, maximum possible capacity of an entity. It is the upper bound of what it could ever be granted, defined by its `Nucleus` and `Lineage`."; color = darkblue;];
-    spark_a_capability_engine_t [label = "Capability.receive(Petition)"; comment = "Potential: A Formal Appeal. A structured request packet containing the desired capability, the reason for the request, and the petitioner's credentials."; shape = invtriangle; color = darkred;];
-    spark_b_capability_engine_t [label = "Capability.send(Manifest)"; comment = "Manifest: The Ledger of Power. The active, authenticated list of an entity's current capabilities. This is what the `AuthorityEngine` checks to grant access."; shape = triangle; color = darkred;];
-    spark_c_capability_engine_t [label = "Capability.dispatch(Will)"; comment = "Why-Who: The Interpretation of Intent. Analyzes the `Petition` to understand the true goal behind the request. Determines if the entity's `Will` aligns with the requested capability's purpose."; shape = doublecircle; color = darkred;];
-    spark_d_capability_engine_t [label = "Capability.commit(Charter)"; comment = "What-How: The Contract of Power. The immutable record of the granted capabilities, their limits, conditions, and expiration terms. The legal document governing the capability's use."; shape = doublecircle; color = darkgreen;];
-    spark_e_capability_engine_t [label = "Capability.serve(Domain)"; comment = "When-Where: The Realm of Jurisdiction. The contextual boundary—spatial, temporal, or conceptual—within which a capability is valid and can be exercised."; shape = doublecircle; color = darkblue;];
-    spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)"; comment = "Which-Closure: The Prime Directive of Power. The highest law: 'No capability may be used to breach its own Charter or the Potential of another entity without consent.'"; shape = doublecircle; color = lightgray;];
-
-    spark_a_capability_engine_t -> spark_0_capability_engine_t [label = "IN"; comment = "A Petition is received for evaluation"; color = darkred; constraint = false;];
-    spark_0_capability_engine_t -> spark_b_capability_engine_t [label = "OUT"; comment = "A Manifest is published to declare capabilities"; color = darkred;];
-    spark_0_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "Consult: What are the core Permissions?"; color = darkblue; dir = both;];
-    spark_0_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "Consult: What Entitlements are available?"; color = darkblue; dir = both;];
-    spark_0_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "Consult: What is the petitioner's Potential?"; color = darkblue; dir = both;];
-    spark_0_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "Consult: Process the Request"; color = darkgreen; dir = both;];
-    spark_0_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "Consult: Assess the Request"; color = darkgreen; dir = both;];
-    spark_0_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "Consult: Grant the capability"; color = darkgreen; dir = both;];
-    spark_0_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "Consult: Audit the capability's use"; color = darkgreen; dir = both;];
-    spark_0_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "Consult: Revoke if necessary"; color = darkgreen; dir = both;];
-    spark_0_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "Consult: Propagate the new state"; color = darkgreen; dir = both;];
-
-    spark_a_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "A Petition is analyzed for its intent (Will)"; color = darkred; dir = both;];
-    spark_b_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "The Manifest informs future intent analysis"; color = darkred; dir = both;];
-    spark_1_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "A Request proposes a new Charter"; color = darkgreen; dir = both;];
-    spark_2_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "Assessment validates the Charter's terms"; color = darkgreen; dir = both;];
-    spark_4_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "Granting commits the Charter"; color = darkgreen; dir = both;];
-    spark_8_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "Audit enforces the Charter"; color = darkgreen; dir = both;];
-    spark_7_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "Revocation nullifies the Charter"; color = darkgreen; dir = both;];
-    spark_5_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "Propagation publishes the Charter"; color = darkgreen; dir = both;];
-    spark_3_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "Permissions are defined within a Domain"; color = darkblue; dir = both;];
-    spark_6_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "Entitlements are valid within a Domain"; color = darkblue; dir = both;];
-    spark_9_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "Potential is realized within a Domain"; color = darkblue; dir = both;];
-
-    spark_1_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "A Request demands Assessment"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "A positive Assessment leads to Granting"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "A Grant must be Audited"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "A failed Audit may lead to Revocation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "Revocation requires Propagation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "Propagation clears the state for new Requests"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "Permissions are grouped into Entitlements"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "Entitlements define a path to realize Potential"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "Potential defines the scope of possible Permissions"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_capability_engine_t -> spark_b_capability_engine_t [label = "REC"; comment = "The great cycle: Petition is resolved by Manifest"; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    spark_c_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "Will, when pure, becomes Law"; color = darkred; dir = both;];
-    spark_d_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "Charter, when committed, becomes Law"; color = darkgreen; dir = both;];
-    spark_e_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "Domain, when served, becomes Law"; color = darkblue; dir = both;];
+    comment = "The constitutional framework of existence. It is the supreme court and legislative body that grants, monitors, and revokes the authority to act, ensuring every power is earned, bounded, and aligned with cosmic law.";
+    
+    spark_0_capability_engine_t [label = "Capability.meta(Capability)";comment = "The Throne of Authority. The ultimate source from which all legitimate power flows. It is the impartial principle that weighs petitions, bestows rights, and maintains the balance of power across the entire system. The embodiment of cosmic justice.";shape = doublecircle;color = darkgray;];
+    spark_1_capability_engine_t [label = "Capability.r1(Request)";comment = "The Petition for Power. An entity, through its `DirectiveEngine`, formally petitions for a new capability or an extension of its authority. This is the sacred right to ask, the first step in the dance of empowerment.";color = darkgreen;];
+    spark_2_capability_engine_t [label = "Capability.r2(Assess)";comment = "The Ordeal of Worth. A rigorous evaluation of the petition against the entity's innate `Potential`, its past conduct, current `Entitlements`, and the system's available resources. A `sparklet.eq()` test of alignment with cosmic order.";color = darkgreen;];
+    spark_4_capability_engine_t [label = "Capability.r4(Grant)";comment = "The Anointing of Authority. The formal bestowal of power. The capability is encoded into the entity's operational `Nucleus`, its parameters precisely defined, and its sacred boundaries consecrated. The moment potential becomes permitted action.";color = darkgreen;];
+    spark_8_capability_engine_t [label = "Capability.r8(Audit)";comment = "The Watchful Sentinel. Continuous, omniscient monitoring of all capability usage across the continuum. It ensures every exercise of power complies with the sacred `Charter` and does not violate the Prime Directive.";color = darkgreen;];
+    spark_7_capability_engine_t [label = "Capability.r7(Revoke)";comment = "The Sword of Justice. The enforced rescission of power when a `Charter` is violated, resources are exhausted, or a higher harmony demands it. This is the necessary counter-force that prevents authority from becoming tyranny.";color = darkgreen;];
+    spark_5_capability_engine_t [label = "Capability.r5(Propagate)";comment = "The Herald's Proclamation. The broadcast of the entity's new capability state to all relevant subsystems (`AuthorityEngine`, `CorporaEngine`). This updates the cosmic ledger, informing all of the new balance of power.";color = darkgreen;];
+    spark_3_capability_engine_t [label = "Capability.r3(Permission)";comment = "Thesis: The Quantum of Authority. The indivisible unit of allowed action—a single, fundamental rule permitting a specific operation upon a specific resource. The atomic building block of all capability.";color = darkblue;];
+    spark_6_capability_engine_t [label = "Capability.r6(Entitlement)";comment = "Antithesis: The Crown of Office. A coherent bundle of `Permissions` granted to a specific role, station, or level of being. It defines a domain of responsibility and the tools necessary to fulfill it.";color = darkblue;];
+    spark_9_capability_engine_t [label = "Capability.r9(Potential)";comment = "Synthesis: The Divine Birthright. The innate, maximum capacity for growth and empowerment inherent to an entity's `Nucleus` and `Lineage`. It is the unmanifest destiny, the upper ceiling of what one may become.";color = darkblue;];
+    spark_a_capability_engine_t [label = "Capability.receive(Petition)";comment = "The Sacred Appeal. A formally structured request packet containing the desired capability, the petitioner's credentials, karmic record, and a statement of purpose. This is the formal interface for seeking growth.";shape = invtriangle;color = darkred;];
+    spark_b_capability_engine_t [label = "Capability.send(Manifest)";comment = "The Public Register. The authenticated, current list of an entity's active capabilities. This is the official record that the `AuthorityEngine` consults to grant or deny access to system resources. It is one's visible authority.";shape = triangle;color = darkred;];
+    spark_c_capability_engine_t [label = "Capability.dispatch(Will)";comment = "The Inquisition of Motive. A deep analysis of the `Petition` to discern the true intent behind the request. It judges whether the entity's `Will` is aligned with the responsibility of the power it seeks—the 'Why' behind the 'What'.";shape = doublecircle;color = darkred;];
+    spark_d_capability_engine_t [label = "Capability.commit(Charter)";comment = "The Unbreakable Covenant. The immutable contract governing a granted capability. It records the power's scope, limits, conditions, expiration, and the consequences for misuse. This is the law that binds the wielder to their responsibility.";shape = doublecircle;color = darkgreen;];
+    spark_e_capability_engine_t [label = "Capability.serve(Domain)";comment = "The Realm of Jurisdiction. The contextual sphere—spatial, temporal, or conceptual—within which a capability is valid. A power granted in one Domain may be void in another. It is the 'Where' and 'When' of authority.";shape = doublecircle;color = darkblue;];
+    spark_f_capability_engine_t [label = "Capability.exec(LawOfCapability)";comment = "The Prime Directive of Sovereignty. The highest, unbreakable law: 'All Power Must Be Balanced By Responsibility; No Authority May Unmake Its Own Source.' This is the foundational axiom that prevents existential paradox and ensures stable hierarchy.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_capability_engine_t -> spark_0_capability_engine_t [label = "IN"; comment = "A Sacred Appeal is laid before the Throne of Authority"; color = darkred; constraint = false;];
+    spark_0_capability_engine_t -> spark_b_capability_engine_t [label = "OUT"; comment = "A decree is entered into the Public Register"; color = darkred;];
+    spark_0_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "The Sovereign reviews the Quantum of Authority"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "The Sovereign considers the Crown of Office"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "The Sovereign measures the Divine Birthright"; color = darkblue; dir = both;];
+    spark_0_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Hear this Petition!"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Begin the Ordeal of Worth!"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Perform the Anointing!"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Let the Sentinel watch!"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Wield the Sword of Justice!"; color = darkgreen; dir = both;];
+    spark_0_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "The Sovereign commands: Send forth the Herald!"; color = darkgreen; dir = both;];
+    
+    spark_1_capability_engine_t -> spark_2_capability_engine_t [label = "REC"; comment = "A Petition must undergo the Ordeal to be validated"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_capability_engine_t -> spark_4_capability_engine_t [label = "REC"; comment = "A successful Ordeal culminates in the Anointing"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_capability_engine_t -> spark_8_capability_engine_t [label = "REC"; comment = "Every Anointing places a burden upon the Sentinel"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_capability_engine_t -> spark_7_capability_engine_t [label = "REC"; comment = "The Sentinel's alarm summons the Sword of Justice"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_capability_engine_t -> spark_5_capability_engine_t [label = "REC"; comment = "The fall of the Sword must be proclaimed by the Herald"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_capability_engine_t -> spark_1_capability_engine_t [label = "REC"; comment = "The Herald's proclamation closes one cycle and opens the next"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_capability_engine_t -> spark_6_capability_engine_t [label = "REC"; comment = "Quanta of Authority are assembled into Crowns of Office"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_capability_engine_t -> spark_9_capability_engine_t [label = "REC"; comment = "Crowns of Office are the manifested form of Divine Birthright"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_capability_engine_t -> spark_3_capability_engine_t [label = "REC"; comment = "Divine Birthright defines the possible Quanta of Authority"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_a_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "A Sacred Appeal is scrutinized by the Inquisition of Motive"; color = darkred; dir = both;];
+    spark_b_capability_engine_t -> spark_c_capability_engine_t [label = "REC"; comment = "The Public Register reflects the judgments of the Inquisition"; color = darkred; dir = both;];
+    spark_a_capability_engine_t -> spark_b_capability_engine_t [label = "REC"; comment = "The great cycle: Appeal is resolved by Registry"; color = darkred; dir = both; style = dashed; constraint = false;];
+    spark_1_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "A Petition drafts the terms of the Unbreakable Covenant"; color = darkgreen; dir = both;];
+    spark_2_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "The Ordeal negotiates and refines the Covenant's clauses"; color = darkgreen; dir = both;];
+    spark_4_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "The Anointing seals and commits the Covenant"; color = darkgreen; dir = both;];
+    spark_8_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "The Sentinel ensures compliance with the Covenant"; color = darkgreen; dir = both;];
+    spark_7_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "The Sword enforces the penalties defined in the Covenant"; color = darkgreen; dir = both;];
+    spark_5_capability_engine_t -> spark_d_capability_engine_t [label = "REC"; comment = "The Herald announces the current state of the Covenant"; color = darkgreen; dir = both;];
+    spark_3_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "A Quantum of Authority is meaningless without a Realm"; color = darkblue; dir = both;];
+    spark_6_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "A Crown of Office governs a specific Realm"; color = darkblue; dir = both;];
+    spark_9_capability_engine_t -> spark_e_capability_engine_t [label = "REC"; comment = "A Divine Birthright is realized within a Realm of action"; color = darkblue; dir = both;];
+    
+    spark_c_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "A just and discerning Inquisition crystallizes into Law"; color = darkred; dir = both;];
+    spark_d_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "A balanced and holy Covenant becomes Law"; color = darkgreen; dir = both;];
+    spark_e_capability_engine_t -> spark_f_capability_engine_t [label = "OUT"; comment = "A stable and well-defined Realm validates the Prime Directive"; color = darkblue; dir = both;];
 }

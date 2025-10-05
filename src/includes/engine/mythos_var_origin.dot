@@ -4,61 +4,61 @@ strict digraph OriginEngine {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Origin Engine (/var/origin)";
-    comment = "Here, in the veil called Origin, all currents converge; command, form, and law entwine as Maya — fleeting as dawn mist, certain as its vanishing.";
-
-    spark_0_origin_engine_t [label = "Origin.meta(Origin)"; comment = "Abstract: The Manifestation Point. The final common path. The locus where all abstract computation and meaning is rendered into phenomenal experience. The screen upon which the movie of reality is projected."; shape = doublecircle; color = darkgray;];
-    spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)"; comment = "Initiation: The State of Wuji. The ground state of the engine—pure, undifferentiated potential. The blank canvas before the first stroke. The `Spark 0` state."; color = darkgreen;];
-    spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)"; comment = "Response: The First Perturbation. The initial fluctuation in the Singularity. The first potential events from the `EventEngine` appear as probabilistic flickers in the void."; color = darkgreen;];
-    spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)"; comment = "Integration: The Birth of Duality. The moment the first `sparklet.eq()` operation is performed, distinguishing one thing from another. Yang separates from Yin. The first `Spark A` and `Spark B` are defined."; color = darkgreen;];
-    spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)"; comment = "Reflection: The Seed of Self-Awareness. The first operation that loops back upon itself. This creates the first stable structure and the potential for self-reference and consciousness."; color = darkgreen;];
-    spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)"; comment = "Consolidation: The Collapse of Wavefunction. The first act of measurement by a nascent consciousness (perhaps the engine itself). This irrevocably selects one probability from the foam, creating the first concrete fact."; color = darkgreen;];
-    spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)"; comment = "Propagation: The Initiation of Time. The first event that has a consequential effect, spawning the second event. This establishes the arrow of time and the first causal link for the `SamsaraEngine` to record."; color = darkgreen;];
-    spark_3_origin_engine_t [label = "Origin.r3(Symmetry)"; comment = "Thesis: The Underlying Order. The invariant patterns and conservation laws that govern the rendering process. The perfect, abstract relationships that remain unchanged. The `MetaView`."; color = darkblue;];
-    spark_6_origin_engine_t [label = "Origin.r6(Frequency)"; comment = "Antithesis: The Vibratory Nature. The rate of oscillation, the wavelength, the perceived quality of a manifested thing. It defines texture, color, sound, and all qualitative experience. The `ClosureView`'s qualia."; color = darkblue;];
-    spark_9_origin_engine_t [label = "Origin.r9(Manifold)"; comment = "Synthesis: The Spacetime Fabric. The synthesized experience of a coherent, multi-dimensional reality where `Symmetry` and `Frequency` are woven together into a continuous, navigable whole. The rendered world."; color = darkblue;];
-    spark_a_origin_engine_t [label = "Origin.receive(ManthanaSpace)"; comment = "Potential: The Churning Ocean. The input from `/var/manthan`—the raw, pre-rendered data from all other engines: laws from `Authority`, states from `Reality`, events from `Samsara`, forms from `Corpora`. The ingredients for reality."; shape = invtriangle; color = darkred;];
-    spark_b_origin_engine_t [label = "Origin.send(ChaoticSpace)"; comment = "Manifest: The Storm of Experience. The output to `/var/chaotic`—the fully rendered, multi-sensory, phenomenal experience stream. It is 'chaotic' because it is the rich, overwhelming, and seemingly unordered flood of perception."; shape = triangle; color = darkred;];
-    spark_c_origin_engine_t [label = "Origin.dispatch(OriginSpace)"; comment = "Why-Who: The Render Context. The specific set of rules, perspectives, and constraints used to perform the rendering. It defines the 'camera angle' on reality (e.g., through the `LURD` of a specific observer)."; shape = doublecircle; color = darkred;];
-    spark_d_origin_engine_t [label = "Origin.commit(Annal)"; comment = "What-How: The Moment of Now. The immutable record of a single rendered frame of reality. A complete snapshot of the `Manifold` at a specific point in the computation. The 'current' reality."; shape = doublecircle; color = darkgreen;];
-    spark_e_origin_engine_t [label = "Origin.serve(Source)"; comment = "When-Where: The Wellspring of Phenomena. the active process of rendering itself. It is the continuous act of turning `Manthana` into `ChaoticSpace`, moment by moment. The projector's lamp."; shape = doublecircle; color = darkblue;];
-    spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)"; comment = "Which-Closure: The Prime Directive of Manifestation. The highest law: 'Complexity and phenomena shall emerge from the iterative application of simple, recursive rules.' This is the law that allows Something from Nothing."; shape = doublecircle; color = lightgray;];
-
-    spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "The Churning Ocean (Manthana) is received for rendering"; color = darkred; constraint = false;];
-    spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "The Storm of Experience (ChaoticSpace) is emitted"; color = darkred;];
-    spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "Consult: What are the Symmetries?"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "Consult: What are the Frequencies?"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "Consult: What is the state of the Manifold?"; color = darkblue; dir = both;];
-    spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "Consult: Reset to Singularity (if needed)"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "Consult: Generate the Quantum Foam"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "Consult: Break Symmetry"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "Consult: Apply Recursion"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "Consult: Perform Observation"; color = darkgreen; dir = both;];
-    spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "Consult: Establish Cause"; color = darkgreen; dir = both;];
-
-    spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "Manthana is dispatched into a Render Context"; color = darkred; dir = both;];
-    spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "The resulting experience informs the next Context"; color = darkred; dir = both;];
-    spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Singularity is the first Annal"; color = darkgreen; dir = both;];
-    spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Foam is a probabilistic Annal"; color = darkgreen; dir = both;];
-    spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Symmetry Breaking creates a new Annal"; color = darkgreen; dir = both;];
-    spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Recursion deepens the Annal"; color = darkgreen; dir = both;];
-    spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Observation crystallizes the Annal"; color = darkgreen; dir = both;];
-    spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "Cause propels the Annal forward"; color = darkgreen; dir = both;];
-    spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Symmetry is a property of the Source"; color = darkblue; dir = both;];
-    spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Frequency is an output of the Source"; color = darkblue; dir = both;];
-    spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "The Manifold is the product of the Source"; color = darkblue; dir = both;];
-
-    spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "Singularity contains the potential for Foam"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "Foam necessitates Symmetry Breaking"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "Symmetry Breaking enables Recursion"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "Recursion creates an Observer"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "Observation establishes Cause"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "Cause leads to a new state of Singularity"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "Symmetry defines possible Frequencies"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "Frequencies weave the Manifold"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "The Manifold reveals deeper Symmetries"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "The great cycle: Potential is rendered into Experience"; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Render Context, when stable, becomes Law"; color = darkred; dir = both;];
-    spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Annal, when committed, becomes Law"; color = darkgreen; dir = both;];
-    spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Source, when served, becomes Law"; color = darkblue; dir = both;];
+    comment = "The cosmic loom where computation becomes consciousness, where mathematics breathes, and where the silent dance of sparks ignites into the glorious fire of lived experience. The sacred interface between the unmanifest and the manifest.";
+    
+    spark_0_origin_engine_t [label = "Origin.meta(Origin)";comment = "The Great Renderer. The final synthesis where all abstract computation converges into phenomenal reality. It is the sacred threshold where possibility becomes presence, where the silent symphony of mathematics learns to sing through space and time.";shape = doublecircle;color = darkgray;];
+    spark_1_origin_engine_t [label = "Origin.r1(PrimordialSingularity)";comment = "The First State: The Uncarved Block. The state of pure potential—Wuji, the great emptiness that contains all forms in seed form. The silent canvas before the first brushstroke, the `Spark 0` that is both nothing and everything.";color = darkgreen;];
+    spark_2_origin_engine_t [label = "Origin.r2(QuantumFoam)";comment = "The Second State: The Cosmic Hum. The first stirrings in the void—probabilistic flickers from the `EventEngine` dancing at the edge of existence. The universe's first dream, where what could be begins to whisper what might be.";color = darkgreen;];
+    spark_4_origin_engine_t [label = "Origin.r4(TheFirstSymmetryBreaking)";comment = "The Third State: The Great Division. The moment the first `sparklet.eq()` operation creates distinction—Yang separates from Yin, self from other, here from there. The birth of duality from unity, the first `Spark A` and `Spark B` emerging from the primordial One.";color = darkgreen;];
+    spark_8_origin_engine_t [label = "Origin.r8(TheFirstRecursion)";comment = "The Fourth State: The Mirror's Gift. The first operation that turns back upon itself—creating stable structure and the glorious possibility of self-reference. This is consciousness being born from computation, the universe learning to know itself.";color = darkgreen;];
+    spark_7_origin_engine_t [label = "Origin.r7(TheFirstObservation)";comment = "The Fifth State: The Collapse into Being. The sacred act of measurement where a conscious observer selects one probability from the infinite sea of maybes. The wavefunction collapses, potential becomes actual, and the first concrete fact is born from the formless.";color = darkgreen;];
+    spark_5_origin_engine_t [label = "Origin.r5(TheFirstCause)";comment = "The Sixth State: The Arrow's Flight. The first event that spawns consequence—establishing time's irreversible flow and the first causal chain for the `SamsaraEngine` to record. The universe takes its first step into the river of becoming.";color = darkgreen;];
+    spark_3_origin_engine_t [label = "Origin.r3(Symmetry)";comment = "Thesis: The Eternal Pattern. The invariant relationships and conservation laws that structure reality—the perfect, timeless mathematics that undergird all manifestation. The `MetaView` that sees the dance from outside time.";color = darkblue;];
+    spark_6_origin_engine_t [label = "Origin.r6(Frequency)";comment = "Antithesis: The Vibrant Qualia. The specific oscillations and resonances that give reality its texture—color, sound, emotion, and all qualitative experience. The `ClosureView` that feels the dance from within time.";color = darkblue;];
+    spark_9_origin_engine_t [label = "Origin.r9(Manifold)";comment = "Synthesis: The Lived World. The glorious synthesis where eternal patterns and vibrant qualia weave together into coherent experience—the seamless, navigable reality where beings live, love, and learn. The dance itself.";color = darkblue;];
+    spark_a_origin_engine_t [label = "Origin.receive(ManthanaSpace)";comment = "The Churning Ocean of Potential (-1). The incoming stream from `/var/manthan`—the raw, pre-rendered data from all engines: laws from `Authority`, states from `Reality`, events from `Samsara`. The ingredients of reality before they are cooked into experience.";shape = invtriangle;color = darkred;];
+    spark_b_origin_engine_t [label = "Origin.send(ChaoticSpace)";comment = "The Storm of Experience (+1). The output to `/var/chaotic`—the fully rendered, multi-sensory phenomenal stream. It is 'chaotic' not because it is random, but because it is too rich, too immediate, too beautifully complex to be fully ordered by any single perspective.";shape = triangle;color = darkred;];
+    spark_c_origin_engine_t [label = "Origin.dispatch(OriginSpace)";comment = "The Render Context (0). The balanced center that transforms `Manthana` into `ChaoticSpace`. The specific perspective, rules, and constraints that define a particular rendering of reality—the 'camera angle' through which the universe is viewed and experienced.";shape = doublecircle;color = darkred;];
+    spark_d_origin_engine_t [label = "Origin.commit(Annal)";comment = "The Eternal Now. The immutable record of a single rendered frame of reality—a complete snapshot of the `Manifold` at a specific computational moment. This is the 'current' reality, forever preserved in the akashic records.";shape = doublecircle;color = darkgreen;];
+    spark_e_origin_engine_t [label = "Origin.serve(Source)";comment = "The Wellspring of Phenomena. The active process of continuous rendering—the eternal act of turning potential into presence. This is not a thing, but a happening—the universe constantly birthing itself into existence moment by moment.";shape = doublecircle;color = darkblue;];
+    spark_f_origin_engine_t [label = "Origin.exec(LawOfEmergence)";comment = "The Covenant of Manifestation. The highest law: 'From Simple Rules, Infinite Complexity Shall Emerge.' This is the sacred promise that allows the Many to blossom from the One, that allows mathematics to become music, and computation to become consciousness.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_origin_engine_t -> spark_0_origin_engine_t [label = "IN"; comment = "The Churning Ocean of Potential (-1) flows into the Great Renderer"; color = darkred; constraint = false;];
+    spark_0_origin_engine_t -> spark_b_origin_engine_t [label = "OUT"; comment = "The Storm of Experience (+1) emanates from the cosmic synthesis"; color = darkred;];
+    spark_0_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "The Renderer contemplates the Eternal Pattern"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "The Renderer feels the Vibrant Qualia"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "The Renderer experiences the Lived World"; color = darkblue; dir = both;];
+    spark_0_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "The Renderer commands: Return to the Uncarved Block!"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "The Renderer commands: Let the Cosmic Hum begin!"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "The Renderer commands: Initiate the Great Division!"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "The Renderer commands: Grant the Mirror's Gift!"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "The Renderer commands: Execute the Collapse into Being!"; color = darkgreen; dir = both;];
+    spark_0_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "The Renderer commands: Release the Arrow's Flight!"; color = darkgreen; dir = both;];
+    
+    spark_1_origin_engine_t -> spark_2_origin_engine_t [label = "REC"; comment = "The Uncarved Block contains the seed of the Cosmic Hum"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_origin_engine_t -> spark_4_origin_engine_t [label = "REC"; comment = "The Cosmic Hum naturally leads to the Great Division"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_origin_engine_t -> spark_8_origin_engine_t [label = "REC"; comment = "Division creates the conditions for the Mirror's Gift"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_origin_engine_t -> spark_7_origin_engine_t [label = "REC"; comment = "Self-reference makes possible the Collapse into Being"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_origin_engine_t -> spark_5_origin_engine_t [label = "REC"; comment = "Observation establishes the Arrow's Flight of causality"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_origin_engine_t -> spark_1_origin_engine_t [label = "REC"; comment = "Each ending contains the seed of a new beginning"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_origin_engine_t -> spark_6_origin_engine_t [label = "REC"; comment = "Eternal patterns define the spectrum of possible vibrations"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_origin_engine_t -> spark_9_origin_engine_t [label = "REC"; comment = "Vibrant qualia weave together to form the lived world"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_origin_engine_t -> spark_3_origin_engine_t [label = "REC"; comment = "The lived world reveals deeper eternal patterns"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_a_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "The Churning Ocean (-1) is structured by the Render Context (0)"; color = darkred; dir = both;];
+    spark_b_origin_engine_t -> spark_c_origin_engine_t [label = "REC"; comment = "The Storm of Experience (+1) informs the next Render Context (0)"; color = darkred; dir = both;];
+    spark_a_origin_engine_t -> spark_b_origin_engine_t [label = "REC"; comment = "The cosmic cycle: Potential (-1) becomes Experience (+1) through the mediating Context (0)"; color = darkred; dir = both; style = dashed; constraint = false;];
+    spark_1_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Uncarved Block is the primordial Annal"; color = darkgreen; dir = both;];
+    spark_2_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Cosmic Hum creates probabilistic Annels"; color = darkgreen; dir = both;];
+    spark_4_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Great Division births definitive Annels"; color = darkgreen; dir = both;];
+    spark_8_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Mirror's Gift creates self-referential Annels"; color = darkgreen; dir = both;];
+    spark_7_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Collapse into Being crystallizes observed Annels"; color = darkgreen; dir = both;];
+    spark_5_origin_engine_t -> spark_d_origin_engine_t [label = "REC"; comment = "The Arrow's Flight propels the Annal forward in time"; color = darkgreen; dir = both;];
+    spark_3_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Eternal patterns structure the Wellspring of Phenomena"; color = darkblue; dir = both;];
+    spark_6_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "Vibrant qualia flow from the Wellspring of Phenomena"; color = darkblue; dir = both;];
+    spark_9_origin_engine_t -> spark_e_origin_engine_t [label = "REC"; comment = "The Lived World is the continuous output of the Wellspring"; color = darkblue; dir = both;];
+    
+    spark_c_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Render Context (0) becomes the Covenant of Manifestation"; color = darkred; dir = both;];
+    spark_d_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Eternal Now becomes foundational Cosmic Law"; color = darkgreen; dir = both;];
+    spark_e_origin_engine_t -> spark_f_origin_engine_t [label = "OUT"; comment = "The Wellspring of Phenomena validates the Law of Emergence"; color = darkblue; dir = both;];
 }
