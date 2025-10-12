@@ -86,31 +86,31 @@ W-Axis: Probability Intensity (continuous [0,1])
 
 Control Layer (Red) - Polarity Dominant
 
-spark_a_t = (-1, 0, 0, 0)     # receive  - Pure Potential
-spark_b_t = (+1, 0, 0, 0)     # send     - Pure Manifestation
-spark_c_t = (-1/√2, +1/√2, 0, 0)  # dispatch - Why-Who
-spark_d_t = (+1/√2, -1/√2, 0, 0)  # commit   - What-How
-spark_e_t = (-1/√3, -1/√3, +1/√3, 0)  # serve    - When-Where
-spark_f_t = (+1/√3, +1/√3, -1/√3, 0)  # exec     - Which-Closure
+* spark_a_t = (-1, 0, 0, 0)     # receive  - Pure Potential
+* spark_b_t = (+1, 0, 0, 0)     # send     - Pure Manifestation
+* spark_c_t = (-1/√2, +1/√2, 0, 0)  # dispatch - Why-Who
+* spark_d_t = (+1/√2, -1/√2, 0, 0)  # commit   - What-How
+* spark_e_t = (-1/√3, -1/√3, +1/√3, 0)  # serve    - When-Where
+* spark_f_t = (+1/√3, +1/√3, -1/√3, 0)  # exec     - Which-Closure
 
 Operational Layer (Green) - Engagement Dominant
 
-spark_1_t = (0, -1, 0, 0)          # r1 - Initiation
-spark_2_t = (0, +1, 0, 0)          # r2 - Response
-spark_4_t = (0, 0, -1, 0)          # r4 - Integration
-spark_8_t = (0, 0, +1, 0)          # r8 - Reflection
-spark_7_t = (0, +1/√2, -1/√2, 0)   # r7 - Consolidation
-spark_5_t = (0, -1/√2, +1/√2, 0)   # r5 - Propagation
+* spark_1_t = (0, -1, 0, 0)          # r1 - Initiation
+* spark_2_t = (0, +1, 0, 0)          # r2 - Response
+* spark_4_t = (0, 0, -1, 0)          # r4 - Integration
+* spark_8_t = (0, 0, +1, 0)          # r8 - Reflection
+* spark_7_t = (0, +1/√2, -1/√2, 0)   # r7 - Consolidation
+* spark_5_t = (0, -1/√2, +1/√2, 0)   # r5 - Propagation
 
 Logical Layer (Blue) - Logic Dominant
 
-spark_3_t = (-1/√2, 0, -1/√2, 0)   # r3 - Thesis
-spark_6_t = (+1/√2, 0, -1/√2, 0)   # r6 - Antithesis
-spark_9_t = (0, 0, 0, 1)            # r9 - Synthesis (pure actualization!)
+* spark_3_t = (-1/√2, 0, -1/√2, 0)   # r3 - Thesis
+* spark_6_t = (+1/√2, 0, -1/√2, 0)   # r6 - Antithesis
+* spark_9_t = (0, 0, 0, 1)            # r9 - Synthesis (pure actualization!)
 
 Meta Center (Gray)
 
-spark_0_t = (0, 0, 0, 1)            # meta - Essence Center (actualized)
+* spark_0_t = (0, 0, 0, 1)            # meta - Essence Center (actualized)
 
 ---
 
