@@ -2,9 +2,6 @@
 
 > **Where hard sci-fi meets high fantasy through computational topology**
 
-![Sparklet Topology](https://img.shields.io/badge/Topology-16v__35e-invariant)
-![Factors](https://img.shields.io/badge/Factors-Universal_Computation-blue)
-
 <a href="https://github.com/cilang/mythos/issues">
   <img src="https://img.shields.io/github/issues/cilang/mythos">
 </a>
