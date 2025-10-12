@@ -55,7 +55,7 @@ Each concept occupies a specific position in projective semantic space with coor
 
 Constrained by the 3-sphere condition:
 
-x² + y² + z² + w² = 1
+* x² + y² + z² + w² = 1
 
 ### Semantic Dimensions & Balanced Ternary
 
