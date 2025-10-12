@@ -34,8 +34,6 @@ SPARKLET CONJECTURE
 2. SPACE: 4D coordinates (x,y,z,w) on S³ with x²+y²+z²+w²=1  
 3. RESOLUTION: 137-step balanced ternary (68-1-68)
 4. LAYERS: w = -1 (Imaginary), 0 (Idea), +1 (Real)
-5. ACCURACY: 96.6% maximum prediction limit
-6. CONSTANTS: Emerge from optimal computation (α = 1/137)
 
 That's it. That's the whole thing.
 ```
