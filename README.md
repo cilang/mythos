@@ -19,7 +19,7 @@
 
 ## 🎯 What is MythOS?
 
-MythOS is a **Fictional Cosmology** that uses an **Sparklet Topology** and **Sparklet Space** to represent everything from quantum fields to magical systems as computable **Factor**.
+**MythOS** is a **Fictional Cosmology** that use **Sparklet Topology** and **Sparklet Space** as its **First Principle**.
 
 ```
 SPARKLET CONJECTURE
