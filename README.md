@@ -43,15 +43,15 @@ Every concept in MythOS is a **Factor** with identical 16v/35e structure:
 
 Each concept occupies a specific position in projective semantic space with coordinates (x, y, z, w) where:
 
-x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
-w ∈ [0, 1] (continuous probability intensity)
+* x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
+* w ∈ [0, 1] (continuous probability intensity)
 
 137-Step Balanced Ternary Distribution:
 
-Negative (-1 to 0): 68 steps  [-1.000, -0.985, ..., -0.015]
-Neutral  (0):       1 step    [0.000]
-Positive (0 to +1): 68 steps  [+0.015, ..., +0.985, +1.000]
-Total:              137 steps
+* Negative (-1 to 0): 68 steps  [-1.000, -0.985, ..., -0.015]
+* Neutral  (0):       1 step    [0.000]
+* Positive (0 to +1): 68 steps  [+0.015, ..., +0.985, +1.000]
+* Total:              137 steps
 
 Constrained by the 3-sphere condition:
 
