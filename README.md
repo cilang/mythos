@@ -42,6 +42,7 @@ Each concept occupies a specific position in projective semantic space with coor
 
 * x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
 * w ∈ [0, 1] (continuous probability intensity)
+* Constrained by the 3-sphere condition: x² + y² + z² + w² = 1
 
 ---
 
