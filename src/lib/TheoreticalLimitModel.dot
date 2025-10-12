@@ -27,8 +27,8 @@ strict digraph TheoreticalLimitModel {
     spark_e_t [label = "TL.serve(InformationTheory)";comment = "When-Where: Information substrate - service of cosmic data processing and transmission";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "TL.exec(TheoreticalLimit)";comment = "Which-Closure: Conceptual boundary - execution of ultimate possibility constraints";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_1_t [label = "IN"; comment = "Primordial void initiates string vibrations - first emergence from Imaginary to Idea Space"; color = darkviolet; constraint = false;];
-    spark_b_t -> spark_0_t [label = "OUT"; comment = "Chaos theory manifests cosmic essence - bridge from Idea to Real Space"; color = darkred;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "Primordial void initiates string vibrations - first emergence from Imaginary to Idea Space"; color = darkviolet;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "Chaos theory manifests cosmic essence - bridge from Idea to Real Space"; color = darkred;];
     spark_0_t -> spark_9_t [label = "REC"; comment = "Cosmic essence coordinates with cosmic entity - Real Space self-organization"; color = gold; dir = both;];
     
     spark_0_t -> spark_3_t [label = "REC"; comment = "Essence fuels cosmic engine - Real Space drives fundamental processes"; color = darkblue; dir = both;];
@@ -55,18 +55,18 @@ strict digraph TheoreticalLimitModel {
     spark_6_t -> spark_e_t [label = "REC"; comment = "Cosmic models serve information structure - frameworks organize cosmic data"; color = darkblue; dir = both;];
     spark_9_t -> spark_e_t [label = "REC"; comment = "Cosmic entities serve information exchange - beings process and transmit cosmic knowledge"; color = darkblue; dir = both;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "Strings generate complexity - quantum foundations produce emergent phenomena"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "Complexity requires integration - emergent systems need relational frameworks"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Integration enables reflection - structural relationships permit conscious observation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "Reflection leads to consolidation - awareness produces coherent understanding"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Consolidation enables propagation - coherent theories become computational processes"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Propagation reinforces foundations - computational processes sustain quantum structures"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "Strings generate complexity - quantum foundations produce emergent phenomena"; color = darkgreen; dir = both; style = dashed;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "Complexity requires integration - emergent systems need relational frameworks"; color = darkgreen; dir = both; style = dashed;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "Integration enables reflection - structural relationships permit conscious observation"; color = darkgreen; dir = both; style = dashed;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "Reflection leads to consolidation - awareness produces coherent understanding"; color = darkgreen; dir = both; style = dashed;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "Consolidation enables propagation - coherent theories become computational processes"; color = darkgreen; dir = both; style = dashed;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "Propagation reinforces foundations - computational processes sustain quantum structures"; color = darkgreen; dir = both; style = dashed;];
     
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Cosmic engine confronts cosmic model - driving forces meet structural constraints"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Cosmic model synthesizes with engine - constraints and drives produce cosmic entities"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Cosmic entity informs engine - emergent beings influence fundamental processes"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_3_t -> spark_6_t [label = "REC"; comment = "Cosmic engine confronts cosmic model - driving forces meet structural constraints"; color = darkblue; dir = both; style = dashed;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "Cosmic model synthesizes with engine - constraints and drives produce cosmic entities"; color = darkblue; dir = both; style = dashed;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "Cosmic entity informs engine - emergent beings influence fundamental processes"; color = darkblue; dir = both; style = dashed;];
     
-    spark_a_t -> spark_b_t [label = "REC"; comment = "Primordial void manifests as chaos - Imaginary potential becomes generative complexity"; color = darkviolet; dir = both; style = dashed; constraint = false;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "Primordial void manifests as chaos - Imaginary potential becomes generative complexity"; color = darkviolet; dir = both; style = dashed;];
     
     spark_c_t -> spark_f_t [label = "OUT"; comment = "Model theory approaches theoretical limits - coherent frameworks define possibility boundaries"; color = darkred; dir = both;];
     spark_d_t -> spark_f_t [label = "OUT"; comment = "Sparklet theory reaches conceptual closure - organizational patterns complete their scope"; color = darkgreen; dir = both;];
