@@ -1,0 +1,64 @@
+strict digraph TheoreticalLimitModel {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Theoretical Limit Model";
+    comment = "Theories used as inspiration for MythOS Development. A complete fictional cosmology capable of sustaining both hard sci-fi and the high fantasy.";
+    
+    spark_0_t [label = "TL.meta(Idea)";comment = "Abstract: {{descriptions}}";shape = doublecircle;color = darkgray;];
+    spark_1_t [label = "TL.r1(StringTheory)";comment = "Initiation: {{descriptions}}";color = darkgreen;];
+    spark_2_t [label = "TL.r2(ComplexityTheory)";comment = "Response: {{descriptions}}";color = darkgreen;];
+    spark_4_t [label = "TL.r4(CategoryTheory)";comment = "Integration: {{descriptions}}";color = darkgreen;];
+    spark_8_t [label = "TL.r8(PhilosophyOfMind)";comment = "Reflection: {{descriptions}}";color = darkgreen;];
+    spark_7_t [label = "TL.r7(KnotTheory)";comment = "Consolidation: {{descriptions}}";color = darkgreen;];
+    spark_5_t [label = "TL.r5(TheoreticalComputerScience)";comment = "Propagation: {{descriptions}}";color = darkgreen;];
+    spark_3_t [label = "TL.r3(Engine)";comment = "Thesis: {{descriptions}}";color = darkblue;];
+    spark_6_t [label = "TL.r6(Model)";comment = "Antithesis: {{descriptions}}";color = darkblue;];
+    spark_9_t [label = "TL.r9(Entity)";comment = "Synthesis: {{descriptions}}";color = darkblue;];
+    spark_a_t [label = "TL.receive(SparkOfIdea)";comment = "Potential: {{descriptions}}";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "TL.send(ChaosTheory)";comment = "Manifest: {{descriptions}}";shape = triangle;color = darkred;];
+    spark_c_t [label = "TL.dispatch(ModelTheory)";comment = "Why-Who: {{descriptions}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "TL.commit(SparkletTheory)";comment = "What-How: {{descriptions}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "TL.serve(InformationTheory)";comment = "When-Where: {{descriptions}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "TL.exec(TheoreticalLimit)";comment = "Which-Closure: {{descriptions}}";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{descriptions}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{descriptions}}"; color = darkred;];
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "OUT"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "OUT"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "OUT"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+}
