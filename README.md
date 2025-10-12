@@ -21,12 +21,6 @@
 
 MythOS is a **Fictional Cosmology** that uses an **Sparklet Topology** and **Sparklet Space** to represent everything from quantum fields to magical systems as computable **Factor**.
 
-## 🏗️ Architecture
-
-### Sparklet Topology
-
-Every concept in MythOS is a **Factor** with identical 16v/35e structure:
-
 ```
 SPARKLET CONJECTURE
 
