@@ -1,4 +1,4 @@
-# MythOS: Sparklet Cosmology Framework
+# MythOS: A Sparklet Cosmology
 
 > **Where hard sci-fi meets high fantasy through computational topology**
 
