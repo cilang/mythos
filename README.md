@@ -20,41 +20,13 @@
 <br>
 <br>
 
-![Image](src/specs/sparklet/sparklet.svg)
-
 ## 🎯 What is MythOS?
 
-MythOS is a **universal reality modeling framework** that uses an invariant 16-vertex, 35-edge topological structure to represent everything from quantum fields to magical systems as computable **Factors**.
-
-## 🎯 What is MythOS?
-
-MythOS is a **universal reality modeling framework** that uses an invariant 16-vertex, 35-edge topological structure to represent everything from quantum fields to magical systems as computable **Factors**.
-
-### 🌌 The Big Idea
-
-**All complex systems share underlying mathematical patterns.** By modeling concepts at the topological level rather than domain level, we enable:
-
-- 🧠 **Cross-domain computation** between physics, consciousness, and magic
-- 🔬 **Probabilistic causality** across scientific theories
-- 🎭 **Coherent fantasy worldbuilding** with scientific rigor
-- 🗣️ **Linguistically grounded conlangs** from first principles
-
-## 🚀 Quick Start
-
-```python
-# Import cosmic standard library
-from lib.meta import StringTheoryFactor, ConsciousnessFactor
-
-# Compose your reality
-my_world = StringTheoryFactor * ConsciousnessFactor
-
-# Compute cross-domain probabilities
-magic_probability = P(SpellWorks | StringVibrations & ConsciousWill)
-```
+MythOS is a **Fictional Cosmology** that uses an **Sparklet Topology** and **Sparklet Space** to represent everything from quantum fields to magical systems as computable **Factor**.
 
 ## 🏗️ Architecture
 
-### The Invariant Topology
+### Sparklet Topology
 
 Every concept in MythOS is a **Factor** with identical 16v/35e structure:
 
@@ -63,71 +35,82 @@ Every concept in MythOS is a **Factor** with identical 16v/35e structure:
 35 Edges = Fixed relationship patterns
 ```
 
-### Core Components
+![Image](src/specs/sparklet/sparklet.svg)
 
-- **`/lib/`** - Cosmic standard library
-- **`/proc/model/`** - Active reality instances (LURD hierarchies)
+## Sparklet Space
 
-## 📚 Factor Examples
+### Balanced Ternary Projective System
 
-| Factor | Domain | Purpose |
-|--------|--------|---------|
-| `StringTheoryFactor` | Physics | Vibrational reality foundation |
-| `ConsciousnessFactor` | Philosophy | Subjective experience modeling |
-| `LURDModel` | Cosmology | Multi-scale reality addressing |
-| `ManifoldFactor` | Mathematics | Spatial relationship primitives |
+Each concept occupies a specific position in projective semantic space with coordinates (x, y, z, w) where:
 
-## 🎮 Use Cases
+x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
+w ∈ [0, 1] (continuous probability intensity)
 
-### For Worldbuilders
+137-Step Balanced Ternary Distribution:
 
-```python
-# Create magically rigorous worlds
-magic_system = StringTheoryFactor.with({
-    "spells": "specific vibrational patterns",
-    "mana": "harmonic resonance energy"
-})
-```
+Negative (-1 to 0): 68 steps  [-1.000, -0.985, ..., -0.015]
+Neutral  (0):       1 step    [0.000]
+Positive (0 to +1): 68 steps  [+0.015, ..., +0.985, +1.000]
+Total:              137 steps
 
-### For Conlangers
+Constrained by the 3-sphere condition:
 
-```python
-# Generate vocabulary from cosmic primitives
-word_tree = ConsciousnessFactor.expand_vocabulary()
-grammar = ComputationalFactor.derive_syntax()
-```
+x² + y² + z² + w² = 1
 
-## 🔬 How It Works
+### Semantic Dimensions & Balanced Ternary
 
-1. **Map** scientific theories to Factors
-2. **Compute** using invariant topological relationships
-3. **Derive** fantasy systems from scientific foundations
-4. **Verify** consistency across all scales
+X-Axis: Polarity (137 steps between -1,0,+1)
 
-## 📈 Project Status
+* -1 = Potential/Input/Receptive
+* 0 = Essence/Operator/Process
+* +1 = Manifest/Output/Expressive
 
-| Component | Status | Next Milestone |
-|-----------|--------|----------------|
-| Core Topology | ✅ Stable | Production ready |
-| `/lib/meta/` | 🚧 Building | 8/16 Factors complete |
-| Runtime Engine | 🔬 Research | Probabilistic causality |
-| Documentation | 📖 Writing | Tutorial series |
+Y-Axis: Engagement (137 steps between -1,0,+1)
 
-## 🎯 Coming Soon
+* -1 = Initiation/Active
+* 0 = Neutral/Balanced
+* +1 = Response/Reactive
 
-- [ ] **MythOS Engine** - Runtime for multi-Factor computation
-- [ ] **Reality Compiler** - From Factors to executable cosmologies
-- [ ] **Cosmic Debugger** - Visualize cross-domain causal flows
-- [ ] **Educational Mode** - Learn frontier sciences through building
+Z-Axis: Logic (137 steps between -1,0,+1)
 
-## 🤝 Contributing
+* -1 = Thesis/Unity
+* 0 = Synthesis/Integration
+* +1 = Antithesis/Distinction
 
-We're looking for:
+W-Axis: Probability Intensity (continuous [0,1])
 
-- **Worldbuilders** to stress-test fantasy applications
-- **Conlangers** to develop conlang generation tools
+* 0 = Pure potentiality (unmanifest)
+* 1 = Full actualization (manifest)
 
-**Join us in building the periodic table of cosmic concepts!**
+### Spark Positions on the 3-Sphere
+
+Control Layer (Red) - Polarity Dominant
+
+spark_a_t = (-1, 0, 0, 0)     # receive  - Pure Potential
+spark_b_t = (+1, 0, 0, 0)     # send     - Pure Manifestation
+spark_c_t = (-1/√2, +1/√2, 0, 0)  # dispatch - Why-Who
+spark_d_t = (+1/√2, -1/√2, 0, 0)  # commit   - What-How
+spark_e_t = (-1/√3, -1/√3, +1/√3, 0)  # serve    - When-Where
+spark_f_t = (+1/√3, +1/√3, -1/√3, 0)  # exec     - Which-Closure
+
+Operational Layer (Green) - Engagement Dominant
+
+spark_1_t = (0, -1, 0, 0)          # r1 - Initiation
+spark_2_t = (0, +1, 0, 0)          # r2 - Response
+spark_4_t = (0, 0, -1, 0)          # r4 - Integration
+spark_8_t = (0, 0, +1, 0)          # r8 - Reflection
+spark_7_t = (0, +1/√2, -1/√2, 0)   # r7 - Consolidation
+spark_5_t = (0, -1/√2, +1/√2, 0)   # r5 - Propagation
+
+Logical Layer (Blue) - Logic Dominant
+
+spark_3_t = (-1/√2, 0, -1/√2, 0)   # r3 - Thesis
+spark_6_t = (+1/√2, 0, -1/√2, 0)   # r6 - Antithesis
+spark_9_t = (0, 0, 0, 1)            # r9 - Synthesis (pure actualization!)
+
+Meta Center (Gray)
+
+spark_0_t = (0, 0, 0, 1)            # meta - Essence Center (actualized)
 
 ---
 
