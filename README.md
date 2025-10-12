@@ -1,4 +1,4 @@
-# MythOS: Sparklet Cosmology Framework
+# MythOS: A Sparklet Cosmology
 
 > **Where hard sci-fi meets high fantasy through computational topology**
 
@@ -19,30 +19,21 @@
 
 ## 🎯 What is MythOS?
 
-MythOS is a **Fictional Cosmology** that uses an **Sparklet Topology** and **Sparklet Space** to represent everything from quantum fields to magical systems as computable **Factor**.
-
-## 🏗️ Architecture
-
-### Sparklet Topology
-
-Every concept in MythOS is a **Factor** with identical 16v/35e structure:
+**MythOS** is a **Fictional Cosmology** that use **Sparklet Topology** and **Sparklet Space** as its **First Principle**.
 
 ```
-16 Vertices = Universal cognitive primitives
-35 Edges = Fixed relationship patterns
+SPARKLET CONJECTURE
+
+1. TOPOLOGY: K16 with 35/120 edges is computationally optimal
+2. SPACE: 4D coordinates (x,y,z,w) on S³ with x²+y²+z²+w²=1  
+3. RESOLUTION: 137-step balanced ternary (68-1-68)
+4. LAYERS: w = -1 (Imaginary), 0 (Idea), +1 (Real)
+
+That's it. That's the whole thing.
 ```
 
 ![Image](src/specs/sparklet/sparklet.svg)
 
-## Sparklet Space
-
-### Balanced Ternary Projective System
-
-Each concept occupies a specific position in projective semantic space with coordinates (x, y, z, w) where:
-
-* x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
-* w ∈ [0, 1] (continuous probability intensity)
-* Constrained by the 3-sphere condition: x² + y² + z² + w² = 1
 
 ---
 
