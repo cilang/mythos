@@ -2,9 +2,6 @@
 
 > **Where hard sci-fi meets high fantasy through computational topology**
 
-![Sparklet Topology](https://img.shields.io/badge/Topology-16v__35e-invariant)
-![Factors](https://img.shields.io/badge/Factors-Universal_Computation-blue)
-
 <a href="https://github.com/cilang/mythos/issues">
   <img src="https://img.shields.io/github/issues/cilang/mythos">
 </a>
@@ -43,19 +40,19 @@ Every concept in MythOS is a **Factor** with identical 16v/35e structure:
 
 Each concept occupies a specific position in projective semantic space with coordinates (x, y, z, w) where:
 
-x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
-w ∈ [0, 1] (continuous probability intensity)
+* x,y,z ∈ {-1, 0, +1} with 137-step balanced ternary resolution
+* w ∈ [0, 1] (continuous probability intensity)
 
 137-Step Balanced Ternary Distribution:
 
-Negative (-1 to 0): 68 steps  [-1.000, -0.985, ..., -0.015]
-Neutral  (0):       1 step    [0.000]
-Positive (0 to +1): 68 steps  [+0.015, ..., +0.985, +1.000]
-Total:              137 steps
+* Negative (-1 to 0): 68 steps  [-1.000, -0.985, ..., -0.015]
+* Neutral  (0):       1 step    [0.000]
+* Positive (0 to +1): 68 steps  [+0.015, ..., +0.985, +1.000]
+* Total:              137 steps
 
 Constrained by the 3-sphere condition:
 
-x² + y² + z² + w² = 1
+* x² + y² + z² + w² = 1
 
 ### Semantic Dimensions & Balanced Ternary
 
@@ -86,31 +83,31 @@ W-Axis: Probability Intensity (continuous [0,1])
 
 Control Layer (Red) - Polarity Dominant
 
-spark_a_t = (-1, 0, 0, 0)     # receive  - Pure Potential
-spark_b_t = (+1, 0, 0, 0)     # send     - Pure Manifestation
-spark_c_t = (-1/√2, +1/√2, 0, 0)  # dispatch - Why-Who
-spark_d_t = (+1/√2, -1/√2, 0, 0)  # commit   - What-How
-spark_e_t = (-1/√3, -1/√3, +1/√3, 0)  # serve    - When-Where
-spark_f_t = (+1/√3, +1/√3, -1/√3, 0)  # exec     - Which-Closure
+* spark_a_t = (-1, 0, 0, 0)     # receive  - Pure Potential
+* spark_b_t = (+1, 0, 0, 0)     # send     - Pure Manifestation
+* spark_c_t = (-1/√2, +1/√2, 0, 0)  # dispatch - Why-Who
+* spark_d_t = (+1/√2, -1/√2, 0, 0)  # commit   - What-How
+* spark_e_t = (-1/√3, -1/√3, +1/√3, 0)  # serve    - When-Where
+* spark_f_t = (+1/√3, +1/√3, -1/√3, 0)  # exec     - Which-Closure
 
 Operational Layer (Green) - Engagement Dominant
 
-spark_1_t = (0, -1, 0, 0)          # r1 - Initiation
-spark_2_t = (0, +1, 0, 0)          # r2 - Response
-spark_4_t = (0, 0, -1, 0)          # r4 - Integration
-spark_8_t = (0, 0, +1, 0)          # r8 - Reflection
-spark_7_t = (0, +1/√2, -1/√2, 0)   # r7 - Consolidation
-spark_5_t = (0, -1/√2, +1/√2, 0)   # r5 - Propagation
+* spark_1_t = (0, -1, 0, 0)          # r1 - Initiation
+* spark_2_t = (0, +1, 0, 0)          # r2 - Response
+* spark_4_t = (0, 0, -1, 0)          # r4 - Integration
+* spark_8_t = (0, 0, +1, 0)          # r8 - Reflection
+* spark_7_t = (0, +1/√2, -1/√2, 0)   # r7 - Consolidation
+* spark_5_t = (0, -1/√2, +1/√2, 0)   # r5 - Propagation
 
 Logical Layer (Blue) - Logic Dominant
 
-spark_3_t = (-1/√2, 0, -1/√2, 0)   # r3 - Thesis
-spark_6_t = (+1/√2, 0, -1/√2, 0)   # r6 - Antithesis
-spark_9_t = (0, 0, 0, 1)            # r9 - Synthesis (pure actualization!)
+* spark_3_t = (-1/√2, 0, -1/√2, 0)   # r3 - Thesis
+* spark_6_t = (+1/√2, 0, -1/√2, 0)   # r6 - Antithesis
+* spark_9_t = (0, 0, 0, 1)            # r9 - Synthesis (pure actualization!)
 
 Meta Center (Gray)
 
-spark_0_t = (0, 0, 0, 1)            # meta - Essence Center (actualized)
+* spark_0_t = (0, 0, 0, 1)            # meta - Essence Center (actualized)
 
 ---
 
