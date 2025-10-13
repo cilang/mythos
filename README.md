@@ -24,10 +24,10 @@
 ```
 SPARKLET CONJECTURE
 
-1. TOPOLOGY: K16 with 35/120 edges is computationally optimal
-2. SPACE: 4D coordinates (x,y,z,w) on S³ with x²+y²+z²+w²=1  
-3. RESOLUTION: 137-step balanced ternary (68-1-68)
-4. LAYERS: w = -1 (Imaginary), 0 (Idea), +1 (Real)
+1. SPACE: 4D coordinates (x,y,z,w) on S³ with x²+y²+z²+w²=1  
+2. RESOLUTION: 137-step balanced ternary (68-1-68)
+3. LAYERS: w = -1 (Imaginary), 0 (Idea), +1 (Real)
+4. TOPOLOGY: K16 with 35/120 edges is computationally optimal
 
 That's it. That's the whole thing.
 ```
