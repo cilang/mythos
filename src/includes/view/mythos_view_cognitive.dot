@@ -7,21 +7,21 @@ strict digraph CognitiveView {
     comment = "{{todo}}";
     
     spark_a_t [label = "Cognitive.receive(PrimordialPotential)";comment = "Potential: {{todo}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Cognitive.meta(DirectStateAccess)";comment = "Abstract: {{todo}}";shape = doublecircle;color = darkgray;];
+    spark_0_t [label = "Cognitive.meta(DirectStateAccess)";comment = "Abstract: The knowledge that comes from unmediated interaction with the source or system essence. Intuitive, direct understanding that bypasses standard processing.";shape = doublecircle;color = darkgray;];
     spark_b_t [label = "Cognitive.send(ManifestationBridge)";comment = "Manifest: {{todo}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "Cognitive.r1(OperationalGrammar)";comment = "Initiation: {{todo}}";color = darkgreen;];
-    spark_2_t [label = "Cognitive.r2(AxiomaticReasoning)";comment = "Response: {{todo}}";color = darkgreen;];
-    spark_4_t [label = "Cognitive.r4(StateDynamics)";comment = "Integration: {{todo}}";color = darkgreen;];
-    spark_8_t [label = "Cognitive.r8(PatternRecognition)";comment = "Reflection: {{todo}}";color = darkgreen;];
-    spark_7_t [label = "Cognitive.r7(ProvenanceTracking)";comment = "Consolidation: {{todo}}";color = darkgreen;];
-    spark_5_t [label = "Cognitive.r5(NetworkTheory)";comment = "Propagation: {{todo}}";color = darkgreen;];
-    spark_3_t [label = "Cognitive.r3(FormalLogic)";comment = "Thesis: {{todo}}";color = darkblue;];
-    spark_6_t [label = "Cognitive.r6(ContextualLogic)";comment = "Antithesis: {{todo}}";color = darkblue;];
-    spark_9_t [label = "Cognitive.r9(IntegratedIntelligence)";comment = "Synthesis: {{todo}}";color = darkblue;];
-    spark_c_t [label = "Cognitive.dispatch(IntentModeling)";comment = "Why-Who: {{todo}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Cognitive.commit(ImplementationProtocol)";comment = "What-How: {{todo}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Cognitive.serve(ContextualOptimization)";comment = "When-Where: {{todo}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Cognitive.exec(AllocationLogic)";comment = "Which-Closure: {{todo}}";shape = doublecircle;color = lightgray;];
+    spark_1_t [label = "Cognitive.r1(OperationalGrammar)";comment = "Initiation: The knowledge of rules, procedures, and lawful action. How to operate within a system's constraints.";color = darkgreen;];
+    spark_2_t [label = "Cognitive.r2(AxiomaticReasoning)";comment = "Response: The knowledge of first principles and fundamental nature. Understanding the core, non-negotiable axioms of a system.";color = darkgreen;];
+    spark_4_t [label = "Cognitive.r4(StateDynamics)";comment = "Integration: The knowledge of internal state management, optimization, and purification. Tuning the system's internal conditions.";color = darkgreen;];
+    spark_8_t [label = "Cognitive.r8(PatternRecognition)";comment = "Reflection: The knowledge of decoding symbols, extracting meaning from data, and interpreting complex signals.";color = darkgreen;];
+    spark_7_t [label = "Cognitive.r7(ProvenanceTracking)";comment = "Consolidation: The knowledge of verifying provenance, assessing reliability, and tracing information to its origin.";color = darkgreen;];
+    spark_5_t [label = "Cognitive.r5(NetworkTheory)";comment = "Propagation: The knowledge of relationships, lineages, networks, and causal chains. Mapping how things are linked.";color = darkgreen;];
+    spark_3_t [label = "Cognitive.r3(FormalLogic)";comment = "Thesis: The knowledge of valid inference structures and deductive reasoning.";color = darkblue;];
+    spark_6_t [label = "Cognitive.r6(ContextualLogic)";comment = "Antithesis: The knowledge of effective communication, persuasion, and adapting message to context. The logic of audience and impact.";color = darkblue;];
+    spark_9_t [label = "Cognitive.r9(IntegratedIntelligence)";comment = "Synthesis: The synthesized knowledge that emerges from the dialogue between formal and contextual logic. Practical wisdom.";color = darkblue;];
+    spark_c_t [label = "Cognitive.dispatch(IntentModeling)";comment = "Why-Who: The knowledge of purpose, goal-setting, and the foundational *why* that directs all action.";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Cognitive.commit(ImplementationProtocol)";comment = "What-How: The knowledge of translating intention into effective practice. The *how* of implementation.";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Cognitive.serve(ContextualOptimization)";comment = "When-Where: The knowledge of timing, placement, and situational relevance. Knowing *when* and *where* to apply which knowledge.";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Cognitive.exec(AllocationLogic)";comment = "Which-Closure: The knowledge of prioritization, resource allocation, and selection. Deciding *which* path to take.";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{todo}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{todo}}"; color = darkred;];
