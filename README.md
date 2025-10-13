@@ -49,7 +49,10 @@ The Knot Theory Interpretation of Sparklet Space
 
 ---
 
-**MythOS**: Because the universe shouldn't have domain boundaries. 🚀✨
+Oh! Almost forgot, **Sparklet Conjecture** has **Sparklet Space** and **Sparklet Topology**.
+
+The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
+
 
 ## License
 
