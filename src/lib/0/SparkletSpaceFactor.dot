@@ -1,0 +1,64 @@
+strict digraph SparkletSpaceFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Sparklet Space";
+    comment = "The cosmological container: a 3-sphere with 3 layers (w=-1,0,+1) and 137-step ternary navigation. This Factor describes its own structure.";
+    
+    spark_a_t [label = "SparkletSpace.receive(Potential)";comment = "Imaginary Space (w=-1): The unmanifest potential, the source of all novel topology.";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "SparkletSpace.meta(Substrate)";comment = "The essential lawfulness of the space itself: the 3-sphere constraint, the ternary logic.";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "SparkletSpace.send(Manifest)";comment = "Real Space (w=+1): The fully actualized, measurable reality.";shape = triangle;color = darkred;];
+    spark_1_t [label = "SparkletSpace.r1(Coordinate)";comment = "A point (x,y,z,w) obeying x²+y²+z²+w²=1.";color = darkgreen;];
+    spark_2_t [label = "SparkletSpace.r2(Navigation)";comment = "The 137-step ternary path between layers.";color = darkgreen;];
+    spark_4_t [label = "SparkletSpace.r4(Constraint)";comment = "The 3-sphere invariant law.";color = darkgreen;];
+    spark_8_t [label = "SparkletSpace.r8(Interpolation)";comment = "The function that generates the 137 steps.";color = darkgreen;];
+    spark_7_t [label = "SparkletSpace.r7(Instantiation)";comment = "The process of creating a new Factor within the space.";color = darkgreen;];
+    spark_5_t [label = "SparkletSpace.r5(Relation)";comment = "The geodesic arc between two points.";color = darkgreen;];
+    spark_3_t [label = "SparkletSpace.r3(Geometry)";comment = "The mathematical thesis: the space as a 3-sphere.";color = darkblue;];
+    spark_6_t [label = "SparkletSpace.r6(Topology)";comment = "The relational antithesis: the space as a network of Factors.";color = darkblue;];
+    spark_9_t [label = "SparkletSpace.r9(Existence)";comment = "The synthesis: the space as a unified container of all.";color = darkblue;];
+    spark_c_t [label = "SparkletSpace.dispatch(Layer)";comment = "Why-Who: The purpose of each layer (w-value).";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "SparkletSpace.commit(Structure)";comment = "What-How: The specific coordinate system and constraints.";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "SparkletSpace.serve(Context)";comment = "When-Where: The contextual placement of any point.";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "SparkletSpace.exec(Containment)";comment = "Which-Closure: The function that validates a point is 'in' the space.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "Potential gives rise to the lawful substrate."; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "The substrate gives rise to manifestation."; color = darkred;];
+    spark_0_t -> spark_3_t [label = "REC"; comment = "The substrate has a geometric nature."; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "The substrate has a topological nature."; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "The substrate simply IS."; color = darkblue; dir = both;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "The substrate permits coordinate existence."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{todo}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{todo}}"; color = darkred; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both;];
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{todo}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{todo}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{todo}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "Layer logic resolves to containment checks."; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "Structural rules resolve to containment."; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "Contextual placement resolves to containment."; color = darkblue; dir = both;];
+}
