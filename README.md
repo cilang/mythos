@@ -26,6 +26,7 @@
 **Mathematical Definition:**
 
 S = {(x,y,z,w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}
+
 w ∈ [w₀, w₁, w₂, ..., w₁₅]  # 16-fold multiplexed aspect vector
 
 **Probability Quantization:**
