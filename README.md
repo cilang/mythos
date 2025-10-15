@@ -113,9 +113,7 @@ strict digraph Sparklet {
 
 ---
 
-Oh! Almost forgot, **Sparklet Framework** has **Sparklet Space** and **Sparklet Topology**.
-
-The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
+Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
 
 
 ## License
