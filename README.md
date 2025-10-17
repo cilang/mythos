@@ -31,6 +31,7 @@ w ∈ [w₀, w₁, w₂, ..., w₁₅]  # 16-fold multiplexed aspect vector
 
 **Probability Quantization:**
 - Default: `q = 137` probability multitudes
+- Requirement: `2n+1`
 - Distribution: Balanced Ternary `68-1-68` across [-1, 0, +1]
 
 ### Sparklet Topology
