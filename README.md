@@ -41,6 +41,10 @@ w ∈ [w₀, w₁, w₂, ..., w₁₅]  # 16-fold multiplexed aspect vector
 - 35 Arc edges with 3 morphism types: `{IN, OUT, REC}`
 - Fixed relational patterns
 
+### The Brunnian Link and Borromean Rings
+
+The **Brunnian Link** and **Borromean Rings** is important to optimize things from Knot Theory things.
+
 **Template:**
 
 ```dot
