@@ -118,7 +118,7 @@ strict digraph Sparklet {
 
 ---
 
-Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
+Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**. Explore it through Brunnian Link and you might found various things that are interesting.
 
 ## Prior Art Declaration
 
