@@ -23,42 +23,46 @@ strict digraph SamsaraEngine {
     spark_e_t [label = "Samsara.serve(Samsara)";comment = "The Experienced Prison of Time. The manifested, subjective experience of being trapped within the causal web—the feeling of past regrets, future anxieties, and the palpable weight of consequence. It is the 'When-Where' of a soul's journey through the cycle.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "Samsara.exec(LawOfCausality)";comment = "The Prime Directive of Consequences. The unbreakable highest law: 'For Every Cause, An Equal And Opposite Effect; All Accounts Must Be Settled.' This is the fundamental rule that powers the wheel and from which all temporal logic flows.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "The raw material of action enters the karmic forge"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "The chains of consequence are delivered to time itself"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Meta consults the Ledger of Moral Debt"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Meta consults the Path of Harmonious Law"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Meta consults the State of Causal Equilibrium"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Meta instructs: Inscribe this new Debt"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Meta instructs: Judge its Consequence"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Meta instructs: Weave it into the Tapestry"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Meta instructs: Audit the state of Destiny"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Meta instructs: Balance the Scales"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Meta instructs: Unleash the Ripples"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "A debt inscribed must be judged"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "A judgment passed must be woven into the whole"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "A new thread changes the tapestry's balance"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "An audit reveals imbalances that must be corrected"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "A balanced scale allows consequences to flow"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "A consequence unleashed becomes a new debt"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Karmic debt creates the need for a Dharmic path"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Walking the Dharmic path leads to Nirvanic release"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Nirvanic release resolves Karmic debt"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "New Vertices are placed upon the Map of Possibility"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "New Edges redraw the Map of Possibility"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The great cycle: Deeds are bound by Fate"; color = darkred; dir = both; style = dashed; constraint = false;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "Initialization proposes a new entry in the Canonical History"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "Instantiation certifies the entry's causal link"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "Integration finalizes the entry's place in history"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "Reflection queries the entire Canonical History"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "Consolidation corrects the historical record"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "Propagation marks a causal chain as active"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Karma is the weight felt by the soul in the cycle"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "Dharma is the guiding light experienced as intuition"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Nirvana is the peace of release from the cycle"; color = darkblue; dir = both;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "A consistent, traversable Graph crystallizes into Law"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "A balanced, immutable Imprint reinforces the Prime Directive"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "The lived experience of the Wheel validates the Law of Causality"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

@@ -4,9 +4,11 @@ strict digraph DynamisModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Dynamis Model (/proc/model/dynamis)";
-    comment = "The energy and resource management system. It defines the principles of power storage, flow, and transformation across all realms, governing how entities accumulate, channel, and expend their vital forces.";
+    comment = "{{description}}";
     
+    spark_a_t [label = "Dynamis.receive(Voltage)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Dynamis.meta(Dynamis)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Dynamis.send(Current)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "Dynamis.r1(Mana)";comment = "Initiation: {{description}}";color = darkgreen;];
     spark_2_t [label = "Dynamis.r2(Stamina)";comment = "Response: {{description}}";color = darkgreen;];
     spark_4_t [label = "Dynamis.r4(Arcane)";comment = "Integration: {{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph DynamisModel {
     spark_3_t [label = "Dynamis.r3(Reserve)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Dynamis.r6(Flow)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Dynamis.r9(Potency)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Dynamis.receive(Voltage)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Dynamis.send(Current)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Dynamis.dispatch(Channel)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Dynamis.commit(Reservoir)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Dynamis.serve(Conduit)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];

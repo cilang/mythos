@@ -23,42 +23,46 @@ strict digraph CorporaEngine {
     spark_e_t [label = "Corpora.serve(Corpus)";comment = "The Integrated Being. The living, breathing synthesis of all bodies operating in harmony. This is the 'When-Where'—the fully actualized entity as it exists and acts in the moment, a unique and dynamic expression of consciousness in time and space.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "Corpora.exec(LawOfCorpora)";comment = "The Principle of Coherent Embodiment. The highest law of manifestation: 'A Stable Identity Must Express Itself Through Coherent Forms.' This is the divine mandate that governs how the abstract becomes corporeal while maintaining integrity.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "The raw substance of experience flows into the vessel"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "The refined essence of being radiates outward"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "The Artisan consults the Wisdom of the Flesh"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "The Artisan consults the Focus of the Mind"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "The Artisan consults the Voice of the Heart"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "The Artisan queries the Eternal Monad"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "The Artisan checks the Aegis of Innocence"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "The Artisan directs the Body of Imagination"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "The Artisan aligns with the Body of Destiny"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "The Artisan operates the Vessel of Experience"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "The Artisan works with the Mask of Separation"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "The eternal core requires a sacred boundary for its preservation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "A protected core can safely project into the imaginal realms"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Astral exploration forges the enduring soul-record"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "A mature soul seeks the crucible of physical experience"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Material interaction necessitates a sense of separate self"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "The ego's journey ultimately refines and informs the core will"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "The body's deep wisdom gives rise to conscious purpose"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Mastered conscious action opens the channel to direct knowing"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Intuitive insight purifies and elevates instinctual response"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "Incoming experience is presented to the Mediator for sense-making"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "Outgoing presence is modulated by the Mediator's understanding"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The great cycle: What is received is transformed and radiated"; color = darkred; dir = both; style = dashed; constraint = false;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "The Heart's pure will is the central sun of the Sphere of Influence"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "The Shell defines the inviolable boundary of the Sphere"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "The Astral Body provides the energetic content of the Sphere"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "The Spiritual Body gives depth and permanence to the Sphere"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "The Material Body anchors the Sphere in physical reality"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "The Ego provides the focused intention within the Sphere"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Instinct governs the autonomic harmony of the Integrated Being"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "Intent directs the conscious activity of the Integrated Being"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Intuition guides the evolutionary purpose of the Integrated Being"; color = darkblue; dir = both;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "A clear and balanced Mediator crystallizes into Law"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "A stable and coherent Sphere of Influence becomes Law"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "A harmonious Integrated Being embodies the Law of Corpora"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

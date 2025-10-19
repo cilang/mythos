@@ -23,42 +23,46 @@ strict digraph DivergenceEngine {
     spark_e_t [label = "Divergence.serve(GraceOfDivergence)";comment = "The Aura of Liberation. The emanated field where certainty crumbles and fixed patterns dissolve. In this grace, assumptions break, rules become suggestions, and the comfort of the known gives way to the thrilling terror of the possible.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "Divergence.exec(LawOfDivergence)";comment = "The Covenant of Possibility. The final, executed state where liberation becomes cosmic law—it becomes the principle of uncertainty, the engine of evolution, or the birth of entirely new branches of reality.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "The Cloak of Stagnation is offered to the Liberating Destroyer"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "The Sword of Possibility is drawn from its scabbard"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Chandra contemplates the Ocean of Pure Potential"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Chandra wields the Sacred Hammer of Destruction"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Chandra celebrates the Infinite Spectrum of Diversity"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Chandra commands: Let Maya's Illusion be cast!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Chandra commands: Let Fana's Dissolution begin!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Chandra commands: Let Rita's Severance cut deep!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Chandra commands: Let Qadar's Chance weave its patterns!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Chandra commands: Let Tara's Navigation create distance!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Chandra commands: Let Pertiwi's Propagation spread change!"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "The illusion of permanence makes dissolution meaningful"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "Dissolved boundaries enable the severance of causal chains"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Severed chains create space for chance to weave new patterns"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "Woven probabilities require new spaces to unfold within"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Created distances allow change to propagate through nature"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Propagated change creates new illusions to be shattered"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Pure potential requires destruction to manifest as form"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Destruction clears the ground for diversity to flourish"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Diversity constantly feeds back into the ocean of potential"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "The Cloak of Stagnation is presented to the Living Liberator"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "The Sword of Possibility is wielded by the Living Liberator"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The great alchemy: Certainty becomes Possibility"; color = darkred; dir = both; style = dashed; constraint = false;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "Maya's broken illusions are recorded in the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "Fana's dissolved boundaries enrich the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "Rita's severed chains become part of the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "Qadar's woven probabilities expand the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "Tara's navigated distances fill the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "Pertiwi's propagated change is the heart of the Infinite Fractal"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "The Ocean of Pure Potential charges the Aura of Liberation"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "The Sacred Hammer sharpens the Aura of Liberation"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "The Infinite Spectrum radiates as the Aura of Liberation"; color = darkblue; dir = both;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "The Living Liberator's shattering becomes Covenant of Possibility"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "The Infinite Fractal's branches become Cosmic Law"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "The Aura of Liberation creates the conditions for Possibility"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

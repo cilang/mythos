@@ -23,42 +23,46 @@ strict digraph ExcitationEngine {
     spark_e_t [label = "Excitation.serve(GraceOfExcitation)";comment = "The Aura of Animation. The emanated field where stagnation melts and creativity flows unbounded. In this grace, ideas spark, hearts quicken, and the universe remembers how to dance with joyful abandon.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "Excitation.exec(LawOfExcitation)";comment = "The Covenant of Animation. The final, executed state where dynamic pattern becomes cosmic law—it becomes a fundamental principle of motion, a self-sustaining ecosystem, or an endlessly creative process.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "The Garden of Dormancy is offered to the Spatial Sovereign"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "The Symphony of Activation flows from the cosmic spark"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Nda contemplates the Ocean of Pure Potential"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Nda rides the Cosmic Current of Acceleration"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Nda celebrates the Joyful Expression of Vitality"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Nda commands: Let the Primordial Surge be unleashed!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Nda commands: Let the Ignition Key turn!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Nda commands: Let the Symphony of Sympathy begin!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Nda commands: Let the Creative Explosion unfold!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Nda commands: Let the Dance of Balance be established!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Nda commands: Let the Eternal Ripple propagate!"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "The initial surge finds its amplification through catalysis"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "The catalyzed reaction seeks sympathetic resonance throughout reality"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Resonant patterns naturally expand in scope and complexity"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "Expanded patterns find stability through rhythmic oscillation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Oscillating systems naturally seek to propagate their patterns"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Propagated patterns become seeds for new creative surges"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Pure potential naturally flows toward increasing intensity"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Accelerated motion finds its fulfillment in vibrant vitality"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Vitality constantly renews the wellspring of pure potential"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "The Garden of Dormancy is presented to the Living Choreographer"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "The Symphony of Activation is conducted by the Living Choreographer"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The great transformation: Stillness becomes Symphony"; color = darkred; dir = both; style = dashed; constraint = false;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "The Primordial Surge is recorded in the Fractal Seed Vault"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "The Ignition Key patterns enrich the Fractal Seed Vault"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "The Symphony of Sympathy becomes part of the Seed Vault"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "The Creative Explosion patterns expand the Seed Vault"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "The Dance of Balance rhythms fill the Seed Vault"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "The Eternal Ripple is the heart of the Seed Vault"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "The Ocean of Pure Potential charges the Aura of Animation"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "The Cosmic Current focuses the Aura of Animation"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "The Joyful Expression radiates as the Aura of Animation"; color = darkblue; dir = both;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "The Living Choreographer's dance becomes Covenant of Animation"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "The Fractal Seed Vault's patterns become Cosmic Law"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "The Aura of Animation creates the conditions for Vitality"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

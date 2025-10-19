@@ -23,42 +23,46 @@ strict digraph RepositoryEngine {
     spark_e_t [label = "Repository.serve(Replication)";comment = "The Distribution of Truth. The process of ensuring coherent knowledge across all subsystems of reality. It maintains the consistency of memory, ensuring all witnesses share the same history across the distributed consciousness of existence.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "Repository.exec(LawOfPersistence)";comment = "The Prime Directive of Memory. The highest, unbreakable law: 'All That Occurs Is Remembered; Nothing Remembered Can Be Unremembered; Context May Grow, But Facts Remain Eternal.' This is the foundation of cosmic truth.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "A Vow of Witness is sworn before the Akashic Guardian"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "A Proclamation of Fact is announced to all witnesses"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "The Guardian consults the Canonical Truth"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "The Guardian examines the Raw Chronicle"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "The Guardian recalls the Pattern of Becoming"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "The Guardian commands: Flow into the River of Now!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "The Guardian commands: Update the Census of Being!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "The Guardian commands: Preserve in the Hall of Echoes!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "The Guardian commands: Hold in the Liminal Gateway!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "The Guardian commands: Weave into the Tapestry of Meaning!"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "The Guardian commands: Recall the Wholeness!"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "The flowing River of Now feeds the living Census"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "The completed Census entries sleep in the Hall of Echoes"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Echoes from the Hall inform what passes through the Gateway"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "The Gateway feeds threads to the Tapestry of Meaning"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "The Tapestry enables the Recall of Wholeness"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Remembered Wholeness pre-waters the River of Now"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Canonical Truth is distilled from the Raw Chronicle"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "The Raw Chronicle reveals recurring Patterns of Becoming"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Patterns of Becoming become part of Canonical Truth"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "A Vow of Witness creates a standing Seeking of Understanding"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "A Proclamation of Fact may inspire new Seekings"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The great cycle: To Witness is to eventually Proclaim"; color = darkred; dir = both; style = dashed; constraint = false;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "The River of Now is composed of countless Engravings"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "The Census of Being is updated through Engravings"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "The Hall of Echoes is filled with eternal Engravings"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "The Liminal Gateway stages Engravings for commitment"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "The Tapestry of Meaning is woven from related Engravings"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "The Recall of Wholeness validates past Engravings"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Canonical Truth is the primary source for Distribution"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "The Raw Chronicle provides the sequence for Distribution"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Patterns of Becoming are distributed as archetypes"; color = darkblue; dir = both;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "A perfectly resolved Seeking crystallizes into Law"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "An eternal Engraving becomes unchangeable Law"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "A coherent Distribution validates the Law of Persistence"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

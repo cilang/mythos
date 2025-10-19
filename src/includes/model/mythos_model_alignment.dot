@@ -4,9 +4,11 @@ strict digraph AlignmentModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Alignment Model (/proc/model/alignment)";
-    comment = "The fundamental physics and computational framework.";
+    comment = "{{description}}";
     
+    spark_a_t [label = "Alignment.receive(Unity)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Alignment.meta(Alignment)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Alignment.send(Diversity)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "Alignment.r1(Causality)";comment = "Initiation: {{description}}";color = darkgreen;];
     spark_2_t [label = "Alignment.r2(Topology)";comment = "Response: {{description}}";color = darkgreen;];
     spark_4_t [label = "Alignment.r4(Dimensionality)";comment = "Integration: {{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph AlignmentModel {
     spark_3_t [label = "Alignment.r3(Charge)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Alignment.r6(Parity)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Alignment.r9(Time)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Alignment.receive(Unity)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Alignment.send(Diversity)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Alignment.dispatch(Quintessence)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Alignment.commit(Superposition)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Alignment.serve(Entanglement)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];

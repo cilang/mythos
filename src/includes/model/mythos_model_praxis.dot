@@ -4,61 +4,65 @@ strict digraph PraxisModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Praxis Model (/proc/model/praxis)";
-    comment = "This is the How. The model of practical application, technique, and skill—the actual implementation of power through methods, rituals, and abilities that transform intention into reality.";
+    comment = "{{description}}";
     
-    spark_0_t [label = "Praxis.meta(Praxis)";comment = "Abstract: The Prime Application. The fundamental nature of applied power—the bridge between potential and manifestation, where will becomes action and thought becomes reality.";shape = doublecircle;color = darkgray;];
-    spark_1_t [label = "Praxis.r1(Invocation)";comment = "Initiation: Calling upon an Engine's function. Summoning external powers, entities, or forces to enact change through established protocols and names.";color = darkgreen;];
-    spark_2_t [label = "Praxis.r2(Transmutation)";comment = "Response: Changing the state of Matter/Energy. Altering the fundamental properties of substances, elements, or energies from one form to another.";color = darkgreen;];
-    spark_4_t [label = "Praxis.r4(Conjuration)";comment = "Integration: Creating something from nothing. Manifesting objects, beings, or energies ex nihilo through pure will and pattern imposition.";color = darkgreen;];
-    spark_8_t [label = "Praxis.r8(Abjuration)";comment = "Reflection: Warding, protection, creating boundary. Establishing defensive fields, banishing influences, and creating zones of safety or exclusion.";color = darkgreen;];
-    spark_7_t [label = "Praxis.r7(Divination)";comment = "Consolidation: Querying the system for information. Gaining knowledge through supernatural means—seeing the unseen, knowing the unknown, perceiving patterns in chaos.";color = darkgreen;];
-    spark_5_t [label = "Praxis.r5(Enchantment)";comment = "Propagation: Embedding a function into an object. Imbuing items with persistent magical properties, creating artifacts, and storing spells in physical forms.";color = darkgreen;];
-    spark_3_t [label = "Praxis.r3(Intuition)";comment = "Thesis: Non-logical grasp of Praxis. Innate understanding of magical principles through feeling, instinct, and subconscious pattern recognition.";color = darkblue;];
-    spark_6_t [label = "Praxis.r6(Theory)";comment = "Antithesis: The intellectual framework behind Praxis. Systematic study of magical laws, principles, and causal relationships through observation and reasoning.";color = darkblue;];
-    spark_9_t [label = "Praxis.r9(Mastery)";comment = "Synthesis: The synthesis of Intuition and Theory. Complete understanding where knowledge and instinct merge into effortless application and creative innovation.";color = darkblue;];
-    spark_a_t [label = "Praxis.receive(Intent)";comment = "Potential: The desire to act, Drive. The focused will and purpose that initiates magical action—the clear mental image of desired outcome.";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Praxis.send(Effect)";comment = "Manifest: The change in the world caused by action. The tangible result of magical working—the altered reality that persists after the working is complete.";shape = triangle;color = darkred;];
-    spark_c_t [label = "Praxis.dispatch(Method)";comment = "Why-Who: The Approach and Practitioner. The specific technique or school of magic employed, combined with the practitioner's unique style and capabilities.";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Praxis.commit(Rote)";comment = "What-How: The Memorized Procedure. Standardized spell patterns, practiced gestures, and formulaic incantations that ensure reliable results through repetition.";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Praxis.serve(Ritual)";comment = "When-Where: The Contextual Ceremony. Formal magical procedures with specific timing, location, and symbolic elements that amplify power through resonance and tradition.";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Praxis.exec(Ability)";comment = "Which-Closure: The Embodied Skill. Magical capability integrated into the practitioner's being—innate talents, trained competencies, and personal magical signatures.";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Praxis.receive(Intent)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Praxis.meta(Praxis)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Praxis.send(Effect)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Praxis.r1(Invocation)";comment = "Initiation: {{description}}";color = darkgreen;];
+    spark_2_t [label = "Praxis.r2(Transmutation)";comment = "Response: {{description}}";color = darkgreen;];
+    spark_4_t [label = "Praxis.r4(Conjuration)";comment = "Integration: {{description}}";color = darkgreen;];
+    spark_8_t [label = "Praxis.r8(Abjuration)";comment = "Reflection: {{description}}";color = darkgreen;];
+    spark_7_t [label = "Praxis.r7(Divination)";comment = "Consolidation: {{description}}";color = darkgreen;];
+    spark_5_t [label = "Praxis.r5(Enchantment)";comment = "Propagation: {{description}}";color = darkgreen;];
+    spark_3_t [label = "Praxis.r3(Intuition)";comment = "Thesis: {{description}}";color = darkblue;];
+    spark_6_t [label = "Praxis.r6(Theory)";comment = "Antithesis: {{description}}";color = darkblue;];
+    spark_9_t [label = "Praxis.r9(Mastery)";comment = "Synthesis: {{description}}";color = darkblue;];
+    spark_c_t [label = "Praxis.dispatch(Method)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Praxis.commit(Rote)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Praxis.serve(Ritual)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Praxis.exec(Ability)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "Intent activates the Prime Application"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "Prime Application produces Effects"; color = darkred;];
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Prime Application channels Intuitive understanding"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Prime Application applies Theoretical knowledge"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Prime Application expresses Mastery"; color = darkblue; dir = both;];
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Prime Application enables Invocation"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Prime Application drives Transmutation"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Prime Application manifests Conjuration"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Prime Application establishes Abjuration"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Prime Application facilitates Divination"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Prime Application empowers Enchantment"; color = darkgreen; dir = both;];
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_a_t -> spark_c_t [label = "REC"; comment = "Intent selects appropriate Methods"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "Effects validate Method effectiveness"; color = darkred; dir = both;];
-    spark_1_t -> spark_d_t [label = "REC"; comment = "Invocation relies on Rote precision"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "Transmutation follows Rote formulas"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "Conjuration uses Rote patterns"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "Abjuration employs Rote sequences"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "Divination requires Rote focus"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "Enchantment builds on Rote techniques"; color = darkgreen; dir = both;];
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Intuition enhances Ritual sensitivity"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "Theory informs Ritual structure"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Mastery perfects Ritual execution"; color = darkblue; dir = both;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "Invocation enables Transmutation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "Transmutation leads to Conjuration"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Conjuration requires Abjuration control"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "Abjuration enables safe Divination"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Divination reveals Enchantment possibilities"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Enchantment stores Invocation patterns"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Intuition inspires Theory development"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Theory guides Mastery achievement"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Mastery deepens Intuitive understanding"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "Intent manifests as Effect"; color = darkred; dir = both; style = dashed; constraint = false;];
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "REC"; comment = "Methods crystallize into Abilities"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "REC"; comment = "Rotes become embodied Abilities"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "REC"; comment = "Rituals develop innate Abilities"; color = darkblue; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

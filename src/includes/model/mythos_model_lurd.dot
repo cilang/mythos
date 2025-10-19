@@ -4,9 +4,11 @@ strict digraph LURDModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "LURD (Localized Unified Recursion Descriptor) Model (/proc/model/lurd)";
-    comment = "The cosmic addressing system.";
+    comment = "{{description}}";
     
+    spark_a_t [label = "LURD.receive(DirectiveDescriptor)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "LURD.meta(MetaDescriptor)";comment = "Abstract: LURD-0, {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "LURD.send(OriginDescriptor)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "LURD.r1(ManifoldDescriptor)";comment = "Initiation: LURD-1, {{description}}";color = darkgreen;];
     spark_2_t [label = "LURD.r2(CosmicDescriptor)";comment = "Response: LURD-2, {{description}}";color = darkgreen;];
     spark_4_t [label = "LURD.r4(StellarDescriptor)";comment = "Integration: LURD-3. {{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph LURDModel {
     spark_3_t [label = "LURD.r3(MaterialDescriptor)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "LURD.r6(SpiritualDescriptor)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "LURD.r9(InformationDescriptor)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "LURD.receive(DirectiveDescriptor)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "LURD.send(OriginDescriptor)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "LURD.dispatch(InterfaceDescriptor)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "LURD.commit(DigitalDescriptor)";comment = "What-How: LURD-7. {{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "LURD.serve(ManifestDescriptor)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];

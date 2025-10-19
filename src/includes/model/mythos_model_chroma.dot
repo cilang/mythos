@@ -4,9 +4,11 @@ strict digraph ChromaModel {
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Chroma Model (/proc/model/chroma)";
-    comment = "The color and quantum charge framework.";
+    comment = "{{description}}";
     
+    spark_a_t [label = "Chroma.receive(Golden)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Chroma.meta(Chroma)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Chroma.send(Silver)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "Chroma.r1(Red)";comment = "Initiation: {{description}}";color = darkgreen;];
     spark_2_t [label = "Chroma.r2(Blue)";comment = "Response: {{description}}";color = darkgreen;];
     spark_4_t [label = "Chroma.r4(Green)";comment = "Integration: {{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph ChromaModel {
     spark_3_t [label = "Chroma.r3(ZeroChroma)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Chroma.r6(FullChroma)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Chroma.r9(Gray)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Chroma.receive(Golden)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Chroma.send(Silver)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Chroma.dispatch(Charge)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Chroma.commit(Pigment)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Chroma.serve(HSB)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];

@@ -1,27 +1,27 @@
-strict digraph CognitiveModel {
+strict digraph KarsaModel {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Cognitive Model (/proc/model/cognitive)";
+    label = "Karsa Model (/proc/model/karsa)";
     comment = "{{description}}";
     
-    spark_a_t [label = "Cognitive.receive(PrimordialPotential)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Cognitive.meta(DirectStateAccess)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Cognitive.send(ManifestationBridge)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "Cognitive.r1(OperationalGrammar)";comment = "Initiation: {{description}}";color = darkgreen;];
-    spark_2_t [label = "Cognitive.r2(AxiomaticReasoning)";comment = "Response: {{description}}";color = darkgreen;];
-    spark_4_t [label = "Cognitive.r4(StateDynamics)";comment = "Integration: {{description}}";color = darkgreen;];
-    spark_8_t [label = "Cognitive.r8(PatternRecognition)";comment = "Reflection: {{description}}";color = darkgreen;];
-    spark_7_t [label = "Cognitive.r7(ProvenanceTracking)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    spark_5_t [label = "Cognitive.r5(NetworkTheory)";comment = "Propagation: {{description}}";color = darkgreen;];
-    spark_3_t [label = "Cognitive.r3(FormalLogic)";comment = "Thesis: {{description}}";color = darkblue;];
-    spark_6_t [label = "Cognitive.r6(ContextualLogic)";comment = "Antithesis: {{description}}";color = darkblue;];
-    spark_9_t [label = "Cognitive.r9(IntegratedIntelligence)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_c_t [label = "Cognitive.dispatch(IntentModeling)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Cognitive.commit(ImplementationProtocol)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Cognitive.serve(ContextualOptimization)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Cognitive.exec(AllocationLogic)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Karsa.receive(Fixation)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Karsa.meta(Karsa)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Karsa.send(Excitation)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Karsa.r1(Rhythm)";comment = "Initiation: {{description}}";color = darkgreen;];
+    spark_2_t [label = "Karsa.r2(Inertia)";comment = "Response: {{description}}";color = darkgreen;];
+    spark_4_t [label = "Karsa.r4(Temporal)";comment = "Integration: {{description}}";color = darkgreen;];
+    spark_8_t [label = "Karsa.r8(Pattern)";comment = "Reflection: {{description}}";color = darkgreen;];
+    spark_7_t [label = "Karsa.r7(Momentum)";comment = "Consolidation: {{description}}";color = darkgreen;];
+    spark_5_t [label = "Karsa.r5(Spatial)";comment = "Propagation: {{description}}";color = darkgreen;];
+    spark_3_t [label = "Karsa.r3(Birth)";comment = "Thesis: {{description}}";color = darkblue;];
+    spark_6_t [label = "Karsa.r6(Death)";comment = "Antithesis: {{description}}";color = darkblue;];
+    spark_9_t [label = "Karsa.r9(Life)";comment = "Synthesis: {{description}}";color = darkblue;];
+    spark_c_t [label = "Karsa.dispatch(Initiation)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Karsa.commit(Continuation)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Karsa.serve(Reincarnation)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Karsa.exec(Spatiotemporal)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
