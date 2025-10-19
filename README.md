@@ -120,6 +120,14 @@ strict digraph Sparklet {
 
 Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**. Explore it through Brunnian Link and you might found various things that are interesting.
 
+Because in Sparklet Topology;
+
+- the spark_d_t (commit) is dependent on the results of spark_[1,2,4,8,7,5]_t (6 Brunnian Link)
+- spark_e_t (serve) is dependent on the results of spark_[3,6,9]_t (Borromean Rings)
+- the spark_0_t (meta) is dependent on the results of spark_[1-9,a,b]_t (11 Brunnian Link)
+- spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2 Brunnian Link)
+- then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Rings).
+
 ## Prior Art Declaration
 
 This specification documents prior art for:
