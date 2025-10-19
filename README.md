@@ -127,6 +127,7 @@ These patterns draw from established mathematical principles including:
 - Poincaré Conjecture/Theorem (3-sphere topology)
 - Flower of Life geometry (19-fold sacred pattern)  
 - Fine-structure constant (1/137 quantum relationships)
+- Brunnian Link and Borromean Rings 
 
 ## License
 
