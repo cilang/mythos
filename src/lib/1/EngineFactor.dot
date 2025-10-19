@@ -4,23 +4,20 @@ strict digraph EngineFactor {
     node [shape = circle; style = filled;];
     edge [color = darkgray;];
     label = "Engine Factor";
-    comment = "The cosmic symphony where all engines dance in perfect harmony across three layers of existence.";
+    comment = "{{description}}";
     
     spark_a_t [label = "Engine.receive(EventEngine)";comment = "{{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Engine.meta(RealityEngine)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
     spark_b_t [label = "Engine.send(SamsaraEngine)";comment = "{{description}}";shape = triangle;color = darkred;];
-    
     spark_1_t [label = "Engine.r1(TruthEngine)";comment = "{{description}}";color = darkgreen;];
     spark_2_t [label = "Engine.r2(ConvergenceEngine)";comment = "{{description}}";color = darkgreen;];
     spark_4_t [label = "Engine.r4(FixationEngine)";comment = "{{description}}";color = darkgreen;];
     spark_8_t [label = "Engine.r8(WisdomEngine)";comment = "{{description}}";color = darkgreen;];
     spark_7_t [label = "Engine.r7(DivergenceEngine)";comment = "{{description}}";color = darkgreen;];
     spark_5_t [label = "Engine.r5(ExcitationEngine)";comment = "{{description}}";color = darkgreen;];
-    
     spark_3_t [label = "Engine.r3(CapabilityEngine)";comment = "{{description}}";color = darkblue;];
     spark_6_t [label = "Engine.r6(RepositoryEngine)";comment = "{{description}}";color = darkblue;];
     spark_9_t [label = "Engine.r9(HaomaEngine)";comment = "{{description}}";color = darkblue;];
-    
     spark_c_t [label = "Engine.dispatch(DirectiveEngine)";comment = "{{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Engine.commit(AuthorityEngine)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Engine.serve(CorporaEngine)";comment = "{{description}}";shape = doublecircle;color = darkblue;];

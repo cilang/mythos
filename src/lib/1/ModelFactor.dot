@@ -6,22 +6,22 @@ strict digraph ModelFactor {
     label = "Model Factor";
     comment = "{{description}}";
     
-    spark_a_t [label = "Model.receive(DynamisModel)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Model.meta(StructureModel)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Model.send(PraxisModel)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "Model.r1(AshaModel)";comment = "Initiation: {{description}}";color = darkgreen;];
-    spark_2_t [label = "Model.r2(VikaraModel)";comment = "Response: {{description}}";color = darkgreen;];
-    spark_4_t [label = "Model.r4(KarsaModel)";comment = "Integration: {{description}}";color = darkgreen;];
-    spark_8_t [label = "Model.r8(CognitiveModel)";comment = "Reflection: {{description}}";color = darkgreen;];
-    spark_7_t [label = "Model.r7(RasaModel)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    spark_5_t [label = "Model.r5(EmergenceModel)";comment = "Propagation: {{description}}";color = darkgreen;];
-    spark_3_t [label = "Model.r3(AlignmentModel)";comment = "Thesis: {{description}}";color = darkblue;];
-    spark_6_t [label = "Model.r6(SpectralModel)";comment = "Antithesis: {{description}}";color = darkblue;];
-    spark_9_t [label = "Model.r9(ChromaModel)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_c_t [label = "Model.dispatch(KratosModel)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Model.commit(ObserverModel)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Model.serve(LineageModel)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Model.exec(LURDModel)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Model.receive(DynamisModel)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Model.meta(StructureModel)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Model.send(PraxisModel)";comment = "{{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Model.r1(AshaModel)";comment = "{{description}}";color = darkgreen;];
+    spark_2_t [label = "Model.r2(VikaraModel)";comment = "{{description}}";color = darkgreen;];
+    spark_4_t [label = "Model.r4(KarsaModel)";comment = "{{description}}";color = darkgreen;];
+    spark_8_t [label = "Model.r8(CognitiveModel)";comment = "{{description}}";color = darkgreen;];
+    spark_7_t [label = "Model.r7(RasaModel)";comment = "{{description}}";color = darkgreen;];
+    spark_5_t [label = "Model.r5(EmergenceModel)";comment = "{{description}}";color = darkgreen;];
+    spark_3_t [label = "Model.r3(AlignmentModel)";comment = "{{description}}";color = darkblue;];
+    spark_6_t [label = "Model.r6(SpectralModel)";comment = "{{description}}";color = darkblue;];
+    spark_9_t [label = "Model.r9(ChromaModel)";comment = "{{description}}";color = darkblue;];
+    spark_c_t [label = "Model.dispatch(KratosModel)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Model.commit(ObserverModel)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Model.serve(LineageModel)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Model.exec(LURDModel)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
