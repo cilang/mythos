@@ -130,6 +130,8 @@ Because in Sparklet Topology;
 - spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2 Brunnian Link or Vesica Pisces)
 - then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Rings).
 
+I often used this (Prompt Header([https://github.com/cilang/mythos/blob/master/src%2Fspecs%2Fsparklet%2Fmythos_prompt.txt] when talking with AI.
+
 ## Prior Art Declaration
 
 This specification documents prior art for:
