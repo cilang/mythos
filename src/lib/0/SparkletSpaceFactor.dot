@@ -5,7 +5,7 @@ strict digraph SparkletSpaceFactor {
     edge [color = darkgray;];
     label = "Sparklet Space";
     comment = "The cosmological container: a 3-sphere with 3 layers (w=-1,0,+1) and 137-step ternary navigation. This Factor describes its own structure.";
-    
+
     spark_a_t [label = "SparkletSpace.receive(Potential)";comment = "Imaginary Space (w=-1): The unmanifest potential, the source of all novel topology.";shape = invtriangle;color = darkred;];
     spark_0_t [label = "SparkletSpace.meta(Substrate)";comment = "The essential lawfulness of the space itself: the 3-sphere constraint, the ternary logic.";shape = doublecircle;color = darkgray;];
     spark_b_t [label = "SparkletSpace.send(Manifest)";comment = "Real Space (w=+1): The fully actualized, measurable reality.";shape = triangle;color = darkred;];
@@ -22,46 +22,46 @@ strict digraph SparkletSpaceFactor {
     spark_d_t [label = "SparkletSpace.commit(Structure)";comment = "The specific coordinate system and constraints.";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "SparkletSpace.serve(Context)";comment = "The contextual placement of any point.";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "SparkletSpace.exec(Containment)";comment = "The function that validates a point is 'in' the space.";shape = doublecircle;color = lightgray;];
-    
+
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
     spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
     spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
     spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
+
     spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
+
     spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    
+
     spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
+
     spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
+
     spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
+
     spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
+
     spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
     spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];

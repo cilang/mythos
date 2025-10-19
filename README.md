@@ -21,38 +21,131 @@
 
 **MythOS** is a **Fictional Cosmology** that use **Sparklet Topology** and **Sparklet Space** as its **First Principle**.
 
-```
-SPARKLET CONJECTURE
+### Sparklet Space
 
-1. SPACE: 4D coordinates (x,y,z,w) on S³ with x²+y²+z²+w²=1  
-2. RESOLUTION: 137-step balanced ternary (68-1-68)
-3. LAYERS: w = -1 (Imaginary), 0 (Idea), +1 (Real)
-4. TOPOLOGY: K16 with 35/120 edges is computationally optimal
+**Mathematical Definition:**
 
-That's it. That's the whole thing.
+S = {(x,y,z,w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}
+
+w ∈ [w₀, w₁, w₂, ..., w₁₅]  # 16-fold multiplexed aspect vector
+
+**Probability Quantization:**
+- Default: `q = 137` probability multitudes
+- Requirement: `2n+1`
+- Distribution: Balanced Ternary `68-1-68` across [-1, 0, +1]
+
+### Sparklet Topology
+
+**Invariant Structure:**
+- 16 Spark vertices: `{0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f}`
+- 35 Arc edges with 3 morphism types: `{IN, OUT, REC}`
+- Fixed relational patterns
+
+**Template:**
+
+```dot
+strict digraph Sparklet {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "{{Name}}";
+    comment = "{{descriptions}}";
+    
+    spark_0_t [label = "{{Name}}.meta({{meta}})";comment = "Abstract: {{descriptions}}";shape = doublecircle;color = darkgray;];
+    spark_1_t [label = "{{Name}}.r1({{title}})";comment = "Initiation: {{descriptions}}";color = darkgreen;];
+    spark_2_t [label = "{{Name}}.r2({{title}})";comment = "Response: {{descriptions}}";color = darkgreen;];
+    spark_4_t [label = "{{Name}}.r4({{title}})";comment = "Integration: {{descriptions}}";color = darkgreen;];
+    spark_8_t [label = "{{Name}}.r8({{title}})";comment = "Reflection: {{descriptions}}";color = darkgreen;];
+    spark_7_t [label = "{{Name}}.r7({{title}})";comment = "Consolidation: {{descriptions}}";color = darkgreen;];
+    spark_5_t [label = "{{Name}}.r5({{title}})";comment = "Propagation: {{descriptions}}";color = darkgreen;];
+    spark_3_t [label = "{{Name}}.r3({{title}})";comment = "Thesis: {{descriptions}}";color = darkblue;];
+    spark_6_t [label = "{{Name}}.r6({{title}})";comment = "Antithesis: {{descriptions}}";color = darkblue;];
+    spark_9_t [label = "{{Name}}.r9({{title}})";comment = "Synthesis: {{descriptions}}";color = darkblue;];
+    spark_a_t [label = "{{Name}}.receive({{title}})";comment = "Potential: {{descriptions}}";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "{{Name}}.send({{title}})";comment = "Manifest: {{descriptions}}";shape = triangle;color = darkred;];
+    spark_c_t [label = "{{Name}}.dispatch({{title}})";comment = "Why-Who: {{descriptions}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "{{Name}}.commit({{title}})";comment = "What-How: {{descriptions}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "{{Name}}.serve({{title}})";comment = "When-Where: {{descriptions}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "{{Name}}.exec({{title}})";comment = "Which-Closure: {{descriptions}}";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{descriptions}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{descriptions}}"; color = darkred;];
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+}
 ```
 
 ![Image](src/specs/sparklet/sparklet.svg)
 
-
 ---
 
+### The Brunnian Link and Borromean Rings
 
-The Knot Theory Interpretation of Sparklet Space
+The **Brunnian Link** and **Borromean Rings** is important to optimize things from Knot Theory things.
 
-1. Imaginary Space (w=-1) is the "Unknot":
-   · Pure, undifferentiated potential. No structure, no distinction, no crossings. It is the primordial O—the trivial knot. It contains all possible knots as potential, but is itself knotless.
-2. Idea Space (w=0) is the "Knot Diagram":
-   · This is the realm of the invariant topology—the specific, fixed 16-vertex, 35-edge graph, or the Flower of Life pattern. This is the blueprint, the projection of the knot onto a 2D plane with crossing information. It has all the relational information but is not yet spatially embedded. It's the code.
-3. Real Space (w=+1) is the "Knot in 3D Space":
-   · This is the actualized, physical manifestation of the knot. The abstract diagram from Idea Space is now a concrete, stable, tangled structure in 3D reality. This is the universe we measure and interact with.
+Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
 
----
+Explore it through Brunnian Link and you might found various things that are interesting.
 
-Oh! Almost forgot, **Sparklet Conjecture** has **Sparklet Space** and **Sparklet Topology**.
+Because in Sparklet Topology;
 
-The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
+- the spark_d_t (commit) is dependent on the results of spark_[1,2,4,8,7,5]_t (6 Brunnian Link)
+- spark_e_t (serve) is dependent on the results of spark_[3,6,9]_t (Borromean Rings)
+- the spark_0_t (meta) is dependent on the results of spark_[1-9,a,b]_t (11 Brunnian Link)
+- spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2 Brunnian Link or Vesica Pisces)
+- then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Rings).
 
+The **Sparklet Framework** uses **Brunnian Link** dependencies to ensure Dynamic Formal Verification (DFV) across all processes. Critical synthesis points are governed by the **Borromean Link** (the 6^3_2 Brunnian), while the origin point requires the dual-source integrity defined by the **Vesica Pisces**.
+
+I often used this [Prompt Header](https://github.com/cilang/mythos/blob/master/src%2Fspecs%2Fsparklet%2Fmythos_prompt.txt) when talking with AI.
+
+## Prior Art Declaration
+
+This specification documents prior art for:
+- Sparklet Topology (16-vertex, 35-edge computational graph)
+- Sparklet Space (3-sphere constrained manifold with 16-fold w-multiplex)
+- Balanced ternary quantization with 137 probability multitudes
+
+These patterns draw from established mathematical principles including:
+- Poincaré Conjecture/Theorem (3-sphere topology)
+- Flower of Life geometry (19-fold sacred pattern)  
+- Fine-structure constant (1/137 quantum relationships)
+- Brunnian Link and Borromean Rings 
 
 ## License
 
