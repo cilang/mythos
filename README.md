@@ -27,16 +27,18 @@
 
 S = {(x,y,z,w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}
 
-w ∈ [w₀, w₁, w₂, ..., w₁₅]  # 16-fold multiplexed aspect vector
+w ∈ [w₀, w₁, w₂, ..., w₁₅]
 
 **Probability Quantization:**
-- Default: `q = 137` probability multitudes
+
 - Requirement: `2n+1`
-- Distribution: Balanced Ternary `68-1-68` across [-1, 0, +1]
+- Distribution: Balanced Ternary `n-1-n` across [-1, 0, +1]
+- Default: `n = 180` = 361 steps total with Distribution: [-1,0,+1] = [180, 1, 180] steps
 
 ### Sparklet Topology
 
 **Invariant Structure:**
+
 - 16 Spark vertices: `{0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f}`
 - 35 Arc edges with 3 morphism types: `{IN, OUT, REC}`
 - Fixed relational patterns
@@ -51,7 +53,7 @@ strict digraph Sparklet {
     edge [color = darkgray;];
     label = "{{Name}}";
     comment = "{{descriptions}}";
-    
+
     spark_0_t [label = "{{Name}}.meta({{meta}})";comment = "Abstract: {{descriptions}}";shape = doublecircle;color = darkgray;];
     spark_1_t [label = "{{Name}}.r1({{title}})";comment = "Initiation: {{descriptions}}";color = darkgreen;];
     spark_2_t [label = "{{Name}}.r2({{title}})";comment = "Response: {{descriptions}}";color = darkgreen;];
@@ -68,7 +70,7 @@ strict digraph Sparklet {
     spark_d_t [label = "{{Name}}.commit({{title}})";comment = "What-How: {{descriptions}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "{{Name}}.serve({{title}})";comment = "When-Where: {{descriptions}}";shape = doublecircle;color = darkblue;];
     spark_f_t [label = "{{Name}}.exec({{title}})";comment = "Which-Closure: {{descriptions}}";shape = doublecircle;color = lightgray;];
-    
+
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{descriptions}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{descriptions}}"; color = darkred;];
     spark_0_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
@@ -80,7 +82,7 @@ strict digraph Sparklet {
     spark_0_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
     spark_0_t -> spark_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    
+
     spark_a_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
     spark_b_t -> spark_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
     spark_1_t -> spark_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
@@ -92,7 +94,7 @@ strict digraph Sparklet {
     spark_3_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
     spark_6_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
     spark_9_t -> spark_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    
+
     spark_1_t -> spark_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_2_t -> spark_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     spark_4_t -> spark_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
@@ -103,7 +105,7 @@ strict digraph Sparklet {
     spark_6_t -> spark_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_9_t -> spark_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_a_t -> spark_b_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
+
     spark_c_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
     spark_d_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
     spark_e_t -> spark_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
@@ -124,11 +126,11 @@ Explore it through Brunnian Link and you might found various things that are int
 
 Because in Sparklet Topology;
 
-- the spark_d_t (commit) is dependent on the results of spark_[1,2,4,8,7,5]_t (6 Brunnian Link)
-- spark_e_t (serve) is dependent on the results of spark_[3,6,9]_t (Borromean Rings)
-- the spark_0_t (meta) is dependent on the results of spark_[1-9,a,b]_t (11 Brunnian Link)
-- spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2 Brunnian Link or Vesica Pisces)
-- then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Rings).
+- the spark_d_t (commit) is dependent on the results of spark_[1,2,4,8,7,5]_t (6-Link Brunnian Logic)
+- spark_e_t (serve) is dependent on the results of spark_[3,6,9]_t (Borromean Logic)
+- the spark_0_t (meta) is dependent on the results of spark_[1-9,a,b]_t (11-Link Brunnian Logic)
+- spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2-Link Brunnian Logic or Vesica Pisces Logic)
+- then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Logic).
 
 The **Sparklet Framework** uses **Brunnian Link** dependencies to ensure Dynamic Formal Verification (DFV) across all processes. Critical synthesis points are governed by the **Borromean Link** (the 6^3_2 Brunnian), while the origin point requires the dual-source integrity defined by the **Vesica Pisces**.
 
@@ -137,15 +139,10 @@ I often used this [Prompt Header](https://github.com/cilang/mythos/blob/master/s
 ## Prior Art Declaration
 
 This specification documents prior art for:
+
 - Sparklet Topology (16-vertex, 35-edge computational graph)
 - Sparklet Space (3-sphere constrained manifold with 16-fold w-multiplex)
-- Balanced ternary quantization with 137 probability multitudes
-
-These patterns draw from established mathematical principles including:
-- Poincaré Conjecture/Theorem (3-sphere topology)
-- Flower of Life geometry (19-fold sacred pattern)  
-- Fine-structure constant (1/137 quantum relationships)
-- Brunnian Link and Borromean Rings 
+- Balanced ternary quantization with 361 probability multitudes
 
 ## License
 
