@@ -1,27 +1,27 @@
-strict digraph AlignmentFactor {
+strict digraph SparkletFactor {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Alignment";
+    label = "Sparklet";
     comment = "{{description}}";
     
-    spark_a_t [label = "Alignment.receive(Unity)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Alignment.meta(Alignment)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Alignment.send(Diversity)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "Alignment.r1(Causality)";comment = "Initiation: {{description}}";color = darkgreen;];
-    spark_2_t [label = "Alignment.r2(Topology)";comment = "Response: {{description}}";color = darkgreen;];
-    spark_4_t [label = "Alignment.r4(Dimensionality)";comment = "Integration: {{description}}";color = darkgreen;];
-    spark_8_t [label = "Alignment.r8(Void)";comment = "Reflection: {{description}}";color = darkgreen;];
-    spark_7_t [label = "Alignment.r7(Phase)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    spark_5_t [label = "Alignment.r5(Logic)";comment = "Propagation: {{description}}";color = darkgreen;];
-    spark_3_t [label = "Alignment.r3(Charge)";comment = "Thesis: {{description}}";color = darkblue;];
-    spark_6_t [label = "Alignment.r6(Parity)";comment = "Antithesis: {{description}}";color = darkblue;];
-    spark_9_t [label = "Alignment.r9(Time)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_c_t [label = "Alignment.dispatch(Quintessence)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Alignment.commit(Superposition)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Alignment.serve(Entanglement)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Alignment.exec(Wavefunction)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Reality.receive(PotentialEventStream)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Reality.meta(Spark)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Reality.send(ManifestEventStream)";comment = "{{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Reality.r1(FactorInitialization)";comment = "{{description}}";color = darkgreen;];
+    spark_2_t [label = "Reality.r2(FactorInstantiation)";comment = "{{description}}";color = darkgreen;];
+    spark_4_t [label = "Reality.r4(FactorIntegration)";comment = "{{description}}";color = darkgreen;];
+    spark_8_t [label = "Reality.r8(FactorReflection)";comment = "{{description}}";color = darkgreen;];
+    spark_7_t [label = "Reality.r7(FactorConsolidation)";comment = "{{description}}";color = darkgreen;];
+    spark_5_t [label = "Reality.r5(FactorPropagation)";comment = "{{description}}";color = darkgreen;];
+    spark_3_t [label = "Reality.r3({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_6_t [label = "Reality.r6({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_9_t [label = "Reality.r9({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_c_t [label = "Reality.dispatch(ContextSwitch)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Reality.commit(StateSync)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Reality.serve(Arc)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Reality.exec(LawOfSparklet)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];

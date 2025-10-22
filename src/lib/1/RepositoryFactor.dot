@@ -6,7 +6,9 @@ strict digraph RepositoryFactor {
     label = "Repository";
     comment = "{{description}}";
     
+    spark_a_t [label = "Repository.receive(Subscription)";comment = "{{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Repository.meta(Repository)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Repository.send(Publication)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "Repository.r1(Cache)";comment = "{{description}}";color = darkgreen;];
     spark_2_t [label = "Repository.r2(Registry)";comment = "{{description}}";color = darkgreen;];
     spark_4_t [label = "Repository.r4(Archive)";comment = "{{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph RepositoryFactor {
     spark_3_t [label = "Repository.r3(Codex)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Repository.r6(Log)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Repository.r9(Template)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Repository.receive(Subscription)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Repository.send(Publication)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Repository.dispatch(Query)";comment = "{{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Repository.commit(Transaction)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Repository.serve(Replication)";comment = "{{description}}";shape = doublecircle;color = darkblue;];

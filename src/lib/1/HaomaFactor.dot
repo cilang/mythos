@@ -6,6 +6,8 @@ strict digraph HaomaFactor {
     label = "Haoma";
     comment = "{{description}}";
     
+    spark_a_t [label = "Haoma.receive(Blueprint)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Haoma.send(Instance)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_0_t [label = "Haoma.meta(Haoma)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
     spark_1_t [label = "Haoma.r1(Instantiate)";comment = "{{description}}";color = darkgreen;];
     spark_2_t [label = "Haoma.r2(Classification)";comment = "{{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph HaomaFactor {
     spark_3_t [label = "Haoma.r3(Primogenitor)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Haoma.r6(Actor)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Haoma.r9(Derivative)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Haoma.receive(Blueprint)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Haoma.send(Instance)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Haoma.dispatch(Materialization)";comment = "{{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Haoma.commit(Initialization)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Haoma.serve(Animation)";comment = "{{description}}";shape = doublecircle;color = darkblue;];

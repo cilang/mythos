@@ -6,7 +6,9 @@ strict digraph CorporaFactor {
     label = "Corpora";
     comment = "{{description}}";
     
+    spark_a_t [label = "Corpora.receive(Force)";comment = "{{description}}";shape = invtriangle;color = darkred;];
     spark_0_t [label = "Corpora.meta(Corpora)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Corpora.send(Field)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "Corpora.r1(Heart)";comment = "{{description}}";color = darkgreen;];
     spark_2_t [label = "Corpora.r2(Shell)";comment = "{{description}}";color = darkgreen;];
     spark_4_t [label = "Corpora.r4(AstralBody)";comment = "{{description}}";color = darkgreen;];
@@ -16,8 +18,6 @@ strict digraph CorporaFactor {
     spark_3_t [label = "Corpora.r3(Instinct)";comment = "Thesis: {{description}}";color = darkblue;];
     spark_6_t [label = "Corpora.r6(Intent)";comment = "Antithesis: {{description}}";color = darkblue;];
     spark_9_t [label = "Corpora.r9(Intuition)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_a_t [label = "Corpora.receive(Force)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    spark_b_t [label = "Corpora.send(Field)";comment = "{{description}}";shape = triangle;color = darkred;];
     spark_c_t [label = "Corpora.dispatch(Mind)";comment = "{{description}}";shape = doublecircle;color = darkred;];
     spark_d_t [label = "Corpora.commit(CelestialBody)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
     spark_e_t [label = "Corpora.serve(Corpus)";comment = "{{description}}";shape = doublecircle;color = darkblue;];

@@ -1,9 +1,9 @@
-strict digraph CognitiveModel {
+strict digraph CognitiveFactor {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Cognitive Model (/proc/model/cognitive)";
+    label = "Cognitive";
     comment = "{{description}}";
     
     spark_a_t [label = "Cognitive.receive(PrimordialPotential)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
