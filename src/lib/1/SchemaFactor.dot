@@ -1,0 +1,68 @@
+strict digraph SchemaFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Schema";
+    comment = "{{description}}";
+    
+    spark_a_t [label = "Schema.receive(Dynamis)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Schema.meta(Structure)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Schema.send(Praxis)";comment = "{{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Schema.r1({{title}})";comment = "{{description}}";color = darkgreen;];
+    spark_2_t [label = "Schema.r2({{title}})";comment = "{{description}}";color = darkgreen;];
+    spark_4_t [label = "Schema.r4({{title}})";comment = "{{description}}";color = darkgreen;];
+    spark_8_t [label = "Schema.r8(Cognitive)";comment = "{{description}}";color = darkgreen;];
+    spark_7_t [label = "Schema.r7(Rasa)";comment = "{{description}}";color = darkgreen;];
+    spark_5_t [label = "Schema.r5(Phonetic)";comment = "{{description}}";color = darkgreen;];
+    spark_3_t [label = "Schema.r3(Alignment)";comment = "{{description}}";color = darkblue;];
+    spark_6_t [label = "Schema.r6(Spectral)";comment = "{{description}}";color = darkblue;];
+    spark_9_t [label = "Schema.r9(Chroma)";comment = "{{description}}";color = darkblue;];
+    spark_c_t [label = "Schema.dispatch(Kratos)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Schema.commit({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Schema.serve(Lineage)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Schema.exec({{title}})";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+}

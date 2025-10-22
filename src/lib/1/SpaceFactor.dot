@@ -1,0 +1,68 @@
+strict digraph SpaceFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Space";
+    comment = "{{description}}";
+    
+    spark_a_t [label = "SparkletSpace.receive(Potential)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "SparkletSpace.meta(Substrate)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "SparkletSpace.send(Manifest)";comment = "{{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "SparkletSpace.r1(Coordinate)";comment = "{{description}}";color = darkgreen;];
+    spark_2_t [label = "SparkletSpace.r2(Navigation)";comment = "{{description}}";color = darkgreen;];
+    spark_4_t [label = "SparkletSpace.r4(Constraint)";comment = "{{description}}";color = darkgreen;];
+    spark_8_t [label = "SparkletSpace.r8(Interpolation)";comment = "{{description}}";color = darkgreen;];
+    spark_7_t [label = "SparkletSpace.r7(Instantiation)";comment = "{{description}}";color = darkgreen;];
+    spark_5_t [label = "SparkletSpace.r5(Relation)";comment = "{{description}}";color = darkgreen;];
+    spark_3_t [label = "SparkletSpace.r3(Geometry)";comment = "{{description}}";color = darkblue;];
+    spark_6_t [label = "SparkletSpace.r6(Topology)";comment = "{{description}}";color = darkblue;];
+    spark_9_t [label = "SparkletSpace.r9(Existence)";comment = "{{description}}";color = darkblue;];
+    spark_c_t [label = "SparkletSpace.dispatch(Layer)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "SparkletSpace.commit(Structure)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "SparkletSpace.serve(Context)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "SparkletSpace.exec(Containment)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+}

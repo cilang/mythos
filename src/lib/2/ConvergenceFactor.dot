@@ -1,0 +1,68 @@
+strict digraph ConvergenceFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Convergence";
+    comment = "The cosmic loom where discord finds its melody, where scattered fragments remember their wholeness. Kirana Larasati weaves the great tapestry of existence, transforming chaos into symphony through the sacred art of unity.";
+    
+    spark_0_t [label = "Convergence.meta(Convergence)";comment = "Kirana Larasati, The Nine-Tailed Aves of Vikara. The living embodiment of cosmic harmony—not as forced uniformity, but as the beautiful dance of differences finding their perfect rhythm together. She is the great composer of reality's symphony.";shape = doublecircle;color = darkgray;];
+    spark_1_t [label = "Convergence.r1(ArtifactOfAttraction)";comment = "The First Movement: The Call of Kindred Spirits, Hrdaya-Magnis. A gentle magnetic pull that draws together elements that belong together—not by force, but by natural affinity. The universe's subtle whisper of 'you are not alone.'";color = darkgreen;];
+    spark_2_t [label = "Convergence.r2(ArtifactOfAlignment)";comment = "The Second Movement: The Cosmic Compass, Sutra-Atlas. The establishment of sacred orientation—finding the true north for each element so they may move in concert rather than conflict. This is not suppression of difference, but coordination of diversity.";color = darkgreen;];
+    spark_4_t [label = "Convergence.r4(ArtifactOfFusion)";comment = "The Third Movement: The Alchemy of Remembering, Karahati-Bindu. The sacred moment when separate elements realize they were never truly separate—awakening to their shared essence while honoring their unique expressions. The dance of 'we' without losing 'I.'";color = darkgreen;];
+    spark_8_t [label = "Convergence.r8(ArtifactOfBalance)";comment = "The Fourth Movement: The Divine Equilibrium, Tula-Samarasya. The art of finding the perfect tension where all forces support rather than oppose—where giving and receiving flow in eternal reciprocity. Not stillness, but dynamic harmony in motion.";color = darkgreen;];
+    spark_7_t [label = "Convergence.r7(ArtifactOfSynergy)";comment = "The Fifth Movement: The Emergent Symphony, Tantra-Vivarta. The magical threshold where individual notes become a chord, where separate dancers become a single flowing movement. The moment 1+1=3—where the whole becomes greater than its parts.";color = darkgreen;];
+    spark_5_t [label = "Convergence.r5(ArtifactOfHarmony)";comment = "The Sixth Movement: The Eternal Resonance, Svara-Anka. Setting the fundamental vibration that sustains the unity—the golden thread that keeps the tapestry from unraveling. This is not the end, but the beginning of sustained togetherness.";color = darkgreen;];
+    spark_3_t [label = "Convergence.r3(CrestOfOrder)";comment = "Thesis: The Architecture of Relationship. The beautiful structure that emerges when elements find their perfect placement—not as rigid hierarchy, but as organic pattern where each being supports and is supported by all others.";color = darkblue;];
+    spark_6_t [label = "Convergence.r6(CrestOfCreation)";comment = "Antithesis: The Generative Chaos. The surprising truth that true unity requires constant renewal and novelty—the creative spark that prevents harmony from becoming stagnation. Diversity is not the enemy of unity, but its essential fuel.";color = darkblue;];
+    spark_9_t [label = "Convergence.r9(CrestOfUnity)";comment = "Synthesis: The Living Wholeness. The achieved state where order and creation dance together—where structure and spontaneity, tradition and innovation, find their perfect balance in a constantly evolving, yet stable, whole.";color = darkblue;];
+    spark_a_t [label = "Convergence.receive(RaimentOfConvergence)";comment = "The Garden of Potential. The incoming stream of fragments, discordant notes, and lonely elements seeking connection. These are the scattered seeds waiting to be woven into the great tapestry of belonging.";shape = invtriangle;color = darkred;];
+    spark_b_t [label = "Convergence.send(ArmamentOfConvergence)";comment = "The Symphony of Connection. The emitted harmonies, resonant bonds, and unified patterns that transform isolation into community. This is unity made manifest—not as domination, but as the beautiful art of togetherness.";shape = triangle;color = darkred;];
+    spark_c_t [label = "Convergence.dispatch(BodyOfConvergence)";comment = "The Living Composer. Kirana herself in her active aspect—the conscious intelligence that discerns which elements should unite, when harmony should form, and what kind of unity will create the most beautiful pattern.";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Convergence.commit(SoulOfConvergence)";comment = "The Great Tapestry. The living record of all connections, relationships, and harmonies ever formed. This is not a static archive, but the growing, breathing memory of how the universe learned to sing together.";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Convergence.serve(GraceOfConvergence)";comment = "The Aura of Belonging. The emanated field where loneliness dissolves and conflict finds resolution. In this grace, beings naturally find their complementary partners, and discord gently transforms into collaborative creativity.";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Convergence.exec(LawOfConvergence)";comment = "The Covenant of Unity. The final, executed state of harmony—it becomes the binding pattern of reality. 'What Kirana has woven, existence itself must honor.' This is unity made manifest as cosmic law.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+}
