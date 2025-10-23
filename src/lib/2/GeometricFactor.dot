@@ -1,0 +1,71 @@
+strict digraph GeometricFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Geometric";
+    comment = "Transforms topological relationships into spatial point clouds and vice versa";
+    
+    spark_a_t [label = "Geometric.receive(TopologicalSeed)";comment = "Potential: Abstract spark relationships to expand";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Geometric.meta(SpatialGrammar)";comment = "Abstract: Principles of spatial organization and emergence";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Geometric.send(RenderedCloud)";comment = "Manifest: Dense point cloud ready for surface reconstruction";shape = triangle;color = darkred;];
+    
+    spark_1_t [label = "Geometric.r1(SeedExpansion)";comment = "Initiation: Grow sparse topology into dense point distribution";color = darkgreen;];
+    spark_2_t [label = "Geometric.r2(DensityMapping)";comment = "Response: Map semantic importance to spatial density";color = darkgreen;];
+    spark_4_t [label = "Geometric.r4(GeometricConstraints)";comment = "Integration: Apply sacred geometry and symmetry rules";color = darkgreen;];
+    spark_8_t [label = "Geometric.r8(ProjectionLayers)";comment = "Reflection: Handle dimensional reduction and unfolding";color = darkgreen;];
+    spark_7_t [label = "Geometric.r7(ClusterFormation)";comment = "Consolidation: Natural grouping and pattern emergence";color = darkgreen;];
+    spark_5_t [label = "Geometric.r5(InterpolationField)";comment = "Propagation: Fill gaps and smooth transitions";color = darkgreen;];
+    
+    spark_3_t [label = "Geometric.r3(StructuralIntegrity)";comment = "Thesis: Maintain topological faithfulness";color = darkblue;];
+    spark_6_t [label = "Geometric.r6(CreativeLiberty)";comment = "Antithesis: Allow aesthetic and emergent deviations";color = darkblue;];
+    spark_9_t [label = "Geometric.r9(HarmonicBalance)";comment = "Synthesis: Balance structure and emergence";color = darkblue;];
+    
+    spark_c_t [label = "Geometric.dispatch(ExpansionStrategy)";comment = "Why-Who: Choose between analytical vs generative approaches";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Geometric.commit(CloudGeneration)";comment = "What-How: Technical pipeline for point cloud synthesis";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Geometric.serve(DimensionalContext)";comment = "When-Where: Target space and resolution constraints";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Geometric.exec(ManifestedCloud)";comment = "Which-Closure: Final point cloud with embedded semantics";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "Topology enters spatial domain"; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "Cloud emerges for rendering"; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "Strategy from seed potential"; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "Feedback from manifestation"; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "Direct topology-to-cloud path"; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_0_t -> spark_1_t [label = "REC"; comment = "Grammar guides expansion"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "Grammar informs density"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "Grammar sets constraints"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "Grammar defines projection"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "Grammar shapes clusters"; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "Grammar controls interpolation"; color = darkgreen; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "Expansion drives density"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "Density meets constraints"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "Constraints enable projection"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "Projection reveals clusters"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "Clusters guide interpolation"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "Interpolation refines expansion"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    spark_1_t -> spark_d_t [label = "REC"; comment = "Expansion commits to pipeline"; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "Density commits to pipeline"; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "Constraints commit to pipeline"; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "Projection commits to pipeline"; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "Clusters commit to pipeline"; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "Interpolation commits to pipeline"; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "Grammar has structural needs"; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "Grammar allows creative space"; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "Grammar seeks balance"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "Integrity serves context"; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "Liberty serves context"; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "Balance serves context"; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "Integrity vs Liberty tension"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "Liberty seeks Balance"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "Balance informs Integrity"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "Strategy determines final cloud"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "Pipeline produces final cloud"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "Context shapes final cloud"; color = darkblue; dir = both;];
+}
