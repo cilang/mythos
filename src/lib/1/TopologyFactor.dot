@@ -6,22 +6,22 @@ strict digraph TopologyFactor {
     label = "Topology";
     comment = "{{description}}";
     
-    spark_a_t [label = "SparkletTopology.receive(LawOfNovelity)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "SparkletTopology.meta(LawOfIdentity)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "SparkletTopology.send(LawOfSpacetime)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "SparkletTopology.r1(LawOfAction)";comment = "Initiation: {{description}}";color = darkgreen;];
-    spark_2_t [label = "SparkletTopology.r2(LawOfReaction)";comment = "Response: {{description}}";color = darkgreen;];
-    spark_4_t [label = "SparkletTopology.r4(LawOfEquilibrium)";comment = "Integration: {{description}}";color = darkgreen;];
-    spark_8_t [label = "SparkletTopology.r8(LawOfCausality)";comment = "Reflection: {{description}}";color = darkgreen;];
-    spark_7_t [label = "SparkletTopology.r7(LawOfStructure)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    spark_5_t [label = "SparkletTopology.r5(LawOfTransmission)";comment = "Propagation: {{description}}";color = darkgreen;];
-    spark_3_t [label = "SparkletTopology.r3(LawOfForm)";comment = "Thesis: {{description}}";color = darkblue;];
-    spark_6_t [label = "SparkletTopology.r6(LawOfOpposition)";comment = "Antithesis: {{description}}";color = darkblue;];
-    spark_9_t [label = "SparkletTopology.r9(LawOfManifestation)";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_c_t [label = "SparkletTopology.dispatch(LawOfIntent)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "SparkletTopology.commit(LawOfProcess)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "SparkletTopology.serve(LawOfContext)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "SparkletTopology.exec(LawOfCompleteness)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Topology.receive(LawOfNovelity)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Topology.meta(LawOfIdentity)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Topology.send(LawOfSpacetime)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Topology.r1(LawOfAction)";comment = "Initiation: {{description}}";color = darkgreen;];
+    spark_2_t [label = "Topology.r2(LawOfReaction)";comment = "Response: {{description}}";color = darkgreen;];
+    spark_4_t [label = "Topology.r4(LawOfEquilibrium)";comment = "Integration: {{description}}";color = darkgreen;];
+    spark_8_t [label = "Topology.r8(LawOfCausality)";comment = "Reflection: {{description}}";color = darkgreen;];
+    spark_7_t [label = "Topology.r7(LawOfStructure)";comment = "Consolidation: {{description}}";color = darkgreen;];
+    spark_5_t [label = "Topology.r5(LawOfTransmission)";comment = "Propagation: {{description}}";color = darkgreen;];
+    spark_3_t [label = "Topology.r3(LawOfForm)";comment = "Thesis: {{description}}";color = darkblue;];
+    spark_6_t [label = "Topology.r6(LawOfOpposition)";comment = "Antithesis: {{description}}";color = darkblue;];
+    spark_9_t [label = "Topology.r9(LawOfManifestation)";comment = "Synthesis: {{description}}";color = darkblue;];
+    spark_c_t [label = "Topology.dispatch(LawOfIntent)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Topology.commit(LawOfProcess)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Topology.serve(LawOfContext)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Topology.exec(LawOfCompleteness)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
@@ -62,7 +62,7 @@ strict digraph TopologyFactor {
     spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "OUT"; comment = "{{description}}"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "OUT"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "OUT"; comment = "{{description}}"; color = darkblue; dir = both;];
+    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }
