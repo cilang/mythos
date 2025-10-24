@@ -6,22 +6,22 @@ strict digraph CilangFrameworkFactor {
     label = "Cilang Framework";
     comment = "{{description}}";
     
-    spark_a_t [label = "CilangFramework.receive()";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "CilangFramework.meta()";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    spark_a_t [label = "CilangFramework.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "CilangFramework.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
     spark_b_t [label = "CilangFramework.send(Factor)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     spark_1_t [label = "CilangFramework.r1(Manifold)";comment = "Initiation: {{description}}";color = darkgreen;];
     spark_2_t [label = "CilangFramework.r2(Topology)";comment = "Response: {{description}}";color = darkgreen;];
-    spark_4_t [label = "CilangFramework.r4()";comment = "Integration: {{description}}";color = darkgreen;];
-    spark_8_t [label = "CilangFramework.r8()";comment = "Reflection: {{description}}";color = darkgreen;];
-    spark_7_t [label = "CilangFramework.r7()";comment = "Consolidation: {{description}}";color = darkgreen;];
-    spark_5_t [label = "CilangFramework.r5()";comment = "Propagation: {{description}}";color = darkgreen;];
-    spark_3_t [label = "CilangFramework.r3()";comment = "Thesis: {{description}}";color = darkblue;];
-    spark_6_t [label = "CilangFramework.r6()";comment = "Antithesis: {{description}}";color = darkblue;];
-    spark_9_t [label = "CilangFramework.r9()";comment = "Synthesis: {{description}}";color = darkblue;];
-    spark_c_t [label = "CilangFramework.dispatch()";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "CilangFramework.commit()";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "CilangFramework.serve()";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "CilangFramework.exec()";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    spark_4_t [label = "CilangFramework.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    spark_8_t [label = "CilangFramework.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    spark_7_t [label = "CilangFramework.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    spark_5_t [label = "CilangFramework.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    spark_3_t [label = "CilangFramework.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    spark_6_t [label = "CilangFramework.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    spark_9_t [label = "CilangFramework.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    spark_c_t [label = "CilangFramework.dispatch({{title}})";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "CilangFramework.commit(Knot)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "CilangFramework.serve({{title}})";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "CilangFramework.exec({{title}})";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];

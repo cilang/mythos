@@ -1,4 +1,4 @@
-# MythOS: A Sparklet Cosmology
+# MythOS: A Cilang Cosmology
 
 > **Where hard sci-fi meets high fantasy through computational topology**
 
@@ -19,9 +19,9 @@
 
 ## 🎯 What is MythOS?
 
-**MythOS** is a **Fictional Cosmology** that use **Sparklet Topology** and **Sparklet Space** as its **First Principle**.
+**MythOS** is a **Fictional Cosmology** that use **Cilang Topology** and **Cilang Space** as its **First Principle**.
 
-### Sparklet Space
+### Cilang Space
 
 **Mathematical Definition:**
 
@@ -35,7 +35,7 @@ w ∈ [w₀, w₁, w₂, ..., w₁₅]
 - Distribution: Balanced Ternary `n-1-n` across [-1, 0, +1]
 - Default: `n = 180` = 361 steps total with Distribution: [-1,0,+1] = [180, 1, 180] steps
 
-### Sparklet Topology
+### Cilang Topology
 
 **Invariant Structure:**
 
@@ -46,7 +46,7 @@ w ∈ [w₀, w₁, w₂, ..., w₁₅]
 **Template:**
 
 ```dot
-strict digraph Sparklet {
+strict digraph Cilang {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
@@ -120,11 +120,11 @@ strict digraph Sparklet {
 
 The **Brunnian Link** and **Borromean Rings** is important to optimize things from Knot Theory things.
 
-Oh! Almost forgot, The **Sparklet Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Sparklet Space**.
+Oh! Almost forgot, The **Cilang Topology** is just one amongst hypothetically who-knows-how-many _Invariant Topology_ that inhabits **Cilang Space**.
 
 Explore it through Brunnian Link and you might found various things that are interesting.
 
-Because in Sparklet Topology;
+Because in Cilang Topology;
 
 - the spark_d_t (commit) is dependent on the results of spark_[1,2,4,8,7,5]_t (6-Link Brunnian Logic)
 - spark_e_t (serve) is dependent on the results of spark_[3,6,9]_t (Borromean Logic)
@@ -132,7 +132,7 @@ Because in Sparklet Topology;
 - spark_c_t (dispatch) is dependent on the results of spark_[a,b]_t (2-Link Brunnian Logic or Vesica Pisces Logic)
 - then spark_f_t (Closure) is dependent on the results of spark_[c,d,e]_t (Borromean Logic).
 
-The **Sparklet Framework** uses **Brunnian Link** dependencies to ensure Dynamic Formal Verification (DFV) across all processes. Critical synthesis points are governed by the **Borromean Link** (the 6^3_2 Brunnian), while the origin point requires the dual-source integrity defined by the **Vesica Pisces**.
+The **Cilang Framework** uses **Brunnian Link** dependencies to ensure Dynamic Formal Verification (DFV) across all processes. Critical synthesis points are governed by the **Borromean Link** (the 6^3_2 Brunnian), while the origin point requires the dual-source integrity defined by the **Vesica Pisces**.
 
 I often used this [Prompt Header](https://github.com/cilang/mythos/blob/master/src%2Fspecs%2Fsparklet%2Fmythos_prompt.txt) when talking with AI.
 
@@ -140,8 +140,8 @@ I often used this [Prompt Header](https://github.com/cilang/mythos/blob/master/s
 
 This specification documents prior art for:
 
-- Sparklet Topology (16-vertex, 35-edge computational graph)
-- Sparklet Space (3-sphere constrained manifold with 16-fold w-multiplex)
+- Cilang Topology (16-vertex, 35-edge computational graph)
+- Cilang Space (3-sphere constrained manifold with 16-fold w-multiplex)
 - Balanced ternary quantization with 361 probability multitudes
 
 ## License
