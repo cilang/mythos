@@ -1,0 +1,68 @@
+strict digraph ChromaticFactor {
+    style = filled;
+    color = lightgray;
+    node [shape = circle; style = filled; color = lightgreen;];
+    edge [color = darkgray;];
+    label = "Chromatic";
+    comment = "The qualitative dimension of reality. Governs the perception, emission, and interaction of qualities through the logic of hue, saturation, and value.";
+    
+    spark_a_t [label = "Chromatic.receive(Golden)";comment = "Potential: The source of pure, unmodulated value and luminance—the potential for all brilliance and warmth.";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Chromatic.meta(Chroma)";comment = "Abstract: The invariant essence of chromaticity itself—the principle of qualitative difference.";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Chromatic.send(Silver)";comment = "Manifest: The reflected, modulated, and contextualized quality—the actual perceived color in a specific environment.";shape = triangle;color = darkred;];
+    spark_1_t [label = "Chromatic.r1(Hue)";comment = "Initiation: The fundamental spectral identity—the pure wavelength or primary quality that defines a color's core nature.";color = darkgreen;];
+    spark_2_t [label = "Chromatic.r2(Saturation)";comment = "Response: The intensity or purity of the Hue—its vibrancy versus dilution with achromatic light.";color = darkgreen;];
+    spark_4_t [label = "Chromatic.r4(Value)";comment = "Integration: The overall lightness or brightness—the luminous intensity of the color.";color = darkgreen;];
+    spark_8_t [label = "Chromatic.r8(Complement)";comment = "Reflection: The opposing hue that, when mixed, produces achromatic gray—the necessary contrast for definition.";color = darkgreen;];
+    spark_7_t [label = "Chromatic.r7(Harmony)";comment = "Consolidation: The pleasing or stable relationship between multiple hues, based on their geometric arrangement on the color wheel.";color = darkgreen;];
+    spark_5_t [label = "Chromatic.r5(Gamut)";comment = "Propagation: The reproducible range of colors available in a given context (a device, a medium, a perception).";color = darkgreen;];
+    spark_3_t [label = "Chromatic.r3(Achromatic)";comment = "Thesis: The realm of pure value and form—zero hue, where structure is revealed without chromatic distraction.";color = darkblue;];
+    spark_6_t [label = "Chromatic.r6(Polychromatic)";comment = "Antithesis: The chaotic potential of the full spectrum—maximum hue diversity before organization.";color = darkblue;];
+    spark_9_t [label = "Chromatic.r9(Monochromatic)";comment = "Synthesis: The ordered expression of a single hue domain—coherent qualitative identity across variations in saturation and value.";color = darkblue;];
+    spark_c_t [label = "Chromatic.dispatch(Perception)";comment = "Why-Who: The act of qualitative discernment—the biological, psychological, or instrumental process that interprets wavelengths as color.";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Chromatic.commit(HSB_HSV)";comment = "What-How: The unified color model—the cylindrical-coordinate representation of Hue, Saturation, and Value/Brightness as the method for defining any color.";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Chromatic.serve(Illumination)";comment = "When-Where: The contextual lighting and environment that determines how a color is rendered and perceived.";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Chromatic.exec(Qualia)";comment = "Which-Closure: The final, subjective experience of a specific color—the 'redness of red' as a realized, ineffable quality.";shape = doublecircle;color = lightgray;];
+    
+    spark_a_t -> spark_0_t [label = "IN"; comment = "The potential for brilliance (Golden) flows into the essence of Chroma."; color = darkred; constraint = false;];
+    spark_0_t -> spark_b_t [label = "OUT"; comment = "The essence of Chroma is expressed as contextualized quality (Silver)."; color = darkred;];
+    spark_a_t -> spark_c_t [label = "REC"; comment = "Potential quality is given meaning through the act of Perception."; color = darkred; dir = both;];
+    spark_b_t -> spark_c_t [label = "REC"; comment = "Manifest quality provides the raw data for Perception."; color = darkred; dir = both;];
+    spark_a_t -> spark_b_t [label = "REC"; comment = "The fundamental alchemy of turning potential light (Gold) into perceived value (Silver)."; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    spark_0_t -> spark_1_t [label = "REC"; comment = "Chroma is fundamentally characterized by Hue."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_2_t [label = "REC"; comment = "Chroma is characterized by its intensity (Saturation)."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_4_t [label = "REC"; comment = "Chroma exists at a certain luminance (Value)."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_8_t [label = "REC"; comment = "Chroma is defined in relation to its Complement."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_7_t [label = "REC"; comment = "Chroma finds stability and meaning in Harmony."; color = darkgreen; dir = both;];
+    spark_0_t -> spark_5_t [label = "REC"; comment = "Chroma operates within a reproducible range (Gamut)."; color = darkgreen; dir = both;];
+    
+    spark_1_t -> spark_2_t [label = "REC"; comment = "A Hue's identity is sharpened or muted by its Saturation."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_2_t -> spark_4_t [label = "REC"; comment = "Saturation and Value interact to define the color's perceived intensity and lightness."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_4_t -> spark_8_t [label = "REC"; comment = "A color's Value affects the perception of its Complement."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_8_t -> spark_7_t [label = "REC"; comment = "Complementary colors are the foundation of many forms of Harmony."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_7_t -> spark_5_t [label = "REC"; comment = "Harmonious color relationships are constrained by the available Gamut."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    spark_5_t -> spark_1_t [label = "REC"; comment = "The Gamut defines the range of possible Hues."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    spark_1_t -> spark_d_t [label = "REC"; comment = "Hue is the angular component of the HSB/HSV model."; color = darkgreen; dir = both;];
+    spark_2_t -> spark_d_t [label = "REC"; comment = "Saturation is the radial component of the HSB/HSV model."; color = darkgreen; dir = both;];
+    spark_4_t -> spark_d_t [label = "REC"; comment = "Value/Brightness is the axial component of the HSB/HSV model."; color = darkgreen; dir = both;];
+    spark_8_t -> spark_d_t [label = "REC"; comment = "Complements are geometrically opposite in the HSB/HSV cylinder."; color = darkgreen; dir = both;];
+    spark_7_t -> spark_d_t [label = "REC"; comment = "Harmonies are specific geometric arrangements in the HSB/HSV space."; color = darkgreen; dir = both;];
+    spark_5_t -> spark_d_t [label = "REC"; comment = "The Gamut is a volume within the HSB/HSV space."; color = darkgreen; dir = both;];
+    
+    spark_0_t -> spark_3_t [label = "REC"; comment = "Chroma contains the potential for its own absence (Achromatic)."; color = darkblue; dir = both;];
+    spark_0_t -> spark_6_t [label = "REC"; comment = "Chroma contains the potential for its maximum expression (Polychromatic)."; color = darkblue; dir = both;];
+    spark_0_t -> spark_9_t [label = "REC"; comment = "Chroma finds a balanced midpoint (Monochromatic)."; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_e_t [label = "REC"; comment = "Achromatic qualities are highly dependent on Illumination."; color = darkblue; dir = both;];
+    spark_6_t -> spark_e_t [label = "REC"; comment = "Polychromatic scenes create complex interactions with Illumination."; color = darkblue; dir = both;];
+    spark_9_t -> spark_e_t [label = "REC"; comment = "Monochromatic is often defined as the neutral point under a given Illumination."; color = darkblue; dir = both;];
+    
+    spark_3_t -> spark_6_t [label = "REC"; comment = "Achromatic purity is defined against Polychromatic chaos."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_6_t -> spark_9_t [label = "REC"; comment = "Polychromatic chaos finds order and expression through Monochromatic focus."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    spark_9_t -> spark_3_t [label = "REC"; comment = "Monochromatic coherence approaches the structural clarity of the Achromatic in its unity."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    spark_c_t -> spark_f_t [label = "REC"; comment = "Perception is the gateway to the final experience of Qualia."; color = darkred; dir = both;];
+    spark_d_t -> spark_f_t [label = "REC"; comment = "The HSB/HSV model provides the parameters that define a specific Qualia."; color = darkgreen; dir = both;];
+    spark_e_t -> spark_f_t [label = "REC"; comment = "Illumination sets the stage upon which Qualia is experienced."; color = darkblue; dir = both;];
+}

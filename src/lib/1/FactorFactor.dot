@@ -1,27 +1,27 @@
-strict digraph SpaceFactor {
+strict digraph FactorFactor {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Space";
+    label = "Cilang";
     comment = "{{description}}";
     
-    spark_a_t [label = "Space.receive(Potential)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Space.meta(Substrate)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Space.send(Manifest)";comment = "{{description}}";shape = triangle;color = darkred;];
-    spark_1_t [label = "Space.r1(Coordinate)";comment = "{{description}}";color = darkgreen;];
-    spark_2_t [label = "Space.r2(Navigation)";comment = "{{description}}";color = darkgreen;];
-    spark_4_t [label = "Space.r4(Constraint)";comment = "{{description}}";color = darkgreen;];
-    spark_8_t [label = "Space.r8(Interpolation)";comment = "{{description}}";color = darkgreen;];
-    spark_7_t [label = "Space.r7(Instantiation)";comment = "{{description}}";color = darkgreen;];
-    spark_5_t [label = "Space.r5(Relation)";comment = "{{description}}";color = darkgreen;];
-    spark_3_t [label = "Space.r3(Geometry)";comment = "{{description}}";color = darkblue;];
-    spark_6_t [label = "Space.r6(Topology)";comment = "{{description}}";color = darkblue;];
-    spark_9_t [label = "Space.r9(Existence)";comment = "{{description}}";color = darkblue;];
-    spark_c_t [label = "Space.dispatch(Layer)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Space.commit(Structure)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Space.serve(Context)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Space.exec(Containment)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    spark_a_t [label = "Reality.receive(PotentialEventStream)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    spark_0_t [label = "Reality.meta(Spark)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    spark_b_t [label = "Reality.send(ManifestEventStream)";comment = "{{description}}";shape = triangle;color = darkred;];
+    spark_1_t [label = "Reality.r1(FactorInitialization)";comment = "{{description}}";color = darkgreen;];
+    spark_2_t [label = "Reality.r2(FactorInstantiation)";comment = "{{description}}";color = darkgreen;];
+    spark_4_t [label = "Reality.r4(FactorIntegration)";comment = "{{description}}";color = darkgreen;];
+    spark_8_t [label = "Reality.r8(FactorReflection)";comment = "{{description}}";color = darkgreen;];
+    spark_7_t [label = "Reality.r7(FactorConsolidation)";comment = "{{description}}";color = darkgreen;];
+    spark_5_t [label = "Reality.r5(FactorPropagation)";comment = "{{description}}";color = darkgreen;];
+    spark_3_t [label = "Reality.r3({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_6_t [label = "Reality.r6({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_9_t [label = "Reality.r9({{title}})";comment = "{{description}}";color = darkblue;];
+    spark_c_t [label = "Reality.dispatch(ContextSwitch)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    spark_d_t [label = "Reality.commit(StateSync)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    spark_e_t [label = "Reality.serve(Arc)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    spark_f_t [label = "Reality.exec(LawOfCilang)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
     
     spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
