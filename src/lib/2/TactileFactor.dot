@@ -6,63 +6,63 @@ strict digraph TactileFactor {
     label = "Tactile";
     comment = "The domain of substance and material interaction. Governs the qualia of physical presence, resistance, and the felt experience of matter.";
     
-    spark_a_t [label = "Tactile.receive(PotentialSubstance)";comment = "Potential: The unformed potential for all materiality—the primordial 'clay' awaiting definition and resistance.";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Tactile.meta(Tactility)";comment = "Abstract: The invariant essence of 'touchability' itself—the principle of substantial presence and interaction.";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Tactile.send(ManifestSubstance)";comment = "Manifest: The actualized, specific material presence with defined properties and interactive potential.";shape = triangle;color = darkred;];
-    spark_1_t [label = "Tactile.r1(Density)";comment = "Initiation: The mass per unit volume—the fundamental measure of 'stuffness' that initiates material identity.";color = darkgreen;];
-    spark_2_t [label = "Tactile.r2(Elasticity)";comment = "Response: The capacity to deform under stress and return to original shape—the material's 'memory' of its form.";color = darkgreen;];
-    spark_4_t [label = "Tactile.r4(Cohesion)";comment = "Integration: The internal attraction binding substance together—the strength of material integrity.";color = darkgreen;];
-    spark_8_t [label = "Tactile.r8(Texture)";comment = "Reflection: The surface granularity and pattern—the tactile signature that reflects material history and composition.";color = darkgreen;];
-    spark_7_t [label = "Tactile.r7(Conductivity)";comment = "Consolidation: The capacity to transmit energy (heat, electricity)—the material's participation in energetic exchange.";color = darkgreen;];
-    spark_5_t [label = "Tactile.r5(Friction)";comment = "Propagation: The resistance to relative motion—the fundamental law of interactive engagement between surfaces.";color = darkgreen;];
-    spark_3_t [label = "Tactile.r3(Solidity)";comment = "Thesis: The ideal of perfect rigidity and definite form—matter as immutable, bounded object.";color = darkblue;];
-    spark_6_t [label = "Tactile.r6(Fluidity)";comment = "Antithesis: The state of continuous deformation and flow—matter as dynamic, boundary-less process.";color = darkblue;];
-    spark_9_t [label = "Tactile.r9(Plasticity)";comment = "Synthesis: The capacity for permanent deformation while maintaining coherence—matter as malleable yet persistent identity.";color = darkblue;];
-    spark_c_t [label = "Tactile.dispatch(Materiality)";comment = "Why-Who: The essential 'what-it-is-to-be' of a substance—the intrinsic nature that dictates its tactile properties.";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Tactile.commit(Composition)";comment = "What-How: The specific atomic/molecular arrangement and mixture that realizes a material's properties.";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Tactile.serve(Contact)";comment = "When-Where: The interface and boundary condition where tactile interaction actually occurs—the locus of felt experience.";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Tactile.exec(Substantiality)";comment = "Which-Closure: The final, concrete experience of 'thingness'—the undeniable qualia of physical presence and resistance.";shape = doublecircle;color = lightgray;];
+    cilang_a_t [label = "Tactile.receive(PotentialSubstance)";comment = "Potential: The unformed potential for all materiality—the primordial 'clay' awaiting definition and resistance.";shape = invtriangle;color = darkred;];
+    cilang_0_t [label = "Tactile.meta(Tactility)";comment = "Abstract: The invariant essence of 'touchability' itself—the principle of substantial presence and interaction.";shape = doublecircle;color = darkgray;];
+    cilang_b_t [label = "Tactile.send(ManifestSubstance)";comment = "Manifest: The actualized, specific material presence with defined properties and interactive potential.";shape = triangle;color = darkred;];
+    cilang_1_t [label = "Tactile.r1(Density)";comment = "Initiation: The mass per unit volume—the fundamental measure of 'stuffness' that initiates material identity.";color = darkgreen;];
+    cilang_2_t [label = "Tactile.r2(Elasticity)";comment = "Response: The capacity to deform under stress and return to original shape—the material's 'memory' of its form.";color = darkgreen;];
+    cilang_4_t [label = "Tactile.r4(Cohesion)";comment = "Integration: The internal attraction binding substance together—the strength of material integrity.";color = darkgreen;];
+    cilang_8_t [label = "Tactile.r8(Texture)";comment = "Reflection: The surface granularity and pattern—the tactile signature that reflects material history and composition.";color = darkgreen;];
+    cilang_7_t [label = "Tactile.r7(Conductivity)";comment = "Consolidation: The capacity to transmit energy (heat, electricity)—the material's participation in energetic exchange.";color = darkgreen;];
+    cilang_5_t [label = "Tactile.r5(Friction)";comment = "Propagation: The resistance to relative motion—the fundamental law of interactive engagement between surfaces.";color = darkgreen;];
+    cilang_3_t [label = "Tactile.r3(Solidity)";comment = "Thesis: The ideal of perfect rigidity and definite form—matter as immutable, bounded object.";color = darkblue;];
+    cilang_6_t [label = "Tactile.r6(Fluidity)";comment = "Antithesis: The state of continuous deformation and flow—matter as dynamic, boundary-less process.";color = darkblue;];
+    cilang_9_t [label = "Tactile.r9(Plasticity)";comment = "Synthesis: The capacity for permanent deformation while maintaining coherence—matter as malleable yet persistent identity.";color = darkblue;];
+    cilang_c_t [label = "Tactile.dispatch(Materiality)";comment = "Why-Who: The essential 'what-it-is-to-be' of a substance—the intrinsic nature that dictates its tactile properties.";shape = doublecircle;color = darkred;];
+    cilang_d_t [label = "Tactile.commit(Composition)";comment = "What-How: The specific atomic/molecular arrangement and mixture that realizes a material's properties.";shape = doublecircle;color = darkgreen;];
+    cilang_e_t [label = "Tactile.serve(Contact)";comment = "When-Where: The interface and boundary condition where tactile interaction actually occurs—the locus of felt experience.";shape = doublecircle;color = darkblue;];
+    cilang_f_t [label = "Tactile.exec(Substantiality)";comment = "Which-Closure: The final, concrete experience of 'thingness'—the undeniable qualia of physical presence and resistance.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "Potential substance flows into the essence of Tactility."; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "Tactility expresses itself as manifest substance."; color = darkred;];
-    spark_a_t -> spark_c_t [label = "REC"; comment = "Potential substance is given identity by its intrinsic Materiality."; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "Manifest substance reveals and refines its essential Materiality."; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The fundamental cycle of unformed matter becoming definite object."; color = darkred; dir = both; style = dashed; constraint = false;];
+    cilang_a_t -> cilang_0_t [label = "IN"; comment = "Potential substance flows into the essence of Tactility."; color = darkred; constraint = false;];
+    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "Tactility expresses itself as manifest substance."; color = darkred;];
+    cilang_a_t -> cilang_c_t [label = "REC"; comment = "Potential substance is given identity by its intrinsic Materiality."; color = darkred; dir = both;];
+    cilang_b_t -> cilang_c_t [label = "REC"; comment = "Manifest substance reveals and refines its essential Materiality."; color = darkred; dir = both;];
+    cilang_a_t -> cilang_b_t [label = "REC"; comment = "The fundamental cycle of unformed matter becoming definite object."; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Tactility is characterized by Density."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Tactility is characterized by Elasticity."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Tactility is characterized by Cohesion."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Tactility is characterized by Texture."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Tactility is characterized by Conductivity."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Tactility is characterized by Friction."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_1_t [label = "REC"; comment = "Tactility is characterized by Density."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_2_t [label = "REC"; comment = "Tactility is characterized by Elasticity."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_4_t [label = "REC"; comment = "Tactility is characterized by Cohesion."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_8_t [label = "REC"; comment = "Tactility is characterized by Texture."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_7_t [label = "REC"; comment = "Tactility is characterized by Conductivity."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_5_t [label = "REC"; comment = "Tactility is characterized by Friction."; color = darkgreen; dir = both;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "Density influences the speed of wave propagation, affecting perceived Elasticity."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "Elasticity is a manifestation of internal Cohesive forces."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Cohesive strength and crystal structure determine surface Texture."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "Surface Texture affects thermal and electrical Contact, influencing perceived Conductivity."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "Thermal Conductivity affects surface expansion and Friction properties."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Frictional heating can locally alter Density through thermal expansion."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_1_t -> cilang_2_t [label = "REC"; comment = "Density influences the speed of wave propagation, affecting perceived Elasticity."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_2_t -> cilang_4_t [label = "REC"; comment = "Elasticity is a manifestation of internal Cohesive forces."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_4_t -> cilang_8_t [label = "REC"; comment = "Cohesive strength and crystal structure determine surface Texture."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_8_t -> cilang_7_t [label = "REC"; comment = "Surface Texture affects thermal and electrical Contact, influencing perceived Conductivity."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_7_t -> cilang_5_t [label = "REC"; comment = "Thermal Conductivity affects surface expansion and Friction properties."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_5_t -> cilang_1_t [label = "REC"; comment = "Frictional heating can locally alter Density through thermal expansion."; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_d_t [label = "REC"; comment = "Density is a direct consequence of atomic/molecular Composition."; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "Elasticity emerges from the bonding patterns in the Composition."; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "Cohesion is determined by the chemical bonds in the Composition."; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "Texture results from the crystalline or amorphous structure of the Composition."; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "Conductivity depends on electron configuration and lattice structure in the Composition."; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "Friction characteristics are determined by surface Composition and hardness."; color = darkgreen; dir = both;];
+    cilang_1_t -> cilang_d_t [label = "REC"; comment = "Density is a direct consequence of atomic/molecular Composition."; color = darkgreen; dir = both;];
+    cilang_2_t -> cilang_d_t [label = "REC"; comment = "Elasticity emerges from the bonding patterns in the Composition."; color = darkgreen; dir = both;];
+    cilang_4_t -> cilang_d_t [label = "REC"; comment = "Cohesion is determined by the chemical bonds in the Composition."; color = darkgreen; dir = both;];
+    cilang_8_t -> cilang_d_t [label = "REC"; comment = "Texture results from the crystalline or amorphous structure of the Composition."; color = darkgreen; dir = both;];
+    cilang_7_t -> cilang_d_t [label = "REC"; comment = "Conductivity depends on electron configuration and lattice structure in the Composition."; color = darkgreen; dir = both;];
+    cilang_5_t -> cilang_d_t [label = "REC"; comment = "Friction characteristics are determined by surface Composition and hardness."; color = darkgreen; dir = both;];
     
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Tactility contains the ideal of perfect Solidity."; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Tactility contains the potential for complete Fluidity."; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Tactility finds expression in Plasticity."; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_3_t [label = "REC"; comment = "Tactility contains the ideal of perfect Solidity."; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_6_t [label = "REC"; comment = "Tactility contains the potential for complete Fluidity."; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_9_t [label = "REC"; comment = "Tactility finds expression in Plasticity."; color = darkblue; dir = both;];
     
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Solidity creates sharp, definite boundaries for Contact."; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "Fluidity creates continuous, evolving boundaries for Contact."; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Plasticity creates gradually shifting boundaries for Contact."; color = darkblue; dir = both;];
+    cilang_3_t -> cilang_e_t [label = "REC"; comment = "Solidity creates sharp, definite boundaries for Contact."; color = darkblue; dir = both;];
+    cilang_6_t -> cilang_e_t [label = "REC"; comment = "Fluidity creates continuous, evolving boundaries for Contact."; color = darkblue; dir = both;];
+    cilang_9_t -> cilang_e_t [label = "REC"; comment = "Plasticity creates gradually shifting boundaries for Contact."; color = darkblue; dir = both;];
     
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Solidity is defined by its resistance to Fluidity."; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "Fluidity finds structured expression through Plasticity."; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "Plasticity approaches Solidity as deformation becomes permanent."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_3_t -> cilang_6_t [label = "REC"; comment = "Solidity is defined by its resistance to Fluidity."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_6_t -> cilang_9_t [label = "REC"; comment = "Fluidity finds structured expression through Plasticity."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_9_t -> cilang_3_t [label = "REC"; comment = "Plasticity approaches Solidity as deformation becomes permanent."; color = darkblue; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "REC"; comment = "Materiality is the source of the qualia of Substantiality."; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "REC"; comment = "Composition realizes the specific experience of Substantiality."; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "REC"; comment = "Contact is the gateway to the experience of Substantiality."; color = darkblue; dir = both;];
+    cilang_c_t -> cilang_f_t [label = "REC"; comment = "Materiality is the source of the qualia of Substantiality."; color = darkred; dir = both;];
+    cilang_d_t -> cilang_f_t [label = "REC"; comment = "Composition realizes the specific experience of Substantiality."; color = darkgreen; dir = both;];
+    cilang_e_t -> cilang_f_t [label = "REC"; comment = "Contact is the gateway to the experience of Substantiality."; color = darkblue; dir = both;];
 }

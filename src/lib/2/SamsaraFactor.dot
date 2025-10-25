@@ -6,63 +6,63 @@ strict digraph SamsaraFactor {
     label = "Samsara";
     comment = "The cosmic justice system and the engine of time. It weaves the raw events of reality into an unbreakable causal tapestry, where every action accrues its consequence and the weight of history shapes the path forward.";
     
-    spark_a_t [label = "Samsara.receive(Vertices)";comment = "The Harvest of Deeds. The input stream of manifested events from the `RealityEngine`. These are the raw 'Vertices'—the completed actions and born entities—that now await their karmic judgment and integration into the flow of time.";shape = invtriangle;color = darkred;];
-    spark_0_t [label = "Samsara.meta(Causality)";comment = "The Impartial Arbiter. The central process that oversees the binding of cause to effect. It is the silent judge that ensures no action escapes its echo, maintaining the relentless, fair logic of temporal consequence.";shape = doublecircle;color = darkgray;];
-    spark_b_t [label = "Samsara.send(Edges)";comment = "The Decree of Fate. The output stream of certified cause-effect relationships. These are the 'Edges' that structure the `Continuum`, defining the arrow of time and the immutable logic of history. They are the sentences passed by the karmic court.";shape = triangle;color = darkred;];
-    spark_1_t [label = "Samsara.r1(CausalityInitialization)";comment = "The Inscription of a Debt. A manifested event from the `RealityEngine` is registered as a new causal agent—a 'Cause' that has entered the world and now carries the potential, and the obligation, to spawn its Effects.";color = darkgreen;];
-    spark_2_t [label = "Samsara.r2(CausalityInstantiation)";comment = "The Judgment of Consequence. A specific, justified Effect is formally linked to its progenitor Cause. This is the `sparklet.eq()` of karma—a divine certification that Effect Y is the legitimate, proportional offspring of Cause X.";color = darkgreen;];
-    spark_4_t [label = "Samsara.r4(CausalityIntegration)";comment = "The Weaving of the Tapestry. The new cause-effect bond is integrated into the vast, growing Directed Acyclic Graph (DAG) of all existence. Its threads are tied to countless others, defining its place in the grand narrative.";color = darkgreen;];
-    spark_8_t [label = "Samsara.r8(CausalityReflection)";comment = "The Audit of Destiny. A holistic analysis of the entire karmic DAG. This process measures the balance of debts and credits, identifies unresolved tensions, and maps the flow of destiny across the continuum.";color = darkgreen;];
-    spark_7_t [label = "Samsara.r7(CausalityConsolidation)";comment = "The Balancing of the Scales. This process enforces karmic justice. It resolves outstanding debts, ensures no cause goes without its effect, and prunes paradoxical or unstable causal loops to maintain a single, consistent timeline.";color = darkgreen;];
-    spark_5_t [label = "Samsara.r5(CausalityPropagation)";comment = "The Unleashing of Ripples. The certified effects are released back into the `Continuum`. These effects are not endings, but new beginnings—they immediately become fresh causes, fueling the endless, turning wheel of Samsara.";color = darkgreen;];
-    spark_3_t [label = "Samsara.r3(Karma)";comment = "Thesis: The Ledger of Moral Debt. The stored potential energy of unresolved action. It is the cosmic imbalance—a weight upon the soul of an entity or the fabric of a timeline—that demands resolution. It is the engine's fuel.";color = darkblue;];
-    spark_6_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: The Path of Harmonious Law. The inherent, optimal structure of the causal web. Following Dharma is to choose the causal path that creates stability, beauty, and coherence. Adharma is the path of dissonance and decay. It is the engine's steering mechanism.";color = darkblue;];
-    spark_9_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: The State of Causal Equilibrium. A node in the graph that is perfectly balanced—where every outgoing cause has been perfectly answered by its incoming effects, and vice versa. It is a state of stillness and release from the karmic cycle, a silent vertex in the roaring graph.";color = darkblue;];
-    spark_c_t [label = "Samsara.dispatch(Graph)";comment = "The Map of All Possibility. The operational, real-time view of the causal DAG. It is used to simulate futures, trace pasts, and understand the 'Why' of any event by revealing its position in the vast, interconnected web of all causes.";shape = doublecircle;color = darkred;];
-    spark_d_t [label = "Samsara.commit(KarmicImprint)";comment = "The Canonical History. The immutable, absolute record of every cause and effect that has ever been. This is the official ledger, the universe's memory. It is the 'What' of all that has occurred and the 'How' of its interconnectedness.";shape = doublecircle;color = darkgreen;];
-    spark_e_t [label = "Samsara.serve(Samsara)";comment = "The Experienced Prison of Time. The manifested, subjective experience of being trapped within the causal web—the feeling of past regrets, future anxieties, and the palpable weight of consequence. It is the 'When-Where' of a soul's journey through the cycle.";shape = doublecircle;color = darkblue;];
-    spark_f_t [label = "Samsara.exec(LawOfCausality)";comment = "The Prime Directive of Consequences. The unbreakable highest law: 'For Every Cause, An Equal And Opposite Effect; All Accounts Must Be Settled.' This is the fundamental rule that powers the wheel and from which all temporal logic flows.";shape = doublecircle;color = lightgray;];
+    cilang_a_t [label = "Samsara.receive(Vertices)";comment = "The Harvest of Deeds. The input stream of manifested events from the `RealityEngine`. These are the raw 'Vertices'—the completed actions and born entities—that now await their karmic judgment and integration into the flow of time.";shape = invtriangle;color = darkred;];
+    cilang_0_t [label = "Samsara.meta(Causality)";comment = "The Impartial Arbiter. The central process that oversees the binding of cause to effect. It is the silent judge that ensures no action escapes its echo, maintaining the relentless, fair logic of temporal consequence.";shape = doublecircle;color = darkgray;];
+    cilang_b_t [label = "Samsara.send(Edges)";comment = "The Decree of Fate. The output stream of certified cause-effect relationships. These are the 'Edges' that structure the `Continuum`, defining the arrow of time and the immutable logic of history. They are the sentences passed by the karmic court.";shape = triangle;color = darkred;];
+    cilang_1_t [label = "Samsara.r1(CausalityInitialization)";comment = "The Inscription of a Debt. A manifested event from the `RealityEngine` is registered as a new causal agent—a 'Cause' that has entered the world and now carries the potential, and the obligation, to spawn its Effects.";color = darkgreen;];
+    cilang_2_t [label = "Samsara.r2(CausalityInstantiation)";comment = "The Judgment of Consequence. A specific, justified Effect is formally linked to its progenitor Cause. This is the `sparklet.eq()` of karma—a divine certification that Effect Y is the legitimate, proportional offspring of Cause X.";color = darkgreen;];
+    cilang_4_t [label = "Samsara.r4(CausalityIntegration)";comment = "The Weaving of the Tapestry. The new cause-effect bond is integrated into the vast, growing Directed Acyclic Graph (DAG) of all existence. Its threads are tied to countless others, defining its place in the grand narrative.";color = darkgreen;];
+    cilang_8_t [label = "Samsara.r8(CausalityReflection)";comment = "The Audit of Destiny. A holistic analysis of the entire karmic DAG. This process measures the balance of debts and credits, identifies unresolved tensions, and maps the flow of destiny across the continuum.";color = darkgreen;];
+    cilang_7_t [label = "Samsara.r7(CausalityConsolidation)";comment = "The Balancing of the Scales. This process enforces karmic justice. It resolves outstanding debts, ensures no cause goes without its effect, and prunes paradoxical or unstable causal loops to maintain a single, consistent timeline.";color = darkgreen;];
+    cilang_5_t [label = "Samsara.r5(CausalityPropagation)";comment = "The Unleashing of Ripples. The certified effects are released back into the `Continuum`. These effects are not endings, but new beginnings—they immediately become fresh causes, fueling the endless, turning wheel of Samsara.";color = darkgreen;];
+    cilang_3_t [label = "Samsara.r3(Karma)";comment = "Thesis: The Ledger of Moral Debt. The stored potential energy of unresolved action. It is the cosmic imbalance—a weight upon the soul of an entity or the fabric of a timeline—that demands resolution. It is the engine's fuel.";color = darkblue;];
+    cilang_6_t [label = "Samsara.r6(Dharma)";comment = "Antithesis: The Path of Harmonious Law. The inherent, optimal structure of the causal web. Following Dharma is to choose the causal path that creates stability, beauty, and coherence. Adharma is the path of dissonance and decay. It is the engine's steering mechanism.";color = darkblue;];
+    cilang_9_t [label = "Samsara.r9(Nirvana)";comment = "Synthesis: The State of Causal Equilibrium. A node in the graph that is perfectly balanced—where every outgoing cause has been perfectly answered by its incoming effects, and vice versa. It is a state of stillness and release from the karmic cycle, a silent vertex in the roaring graph.";color = darkblue;];
+    cilang_c_t [label = "Samsara.dispatch(Graph)";comment = "The Map of All Possibility. The operational, real-time view of the causal DAG. It is used to simulate futures, trace pasts, and understand the 'Why' of any event by revealing its position in the vast, interconnected web of all causes.";shape = doublecircle;color = darkred;];
+    cilang_d_t [label = "Samsara.commit(KarmicImprint)";comment = "The Canonical History. The immutable, absolute record of every cause and effect that has ever been. This is the official ledger, the universe's memory. It is the 'What' of all that has occurred and the 'How' of its interconnectedness.";shape = doublecircle;color = darkgreen;];
+    cilang_e_t [label = "Samsara.serve(Samsara)";comment = "The Experienced Prison of Time. The manifested, subjective experience of being trapped within the causal web—the feeling of past regrets, future anxieties, and the palpable weight of consequence. It is the 'When-Where' of a soul's journey through the cycle.";shape = doublecircle;color = darkblue;];
+    cilang_f_t [label = "Samsara.exec(LawOfCausality)";comment = "The Prime Directive of Consequences. The unbreakable highest law: 'For Every Cause, An Equal And Opposite Effect; All Accounts Must Be Settled.' This is the fundamental rule that powers the wheel and from which all temporal logic flows.";shape = doublecircle;color = lightgray;];
     
-    spark_a_t -> spark_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    spark_a_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
+    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
+    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
     
-    spark_0_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_1_t -> spark_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
     
-    spark_1_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
     
-    spark_0_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     
-    spark_3_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
     
-    spark_3_t -> spark_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
     
-    spark_c_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
+    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
 }

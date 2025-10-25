@@ -5,64 +5,64 @@ strict digraph AlignmentFactor {
     edge [color = darkgray;];
     label = "Alignment";
     comment = "The fundamental physical substrate of Cilang Space. Governs the interplay of geometry, dynamics, and manifestation from which all reality emerges.";
-
-    spark_a_t [label = "Alignment.receive(Unity)"; comment = "Potential: The undifferentiated, unified potential of all physical law and geometry."; shape = invtriangle; color = darkred;];
-    spark_0_t [label = "Alignment.meta(Alignment)"; comment = "Abstract: The invariant principle of coherent structure that defines this Factor's existence."; shape = doublecircle; color = darkgray;];
-    spark_b_t [label = "Alignment.send(Diversity)"; comment = "Manifest: The fully expressed, diverse spectrum of physical phenomena and states."; shape = triangle; color = darkred;];
-    spark_1_t [label = "Alignment.r1(Manifold)"; comment = "Initiation: The foundational space or stage upon which dynamics occur."; color = darkgreen;];
-    spark_2_t [label = "Alignment.r2(Connection)"; comment = "Response: The rule defining how to relate points and move within the Manifold."; color = darkgreen;];
-    spark_4_t [label = "Alignment.r4(Curvature)"; comment = "Integration: The intrinsic bending or deviation implied by the Connection."; color = darkgreen;];
-    spark_8_t [label = "Alignment.r8(Source)"; comment = "Reflection: The origin or cause that induces the Curvature."; color = darkgreen;];
-    spark_7_t [label = "Alignment.r7(Field)"; comment = "Consolidation: The medium of influence propagated by the Source."; color = darkgreen;];
-    spark_5_t [label = "Alignment.r5(Quantization)"; comment = "Propagation: The discrete, stable states and excitations of the Field."; color = darkgreen;];
-    spark_3_t [label = "Alignment.r3(Gauge)"; comment = "Thesis: The inherent freedom or redundancy in the description of a system."; color = darkblue;];
-    spark_6_t [label = "Alignment.r6(Anomaly)"; comment = "Antithesis: The obstruction or inconsistency that breaks a symmetry."; color = darkblue;];
-    spark_9_t [label = "Alignment.r9(Symmetry)"; comment = "Synthesis: The consistent, invariant property restored by resolving the Gauge and Anomaly."; color = darkblue;];
-    spark_c_t [label = "Alignment.dispatch(Lagrangian)"; comment = "Why-Who: The fundamental principle or function that defines the system's entire dynamics."; shape = doublecircle; color = darkred;];
-    spark_d_t [label = "Alignment.commit(PathIntegral)"; comment = "What-How: The sum over all possible histories weighted by the Lagrangian."; shape = doublecircle; color = darkgreen;];
-    spark_e_t [label = "Alignment.serve(Observable)"; comment = "When-Where: The specific, measurable quantity extracted from the Path Integral."; shape = doublecircle; color = darkblue;];
-    spark_f_t [label = "Alignment.exec(Measurement)"; comment = "Which-Closure: The act that collapses the possibilities into a single, definite reality."; shape = doublecircle; color = lightgray;];
-
-    spark_a_t -> spark_0_t [label = "IN"; comment = "Primordial potential flows into core identity."; color = darkred; constraint = false;];
-    spark_0_t -> spark_b_t [label = "OUT"; comment = "Core identity expresses as manifest diversity."; color = darkred;];
-    spark_a_t -> spark_c_t [label = "REC"; comment = "Potential and Principle negotiate the laws."; color = darkred; dir = both;];
-    spark_b_t -> spark_c_t [label = "REC"; comment = "Manifestation informs and is defined by the Principle."; color = darkred; dir = both;];
-    spark_a_t -> spark_b_t [label = "REC"; comment = "The fundamental tension between One and Many."; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    spark_0_t -> spark_1_t [label = "REC"; comment = "Identity requires a space to exist within."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_2_t [label = "REC"; comment = "Identity requires rules of relation."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_4_t [label = "REC"; comment = "Identity implies a specific shape."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_8_t [label = "REC"; comment = "Identity is sourced from something."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_7_t [label = "REC"; comment = "Identity propagates its influence."; color = darkgreen; dir = both;];
-    spark_0_t -> spark_5_t [label = "REC"; comment = "Identity is quantized into definite states."; color = darkgreen; dir = both;];
-
-    spark_1_t -> spark_2_t [label = "REC"; comment = "A space is defined by how one moves within it."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_2_t -> spark_4_t [label = "REC"; comment = "A connection defines an intrinsic curvature."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_4_t -> spark_8_t [label = "REC"; comment = "Curvature must have a source."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_8_t -> spark_7_t [label = "REC"; comment = "A source generates a field of influence."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_7_t -> spark_5_t [label = "REC"; comment = "A field's dynamics are quantized."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    spark_5_t -> spark_1_t [label = "REC"; comment = "Quantization defines the structure of the space itself."; color = darkgreen; dir = both; style = dashed; constraint = false;];
-
-    spark_1_t -> spark_d_t [label = "REC"; comment = "The manifold is the domain of the path integral."; color = darkgreen; dir = both;];
-    spark_2_t -> spark_d_t [label = "REC"; comment = "The connection weights the paths."; color = darkgreen; dir = both;];
-    spark_4_t -> spark_d_t [label = "REC"; comment = "Curvature alters path probabilities."; color = darkgreen; dir = both;];
-    spark_8_t -> spark_d_t [label = "REC"; comment = "Sources are incorporated in the action."; color = darkgreen; dir = both;];
-    spark_7_t -> spark_d_t [label = "REC"; comment = "Fields are the variables integrated over."; color = darkgreen; dir = both;];
-    spark_5_t -> spark_d_t [label = "REC"; comment = "Quantization is the result of the path integral."; color = darkgreen; dir = both;];
-
-    spark_0_t -> spark_3_t [label = "REC"; comment = "Identity possesses inherent freedoms (Gauge)."; color = darkblue; dir = both;];
-    spark_0_t -> spark_6_t [label = "REC"; comment = "Identity faces potential obstructions (Anomaly)."; color = darkblue; dir = both;];
-    spark_0_t -> spark_9_t [label = "REC"; comment = "Identity is characterized by its invariances (Symmetry)."; color = darkblue; dir = both;];
-
-    spark_3_t -> spark_e_t [label = "REC"; comment = "Gauge freedom affects what is observable."; color = darkblue; dir = both;];
-    spark_6_t -> spark_e_t [label = "REC"; comment = "Anomalies constrain possible observables."; color = darkblue; dir = both;];
-    spark_9_t -> spark_e_t [label = "REC"; comment = "Symmetries dictate conserved observables."; color = darkblue; dir = both;];
-
-    spark_3_t -> spark_6_t [label = "REC"; comment = "Gauge freedom is meaningful only if anomalies can exist."; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_6_t -> spark_9_t [label = "REC"; comment = "An anomaly is defined as the breaking of a symmetry."; color = darkblue; dir = both; style = dashed; constraint = false;];
-    spark_9_t -> spark_3_t [label = "REC"; comment = "A symmetry is a property of a gauge structure."; color = darkblue; dir = both; style = dashed; constraint = false;];
-
-    spark_c_t -> spark_f_t [label = "REC"; comment = "The Lagrangian defines the possible measurement outcomes."; color = darkred; dir = both;];
-    spark_d_t -> spark_f_t [label = "REC"; comment = "The Path Integral computes the probability amplitudes for measurement."; color = darkgreen; dir = both;];
-    spark_e_t -> spark_f_t [label = "REC"; comment = "The Observable is the target of the measurement."; color = darkblue; dir = both;];
+    
+    cilang_a_t [label = "Alignment.receive(Unity)";comment = "Potential: The undifferentiated, unified potential of all physical law and geometry.";shape = invtriangle;color = darkred;];
+    cilang_0_t [label = "Alignment.meta(Alignment)";comment = "Abstract: The invariant principle of coherent structure that defines this Factor's existence.";shape = doublecircle;color = darkgray;];
+    cilang_b_t [label = "Alignment.send(Diversity)";comment = "Manifest: The fully expressed, diverse spectrum of physical phenomena and states.";shape = triangle;color = darkred;];
+    cilang_1_t [label = "Alignment.r1(Manifold)";comment = "Initiation: The foundational space or stage upon which dynamics occur.";color = darkgreen;];
+    cilang_2_t [label = "Alignment.r2(Connection)";comment = "Response: The rule defining how to relate points and move within the Manifold.";color = darkgreen;];
+    cilang_4_t [label = "Alignment.r4(Curvature)";comment = "Integration: The intrinsic bending or deviation implied by the Connection.";color = darkgreen;];
+    cilang_8_t [label = "Alignment.r8(Source)";comment = "Reflection: The origin or cause that induces the Curvature.";color = darkgreen;];
+    cilang_7_t [label = "Alignment.r7(Field)";comment = "Consolidation: The medium of influence propagated by the Source.";color = darkgreen;];
+    cilang_5_t [label = "Alignment.r5(Quantization)";comment = "Propagation: The discrete, stable states and excitations of the Field.";color = darkgreen;];
+    cilang_3_t [label = "Alignment.r3(Gauge)";comment = "Thesis: The inherent freedom or redundancy in the description of a system.";color = darkblue;];
+    cilang_6_t [label = "Alignment.r6(Anomaly)";comment = "Antithesis: The obstruction or inconsistency that breaks a symmetry.";color = darkblue;];
+    cilang_9_t [label = "Alignment.r9(Symmetry)";comment = "Synthesis: The consistent, invariant property restored by resolving the Gauge and Anomaly.";color = darkblue;];
+    cilang_c_t [label = "Alignment.dispatch(Lagrangian)";comment = "Why-Who: The fundamental principle or function that defines the system's entire dynamics.";shape = doublecircle;color = darkred;];
+    cilang_d_t [label = "Alignment.commit(PathIntegral)";comment = "What-How: The sum over all possible histories weighted by the Lagrangian.";shape = doublecircle;color = darkgreen;];
+    cilang_e_t [label = "Alignment.serve(Observable)";comment = "When-Where: The specific, measurable quantity extracted from the Path Integral.";shape = doublecircle;color = darkblue;];
+    cilang_f_t [label = "Alignment.exec(Measurement)";comment = "Which-Closure: The act that collapses the possibilities into a single, definite reality.";shape = doublecircle;color = lightgray;];
+    
+    cilang_a_t -> cilang_0_t [label = "IN"; comment = "Primordial potential flows into core identity."; color = darkred; constraint = false;];
+    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "Core identity expresses as manifest diversity."; color = darkred;];
+    cilang_a_t -> cilang_c_t [label = "REC"; comment = "Potential and Principle negotiate the laws."; color = darkred; dir = both;];
+    cilang_b_t -> cilang_c_t [label = "REC"; comment = "Manifestation informs and is defined by the Principle."; color = darkred; dir = both;];
+    cilang_a_t -> cilang_b_t [label = "REC"; comment = "The fundamental tension between One and Many."; color = darkred; dir = both; style = dashed; constraint = false;];
+    
+    cilang_0_t -> cilang_1_t [label = "REC"; comment = "Identity requires a space to exist within."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_2_t [label = "REC"; comment = "Identity requires rules of relation."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_4_t [label = "REC"; comment = "Identity implies a specific shape."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_8_t [label = "REC"; comment = "Identity is sourced from something."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_7_t [label = "REC"; comment = "Identity propagates its influence."; color = darkgreen; dir = both;];
+    cilang_0_t -> cilang_5_t [label = "REC"; comment = "Identity is quantized into definite states."; color = darkgreen; dir = both;];
+    
+    cilang_1_t -> cilang_2_t [label = "REC"; comment = "A space is defined by how one moves within it."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_2_t -> cilang_4_t [label = "REC"; comment = "A connection defines an intrinsic curvature."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_4_t -> cilang_8_t [label = "REC"; comment = "Curvature must have a source."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_8_t -> cilang_7_t [label = "REC"; comment = "A source generates a field of influence."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_7_t -> cilang_5_t [label = "REC"; comment = "A field's dynamics are quantized."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    cilang_5_t -> cilang_1_t [label = "REC"; comment = "Quantization defines the structure of the space itself."; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    
+    cilang_1_t -> cilang_d_t [label = "REC"; comment = "The manifold is the domain of the path integral."; color = darkgreen; dir = both;];
+    cilang_2_t -> cilang_d_t [label = "REC"; comment = "The connection weights the paths."; color = darkgreen; dir = both;];
+    cilang_4_t -> cilang_d_t [label = "REC"; comment = "Curvature alters path probabilities."; color = darkgreen; dir = both;];
+    cilang_8_t -> cilang_d_t [label = "REC"; comment = "Sources are incorporated in the action."; color = darkgreen; dir = both;];
+    cilang_7_t -> cilang_d_t [label = "REC"; comment = "Fields are the variables integrated over."; color = darkgreen; dir = both;];
+    cilang_5_t -> cilang_d_t [label = "REC"; comment = "Quantization is the result of the path integral."; color = darkgreen; dir = both;];
+    
+    cilang_0_t -> cilang_3_t [label = "REC"; comment = "Identity possesses inherent freedoms (Gauge)."; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_6_t [label = "REC"; comment = "Identity faces potential obstructions (Anomaly)."; color = darkblue; dir = both;];
+    cilang_0_t -> cilang_9_t [label = "REC"; comment = "Identity is characterized by its invariances (Symmetry)."; color = darkblue; dir = both;];
+    
+    cilang_3_t -> cilang_e_t [label = "REC"; comment = "Gauge freedom affects what is observable."; color = darkblue; dir = both;];
+    cilang_6_t -> cilang_e_t [label = "REC"; comment = "Anomalies constrain possible observables."; color = darkblue; dir = both;];
+    cilang_9_t -> cilang_e_t [label = "REC"; comment = "Symmetries dictate conserved observables."; color = darkblue; dir = both;];
+    
+    cilang_3_t -> cilang_6_t [label = "REC"; comment = "Gauge freedom is meaningful only if anomalies can exist."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_6_t -> cilang_9_t [label = "REC"; comment = "An anomaly is defined as the breaking of a symmetry."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    cilang_9_t -> cilang_3_t [label = "REC"; comment = "A symmetry is a property of a gauge structure."; color = darkblue; dir = both; style = dashed; constraint = false;];
+    
+    cilang_c_t -> cilang_f_t [label = "REC"; comment = "The Lagrangian defines the possible measurement outcomes."; color = darkred; dir = both;];
+    cilang_d_t -> cilang_f_t [label = "REC"; comment = "The Path Integral computes the probability amplitudes for measurement."; color = darkgreen; dir = both;];
+    cilang_e_t -> cilang_f_t [label = "REC"; comment = "The Observable is the target of the measurement."; color = darkblue; dir = both;];
 }

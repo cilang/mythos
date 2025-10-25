@@ -1,27 +1,27 @@
-strict digraph CilangFrameworkFactor {
+strict digraph Factor {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Cilang Framework";
+    label = "{{Name}}";
     comment = "{{description}}";
     
-    cilang_a_t [label = "CilangFramework.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "CilangFramework.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "CilangFramework.send(Factor)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "CilangFramework.r1(Manifold)";comment = "Initiation: {{description}}";color = darkgreen;];
-    cilang_2_t [label = "CilangFramework.r2(Topology)";comment = "Response: {{description}}";color = darkgreen;];
-    cilang_4_t [label = "CilangFramework.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
-    cilang_8_t [label = "CilangFramework.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
-    cilang_7_t [label = "CilangFramework.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
-    cilang_5_t [label = "CilangFramework.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
-    cilang_3_t [label = "CilangFramework.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    cilang_6_t [label = "CilangFramework.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
-    cilang_9_t [label = "CilangFramework.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
-    cilang_c_t [label = "CilangFramework.dispatch({{title}})";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "CilangFramework.commit({{title}})";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "CilangFramework.serve({{title}})";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "CilangFramework.exec({{title}})";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    cilang_a_t [label = "{{Name}}.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    cilang_0_t [label = "{{Name}}.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    cilang_b_t [label = "{{Name}}.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    cilang_1_t [label = "{{Name}}.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
+    cilang_2_t [label = "{{Name}}.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
+    cilang_4_t [label = "{{Name}}.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    cilang_8_t [label = "{{Name}}.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    cilang_7_t [label = "{{Name}}.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    cilang_5_t [label = "{{Name}}.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    cilang_3_t [label = "{{Name}}.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    cilang_6_t [label = "{{Name}}.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    cilang_9_t [label = "{{Name}}.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    cilang_c_t [label = "{{Name}}.dispatch({{title}})";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
+    cilang_d_t [label = "{{Name}}.commit({{title}})";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
+    cilang_e_t [label = "{{Name}}.serve({{title}})";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
+    cilang_f_t [label = "{{Name}}.exec({{title}})";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
     
     cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
