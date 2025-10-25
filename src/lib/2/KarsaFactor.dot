@@ -3,7 +3,7 @@ strict digraph KarsaFactor {
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
-    label = "Karsa Model (/proc/model/karsa)";
+    label = "Karsa";
     comment = "{{description}}";
     
     cilang_a_t [label = "Karsa.receive(Fixation)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
