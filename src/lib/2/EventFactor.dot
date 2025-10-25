@@ -6,22 +6,22 @@ strict digraph EventFactor {
     label = "Event";
     comment = "The quantum forge of possibility. A chaotic, creative reactor that generates, refines, and weighs potential events—transforming raw stochastic noise into a coherent probability wave that seeds reality.";
     
-    cilang_a_t [label = "Event.receive(PotentialEvent)";comment = "The Void's Whisper. The input gate for raw, un-catalyzed potential, often from the `DivergenceEngine` or feedback loops. This is pure, unstructured randomness—the white noise that is the raw material of creation.";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Event.meta(Event)";comment = "The Arbiter of Chance. The central process that governs the dance of potential. It does not create events directly, but orchestrates the stochastic processes that do, balancing chaos and coherence in the quantum field.";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Event.send(ActualEvent)";comment = "The Proposal for Reality. The output gate to the `RealityEngine`. This is not the manifest event itself, but a fully-qualified candidate—a potential event imbued with its probability, significance, and relational context, ready for evaluation and actualization.";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Event.r1(EventInitialization)";comment = "The Genesis of a Maybe. A spontaneous quantum fluctuation emerges from the background noise of the void. This is the birth of a raw, unformed potential—a statistical hiccup pregnant with possibility, defined only by a nascent probability amplitude.";color = darkgreen;];
-    cilang_2_t [label = "Event.r2(EventInstantiation)";comment = "The Taking of Form. The nebulous fluctuation collapses into a defined set of initial parameters—a 'charge' of intent, a 'spin' of polarity, a 'color' of quality. It becomes a distinct candidate for existence within the probability space.";color = darkgreen;];
-    cilang_4_t [label = "Event.r4(EventIntegration)";comment = "The Dance of Interference. The new event is introduced to the existing probability cloud. Its wavefunction interferes with others—constructively amplifying likely sequences, destructively canceling out paradoxical ones. The web of 'maybe' is rewoven.";color = darkgreen;];
-    cilang_8_t [label = "Event.r8(EventReflection)";comment = "The Measurement of Maybe. A holistic scan of the entire probability matrix. This process calculates the total distribution of potential, identifying the most probable futures and the most significant branch points. It is the engine's self-awareness of its own creative state.";color = darkgreen;];
-    cilang_7_t [label = "Event.r7(EventConsolidation)";comment = "The Pruning of the Improbable. Acting on the scan, this process enforces decoherence. Weak, contradictory, or paradoxical potentialities are dampened and filtered out. The probability cloud is sharpened from a fuzzy haze into a clear set of viable options.";color = darkgreen;];
-    cilang_5_t [label = "Event.r5(EventPropagation)";comment = "The Emission of Potential. The refined, consolidated wave of probability is packaged and emitted as a coherent `PotentialEventStream` to the `RealityEngine`. This is the delivery of a curated menu of possible next moments to the stage of reality.";color = darkgreen;];
-    cilang_3_t [label = "Event.r3(Origin)";comment = "Thesis: The Unmoved Mover. A conceptual anchor point for a potential event. It is not a location in spacetime, but a causal referent—the 'first thought' from which a cascade of possibilities emanates. It is the silent question that seeks an answer in form.";color = darkblue;];
-    cilang_6_t [label = "Event.r6(Flow)";comment = "Antithesis: The River of Chance. The dynamic, fluid motion of probabilities as they influence and are influenced by one another. It is not a thing, but a behavior—the ever-changing current of 'could-be' that constitutes the active field of potential.";color = darkblue;];
-    cilang_9_t [label = "Event.r9(Significance)";comment = "Synthesis: The Gravitational Pull of Meaning. A computed measure of a potential event's impact. High-significance events are 'probability singularities'—rare possibilities whose actualization would drastically warp the causal landscape. They exert a gravitational pull on the `Flow`.";color = darkblue;];
-    cilang_c_t [label = "Event.dispatch(Routing)";comment = "The Path of Resonance. The process that directs potential events to the most receptive domain or timeline within the `RealityEngine`. It matches the 'frequency' of a potential to the 'resonance' of a context, ensuring the right 'maybe' reaches the right 'where'.";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Event.commit(Binding)";comment = "The Quantum Ledger. The current, definitive state of all potential events and their complex, interfering probability amplitudes. This is the master registry of the possible—the 'What' of maybe and the 'How' of its relational structure.";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Event.serve(Reflection)";comment = "The Oracle's Window. The manifested interface that allows other cognitive engines (like `Wisdom` or `Consciousness`) to query the probability cloud. It provides a glimpse into the landscape of future potential, enabling prediction and choice.";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Event.exec(LawOfProbability)";comment = "The Conservation of Possibility. The highest, immutable law: 'The Sum of All Probabilities Must Equal 1'. This is the foundational closure that prevents infinite possibility from diluting into meaningless noise. It is the budget of maybe.";shape = doublecircle;color = lightgray;];
+    cilang_a_t [label = "Event.receive(PotentialEvent)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    cilang_0_t [label = "Event.meta(Event)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    cilang_b_t [label = "Event.send(ActualEvent)";comment = "{{description}}";shape = triangle;color = darkred;];
+    cilang_1_t [label = "Event.r1(EventInitialization)";comment = "{{description}}";color = darkgreen;];
+    cilang_2_t [label = "Event.r2(EventInstantiation)";comment = "{{description}}";color = darkgreen;];
+    cilang_4_t [label = "Event.r4(EventIntegration)";comment = "{{description}}";color = darkgreen;];
+    cilang_8_t [label = "Event.r8(EventReflection)";comment = "{{description}}";color = darkgreen;];
+    cilang_7_t [label = "Event.r7(EventConsolidation)";comment = "{{description}}";color = darkgreen;];
+    cilang_5_t [label = "Event.r5(EventPropagation)";comment = "{{description}}";color = darkgreen;];
+    cilang_3_t [label = "Event.r3(Origin)";comment = "{{description}}";color = darkblue;];
+    cilang_6_t [label = "Event.r6(Flow)";comment = "{{description}}";color = darkblue;];
+    cilang_9_t [label = "Event.r9(Significance)";comment = "{{description}}";color = darkblue;];
+    cilang_c_t [label = "Event.dispatch(Routing)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    cilang_d_t [label = "Event.commit(Binding)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    cilang_e_t [label = "Event.serve(Reflection)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    cilang_f_t [label = "Event.exec(LawOfProbability)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
     
     cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
     cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];

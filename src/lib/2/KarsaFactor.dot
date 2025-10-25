@@ -1,4 +1,4 @@
-strict digraph KarsaModel {
+strict digraph KarsaFactor {
     style = filled;
     color = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];

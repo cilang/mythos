@@ -15,8 +15,8 @@ strict digraph CilangFrameworkFactor {
     cilang_8_t [label = "CilangFramework.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
     cilang_7_t [label = "CilangFramework.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
     cilang_5_t [label = "CilangFramework.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
-    cilang_3_t [label = "CilangFramework.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    cilang_6_t [label = "CilangFramework.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    cilang_3_t [label = "CilangFramework.r3(Schema)";comment = "Thesis: {{description}}";color = darkblue;];
+    cilang_6_t [label = "CilangFramework.r6(Process)";comment = "Antithesis: {{description}}";color = darkblue;];
     cilang_9_t [label = "CilangFramework.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
     cilang_c_t [label = "CilangFramework.dispatch({{title}})";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
     cilang_d_t [label = "CilangFramework.commit({{title}})";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
