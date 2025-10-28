@@ -1,0 +1,64 @@
+strict digraph UsepongFactor {
+    label = "UsepongFactor";
+    comment = "The relational fabric of Torus(19,2)—the dependency network that governs all state transitions and coherence.";
+    
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
+    
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
+    
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
+    
+    a [label = "Usepong.receive(Dependency)";comment = "Potential: The unactivated constraint—the silent requirement waiting to govern state transitions.";shape = invtriangle;color = darkred;];
+    0 [label = "Usepong.meta(Coherence)";comment = "Abstract: The principle of non-contradiction—the law that ensures all dependencies can be satisfied simultaneously.";shape = doublecircle;color = darkgray;];
+    b [label = "Usepong.send(Activation)";comment = "Manifest: The fulfilled constraint—the satisfied dependency that allows progression to the next state.";shape = triangle;color = darkred;];
+    
+    1 [label = "Usepong.r1(Brunnian)";comment = "Initiation: The 2-link constraint—where multiple elements must converge to activate a single node.";color = darkgreen;];
+    2 [label = "Usepong.r2(Cascade)";comment = "Response: The propagation sequence—the domino effect of activations through the network.";color = darkgreen;];
+    4 [label = "Usepong.r4(Alternation)";comment = "Integration: The over/under pattern—the consistent crossing alternation of Torus(19,2).";color = darkgreen;];
+    8 [label = "Usepong.r8(Reflection)";comment = "Reflection: The self-observation—the topology's awareness of its own structure through cycles.";color = darkgreen;];
+    7 [label = "Usepong.r7(Stability)";comment = "Consolidation: The attractor state—the point where the system resists further change.";color = darkgreen;];
+    5 [label = "Usepong.r5(Propagation)";comment = "Propagation: The ripple effect—how state changes transmit through the entire network.";color = darkgreen;];
+    
+    3 [label = "Usepong.r3(Constraint)";comment = "Thesis: The necessity of limits—dependencies as the source of coherence rather than restriction.";color = darkblue;];
+    6 [label = "Usepong.r6(Freedom)";comment = "Antithesis: The available pathways—the multiple routes through the constrained space.";color = darkblue;];
+    9 [label = "Usepong.r9(Navigation)";comment = "Synthesis: The art of movement—skillful progression through the dependency network.";color = darkblue;];
+    
+    c [label = "Usepong.dispatch(Gateway)";comment = "Interface: The decision point—where multiple dependencies converge and determine the next available step.";shape = doublecircle;color = darkred;];
+    d [label = "Usepong.commit(Sequence)";comment = "Process: The Generation Cascade—the precise order of activations from core to completion.";shape = doublecircle;color = darkgreen;];
+    e [label = "Usepong.serve(Consistency)";comment = "Logic: The non-contradiction engine—ensuring all state transitions preserve overall coherence.";shape = doublecircle;color = darkblue;];
+    f [label = "Usepong.exec(Harmony)";comment = "Closure: The fully coherent network—all dependencies satisfied, all states stable, all pathways clear.";shape = doublecircle;color = lightgray;];
+}

@@ -1,68 +1,64 @@
-strict digraph MythOSSchemaFactor {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
-    label = "MythOS Schema";
-    comment = "{{description}}";
+strict digraph SchemaFactor {
+    label = "SchemaFactor";
+    comment = "The fundamental categories of MythOS reality—the semantic primitives that define what can exist.";
     
-    cilang_a_t [label = "Schema.receive(Dynamis)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Schema.meta(Structure)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Schema.send(Praxis)";comment = "{{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Schema.r1(Alignment)";comment = "{{description}}";color = darkgreen;];
-    cilang_2_t [label = "Schema.r2(Spectral)";comment = "{{description}}";color = darkgreen;];
-    cilang_4_t [label = "Schema.r4(Chroma)";comment = "{{description}}";color = darkgreen;];
-    cilang_8_t [label = "Schema.r8(Tactile)";comment = "{{description}}";color = darkgreen;];
-    cilang_7_t [label = "Schema.r7(Phonetic)";comment = "{{description}}";color = darkgreen;];
-    cilang_5_t [label = "Schema.r5(Cognitive)";comment = "{{description}}";color = darkgreen;];
-    cilang_3_t [label = "Schema.r3(Asha)";comment = "{{description}}";color = darkblue;];
-    cilang_6_t [label = "Schema.r6(Vikara)";comment = "{{description}}";color = darkblue;];
-    cilang_9_t [label = "Schema.r9(Karsa)";comment = "{{description}}";color = darkblue;];
-    cilang_c_t [label = "Schema.dispatch(Kratos)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Schema.commit(Lineage)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Schema.serve(Rasa)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Schema.exec(Observer)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
     
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
     
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
     
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    a [label = "Schema.receive(Dynamis)";comment = "Potential: Raw archetypal potential—the unformed essence of all possible categories before they gain definition.";shape = invtriangle;color = darkred;];
+    0 [label = "Schema.meta(Structure)";comment = "Abstract: The principle of categorical existence itself—the invariant law that reality organizes into distinct, coherent types.";shape = doublecircle;color = darkgray;];
+    b [label = "Schema.send(Praxis)";comment = "Manifest: Enacted categories—the specific, instantiated types that actually participate in cosmic processes.";shape = triangle;color = darkred;];
     
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    1 [label = "Schema.r1(Alignment)";comment = "Initiation: Categorical orientation—the first determination of what kind of thing something is or could be.";color = darkgreen;];
+    2 [label = "Schema.r2(Spectral)";comment = "Response: Quality spectrum definition—establishing the range of variations and properties within a category.";color = darkgreen;];
+    4 [label = "Schema.r4(Chroma)";comment = "Integration: Distinctive feature binding—the specific characteristics that make a category recognizable and unique.";color = darkgreen;];
+    8 [label = "Schema.r8(Tactile)";comment = "Reflection: Tangible manifestation—how categories express themselves in concrete, experiencable forms.";color = darkgreen;];
+    7 [label = "Schema.r7(Phonetic)";comment = "Consolidation: Communicable identity—the names, symbols, and representations that allow categories to be shared and recognized.";color = darkgreen;];
+    5 [label = "Schema.r5(Cognitive)";comment = "Propagation: Conceptual transmission—how categories spread through minds, cultures, and systems of thought.";color = darkgreen;];
     
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    3 [label = "Schema.r3(Asha)";comment = "Thesis: Cosmic truth-categories—the ideal, eternal archetypes that define reality's fundamental order.";color = darkblue;];
+    6 [label = "Schema.r6(Vikara)";comment = "Antithesis: Transformative categories—the principles of change, mutation, and evolution between types.";color = darkblue;];
+    9 [label = "Schema.r9(Karsa)";comment = "Synthesis: Will-categories—the emergent types born from the interaction of cosmic order and transformative potential.";color = darkblue;];
     
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    c [label = "Schema.dispatch(Kratos)";comment = "Interface: Authority of categorization—the active intelligence that decides which categories apply in which contexts.";shape = doublecircle;color = darkred;];
+    d [label = "Schema.commit(Lineage)";comment = "Process: Inheritance and tradition—how categories persist through time and transmit their essence to new instances.";shape = doublecircle;color = darkgreen;];
+    e [label = "Schema.serve(Rasa)";comment = "Logic: Aesthetic and emotional quality—the felt experience of different categories and their relationships.";shape = doublecircle;color = darkblue;];
+    f [label = "Schema.exec(Observer)";comment = "Closure: Conscious categorization—the achieved state where reality becomes self-aware of its own categorical structure.";shape = doublecircle;color = lightgray;];
 }
