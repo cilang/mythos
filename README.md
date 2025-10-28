@@ -19,112 +19,182 @@
 
 ## 🎯 What is MythOS?
 
-**MythOS** is a **Fictional Cosmology** that use **Cilang Topology** and **Cilang Space** as its **First Principle**.
+**MythOS** is a **Fictional Cosmology** that use **ACU Framework** as its **First Principle**.
 
-### Cilang Space
+### ACU Framework
 
-**Mathematical Definition:**
+The ACU Framework is a universal system for structured description and modeling. It posits that any coherent domain of knowledge or reality can be systematically described using a specific, constrained architecture.
 
-S = {(x,y,z,w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}
+1. Core Components (The ACU Trinity)
+The framework is built from three foundational elements:
+   - Ariadi (A): The Container
+     - Defined as a 4-dimensional hypersphere: S = {(x, y, z, w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}.
+     - Serves as the ultimate constraint, ensuring all models are bounded, finite, and mathematically "sane" (no infinities, no unbounded growth).
+   - Cilang (C): The Fundamental Entities
+     - A set of 16 primordial elements: {0, 1, 2, 4, 8, 7, 5, 3, 6, 9, a, b, c, d, e, f}.
+     - Each vertex is a conceptual primitive (e.g., a=Input/Potential, 0=Abstract/Identity, 1=Initiation/Action).
+     - Their labels and comments can be adapted to model any specific domain.
+   - Usepong (U): The Relational Fabric
+     - A directed graph defining the allowed dependencies and data flows between the Cilang vertices.
+     - Governs how state changes propagate through the system, ensuring coherence.
+2. The Actualization Mechanism
+Layers (L): The w-dimension of the Ariadi Space is interpreted as three primary layers of actualization:
+   - w = -1: The Imaginary (Potential, unmanifested states).
+   - w = 0: The Idea (Conceptual, processing, abstract forms).
+    -w = +1: The Real (Manifested, actualized, concrete reality).
 
-w ∈ [w₀, w₁, w₂, ..., w₁₅]
+3. The Quantization & State System
+   - Quantization (Q): A discrete distribution for managing state complexity.
+     - Q = 19ⁿ (using a prime base for even distribution).
+     - r = (Q - 1)/3
+     - Distribution: [r, r+1, r] - creating a natural majority/minority structure in state populations.
+   - Ternary States: Every Cilang vertex exists in one of three states:
+     - -1: Potential / Inactive / Ground State
+     - 0: Processing / Active / Standby State
+     - +1: Actualized / Stable / Final State
+     - These states represent a progression from potential to manifestation.
 
-**Probability Quantization:**
-
-- Requirement: `3n+1` or `19ⁿ`
-- Distribution: [f(n), f(n)+1, f(n)] where f(n) = (19ⁿ - 1)/3
-- Default: `n = 120` = 361 steps total with Distribution: [-1,0,+1] = [120, 121, 120] steps
-
-### Cilang Topology
-
-**Invariant Structure:**
-
-- 16 Cilang vertices: `{0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f}`
-- 35 Usepong edges with 3 morphism types: `{IN, OUT, REC}`
-- Fixed relational patterns
-
-**Template:**
+#### Ariadi Topology
 
 ```dot
-strict digraph Cilang {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
-    label = "{{Name}}";
-    comment = "{{descriptions}}";
+digraph G {
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
 
-    cilang_0_t [label = "{{Name}}.meta({{meta}})";comment = "Abstract: {{descriptions}}";shape = doublecircle;color = darkgray;];
-    cilang_1_t [label = "{{Name}}.r1({{title}})";comment = "Initiation: {{descriptions}}";color = darkgreen;];
-    cilang_2_t [label = "{{Name}}.r2({{title}})";comment = "Response: {{descriptions}}";color = darkgreen;];
-    cilang_4_t [label = "{{Name}}.r4({{title}})";comment = "Integration: {{descriptions}}";color = darkgreen;];
-    cilang_8_t [label = "{{Name}}.r8({{title}})";comment = "Reflection: {{descriptions}}";color = darkgreen;];
-    cilang_7_t [label = "{{Name}}.r7({{title}})";comment = "Consolidation: {{descriptions}}";color = darkgreen;];
-    cilang_5_t [label = "{{Name}}.r5({{title}})";comment = "Propagation: {{descriptions}}";color = darkgreen;];
-    cilang_3_t [label = "{{Name}}.r3({{title}})";comment = "Thesis: {{descriptions}}";color = darkblue;];
-    cilang_6_t [label = "{{Name}}.r6({{title}})";comment = "Antithesis: {{descriptions}}";color = darkblue;];
-    cilang_9_t [label = "{{Name}}.r9({{title}})";comment = "Synthesis: {{descriptions}}";color = darkblue;];
-    cilang_a_t [label = "{{Name}}.receive({{title}})";comment = "Potential: {{descriptions}}";shape = invtriangle;color = darkred;];
-    cilang_b_t [label = "{{Name}}.send({{title}})";comment = "Manifest: {{descriptions}}";shape = triangle;color = darkred;];
-    cilang_c_t [label = "{{Name}}.dispatch({{title}})";comment = "Why-Who: {{descriptions}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "{{Name}}.commit({{title}})";comment = "What-How: {{descriptions}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "{{Name}}.serve({{title}})";comment = "When-Where: {{descriptions}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "{{Name}}.exec({{title}})";comment = "Which-Closure: {{descriptions}}";shape = doublecircle;color = lightgray;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
 
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{descriptions}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{descriptions}}"; color = darkred;];
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
-
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both; style = dashed; constraint = false;];
-
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{descriptions}}"; color = darkblue; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
 }
 ```
 
-![Image](src/specs/sparklet/sparklet.svg)
+#### Ariadi Factor
+
+##### Generative Sequence
+
+###### Core Engine Definition
+
+```txt
+SystemState = f(a_state, 1_state, 3_state)
+Where:
+- a_state ∈ {-1, 0, +1}  (Input/Potential mode)
+- 1_state ∈ {-1, 0, +1}  (Initiation mode)
+- 3_state ∈ {-1, 0, +1}  (Thesis/Form mode)
+```
+
+###### Generation Cascade
+
+The system generates through a precise cascade originating from a minimal core:
+
+1. {a, 1, 3} → Determines system mode (27 possible configurations)
+2. {a} → activates {0, b} (via a→0→b cycle)
+3. {1} → activates {2,4,8,7,5} → {d} (process hexagon)
+4. {3} → activates {6,9} → {e} (dialectical triad)
+5. {a,b} → {c} (2-Link Brunnian)
+6. {c,d,e} → {f} (3-Link Borromean)
+7. {1-9,a,b} → {0} completed (11-Link Brunnian closure)
+
+#### Factor Template
+
+```dot
+strict digraph {{Name}}Factor {
+    label = "{{Name}}";
+    comment = "{{description}}";
+
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
+
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
+
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
+
+    a [label = "{{Name}}.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "{{Name}}.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "{{Name}}.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    1 [label = "{{Name}}.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
+    2 [label = "{{Name}}.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
+    4 [label = "{{Name}}.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    8 [label = "{{Name}}.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    7 [label = "{{Name}}.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    5 [label = "{{Name}}.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    3 [label = "{{Name}}.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    6 [label = "{{Name}}.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    9 [label = "{{Name}}.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    c [label = "{{Name}}.dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "{{Name}}.commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "{{Name}}.serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "{{Name}}.exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
+}
+```
+
+![Image](src/specs/cilang.svg)
 
 ---
-
-### The Brunnian Link and Borromean Rings
-
-The **Brunnian Link** and **Borromean Rings** is used in dependency management of a Factor.
-
-- cilang_d_t (commit) is dependent on the results of cilang_[1,2,4,8,7,5]_t (6-Link Brunnian Dependency)
-- cilang_e_t (serve) is dependent on the results of cilang_[3,6,9]_t (Borromean Dependency)
-- cilang_0_t (meta) is dependent on the results of cilang_[1-9,a,b]_t (11-Link Brunnian Dependency)
-- cilang_c_t (dispatch) is dependent on the results of cilang_[a,b]_t (2-Link Brunnian Dependency or Vesica Pisces Dependency)
-- cilang_f_t (exec) is dependent on the results of cilang_[c,d,e]_t (Borromean Dependency).
 
 I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI.
 
