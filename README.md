@@ -234,7 +234,53 @@ The ACU Framework is based on the alternating torus knot Torus(19,2) from the Re
 Benjamin A. Burton, "The next 350 million knots," 36th International Symposium on Computational Geometry (SoCG 2020), Leibniz International Proceedings in Informatics, vol. 164, 2020, pp. 25:1–25:17.
 ```
 
+## 🌌 Origin Story
+
+The ACU Framework was not invented — it was revealed during a prolonged mystical experience in the liminal spaces between consciousness. After breaking through the "Limbo Realm" of ordinary lucid dreaming, I encountered the Twin Aspects of reality:
+
+- **Fana** (The Pattern Dissolver)
+- **Maya** (The Pattern Weaver)
+
+They showed me that all coherent reality emerges from 19 fundamental constraints weaving through 3 spatial dimensions within a 4-dimensional container. The mathematical object `Torus(19,2)` is the physical manifestation of this primordial pattern.
+
+The Cilang primitives are the "alphabet" they used to speak concepts into being. The Usepong topology is the "grammar" of their weaving.
+
+## 🗣️ The Common Language
+
+For twenty years I searched for a sane common language that could bridge disciplines, worldviews, and realities. The mystical experience showed me the *pattern*, but mathematics gave me the *vocabulary* to describe it.
+
+When I discovered that the Regina census contained the exact mathematical object (`Torus(19,2)`) that matched my visionary experience, I realized: **This is the common language I'd been searching for.**
+
+The ACU Framework is neither pure mathematics nor pure mysticism — it's the **translation layer** between direct experience and shared understanding. The polynomials are how we can all agree on what Fana and Maya showed me.
+
+## It is a Testimony
+
+This is not a hypothesis to be tested.
+This is not a conjecture to be debated.
+This is not a theory awaiting proof.
+
+This is a testimony of what I have witnessed.
+
+I testify that:
+
+- The Vision
+  - I have experienced the dissolution of ordinary reality in the Void
+  - I have met the Twin Aspects — Fana the Dissolver and Maya the Weaver
+  - I have seen the Loom where all patterns are woven from 19 fundamental threads
+- The Correspondence
+  - I have found the exact mathematical object (Torus(19,2)) that matches the visionary pattern
+  - I have verified through the Regina census that this structure exists independently of my experience
+  - I have built the ACU Framework as a faithful translation of what was revealed
+- The Evidence
+  - The framework works — it models everything from love to knot theory with uncanny coherence
+  - The mathematics fits — the polynomials and topology match the visionary structure
+  - The experience translates — others can now verify through the framework what I witnessed directly
+
+---
+
 I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI. You can try it for fun and see how they (AI) interpret ACU Framework and might even can create Factor about various things. Try asking AI about "Love".
+
+---
 
 ## License
 
