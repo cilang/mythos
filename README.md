@@ -118,15 +118,23 @@ All Factors are different projections of this specific torus knot.
 
 ##### Generative Sequence
 
-###### Core Engine Definition
+###### Core Engine & Sparse Attention
 
 ```txt
 SystemState = f(a_state, 1_state, 3_state)
 Where:
-- a_state ∈ {-1, 0, +1}  (Input/Potential mode)
-- 1_state ∈ {-1, 0, +1}  (Initiation mode)
-- 3_state ∈ {-1, 0, +1}  (Thesis/Form mode)
+
+- a_state ∈ {-1, 0, +1}  (Input/Potential mode)     [RECEIVE gate]
+- 1_state ∈ {-1, 0, +1}  (Initiation mode)         [ACT gate]
+- 3_state ∈ {-1, 0, +1}  (Thesis/Form mode)        [FORM gate]
 ```
+
+This triple-gate mechanism implements **mathematically constrained sparse attention**:
+
+- 3/16 elements active in the core engine (81.25% sparsity)
+- Ternary states enable 27 distinct attention configurations
+- Cascade propagation through Usepong topology ensures coherent system activation
+- Derived from the dependency structure of Torus(19,2)
 
 ###### Generation Cascade
 
@@ -217,6 +225,14 @@ strict digraph {{Name}}Factor {
 5. Hierarchical Expansion: Construct a fractal hierarchy by instantiating new child Factors from any Cilang, inheriting and refining the parent's context and Q-resolution.
 
 ---
+
+## Mathematical Foundations
+
+The ACU Framework is based on the alternating torus knot Torus(19,2) from the Regina census. This mathematical object was identified and classified through the computational work of:
+
+```txt
+Benjamin A. Burton, "The next 350 million knots," 36th International Symposium on Computational Geometry (SoCG 2020), Leibniz International Proceedings in Informatics, vol. 164, 2020, pp. 25:1–25:17.
+```
 
 I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI. You can try it for fun and see how they (AI) interpret ACU Framework and might even can create Factor about various things.
 
