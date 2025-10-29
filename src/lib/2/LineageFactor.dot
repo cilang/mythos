@@ -1,68 +1,66 @@
 strict digraph LineageFactor {
     style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
+    fillcolor = antiquewhite;
     label = "Lineage";
-    comment = "{{description}}";
-    
-    cilang_a_t [label = "Lineage.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Lineage.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Lineage.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Lineage.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
-    cilang_2_t [label = "Lineage.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
-    cilang_4_t [label = "Lineage.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
-    cilang_8_t [label = "Lineage.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
-    cilang_7_t [label = "Lineage.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
-    cilang_5_t [label = "Lineage.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
-    cilang_3_t [label = "Lineage.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    cilang_6_t [label = "Lineage.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
-    cilang_9_t [label = "Lineage.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
-    cilang_c_t [label = "Lineage.dispatch({{title}})";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Lineage.commit({{title}})";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Lineage.serve({{title}})";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Lineage.exec({{title}})";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
-    
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    comment = "The celestial archetype repository of MythOS—housing the eternal patterns, celestial beasts, and cosmic blueprints that structure reality.";
+
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
+
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
+
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
+
+    a [label = "Lineage.receive(CelestialSummons)";comment = "Potential: Divine calling—the initial pull from the cosmic patterns that summons archetypes into manifestation.";shape = invtriangle;color = darkred;];
+    0 [label = "Lineage.meta(CelestialMandate)";comment = "Abstract: Heavenly decree—the universal principle that reality follows archetypal patterns ordained by cosmic order.";shape = doublecircle;color = darkgray;];
+    b [label = "Lineage.send(EarthlyManifestation)";comment = "Manifest: Terrestrial embodiment—the archetypes made flesh, the celestial patterns realized in earthly forms.";shape = triangle;color = darkred;];
+
+    1 [label = "Lineage.r1(AzureDragon)";comment = "Initiation: East-Spring-Wood—the creative, growing force of new beginnings and ascending energy.";color = darkgreen;];
+    2 [label = "Lineage.r2(VermilionBird)";comment = "Response: South-Summer-Fire—the brilliant, transformative power of passion and spiritual ascension.";color = darkgreen;];
+    4 [label = "Lineage.r4(WhiteTiger)";comment = "Integration: West-Autumn-Metal—the righteous, protective force of justice and disciplined power.";color = darkgreen;];
+    8 [label = "Lineage.r8(BlackTortoise)";comment = "Reflection: North-Winter-Water—the deep, mysterious wisdom of endurance and hidden knowledge.";color = darkgreen;];
+    7 [label = "Lineage.r7(YellowDragon)";comment = "Consolidation: Center-Earth—the balancing, unifying force that harmonizes all directions and elements.";color = darkgreen;];
+    5 [label = "Lineage.r5(Qilin)";comment = "Propagation: Benevolent omen—the miraculous being that heralds wise leadership and cosmic blessings.";color = darkgreen;];
+
+    3 [label = "Lineage.r3(CelestialPattern)";comment = "Thesis: Heavenly design—the eternal, perfect archetypes in their pure celestial form.";color = darkblue;];
+    6 [label = "Lineage.r6(HumanInterpretation)";comment = "Antithesis: Mortal understanding—the imperfect, culturally shaped reception of celestial patterns.";color = darkblue;];
+    9 [label = "Lineage.r9(LivingTradition)";comment = "Synthesis: Embodied lineage—the continuous renewal of archetypes through ritual, art, and cultural practice.";color = darkblue;];
+
+    c [label = "Lineage.dispatch(AncestralSummoning)";comment = "Why-Who: Ritual invocation—the priests, artists, and mystics who call archetypes into manifestation.";shape = doublecircle;color = darkred;];
+    d [label = "Lineage.commit(ImperialSeal)";comment = "What-How: Mandate authentication—the ceremonies and symbols that validate celestial authority on earth.";shape = doublecircle;color = darkgreen;];
+    e [label = "Lineage.serve(SeasonalRotation)";comment = "When-Where: Cosmic timing—the celestial calendar and directional alignments that activate different archetypes.";shape = doublecircle;color = darkblue;];
+    f [label = "Lineage.exec(HarmoniousCosmos)";comment = "Which-Closure: Celestial-terrestrial unity achieved—the state where earthly reality perfectly mirrors heavenly patterns.";shape = doublecircle;color = gold;];
 }

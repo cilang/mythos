@@ -48,7 +48,7 @@ strict digraph SchemaFactor {
     
     1 [label = "Schema.r1(Alignment)";comment = "Initiation: Categorical orientation—the first determination of what kind of thing something is or could be.";color = darkgreen;];
     2 [label = "Schema.r2(Spectral)";comment = "Response: Quality spectrum definition—establishing the range of variations and properties within a category.";color = darkgreen;];
-    4 [label = "Schema.r4(Chroma)";comment = "Integration: Distinctive feature binding—the specific characteristics that make a category recognizable and unique.";color = darkgreen;];
+    4 [label = "Schema.r4(Chromatic)";comment = "Integration: Distinctive feature binding—the specific characteristics that make a category recognizable and unique.";color = darkgreen;];
     8 [label = "Schema.r8(Tactile)";comment = "Reflection: Tangible manifestation—how categories express themselves in concrete, experiencable forms.";color = darkgreen;];
     7 [label = "Schema.r7(Phonetic)";comment = "Consolidation: Communicable identity—the names, symbols, and representations that allow categories to be shared and recognized.";color = darkgreen;];
     5 [label = "Schema.r5(Cognitive)";comment = "Propagation: Conceptual transmission—how categories spread through minds, cultures, and systems of thought.";color = darkgreen;];

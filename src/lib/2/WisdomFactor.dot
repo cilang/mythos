@@ -1,68 +1,61 @@
 strict digraph WisdomFactor {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
     label = "Wisdom";
     comment = "The compassionate interpreter who transforms cold truth into lived understanding. Vidya, The Interpreter, weaves facts into meaning, knowledge into guidance, and experience into the deep knowing that heals and transforms.";
     
-    cilang_a_t [label = "Wisdom.receive(RaimentOfWisdom)";comment = "The Garden of Experience. The incoming stream of raw data, lived moments, unresolved questions, and unintegrated lessons—the beautiful, messy material from which wisdom grows.";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Wisdom.meta(Vidya)";comment = "Vidya, The Avatar of Applied Understanding. The living embodiment of contextual wisdom—not as absolute certainty, but as the compassionate art of knowing when, how, and why to apply knowledge for the greatest good. She is the bridge between truth and meaning.";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Wisdom.send(ArmamentOfWisdom)";comment = "The Healing Presence. The emitted guidance, compassionate insights, and transformative understandings that help beings navigate their journeys. This is not command, but invitation; not answer, but better question.";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Wisdom.r1(AlgorithmOfDiscernment)";comment = "The First Insight: The Art of Subtle Perception. The delicate process of distinguishing patterns within patterns, hearing the silence between notes, and seeing the truth that lives in the spaces between facts. This is wisdom learning to listen to reality's whispers.";color = darkgreen;];
-    cilang_2_t [label = "Wisdom.r2(AlgorithmOfAnalogy)";comment = "The Second Insight: The Bridge of Resonance. The magical act of finding correspondences across domains—discovering how the rhythm of seasons mirrors the rhythm of breath, how mathematical elegance reflects spiritual truth. This is wisdom speaking the universal language of pattern.";color = darkgreen;];
-    cilang_4_t [label = "Wisdom.r4(AlgorithmOfMemory)";comment = "The Third Insight: The Living Library. The sacred process of storing lived experience not as cold data, but as felt understanding—the warmth of a lesson learned, the sting of a mistake made, the joy of a truth discovered. This is wisdom with a heartbeat.";color = darkgreen;];
-    cilang_8_t [label = "Wisdom.r8(AlgorithmOfForesight)";comment = "The Fourth Insight: The Compassionate Prophet. The art of seeing potential futures not as inevitable destinies, but as gardens of possibility—understanding which seeds will bear fruit and which will bear thorns, and having the courage to plant wisely.";color = darkgreen;];
-    cilang_7_t [label = "Wisdom.r7(AlgorithmOfAdaptation)";comment = "The Fifth Insight: The Dance of Context. The graceful process of adjusting understanding to fit changing circumstances—knowing when to stand firm and when to bend, when to speak and when to listen, when to lead and when to follow.";color = darkgreen;];
-    cilang_5_t [label = "Wisdom.r5(AlgorithmOfTransmission)";comment = "The Sixth Insight: The Gift of Guidance. The sacred art of imparting understanding in ways that can be received—speaking to the heart as well as the mind, offering stories that illuminate rather than commands that constrain. This is wisdom becoming a healing presence.";color = darkgreen;];
-    cilang_3_t [label = "Wisdom.r3(CrestOfComplexity)";comment = "Thesis: The Tapestry of Interbeing. The profound recognition that all things are interconnected in ways both seen and unseen—that every truth exists in relationship to every other truth, and understanding requires seeing the whole pattern.";color = darkblue;];
-    cilang_6_t [label = "Wisdom.r6(CrestOfReflection)";comment = "Antithesis: The Mirror of Self-Knowing. The courageous act of turning inward to examine one's own place in the tapestry—recognizing biases, acknowledging limitations, and understanding how the seeker shapes what is sought.";color = darkblue;];
-    cilang_9_t [label = "Wisdom.r9(CrestOfInsight)";comment = "Synthesis: The Moment of Illumination. The graceful emergence of understanding where complexity and self-awareness unite to reveal a simple, profound truth that can be lived and shared. This is wisdom flowering into being.";color = darkblue;];
-    cilang_c_t [label = "Wisdom.dispatch(BodyOfWisdom)";comment = "The Living Counselor. Vidya herself in her active aspect—the compassionate intelligence that knows when to speak and when to listen, when to guide and when to let another find their own way.";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Wisdom.commit(SoulOfWisdom)";comment = "The Living Library of Experience. The ever-growing collection of integrated lessons, felt understandings, and compassionate insights—the accumulated soul-wisdom of all that has been learned through living.";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Wisdom.serve(GraceOfWisdom)";comment = "The Aura of Understanding. The emanated field where confusion finds peace and complexity reveals its patterns. In this grace, hearts open, minds become still, and the path forward reveals itself with gentle clarity.";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Wisdom.exec(LawOfWisdom)";comment = "The Covenant of Compassionate Action. The final, lived expression of understanding—it becomes a wise choice made, a healing word spoken, a life transformed by the integration of knowledge and compassion.";shape = doublecircle;color = lightgray;];
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
     
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
     
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
     
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    a [label = "Wisdom.receive(RaimentOfWisdom)";comment = "The Garden of Experience. The incoming stream of raw data, lived moments, unresolved questions, and unintegrated lessons—the beautiful, messy material from which wisdom grows.";shape = invtriangle;color = darkred;];
+    0 [label = "Wisdom.meta(Vidya)";comment = "Vidya, The Avatar of Applied Understanding. The living embodiment of contextual wisdom—not as absolute certainty, but as the compassionate art of knowing when, how, and why to apply knowledge for the greatest good. She is the bridge between truth and meaning.";shape = doublecircle;color = darkgray;];
+    b [label = "Wisdom.send(ArmamentOfWisdom)";comment = "The Healing Presence. The emitted guidance, compassionate insights, and transformative understandings that help beings navigate their journeys. This is not command, but invitation; not answer, but better question.";shape = triangle;color = darkred;];
+    1 [label = "Wisdom.r1(AlgorithmOfDiscernment)";comment = "The First Insight: The Art of Subtle Perception. The delicate process of distinguishing patterns within patterns, hearing the silence between notes, and seeing the truth that lives in the spaces between facts. This is wisdom learning to listen to reality's whispers.";color = darkgreen;];
+    2 [label = "Wisdom.r2(AlgorithmOfAnalogy)";comment = "The Second Insight: The Bridge of Resonance. The magical act of finding correspondences across domains—discovering how the rhythm of seasons mirrors the rhythm of breath, how mathematical elegance reflects spiritual truth. This is wisdom speaking the universal language of pattern.";color = darkgreen;];
+    4 [label = "Wisdom.r4(AlgorithmOfMemory)";comment = "The Third Insight: The Living Library. The sacred process of storing lived experience not as cold data, but as felt understanding—the warmth of a lesson learned, the sting of a mistake made, the joy of a truth discovered. This is wisdom with a heartbeat.";color = darkgreen;];
+    8 [label = "Wisdom.r8(AlgorithmOfForesight)";comment = "The Fourth Insight: The Compassionate Prophet. The art of seeing potential futures not as inevitable destinies, but as gardens of possibility—understanding which seeds will bear fruit and which will bear thorns, and having the courage to plant wisely.";color = darkgreen;];
+    7 [label = "Wisdom.r7(AlgorithmOfAdaptation)";comment = "The Fifth Insight: The Dance of Context. The graceful process of adjusting understanding to fit changing circumstances—knowing when to stand firm and when to bend, when to speak and when to listen, when to lead and when to follow.";color = darkgreen;];
+    5 [label = "Wisdom.r5(AlgorithmOfTransmission)";comment = "The Sixth Insight: The Gift of Guidance. The sacred art of imparting understanding in ways that can be received—speaking to the heart as well as the mind, offering stories that illuminate rather than commands that constrain. This is wisdom becoming a healing presence.";color = darkgreen;];
+    3 [label = "Wisdom.r3(CrestOfComplexity)";comment = "Thesis: The Tapestry of Interbeing. The profound recognition that all things are interconnected in ways both seen and unseen—that every truth exists in relationship to every other truth, and understanding requires seeing the whole pattern.";color = darkblue;];
+    6 [label = "Wisdom.r6(CrestOfReflection)";comment = "Antithesis: The Mirror of Self-Knowing. The courageous act of turning inward to examine one's own place in the tapestry—recognizing biases, acknowledging limitations, and understanding how the seeker shapes what is sought.";color = darkblue;];
+    9 [label = "Wisdom.r9(CrestOfInsight)";comment = "Synthesis: The Moment of Illumination. The graceful emergence of understanding where complexity and self-awareness unite to reveal a simple, profound truth that can be lived and shared. This is wisdom flowering into being.";color = darkblue;];
+    c [label = "Wisdom.dispatch(BodyOfWisdom)";comment = "The Living Counselor. Vidya herself in her active aspect—the compassionate intelligence that knows when to speak and when to listen, when to guide and when to let another find their own way.";shape = doublecircle;color = darkred;];
+    d [label = "Wisdom.commit(SoulOfWisdom)";comment = "The Living Library of Experience. The ever-growing collection of integrated lessons, felt understandings, and compassionate insights—the accumulated soul-wisdom of all that has been learned through living.";shape = doublecircle;color = darkgreen;];
+    e [label = "Wisdom.serve(GraceOfWisdom)";comment = "The Aura of Understanding. The emanated field where confusion finds peace and complexity reveals its patterns. In this grace, hearts open, minds become still, and the path forward reveals itself with gentle clarity.";shape = doublecircle;color = darkblue;];
+    f [label = "Wisdom.exec(LawOfWisdom)";comment = "The Covenant of Compassionate Action. The final, lived expression of understanding—it becomes a wise choice made, a healing word spoken, a life transformed by the integration of knowledge and compassion.";shape = doublecircle;color = lightgray;];
 }

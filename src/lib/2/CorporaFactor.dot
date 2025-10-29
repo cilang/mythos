@@ -1,68 +1,68 @@
 strict digraph CorporaFactor {
     style = filled;
-    color = lightgray;
+    fillcolor = lightgray;
     node [shape = circle; style = filled; color = lightgreen;];
     edge [color = darkgray;];
     label = "Corpora";
-    comment = "{{description}}";
+    comment = "The cosmic principle of embodiment and multi-layered existence in MythOS—governing all physical forms, subtle bodies, and the vehicles of consciousness.";
     
-    cilang_a_t [label = "Corpora.receive(Force)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Corpora.meta(Corpora)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Corpora.send(Field)";comment = "{{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Corpora.r1(Heart)";comment = "{{description}}";color = darkgreen;];
-    cilang_2_t [label = "Corpora.r2(Shell)";comment = "{{description}}";color = darkgreen;];
-    cilang_4_t [label = "Corpora.r4(AstralBody)";comment = "{{description}}";color = darkgreen;];
-    cilang_8_t [label = "Corpora.r8(SpiritualBody)";comment = "{{description}}";color = darkgreen;];
-    cilang_7_t [label = "Corpora.r7(MaterialBody)";comment = "{{description}}";color = darkgreen;];
-    cilang_5_t [label = "Corpora.r5(Ego)";comment = "{{description}}";color = darkgreen;];
-    cilang_3_t [label = "Corpora.r3(Instinct)";comment = "Thesis: {{description}}";color = darkblue;];
-    cilang_6_t [label = "Corpora.r6(Intent)";comment = "Antithesis: {{description}}";color = darkblue;];
-    cilang_9_t [label = "Corpora.r9(Intuition)";comment = "Synthesis: {{description}}";color = darkblue;];
-    cilang_c_t [label = "Corpora.dispatch(Mind)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Corpora.commit(CelestialBody)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Corpora.serve(Corpus)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Corpora.exec(LawOfCorpora)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
     
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
     
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
     
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    a [label = "Corpora.receive(Force)";comment = "Potential: Primordial impulse—the raw energetic pressure that drives matter to organize into coherent forms and living bodies.";shape = invtriangle;color = darkred;];
+    0 [label = "Corpora.meta(Corpora)";comment = "Abstract: Embodiment itself—the universal principle that consciousness requires vehicles and reality manifests through layered corporeal existence.";shape = doublecircle;color = darkgray;];
+    b [label = "Corpora.send(Field)";comment = "Manifest: Environmental influence—the extended presence and effect that embodied beings exert upon their surroundings and reality.";shape = triangle;color = darkred;];
     
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    1 [label = "Corpora.r1(Heart)";comment = "Initiation: Emotional center—the core of feeling, compassion, and relational intelligence that animates embodied existence.";color = darkgreen;];
+    2 [label = "Corpora.r2(Shell)";comment = "Response: Protective boundary—the physical form, skin, and defensive structures that define and protect individual existence.";color = darkgreen;];
+    4 [label = "Corpora.r4(AstralBody)";comment = "Integration: Dream vehicle—the subtle body that travels in dreams, visions, and the realms of imagination and emotion.";color = darkgreen;];
+    8 [label = "Corpora.r8(SpiritualBody)";comment = "Reflection: Higher self—the eternal vehicle of consciousness that transcends death and carries wisdom across lifetimes.";color = darkgreen;];
+    7 [label = "Corpora.r7(MaterialBody)";comment = "Consolidation: Physical vehicle—the dense, tangible form that interacts with the material world and experiences through senses.";color = darkgreen;];
+    5 [label = "Corpora.r5(Ego)";comment = "Propagation: Individual identity—the persistent sense of self that maintains continuity across experiences and transformations.";color = darkgreen;];
     
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    3 [label = "Corpora.r3(Instinct)";comment = "Thesis: Primal wisdom—the automatic, inherited knowledge of the body that ensures survival and basic functioning.";color = darkblue;];
+    6 [label = "Corpora.r6(Intent)";comment = "Antithesis: Conscious direction—the deliberate, willed purposes that guide and transform embodied existence.";color = darkblue;];
+    9 [label = "Corpora.r9(Intuition)";comment = "Synthesis: Integrated knowing—the seamless blending of instinct and intent into holistic, embodied wisdom.";color = darkblue;];
     
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    c [label = "Corpora.dispatch(Corpus)";comment = "Why-Who: Unified embodiment—the complete integration of all bodies into a coherent, functional vehicle for consciousness.";shape = doublecircle;color = darkred;];
+    d [label = "Corpora.commit(CelestialBody)";comment = "What-How: Divine vehicle—the practices and disciplines that refine and elevate the corporeal form toward its highest potential.";shape = doublecircle;color = darkgreen;];
+    e [label = "Corpora.serve(Mind)";comment = "When-Where: Conscious interface—the bridge between consciousness and embodiment that enables experience and action.";shape = doublecircle;color = darkblue;];
+    f [label = "Corpora.exec(LawOfCorpora)";comment = "Which-Closure: Embodiment achieved—the universal principle that all consciousness requires form, and all form serves consciousness.";shape = doublecircle;color = lightgray;];
 }

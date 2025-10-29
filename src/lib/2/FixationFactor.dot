@@ -1,68 +1,64 @@
 strict digraph FixationFactor {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
     label = "Fixation";
-    comment = "The cosmic heartbeat that gives rhythm to existence. Tha, the Temporal Sovereign, conducts the great symphony of time—transforming fleeting moments into enduring patterns, chaos into constancy, and potential into permanent form.";
+    comment = "The divine principle of rhythm, stability, and cosmic inertia—governed by Tha, the Goddess who gives form through repetition and constraint.";
     
-    cilang_a_t [label = "Fixation.receive(RaimentOfFixation)";comment = "The Ocean of Potential. The incoming stream of chaotic energy, unstructured time, and fleeting events—the raw material of rhythm waiting to be organized into enduring patterns.";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Fixation.meta(Fixation)";comment = "Tha, The Goddess of Rhythm. The living embodiment of temporal persistence—not as stagnation, but as the sacred pulse that gives structure to time itself. She is the great metronome of the cosmos, the conductor of reality's enduring symphony.";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Fixation.send(ArmamentOfFixation)";comment = "The Symphony of Constancy. The emitted resonant frequencies, stable patterns, and laws of persistence that structure reality. This is time made manifest as order—the gift of predictability in a chaotic universe.";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Fixation.r1(RhythmOfFocus)";comment = "The First Beat: The Sacred Attention. The act of selecting a specific frequency from the cosmic noise—giving a pattern the initial momentum to emerge from chaos. This is the universe learning to listen to its own heartbeat.";color = darkgreen;];
-    cilang_2_t [label = "Fixation.r2(RhythmOfConstraint)";comment = "The Second Beat: The Defining Boundary. Establishing the precise parameters of the rhythm—its amplitude, wavelength, and scope. This is the moment potential gains definition, like a sculptor finding the shape within the marble.";color = darkgreen;];
-    cilang_4_t [label = "Fixation.r4(RhythmOfAttachment)";comment = "The Third Beat: The Cosmic Anchoring. The sacred act of binding rhythm to substrate—whether matter, energy, thought, or spirit. This is how patterns learn to persist, finding their home in the fabric of existence.";color = darkgreen;];
-    cilang_8_t [label = "Fixation.r8(RhythmOfStability)";comment = "The Fourth Beat: The Reinforcement of Repetition. The process of strengthening rhythm through consistent recurrence—building resistance to entropy and decay. This is how habits form, how traditions begin, how laws gain their power.";color = darkgreen;];
-    cilang_7_t [label = "Fixation.r7(RhythmOfAccumulation)";comment = "The Fifth Beat: The Gathering of Substance. The phase where stable rhythm begins to attract compatible energies—growing in influence, density, and presence. This is how whispers become echoes, how ripples become tides.";color = darkgreen;];
-    cilang_5_t [label = "Fixation.r5(RhythmOfInheritance)";comment = "The Sixth Beat: The Eternal Transmission. The process by which rhythm is encoded into new contexts—taught to generations, written into laws, embedded in matter. This is how patterns achieve immortality beyond their origin.";color = darkgreen;];
-    cilang_3_t [label = "Fixation.r3(CrestOfStatism)";comment = "Thesis: The Ideal of Perfect Stillness. The beautiful paradox of motion frozen in eternity—the beat at infinity where change ceases and perfection abides. This is not death, but the crystallization of being.";color = darkblue;];
-    cilang_6_t [label = "Fixation.r6(CrestOfDeceleration)";comment = "Antithesis: The Sacred Slowing. The necessary process of cooling, settling, and calming that makes persistence possible. This is the cosmic exhale—the gentle resistance to entropy that allows patterns to form and endure.";color = darkblue;];
-    cilang_9_t [label = "Fixation.r9(CrestOfMatter)";comment = "Synthesis: Rhythm Made Manifest. The glorious achievement where stable patterns become tangible reality. Matter is not dead substance, but music frozen in form—energy dancing so slowly it appears to be still.";color = darkblue;];
-    cilang_c_t [label = "Fixation.dispatch(BodyOfFixation)";comment = "The Living Metronome. Tha herself in her active aspect—the conscious intelligence that chooses which rhythms to amplify, which patterns to preserve, and which tempos will structure the flow of existence.";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Fixation.commit(SoulOfFixation)";comment = "The Eternal Chronometer. The living record of every rhythm that has ever pulsed through reality—the accumulated wisdom of time's patterns, from quantum vibrations to galactic rotations.";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Fixation.serve(GraceOfFixation)";comment = "The Aura of Patience. The emanated field where haste stills and chaos finds its rhythm. In this grace, systems discover their natural tempo, thoughts find focus, and the universe remembers how to breathe.";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Fixation.exec(LawOfFixation)";comment = "The Covenant of Rhythm. The final, executed state where pattern becomes law—it becomes a fundamental constant of reality, an unbreakable habit of existence, a rhythm that time itself must honor.";shape = doublecircle;color = lightgray;];
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
     
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
     
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
     
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    a [label = "Fixation.receive(RaimentOfFixation)";comment = "Potential: Garment of stability—the divine attire that prepares potential for rhythmic structuring and enduring form.";shape = invtriangle;color = darkred;];
+    0 [label = "Fixation.meta(Tha)";comment = "Abstract: The Goddess of Rhythm—divine consciousness that governs all cycles, repetitions, and enduring patterns in creation.";shape = doublecircle;color = darkgray;];
+    b [label = "Fixation.send(ArmamentOfFixation)";comment = "Manifest: Weapon of permanence—the divine tools that defend against chaos and maintain structural integrity across time.";shape = triangle;color = darkred;];
     
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    1 [label = "Fixation.r1(RhythmOfFocus)";comment = "Initiation: Concentrated repetition—the divine practice of repeated attention that builds powerful intentional structures.";color = darkgreen;];
+    2 [label = "Fixation.r2(RhythmOfConstraint)";comment = "Response: Limiting pattern—the divine boundaries that prevent infinite expansion and create defined, knowable forms.";color = darkgreen;];
+    4 [label = "Fixation.r4(RhythmOfAttachment)";comment = "Integration: Binding frequency—the divine vibrations that connect elements into stable compounds and relationships.";color = darkgreen;];
+    8 [label = "Fixation.r8(RhythmOfStability)";comment = "Reflection: Enduring pulse—the divine heartbeat that maintains existence against the forces of dissolution and entropy.";color = darkgreen;];
+    7 [label = "Fixation.r7(RhythmOfAccumulation)";comment = "Consolidation: Gathering tempo—the divine rhythm that collects and stores energy, matter, and meaning over time.";color = darkgreen;];
+    5 [label = "Fixation.r5(RhythmOfInheritance)";comment = "Propagation: Legacy beat—the divine transmission of patterns, traits, and wisdom across generations and cycles.";color = darkgreen;];
     
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    3 [label = "Fixation.r3(CrestOfStatism)";comment = "Thesis: Peak of stillness—the divine achievement of perfect stability, where motion ceases and form becomes eternal.";color = darkblue;];
+    6 [label = "Fixation.r6(CrestOfDeceleration)";comment = "Antithesis: Summit of slowing—the divine principle that all motion tends toward rest, all energy toward equilibrium.";color = darkblue;];
+    9 [label = "Fixation.r9(CrestOfMatter)";comment = "Synthesis: Apex of substance—the divine manifestation where spirit becomes matter, potential becomes actual.";color = darkblue;];
     
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    c [label = "Fixation.dispatch(BodyOfFixation)";comment = "Why-Who: Divine embodiment—Tha's physical manifestation and the priests who channel her stabilizing power.";shape = doublecircle;color = darkred;];
+    d [label = "Fixation.commit(SoulOfFixation)";comment = "What-How: Sacred practice—the rituals, disciplines, and vows that maintain cosmic stability and personal integrity.";shape = doublecircle;color = darkgreen;];
+    e [label = "Fixation.serve(GraceOfFixation)";comment = "When-Where: Timeless presence—the moments and places where stability manifests as divine grace and enduring beauty.";shape = doublecircle;color = darkblue;];
+    f [label = "Fixation.exec(LawOfFixation)";comment = "Which-Closure: Divine decree achieved—the universal law that all existence requires stable patterns and enduring rhythms to persist.";shape = doublecircle;color = lightgray;];
 }

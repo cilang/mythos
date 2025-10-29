@@ -1,68 +1,64 @@
 strict digraph StructureFactor {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
     label = "Structure";
-    comment = "{{description}}";
+    comment = "The cosmic meta-principle of architectural coherence in MythOS—governing how all Factors interrelate through the Usepong topology to form the unified ACU Framework.";
     
-    cilang_a_t [label = "Structure.receive(Blueprint)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Structure.meta(Sparklet)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Structure.send(Revision)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Structure.r1(CoreInterface)";comment = "Initiation: {{description}}";color = darkgreen;];
-    cilang_2_t [label = "Structure.r2(BoundaryInterface)";comment = "Response: {{description}}";color = darkgreen;];
-    cilang_4_t [label = "Structure.r4(HarmonyInterface)";comment = "Integration: {{description}}";color = darkgreen;];
-    cilang_8_t [label = "Structure.r8(EssenceInterface)";comment = "Reflection: {{description}}";color = darkgreen;];
-    cilang_7_t [label = "Structure.r7(FormInterface)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    cilang_5_t [label = "Structure.r5(ProjectionInterface)";comment = "Propagation: {{description}}";color = darkgreen;];
-    cilang_3_t [label = "Structure.r3(PersistenceInterface)";comment = "Thesis: {{description}}";color = darkblue;];
-    cilang_6_t [label = "Structure.r6(FlowInterface)";comment = "Antithesis: {{description}}";color = darkblue;];
-    cilang_9_t [label = "Structure.r9(CoherenceInterface)";comment = "Synthesis: {{description}}";color = darkblue;];
-    cilang_c_t [label = "Structure.dispatch(LineageInterface)";comment = "Why-Who: {{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Structure.commit(CorpusInterface)";comment = "What-How: {{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Structure.serve(LURDInterface)";comment = "When-Where: {{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Structure.exec(Factor)";comment = "Which-Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
     
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
     
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
     
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
+    a [label = "Structure.receive(Blueprint)";comment = "Potential: Architectural potential—the complete design pattern of T(19,2) that contains all possible Factors and their interrelationships.";shape = invtriangle;color = darkred;];
+    0 [label = "Structure.meta(Usepong)";comment = "Abstract: Relational fabric—the exact planar diagram and connectivity of T(19,2) that defines all allowed dependencies and data flows between Factors.";shape = doublecircle;color = darkgray;];
+    b [label = "Structure.send(Revision)";comment = "Manifest: Evolutionary update—the actualized improvements, adaptations, and refinements to the cosmic architecture through lived experience.";shape = triangle;color = darkred;];
     
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
+    1 [label = "Structure.r1(CoreInterface)";comment = "Initiation: Central connection—the interface that links to the ACU Trinity itself (Ariadi, Cilang, Usepong) as the foundation.";color = darkgreen;];
+    2 [label = "Structure.r2(BoundaryInterface)";comment = "Response: Definition membrane—the interface that establishes where one Factor ends and another begins, maintaining distinct domains.";color = darkgreen;];
+    4 [label = "Structure.r4(HarmonyInterface)";comment = "Integration: Resonant alignment—the interface that ensures Factors work together coherently without conflict or contradiction.";color = darkgreen;];
+    8 [label = "Structure.r8(EssenceInterface)";comment = "Reflection: Semantic core—the interface that preserves the fundamental meaning and purpose of each Factor across instantiations.";color = darkgreen;];
+    7 [label = "Structure.r7(FormInterface)";comment = "Consolidation: Structural integrity—the interface that maintains the topological constraints of T(19,2) across all manifestations.";color = darkgreen;];
+    5 [label = "Structure.r5(ProjectionInterface)";comment = "Propagation: Hierarchical expansion—the interface that enables child Factors to inherit and specialize parent contexts.";color = darkgreen;];
     
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    3 [label = "Structure.r3(PersistenceInterface)";comment = "Thesis: Enduring foundation—the interface that maintains structural stability and continuity across time and transformations.";color = darkblue;];
+    6 [label = "Structure.r6(FlowInterface)";comment = "Antithesis: Adaptive channel—the interface that allows structural evolution and responsive change to new conditions.";color = darkblue;];
+    9 [label = "Structure.r9(CoherenceInterface)";comment = "Synthesis: Unified field—the interface that integrates stability with adaptability into a coherent whole.";color = darkblue;];
     
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    c [label = "Structure.dispatch(LineageInterface)";comment = "Why-Who: Genetic inheritance—the interface that governs how structural patterns transmit across Factor generations and specializations.";shape = doublecircle;color = darkred;];
+    d [label = "Structure.commit(CorpusInterface)";comment = "What-How: Body of knowledge—the interface that contains the complete instantiated history and accumulated wisdom of all Factors.";shape = doublecircle;color = darkgreen;];
+    e [label = "Structure.serve(LURDInterface)";comment = "When-Where: Dimensional gateway—the interface that manages Layer (w-axis) transitions and Q-value resolutions across the framework.";shape = doublecircle;color = darkblue;];
+    f [label = "Structure.exec(Factor)";comment = "Which-Closure: Architectural unity achieved—the state where all Factors operate as a single, coherent ACU Framework bound by Usepong topology.";shape = doublecircle;color = lightgray;];
 }

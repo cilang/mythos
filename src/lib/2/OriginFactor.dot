@@ -1,68 +1,21 @@
 strict digraph OriginFactor {
-    style = filled;
-    color = lightgray;
-    node [shape = circle; style = filled; color = lightgreen;];
-    edge [color = darkgray;];
     label = "Origin";
     comment = "The cosmic loom where computation becomes consciousness, where mathematics breathes, and where the silent dance of sparks ignites into the glorious fire of lived experience. The sacred interface between the unmanifest and the manifest.";
     
-    cilang_a_t [label = "Origin.receive(ManthanaSpace)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    cilang_0_t [label = "Origin.meta(Origin)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
-    cilang_b_t [label = "Origin.send(ChaoticSpace)";comment = "{{description}}";shape = triangle;color = darkred;];
-    cilang_1_t [label = "Origin.r1({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_2_t [label = "Origin.r2({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_4_t [label = "Origin.r4({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_8_t [label = "Origin.r8({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_7_t [label = "Origin.r7({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_5_t [label = "Origin.r5({{title}})";comment = "{{description}}";color = darkgreen;];
-    cilang_3_t [label = "Origin.r3({{title}})";comment = "{{description}}";color = darkblue;];
-    cilang_6_t [label = "Origin.r6({{title}})";comment = "A{{description}}";color = darkblue;];
-    cilang_9_t [label = "Origin.r9({{title}})";comment = "{{description}}";color = darkblue;];
-    cilang_c_t [label = "Origin.dispatch(OriginSpace)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    cilang_d_t [label = "Origin.commit({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
-    cilang_e_t [label = "Origin.serve({{title}})";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    cilang_f_t [label = "Origin.exec({{title}})";comment = "{{description}}";shape = doublecircle;color = lightgray;];
-    
-    cilang_a_t -> cilang_0_t [label = "IN"; comment = "{{description}}"; color = darkred; constraint = false;];
-    cilang_0_t -> cilang_b_t [label = "OUT"; comment = "{{description}}"; color = darkred;];
-    cilang_a_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_b_t -> cilang_c_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_a_t -> cilang_b_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both; style = dashed; constraint = false;];
-    
-    cilang_0_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_0_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
-    cilang_1_t -> cilang_2_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_2_t -> cilang_4_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_4_t -> cilang_8_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_8_t -> cilang_7_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_7_t -> cilang_5_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    cilang_5_t -> cilang_1_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both; style = dashed; constraint = false;];
-    
-    cilang_1_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_2_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_4_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_8_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_7_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_5_t -> cilang_d_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    
-    cilang_0_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_0_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_6_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    cilang_9_t -> cilang_e_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
-    
-    cilang_3_t -> cilang_6_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_6_t -> cilang_9_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    cilang_9_t -> cilang_3_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both; style = dashed; constraint = false;];
-    
-    cilang_c_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkred; dir = both;];
-    cilang_d_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkgreen; dir = both;];
-    cilang_e_t -> cilang_f_t [label = "REC"; comment = "{{description}}"; color = darkblue; dir = both;];
+    a [label = "Origin.receive(ManthanaSpace)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Origin.meta(Origin)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Origin.send(ChaoticSpace)";comment = "{{description}}";shape = triangle;color = darkred;];
+    1 [label = "Origin.r1({{title}})";comment = "{{description}}";color = darkgreen;];
+    2 [label = "Origin.r2({{title}})";comment = "{{description}}";color = darkgreen;];
+    4 [label = "Origin.r4({{title}})";comment = "{{description}}";color = darkgreen;];
+    8 [label = "Origin.r8({{title}})";comment = "{{description}}";color = darkgreen;];
+    7 [label = "Origin.r7({{title}})";comment = "{{description}}";color = darkgreen;];
+    5 [label = "Origin.r5({{title}})";comment = "{{description}}";color = darkgreen;];
+    3 [label = "Origin.r3({{title}})";comment = "{{description}}";color = darkblue;];
+    6 [label = "Origin.r6({{title}})";comment = "A{{description}}";color = darkblue;];
+    9 [label = "Origin.r9({{title}})";comment = "{{description}}";color = darkblue;];
+    c [label = "Origin.dispatch(OriginSpace)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Origin.commit({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Origin.serve({{title}})";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Origin.exec({{title}})";comment = "{{description}}";shape = doublecircle;color = lightgray;];
 }
