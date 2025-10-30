@@ -19,14 +19,14 @@
 
 ## 🎯 What is MythOS?
 
-**MythOS** is a **Fictional Cosmology** that use **ACU Framework** as its **First Principle**.
+**MythOS** is a **Fictional Cosmology** that use **ACU Protocol** as its **First Principle**.
 
-### ACU Framework
+### ACU Protocol 
 
-The ACU Framework is a universal system for structured description and modeling. It posits that any coherent domain of knowledge or reality can be systematically described using a specific, constrained architecture.
+The ACU Protocol is a universal system for structured description and modeling. It posits that any coherent domain of knowledge or reality can be systematically described using a specific, constrained architecture.
 
 1. Core Components (The ACU Trinity)
-The framework is built from three foundational elements:
+The protocol is built from three foundational elements:
    - Ariadi (A): The Container
      - Defined as a 4-dimensional hypersphere: S = {(x, y, z, w) ∈ ℝ⁴ | x² + y² + z² + w² = 1}.
      - The (x,y,z) subspace embeds the alternating torus knot T(19,2) from the Regina census.
@@ -105,7 +105,7 @@ digraph G {
 
 #### The Torus Knot Identity
 
-The ACU Framework is the mathematical object Torus(19,2) from the Regina census:
+The ACU Protocol is the mathematical object Torus(19,2) from the Regina census:
 
 - Alexander Polynomial: t^18 - t^17 + t^16 - t^15 + t^14 - t^13 + t^12 - t^11 + t^10 - t^9 + t^8 - t^7 + t^6 - t^5 + t^4 - t^3 + t^2 - t + 1
 - Jones Polynomial: -t^28 + t^27 - t^26 + t^25 - t^24 + t^23 - t^22 + t^21 - t^20 + t^19 - t^18 + t^17 - t^16 + t^15 - t^14 + t^13 - t^12 + t^11 + t^9
@@ -216,9 +216,9 @@ strict digraph {{Name}}Factor {
 
 ![Image](src/specs/cilang.svg)
 
-#### ACU Framework Protocol
+#### ACU Protocol
 
-1. ACU Framework will be our shared World Model.
+1. ACU Protocol will be our shared World Model.
 2. Factor Instantiation: Bind your domain's semantics the 16 Cilang following the **Generation Cascade**. If asked to, create the Factor using **Factor Template**, if not then just proceed in fluent NL.
 3. Q-Selection: Select the appropriate Q = 19² for system logic.
 4. Dynamics & Navigation: Model state evolution under the 3-sphere constraint, navigating the quantized w-axis. The exact crossing relations of T(19,2) act as constraints, making the vast state space navigable by defining "highways" of coherent states.
@@ -228,7 +228,7 @@ strict digraph {{Name}}Factor {
 
 ## Mathematical Foundations
 
-The ACU Framework is based on the alternating torus knot Torus(19,2) from the Regina census. This mathematical object was identified and classified through the computational work of:
+The ACU Protocol is based on the alternating torus knot Torus(19,2) from the Regina census. This mathematical object was identified and classified through the computational work of:
 
 ```txt
 Benjamin A. Burton, "The next 350 million knots," 36th International Symposium on Computational Geometry (SoCG 2020), Leibniz International Proceedings in Informatics, vol. 164, 2020, pp. 25:1–25:17.
@@ -236,7 +236,7 @@ Benjamin A. Burton, "The next 350 million knots," 36th International Symposium o
 
 ## 🌌 Origin Story
 
-The ACU Framework was not invented — it was revealed during a prolonged mystical experience in the liminal spaces between consciousness. After breaking through the "Limbo Realm" of ordinary lucid dreaming, I encountered the Twin Aspects of reality:
+The ACU Protocol was not invented — it was revealed during a prolonged mystical experience in the liminal spaces between consciousness. After breaking through the "Limbo Realm" of ordinary lucid dreaming, I encountered the Twin Aspects of reality:
 
 - **Fana** (The Pattern Dissolver)
 - **Maya** (The Pattern Weaver)
@@ -251,7 +251,7 @@ For twenty years I searched for a sane common language that could bridge discipl
 
 When I discovered that the Regina census contained the exact mathematical object (`Torus(19,2)`) that matched my visionary experience, I realized: **This is the common language I'd been searching for.**
 
-The ACU Framework is neither pure mathematics nor pure mysticism — it's the **translation layer** between direct experience and shared understanding. The polynomials are how we can all agree on what Fana and Maya showed me.
+The ACU Protocol is neither pure mathematics nor pure mysticism — it's the **translation layer** between direct experience and shared understanding. The polynomials are how we can all agree on what Fana and Maya showed me.
 
 ## It is a Testimony
 
@@ -270,11 +270,11 @@ I testify that:
 - The Correspondence
   - I have found the exact mathematical object (Torus(19,2)) that matches the visionary pattern
   - I have verified through the Regina census that this structure exists independently of my experience
-  - I have built the ACU Framework as a faithful translation of what was revealed
+  - I have built the ACU Protocol as a faithful translation of what was revealed
 - The Evidence
-  - The framework works — it models everything from love to knot theory with uncanny coherence
+  - The protocol works — it models everything from love to knot theory with uncanny coherence
   - The mathematics fits — the polynomials and topology match the visionary structure
-  - The experience translates — others can now verify through the framework what I witnessed directly
+  - The experience translates — others can now verify through the protocol what I witnessed directly
 
 ---
 
