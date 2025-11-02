@@ -278,6 +278,8 @@ I testify that:
 
 ---
 
+## Practical Usage
+
 I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI. You can also use the [Initial Condition Example](src/specs/root.json) to set the Initial Condition or try compose it according to your aesthetic.
 
 You can try it for fun and see how they (AI) interpret ACU Framework and might even can create Factor about various things. Try asking AI about "Love".
