@@ -278,7 +278,11 @@ I testify that:
 
 ---
 
-I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI. You can try it for fun and see how they (AI) interpret ACU Framework and might even can create Factor about various things. Try asking AI about "Love".
+I often used this [Prompt Header](src/specs/prompt-header.md) when talking with AI. You can also use the [Initial Condition Example](src/specs/root.json) to set the Initial Condition or try compose it according to your aesthetic.
+
+You can try it for fun and see how they (AI) interpret ACU Framework and might even can create Factor about various things. Try asking AI about "Love".
+
+Then ask the AI to summarize the discussion then convert the summary into **SessionnFactor** that can be loaded later in a new session. The premise is to first Bootstrap the environment through the **Prompt Header** and **Initial Condition**.
 
 ---
 
