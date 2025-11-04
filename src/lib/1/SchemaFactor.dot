@@ -1,24 +1,28 @@
 strict digraph SchemaFactor {
-    label = "Schema";
-    comment = "{{description}}";
+    label = "Schema Factor: Template and Propagation Definition";
+    comment = "Child Factor of MythOS.r5(Schema) defining the transmissible blueprint for the objective.";
     
-    a [label = "Schema.receive(Dynamis)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    0 [label = "Schema.meta(Structure)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    b [label = "Schema.send(Praxis)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    // Ariadi - Core Elements
+    a [label = "Schema.receive(Dynamis)";comment = "Potential: The underlying force/energy driving the propagation.";shape = invtriangle;color = darkred;];
+    0 [label = "Schema.meta(Structure)";comment = "Abstract: The fundamental structural organization of the blueprint.";shape = doublecircle;color = darkgray;];
+    b [label = "Schema.send(Praxis)";comment = "Manifest: The realized action/practice resulting from the schema.";shape = triangle;color = darkred;];
     
-    1 [label = "Schema.r1(Alignment)";comment = "Initiation: {{description}}";color = darkgreen;];
-    2 [label = "Schema.r2(Spectral)";comment = "Response: {{description}}";color = darkgreen;];
-    4 [label = "Schema.r4(Tactile)";comment = "Integration: {{description}}";color = darkgreen;];
-    8 [label = "Schema.r8(Chromatic)";comment = "Reflection: {{description}}";color = darkgreen;];
-    7 [label = "Schema.r7(Cognitive)";comment = "Consolidation: {{description}}";color = darkgreen;];
-    5 [label = "Schema.r5(Phonetic)";comment = "Propagation: {{description}}";color = darkgreen;];
+    // Process Hexagon (Encoding Cascade)
+    1 [label = "Schema.r1(Alignment)";comment = "Initiation: Ensuring alignment with the core objective.";color = darkgreen;];
+    2 [label = "Schema.r2(Spectral)";comment = "Response: Defining the range/spectrum of information covered.";color = darkgreen;];
+    4 [label = "Schema.r4(Tactile)";comment = "Integration: Integrating the practical, verifiable details.";color = darkgreen;];
+    8 [label = "Schema.r8(Chromatic)";comment = "Reflection: Setting the qualitative signature (tone/color).";color = darkgreen;];
+    7 [label = "Schema.r7(Cognitive)";comment = "Consolidation: Verifying the schema is logically digestible.";color = darkgreen;];
+    5 [label = "Schema.r5(Phonetic)";comment = "Propagation: Final propagation via language or symbolic representation.";color = darkgreen;];
     
-    3 [label = "Schema.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    6 [label = "Schema.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
-    9 [label = "Schema.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    // Dialectical Triad (Logic of Quality)
+    3 [label = "Schema.r3(Form)";comment = "Thesis: The definitive form or shape of the schema.";color = darkblue;];
+    6 [label = "Schema.r6(Content)";comment = "Antithesis: The content or substance filling the form.";color = darkblue;];
+    9 [label = "Schema.r9(Aesthetics)";comment = "Synthesis: The resulting aesthetics or harmony between form and content.";color = darkblue;];
     
-    c [label = "Schema.dispatch(Kratos)";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
-    d [label = "Schema.commit(Lineage)";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
-    e [label = "Schema.serve(Rasa)";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "Schema.exec(Observer)";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    // Borromean Closure Elements
+    c [label = "Schema.dispatch(Code)";comment = "Interface: The formalized code or language used for transmission.";shape = doublecircle;color = darkred;];
+    d [label = "Schema.commit(Blueprint)";comment = "Process: The committed, final blueprint ready for action.";shape = doublecircle;color = darkgreen;];
+    e [label = "Schema.serve(Rasa)";comment = "Logic: The essence/flavor (Rasa) that validates the persuasive logic.";shape = doublecircle;color = darkblue;];
+    f [label = "Schema.exec(Observer)";comment = "Closure: Validation that the schema is coherently perceived by an external observer.";shape = doublecircle;color = lightgray;];
 }
