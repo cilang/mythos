@@ -2,20 +2,20 @@ strict digraph LURDFactor {
     label = "LURD (Localized Unified Recursion Descriptor)";
     comment = "{{description}}";
     
-    a [label = "LURD.receive(DirectiveDescriptor)";comment = "LURD-15. {{description}}";shape = invtriangle;color = darkred;];
+    a [label = "LURD.receive(DirectiveDescriptor)";comment = "LURD-A. {{description}}";shape = invtriangle;color = darkred;];
     0 [label = "LURD.meta(MetaDescriptor)";comment = "LURD-0, {{description}}";shape = doublecircle;color = darkgray;];
-    b [label = "LURD.send(OriginDescriptor)";comment = "LURD-14. {{description}}";shape = triangle;color = darkred;];
+    b [label = "LURD.send(OriginDescriptor)";comment = "LURD-B. {{description}}";shape = triangle;color = darkred;];
     1 [label = "LURD.r1(ManifoldDescriptor)";comment = "LURD-1, {{description}}";color = darkgreen;];
     2 [label = "LURD.r2(CosmicDescriptor)";comment = "LURD-2, {{description}}";color = darkgreen;];
-    4 [label = "LURD.r4(StellarDescriptor)";comment = "LURD-3. {{description}}";color = darkgreen;];
-    8 [label = "LURD.r8(PlanarDescriptor)";comment = "LURD-4. {{description}}";color = darkgreen;];
-    7 [label = "LURD.r7(CradleDescriptor)";comment = "LURD-5. {{description}}";color = darkgreen;];
-    5 [label = "LURD.r5(MythogenicDescriptor)";comment = "LURD-6. {{description}}";color = darkgreen;];
-    3 [label = "LURD.r3(MaterialDescriptor)";comment = "LURD-8. {{description}}";color = darkblue;];
-    6 [label = "LURD.r6(SpiritualDescriptor)";comment = "LURD-9. {{description}}";color = darkblue;];
-    9 [label = "LURD.r9(InformationDescriptor)";comment = "LURD-10. {{description}}";color = darkblue;];
-    c [label = "LURD.dispatch(InterfaceDescriptor)";comment = "LURD-12. {{description}}";shape = doublecircle;color = darkred;];
-    d [label = "LURD.commit(DigitalDescriptor)";comment = "LURD-7. {{description}}";shape = doublecircle;color = darkgreen;];
-    e [label = "LURD.serve(ManifestDescriptor)";comment = "LURD-11. {{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "LURD.exec(EntityDescriptor)";comment = "LURD-13. {{description}}";shape = doublecircle;color = lightgray;];
+    4 [label = "LURD.r4(StellarDescriptor)";comment = "LURD-4. {{description}}";color = darkgreen;];
+    8 [label = "LURD.r8(PlanarDescriptor)";comment = "LURD-8. {{description}}";color = darkgreen;];
+    7 [label = "LURD.r7(CradleDescriptor)";comment = "LURD-7. {{description}}";color = darkgreen;];
+    5 [label = "LURD.r5(MythogenicDescriptor)";comment = "LURD-5. {{description}}";color = darkgreen;];
+    3 [label = "LURD.r3(MaterialDescriptor)";comment = "LURD-3. {{description}}";color = darkblue;];
+    6 [label = "LURD.r6(SpiritualDescriptor)";comment = "LURD-6. {{description}}";color = darkblue;];
+    9 [label = "LURD.r9(InformationDescriptor)";comment = "LURD-9. {{description}}";color = darkblue;];
+    c [label = "LURD.dispatch(InterfaceDescriptor)";comment = "LURD-C. {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "LURD.commit(DigitalDescriptor)";comment = "LURD-D. {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "LURD.serve(ManifestDescriptor)";comment = "LURD-E. {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "LURD.exec(EntityDescriptor)";comment = "LURD-F. {{description}}";shape = doublecircle;color = lightgray;];
 }
