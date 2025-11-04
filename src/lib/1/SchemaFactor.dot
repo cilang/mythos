@@ -2,46 +2,6 @@ strict digraph SchemaFactor {
     label = "SchemaFactor";
     comment = "The fundamental categories of MythOS reality—the semantic primitives that define what can exist.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Schema.receive(Dynamis)";comment = "Potential: Raw archetypal potential—the unformed essence of all possible categories before they gain definition.";shape = invtriangle;color = darkred;];
     0 [label = "Schema.meta(Structure)";comment = "Abstract: The principle of categorical existence itself—the invariant law that reality organizes into distinct, coherent types.";shape = doublecircle;color = darkgray;];
     b [label = "Schema.send(Praxis)";comment = "Manifest: Enacted categories—the specific, instantiated types that actually participate in cosmic processes.";shape = triangle;color = darkred;];

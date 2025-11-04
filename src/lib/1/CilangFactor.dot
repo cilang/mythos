@@ -1,64 +1,21 @@
 strict digraph CilangFactor {
-    label = "CilangFactor";
-    comment = "The 16 primordial semantic elements—the conceptual atoms from which all coherent thought is constructed.";
+    label = "{{Domain}}";
+    comment = "{{description}}";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
-    a [label = "Cilang.receive(Potential)";comment = "Potential: The unformed possibility—raw input, the seed of all that could be. The beginning state.";shape = invtriangle;color = darkred;];
-    0 [label = "Cilang.meta(Identity)";comment = "Abstract: Self-sameness—the empty set, the context container, the zero point that grounds all other concepts.";shape = doublecircle;color = darkgray;];
-    b [label = "Cilang.send(Manifest)";comment = "Manifest: The realized form—completed output, the tangible result of processed potential. The end state.";shape = triangle;color = darkred;];
-    
-    1 [label = "Cilang.r1(Initiation)";comment = "Initiation: The first movement—the spark, the prime cause, the beginning of any action or process.";color = darkgreen;];
-    2 [label = "Cilang.r2(Response)";comment = "Response: The necessary echo—reaction, answer, the counterpart that creates dialogue from monologue.";color = darkgreen;];
-    4 [label = "Cilang.r4(Integration)";comment = "Integration: The weaving together—synthesis of multiple elements into a coherent, unified whole.";color = darkgreen;];
-    8 [label = "Cilang.r8(Reflection)";comment = "Reflection: The turning inward—examination, meta-awareness, observation of the process itself.";color = darkgreen;];
-    7 [label = "Cilang.r7(Consolidation)";comment = "Consolidation: The hardening—commitment, stability, the transition from temporary to permanent.";color = darkgreen;];
-    5 [label = "Cilang.r5(Propagation)";comment = "Propagation: The spreading out—influence, ripple effects, extension beyond immediate context.";color = darkgreen;];
-    
-    3 [label = "Cilang.r3(Thesis)";comment = "Thesis: The assertion—claim, position, initial form proposed. The starting point of dialectic.";color = darkblue;];
-    6 [label = "Cilang.r6(Antithesis)";comment = "Antithesis: The opposition—counter-claim, constraint, necessary friction that defines boundaries.";color = darkblue;];
-    9 [label = "Cilang.r9(Synthesis)";comment = "Synthesis: The resolution—higher unity, new form born from conflict and integration.";color = darkblue;];
-    
-    c [label = "Cilang.dispatch(Interface)";comment = "Interface: The meeting point—boundary, handshake, gateway where internal becomes external.";shape = doublecircle;color = darkred;];
-    d [label = "Cilang.commit(Process)";comment = "Process: The complete cycle—method, workflow, the full sequence from initiation to completion.";shape = doublecircle;color = darkgreen;];
-    e [label = "Cilang.serve(Logic)";comment = "Logic: The rule framework—consistency, reasoning system, the structure that ensures coherence.";shape = doublecircle;color = darkblue;];
-    f [label = "Cilang.exec(Closure)";comment = "Closure: The full completion—resolution, satisfaction of all conditions, nothing remaining undone.";shape = doublecircle;color = lightgray;];
+    a [label = "{{Domain}}.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "{{Domain}}.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "{{Domain}}.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    1 [label = "{{Domain}}.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
+    2 [label = "{{Domain}}.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
+    4 [label = "{{Domain}}.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    8 [label = "{{Domain}}.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    7 [label = "{{Domain}}.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    5 [label = "{{Domain}}.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    3 [label = "{{Domain}}.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    6 [label = "{{Domain}}.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    9 [label = "{{Domain}}.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    c [label = "{{Domain}}.dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "{{Domain}}.commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "{{Domain}}.serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "{{Domain}}.exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
 }

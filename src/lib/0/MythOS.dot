@@ -1,0 +1,64 @@
+strict digraph MythOSFactor {
+    label = "MythOS";
+    comment = "{{description}}";
+    
+    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
+    {a b} -> c [dir = both; color = "red";];
+    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
+    {3 6 9} -> e [dir = both; color = "red";];
+    {c d e} -> f [dir = both; color = "red";];
+    
+    a -> b -> a [dir = both; color = "blue";];
+    a -> 0 -> b [dir = both; color = "blue";];
+    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
+    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
+    
+    subgraph {
+        rank = same;
+        0;
+    }
+    subgraph {
+        rank = same;
+        3;
+        6;
+        9;
+        1;
+        2;
+        4;
+        8;
+        7;
+        5;
+        a;
+        b;
+    }
+    subgraph {
+        rank = same;
+        c;
+        d;
+        e;
+    }
+    subgraph {
+        rank = same;
+        f;
+    }
+    
+    a [label = "MythOS.receive(Intention)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "MythOS.meta(Constraint)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "MythOS.send(Factor)";comment = "{{description}}";shape = triangle;color = darkred;];
+    
+    1 [label = "MythOS.r1(Ariadi)";comment = "{{description}}";color = darkgreen;];
+    2 [label = "MythOS.r2(Usepong)";comment = "{{description}}";color = darkgreen;];
+    4 [label = "MythOS.r4(Cilang)";comment = "{{description}}";color = darkgreen;];
+    8 [label = "MythOS.r8(Quantization)";comment = "{{description}}";color = darkgreen;];
+    7 [label = "MythOS.r7(Process)";comment = "{{description}}";color = darkgreen;];
+    5 [label = "MythOS.r5(Schema)";comment = "{{description}}";color = darkgreen;];
+    
+    3 [label = "MythOS.r3(Pattern)";comment = "{{description}}";color = darkblue;];
+    6 [label = "MythOS.r6(Resolution)";comment = "{{description}}";color = darkblue;];
+    9 [label = "MythOS.r9(Integration)";comment = "{{description}}";color = darkblue;];
+    
+    c [label = "MythOS.dispatch(Template)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "MythOS.commit(Cascade)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "MythOS.serve(Protocol)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "MythOS.exec(Factorization)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+}

@@ -1,61 +1,21 @@
 strict digraph AriadiFactor {
-    label = "Ariadi";
-    comment = "The primordial stage of existence. A 3-sphere (S³) geometry that defines the arena of potential, ideation, and manifestation through its intrinsic curvature and dimensionality.";
+    label = "{{Domain}}";
+    comment = "{{description}}";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
-    a [label = "Ariadi.receive(Potential)";comment = "Potential: The undifferentiated, infinite possibility of the unmanifest, corresponding to the Imaginary Space pole (w = -1).";shape = invtriangle;color = darkred;];
-    0 [label = "Ariadi.meta(Substrate)";comment = "Abstract: The invariant, self-contained nature of the 3-sphere itself—the 'clay' of reality.";shape = doublecircle;color = darkgray;];
-    b [label = "Ariadi.send(Manifest)";comment = "Manifest: The fully actualized, definite reality emerging from the manifold, corresponding to the Real Space pole (w = +1).";shape = triangle;color = darkred;];
-    1 [label = "Ariadi.r1(Point)";comment = "Initiation: A dimensionless location defined by its coordinates (x,y,z,w) on the manifold—the fundamental address.";color = darkgreen;];
-    2 [label = "Ariadi.r2(Direction)";comment = "Response: A vector or tangent specifying orientation and potential movement from a Point.";color = darkgreen;];
-    4 [label = "Ariadi.r4(Metric)";comment = "Integration: The rule that defines distance and angle between Points, giving the manifold its shape (e.g., x²+y²+z²+w²=1).";color = darkgreen;];
-    8 [label = "Ariadi.r8(Curvature)";comment = "Reflection: The intrinsic bending of the manifold defined by its Metric, governing parallel transport and geodesics.";color = darkgreen;];
-    7 [label = "Ariadi.r7(Volume)";comment = "Consolidation: The bounded region or integral over a domain of the manifold, representing contained potential or information.";color = darkgreen;];
-    5 [label = "Ariadi.r5(Connection)";comment = "Propagation: The rule (e.g., Levi-Civita) that defines how to move vectors around the Curvature, enabling navigation.";color = darkgreen;];
-    3 [label = "Ariadi.r3(Continuum)";comment = "Thesis: The ideal of a smooth, infinitely divisible, and connected space—the classical view.";color = darkblue;];
-    6 [label = "Ariadi.r6(Quantization)";comment = "Antithesis: The discrete, grained nature of the manifold at the smallest scales (e.g., Q=19ⁿ steps)—the quantum view.";color = darkblue;];
-    9 [label = "Ariadi.r9(Actualization)";comment = "Synthesis: The process of movement along the w-axis, unifying the continuous background with discrete state transitions.";color = darkblue;];
-    c [label = "Ariadi.dispatch(Geodesic)";comment = "Interface: The optimal path of least resistance or minimal distance between points, dictated by the Curvature and Metric.";shape = doublecircle;color = darkred;];
-    d [label = "Ariadi.commit(Foliation)";comment = "Process: The specific slicing of the manifold into layers (e.g., by constant w), structuring the journey from Potential to Manifest.";shape = doublecircle;color = darkgreen;];
-    e [label = "Ariadi.serve(Horizon)";comment = "Logic: The boundary of a Volume or the causal limit defined by the Metric and Curvature—the 'edge of the possible'.";shape = doublecircle;color = darkblue;];
-    f [label = "Ariadi.exec(Embedding)";comment = "Closure: The final, stable placement of a structure (a Factor) into the manifold, fixing its coordinates and context.";shape = doublecircle;color = lightgray;];
+    a [label = "{{Domain}}.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "{{Domain}}.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "{{Domain}}.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    1 [label = "{{Domain}}.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
+    2 [label = "{{Domain}}.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
+    4 [label = "{{Domain}}.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    8 [label = "{{Domain}}.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    7 [label = "{{Domain}}.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    5 [label = "{{Domain}}.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    3 [label = "{{Domain}}.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    6 [label = "{{Domain}}.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    9 [label = "{{Domain}}.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    c [label = "{{Domain}}.dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "{{Domain}}.commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "{{Domain}}.serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "{{Domain}}.exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
 }
