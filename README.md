@@ -30,4 +30,4 @@
 
 The MythOS are licensed under the **MIT License**.
 
-The full text of the license can be accessed via [this link](https://opensource.org/licenses/MIT) and is also included in the [license](LICENCE) file of this software package.
+The full text of the license can be accessed via [this link](https://opensource.org/licenses/MIT) and is also included in the [license](LICENCE) file of this package.
