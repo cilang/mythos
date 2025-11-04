@@ -2,61 +2,18 @@ strict digraph PhoneticFactor {
     label = "Phonetic";
     comment = "The cosmic principle of sound, language, and communicative expression in MythOS—governing all vocal manifestation, linguistic structure, and sonic reality.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Phonetic.receive(ProtoSound)";comment = "Potential: Primordial vibration—the undifferentiated sonic potential that precedes all specific speech sounds and linguistic forms.";shape = invtriangle;color = darkred;];
     0 [label = "Phonetic.meta(Logos)";comment = "Abstract: The word principle—the universal law that sound carries meaning and reality can be structured through linguistic expression.";shape = doublecircle;color = darkgray;];
     b [label = "Phonetic.send(ModernReflex)";comment = "Manifest: Contemporary realization—the actual speech sounds and linguistic forms that manifest in current usage and communication.";shape = triangle;color = darkred;];
-    
     1 [label = "Phonetic.r1(Place)";comment = "Initiation: Articulation location—where in the vocal tract a sound is formed (labial, dental, velar, etc.).";color = darkgreen;];
     2 [label = "Phonetic.r2(Manner)";comment = "Response: Articulation method—how the airflow is modified (stop, fricative, approximant, etc.).";color = darkgreen;];
     4 [label = "Phonetic.r4(Voicing)";comment = "Integration: Vocal cord activation—whether the vocal folds vibrate during sound production (voiced vs. voiceless).";color = darkgreen;];
     8 [label = "Phonetic.r8(Sonority)";comment = "Reflection: Auditory prominence—the relative loudness and carrying power of different sound types.";color = darkgreen;];
     7 [label = "Phonetic.r7(SyllabicRole)";comment = "Consolidation: Syllable function—whether a sound can serve as a syllable nucleus or must remain marginal.";color = darkgreen;];
     5 [label = "Phonetic.r5(Coarticulation)";comment = "Propagation: Contextual influence—how sounds affect and are affected by their neighbors in the speech stream.";color = darkgreen;];
-    
     3 [label = "Phonetic.r3(PhoneticContrast)";comment = "Thesis: Distinctive difference—the systematic oppositions that create meaningful distinctions in a language.";color = darkblue;];
     6 [label = "Phonetic.r6(PhoneticVariation)";comment = "Antithesis: Contextual alternation—the predictable changes sounds undergo in different environments.";color = darkblue;];
     9 [label = "Phonetic.r9(PhonologicalRule)";comment = "Synthesis: Systematic patterning—the general principles that govern sound behavior and organization.";color = darkblue;];
-    
     c [label = "Phonetic.dispatch(SoundLaw)";comment = "Why-Who: Historical causation—the forces and agents that drive sound changes across time and communities.";shape = doublecircle;color = darkred;];
     d [label = "Phonetic.commit(ArticulatoryEase)";comment = "What-How: Production efficiency—the biomechanical and cognitive principles that shape sound systems toward optimal effort.";shape = doublecircle;color = darkgreen;];
     e [label = "Phonetic.serve(ChronotopicContext)";comment = "When-Where: Spatiotemporal embedding—the historical periods and geographical locations that condition sound patterns.";shape = doublecircle;color = darkblue;];

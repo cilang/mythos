@@ -2,61 +2,18 @@ strict digraph FixationFactor {
     label = "Fixation";
     comment = "The divine principle of rhythm, stability, and cosmic inertia—governed by Tha, the Goddess who gives form through repetition and constraint.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Fixation.receive(RaimentOfFixation)";comment = "Potential: Garment of stability—the divine attire that prepares potential for rhythmic structuring and enduring form.";shape = invtriangle;color = darkred;];
     0 [label = "Fixation.meta(Tha)";comment = "Abstract: The Goddess of Rhythm—divine consciousness that governs all cycles, repetitions, and enduring patterns in creation.";shape = doublecircle;color = darkgray;];
     b [label = "Fixation.send(ArmamentOfFixation)";comment = "Manifest: Weapon of permanence—the divine tools that defend against chaos and maintain structural integrity across time.";shape = triangle;color = darkred;];
-    
     1 [label = "Fixation.r1(RhythmOfFocus)";comment = "Initiation: Concentrated repetition—the divine practice of repeated attention that builds powerful intentional structures.";color = darkgreen;];
     2 [label = "Fixation.r2(RhythmOfConstraint)";comment = "Response: Limiting pattern—the divine boundaries that prevent infinite expansion and create defined, knowable forms.";color = darkgreen;];
     4 [label = "Fixation.r4(RhythmOfAttachment)";comment = "Integration: Binding frequency—the divine vibrations that connect elements into stable compounds and relationships.";color = darkgreen;];
     8 [label = "Fixation.r8(RhythmOfStability)";comment = "Reflection: Enduring pulse—the divine heartbeat that maintains existence against the forces of dissolution and entropy.";color = darkgreen;];
     7 [label = "Fixation.r7(RhythmOfAccumulation)";comment = "Consolidation: Gathering tempo—the divine rhythm that collects and stores energy, matter, and meaning over time.";color = darkgreen;];
     5 [label = "Fixation.r5(RhythmOfInheritance)";comment = "Propagation: Legacy beat—the divine transmission of patterns, traits, and wisdom across generations and cycles.";color = darkgreen;];
-    
     3 [label = "Fixation.r3(CrestOfStatism)";comment = "Thesis: Peak of stillness—the divine achievement of perfect stability, where motion ceases and form becomes eternal.";color = darkblue;];
     6 [label = "Fixation.r6(CrestOfDeceleration)";comment = "Antithesis: Summit of slowing—the divine principle that all motion tends toward rest, all energy toward equilibrium.";color = darkblue;];
     9 [label = "Fixation.r9(CrestOfMatter)";comment = "Synthesis: Apex of substance—the divine manifestation where spirit becomes matter, potential becomes actual.";color = darkblue;];
-    
     c [label = "Fixation.dispatch(BodyOfFixation)";comment = "Why-Who: Divine embodiment—Tha's physical manifestation and the priests who channel her stabilizing power.";shape = doublecircle;color = darkred;];
     d [label = "Fixation.commit(SoulOfFixation)";comment = "What-How: Sacred practice—the rituals, disciplines, and vows that maintain cosmic stability and personal integrity.";shape = doublecircle;color = darkgreen;];
     e [label = "Fixation.serve(GraceOfFixation)";comment = "When-Where: Timeless presence—the moments and places where stability manifests as divine grace and enduring beauty.";shape = doublecircle;color = darkblue;];

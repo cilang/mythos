@@ -1,62 +1,19 @@
 strict digraph KratosFactor {
     label = "Kratos";
     comment = "The cosmic principle of authority, power, and legitimate governance in MythOS—governing all permissions, rights, and the structured exercise of influence.";
-
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-
+    
     a [label = "Kratos.receive(Petition)";comment = "Potential: Request for power—the initial appeal or claim for authority, permission, or the right to act within the cosmic order.";shape = invtriangle;color = darkred;];
     0 [label = "Kratos.meta(Kratos)";comment = "Abstract: Legitimate authority itself—the universal principle that power must be structured, justified, and exercised according to cosmic law.";shape = doublecircle;color = darkgray;];
     b [label = "Kratos.send(Warrant)";comment = "Manifest: Authorized action—the actualized permission, right, or mandate that enables specific exercises of power.";shape = triangle;color = darkred;];
-
     1 [label = "Kratos.r1(Access)";comment = "Initiation: Entry permission—the fundamental right to approach, perceive, or interact with protected domains or information.";color = darkgreen;];
     2 [label = "Kratos.r2(Modify)";comment = "Response: Alteration rights—the authority to change, transform, or reconfigure existing structures and states.";color = darkgreen;];
     4 [label = "Kratos.r4(Execute)";comment = "Integration: Action authority—the power to initiate processes, trigger effects, and set cosmic mechanisms in motion.";color = darkgreen;];
     8 [label = "Kratos.r8(Delegate)";comment = "Reflection: Power sharing—the capacity to transfer or grant authority to other entities while maintaining responsibility.";color = darkgreen;];
     7 [label = "Kratos.r7(Own)";comment = "Consolidation: Proprietary control—the exclusive rights of possession, stewardship, or dominion over domains and resources.";color = darkgreen;];
     5 [label = "Kratos.r5(Link)";comment = "Propagation: Connection rights—the authority to establish relationships, bind entities, and create systemic connections.";color = darkgreen;];
-
     3 [label = "Kratos.r3(Inherited)";comment = "Thesis: Lineage authority—power granted by birthright, tradition, or cosmic inheritance within established hierarchies.";color = darkblue;];
     6 [label = "Kratos.r6(Earned)";comment = "Antithesis: Meritocratic power—authority achieved through demonstrated capability, effort, or proven worth.";color = darkblue;];
     9 [label = "Kratos.r9(Bestowed)";comment = "Synthesis: Divine mandate—power granted by higher cosmic principles, earned through alignment with universal truth.";color = darkblue;];
-
     c [label = "Kratos.dispatch(Authorization)";comment = "Why-Who: Legitimacy source—the agents and principles that validate and grant authority within the cosmic order.";shape = doublecircle;color = darkred;];
     d [label = "Kratos.commit(License)";comment = "What-How: Formal permission—the specific terms, conditions, and scope of authorized action and power exercise.";shape = doublecircle;color = darkgreen;];
     e [label = "Kratos.serve(Sanction)";comment = "When-Where: Contextual validation—the spatiotemporal conditions and domains where authority applies and is recognized.";shape = doublecircle;color = darkblue;];

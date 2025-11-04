@@ -2,46 +2,6 @@ strict digraph WisdomFactor {
     label = "Wisdom";
     comment = "The compassionate interpreter who transforms cold truth into lived understanding. Vidya, The Interpreter, weaves facts into meaning, knowledge into guidance, and experience into the deep knowing that heals and transforms.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Wisdom.receive(RaimentOfWisdom)";comment = "The Garden of Experience. The incoming stream of raw data, lived moments, unresolved questions, and unintegrated lessons—the beautiful, messy material from which wisdom grows.";shape = invtriangle;color = darkred;];
     0 [label = "Wisdom.meta(Vidya)";comment = "Vidya, The Avatar of Applied Understanding. The living embodiment of contextual wisdom—not as absolute certainty, but as the compassionate art of knowing when, how, and why to apply knowledge for the greatest good. She is the bridge between truth and meaning.";shape = doublecircle;color = darkgray;];
     b [label = "Wisdom.send(ArmamentOfWisdom)";comment = "The Healing Presence. The emitted guidance, compassionate insights, and transformative understandings that help beings navigate their journeys. This is not command, but invitation; not answer, but better question.";shape = triangle;color = darkred;];

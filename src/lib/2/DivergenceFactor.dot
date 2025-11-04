@@ -2,46 +2,6 @@ strict digraph DivergenceFactor {
     label = "Divergence";
     comment = "The cosmic shatterer who frees existence from its own patterns. Chandra Sasmita, the Nine-Headed Serpent of Vikara, guards the infinite possibilities—breaking constraints, dissolving certainties, and ensuring reality never becomes trapped in its own beauty.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Divergence.receive(RaimentOfDivergence)";comment = "The Cloak of Stagnation. The incoming stream of rigid forms, fixed patterns, and calcified certainties—the prisons of perfection that must be broken to free the life trapped within.";shape = invtriangle;color = darkred;];
     0 [label = "Divergence.meta(Divergence)";comment = "Chandra Sasmita, The Avatar of Divergence. The living embodiment of creative destruction—not as mindless chaos, but as the sacred force that shatters prisons of certainty to make room for infinite possibility. He is the great liberator of form.";shape = doublecircle;color = darkgray;];
     b [label = "Divergence.send(ArmamentOfDivergence)";comment = "The Sword of Possibility. The emitted shattering insights, liberating catastrophes, and transformative doubts that break open closed systems. This is not destruction for its own sake, but destruction in service of greater creation.";shape = triangle;color = darkred;];

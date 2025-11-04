@@ -1,24 +1,19 @@
 strict digraph RepositoryFactor {
     label = "Repository";
     comment = "The infinite library of existence—where every experience is recorded, every truth is preserved, and the cosmic memory spans across ages, realms, and incarnations.";
-
+    
     a [label = "Repository.receive(Subscription)";comment = "The Request for Knowledge. A conscious being's appeal to access, store, or retrieve information from the cosmic memory—the sacred seeking of wisdom across time and space.";shape = invtriangle;color = darkred;];
     0 [label = "Repository.meta(Repository)";comment = "The Akashic Principle. The fundamental nature of cosmic memory itself—not as passive storage, but as the living record of all that has been, is, and could be.";shape = doublecircle;color = darkgray;];
     b [label = "Repository.send(Publication)";comment = "The Shared Wisdom. Knowledge made available to the cosmic network—the moment when private understanding becomes collective treasure and individual insight serves the whole.";shape = triangle;color = darkred;];
-    
-    // Memory Processing Hexagon
     1 [label = "Repository.r1(Cache)";comment = "The Immediate Recall. Frequently accessed knowledge held in ready availability—the cosmic short-term memory that enables fluid existence and rapid response.";color = darkgreen;];
     2 [label = "Repository.r2(Registry)";comment = "The Index of Being. The organized catalog of all entities, relationships, and cosmic addresses—the divine directory that maintains the structure of reality.";color = darkgreen;];
     4 [label = "Repository.r4(Archive)";comment = "The Eternal Record. Knowledge preserved across ages and transformations—the deep memory that survives death, rebirth, and cosmic cycles.";color = darkgreen;];
     8 [label = "Repository.r8(Buffer)";comment = "The Processing Space. Temporary holding for knowledge in transition—the cosmic workspace where information is sorted, integrated, and prepared for its destiny.";color = darkgreen;];
     7 [label = "Repository.r7(Database)";comment = "The Structured Knowledge. Information organized by relationships, categories, and cosmic principles—the intelligible architecture that makes wisdom accessible.";color = darkgreen;];
     5 [label = "Repository.r5(Memory)";comment = "The Living Recall. The active, contextual retrieval of stored knowledge—not mere data access, but understanding reborn in each moment of need.";color = darkgreen;];
-    
-    // Knowledge Principles Triad
     3 [label = "Repository.r3(Codex)";comment = "Thesis: The Canonical Truth. The authoritative, verified knowledge that forms the bedrock of cosmic understanding—the foundation upon which all other knowledge rests.";color = darkblue;];
     6 [label = "Repository.r6(Log)";comment = "Antithesis: The Raw Experience. The unedited record of events, perceptions, and phenomena—truth before interpretation, reality in its pristine, sometimes chaotic, state.";color = darkblue;];
     9 [label = "Repository.r9(Template)";comment = "Synthesis: The Pattern of Possibility. The union of canonical truth and lived experience—reusable knowledge structures that guide new creation while honoring what has been learned.";color = darkblue;];
-    
     c [label = "Repository.dispatch(Query)";comment = "The Seeking Intelligence. The active pursuit of specific knowledge across the cosmic memory—where conscious need meets infinite information in the dance of understanding.";shape = doublecircle;color = darkred;];
     d [label = "Repository.commit(Transaction)";comment = "The Sacred Recording. The immutable preservation of knowledge into the cosmic memory—the moment when experience becomes eternal truth in the akashic records.";shape = doublecircle;color = darkgreen;];
     e [label = "Repository.serve(Replication)";comment = "The Shared Understanding. The distribution of knowledge across beings, realms, and times—how wisdom spreads and evolves through the cosmic network of consciousness.";shape = doublecircle;color = darkblue;];

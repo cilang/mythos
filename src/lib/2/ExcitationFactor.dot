@@ -2,61 +2,18 @@ strict digraph ExcitationFactor {
     label = "Excitation";
     comment = "The divine principle of pattern, dynamism, and cosmic activation—governed by Nda, the Goddess who creates through vibration and complexity.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Excitation.receive(RaimentOfExcitation)";comment = "Potential: Garment of activation—the divine attire that prepares potential for dynamic patterning and creative expression.";shape = invtriangle;color = darkred;];
     0 [label = "Excitation.meta(Nda)";comment = "Abstract: The Goddess of Pattern—divine consciousness that governs all complexity, vibration, and creative expression in creation.";shape = doublecircle;color = darkgray;];
     b [label = "Excitation.send(ArmamentOfExcitation)";comment = "Manifest: Weapon of change—the divine tools that break stagnation and initiate transformative processes across reality.";shape = triangle;color = darkred;];
-    
     1 [label = "Excitation.r1(PatternOfImpulse)";comment = "Initiation: Creative spark—the divine impulse that begins new patterns and sets complex processes in motion.";color = darkgreen;];
     2 [label = "Excitation.r2(PatternOfCatalyst)";comment = "Response: Transformative agent—the divine element that accelerates change without being consumed in the process.";color = darkgreen;];
     4 [label = "Excitation.r4(PatternOfResonance)";comment = "Integration: Harmonic vibration—the divine quality that allows patterns to amplify and synchronize across systems.";color = darkgreen;];
     8 [label = "Excitation.r8(PatternOfExpansion)";comment = "Reflection: Growth waveform—the divine pattern that governs the outward movement and increasing complexity of systems.";color = darkgreen;];
     7 [label = "Excitation.r7(PatternOfOscillation)";comment = "Consolidation: Rhythmic alternation—the divine back-and-forth that maintains dynamic balance in complex systems.";color = darkgreen;];
     5 [label = "Excitation.r5(PatternOfPropagation)";comment = "Propagation: Wave transmission—the divine mechanism that carries patterns across space and through different media.";color = darkgreen;];
-    
     3 [label = "Excitation.r3(CrestOfDynamism)";comment = "Thesis: Peak of activity—the divine achievement of perfect motion, where stillness becomes creative expression.";color = darkblue;];
     6 [label = "Excitation.r6(CrestOfAcceleration)";comment = "Antithesis: Summit of speeding—the divine principle that all rest contains potential motion, all stability contains latent change.";color = darkblue;];
     9 [label = "Excitation.r9(CrestOfVitality)";comment = "Synthesis: Apex of life—the divine manifestation where matter becomes spirit, actual becomes potential.";color = darkblue;];
-    
     c [label = "Excitation.dispatch(BodyOfExcitation)";comment = "Why-Who: Divine activation—Nda's dynamic manifestation and the artists who channel her creative power.";shape = doublecircle;color = darkred;];
     d [label = "Excitation.commit(SoulOfExcitation)";comment = "What-How: Sacred expression—the arts, innovations, and inspirations that generate cosmic complexity and beauty.";shape = doublecircle;color = darkgreen;];
     e [label = "Excitation.serve(GraceOfExcitation)";comment = "When-Where: Creative moments—the instants and spaces where dynamism manifests as divine inspiration and novel emergence.";shape = doublecircle;color = darkblue;];

@@ -2,46 +2,6 @@ strict digraph TactileFactor {
     label = "Tactile";
     comment = "The domain of substance and material interaction. Governs the qualia of physical presence, resistance, and the felt experience of matter.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Tactile.receive(PotentialSubstance)";comment = "Potential: The unformed potential for all materiality—the primordial 'clay' awaiting definition and resistance.";shape = invtriangle;color = darkred;];
     0 [label = "Tactile.meta(Tactility)";comment = "Abstract: The invariant essence of 'touchability' itself—the principle of substantial presence and interaction.";shape = doublecircle;color = darkgray;];
     b [label = "Tactile.send(ManifestSubstance)";comment = "Manifest: The actualized, specific material presence with defined properties and interactive potential.";shape = triangle;color = darkred;];

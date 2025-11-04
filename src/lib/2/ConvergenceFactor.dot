@@ -2,46 +2,6 @@ strict digraph ConvergenceFactor {
     label = "Convergence";
     comment = "The cosmic loom where discord finds its melody, where scattered fragments remember their wholeness. Kirana Larasati weaves the great tapestry of existence, transforming chaos into symphony through the sacred art of unity.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Convergence.receive(RaimentOfConvergence)";comment = "The Garden of Potential. The incoming stream of fragments, discordant notes, and lonely elements seeking connection. These are the scattered seeds waiting to be woven into the great tapestry of belonging.";shape = invtriangle;color = darkred;];
     0 [label = "Convergence.meta(Convergence)";comment = "Kirana Larasati, The Nine-Tailed Aves of Vikara. The living embodiment of cosmic harmony—not as forced uniformity, but as the beautiful dance of differences finding their perfect rhythm together. She is the great composer of reality's symphony.";shape = doublecircle;color = darkgray;];
     b [label = "Convergence.send(ArmamentOfConvergence)";comment = "The Symphony of Connection. The emitted harmonies, resonant bonds, and unified patterns that transform isolation into community. This is unity made manifest—not as domination, but as the beautiful art of togetherness.";shape = triangle;color = darkred;];

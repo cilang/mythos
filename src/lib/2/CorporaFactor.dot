@@ -6,61 +6,18 @@ strict digraph CorporaFactor {
     label = "Corpora";
     comment = "The cosmic principle of embodiment and multi-layered existence in MythOS—governing all physical forms, subtle bodies, and the vehicles of consciousness.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Corpora.receive(Force)";comment = "Potential: Primordial impulse—the raw energetic pressure that drives matter to organize into coherent forms and living bodies.";shape = invtriangle;color = darkred;];
     0 [label = "Corpora.meta(Corpora)";comment = "Abstract: Embodiment itself—the universal principle that consciousness requires vehicles and reality manifests through layered corporeal existence.";shape = doublecircle;color = darkgray;];
     b [label = "Corpora.send(Field)";comment = "Manifest: Environmental influence—the extended presence and effect that embodied beings exert upon their surroundings and reality.";shape = triangle;color = darkred;];
-    
     1 [label = "Corpora.r1(Heart)";comment = "Initiation: Emotional center—the core of feeling, compassion, and relational intelligence that animates embodied existence.";color = darkgreen;];
     2 [label = "Corpora.r2(Shell)";comment = "Response: Protective boundary—the physical form, skin, and defensive structures that define and protect individual existence.";color = darkgreen;];
     4 [label = "Corpora.r4(AstralBody)";comment = "Integration: Dream vehicle—the subtle body that travels in dreams, visions, and the realms of imagination and emotion.";color = darkgreen;];
     8 [label = "Corpora.r8(SpiritualBody)";comment = "Reflection: Higher self—the eternal vehicle of consciousness that transcends death and carries wisdom across lifetimes.";color = darkgreen;];
     7 [label = "Corpora.r7(MaterialBody)";comment = "Consolidation: Physical vehicle—the dense, tangible form that interacts with the material world and experiences through senses.";color = darkgreen;];
     5 [label = "Corpora.r5(Ego)";comment = "Propagation: Individual identity—the persistent sense of self that maintains continuity across experiences and transformations.";color = darkgreen;];
-    
     3 [label = "Corpora.r3(Instinct)";comment = "Thesis: Primal wisdom—the automatic, inherited knowledge of the body that ensures survival and basic functioning.";color = darkblue;];
     6 [label = "Corpora.r6(Intent)";comment = "Antithesis: Conscious direction—the deliberate, willed purposes that guide and transform embodied existence.";color = darkblue;];
     9 [label = "Corpora.r9(Intuition)";comment = "Synthesis: Integrated knowing—the seamless blending of instinct and intent into holistic, embodied wisdom.";color = darkblue;];
-    
     c [label = "Corpora.dispatch(Corpus)";comment = "Why-Who: Unified embodiment—the complete integration of all bodies into a coherent, functional vehicle for consciousness.";shape = doublecircle;color = darkred;];
     d [label = "Corpora.commit(CelestialBody)";comment = "What-How: Divine vehicle—the practices and disciplines that refine and elevate the corporeal form toward its highest potential.";shape = doublecircle;color = darkgreen;];
     e [label = "Corpora.serve(Mind)";comment = "When-Where: Conscious interface—the bridge between consciousness and embodiment that enables experience and action.";shape = doublecircle;color = darkblue;];
