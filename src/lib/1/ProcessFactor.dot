@@ -1,9 +1,9 @@
-strict digraph MythOSProcessFactor {
-    label = "MythOS Process";
+strict digraph ProcessFactor {
+    label = "Process";
     comment = "{{description}}";
     
     a [label = "Process.receive(Event)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    0 [label = "Process.meta(LURD)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    0 [label = "Process.meta({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgray;];
     b [label = "Process.send(Samsara)";comment = "{{description}}";shape = triangle;color = darkred;];
     1 [label = "Process.r1(Truth)";comment = "{{description}}";color = darkgreen;];
     2 [label = "Process.r2(Convergence)";comment = "{{description}}";color = darkgreen;];
@@ -14,8 +14,8 @@ strict digraph MythOSProcessFactor {
     3 [label = "Process.r3(Capability)";comment = "{{description}}";color = darkblue;];
     6 [label = "Process.r6(Repository)";comment = "{{description}}";color = darkblue;];
     9 [label = "Process.r9(Corpora)";comment = "{{description}}";color = darkblue;];
-    c [label = "Process.dispatch(Directive)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    d [label = "Process.commit(Authority)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    c [label = "Process.dispatch({{title}})";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Process.commit({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
     e [label = "Process.serve(Haoma)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "Process.exec(Origin)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    f [label = "Process.exec({{title}})";comment = "{{description}}";shape = doublecircle;color = lightgray;];
 }

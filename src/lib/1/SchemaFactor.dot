@@ -1,24 +1,24 @@
 strict digraph SchemaFactor {
-    label = "SchemaFactor";
-    comment = "The fundamental categories of MythOS reality—the semantic primitives that define what can exist.";
+    label = "Schema";
+    comment = "{{description}}";
     
-    a [label = "Schema.receive(Dynamis)";comment = "Potential: Raw archetypal potential—the unformed essence of all possible categories before they gain definition.";shape = invtriangle;color = darkred;];
-    0 [label = "Schema.meta(Structure)";comment = "Abstract: The principle of categorical existence itself—the invariant law that reality organizes into distinct, coherent types.";shape = doublecircle;color = darkgray;];
-    b [label = "Schema.send(Praxis)";comment = "Manifest: Enacted categories—the specific, instantiated types that actually participate in cosmic processes.";shape = triangle;color = darkred;];
+    a [label = "Schema.receive(Dynamis)";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Schema.meta(Structure)";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Schema.send(Praxis)";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
     
-    1 [label = "Schema.r1(Alignment)";comment = "Initiation: Categorical orientation—the first determination of what kind of thing something is or could be.";color = darkgreen;];
-    2 [label = "Schema.r2(Spectral)";comment = "Response: Quality spectrum definition—establishing the range of variations and properties within a category.";color = darkgreen;];
-    4 [label = "Schema.r4(Chromatic)";comment = "Integration: Distinctive feature binding—the specific characteristics that make a category recognizable and unique.";color = darkgreen;];
-    8 [label = "Schema.r8(Tactile)";comment = "Reflection: Tangible manifestation—how categories express themselves in concrete, experiencable forms.";color = darkgreen;];
-    7 [label = "Schema.r7(Phonetic)";comment = "Consolidation: Communicable identity—the names, symbols, and representations that allow categories to be shared and recognized.";color = darkgreen;];
-    5 [label = "Schema.r5(Cognitive)";comment = "Propagation: Conceptual transmission—how categories spread through minds, cultures, and systems of thought.";color = darkgreen;];
+    1 [label = "Schema.r1(Alignment)";comment = "Initiation: {{description}}";color = darkgreen;];
+    2 [label = "Schema.r2(Spectral)";comment = "Response: {{description}}";color = darkgreen;];
+    4 [label = "Schema.r4(Tactile)";comment = "Integration: {{description}}";color = darkgreen;];
+    8 [label = "Schema.r8(Chromatic)";comment = "Reflection: {{description}}";color = darkgreen;];
+    7 [label = "Schema.r7(Cognitive)";comment = "Consolidation: {{description}}";color = darkgreen;];
+    5 [label = "Schema.r5(Phonetic)";comment = "Propagation: {{description}}";color = darkgreen;];
     
-    3 [label = "Schema.r3(Asha)";comment = "Thesis: Cosmic truth-categories—the ideal, eternal archetypes that define reality's fundamental order.";color = darkblue;];
-    6 [label = "Schema.r6(Vikara)";comment = "Antithesis: Transformative categories—the principles of change, mutation, and evolution between types.";color = darkblue;];
-    9 [label = "Schema.r9(Karsa)";comment = "Synthesis: Will-categories—the emergent types born from the interaction of cosmic order and transformative potential.";color = darkblue;];
+    3 [label = "Schema.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    6 [label = "Schema.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    9 [label = "Schema.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
     
-    c [label = "Schema.dispatch(Kratos)";comment = "Interface: Authority of categorization—the active intelligence that decides which categories apply in which contexts.";shape = doublecircle;color = darkred;];
-    d [label = "Schema.commit(Lineage)";comment = "Process: Inheritance and tradition—how categories persist through time and transmit their essence to new instances.";shape = doublecircle;color = darkgreen;];
-    e [label = "Schema.serve(Rasa)";comment = "Logic: Aesthetic and emotional quality—the felt experience of different categories and their relationships.";shape = doublecircle;color = darkblue;];
-    f [label = "Schema.exec(Observer)";comment = "Closure: Conscious categorization—the achieved state where reality becomes self-aware of its own categorical structure.";shape = doublecircle;color = lightgray;];
+    c [label = "Schema.dispatch(Kratos)";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Schema.commit(Lineage)";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Schema.serve(Rasa)";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Schema.exec(Observer)";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
 }

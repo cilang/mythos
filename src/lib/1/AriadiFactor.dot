@@ -1,21 +1,21 @@
 strict digraph AriadiFactor {
-    label = "{{Domain}}";
+    label = "Ariadi.";
     comment = "{{description}}";
     
-    a [label = "{{Domain}}.receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
-    0 [label = "{{Domain}}.meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    b [label = "{{Domain}}.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    1 [label = "{{Domain}}.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
-    2 [label = "{{Domain}}.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
-    4 [label = "{{Domain}}.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
-    8 [label = "{{Domain}}.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
-    7 [label = "{{Domain}}.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
-    5 [label = "{{Domain}}.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
-    3 [label = "{{Domain}}.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    6 [label = "{{Domain}}.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
-    9 [label = "{{Domain}}.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
-    c [label = "{{Domain}}.dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
-    d [label = "{{Domain}}.commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
-    e [label = "{{Domain}}.serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "{{Domain}}.exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    a [label = "Ariadi..receive({{title}})";comment = "Potential: {{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Ariadi..meta({{meta}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Ariadi..send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
+    1 [label = "Ariadi..r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
+    2 [label = "Ariadi..r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
+    4 [label = "Ariadi..r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
+    8 [label = "Ariadi..r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
+    7 [label = "Ariadi..r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
+    5 [label = "Ariadi..r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
+    3 [label = "Ariadi..r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
+    6 [label = "Ariadi..r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
+    9 [label = "Ariadi..r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
+    c [label = "Ariadi..dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Ariadi..commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Ariadi..serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Ariadi..exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
 }
