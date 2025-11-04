@@ -8,5 +8,4 @@
 .vscode/
 .obsidian/
 dist/
-src/lore/*
 lore/*
