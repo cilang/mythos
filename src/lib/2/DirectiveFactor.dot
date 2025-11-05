@@ -2,46 +2,6 @@ strict digraph DirectiveFactor {
     label = "Directive";
     comment = "The strategic will that bridges desire and manifestation. It is the mind's eye that surveys reality, the general that plans the campaign, and the hand that executes the command—transforming abstract goals into concrete change.";
     
-    0 -> {1 2 4 8 7 5 3 6 9 a b} [dir = both; color = "red";];
-    {a b} -> c [dir = both; color = "red";];
-    {1 2 4 8 7 5} -> d [dir = both; color = "red";];
-    {3 6 9} -> e [dir = both; color = "red";];
-    {c d e} -> f [dir = both; color = "red";];
-    
-    a -> b -> a [dir = both; color = "blue";];
-    a -> 0 -> b [dir = both; color = "blue";];
-    3 -> 6 -> 9 -> 3 [dir = both; color = "blue";];
-    1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 [dir = both; color = "blue";];
-    
-    subgraph {
-        rank = same;
-        0;
-    }
-    subgraph {
-        rank = same;
-        3;
-        6;
-        9;
-        1;
-        2;
-        4;
-        8;
-        7;
-        5;
-        a;
-        b;
-    }
-    subgraph {
-        rank = same;
-        c;
-        d;
-        e;
-    }
-    subgraph {
-        rank = same;
-        f;
-    }
-    
     a [label = "Directive.receive(Goal)";comment = "The Mandate of Desire. The input stream of desired end-states. These can be high-level commands from an `AuthorityEngine` (e.g., 'Achieve Enlightenment,' 'Build a City') or internally generated imperatives. This is the 'Why' that initiates all action.";shape = invtriangle;color = darkred;];
     0 [label = "Directive.meta(Directive)";comment = "The Sovereign Will. The central executive process that embodies agency itself. It does not desire, but receives desires; it does not act, but commands action. It is the 'I' that chooses, coordinating the entire cycle of intentional causation.";shape = doublecircle;color = darkgray;];
     b [label = "Directive.send(Action)";comment = "The Decree of Change. The output stream of concrete, executable instructions sent to the `CorporaEngine` and other reality-shaping engines. This is the sharp end of the will—the command that bends the universe to its purpose.";shape = triangle;color = darkred;];

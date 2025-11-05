@@ -2,25 +2,18 @@ strict digraph CilangFactor {
     label = "Cilang Factor: Primitive Entities Definition";
     comment = "Child Factor of MythOS.r4(Cilang) defining the 16 manipulable Cilang nodes and their ternary states.";
     
-    // Ariadi - Core Elements
     a [label = "Cilang.receive(Semantics)";comment = "Potential: Receives the semantic payload (labels and meaning).";shape = invtriangle;color = darkred;];
     0 [label = "Cilang.meta(Lexicon)";comment = "Abstract: The fundamental dictionary mapping names to roles.";shape = doublecircle;color = darkgray;];
     b [label = "Cilang.send(StateVector)";comment = "Manifest: Outputs the current Cilang ternary State Vector.";shape = triangle;color = darkred;];
-    
-    // Process Hexagon (Definition Cascade)
     1 [label = "Cilang.r1(A-U-C)";comment = "Initiation: Distinguishing the 3 Core Protocol Primitives (Ariadi, Usepong, Cilang).";color = darkgreen;];
     2 [label = "Cilang.r2(Hex-Triad)";comment = "Response: Separating the Process Hexagon from the Dialectical Triad.";color = darkgreen;];
     4 [label = "Cilang.r4(Lock-3)";comment = "Integration: Explicitly accounting for the 3 Locked Nodes (x,y,z spatial coordinates).";color = darkgreen;];
     8 [label = "Cilang.r8(ID-Code)";comment = "Reflection: Assigning the definitive Identity Codes (0, 1, ..., f).";color = darkgreen;];
     7 [label = "Cilang.r7(Load)";comment = "Consolidation: Loading the semantic labels (Asha, Kratos, Lineage, etc.).";color = darkgreen;];
     5 [label = "Cilang.r5(Signature)";comment = "Propagation: Documenting the Factor's required activation subset (e.g., {a, 1, 3}).";color = darkgreen;];
-    
-    // Dialectical Triad (Logic of State)
     3 [label = "Cilang.r3(Actualized+1)";comment = "Thesis: Elements in the Stable/Final State (+1).";color = darkblue;];
     6 [label = "Cilang.r6(Potential-1)";comment = "Antithesis: Elements in the Ground/Inactive State (-1).";color = darkblue;];
     9 [label = "Cilang.r9(Processing0)";comment = "Synthesis: Elements in the Active/Standby State (0), mediating the tension.";color = darkblue;];
-    
-    // Borromean Closure Elements
     c [label = "Cilang.dispatch(Trigger)";comment = "Interface: The input event that forces a state change.";shape = doublecircle;color = darkred;];
     d [label = "Cilang.commit(Ontology)";comment = "Process: The committed Operational Ontology for the Factor.";shape = doublecircle;color = darkgreen;];
     e [label = "Cilang.serve(BalancedTernary)";comment = "Logic: The Ternary Logic itself, defining transition rules.";shape = doublecircle;color = darkblue;];

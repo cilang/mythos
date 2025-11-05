@@ -2,25 +2,18 @@ strict digraph IntentionFactor {
     label = "Intention Factor: The Genesis of Purpose";
     comment = "Child Factor of MythOS.receive(Intention) governing the formalization of Will into an executable potential.";
     
-    // Core Elements (The Will's Focus)
     a [label = "Intention.receive(Will)";comment = "Potential: Raw, undirected Will or fundamental impulse.";shape = invtriangle;color = darkred;];
     0 [label = "Intention.meta(Desire)";comment = "Abstract: The core, underlying Desire or motive.";shape = doublecircle;color = darkgray;];
     b [label = "Intention.send(Target)";comment = "Manifest: The focused Target or objective state to be achieved.";shape = triangle;color = darkred;];
-    
-    // Process Hexagon (Formalization Cascade)
     1 [label = "Intention.r1(Name)";comment = "Initiation: The act of giving the Intention a formal Name or definition.";color = darkgreen;];
     2 [label = "Intention.r2(Scope)";comment = "Response: Defining the Scope (Ariadi Boundary) of the intention.";color = darkgreen;];
     4 [label = "Intention.r4(Values)";comment = "Integration: Integrating the Values or constraints to be upheld.";color = darkgreen;];
     8 [label = "Intention.r8(Review)";comment = "Reflection: Consulting historical data or past results (Review).";color = darkgreen;];
     7 [label = "Intention.r7(Commitment)";comment = "Consolidation: The full Commitment of resources and agency.";color = darkgreen;];
     5 [label = "Intention.r5(Signal)";comment = "Propagation: The final Signal broadcast to the MythOSFactor.";color = darkgreen;];
-    
-    // Dialectical Triad (Logic of Motivation)
     3 [label = "Intention.r3(Purpose)";comment = "Thesis: The Purpose or driving Why behind the intention.";color = darkblue;];
     6 [label = "Intention.r6(Risk)";comment = "Antithesis: The Risk or necessary transformation involved.";color = darkblue;];
     9 [label = "Intention.r9(Meaning)";comment = "Synthesis: The ultimate Meaning derived from balancing purpose and risk.";color = darkblue;];
-    
-    // Borromean Closure Elements
     c [label = "Intention.dispatch(Vow)";comment = "Interface: The formal Vow that locks the intention onto a path.";shape = doublecircle;color = darkred;];
     d [label = "Intention.commit(Trajectory)";comment = "Process: The committed Trajectory—the planned path of manifestation.";shape = doublecircle;color = darkgreen;];
     e [label = "Intention.serve(Aspiration)";comment = "Logic: The Aspiration that aligns the intention with the highest logic.";shape = doublecircle;color = darkblue;];

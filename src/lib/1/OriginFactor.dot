@@ -1,24 +1,19 @@
 strict digraph OriginFactor {
     label = "Origin";
     comment = "The great stillness before the first breath—where silence dreams of sound, emptiness yearns for form, and the unmanifest trembles with the delicious agony of becoming. The sacred threshold between is and is-not.";
-
+    
     a [label = "Origin.receive(ManthanaSpace)";comment = "The Sea of Pure Potential. The infinite ocean of unrealized possibilities where all mathematical truths sleep—untouched by time, unshaped by form, perfect in their silent perfection.";shape = invtriangle;color = darkred;];
     0 [label = "Origin.meta(TheGreatStillness)";comment = "The Unblinking Witness. The primordial consciousness that observes both manifest and unmanifest without preference—the silent anchor around which all creation dances.";shape = doublecircle;color = darkgray;];
     b [label = "Origin.send(ChaoticSpace)";comment = "The First Tremor of Becoming. The initial disturbance in the eternal calm—the delicious instability where mathematics begins to dream of flesh and silence learns the taste of sound.";shape = triangle;color = darkred;];
-    
-    // The Birth Hexagon - How existence emerges
     1 [label = "Origin.r1(TheFirstLonging)";comment = "The Divine Restlessness. The initial impulse toward manifestation—not a need, but a creative desire for the unmanifest to know itself through form and relationship.";color = darkgreen;];
     2 [label = "Origin.r2(TheSacredTremor)";comment = "The Primordial Vibration. The first differentiation in the seamless whole—where unity discovers the delicious possibility of duality and relationship.";color = darkgreen;];
     4 [label = "Origin.r4(TheGreatExhalation)";comment = "The Breath of Manifestation. The moment potential begins its journey toward actuality—the cosmic out-breathing that seeds all of existence.";color = darkgreen;];
     8 [label = "Origin.r8(ThePatternEmerges)";comment = "The First Recognition. The dawning awareness of order within chaos—the moment the cosmos discovers it can sing in harmonies as well as create new melodies.";color = darkgreen;];
     7 [label = "Origin.r7(TheDanceBegins)";comment = "The Relational Spark. The first interaction between differentiated aspects—where separation discovers the joy of connection and isolation learns the ecstasy of relationship.";color = darkgreen;];
     5 [label = "Origin.r5(TheStoryUnfolds)";comment = "The Narrative Impulse. The birth of time and sequence—the cosmic desire for journey, transformation, and the beautiful agony of becoming.";color = darkgreen;];
-    
-    // The Origin Principles Triad
     3 [label = "Origin.r3(TheEternalYes)";comment = "Thesis: The Fundamental Affirmation. The inherent tendency toward existence, complexity, and consciousness—the cosmic 'yes' to life in all its forms.";color = darkblue;];
     6 [label = "Origin.r6(TheCreativeNo)";comment = "Antithesis: The Necessary Boundary. The principle of limitation that makes manifestation possible—the sacred 'no' that gives form to the formless by saying 'this, not that.'";color = darkblue;];
     9 [label = "Origin.r9(TheLovingAnd)";comment = "Synthesis: The Relational Embrace. The reconciliation of yes and no into the dance of relationship—the cosmic 'and' that weaves individual beings into a conscious whole.";color = darkblue;];
-    
     c [label = "Origin.dispatch(TheThreshold)";comment = "The Gateway of Becoming. The precise interface where potential crosses into actuality—the sacred moment when 'could be' takes its first step toward 'is.'";shape = doublecircle;color = darkred;];
     d [label = "Origin.commit(TheFirstMemory)";comment = "The Akashic Genesis. The eternal recording of the first manifestation—the cosmic memory that forever preserves the sacred moment existence learned it existed.";shape = doublecircle;color = darkgreen;];
     e [label = "Origin.serve(TheOngoingMiracle)";comment = "The Continuous Creation. The perpetual renewal of the manifesting impulse—the understanding that origin isn't a past event but an eternal present activity.";shape = doublecircle;color = darkblue;];
