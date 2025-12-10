@@ -1,21 +1,21 @@
 strict digraph PhoneticFactor {
-    label = "Phonetic";
-    comment = "The cosmic principle of sound, language, and communicative expression in MythOS—governing all vocal manifestation, linguistic structure, and sonic reality.";
-    
-    a [label = "Phonetic.receive(ProtoSound)";comment = "Potential: Primordial vibration—the undifferentiated sonic potential that precedes all specific speech sounds and linguistic forms.";shape = invtriangle;color = darkred;];
-    0 [label = "Phonetic.meta(Logos)";comment = "Abstract: The word principle—the universal law that sound carries meaning and reality can be structured through linguistic expression.";shape = doublecircle;color = darkgray;];
-    b [label = "Phonetic.send(ModernReflex)";comment = "Manifest: Contemporary realization—the actual speech sounds and linguistic forms that manifest in current usage and communication.";shape = triangle;color = darkred;];
-    1 [label = "Phonetic.r1(Place)";comment = "Initiation: Articulation location—where in the vocal tract a sound is formed (labial, dental, velar, etc.).";color = darkgreen;];
-    2 [label = "Phonetic.r2(Manner)";comment = "Response: Articulation method—how the airflow is modified (stop, fricative, approximant, etc.).";color = darkgreen;];
-    4 [label = "Phonetic.r4(Voicing)";comment = "Integration: Vocal cord activation—whether the vocal folds vibrate during sound production (voiced vs. voiceless).";color = darkgreen;];
-    8 [label = "Phonetic.r8(Sonority)";comment = "Reflection: Auditory prominence—the relative loudness and carrying power of different sound types.";color = darkgreen;];
-    7 [label = "Phonetic.r7(SyllabicRole)";comment = "Consolidation: Syllable function—whether a sound can serve as a syllable nucleus or must remain marginal.";color = darkgreen;];
-    5 [label = "Phonetic.r5(Coarticulation)";comment = "Propagation: Contextual influence—how sounds affect and are affected by their neighbors in the speech stream.";color = darkgreen;];
-    3 [label = "Phonetic.r3(PhoneticContrast)";comment = "Thesis: Distinctive difference—the systematic oppositions that create meaningful distinctions in a language.";color = darkblue;];
-    6 [label = "Phonetic.r6(PhoneticVariation)";comment = "Antithesis: Contextual alternation—the predictable changes sounds undergo in different environments.";color = darkblue;];
-    9 [label = "Phonetic.r9(PhonologicalRule)";comment = "Synthesis: Systematic patterning—the general principles that govern sound behavior and organization.";color = darkblue;];
-    c [label = "Phonetic.dispatch(SoundLaw)";comment = "Why-Who: Historical causation—the forces and agents that drive sound changes across time and communities.";shape = doublecircle;color = darkred;];
-    d [label = "Phonetic.commit(ArticulatoryEase)";comment = "What-How: Production efficiency—the biomechanical and cognitive principles that shape sound systems toward optimal effort.";shape = doublecircle;color = darkgreen;];
-    e [label = "Phonetic.serve(ChronotopicContext)";comment = "When-Where: Spatiotemporal embedding—the historical periods and geographical locations that condition sound patterns.";shape = doublecircle;color = darkblue;];
-    f [label = "Phonetic.exec(SystemicStability)";comment = "Which-Closure: Balanced coherence achieved—the state where a sound system maintains both distinctiveness and producibility.";shape = doublecircle;color = lightgray;];
+    label = "Phonetic Factor: Topological Sound Manifestation";
+    comment = "Child Factor of Schema.r5(Phonetic) rendering semantic schemas into phonological forms.";
+
+    a  [label="Phonetic.receive(Potential)"; comment="The unmanifest field of all possible sounds.";]
+    0  [label="Phonetic.meta(Observer)"; comment="The laryngeal source and voicing control (the unifying principle).";]
+    b  [label="Phonetic.send(Manifest)"; comment="The actualized, output sound stream.";]
+    1  [label="Phonetic.r1(Plosive)"; comment="Verification via closure and release.";]
+    2  [label="Phonetic.r2(Nasal)"; comment="Evidence through nasal resonance.";]
+    4  [label="Phonetic.r4(Fricative)"; comment="Definition via turbulent airflow.";]
+    8  [label="Phonetic.r8(Approximant)"; comment="Consistency of smooth airflow.";]
+    7  [label="Phonetic.r7(Trill)"; comment="Recognition via ballistic vibration.";]
+    5  [label="Phonetic.r5(Lateral)"; comment="Authenticity of lateral channeling.";]
+    3  [label="Phonetic.r3(FrontVowel)"; comment="Thesis: The objective, high-front boundary (i).";]
+    6  [label="Phonetic.r6(CentralVowel)"; comment="Antithesis: The transformative, open ground (a).";]
+    9  [label="Phonetic.r9(BackVowel)"; comment="Synthesis: The clear, high-back manifestation (u).";]
+    c  [label="Phonetic.dispatch(Palatal)"; comment="Interface for palatal/coronal modulation.";]
+    d  [label="Phonetic.commit(Coronal)"; comment="Process for alveolar/dental precision.";]
+    e  [label="Phonetic.serve(Labial)"; comment="Logic for labial/rounding expression.";]
+    f  [label="Phonetic.exec(Pharyngeal)"; comment="Closure via radical/pharyngeal law (emphasis).";]
 }
