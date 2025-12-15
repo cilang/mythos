@@ -1,0 +1,21 @@
+strict digraph SchematicFactor {
+    label = "MythOS/Schematic";
+    comment = "{{description}}";
+    
+    a [label = "Schematic.receive(Dynamis)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Schematic.meta(Haoma)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Schematic.send(Praxis)";comment = "{{description}}";shape = triangle;color = darkred;];
+    1 [label = "Schematic.r1(Alignment)";comment = "{{description}}";color = darkgreen;];
+    2 [label = "Schematic.r2(Spectral)";comment = "{{description}}";color = darkgreen;];
+    4 [label = "Schematic.r4(Tactile)";comment = "{{description}}";color = darkgreen;];
+    8 [label = "Schematic.r8(Chromatic)";comment = "{{description}}";color = darkgreen;];
+    7 [label = "Schematic.r7(Cognitive)";comment = "{{description}}";color = darkgreen;];
+    5 [label = "Schematic.r5(Phonetic)";comment = "{{description}}";color = darkgreen;];
+    3 [label = "Schematic.r3(Authority)";comment = "{{description}}";color = darkblue;];
+    6 [label = "Schematic.r6(Capability)";comment = "{{description}}";color = darkblue;];
+    9 [label = "Schematic.r9(Directive)";comment = "{{description}}";color = darkblue;];
+    c [label = "Schematic.dispatch(Event)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Schematic.commit(Samsara)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Schematic.serve(Corpora)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Schematic.exec(Rasa)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+}

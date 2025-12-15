@@ -1,0 +1,21 @@
+strict digraph LURDFactor {
+    label = "MythOS/LURD";
+    comment = "{{description}}";
+    
+    a [label = "LURD.receive(DirectiveDescriptor)";comment = "LURD-A. Potential: Raw, unlocalized command initiating the recursive call.";shape = invtriangle;color = darkred;];
+    0 [label = "LURD.meta(MetaDescriptor)";comment = "LURD-0. Abstract: The code for self-similarity and Brunnian anchoring.";shape = doublecircle;color = darkgray;];
+    b [label = "LURD.send(OriginDescriptor)";comment = "LURD-B. Manifest: The finalized Origin or source data for the recursive result.";shape = triangle;color = darkred;];
+    1 [label = "LURD.r1(ManifoldDescriptor)";comment = "LURD-1. Initiation: Defining the highest-level, multi-dimensional Manifold space.";color = darkgreen;];
+    2 [label = "LURD.r2(CosmicDescriptor)";comment = "LURD-2. Response: Defining the Cosmic scale constraints within the manifold.";color = darkgreen;];
+    4 [label = "LURD.r4(StellarDescriptor)";comment = "LURD-4. Integration: Pinpointing the Stellar cluster or large-scale structure (Fixation).";color = darkgreen;];
+    8 [label = "LURD.r8(PlanarDescriptor)";comment = "LURD-8. Reflection: Defining the local Planar or System layer (Self-Observation).";color = darkgreen;];
+    7 [label = "LURD.r7(CradleDescriptor)";comment = "LURD-7. Consolidation: Defining the specific Cradle/Womb of manifestation (the local w-layer).";color = darkgreen;];
+    5 [label = "LURD.r5(MythogenicDescriptor)";comment = "LURD-5. Propagation: The Mythogenic template for narrative/meaning propagation.";color = darkgreen;];
+    3 [label = "LURD.r3(MaterialDescriptor)";comment = "LURD-3. Thesis: The Descriptor for tangible, observable Matter (Form).";color = darkblue;];
+    6 [label = "LURD.r6(SpiritualDescriptor)";comment = "LURD-6. Antithesis: The Descriptor for intangible, unobservable Spirit (Essence).";color = darkblue;];
+    9 [label = "LURD.r9(InformationDescriptor)";comment = "LURD-9. Synthesis: The Information/Pattern linking Matter and Spirit.";color = darkblue;];
+    c [label = "LURD.dispatch(InterfaceDescriptor)";comment = "LURD-C. Interface: The precise boundary condition that triggers localization (Locus).";shape = doublecircle;color = darkred;];
+    d [label = "LURD.commit(DigitalDescriptor)";comment = "LURD-D. Process: The committed Digital Descriptor (computationally encoded state).";shape = doublecircle;color = darkgreen;];
+    e [label = "LURD.serve(ManifestDescriptor)";comment = "LURD-E. Logic: The Logic Authority defining how the Information Descriptor is Manifest.";shape = doublecircle;color = darkblue;];
+    f [label = "LURD.exec(EntityDescriptor)";comment = "LURD-F. Closure: The fully resolved Entity Descriptor, confirming the recursion loop's closure.";shape = doublecircle;color = lightgray;];
+}

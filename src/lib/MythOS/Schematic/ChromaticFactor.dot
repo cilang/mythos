@@ -1,0 +1,21 @@
+strict digraph ChromaticFactor {
+    label = "MythOS/Schematic/Chromatic";
+    comment = "The qualitative dimension of reality. Governs the perception, emission, and interaction of qualities through the logic of hue, saturation, and value.";
+    
+    a [label = "Chromatic.receive(Golden)";comment = "Potential: The source of pure, unmodulated value and luminance—the potential for all brilliance and warmth.";shape = invtriangle;color = darkred;];
+    0 [label = "Chromatic.meta(Chroma)";comment = "Abstract: The invariant essence of chromaticity itself—the principle of qualitative difference.";shape = doublecircle;color = darkgray;];
+    b [label = "Chromatic.send(Silver)";comment = "Manifest: The reflected, modulated, and contextualized quality—the actual perceived color in a specific environment.";shape = triangle;color = darkred;];
+    1 [label = "Chromatic.r1(Hue)";comment = "Initiation: The fundamental spectral identity—the pure wavelength or primary quality that defines a color's core nature.";color = darkgreen;];
+    2 [label = "Chromatic.r2(Saturation)";comment = "Response: The intensity or purity of the Hue—its vibrancy versus dilution with achromatic light.";color = darkgreen;];
+    4 [label = "Chromatic.r4(Value)";comment = "Integration: The overall lightness or brightness—the luminous intensity of the color.";color = darkgreen;];
+    8 [label = "Chromatic.r8(Complement)";comment = "Reflection: The opposing hue that, when mixed, produces achromatic gray—the necessary contrast for definition.";color = darkgreen;];
+    7 [label = "Chromatic.r7(Harmony)";comment = "Consolidation: The pleasing or stable relationship between multiple hues, based on their geometric arrangement on the color wheel.";color = darkgreen;];
+    5 [label = "Chromatic.r5(Gamut)";comment = "Propagation: The reproducible range of colors available in a given context (a device, a medium, a perception).";color = darkgreen;];
+    3 [label = "Chromatic.r3(Achromatic)";comment = "Thesis: The realm of pure value and form—zero hue, where structure is revealed without chromatic distraction.";color = darkblue;];
+    6 [label = "Chromatic.r6(Polychromatic)";comment = "Antithesis: The chaotic potential of the full spectrum—maximum hue diversity before organization.";color = darkblue;];
+    9 [label = "Chromatic.r9(Monochromatic)";comment = "Synthesis: The ordered expression of a single hue domain—coherent qualitative identity across variations in saturation and value.";color = darkblue;];
+    c [label = "Chromatic.dispatch(Perception)";comment = "Why-Who: The act of qualitative discernment—the biological, psychological, or instrumental process that interprets wavelengths as color.";shape = doublecircle;color = darkred;];
+    d [label = "Chromatic.commit(HSB_HSV)";comment = "What-How: The unified color model—the cylindrical-coordinate representation of Hue, Saturation, and Value/Brightness as the method for defining any color.";shape = doublecircle;color = darkgreen;];
+    e [label = "Chromatic.serve(Illumination)";comment = "When-Where: The contextual lighting and environment that determines how a color is rendered and perceived.";shape = doublecircle;color = darkblue;];
+    f [label = "Chromatic.exec(Qualia)";comment = "Which-Closure: The final, subjective experience of a specific color—the 'redness of red' as a realized, ineffable quality.";shape = doublecircle;color = lightgray;];
+}

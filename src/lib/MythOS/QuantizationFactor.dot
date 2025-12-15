@@ -1,0 +1,21 @@
+strict digraph QuantizationFactor {
+    label = "MythOS/Quantization";
+    comment = "{{description}}";
+    
+    a [label = "Quant.receive(Base19)";comment = "Potential: Receives the Base 19 source constraint.";shape = invtriangle;color = darkred;];
+    0 [label = "Quant.meta(Q-Value)";comment = "Abstract: The core Quantization Value (19^n).";shape = doublecircle;color = darkgray;];
+    b [label = "Quant.send(Resolution)";comment = "Manifest: Outputs the resulting Q=361 Resolution.";shape = triangle;color = darkred;];
+    1 [label = "Quant.r1(Crossing)";comment = "Initiation: Identifying the 19 Crossings as the foundation.";color = darkgreen;];
+    2 [label = "Quant.r2(Base)";comment = "Response: Defining the numerical Base (19).";color = darkgreen;];
+    4 [label = "Quant.r4(Exponent)";comment = "Integration: Defining the Exponent (n) for the current layer.";color = darkgreen;];
+    8 [label = "Quant.r8(Granularity)";comment = "Reflection: Determining the smallest unit of resolution.";color = darkgreen;];
+    7 [label = "Quant.r7(Mapping)";comment = "Consolidation: Mapping the Q points onto the T(19,2) structure.";color = darkgreen;];
+    5 [label = "Quant.r5(Complexity)";comment = "Propagation: Documenting the factor's intrinsic Complexity score.";color = darkgreen;];
+    3 [label = "Quant.r3(ActualizedSet)";comment = "Thesis: Population allocated to the +1 state (120 elements).";color = darkblue;];
+    6 [label = "Quant.r6(PotentialSet)";comment = "Antithesis: Population allocated to the -1 state (120 elements).";color = darkblue;];
+    9 [label = "Quant.r9(ActiveSet)";comment = "Synthesis: Population allocated to the 0 state (121 elements).";color = darkblue;];
+    c [label = "Quant.dispatch(Layer)";comment = "Interface: The specific power Layer (n) that determines complexity.";shape = doublecircle;color = darkred;];
+    d [label = "Quant.commit(Index)";comment = "Process: The committed Index lookup table for all Q states.";shape = doublecircle;color = darkgreen;];
+    e [label = "Quant.serve(Tension)";comment = "Logic: The Optimal Tension law required by the [120, 121, 120] distribution.";shape = doublecircle;color = darkblue;];
+    f [label = "Quant.exec(Distribution)";comment = "Closure: Validation of the state Distribution compliance.";shape = doublecircle;color = lightgray;];
+}

@@ -1,0 +1,21 @@
+strict digraph CorporaFactor {
+    label = "MythOS/Schematic/Corpora";
+    comment = "The cosmic principle of embodiment and multi-layered existence in MythOS—governing all physical forms, subtle bodies, and the vehicles of consciousness.";
+    
+    a [label = "Corpora.receive(Force)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Corpora.meta(Corpus)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Corpora.send(Field)";comment = "{{description}}";shape = triangle;color = darkred;];
+    1 [label = "Corpora.r1(Heart)";comment = "{{description}}";color = darkgreen;];
+    2 [label = "Corpora.r2(Shell)";comment = "{{description}}";color = darkgreen;];
+    4 [label = "Corpora.r4(AstralBody)";comment = "{{description}}";color = darkgreen;];
+    8 [label = "Corpora.r8(SpiritualBody)";comment = "{{description}}";color = darkgreen;];
+    7 [label = "Corpora.r7(MaterialBody)";comment = "{{description}}";color = darkgreen;];
+    5 [label = "Corpora.r5(Ego)";comment = "{{description}}";color = darkgreen;];
+    3 [label = "Corpora.r3(Instinct)";comment = "{{description}}";color = darkblue;];
+    6 [label = "Corpora.r6(Intent)";comment = "{{description}}";color = darkblue;];
+    9 [label = "Corpora.r9(Intuition)";comment = "{{description}}";color = darkblue;];
+    c [label = "Corpora.dispatch(Form)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Corpora.commit(CelestialBody)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Corpora.serve(Mind)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Corpora.exec(LawOfCorpora)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+}

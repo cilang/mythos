@@ -1,0 +1,21 @@
+strict digraph MythOSFactor {
+    label = "MythOS";
+    comment = "{{description}}";
+    
+    a [label = "MythOS.receive(Chaos)";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "MythOS.meta(Observer)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "MythOS.send(Order)";comment = "{{description}}";shape = triangle;color = darkred;];
+    1 [label = "MythOS.r1(Ariadi)";comment = "Boundary.";color = darkgreen;];
+    2 [label = "MythOS.r2(Cilang)";comment = "Primitives.";color = darkgreen;];
+    4 [label = "MythOS.r4(Usepong)";comment = "Relations.";color = darkgreen;];
+    8 [label = "MythOS.r8(Quantization)";comment = "{{description}}";color = darkgreen;];
+    7 [label = "MythOS.r7(Actualization)";comment = "{{description}}";color = darkgreen;];
+    5 [label = "MythOS.r5(Schematic)";comment = "{{description}}";color = darkgreen;];
+    3 [label = "MythOS.r3(Asha)";comment = "{{description}}";color = darkblue;];
+    6 [label = "MythOS.r6(Vikara)";comment = "{{description}}";color = darkblue;];
+    9 [label = "MythOS.r9(Karsa)";comment = "{{description}}";color = darkblue;];
+    c [label = "MythOS.dispatch(Kratos)";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "MythOS.commit(Ontology)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "MythOS.serve(Factor)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "MythOS.exec(LURD)";comment = "The Localized Unified Recursion Descriptor.";shape = doublecircle;color = lightgray;];
+}

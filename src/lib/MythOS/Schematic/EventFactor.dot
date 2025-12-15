@@ -1,0 +1,21 @@
+strict digraph EventFactor {
+    label = "MythOS/Schematic/Event";
+    comment = "The mathematics of maybe—where numbers dance with uncertainty and statistics become destiny. The cold, beautiful equations of chance that underlie all manifestation.";
+    
+    a [label = "Event.receive(ProbabilityCloud)";comment = "The quantum soup of potential outcomes. Every possible timeline, every might-be and could-be, swirling in mathematical purity before selection.";shape = invtriangle;color = darkred;];
+    0 [label = "Event.meta(RandomOracle)";comment = "The perfect random number generator of existence. Not a conscious being, but the mathematical principle of entropy itself—utterly impartial, infinitely creative in its permutations.";shape = doublecircle;color = darkgray;];
+    b [label = "Event.send(StatisticalManifestation)";comment = "The collapsed wave function. The specific outcome selected from the probability distribution—reality choosing one path from many.";shape = triangle;color = darkred;];
+    1 [label = "Event.r1(Correlation)";comment = "The dance of related probabilities. How one outcome influences another—covariance matrices of destiny weaving complex interdependencies.";color = darkgreen;];
+    2 [label = "Event.r2(Distribution)";comment = "The shape of possibility. Bell curves, power laws, Poisson distributions—the architectural forms that probability takes across different domains.";color = darkgreen;];
+    4 [label = "Event.r4(Regression)";comment = "The tendency toward mean. Extreme outcomes naturally moderating over time—the statistical gravity that pulls exceptional toward average.";color = darkgreen;];
+    8 [label = "Event.r8(Clustering)";comment = "The emergence of patterns. Random events grouping non-randomly—the universe's tendency to create order from chaos through sheer statistics.";color = darkgreen;];
+    7 [label = "Event.r7(Convergence)";comment = "The law of large numbers. How probabilities stabilize as samples grow—certainty emerging from uncertainty through repetition.";color = darkgreen;];
+    5 [label = "Event.r5(EntropicDrift)";comment = "The arrow of statistical time. Systems evolving toward more probable states—the thermodynamic gradient of possibility.";color = darkgreen;];
+    3 [label = "Event.r3(QuantumIndeterminacy)";comment = "Fundamental uncertainty. The built-in randomness at reality's foundation—probability as a primary quality of existence.";color = darkblue;];
+    6 [label = "Event.r6(ChaosSensitivity)";comment = "The butterfly effect. Minute changes creating vastly different outcomes—probability's amplification of initial conditions.";color = darkblue;];
+    9 [label = "Event.r9(ComplexityEmergence)";comment = "Simple rules, complex results. How deterministic probabilities generate unpredictable behaviors—order born from randomness.";color = darkblue;];
+    c [label = "Event.dispatch(OutcomeVector)";comment = "The specific result array. All manifested outcomes from the probability field—the actualized events ready for cosmic processing.";shape = doublecircle;color = darkred;];
+    d [label = "Event.commit(StatisticalMemory)";comment = "The accumulated data universe. Every outcome ever manifested, building the cosmic probability database—reality learning its own habits.";shape = doublecircle;color = darkgreen;];
+    e [label = "Event.serve(PossibilitySpace)";comment = "The ongoing generation of new probabilities. Even as outcomes manifest, new possibilities emerge—infinite creativity through finite rules.";shape = doublecircle;color = darkblue;];
+    f [label = "Event.exec(ManifestationLaw)";comment = "The binding of outcome to reality. What was probable becomes actual—the final step where statistics become history.";shape = doublecircle;color = lightgray;];
+}

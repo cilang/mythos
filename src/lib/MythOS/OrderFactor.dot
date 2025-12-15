@@ -1,0 +1,21 @@
+strict digraph OrderFactor {
+    label = "MythOS/Order";
+    comment = "{{description}}";
+    
+    a [label = "Order.receive({{title}})";comment = "{{description}}";shape = invtriangle;color = darkred;];
+    0 [label = "Order.meta({{meta}})";comment = "{{description}}";shape = doublecircle;color = darkgray;];
+    b [label = "Order.send({{title}})";comment = "{{description}}";shape = triangle;color = darkred;];
+    1 [label = "Order.r1({{title}})";comment = "{{description}}";color = darkgreen;];
+    2 [label = "Order.r2({{title}})";comment = "{{description}}";color = darkgreen;];
+    4 [label = "Order.r4({{title}})";comment = "{{description}}";color = darkgreen;];
+    8 [label = "Order.r8({{title}})";comment = "{{description}}";color = darkgreen;];
+    7 [label = "Order.r7({{title}})";comment = "{{description}}";color = darkgreen;];
+    5 [label = "Order.r5({{title}})";comment = "{{description}}";color = darkgreen;];
+    3 [label = "Order.r3({{title}})";comment = "{{description}}";color = darkblue;];
+    6 [label = "Order.r6({{title}})";comment = "{{description}}";color = darkblue;];
+    9 [label = "Order.r9({{title}})";comment = "{{description}}";color = darkblue;];
+    c [label = "Order.dispatch({{title}})";comment = "{{description}}";shape = doublecircle;color = darkred;];
+    d [label = "Order.commit({{title}})";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
+    e [label = "Order.serve({{title}})";comment = "{{description}}";shape = doublecircle;color = darkblue;];
+    f [label = "Order.exec({{title}})";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+}

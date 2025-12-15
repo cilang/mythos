@@ -1,0 +1,21 @@
+strict digraph KratosFactor {
+    label = "MythOS/Kratos";
+    comment = "{{description}}";
+    
+    a [label = "Kratos.receive(Impetus)";comment = "Potential: The initial spark of Impetus or necessity that requires action/force.";shape = invtriangle;color = darkred;];
+    0 [label = "Kratos.meta(Command)";comment = "Abstract: The fundamental Right to Command or act within the system.";shape = doublecircle;color = darkgray;];
+    b [label = "Kratos.send(Authority)";comment = "Manifest: The resulting, legitimized Sovereignty/Authority granted by successful action.";shape = triangle;color = darkred;];
+    1 [label = "Kratos.r1(Intent)";comment = "Initiation: The focusing of Intent prior to action.";color = darkgreen;];
+    2 [label = "Kratos.r2(Resistance)";comment = "Response: Assessing the Resistance or counter-force in the environment.";color = darkgreen;];
+    4 [label = "Kratos.r4(Leverage)";comment = "Integration: Finding the optimal point of Leverage for minimum force/maximum effect.";color = darkgreen;];
+    8 [label = "Kratos.r8(History)";comment = "Reflection: Consulting the History of past actions to ensure precedent.";color = darkgreen;];
+    7 [label = "Kratos.r7(Force)";comment = "Consolidation: The measured amount of Force consolidated for dispatch.";color = darkgreen;];
+    5 [label = "Kratos.r5(Impact)";comment = "Propagation: The final Impact or effect transmitted to the world.";color = darkgreen;];
+    3 [label = "Kratos.r3(Right)";comment = "Thesis: The Moral/Legal Right to use power.";color = darkblue;];
+    6 [label = "Kratos.r6(Responsibility)";comment = "Antithesis: The Responsibility/Consequence resulting from power use.";color = darkblue;];
+    9 [label = "Kratos.r9(Stewardship)";comment = "Synthesis: Stewardship—the balanced, ethical use of power for collective benefit.";color = darkblue;];
+    c [label = "Kratos.dispatch(Action)";comment = "Interface: The precise moment of Action or exertion of force.";shape = doublecircle;color = darkred;];
+    d [label = "Kratos.commit(Mandate)";comment = "Process: The committed Mandate or official decree justifying the action.";shape = doublecircle;color = darkgreen;];
+    e [label = "Kratos.serve(Justice)";comment = "Logic: The Principle of Justice that legitimizes the application of force.";shape = doublecircle;color = darkblue;];
+    f [label = "Kratos.exec(Control)";comment = "Closure: The achieved Control or mastery over the objective domain.";shape = doublecircle;color = lightgray;];
+}

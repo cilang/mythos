@@ -1,0 +1,21 @@
+strict digraph PraxisFactor {
+    label = "MythOS/Schematic/Praxis";
+    comment = "The cosmic principle of practical magic and applied action in MythOS—governing the transformation of intent into effect through magical operations and disciplined practice.";
+    
+    a [label = "Praxis.receive(Intent)";comment = "Potential: Magical will—the focused desire and conscious direction that seeks to manifest change in reality through arcane means.";shape = invtriangle;color = darkred;];
+    0 [label = "Praxis.meta(Praxis)";comment = "Abstract: Applied magic itself—the universal principle that theory becomes power through practice, and knowledge becomes effect through action.";shape = doublecircle;color = darkgray;];
+    b [label = "Praxis.send(Effect)";comment = "Manifest: Actualized change—the concrete results, alterations, and manifestations produced by successful magical operations.";shape = triangle;color = darkred;];
+    1 [label = "Praxis.r1(Invocation)";comment = "Initiation: Summoning power—the act of calling upon higher forces, archetypes, or cosmic energies to aid in magical work.";color = darkgreen;];
+    2 [label = "Praxis.r2(Transmutation)";comment = "Response: Elemental change—the transformation of substances, energies, or states from one form to another through alchemical principles.";color = darkgreen;];
+    4 [label = "Praxis.r4(Conjuration)";comment = "Integration: Materialization—the creation or summoning of objects, beings, or conditions from potential into actual existence.";color = darkgreen;];
+    8 [label = "Praxis.r8(Abjuration)";comment = "Reflection: Protective warding—the establishment of barriers, banishments, and defensive measures against harmful forces.";color = darkgreen;];
+    7 [label = "Praxis.r7(Divination)";comment = "Consolidation: Future reading—the art of perceiving hidden knowledge, potential futures, and obscured truths through various methods.";color = darkgreen;];
+    5 [label = "Praxis.r5(Enchantment)";comment = "Propagation: Imbuing power—the process of charging objects, places, or beings with specific magical properties and influences.";color = darkgreen;];
+    3 [label = "Praxis.r3(Intuition)";comment = "Thesis: Unconscious knowing—the direct, unmediated understanding of magical principles that bypasses rational analysis.";color = darkblue;];
+    6 [label = "Praxis.r6(Theory)";comment = "Antithesis: Systematic knowledge—the structured, academic understanding of magical laws, correspondences, and principles.";color = darkblue;];
+    9 [label = "Praxis.r9(Mastery)";comment = "Synthesis: Embodied wisdom—the achieved state where magical knowledge becomes instinctive, reliable, and seamlessly integrated into being.";color = darkblue;];
+    c [label = "Praxis.dispatch(Method)";comment = "Why-Who: Magical approach—the specific traditions, schools, and personal styles that determine how magic is practiced and by whom.";shape = doublecircle;color = darkred;];
+    d [label = "Praxis.commit(Rote)";comment = "What-How: Practiced patterns—the repeated exercises, spells, and procedures that build magical skill and automatic competence.";shape = doublecircle;color = darkgreen;];
+    e [label = "Praxis.serve(Ritual)";comment = "When-Where: Ceremonial context—the formalized practices, sacred spaces, and auspicious timings that enhance magical efficacy.";shape = doublecircle;color = darkblue;];
+    f [label = "Praxis.exec(Ability)";comment = "Which-Closure: Magical competence achieved—the state where the practitioner can reliably produce intended effects through will and practice.";shape = doublecircle;color = lightgray;];
+}

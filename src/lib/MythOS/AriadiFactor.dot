@@ -1,0 +1,21 @@
+strict digraph AriadiFactor {
+    label = "MythOS/Ariadi";
+    comment = "{{description}}";
+    
+    a [label = "Ariadi.receive(Hypersphere)";comment = "Potential: The geometric potential of the S^3 space.";shape = invtriangle;color = darkred;];
+    0 [label = "Ariadi.meta(Topology)";comment = "Abstract: The fundamental topology (S^3 closure).";shape = doublecircle;color = darkgray;];
+    b [label = "Ariadi.send(Boundary)";comment = "Manifest: The actively defined, constrained boundary result.";shape = triangle;color = darkred;];
+    1 [label = "Ariadi.r1(Origin)";comment = "Initiation: Setting the central point (0,0,0,0).";color = darkgreen;];
+    2 [label = "Ariadi.r2(Metrics)";comment = "Response: Defining the measurement system.";color = darkgreen;];
+    4 [label = "Ariadi.r4(Dimensions)";comment = "Integration: Integrating the four coordinates (x,y,z,w).";color = darkgreen;];
+    8 [label = "Ariadi.r8(Volume)";comment = "Reflection: Calculating the intrinsic capacity of the S^3.";color = darkgreen;];
+    7 [label = "Ariadi.r7(Scale)";comment = "Consolidation: Setting the overall radius/Scale (R=1).";color = darkgreen;];
+    5 [label = "Ariadi.r5(Embedding)";comment = "Propagation: Final act of embedding the T(19,2) structure.";color = darkgreen;];
+    3 [label = "Ariadi.r3(Interior)";comment = "Thesis: Definition of the contained space.";color = darkblue;];
+    6 [label = "Ariadi.r6(Exterior)";comment = "Antithesis: Definition of the external constraints.";color = darkblue;];
+    9 [label = "Ariadi.r9(Surface)";comment = "Synthesis: The Boundary/Surface that resolves the tension.";color = darkblue;];
+    c [label = "Ariadi.dispatch(W-Plane)";comment = "Interface: The specific w=constant plane chosen for the actualization layer.";shape = doublecircle;color = darkred;];
+    d [label = "Ariadi.commit(Framework)";comment = "Process: The confirmed, documented Contextual Framework.";shape = doublecircle;color = darkgreen;];
+    e [label = "Ariadi.serve(Constraint)";comment = "Logic: The mathematical constraint (x²+y²+z²+w²=1) that must be preserved.";shape = doublecircle;color = darkblue;];
+    f [label = "Ariadi.exec(Invariance)";comment = "Closure: The final Topological Invariance validation.";shape = doublecircle;color = lightgray;];
+}
