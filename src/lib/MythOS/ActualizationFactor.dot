@@ -2,20 +2,20 @@ strict digraph ActualizationFactor {
     label = "MythOS/Actualization";
     comment = "{{description}}";
     
-    a [label = "Act.receive(Event)";comment = "Potential: The specific event that triggers the manifestation demand.";shape = invtriangle;color = darkred;];
-    0 [label = "Act.meta(Objective)";comment = "Abstract: The core objective being actualized.";shape = doublecircle;color = darkgray;];
-    b [label = "Act.send(Samsara)";comment = "Manifest: The resulting cyclical process of Becoming/Rebirth.";shape = triangle;color = darkred;];
-    1 [label = "Act.r1(Truth)";comment = "Initiation: Establishing the fundamental premise of the objective.";color = darkgreen;];
-    2 [label = "Act.r2(Convergence)";comment = "Response: Aligning all states and dependencies to the Truth.";color = darkgreen;];
-    4 [label = "Act.r4(Fixation)";comment = "Integration: Casting the objective's state into a final, immutable form.";color = darkgreen;];
-    8 [label = "Act.r8(Wisdom)";comment = "Reflection: Integrating reflective knowledge gained during consolidation.";color = darkgreen;];
-    7 [label = "Act.r7(Divergence)";comment = "Consolidation: Identifying all possible branching outcomes before commit.";color = darkgreen;];
-    5 [label = "Act.r5(Excitation)";comment = "Propagation: The final energetic pulse for the w=0 -> w=+1 transition.";color = darkgreen;];
-    3 [label = "Act.r3(Capability)";comment = "Thesis: The current Capability or internal resources available.";color = darkblue;];
-    6 [label = "Act.r6(Repository)";comment = "Antithesis: The external Repository of data/knowledge required.";color = darkblue;];
-    9 [label = "Act.r9(Corpora)";comment = "Synthesis: The integrated Corpora of knowledge and capability.";color = darkblue;];
-    c [label = "Act.dispatch(Directive)";comment = "Interface: The final directive instructing the w=0 to w=+1 transition.";shape = doublecircle;color = darkred;];
-    d [label = "Act.commit(Reality)";comment = "Process: The committed Reality or manifest outcome.";shape = doublecircle;color = darkgreen;];
-    e [label = "Act.serve(Validation)";comment = "Logic: The formal Actualization Test/Validation checks.";shape = doublecircle;color = darkblue;];
-    f [label = "Act.exec(Ω-Invariance)";comment = "Closure: Validation via Reidemeister Move (Ω-Operation) Invariance.";shape = doublecircle;color = lightgray;];
+    a [label = "{{title}}";comment = "{{description}}";];
+    0 [label = "Objective";comment = "{{description}}";];
+    b [label = "{{title}}";comment = "{{description}}";];
+    1 [label = "{{title}}";comment = "{{description}}";];
+    2 [label = "{{title}}";comment = "{{description}}";];
+    4 [label = "{{title}}";comment = "{{description}}";];
+    8 [label = "{{title}}";comment = "{{description}}";];
+    7 [label = "{{title}}";comment = "{{description}}";];
+    5 [label = "{{title}}";comment = "{{description}}";];
+    3 [label = "{{title}}";comment = "{{description}}";];
+    6 [label = "{{title}}";comment = "{{description}}";];
+    9 [label = "{{title}}";comment = "{{description}}";];
+    c [label = "{{title}}";comment = "{{description}}";];
+    d [label = "{{title}}";comment = "{{description}}";];
+    e [label = "{{title}}";comment = "{{description}}";];
+    f [label = "Ω-Invariance";comment = "{{description}}";];
 }

@@ -2,20 +2,20 @@ strict digraph CorporaFactor {
     label = "MythOS/Schematic/Corpora";
     comment = "The cosmic principle of embodiment and multi-layered existence in MythOS—governing all physical forms, subtle bodies, and the vehicles of consciousness.";
     
-    a [label = "Corpora.receive(Force)";comment = "{{description}}";shape = invtriangle;color = darkred;];
-    0 [label = "Corpora.meta(Corpus)";comment = "{{description}}";shape = doublecircle;color = darkgray;];
-    b [label = "Corpora.send(Field)";comment = "{{description}}";shape = triangle;color = darkred;];
-    1 [label = "Corpora.r1(Heart)";comment = "{{description}}";color = darkgreen;];
-    2 [label = "Corpora.r2(Shell)";comment = "{{description}}";color = darkgreen;];
-    4 [label = "Corpora.r4(AstralBody)";comment = "{{description}}";color = darkgreen;];
-    8 [label = "Corpora.r8(SpiritualBody)";comment = "{{description}}";color = darkgreen;];
-    7 [label = "Corpora.r7(MaterialBody)";comment = "{{description}}";color = darkgreen;];
-    5 [label = "Corpora.r5(Ego)";comment = "{{description}}";color = darkgreen;];
-    3 [label = "Corpora.r3(Instinct)";comment = "{{description}}";color = darkblue;];
-    6 [label = "Corpora.r6(Intent)";comment = "{{description}}";color = darkblue;];
-    9 [label = "Corpora.r9(Intuition)";comment = "{{description}}";color = darkblue;];
-    c [label = "Corpora.dispatch(Form)";comment = "{{description}}";shape = doublecircle;color = darkred;];
-    d [label = "Corpora.commit(CelestialBody)";comment = "{{description}}";shape = doublecircle;color = darkgreen;];
-    e [label = "Corpora.serve(Mind)";comment = "{{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "Corpora.exec(LawOfCorpora)";comment = "{{description}}";shape = doublecircle;color = lightgray;];
+    a [label = "Force";comment = "{{description}}";];
+    0 [label = "Corpus";comment = "{{description}}";];
+    b [label = "Field";comment = "Manifested Celestial Body—{{description}}";];
+    1 [label = "Heart";comment = "Compute Circuit, Persistent Memory—made up of Information Essence";];
+    2 [label = "Shell";comment = "Container, Energetic Translator and Modulator—made up of Spiritual Essence";];
+    4 [label = "AstralBody";comment = "Manifestation Circuit, Transient Memory—made up of Spiritual Essence";];
+    8 [label = "SpiritualBody";comment = "Energetic—Made up of Spiritual Essence";];
+    7 [label = "MaterialBody";comment = "Physical—Made up of Material Essence";];
+    5 [label = "Ego";comment = "Self, Willpower Generator—made up of Information Essence";];
+    3 [label = "Instinct";comment = "{{description}}";];
+    6 [label = "Intent";comment = "{{description}}";];
+    9 [label = "Intuition";comment = "{{description}}";];
+    c [label = "Form";comment = "{{description}}";];
+    d [label = "CelestialBody";comment = "Area of Influence; aura, magnetoshpere, heliosphere, dark-matter halo—{{description}}";];
+    e [label = "Mind";comment = "Source of Sentience, product of Bootsrap Paradox of Harmonic Heart and Ego—it can take root in either soul (ego, heart, shell) or body (astral, spiritual, material, celestial). Defining factor for sentient being as intelligent being didn't need Mind. Digital Lifeform (Mind rooted in either Ego or Heart). Digital Nature (Mind rooted in Shell). Spiritual Lifeform (Mind rooted in either Astral or Spiritual Body). Material Lifeform (Mind rooted in Material). Trivia: Ghost is Celestial Body intermingled with Intent that somehow managed to persis for extended period of time.";];
+    f [label = "LawOfCorpora";comment = "{{description}}";];
 }

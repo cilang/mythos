@@ -2,20 +2,20 @@ strict digraph VikaraFactor {
     label = "MythOS/Vikara";
     comment = "The cosmic principle of transformation and change in MythOS—governing all processes of divergence, convergence, and metamorphosis.";
     
-    a [label = "Vikara.receive(Divergence)";comment = "Potential: Branching possibilities—the infinite paths reality could take, the raw material of all change and variation.";shape = invtriangle;color = darkred;];
-    0 [label = "Vikara.meta(Vikara)";comment = "Abstract: Transformation itself—the universal principle that all things can and must change their state, form, or nature.";shape = doublecircle;color = darkgray;];
-    b [label = "Vikara.send(Convergence)";comment = "Manifest: Synthesized outcomes—the coming together of disparate elements into new unified wholes and resolutions.";shape = triangle;color = darkred;];
-    1 [label = "Vikara.r1(Availability)";comment = "Initiation: Open potential—the state of readiness for change, when conditions permit transformation to begin.";color = darkgreen;];
-    2 [label = "Vikara.r2(Chaos)";comment = "Response: Creative dissolution—the breakdown of existing patterns that makes space for new arrangements to emerge.";color = darkgreen;];
-    4 [label = "Vikara.r4(Destruction)";comment = "Integration: Necessary ending—the deliberate dismantling of old forms to liberate their constituent elements.";color = darkgreen;];
-    8 [label = "Vikara.r8(Capacity)";comment = "Reflection: Transformative potential—the measure of how much change a system can undergo or contain.";color = darkgreen;];
-    7 [label = "Vikara.r7(Order)";comment = "Consolidation: Emergent structure—the new patterns and organizations that crystallize from transformative processes.";color = darkgreen;];
-    5 [label = "Vikara.r5(Creation)";comment = "Propagation: Novel emergence—the birth of entirely new forms, relationships, and possibilities.";color = darkgreen;];
-    3 [label = "Vikara.r3(Luck)";comment = "Thesis: Fortuitous chance—the aspect of transformation that operates beyond predictable cause and effect.";color = darkblue;];
-    6 [label = "Vikara.r6(Faith)";comment = "Antithesis: Trust in process—the commitment to transformation even when outcomes cannot be guaranteed or seen.";color = darkblue;];
-    9 [label = "Vikara.r9(Destiny)";comment = "Synthesis: Meaningful pattern—the emergent purpose that gives direction and significance to transformative journeys.";color = darkblue;];
-    c [label = "Vikara.dispatch(Catalysis)";comment = "Why-Who: Change agents and triggers—the specific catalysts and actors that initiate or guide transformations.";shape = doublecircle;color = darkred;];
-    d [label = "Vikara.commit(Oath)";comment = "What-How: Binding commitment to change—the promises and contracts that lock in transformative pathways.";shape = doublecircle;color = darkgreen;];
-    e [label = "Vikara.serve(Providence)";comment = "When-Where: Guided unfolding—the timing and placement of transformations within larger cosmic patterns.";shape = doublecircle;color = darkblue;];
-    f [label = "Vikara.exec(Variability)";comment = "Which-Closure: Dynamic stability achieved—the state where change itself becomes the constant, reliable principle.";shape = doublecircle;color = lightgray;];
+    a [label = "Divergence";comment = "Branching possibilities—the infinite paths reality could take, the raw material of all change and variation.";];
+    0 [label = "Vikara";comment = "Transformation itself—the universal principle that all things can and must change their state, form, or nature.";];
+    b [label = "Convergence";comment = "Synthesized outcomes—the coming together of disparate elements into new unified wholes and resolutions.";];
+    1 [label = "Availability";comment = "Open potential—the state of readiness for change, when conditions permit transformation to begin.";];
+    2 [label = "Chaos";comment = "Creative dissolution—the breakdown of existing patterns that makes space for new arrangements to emerge.";];
+    4 [label = "Destruction";comment = "Necessary ending—the deliberate dismantling of old forms to liberate their constituent elements.";];
+    8 [label = "Capacity";comment = "Transformative potential—the measure of how much change a system can undergo or contain.";];
+    7 [label = "Order";comment = "Emergent structure—the new patterns and organizations that crystallize from transformative processes.";];
+    5 [label = "Creation";comment = "Novel emergence—the birth of entirely new forms, relationships, and possibilities.";];
+    3 [label = "Luck";comment = "Fortuitous chance—the aspect of transformation that operates beyond predictable cause and effect.";];
+    6 [label = "Faith";comment = "Trust in process—the commitment to transformation even when outcomes cannot be guaranteed or seen.";];
+    9 [label = "Destiny";comment = "Meaningful pattern—the emergent purpose that gives direction and significance to transformative journeys.";];
+    c [label = "Catalysis";comment = "Change agents and triggers—the specific catalysts and actors that initiate or guide transformations.";];
+    d [label = "Oath";comment = "Binding commitment to change—the promises and contracts that lock in transformative pathways.";];
+    e [label = "Providence";comment = "Guided unfolding—the timing and placement of transformations within larger cosmic patterns.";];
+    f [label = "Variability";comment = "Dynamic stability achieved—the state where change itself becomes the constant, reliable principle.";];
 }

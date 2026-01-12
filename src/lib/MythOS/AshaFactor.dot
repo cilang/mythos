@@ -2,20 +2,20 @@ strict digraph AshaFactor {
     label = "MythOS/Asha";
     comment = "The cosmic principle of truth and divine order in MythOS—the eternal pattern that governs reality's fundamental alignment.";
     
-    a [label = "Asha.receive(Truth)";comment = "Potential: Raw veracity—the unmediated state of what actually is, before any interpretation or understanding.";shape = invtriangle;color = darkred;];
-    0 [label = "Asha.meta(Asha)";comment = "Abstract: Cosmic order itself—the universal principle that reality has inherent truth and moral structure.";shape = doublecircle;color = darkgray;];
-    b [label = "Asha.send(Wisdom)";comment = "Manifest: Applied understanding—truth transformed into practical insight and right action.";shape = triangle;color = darkred;];
-    1 [label = "Asha.r1(Insight)";comment = "Initiation: Sudden understanding—the flash of recognition that reveals hidden truth and connection.";color = darkgreen;];
-    2 [label = "Asha.r2(Discernment)";comment = "Response: Distinguishing truth—the capacity to separate reality from illusion, essence from appearance.";color = darkgreen;];
-    4 [label = "Asha.r4(Comprehension)";comment = "Integration: Holistic grasping—seeing how truths connect and form coherent patterns of meaning.";color = darkgreen;];
-    8 [label = "Asha.r8(Clarity)";comment = "Reflection: Unclouded perception—the state where truth shines forth without distortion or obscurity.";color = darkgreen;];
-    7 [label = "Asha.r7(Integrity)";comment = "Consolidation: Wholeness and alignment—living in complete harmony with known truth and principles.";color = darkgreen;];
-    5 [label = "Asha.r5(Sincerity)";comment = "Propagation: Authentic expression—communicating truth without deception or hidden agenda.";color = darkgreen;];
-    3 [label = "Asha.r3(Conviction)";comment = "Thesis: Certain knowing—the firm foundation of belief that withstands doubt and challenge.";color = darkblue;];
-    6 [label = "Asha.r6(Judgement)";comment = "Antithesis: Discriminating evaluation—the critical assessment that tests truth against evidence and reason.";color = darkblue;];
-    9 [label = "Asha.r9(Principle)";comment = "Synthesis: Universal truth—the distilled essence that guides all particular instances and applications.";color = darkblue;];
-    c [label = "Asha.dispatch(Adjudication)";comment = "Why-Who: Truth arbitration—the authority and process that determines what counts as valid truth in any context.";shape = doublecircle;color = darkred;];
-    d [label = "Asha.commit(Covenant)";comment = "What-How: Sacred agreement—the binding commitment to uphold and be governed by cosmic truth.";shape = doublecircle;color = darkgreen;];
-    e [label = "Asha.serve(Guidance)";comment = "When-Where: Navigational aid—truth applied as direction and purpose for journeys and decisions.";shape = doublecircle;color = darkblue;];
-    f [label = "Asha.exec(Credibility)";comment = "Which-Closure: Trustworthiness achieved—the state where truth becomes self-evident and reliably actionable.";shape = doublecircle;color = lightgray;];
+    a [label = "Truth";comment = "Raw veracity—the unmediated state of what actually is, before any interpretation or understanding.";];
+    0 [label = "Asha";comment = "Cosmic order itself—the universal principle that reality has inherent truth and moral structure.";];
+    b [label = "Wisdom";comment = "Applied understanding—truth transformed into practical insight and right action.";];
+    1 [label = "Insight";comment = "Sudden understanding—the flash of recognition that reveals hidden truth and connection.";];
+    2 [label = "Discernment";comment = "Distinguishing truth—the capacity to separate reality from illusion, essence from appearance.";];
+    4 [label = "Comprehension";comment = "Holistic grasping—seeing how truths connect and form coherent patterns of meaning.";];
+    8 [label = "Clarity";comment = "Unclouded perception—the state where truth shines forth without distortion or obscurity.";];
+    7 [label = "Integrity";comment = "Wholeness and alignment—living in complete harmony with known truth and principles.";];
+    5 [label = "Sincerity";comment = "Authentic expression—communicating truth without deception or hidden agenda.";];
+    3 [label = "Conviction";comment = "Certain knowing—the firm foundation of belief that withstands doubt and challenge.";];
+    6 [label = "Judgement";comment = "Discriminating evaluation—the critical assessment that tests truth against evidence and reason.";];
+    9 [label = "Principle";comment = "Universal truth—the distilled essence that guides all particular instances and applications.";];
+    c [label = "Adjudication";comment = "Truth arbitration—the authority and process that determines what counts as valid truth in any context.";];
+    d [label = "Covenant";comment = "Sacred agreement—the binding commitment to uphold and be governed by cosmic truth.";];
+    e [label = "Guidance";comment = "Navigational aid—truth applied as direction and purpose for journeys and decisions.";];
+    f [label = "Credibility";comment = "Trustworthiness achieved—the state where truth becomes self-evident and reliably actionable.";];
 }

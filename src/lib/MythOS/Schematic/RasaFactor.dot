@@ -2,20 +2,20 @@ strict digraph RasaFactor {
     label = "MythOS/Schematic/Rasa";
     comment = "The cosmic principle of emotion, aesthetic experience, and qualitative feeling in MythOS—governing all affect, beauty, love, and the spectrum of emotional reality.";
     
-    a [label = "Rasa.receive(Desire)";comment = "Potential: Primordial longing—the raw, undirected yearning that precedes all specific emotions and aesthetic experiences.";shape = invtriangle;color = darkred;];
-    0 [label = "Rasa.meta(Rasa)";comment = "Abstract: Essence of feeling—the universal principle that reality has qualitative dimensions and emotional tones that can be experienced.";shape = doublecircle;color = darkgray;];
-    b [label = "Rasa.send(Emotion)";comment = "Manifest: Specific affect—the actualized feelings, moods, and emotional states that beings experience and express.";shape = triangle;color = darkred;];
-    1 [label = "Rasa.r1(Will)";comment = "Initiation: Directed desire—the focused intention that transforms raw longing into purposeful emotional energy.";color = darkgreen;];
-    2 [label = "Rasa.r2(Instinct)";comment = "Response: Primal impulse—the immediate, unrefined emotional reactions that arise from deep biological and cosmic patterns.";color = darkgreen;];
-    4 [label = "Rasa.r4(Drift)";comment = "Integration: Emotional flow—the natural movement and transformation of feelings through different states and intensities.";color = darkgreen;];
-    8 [label = "Rasa.r8(Intuition)";comment = "Reflection: Unconscious knowing—the gut feelings and immediate understandings that bypass rational analysis.";color = darkgreen;];
-    7 [label = "Rasa.r7(Expression)";comment = "Consolidation: Emotional manifestation—the outward showing of inner feelings through art, behavior, and communication.";color = darkgreen;];
-    5 [label = "Rasa.r5(Resonance)";comment = "Propagation: Emotional contagion—the spreading and sharing of feelings between beings and through environments.";color = darkgreen;];
-    3 [label = "Rasa.r3(Hope)";comment = "Thesis: Positive anticipation—the emotional orientation toward potential good, growth, and positive outcomes.";color = darkblue;];
-    6 [label = "Rasa.r6(Despair)";comment = "Antithesis: Negative certainty—the emotional conviction of inevitable loss, failure, or meaninglessness.";color = darkblue;];
-    9 [label = "Rasa.r9(Love)";comment = "Synthesis: Unitive emotion—the transcendent feeling that connects, accepts, and affirms across all boundaries and conditions.";color = darkblue;];
-    c [label = "Rasa.dispatch(ArtisticImpulse)";comment = "Why-Who: Creative urgency—the sources and agents that drive artistic creation and aesthetic expression.";shape = doublecircle;color = darkred;];
-    d [label = "Rasa.commit(Devotion)";comment = "What-How: Sacred commitment—the practices and disciplines that cultivate and sustain deep emotional connections.";shape = doublecircle;color = darkgreen;];
-    e [label = "Rasa.serve(Compassion)";comment = "When-Where: Contextual empathy—the appropriate emotional responses to suffering and joy in specific situations.";shape = doublecircle;color = darkblue;];
-    f [label = "Rasa.exec(Pathos)";comment = "Which-Closure: Universal feeling achieved—the capacity to experience and appreciate the emotional dimension of all existence.";shape = doublecircle;color = lightgray;];
+    a [label = "Desire";comment = "Primordial longing—the raw, undirected yearning that precedes all specific emotions and aesthetic experiences.";];
+    0 [label = "Rasa";comment = "Essence of feeling—the universal principle that reality has qualitative dimensions and emotional tones that can be experienced.";];
+    b [label = "Emotion";comment = "Specific affect—the actualized feelings, moods, and emotional states that beings experience and express.";];
+    1 [label = "Will";comment = "Directed desire—the focused intention that transforms raw longing into purposeful emotional energy.";];
+    2 [label = "Instinct";comment = "Primal impulse—the immediate, unrefined emotional reactions that arise from deep biological and cosmic patterns.";];
+    4 [label = "Drift";comment = "Emotional flow—the natural movement and transformation of feelings through different states and intensities.";];
+    8 [label = "Intuition";comment = "Unconscious knowing—the gut feelings and immediate understandings that bypass rational analysis.";];
+    7 [label = "Expression";comment = "Emotional manifestation—the outward showing of inner feelings through art, behavior, and communication.";];
+    5 [label = "Resonance";comment = "Emotional contagion—the spreading and sharing of feelings between beings and through environments.";];
+    3 [label = "Hope";comment = "Positive anticipation—the emotional orientation toward potential good, growth, and positive outcomes.";];
+    6 [label = "Despair";comment = "Negative certainty—the emotional conviction of inevitable loss, failure, or meaninglessness.";];
+    9 [label = "Love";comment = "Unitive emotion—the transcendent feeling that connects, accepts, and affirms across all boundaries and conditions.";];
+    c [label = "ArtisticImpulse";comment = "Creative urgency—the sources and agents that drive artistic creation and aesthetic expression.";];
+    d [label = "Devotion";comment = "Sacred commitment—the practices and disciplines that cultivate and sustain deep emotional connections.";];
+    e [label = "Compassion";comment = "Contextual empathy—the appropriate emotional responses to suffering and joy in specific situations.";];
+    f [label = "Pathos";comment = "Universal feeling achieved—the capacity to experience and appreciate the emotional dimension of all existence.";];
 }

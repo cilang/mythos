@@ -2,20 +2,20 @@ strict digraph SpectralFactor {
     label = "MythOS/Schematic/Spectral";
     comment = "The dynamic engine of state transitions and resonant phenomena. Governs how potential oscillates into manifest existence through quantized interactions.";
     
-    a [label = "Spectral.receive(Oscillation)";comment = "Potential: The primordial, undifferentiated vibration—the potential for all rhythmic and wave-like phenomena.";shape = invtriangle;color = darkred;];
-    0 [label = "Spectral.meta(Spectral)";comment = "Abstract: The invariant core identity of resonance, frequency, and quantized state transitions.";shape = doublecircle;color = darkgray;];
-    b [label = "Spectral.send(Interference)";comment = "Manifest: The observable pattern resulting from the superposition and interaction of waves or states.";shape = triangle;color = darkred;];
-    1 [label = "Spectral.r1(Frequency)";comment = "Initiation: The fundamental rate of oscillation that defines a state's identity and energy.";color = darkgreen;];
-    2 [label = "Spectral.r2(Amplitude)";comment = "Response: The intensity or strength of the oscillation, its 'loudness' or probability density.";color = darkgreen;];
-    4 [label = "Spectral.r4(Phase)";comment = "Integration: The relative timing or angular position that determines constructive or destructive interference.";color = darkgreen;];
-    8 [label = "Spectral.r8(Coupling)";comment = "Reflection: The mechanism or interaction strength that allows energy and information transfer between resonant systems.";color = darkgreen;];
-    7 [label = "Spectral.r7(Resonance)";comment = "Consolidation: The stable, reinforced oscillation that occurs when frequency and coupling align.";color = darkgreen;];
-    5 [label = "Spectral.r5(Harmonics)";comment = "Propagation: The higher-order modes and overtones that emerge from a fundamental resonance, structuring complex spectra.";color = darkgreen;];
-    3 [label = "Spectral.r3(Coherence)";comment = "Thesis: The ideal of perfect phase alignment and predictability—a pure, unwavering wave.";color = darkblue;];
-    6 [label = "Spectral.r6(Decoherence)";comment = "Antithesis: The loss of phase relationship and the emergence of classical probability from quantum superposition.";color = darkblue;];
-    9 [label = "Spectral.r9(Quantization)";comment = "Synthesis: The resolution into discrete, allowed states and energy levels—the stable spectrum itself.";color = darkblue;];
-    c [label = "Spectral.dispatch(Operator)";comment = "Why-Who: The formal mathematical object (e.g., Hamiltonian) that governs the system's time evolution and possible transitions.";shape = doublecircle;color = darkred;];
-    d [label = "Spectral.commit(Eigenstate)";comment = "What-How: The specific, stable state of the system that is defined by the operator—the 'solution' to the equation of motion.";shape = doublecircle;color = darkgreen;];
-    e [label = "Spectral.serve(Eigenvalue)";comment = "When-Where: The measurable quantity (e.g., energy, frequency) associated with an eigenstate—its 'address' in the spectrum.";shape = doublecircle;color = darkblue;];
-    f [label = "Spectral.exec(Projection)";comment = "Which-Closure: The act of collapsing a superposition into a definite eigenstate upon measurement.";shape = doublecircle;color = lightgray;];
+    a [label = "Oscillation";comment = "The primordial, undifferentiated vibration—the potential for all rhythmic and wave-like phenomena.";];
+    0 [label = "Spectral";comment = "The invariant core identity of resonance, frequency, and quantized state transitions.";];
+    b [label = "Interference";comment = "The observable pattern resulting from the superposition and interaction of waves or states.";];
+    1 [label = "Frequency";comment = "The fundamental rate of oscillation that defines a state's identity and energy.";];
+    2 [label = "Amplitude";comment = "The intensity or strength of the oscillation, its 'loudness' or probability density.";];
+    4 [label = "Phase";comment = "The relative timing or angular position that determines constructive or destructive interference.";];
+    8 [label = "Coupling";comment = "The mechanism or interaction strength that allows energy and information transfer between resonant systems.";];
+    7 [label = "Resonance";comment = "The stable, reinforced oscillation that occurs when frequency and coupling align.";];
+    5 [label = "Harmonics";comment = "The higher-order modes and overtones that emerge from a fundamental resonance, structuring complex spectra.";];
+    3 [label = "Coherence";comment = "The ideal of perfect phase alignment and predictability—a pure, unwavering wave.";];
+    6 [label = "Decoherence";comment = "The loss of phase relationship and the emergence of classical probability from quantum superposition.";];
+    9 [label = "Quantization";comment = "The resolution into discrete, allowed states and energy levels—the stable spectrum itself.";];
+    c [label = "Operator";comment = "The formal mathematical object (e.g., Hamiltonian) that governs the system's time evolution and possible transitions.";];
+    d [label = "Eigenstate";comment = "The specific, stable state of the system that is defined by the operator—the 'solution' to the equation of motion.";];
+    e [label = "Eigenvalue";comment = "The measurable quantity (e.g., energy, frequency) associated with an eigenstate—its 'address' in the spectrum.";];
+    f [label = "Projection";comment = "The act of collapsing a superposition into a definite eigenstate upon measurement.";];
 }

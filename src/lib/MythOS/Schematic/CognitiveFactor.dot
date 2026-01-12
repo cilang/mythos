@@ -2,20 +2,20 @@ strict digraph CognitiveFactor {
     label = "MythOS/Schematic/Cognitive";
     comment = "The cosmic principle of mind, intelligence, and conscious processing in MythOS—governing all reasoning, pattern recognition, and the bridge between potential and manifestation.";
     
-    a [label = "Cognitive.receive(PrimordialPotential)";comment = "Potential: Unstructured consciousness—the raw capacity for awareness before any specific thoughts, patterns, or operations form.";shape = invtriangle;color = darkred;];
-    0 [label = "Cognitive.meta(DirectStateAccess)";comment = "Abstract: Immediate cognition—the universal principle that mind can directly apprehend reality states without mediation or representation.";shape = doublecircle;color = darkgray;];
-    b [label = "Cognitive.send(ManifestationBridge)";comment = "Manifest: Reality interface—the actualized capacity of consciousness to translate thought into effect and bridge ideas with manifestation.";shape = triangle;color = darkred;];
-    1 [label = "Cognitive.r1(OperationalGrammar)";comment = "Initiation: Mental operations—the fundamental rules and structures that govern how thoughts combine, transform, and generate new content.";color = darkgreen;];
-    2 [label = "Cognitive.r2(AxiomaticReasoning)";comment = "Response: Foundational deduction—the process of deriving conclusions from self-evident truths and established principles.";color = darkgreen;];
-    4 [label = "Cognitive.r4(StateDynamics)";comment = "Integration: Mental state transitions—how consciousness moves between different modes, focuses, and levels of awareness.";color = darkgreen;];
-    8 [label = "Cognitive.r8(PatternRecognition)";comment = "Reflection: Structural awareness—the capacity to identify, extract, and work with recurring forms and relationships.";color = darkgreen;];
-    7 [label = "Cognitive.r7(ProvenanceTracking)";comment = "Consolidation: Thought lineage—maintaining awareness of how ideas originate, transform, and influence subsequent thinking.";color = darkgreen;];
-    5 [label = "Cognitive.r5(NetworkTheory)";comment = "Propagation: Associative spreading—how thoughts activate related concepts and create interconnected webs of meaning.";color = darkgreen;];
-    3 [label = "Cognitive.r3(FormalLogic)";comment = "Thesis: Structured reasoning—the rigorous, rule-based systems of deduction and inference that ensure truth preservation.";color = darkblue;];
-    6 [label = "Cognitive.r6(ContextualLogic)";comment = "Antithesis: Situated reasoning—the flexible, context-sensitive intelligence that adapts to particular circumstances and constraints.";color = darkblue;];
-    9 [label = "Cognitive.r9(IntegratedIntelligence)";comment = "Synthesis: Unified cognition—the harmonious integration of formal precision and contextual sensitivity in thought.";color = darkblue;];
-    c [label = "Cognitive.dispatch(IntentModeling)";comment = "Interface: Purpose mapping—the capacity to represent, reason about, and align with the intentions of self and others.";shape = doublecircle;color = darkred;];
-    d [label = "Cognitive.commit(ImplementationProtocol)";comment = "Process: Execution pathways—the specific methods and sequences that translate cognitive patterns into effective action.";shape = doublecircle;color = darkgreen;];
-    e [label = "Cognitive.serve(ContextualOptimization)";comment = "Logic: Adaptive efficiency—the intelligence that finds optimal solutions within given constraints and opportunities.";shape = doublecircle;color = darkblue;];
-    f [label = "Cognitive.exec(AllocationLogic)";comment = "Closure: Resourceful cognition achieved—the state where mental resources are optimally distributed across competing demands and goals.";shape = doublecircle;color = lightgray;];
+    a [label = "PrimordialPotential";comment = "Unstructured consciousness—the raw capacity for awareness before any specific thoughts, patterns, or operations form.";];
+    0 [label = "DirectStateAccess";comment = "Immediate cognition—the universal principle that mind can directly apprehend reality states without mediation or representation.";];
+    b [label = "ManifestationBridge";comment = "Reality interface—the actualized capacity of consciousness to translate thought into effect and bridge ideas with manifestation.";];
+    1 [label = "OperationalGrammar";comment = "Mental operations—the fundamental rules and structures that govern how thoughts combine, transform, and generate new content.";];
+    2 [label = "AxiomaticReasoning";comment = "Foundational deduction—the process of deriving conclusions from self-evident truths and established principles.";];
+    4 [label = "StateDynamics";comment = "Mental state transitions—how consciousness moves between different modes, focuses, and levels of awareness.";];
+    8 [label = "PatternRecognition";comment = "Structural awareness—the capacity to identify, extract, and work with recurring forms and relationships.";];
+    7 [label = "ProvenanceTracking";comment = "Thought lineage—maintaining awareness of how ideas originate, transform, and influence subsequent thinking.";];
+    5 [label = "NetworkTheory";comment = "Associative spreading—how thoughts activate related concepts and create interconnected webs of meaning.";];
+    3 [label = "FormalLogic";comment = "Structured reasoning—the rigorous, rule-based systems of deduction and inference that ensure truth preservation.";];
+    6 [label = "ContextualLogic";comment = "Situated reasoning—the flexible, context-sensitive intelligence that adapts to particular circumstances and constraints.";];
+    9 [label = "IntegratedIntelligence";comment = "Unified cognition—the harmonious integration of formal precision and contextual sensitivity in thought.";];
+    c [label = "IntentModeling";comment = "Purpose mapping—the capacity to represent, reason about, and align with the intentions of self and others.";];
+    d [label = "ImplementationProtocol";comment = "Execution pathways—the specific methods and sequences that translate cognitive patterns into effective action.";];
+    e [label = "ContextualOptimization";comment = "Adaptive efficiency—the intelligence that finds optimal solutions within given constraints and opportunities.";];
+    f [label = "AllocationLogic";comment = "Resourceful cognition achieved—the state where mental resources are optimally distributed across competing demands and goals.";];
 }

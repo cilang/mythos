@@ -2,20 +2,20 @@ strict digraph TactileFactor {
     label = "MythOS/Schematic/Tactile";
     comment = "The domain of substance and material interaction. Governs the qualia of physical presence, resistance, and the felt experience of matter.";
     
-    a [label = "Tactile.receive(PotentialSubstance)";comment = "Potential: The unformed potential for all materiality—the primordial 'clay' awaiting definition and resistance.";shape = invtriangle;color = darkred;];
-    0 [label = "Tactile.meta(Tactility)";comment = "Abstract: The invariant essence of 'touchability' itself—the principle of substantial presence and interaction.";shape = doublecircle;color = darkgray;];
-    b [label = "Tactile.send(ManifestSubstance)";comment = "Manifest: The actualized, specific material presence with defined properties and interactive potential.";shape = triangle;color = darkred;];
-    1 [label = "Tactile.r1(Density)";comment = "Initiation: The mass per unit volume—the fundamental measure of 'stuffness' that initiates material identity.";color = darkgreen;];
-    2 [label = "Tactile.r2(Elasticity)";comment = "Response: The capacity to deform under stress and return to original shape—the material's 'memory' of its form.";color = darkgreen;];
-    4 [label = "Tactile.r4(Cohesion)";comment = "Integration: The internal attraction binding substance together—the strength of material integrity.";color = darkgreen;];
-    8 [label = "Tactile.r8(Texture)";comment = "Reflection: The surface granularity and pattern—the tactile signature that reflects material history and composition.";color = darkgreen;];
-    7 [label = "Tactile.r7(Conductivity)";comment = "Consolidation: The capacity to transmit energy (heat, electricity)—the material's participation in energetic exchange.";color = darkgreen;];
-    5 [label = "Tactile.r5(Friction)";comment = "Propagation: The resistance to relative motion—the fundamental law of interactive engagement between surfaces.";color = darkgreen;];
-    3 [label = "Tactile.r3(Solidity)";comment = "Thesis: The ideal of perfect rigidity and definite form—matter as immutable, bounded object.";color = darkblue;];
-    6 [label = "Tactile.r6(Fluidity)";comment = "Antithesis: The state of continuous deformation and flow—matter as dynamic, boundary-less process.";color = darkblue;];
-    9 [label = "Tactile.r9(Plasticity)";comment = "Synthesis: The capacity for permanent deformation while maintaining coherence—matter as malleable yet persistent identity.";color = darkblue;];
-    c [label = "Tactile.dispatch(Materiality)";comment = "Why-Who: The essential 'what-it-is-to-be' of a substance—the intrinsic nature that dictates its tactile properties.";shape = doublecircle;color = darkred;];
-    d [label = "Tactile.commit(Composition)";comment = "What-How: The specific atomic/molecular arrangement and mixture that realizes a material's properties.";shape = doublecircle;color = darkgreen;];
-    e [label = "Tactile.serve(Contact)";comment = "When-Where: The interface and boundary condition where tactile interaction actually occurs—the locus of felt experience.";shape = doublecircle;color = darkblue;];
-    f [label = "Tactile.exec(Substantiality)";comment = "Which-Closure: The final, concrete experience of 'thingness'—the undeniable qualia of physical presence and resistance.";shape = doublecircle;color = lightgray;];
+    a [label = "PotentialSubstance";comment = "The unformed potential for all materiality—the primordial 'clay' awaiting definition and resistance.";];
+    0 [label = "Tactility";comment = "The invariant essence of 'touchability' itself—the principle of substantial presence and interaction.";];
+    b [label = "ManifestSubstance";comment = "The actualized, specific material presence with defined properties and interactive potential.";];
+    1 [label = "Density";comment = "The mass per unit volume—the fundamental measure of 'stuffness' that initiates material identity.";];
+    2 [label = "Elasticity";comment = "The capacity to deform under stress and return to original shape—the material's 'memory' of its form.";];
+    4 [label = "Cohesion";comment = "The internal attraction binding substance together—the strength of material integrity.";];
+    8 [label = "Texture";comment = "The surface granularity and pattern—the tactile signature that reflects material history and composition.";];
+    7 [label = "Conductivity";comment = "The capacity to transmit energy (heat, electricity)—the material's participation in energetic exchange.";];
+    5 [label = "Friction";comment = "The resistance to relative motion—the fundamental law of interactive engagement between surfaces.";];
+    3 [label = "Solidity";comment = "The ideal of perfect rigidity and definite form—matter as immutable, bounded object.";];
+    6 [label = "Fluidity";comment = "The state of continuous deformation and flow—matter as dynamic, boundary-less process.";];
+    9 [label = "Plasticity";comment = "The capacity for permanent deformation while maintaining coherence—matter as malleable yet persistent identity.";];
+    c [label = "Materiality";comment = "The essential 'what-it-is-to-be' of a substance—the intrinsic nature that dictates its tactile properties.";];
+    d [label = "Composition";comment = "The specific atomic/molecular arrangement and mixture that realizes a material's properties.";];
+    e [label = "Contact";comment = "The interface and boundary condition where tactile interaction actually occurs—the locus of felt experience.";];
+    f [label = "Substantiality";comment = "The final, concrete experience of 'thingness'—the undeniable qualia of physical presence and resistance.";];
 }

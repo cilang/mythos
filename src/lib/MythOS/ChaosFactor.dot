@@ -2,20 +2,20 @@ strict digraph ChaosFactor {
     label = "MythOS/Chaos";
     comment = "{{description}}";
     
-    a [label = "Chaos.receive({{title}})";comment = "Potential:{{description}}";shape = invtriangle;color = darkred;];
-    0 [label = "Chaos.meta({{title}})";comment = "Abstract: {{description}}";shape = doublecircle;color = darkgray;];
-    b [label = "Chaos.send({{title}})";comment = "Manifest: {{description}}";shape = triangle;color = darkred;];
-    1 [label = "Chaos.r1({{title}})";comment = "Initiation: {{description}}";color = darkgreen;];
-    2 [label = "Chaos.r2({{title}})";comment = "Response: {{description}}";color = darkgreen;];
-    4 [label = "Chaos.r4({{title}})";comment = "Integration: {{description}}";color = darkgreen;];
-    8 [label = "Chaos.r8({{title}})";comment = "Reflection: {{description}}";color = darkgreen;];
-    7 [label = "Chaos.r7({{title}})";comment = "Consolidation: {{description}}";color = darkgreen;];
-    5 [label = "Chaos.r5({{title}})";comment = "Propagation: {{description}}";color = darkgreen;];
-    3 [label = "Chaos.r3({{title}})";comment = "Thesis: {{description}}";color = darkblue;];
-    6 [label = "Chaos.r6({{title}})";comment = "Antithesis: {{description}}";color = darkblue;];
-    9 [label = "Chaos.r9({{title}})";comment = "Synthesis: {{description}}";color = darkblue;];
-    c [label = "Chaos.dispatch({{title}})";comment = "Interface: {{description}}";shape = doublecircle;color = darkred;];
-    d [label = "Chaos.commit({{title}})";comment = "Process: {{description}}";shape = doublecircle;color = darkgreen;];
-    e [label = "Chaos.serve({{title}})";comment = "Logic: {{description}}";shape = doublecircle;color = darkblue;];
-    f [label = "Chaos.exec({{title}})";comment = "Closure: {{description}}";shape = doublecircle;color = lightgray;];
+    a [label = "{{title}}";comment = "{{description}}";];
+    0 [label = "{{title}}";comment = "{{description}}";];
+    b [label = "{{title}}";comment = "{{description}}";];
+    1 [label = "{{title}}";comment = "{{description}}";];
+    2 [label = "{{title}}";comment = "{{description}}";];
+    4 [label = "{{title}}";comment = "{{description}}";];
+    8 [label = "{{title}}";comment = "{{description}}";];
+    7 [label = "{{title}}";comment = "{{description}}";];
+    5 [label = "{{title}}";comment = "{{description}}";];
+    3 [label = "{{title}}";comment = "{{description}}";];
+    6 [label = "{{title}}";comment = "{{description}}";];
+    9 [label = "{{title}}";comment = "{{description}}";];
+    c [label = "{{title}}";comment = "{{description}}";];
+    d [label = "{{title}}";comment = "{{description}}";];
+    e [label = "{{title}}";comment = "{{description}}";];
+    f [label = "{{title}}";comment = "{{description}}";];
 }

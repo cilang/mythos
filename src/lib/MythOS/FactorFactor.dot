@@ -2,20 +2,20 @@ strict digraph FactorFactor {
     label = "MythOS/Factor";
     comment = "{{description}}";
     
-    a [label = "Factor.receive(Unity)";comment = "Potential: Receives the original, unified problem space (Q=19^n).";shape = invtriangle;color = darkred;];
-    0 [label = "Factor.meta(Locus)";comment = "Abstract: The specific address (w, Q, {a, 1, 3}) where the Factor is valid.";shape = doublecircle;color = darkgray;];
-    b [label = "Factor.send(SubFactor)";comment = "Manifest: Outputs the resulting self-similar Sub-Factor (Q=19^n-1).";shape = triangle;color = darkred;];
-    1 [label = "Factor.r1(Invariant)";comment = "Initiation: Checking for Topological Invariant preservation (Jones/Alexander).";color = darkgreen;];
-    2 [label = "Factor.r2(Boundary)";comment = "Response: Redefining the Ariadi Boundary for the new Factor.";color = darkgreen;];
-    4 [label = "Factor.r4(Primitives)";comment = "Integration: Inheriting and integrating necessary Cilang Primitives.";color = darkgreen;];
-    8 [label = "Factor.r8(Scaling)";comment = "Reflection: Performing the Quantization Scaling (Q=19^n to Q=19^n-1).";color = darkgreen;];
-    7 [label = "Factor.r7(Topology)";comment = "Consolidation: Consolidating the Knot Topology of the resulting Sub-Factor.";color = darkgreen;];
-    5 [label = "Factor.r5(Signature)";comment = "Propagation: Propagating the new Factor Signature (relational graph).";color = darkgreen;];
-    3 [label = "Factor.r3(Decomposition)";comment = "Thesis: The initial step of decomposition (breaking T(19,2) into simpler braids).";color = darkblue;];
-    6 [label = "Factor.r6(Composition)";comment = "Antithesis: The final step of composition (recombining the solutions via the T(19,2) join).";color = darkblue;];
-    9 [label = "Factor.r9(Equivalence)";comment = "Synthesis: Ensuring the initial problem is equivalent to the sum of its factored parts.";color = darkblue;];
-    c [label = "Factor.dispatch(Split)";comment = "Interface: The Split Operation that formally divides the factor space.";shape = doublecircle;color = darkred;];
-    d [label = "Factor.commit(Graph)";comment = "Process: The committed Relational Graph that defines the Factor's structure.";shape = doublecircle;color = darkgreen;];
-    e [label = "Factor.serve(Closure)";comment = "Logic: The Factor Closure Rule—ensuring all loops are closed and links satisfied.";shape = doublecircle;color = darkblue;];
-    f [label = "Factor.exec(Recursion)";comment = "Closure: The validated process of Recursion—self-similarity and re-initiation confirmed.";shape = doublecircle;color = lightgray;];
+    a [label = "Unity";comment = "Receives the original, unified problem space (Q=19^n).";];
+    0 [label = "Locus";comment = "The specific address (w, Q, {a, 1, 3}) where the Factor is valid.";];
+    b [label = "SubFactor";comment = "Outputs the resulting self-similar Sub-Factor (Q=19^n-1).";];
+    1 [label = "Invariant";comment = "Checking for Topological Invariant preservation (Jones/Alexander).";];
+    2 [label = "Boundary";comment = "Redefining the Ariadi Boundary for the new Factor.";];
+    4 [label = "Primitives";comment = "Inheriting and integrating necessary Cilang Primitives.";];
+    8 [label = "Scaling";comment = "Performing the Quantization Scaling (Q=19^n to Q=19^n-1).";];
+    7 [label = "Topology";comment = "Consolidating the Knot Topology of the resulting Sub-Factor.";];
+    5 [label = "Signature";comment = "Propagating the new Factor Signature (relational graph).";];
+    3 [label = "Decomposition";comment = "The initial step of decomposition (breaking T(19,2) into simpler braids).";];
+    6 [label = "Composition";comment = "The final step of composition (recombining the solutions via the T(19,2) join).";];
+    9 [label = "Equivalence";comment = "Ensuring the initial problem is equivalent to the sum of its factored parts.";];
+    c [label = "Split";comment = "The Split Operation that formally divides the factor space.";];
+    d [label = "Graph";comment = "The committed Relational Graph that defines the Factor's structure.";];
+    e [label = "Closure";comment = "The Factor Closure Rule—ensuring all loops are closed and links satisfied.";];
+    f [label = "Recursion";comment = "The validated process of Recursion—self-similarity and re-initiation confirmed.";];
 }

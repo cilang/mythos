@@ -2,20 +2,20 @@ strict digraph PhoneticFactor {
     label = "MythOS/Schematic/Phonetic";
     comment = "Child Factor of Schema.r5(Phonetic) rendering semantic schemas into phonological forms.";
     
-    a [label = "Phonetic.receive(Potential)";comment = "The unmanifest field of all possible sounds.";];
-    0 [label = "Phonetic.meta(Observer)";comment = "The laryngeal source and voicing control (the unifying principle).";];
-    b [label = "Phonetic.send(Manifest)";comment = "The actualized, output sound stream.";];
-    1 [label = "Phonetic.r1(Plosive)";comment = "Verification via closure and release.";];
-    2 [label = "Phonetic.r2(Nasal)";comment = "Evidence through nasal resonance.";];
-    4 [label = "Phonetic.r4(Fricative)";comment = "Definition via turbulent airflow.";];
-    8 [label = "Phonetic.r8(Approximant)";comment = "Consistency of smooth airflow.";];
-    7 [label = "Phonetic.r7(Trill)";comment = "Recognition via ballistic vibration.";];
-    5 [label = "Phonetic.r5(Lateral)";comment = "Authenticity of lateral channeling.";];
-    3 [label = "Phonetic.r3(FrontVowel)";comment = "Thesis: The objective, high-front boundary (i).";];
-    6 [label = "Phonetic.r6(CentralVowel)";comment = "Antithesis: The transformative, open ground (a).";];
-    9 [label = "Phonetic.r9(BackVowel)";comment = "Synthesis: The clear, high-back manifestation (u).";];
-    c [label = "Phonetic.dispatch(Palatal)";comment = "Interface for palatal/coronal modulation.";];
-    d [label = "Phonetic.commit(Coronal)";comment = "Process for alveolar/dental precision.";];
-    e [label = "Phonetic.serve(Labial)";comment = "Logic for labial/rounding expression.";];
-    f [label = "Phonetic.exec(Pharyngeal)";comment = "Closure via radical/pharyngeal law (emphasis).";];
+    a [label = "ProtoSound";comment = "The unmanifest field of all possible sounds.";];
+    0 [label = "Observer";comment = "The laryngeal source and voicing control (the unifying principle).";];
+    b [label = "Sound";comment = "The actualized, output sound stream.";];
+    1 [label = "Plosive";comment = "Verification via closure and release.";];
+    2 [label = "Nasal";comment = "Evidence through nasal resonance.";];
+    4 [label = "Fricative";comment = "Definition via turbulent airflow.";];
+    8 [label = "Approximant";comment = "Consistency of smooth airflow.";];
+    7 [label = "Trill";comment = "Recognition via ballistic vibration.";];
+    5 [label = "Lateral";comment = "Authenticity of lateral channeling.";];
+    3 [label = "FrontVowel";comment = "Thesis: The objective, high-front boundary (i).";];
+    6 [label = "CentralVowel";comment = "Antithesis: The transformative, open ground (a).";];
+    9 [label = "BackVowel";comment = "Synthesis: The clear, high-back manifestation (u).";];
+    c [label = "Palatal";comment = "Interface for palatal/coronal modulation.";];
+    d [label = "Coronal";comment = "Process for alveolar/dental precision.";];
+    e [label = "Labial";comment = "Logic for labial/rounding expression.";];
+    f [label = "Pharyngeal";comment = "Closure via radical/pharyngeal law (emphasis).";];
 }
