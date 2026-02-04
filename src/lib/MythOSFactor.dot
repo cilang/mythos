@@ -1,0 +1,21 @@
+strict digraph MythOSFactor {
+    label = "MythOS (Prime Cosmology)";
+    comment = "The foundational world model and cosmic law, defined by the ACU Protocol. It is the initial condition from which all sub-realms and narratives unfold.";
+    
+    a [label = "OceanOfProbability";comment = "The metric-unbound potential field. The total set of all logically non-contradictory states, devoid of inherent structure or identity. The source of all raw potential.";];
+    0 [label = "Observer";comment = "The metric-defining boundary condition. The function of selection and measurement that imposes a consistent frame of reference onto the Ocean, collapsing potential into a coherent context.";];
+    b [label = "ChaoticSpace";comment = "The metric-bound instability. The dynamic medium within a defined world-system where filtered potentials interact and evolve under rules. The arena of actualization.";];
+    1 [label = "Ariadi";comment = "The Definition of a Universe. The act of establishing a bounded, coherent context—the 'Let there be...' decree that initializes a new manifold from the infinite.";];
+    2 [label = "Cilang";comment = "The Primordial Alphabet. The crystallization of fundamental building blocks—the 16 indivisible logical primes or 'sigils' from which all complexity in a manifold is built.";];
+    4 [label = "Usepong";comment = "The Grammar of Relation. The definition of how primitives connect—establishing the web of possible relationships, forces, and narrative syntax.";];
+    8 [label = "Quantization";comment = "The Scaling of Resolution. The setting of reality's granularity by choosing the base (19) and exponent (n) of existence (Q=19ⁿ). Determines the depth and complexity of manifestation.";];
+    7 [label = "Actualization";comment = "The Collapse into Fact. The function of realization where quantized possibilities, guided by Kratos, choose a specific path and become concrete additions to the Ontology.";];
+    5 [label = "Schematic";comment = "The Recursive Template. The abstraction of a completed existence into a reusable blueprint—an archetype, mytheme, or physical law that can seed new creations.";];
+    3 [label = "Asha";comment = "The Invariant Pattern. The non-negotiable structure and eternal rules of reality—the topological invariant that constrains and defines all possible states and changes.";];
+    6 [label = "Vikara";comment = "The State Transition. The necessary operation of change itself—the cosmic function that moves reality from one valid state to another. The engine of becoming.";];
+    9 [label = "Karsa";comment = "The Instantiated Event. The localized outcome where potential collapses into a definite fact. The moment of measurement that anchors transformation into new reality.";];
+    c [label = "Kratos";comment = "The Asymmetric Principle. The fundamental preference or gradient built into a reality system, weighting probabilities and imparting direction to Chaos. The source of natural law.";];
+    d [label = "Ontology";comment = "The Reality Substrate. The committed 'is-ness'—persistent matter, memory, and narrative that has been actualized. The enduring record of all that is real.";];
+    e [label = "Factor";comment = "The Cosmic Algorithm. The active process rule governing how entities in the substrate interact and transform. The execution engine of the cosmos.";];
+    f [label = "LURD";comment = "The Descriptive Closure Membrane. The self-consistent boundary of a realized world-system that ensures all phenomena have internally complete descriptions. Enforces narrative/physical conservation and localizes infinity.";];
+}

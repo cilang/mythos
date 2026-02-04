@@ -1,9 +1,9 @@
-strict digraph ActualizationFactor {
-    label = "MythOS/Actualization";
+strict digraph ChaosSpaceFactor {
+    label = "MythOS/ChaoticSpaceFactor";
     comment = "{{description}}";
     
     a [label = "{{title}}";comment = "{{description}}";];
-    0 [label = "Objective";comment = "{{description}}";];
+    0 [label = "{{title}}";comment = "{{description}}";];
     b [label = "{{title}}";comment = "{{description}}";];
     1 [label = "{{title}}";comment = "{{description}}";];
     2 [label = "{{title}}";comment = "{{description}}";];
@@ -17,5 +17,5 @@ strict digraph ActualizationFactor {
     c [label = "{{title}}";comment = "{{description}}";];
     d [label = "{{title}}";comment = "{{description}}";];
     e [label = "{{title}}";comment = "{{description}}";];
-    f [label = "Ω-Invariance";comment = "{{description}}";];
+    f [label = "{{title}}";comment = "{{description}}";];
 }

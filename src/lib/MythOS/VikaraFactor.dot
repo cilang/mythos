@@ -9,13 +9,13 @@ strict digraph VikaraFactor {
     2 [label = "Chaos";comment = "Creative dissolution—the breakdown of existing patterns that makes space for new arrangements to emerge.";];
     4 [label = "Destruction";comment = "Necessary ending—the deliberate dismantling of old forms to liberate their constituent elements.";];
     8 [label = "Capacity";comment = "Transformative potential—the measure of how much change a system can undergo or contain.";];
-    7 [label = "Order";comment = "Emergent structure—the new patterns and organizations that crystallize from transformative processes.";];
-    5 [label = "Creation";comment = "Novel emergence—the birth of entirely new forms, relationships, and possibilities.";];
-    3 [label = "Luck";comment = "Fortuitous chance—the aspect of transformation that operates beyond predictable cause and effect.";];
-    6 [label = "Faith";comment = "Trust in process—the commitment to transformation even when outcomes cannot be guaranteed or seen.";];
-    9 [label = "Destiny";comment = "Meaningful pattern—the emergent purpose that gives direction and significance to transformative journeys.";];
-    c [label = "Catalysis";comment = "Change agents and triggers—the specific catalysts and actors that initiate or guide transformations.";];
-    d [label = "Oath";comment = "Binding commitment to change—the promises and contracts that lock in transformative pathways.";];
-    e [label = "Providence";comment = "Guided unfolding—the timing and placement of transformations within larger cosmic patterns.";];
-    f [label = "Variability";comment = "Dynamic stability achieved—the state where change itself becomes the constant, reliable principle.";];
+    7 [label = "Order";comment = "{{TBA}}";];
+    5 [label = "Creation";comment = "Emergence of wholly new forms.";];
+    3 [label = "Luck";comment = "Unpredictable chance in transformation.";];
+    6 [label = "Force";comment = "{{TBA}}";];
+    9 [label = "Destiny";comment = "Purpose guiding transformative paths.";];
+    c [label = "Catalysis";comment = "Triggers that initiate or steer change.";];
+    d [label = "Oath";comment = "Binding commitment to a path of change.";];
+    e [label = "Providence";comment = "Timed unfolding within cosmic design.";];
+    f [label = "LawOfVikara";comment = "Change as the stable constant.";];
 }
